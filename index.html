@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -86,6 +86,31 @@
         color: #0b57d0;
         font-size: 14px;
         font-weight: 700;
+      }
+      .lang-switch {
+        display: inline-flex;
+        gap: 4px;
+        padding: 3px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #f6f7f9;
+      }
+      .lang-switch button {
+        min-height: 28px;
+        border: 0;
+        border-radius: 6px;
+        background: transparent;
+        color: var(--muted);
+        cursor: pointer;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 800;
+        padding: 3px 9px;
+      }
+      .lang-switch button[aria-pressed="true"] {
+        background: #ffffff;
+        color: #0b57d0;
+        box-shadow: 0 1px 2px rgba(24, 33, 47, 0.12);
       }
       .cta-row {
         display: flex;
@@ -335,67 +360,71 @@
       <div class="wrap hero">
         <div>
           <h1>AI Status Hub</h1>
-          <p class="subtitle">Official-source AI provider outage/status dashboard for OpenAI, Claude, Gemini, Grok, and AWS.</p>
-          <p class="meta">Last updated: 2026-06-19 19:47:16 北京时间 / 2026-06-19 11:47:16 UTC</p>
+          <p class="subtitle" data-i18n-en="Official-source AI provider outage/status dashboard for OpenAI, Claude, Gemini, Grok, and AWS." data-i18n-zh="AI 服务官方状态中心，聚合 OpenAI、Claude、Gemini、Grok、AWS 官方状态源。">Official-source AI provider outage/status dashboard for OpenAI, Claude, Gemini, Grok, and AWS.</p>
+          <p class="meta"><span data-i18n-en="Last updated:" data-i18n-zh="上次页面更新时间：">Last updated:</span> <span data-i18n-en="2026-06-19 19:56:28 Beijing / 2026-06-19 11:56:28 UTC" data-i18n-zh="2026-06-19 19:56:28 北京时间 / 2026-06-19 11:56:28 UTC">2026-06-19 19:56:28 Beijing / 2026-06-19 11:56:28 UTC</span></p>
           <div class="cta-row">
-            <a class="cta primary" href="https://github.com/study8677/ai-status-hub" rel="noreferrer" target="_blank">Star on GitHub</a>
-            <a class="cta" href="https://github.com/study8677/ai-status-hub/blob/main/docs/SELF_HOST.md" rel="noreferrer" target="_blank">Fork and self-host</a>
-            <a class="cta" href="https://study8677.github.io/ai-status-hub/last_run.json" rel="noreferrer" target="_blank">JSON API</a>
+            <a class="cta primary" href="https://github.com/study8677/ai-status-hub" rel="noreferrer" target="_blank" data-i18n-en="Star on GitHub" data-i18n-zh="在 GitHub 上 Star">Star on GitHub</a>
+            <a class="cta" href="https://github.com/study8677/ai-status-hub/blob/main/docs/SELF_HOST.md" rel="noreferrer" target="_blank" data-i18n-en="Fork and self-host" data-i18n-zh="Fork 后自托管">Fork and self-host</a>
+            <a class="cta" href="https://study8677.github.io/ai-status-hub/last_run.json" rel="noreferrer" target="_blank" data-i18n-en="JSON API" data-i18n-zh="查看 JSON API">JSON API</a>
           </div>
         </div>
         <div class="hero-side">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-lang-button="en" aria-pressed="true">EN</button>
+            <button type="button" data-lang-button="zh" aria-pressed="false">中文</button>
+          </div>
           <div class="summary">
-            <span class="badge critical">Critical 2</span>
-            <span class="badge warn">Warn 1</span>
-            <span class="badge ok">OK 2</span>
-            <span class="badge unknown">Unknown 0</span>
+            <span class="badge critical" data-i18n-en="Critical 2" data-i18n-zh="严重 2">Critical 2</span>
+            <span class="badge warn" data-i18n-en="Warn 1" data-i18n-zh="预警 1">Warn 1</span>
+            <span class="badge ok" data-i18n-en="OK 2" data-i18n-zh="正常 2">OK 2</span>
+            <span class="badge unknown" data-i18n-en="Unknown 0" data-i18n-zh="未知 0">Unknown 0</span>
           </div>
           <nav class="header-actions" aria-label="Project links">
-            <a href="https://github.com/study8677/ai-status-hub" rel="noreferrer" target="_blank">GitHub repo</a>
-            <a href="https://github.com/study8677/ai-status-hub/actions/workflows/monitor.yml" rel="noreferrer" target="_blank">Actions runs</a>
+            <a href="https://github.com/study8677/ai-status-hub" rel="noreferrer" target="_blank" data-i18n-en="GitHub repo" data-i18n-zh="GitHub 仓库">GitHub repo</a>
+            <a href="https://github.com/study8677/ai-status-hub/actions/workflows/monitor.yml" rel="noreferrer" target="_blank" data-i18n-en="Actions runs" data-i18n-zh="Actions 运行记录">Actions runs</a>
           </nav>
         </div>
       </div>
     </header>
     <main class="wrap">
       <div class="status-banner critical">
-        <strong>At least one monitored provider reports a major incident</strong>
-        <span class="meta">Data comes only from official provider status sources, sampled by GitHub Actions and published to GitHub Pages.</span>
+        <strong data-i18n-en="At least one monitored provider reports a major incident" data-i18n-zh="至少一个监控服务处于严重异常">At least one monitored provider reports a major incident</strong>
+        <span class="meta" data-i18n-en="Data comes only from official provider status sources, sampled by GitHub Actions and published to GitHub Pages." data-i18n-zh="数据仅来自官方状态源，由 GitHub Actions 定时采样并发布到 GitHub Pages。">Data comes only from official provider status sources, sampled by GitHub Actions and published to GitHub Pages.</span>
       </div>
       <div class="value-grid">
         <div class="value-card">
-          <strong>Official sources only</strong>
-          <p>Uses provider status pages, RSS feeds, and public incident APIs instead of noisy third-party aggregators.</p>
+          <strong data-i18n-en="Official sources only" data-i18n-zh="官方源优先">Official sources only</strong>
+          <p data-i18n-en="Uses provider status pages, RSS feeds, and public incident APIs instead of noisy third-party aggregators." data-i18n-zh="使用 provider 官方状态页、RSS 或公开事件接口，避免第三方聚合造成的噪声。">Uses provider status pages, RSS feeds, and public incident APIs instead of noisy third-party aggregators.</p>
         </div>
         <div class="value-card">
-          <strong>Free GitHub hosting</strong>
-          <p>GitHub Actions samples providers, while GitHub Pages publishes the dashboard and JSON files.</p>
+          <strong data-i18n-en="Free GitHub hosting" data-i18n-zh="免费托管运行">Free GitHub hosting</strong>
+          <p data-i18n-en="GitHub Actions samples providers, while GitHub Pages publishes the dashboard and JSON files." data-i18n-zh="GitHub Actions 负责采样，GitHub Pages 发布页面和 JSON 文件。">GitHub Actions samples providers, while GitHub Pages publishes the dashboard and JSON files.</p>
         </div>
         <div class="value-card">
-          <strong>Reusable outputs</strong>
-          <p>Publishes last_run.json, events.ndjson, and daily reports for dashboards, bots, and automations.</p>
+          <strong data-i18n-en="Reusable outputs" data-i18n-zh="可复用输出">Reusable outputs</strong>
+          <p data-i18n-en="Publishes last_run.json, events.ndjson, and daily reports for dashboards, bots, and automations." data-i18n-zh="发布 last_run.json、events.ndjson 和日报，方便接入自己的监控或机器人。">Publishes last_run.json, events.ndjson, and daily reports for dashboards, bots, and automations.</p>
         </div>
         <div class="value-card">
-          <strong>Clear signal boundary</strong>
-          <p>Official source failures show as unknown instead of being converted into provider outages.</p>
+          <strong data-i18n-en="Clear signal boundary" data-i18n-zh="低误报边界">Clear signal boundary</strong>
+          <p data-i18n-en="Official source failures show as unknown instead of being converted into provider outages." data-i18n-zh="官方源抓取失败显示为未知，不直接伪造成服务故障。">Official source failures show as unknown instead of being converted into provider outages.</p>
         </div>
       </div>
       <div class="update-grid">
         <div class="update-item">
-          <strong>Update cadence</strong>
-          <span class="meta">Runs every 5 minutes.</span>
+          <strong data-i18n-en="Update cadence" data-i18n-zh="更新频率">Update cadence</strong>
+          <span class="meta" data-i18n-en="Runs every 5 minutes." data-i18n-zh="每 5 分钟触发一次。">Runs every 5 minutes.</span>
         </div>
         <div class="update-item">
-          <strong>Trigger minutes</strong>
-          <span class="meta">Every hour at 00, 05, 10, 15, 20, 25, 30, 35, 40, 45, 50, and 55.</span>
+          <strong data-i18n-en="Trigger minutes" data-i18n-zh="触发时间">Trigger minutes</strong>
+          <span class="meta" data-i18n-en="Every hour at 00, 05, 10, 15, 20, 25, 30, 35, 40, 45, 50, and 55." data-i18n-zh="北京时间每小时 00、05、10、15、20、25、30、35、40、45、50、55 分。">Every hour at 00, 05, 10, 15, 20, 25, 30, 35, 40, 45, 50, and 55.</span>
         </div>
         <div class="update-item">
-          <strong>Next estimated run</strong>
-          <span class="meta">2026-06-19 19:50:00 北京时间 / 2026-06-19 11:50:00 UTC</span>
+          <strong data-i18n-en="Next estimated run" data-i18n-zh="下一次预计触发">Next estimated run</strong>
+          <span class="meta" data-i18n-en="2026-06-19 20:00:00 Beijing / 2026-06-19 12:00:00 UTC" data-i18n-zh="2026-06-19 20:00:00 北京时间 / 2026-06-19 12:00:00 UTC">2026-06-19 20:00:00 Beijing / 2026-06-19 12:00:00 UTC</span>
         </div>
         <div class="update-item">
-          <strong>Visible freshness</strong>
-          <span class="meta">Usually updates seconds to minutes after a trigger, depending on Actions queueing and Pages cache.</span>
+          <strong data-i18n-en="Visible freshness" data-i18n-zh="实际生效">Visible freshness</strong>
+          <span class="meta" data-i18n-en="Usually updates seconds to minutes after a trigger, depending on Actions queueing and Pages cache." data-i18n-zh="通常在触发后几十秒到数分钟内完成，取决于 GitHub Actions 排队和 Pages 缓存。">Usually updates seconds to minutes after a trigger, depending on Actions queueing and Pages cache.</span>
         </div>
       </div>
       <div class="grid">
@@ -403,158 +432,158 @@
             <article class="service-card critical">
               <div class="service-topline">
                 <h2>AWS</h2>
-                <span class="badge critical">严重 CRITICAL</span>
+                <span class="badge critical" data-i18n-en="CRITICAL" data-i18n-zh="严重 CRITICAL">CRITICAL</span>
               </div>
               <div class="score-row">
                 <strong>20</strong>
-                <span>Score</span>
+                <span data-i18n-en="Score" data-i18n-zh="分数">Score</span>
                 <strong>2</strong>
-                <span>Active</span>
-                <strong>9 小时 27 分钟</strong>
-                <span>Duration</span>
+                <span data-i18n-en="Active" data-i18n-zh="进行中">Active</span>
+                <strong data-i18n-en="9h 36m" data-i18n-zh="9 小时 36 分钟">9h 36m</strong>
+                <span data-i18n-en="Duration" data-i18n-zh="持续">Duration</span>
               </div>
               <dl>
-                <div><dt>Status</dt><dd>major_outage</dd></div>
-                <div><dt>Incident</dt><dd>Multiple services / UAE</dd></div>
-                <div><dt>Components</dt><dd>Multiple services / UAE <span>degraded</span>, Multiple services / Bahrain <span>degraded</span></dd></div>
-                <div><dt>Source updated</dt><dd>2026-04-30 15:25:54 北京时间 / 2026-04-30 07:25:54 UTC</dd></div>
-                <div><dt>Sampled</dt><dd>2026-06-19 19:47:16 北京时间 / 2026-06-19 11:47:16 UTC</dd></div>
-                <div><dt>Confidence</dt><dd>0.97</dd></div>
+                <div><dt data-i18n-en="Status" data-i18n-zh="状态">Status</dt><dd>major_outage</dd></div>
+                <div><dt data-i18n-en="Incident" data-i18n-zh="事件">Incident</dt><dd data-i18n-en="Multiple services / UAE" data-i18n-zh="Multiple services / UAE">Multiple services / UAE</dd></div>
+                <div><dt data-i18n-en="Components" data-i18n-zh="组件">Components</dt><dd data-i18n-en="Multiple services / UAE degraded, Multiple services / Bahrain degraded" data-i18n-zh="Multiple services / UAE degraded, Multiple services / Bahrain degraded">Multiple services / UAE degraded, Multiple services / Bahrain degraded</dd></div>
+                <div><dt data-i18n-en="Source updated" data-i18n-zh="源更新时间">Source updated</dt><dd data-i18n-en="2026-04-30 15:25:54 Beijing / 2026-04-30 07:25:54 UTC" data-i18n-zh="2026-04-30 15:25:54 北京时间 / 2026-04-30 07:25:54 UTC">2026-04-30 15:25:54 Beijing / 2026-04-30 07:25:54 UTC</dd></div>
+                <div><dt data-i18n-en="Sampled" data-i18n-zh="采样时间">Sampled</dt><dd data-i18n-en="2026-06-19 19:56:28 Beijing / 2026-06-19 11:56:28 UTC" data-i18n-zh="2026-06-19 19:56:28 北京时间 / 2026-06-19 11:56:28 UTC">2026-06-19 19:56:28 Beijing / 2026-06-19 11:56:28 UTC</dd></div>
+                <div><dt data-i18n-en="Confidence" data-i18n-zh="置信度">Confidence</dt><dd>0.97</dd></div>
               </dl>
-              <div class="links"><a href="https://status.aws.amazon.com" rel="noreferrer" target="_blank">Official source</a></div>
+              <div class="links"><a href="https://status.aws.amazon.com" rel="noreferrer" target="_blank" data-i18n-en="Official source" data-i18n-zh="官方源">Official source</a></div>
             </article>
             
             <article class="service-card critical">
               <div class="service-topline">
                 <h2>Claude</h2>
-                <span class="badge critical">严重 CRITICAL</span>
+                <span class="badge critical" data-i18n-en="CRITICAL" data-i18n-zh="严重 CRITICAL">CRITICAL</span>
               </div>
               <div class="score-row">
                 <strong>20</strong>
-                <span>Score</span>
+                <span data-i18n-en="Score" data-i18n-zh="分数">Score</span>
                 <strong>1</strong>
-                <span>Active</span>
-                <strong>9 小时 27 分钟</strong>
-                <span>Duration</span>
+                <span data-i18n-en="Active" data-i18n-zh="进行中">Active</span>
+                <strong data-i18n-en="9h 36m" data-i18n-zh="9 小时 36 分钟">9h 36m</strong>
+                <span data-i18n-en="Duration" data-i18n-zh="持续">Duration</span>
               </div>
               <dl>
-                <div><dt>Status</dt><dd>none</dd></div>
-                <div><dt>Incident</dt><dd>We’ve suspended access to Claude Mythos 5 and Claude Fable 5</dd></div>
-                <div><dt>Components</dt><dd>claude.ai <span>operational</span>, Claude Console (platform.claude.com) <span>operational</span>, Claude API (api.anthropic.com) <span>operational</span>, Claude Code <span>operational</span>, plus 2 more</dd></div>
-                <div><dt>Source updated</dt><dd>2026-06-19 19:15:01 北京时间 / 2026-06-19 11:15:01 UTC</dd></div>
-                <div><dt>Sampled</dt><dd>2026-06-19 19:47:15 北京时间 / 2026-06-19 11:47:15 UTC</dd></div>
-                <div><dt>Confidence</dt><dd>0.98</dd></div>
+                <div><dt data-i18n-en="Status" data-i18n-zh="状态">Status</dt><dd>none</dd></div>
+                <div><dt data-i18n-en="Incident" data-i18n-zh="事件">Incident</dt><dd data-i18n-en="We’ve suspended access to Claude Mythos 5 and Claude Fable 5" data-i18n-zh="We’ve suspended access to Claude Mythos 5 and Claude Fable 5">We’ve suspended access to Claude Mythos 5 and Claude Fable 5</dd></div>
+                <div><dt data-i18n-en="Components" data-i18n-zh="组件">Components</dt><dd data-i18n-en="claude.ai operational, Claude Console (platform.claude.com) operational, Claude API (api.anthropic.com) operational, Claude Code operational, plus 2 more" data-i18n-zh="claude.ai operational, Claude Console (platform.claude.com) operational, Claude API (api.anthropic.com) operational, Claude Code operational，另外 2 项">claude.ai operational, Claude Console (platform.claude.com) operational, Claude API (api.anthropic.com) operational, Claude Code operational, plus 2 more</dd></div>
+                <div><dt data-i18n-en="Source updated" data-i18n-zh="源更新时间">Source updated</dt><dd data-i18n-en="2026-06-19 19:15:01 Beijing / 2026-06-19 11:15:01 UTC" data-i18n-zh="2026-06-19 19:15:01 北京时间 / 2026-06-19 11:15:01 UTC">2026-06-19 19:15:01 Beijing / 2026-06-19 11:15:01 UTC</dd></div>
+                <div><dt data-i18n-en="Sampled" data-i18n-zh="采样时间">Sampled</dt><dd data-i18n-en="2026-06-19 19:56:28 Beijing / 2026-06-19 11:56:28 UTC" data-i18n-zh="2026-06-19 19:56:28 北京时间 / 2026-06-19 11:56:28 UTC">2026-06-19 19:56:28 Beijing / 2026-06-19 11:56:28 UTC</dd></div>
+                <div><dt data-i18n-en="Confidence" data-i18n-zh="置信度">Confidence</dt><dd>0.98</dd></div>
               </dl>
-              <div class="links"><a href="https://status.claude.com" rel="noreferrer" target="_blank">Official source</a> <a href="https://stspg.io/kqx0j625mrgv" rel="noreferrer" target="_blank">Incident link</a></div>
+              <div class="links"><a href="https://status.claude.com" rel="noreferrer" target="_blank" data-i18n-en="Official source" data-i18n-zh="官方源">Official source</a> <a href="https://stspg.io/kqx0j625mrgv" rel="noreferrer" target="_blank" data-i18n-en="Incident link" data-i18n-zh="事件链接">Incident link</a></div>
             </article>
             
             <article class="service-card warn">
               <div class="service-topline">
                 <h2>OpenAI</h2>
-                <span class="badge warn">预警 WARN</span>
+                <span class="badge warn" data-i18n-en="WARN" data-i18n-zh="预警 WARN">WARN</span>
               </div>
               <div class="score-row">
                 <strong>70</strong>
-                <span>Score</span>
+                <span data-i18n-en="Score" data-i18n-zh="分数">Score</span>
                 <strong>1</strong>
-                <span>Active</span>
-                <strong>9 小时 27 分钟</strong>
-                <span>Duration</span>
+                <span data-i18n-en="Active" data-i18n-zh="进行中">Active</span>
+                <strong data-i18n-en="9h 36m" data-i18n-zh="9 小时 36 分钟">9h 36m</strong>
+                <span data-i18n-en="Duration" data-i18n-zh="持续">Duration</span>
               </div>
               <dl>
-                <div><dt>Status</dt><dd>minor</dd></div>
-                <div><dt>Incident</dt><dd>FedRAMP workspaces and API orgs have degraded performance</dd></div>
-                <div><dt>Components</dt><dd>CLI <span>operational</span>, Image Generation <span>operational</span>, Deep Research <span>operational</span>, ChatGPT Atlas <span>operational</span>, plus 21 more</dd></div>
-                <div><dt>Source updated</dt><dd>2026-06-19 03:41:22 北京时间 / 2026-06-18 19:41:22 UTC</dd></div>
-                <div><dt>Sampled</dt><dd>2026-06-19 19:47:15 北京时间 / 2026-06-19 11:47:15 UTC</dd></div>
-                <div><dt>Confidence</dt><dd>0.98</dd></div>
+                <div><dt data-i18n-en="Status" data-i18n-zh="状态">Status</dt><dd>minor</dd></div>
+                <div><dt data-i18n-en="Incident" data-i18n-zh="事件">Incident</dt><dd data-i18n-en="FedRAMP workspaces and API orgs have degraded performance" data-i18n-zh="FedRAMP workspaces and API orgs have degraded performance">FedRAMP workspaces and API orgs have degraded performance</dd></div>
+                <div><dt data-i18n-en="Components" data-i18n-zh="组件">Components</dt><dd data-i18n-en="CLI operational, Image Generation operational, Deep Research operational, ChatGPT Atlas operational, plus 21 more" data-i18n-zh="CLI operational, Image Generation operational, Deep Research operational, ChatGPT Atlas operational，另外 21 项">CLI operational, Image Generation operational, Deep Research operational, ChatGPT Atlas operational, plus 21 more</dd></div>
+                <div><dt data-i18n-en="Source updated" data-i18n-zh="源更新时间">Source updated</dt><dd data-i18n-en="2026-06-19 03:41:22 Beijing / 2026-06-18 19:41:22 UTC" data-i18n-zh="2026-06-19 03:41:22 北京时间 / 2026-06-18 19:41:22 UTC">2026-06-19 03:41:22 Beijing / 2026-06-18 19:41:22 UTC</dd></div>
+                <div><dt data-i18n-en="Sampled" data-i18n-zh="采样时间">Sampled</dt><dd data-i18n-en="2026-06-19 19:56:27 Beijing / 2026-06-19 11:56:27 UTC" data-i18n-zh="2026-06-19 19:56:27 北京时间 / 2026-06-19 11:56:27 UTC">2026-06-19 19:56:27 Beijing / 2026-06-19 11:56:27 UTC</dd></div>
+                <div><dt data-i18n-en="Confidence" data-i18n-zh="置信度">Confidence</dt><dd>0.98</dd></div>
               </dl>
-              <div class="links"><a href="https://status.openai.com" rel="noreferrer" target="_blank">Official source</a></div>
+              <div class="links"><a href="https://status.openai.com" rel="noreferrer" target="_blank" data-i18n-en="Official source" data-i18n-zh="官方源">Official source</a></div>
             </article>
             
             <article class="service-card ok">
               <div class="service-topline">
                 <h2>Gemini</h2>
-                <span class="badge ok">正常 OK</span>
+                <span class="badge ok" data-i18n-en="OK" data-i18n-zh="正常 OK">OK</span>
               </div>
               <div class="score-row">
                 <strong>100</strong>
-                <span>Score</span>
+                <span data-i18n-en="Score" data-i18n-zh="分数">Score</span>
                 <strong>0</strong>
-                <span>Active</span>
-                <strong>-</strong>
-                <span>Duration</span>
+                <span data-i18n-en="Active" data-i18n-zh="进行中">Active</span>
+                <strong data-i18n-en="-" data-i18n-zh="-">-</strong>
+                <span data-i18n-en="Duration" data-i18n-zh="持续">Duration</span>
               </div>
               <dl>
-                <div><dt>Status</dt><dd>operational</dd></div>
-                <div><dt>Incident</dt><dd>No active incident reported</dd></div>
-                <div><dt>Components</dt><dd>No affected component reported</dd></div>
-                <div><dt>Source updated</dt><dd>2026-06-19 19:47:15 北京时间 / 2026-06-19 11:47:15 UTC</dd></div>
-                <div><dt>Sampled</dt><dd>2026-06-19 19:47:15 北京时间 / 2026-06-19 11:47:15 UTC</dd></div>
-                <div><dt>Confidence</dt><dd>0.95</dd></div>
+                <div><dt data-i18n-en="Status" data-i18n-zh="状态">Status</dt><dd>operational</dd></div>
+                <div><dt data-i18n-en="Incident" data-i18n-zh="事件">Incident</dt><dd data-i18n-en="No active incident reported" data-i18n-zh="暂无进行中事件">No active incident reported</dd></div>
+                <div><dt data-i18n-en="Components" data-i18n-zh="组件">Components</dt><dd data-i18n-en="No affected component reported" data-i18n-zh="官方源未报告受影响组件">No affected component reported</dd></div>
+                <div><dt data-i18n-en="Source updated" data-i18n-zh="源更新时间">Source updated</dt><dd data-i18n-en="2026-06-19 19:56:28 Beijing / 2026-06-19 11:56:28 UTC" data-i18n-zh="2026-06-19 19:56:28 北京时间 / 2026-06-19 11:56:28 UTC">2026-06-19 19:56:28 Beijing / 2026-06-19 11:56:28 UTC</dd></div>
+                <div><dt data-i18n-en="Sampled" data-i18n-zh="采样时间">Sampled</dt><dd data-i18n-en="2026-06-19 19:56:28 Beijing / 2026-06-19 11:56:28 UTC" data-i18n-zh="2026-06-19 19:56:28 北京时间 / 2026-06-19 11:56:28 UTC">2026-06-19 19:56:28 Beijing / 2026-06-19 11:56:28 UTC</dd></div>
+                <div><dt data-i18n-en="Confidence" data-i18n-zh="置信度">Confidence</dt><dd>0.95</dd></div>
               </dl>
-              <div class="links"><a href="https://status.cloud.google.com" rel="noreferrer" target="_blank">Official source</a></div>
+              <div class="links"><a href="https://status.cloud.google.com" rel="noreferrer" target="_blank" data-i18n-en="Official source" data-i18n-zh="官方源">Official source</a></div>
             </article>
             
             <article class="service-card ok">
               <div class="service-topline">
                 <h2>Grok</h2>
-                <span class="badge ok">正常 OK</span>
+                <span class="badge ok" data-i18n-en="OK" data-i18n-zh="正常 OK">OK</span>
               </div>
               <div class="score-row">
                 <strong>100</strong>
-                <span>Score</span>
+                <span data-i18n-en="Score" data-i18n-zh="分数">Score</span>
                 <strong>0</strong>
-                <span>Active</span>
-                <strong>-</strong>
-                <span>Duration</span>
+                <span data-i18n-en="Active" data-i18n-zh="进行中">Active</span>
+                <strong data-i18n-en="-" data-i18n-zh="-">-</strong>
+                <span data-i18n-en="Duration" data-i18n-zh="持续">Duration</span>
               </div>
               <dl>
-                <div><dt>Status</dt><dd>operational</dd></div>
-                <div><dt>Incident</dt><dd>No active incident reported</dd></div>
-                <div><dt>Components</dt><dd>No affected component reported</dd></div>
-                <div><dt>Source updated</dt><dd>2026-06-18 00:43:50 北京时间 / 2026-06-17 16:43:50 UTC</dd></div>
-                <div><dt>Sampled</dt><dd>2026-06-19 19:47:16 北京时间 / 2026-06-19 11:47:16 UTC</dd></div>
-                <div><dt>Confidence</dt><dd>0.85</dd></div>
+                <div><dt data-i18n-en="Status" data-i18n-zh="状态">Status</dt><dd>operational</dd></div>
+                <div><dt data-i18n-en="Incident" data-i18n-zh="事件">Incident</dt><dd data-i18n-en="No active incident reported" data-i18n-zh="暂无进行中事件">No active incident reported</dd></div>
+                <div><dt data-i18n-en="Components" data-i18n-zh="组件">Components</dt><dd data-i18n-en="No affected component reported" data-i18n-zh="官方源未报告受影响组件">No affected component reported</dd></div>
+                <div><dt data-i18n-en="Source updated" data-i18n-zh="源更新时间">Source updated</dt><dd data-i18n-en="2026-06-18 00:43:50 Beijing / 2026-06-17 16:43:50 UTC" data-i18n-zh="2026-06-18 00:43:50 北京时间 / 2026-06-17 16:43:50 UTC">2026-06-18 00:43:50 Beijing / 2026-06-17 16:43:50 UTC</dd></div>
+                <div><dt data-i18n-en="Sampled" data-i18n-zh="采样时间">Sampled</dt><dd data-i18n-en="2026-06-19 19:56:28 Beijing / 2026-06-19 11:56:28 UTC" data-i18n-zh="2026-06-19 19:56:28 北京时间 / 2026-06-19 11:56:28 UTC">2026-06-19 19:56:28 Beijing / 2026-06-19 11:56:28 UTC</dd></div>
+                <div><dt data-i18n-en="Confidence" data-i18n-zh="置信度">Confidence</dt><dd>0.85</dd></div>
               </dl>
-              <div class="links"><a href="https://status.x.ai/" rel="noreferrer" target="_blank">Official source</a></div>
+              <div class="links"><a href="https://status.x.ai/" rel="noreferrer" target="_blank" data-i18n-en="Official source" data-i18n-zh="官方源">Official source</a></div>
             </article>
             
       </div>
       <section>
         <div class="section-head">
-          <h2>Public outputs</h2>
-          <span class="meta">Readable by scripts, dashboards, and bots.</span>
+          <h2 data-i18n-en="Public outputs" data-i18n-zh="公开输出">Public outputs</h2>
+          <span class="meta" data-i18n-en="Readable by scripts, dashboards, and bots." data-i18n-zh="可直接被脚本、看板或机器人读取。">Readable by scripts, dashboards, and bots.</span>
         </div>
         <div class="endpoint-grid">
           <div class="endpoint">
-            <strong>Latest snapshot</strong>
+            <strong data-i18n-en="Latest snapshot" data-i18n-zh="最新快照">Latest snapshot</strong>
             <code>GET /last_run.json</code>
           </div>
           <div class="endpoint">
-            <strong>Event stream</strong>
+            <strong data-i18n-en="Event stream" data-i18n-zh="事件流">Event stream</strong>
             <code>GET /output/events.ndjson</code>
           </div>
           <div class="endpoint">
-            <strong>Daily report</strong>
+            <strong data-i18n-en="Daily report" data-i18n-zh="日报">Daily report</strong>
             <code>GET /reports/daily-report-YYYY-MM-DD.json</code>
           </div>
         </div>
       </section>
       <section>
         <div class="section-head">
-          <h2>Active incidents</h2>
-          <span class="meta"><a href="https://github.com/study8677/ai-status-hub" rel="noreferrer" target="_blank">Star / Fork on GitHub</a></span>
+          <h2 data-i18n-en="Active incidents" data-i18n-zh="进行中事件">Active incidents</h2>
+          <span class="meta"><a href="https://github.com/study8677/ai-status-hub" rel="noreferrer" target="_blank" data-i18n-en="Star / Fork on GitHub" data-i18n-zh="去 GitHub Star / Fork">Star / Fork on GitHub</a></span>
         </div>
         <table>
           <thead>
-            <tr><th>Service</th><th>Level</th><th>Incident</th><th>Status</th><th>Link</th></tr>
+            <tr><th data-i18n-en="Service" data-i18n-zh="服务">Service</th><th data-i18n-en="Level" data-i18n-zh="等级">Level</th><th data-i18n-en="Incident" data-i18n-zh="事件">Incident</th><th data-i18n-en="Status" data-i18n-zh="状态">Status</th><th data-i18n-en="Link" data-i18n-zh="链接">Link</th></tr>
           </thead>
           <tbody>
             
                 <tr>
                   <td>AWS</td>
-                  <td><span class="badge critical">严重 CRITICAL</span></td>
+                  <td><span class="badge critical" data-i18n-en="CRITICAL" data-i18n-zh="严重 CRITICAL">CRITICAL</span></td>
                   <td>Multiple services / UAE</td>
                   <td>3</td>
                   <td></td>
@@ -562,7 +591,7 @@
                 
                 <tr>
                   <td>AWS</td>
-                  <td><span class="badge critical">严重 CRITICAL</span></td>
+                  <td><span class="badge critical" data-i18n-en="CRITICAL" data-i18n-zh="严重 CRITICAL">CRITICAL</span></td>
                   <td>Multiple services / Bahrain</td>
                   <td>3</td>
                   <td></td>
@@ -570,15 +599,15 @@
                 
                 <tr>
                   <td>Claude</td>
-                  <td><span class="badge critical">严重 CRITICAL</span></td>
+                  <td><span class="badge critical" data-i18n-en="CRITICAL" data-i18n-zh="严重 CRITICAL">CRITICAL</span></td>
                   <td>We’ve suspended access to Claude Mythos 5 and Claude Fable 5</td>
                   <td>monitoring</td>
-                  <td><a href="https://stspg.io/kqx0j625mrgv" rel="noreferrer" target="_blank">Open</a></td>
+                  <td><a href="https://stspg.io/kqx0j625mrgv" rel="noreferrer" target="_blank" data-i18n-en="Open" data-i18n-zh="打开">Open</a></td>
                 </tr>
                 
                 <tr>
                   <td>OpenAI</td>
-                  <td><span class="badge warn">预警 WARN</span></td>
+                  <td><span class="badge warn" data-i18n-en="WARN" data-i18n-zh="预警 WARN">WARN</span></td>
                   <td>FedRAMP workspaces and API orgs have degraded performance</td>
                   <td>investigating</td>
                   <td></td>
@@ -588,5 +617,45 @@
         </table>
       </section>
     </main>
+    <script>
+      (() => {
+        const storageKey = "ai-status-hub-language";
+        const buttons = Array.from(document.querySelectorAll("[data-lang-button]"));
+        const getStoredLanguage = () => {
+          try {
+            return localStorage.getItem(storageKey);
+          } catch (error) {
+            return null;
+          }
+        };
+        const setStoredLanguage = (language) => {
+          try {
+            localStorage.setItem(storageKey, language);
+          } catch (error) {}
+        };
+        const preferredLanguage = () => {
+          const stored = getStoredLanguage();
+          if (stored === "en" || stored === "zh") {
+            return stored;
+          }
+          return (navigator.language || "").toLowerCase().startsWith("zh") ? "zh" : "en";
+        };
+        const applyLanguage = (language) => {
+          const nextLanguage = language === "zh" ? "zh" : "en";
+          document.documentElement.lang = nextLanguage === "zh" ? "zh-CN" : "en";
+          document.querySelectorAll("[data-i18n-en][data-i18n-zh]").forEach((node) => {
+            node.textContent = nextLanguage === "zh" ? node.dataset.i18nZh : node.dataset.i18nEn;
+          });
+          buttons.forEach((button) => {
+            button.setAttribute("aria-pressed", button.dataset.langButton === nextLanguage ? "true" : "false");
+          });
+          setStoredLanguage(nextLanguage);
+        };
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => applyLanguage(button.dataset.langButton));
+        });
+        applyLanguage(preferredLanguage());
+      })();
+    </script>
   </body>
 </html>
