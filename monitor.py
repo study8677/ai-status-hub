@@ -62,6 +62,7 @@ def level_from_indicator(indicator: str) -> str:
         "operational",
         "available",
         "ok",
+        "none",
         "no_issues",
         "resolved",
         "completed",
@@ -129,18 +130,17 @@ def fetch_with_retry(url: str, timeout: int = 25, retries: int = 3, accept_json:
     last_error: Optional[BaseException] = None
     for attempt in range(1, max(1, retries) + 1):
         try:
-            return http_get(url, timeout=timeout, accept_json=accept_json, allow_unverified=("amazonaws.com" in url))
+            return http_get(url, timeout=timeout, accept_json=accept_json, allow_unverified=False)
         except Exception as exc:
             last_error = exc
+            if "amazonaws.com" in url:
+                try:
+                    return http_get(url, timeout=timeout, accept_json=accept_json, allow_unverified=True)
+                except Exception as fallback_exc:
+                    last_error = fallback_exc
             if attempt >= retries:
                 break
             time.sleep(min(8, 1 << (attempt - 1)) + random.uniform(0, 0.35))
-            if ("amazonaws.com" in url) and attempt == 1:
-                # retry immediately once with TLS cert verification disabled for known AWS endpoint instability
-                try:
-                    return http_get(url, timeout=timeout, accept_json=accept_json, allow_unverified=True)
-                except Exception:
-                    pass
     raise RuntimeError(f"fetch failed for {url}: {last_error}")
 
 
@@ -410,15 +410,15 @@ def parse_json_like_field(text: str) -> Optional[str]:
     return None
 
 
-def _parse_grok_feed(feed_raw: Optional[bytes]) -> tuple[List[Dict[str, Any]], Optional[datetime]]:
+def _parse_grok_feed(feed_raw: Optional[bytes]) -> tuple[List[Dict[str, Any]], Optional[datetime], bool]:
     if not feed_raw:
-        return [], None
+        return [], None, False
 
     feed_text = decode_text(feed_raw)
     try:
         root = ET.fromstring(feed_text)
     except ET.ParseError:
-        return [], None
+        return [], None, False
 
     channel_updated = _parse_rfc_datetime((root.findtext(".//lastBuildDate") or "").strip())
     incidents = []
@@ -429,8 +429,18 @@ def _parse_grok_feed(feed_raw: Optional[bytes]) -> tuple[List[Dict[str, Any]], O
         guid = (item.findtext("guid") or "").strip() or None
         published = _parse_rfc_datetime((item.findtext("pubDate") or "").strip())
         text = f"{title} {desc}".lower()
+        categories = {
+            (category.text or "").strip().lower()
+            for category in item.findall("category")
+            if category.text
+        }
 
-        is_resolved = "resolved" in text or "available" in text
+        is_resolved = (
+            "resolved" in categories
+            or "available" in categories
+            or "status: resolved" in text
+            or "severity: available" in text
+        )
         if not is_resolved and ("incident" in text or "outage" in text or "error" in text):
             derived = _normalize_status_from_feed_text(text)
             incidents.append(
@@ -445,7 +455,7 @@ def _parse_grok_feed(feed_raw: Optional[bytes]) -> tuple[List[Dict[str, Any]], O
                 }
             )
 
-    return incidents[:30], channel_updated
+    return incidents[:30], channel_updated, True
 
 
 def parse_grok_service(
@@ -454,11 +464,13 @@ def parse_grok_service(
     config: ServiceConfig,
     sample_time: datetime,
 ) -> CheckResult:
-    incidents, feed_updated = _parse_grok_feed(feed_raw)
+    incidents, feed_updated, feed_ok = _parse_grok_feed(feed_raw)
     page_text = decode_text(page_raw or b"")
 
     if incidents:
         overall_level = "critical" if any(item.get("status") == "critical" for item in incidents) else "warn"
+    elif feed_ok:
+        overall_level = "ok"
     else:
         lowered = page_text.lower()
         if "all systems operational" in lowered or "all systems are operational" in lowered:
@@ -490,12 +502,21 @@ def parse_grok_service(
         components=[{"name": "xAI System", "status": overall_level}],
         active_incidents=incidents,
         raw_score=score_from_level(overall_level),
-        confidence=0.9 if incidents else 0.7,
+        confidence=0.9 if incidents else (0.85 if feed_ok else 0.45),
         updated_at=updated.isoformat().replace("+00:00", "Z") if isinstance(updated, datetime) else utciso(sample_time),
         source_url=config.source_url,
         level=overall_level,
         latest_incident_link=latest.get("link") if isinstance(latest, dict) else None,
     )
+
+
+def _epoch_to_datetime(value: Any) -> Optional[datetime]:
+    if value in (None, ""):
+        return None
+    try:
+        return datetime.fromtimestamp(int(value), tz=timezone.utc)
+    except Exception:
+        return None
 
 
 def parse_aws_service(raw: bytes, config: ServiceConfig, sample_time: datetime) -> CheckResult:
@@ -515,12 +536,23 @@ def parse_aws_service(raw: bytes, config: ServiceConfig, sample_time: datetime) 
         service_name = event.get("service_name") or event.get("service") or "AWS Service"
         event_status = event.get("status")
         status_text = str(event_status or "").lower()
-        severity = "critical" if any(token in summary.lower() for token in ["outage", "disruption", "unavailable"]) else "warn"
-        if severity != "critical":
-            if any(token in status_text for token in {"1", "2", "warning", "investigating", "maintenance"}):
-                severity = "warn"
-            if status_text and status_text not in {"1", "2", "3", "4", "5"} and "critical" in status_text:
-                severity = "critical"
+        logs = _coerce_list(event.get("event_log"))
+        latest_log = max(
+            logs,
+            key=lambda item: int(item.get("timestamp") or 0),
+            default={},
+        )
+        updated_at_dt = _epoch_to_datetime(latest_log.get("timestamp")) or _epoch_to_datetime(event.get("date"))
+
+        severity = "warn"
+        # AWS public currentevents exposes numeric current/max impact values;
+        # observed status 3 is the highest active impact level in the payload.
+        if status_text == "3":
+            severity = "critical"
+        if any(token in summary.lower() for token in ["outage", "disruption", "unavailable"]):
+            severity = "critical"
+        if status_text and status_text not in {"0", "1", "2", "3", "4", "5"} and "critical" in status_text:
+            severity = "critical"
 
         active_events.append(
             {
@@ -528,10 +560,11 @@ def parse_aws_service(raw: bytes, config: ServiceConfig, sample_time: datetime) 
                 "name": f"{service_name} / {region}" if region else service_name,
                 "status": event_status or "active",
                 "summary": summary,
-                "updated_at": event.get("timestamp") or event.get("modified"),
+                "updated_at": updated_at_dt.isoformat().replace("+00:00", "Z") if updated_at_dt else None,
                 "link": None,
                 "region": region,
                 "severity": severity,
+                "latest_message": latest_log.get("message"),
             }
         )
 
@@ -811,23 +844,10 @@ def evaluate_transition(store: Store, result: CheckResult) -> List[Dict[str, Any
                 first_bad_at = None
         consec_bad = 0
     else:
-        observed = "warn"
-        if current_level in {"ok", "unknown"}:
-            consec_bad = 1
-            first_bad_at = now_ts
-        else:
-            consec_bad += 1
+        # Source failures are monitor health problems, not provider incidents.
+        # Keep the existing alert latch untouched and do not count UNKNOWN as a
+        # service degradation sample.
         consec_ok = 0
-        if not alert_active and consec_bad >= 2:
-            alerts.append(
-                {
-                    "type": "alert",
-                    "service": result.service,
-                    "level": observed,
-                    "message": f"{result.service} is in {observed.upper()} state (sampled {result.time})",
-                }
-            )
-            alert_active = True
 
     result.level = observed
     result.consecutive_anomalies = consec_bad if observed in {"warn", "critical"} else 0
@@ -930,14 +950,18 @@ def generate_daily_report(store: Store, report_dir: Path, now: Optional[datetime
         ok_count = level_counts.get("ok", 0)
         warn_count = level_counts.get("warn", 0)
         critical_count = level_counts.get("critical", 0)
+        unknown_count = level_counts.get("unknown", 0)
+        measured_total = ok_count + warn_count + critical_count
         latest = entries[-1]
         recent = recent_incidents.get(service, [])
         summary["services"][service] = {
             "total_checks_24h": total,
+            "measured_checks_24h": measured_total,
             "ok": ok_count,
             "warn": warn_count,
             "critical": critical_count,
-            "sla": round((ok_count / total) * 100, 2) if total else 100.0,
+            "unknown": unknown_count,
+            "sla": round((ok_count / measured_total) * 100, 2) if measured_total else None,
             "latest_status": latest["level"],
             "latest_at": utcfromtimestamp(int(latest["ts"])).isoformat().replace("+00:00", "Z"),
             "recent_incidents": recent[:30],
@@ -950,11 +974,15 @@ def generate_daily_report(store: Store, report_dir: Path, now: Optional[datetime
     md_lines = [
         f"# Daily status report {start.strftime('%Y-%m-%d')}",
         "",
-        "| Service | SLA(OK%) | OK | WARN | CRITICAL | Latest |",
-        "|---|---:|---:|---:|---:|---|",
+        "| Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |",
+        "|---|---:|---:|---:|---:|---:|---|",
     ]
     for service, item in sorted(summary["services"].items(), key=lambda entry: entry[0]):
-        md_lines.append(f"| {service} | {item['sla']:.2f} | {item['ok']} | {item['warn']} | {item['critical']} | {item['latest_status']} |")
+        sla_text = f"{item['sla']:.2f}" if item["sla"] is not None else "n/a"
+        md_lines.append(
+            f"| {service} | {sla_text} | {item['ok']} | {item['warn']} | "
+            f"{item['critical']} | {item['unknown']} | {item['latest_status']} |"
+        )
     md_lines.append("")
     md_lines.append("## 最近 30 条事件")
     for service, item in sorted(summary["services"].items(), key=lambda entry: entry[0]):
@@ -974,58 +1002,408 @@ def generate_daily_report(store: Store, report_dir: Path, now: Optional[datetime
     return summary
 
 
+def _safe_level(level: Any) -> str:
+    value = str(level or "unknown").strip().lower()
+    return value if value in {"ok", "warn", "critical", "unknown"} else "unknown"
+
+
+def _level_rank(level: str) -> int:
+    return {"ok": 0, "unknown": 1, "warn": 2, "critical": 3}.get(_safe_level(level), 1)
+
+
+def _format_seconds(seconds: Any) -> str:
+    try:
+        total = int(seconds)
+    except Exception:
+        return "-"
+    if total < 60:
+        return f"{total}s"
+    minutes = total // 60
+    if minutes < 60:
+        return f"{minutes}m"
+    hours = minutes // 60
+    if hours < 48:
+        return f"{hours}h {minutes % 60}m"
+    return f"{hours // 24}d {hours % 24}h"
+
+
+def _html_link(url: Optional[str], label: str) -> str:
+    if not url:
+        return ""
+    safe_url = html.escape(str(url), quote=True)
+    return f"<a href=\"{safe_url}\" rel=\"noreferrer\" target=\"_blank\">{html.escape(label)}</a>"
+
+
+def _incident_name(incident: Dict[str, Any]) -> str:
+    return str(
+        incident.get("name")
+        or incident.get("summary")
+        or incident.get("message")
+        or incident.get("id")
+        or "Incident"
+    )
+
+
 def render_public_page(last_run_path: Path, public_dir: Path) -> None:
     if not last_run_path.exists():
         return
     with open(last_run_path, "r", encoding="utf-8") as fh:
         data = json.load(fh)
 
-    status_rows = []
-    for item in data.get("services", []):
-        status_rows.append(
+    services = sorted(
+        data.get("services", []),
+        key=lambda item: (-_level_rank(str(item.get("level"))), str(item.get("service", ""))),
+    )
+    level_counts = Counter(_safe_level(item.get("level")) for item in services)
+    worst_level = services[0].get("level", "unknown") if services else "unknown"
+    worst_level = _safe_level(worst_level)
+    generated_at = html.escape(str(data.get("generated_at", "")))
+    title_by_level = {
+        "ok": "All monitored services are operational",
+        "warn": "Some monitored services are degraded",
+        "critical": "One or more monitored services are in outage state",
+        "unknown": "Monitor has incomplete source data",
+    }
+
+    cards = []
+    incident_rows = []
+    for item in services:
+        level = _safe_level(item.get("level"))
+        service = html.escape(str(item.get("service", "")))
+        score = int(item.get("raw_score", 0) or 0)
+        status = html.escape(str(item.get("overall_status", "")))
+        source_url = str(item.get("source_url") or "")
+        incident_link = str(item.get("latest_incident_link") or "")
+        source_error = str(item.get("error") or "")
+        incidents = item.get("active_incidents") if isinstance(item.get("active_incidents"), list) else []
+        components = item.get("components") if isinstance(item.get("components"), list) else []
+        first_incident = incidents[0] if incidents and isinstance(incidents[0], dict) else {}
+        if first_incident:
+            incident_label = html.escape(_incident_name(first_incident))
+        elif source_error:
+            incident_label = f"Source error: {html.escape(source_error)}"
+        else:
+            incident_label = "No active incident"
+        active_count = len(incidents)
+        duration = _format_seconds(item.get("anomaly_seconds"))
+        confidence = f"{float(item.get('confidence', 0) or 0):.2f}"
+        updated_at = html.escape(str(item.get("updated_at", "")))
+        sampled_at = html.escape(str(item.get("time", "")))
+
+        impacted_components = []
+        for component in components:
+            if not isinstance(component, dict):
+                continue
+            component_status = str(component.get("status", "unknown"))
+            if level_from_indicator(component_status) != "ok" or level in {"warn", "critical"}:
+                impacted_components.append(
+                    f"{html.escape(str(component.get('name', 'Component')))} "
+                    f"<span>{html.escape(component_status)}</span>"
+                )
+        component_text = ", ".join(impacted_components[:4]) if impacted_components else "No impacted component reported"
+        if len(impacted_components) > 4:
+            component_text += f", +{len(impacted_components) - 4} more"
+
+        links = " ".join(
+            part
+            for part in [
+                _html_link(source_url, "official source"),
+                _html_link(incident_link, "incident"),
+            ]
+            if part
+        )
+
+        cards.append(
             f"""
-            <tr>
-              <td>{html.escape(item.get('service', ''))}</td>
-              <td class='{item.get('level','unknown')}'>{html.escape(item.get('level', 'unknown'))}</td>
-              <td>{int(item.get('raw_score', 0))}</td>
-              <td>{html.escape(str(item.get('overall_status', '')))}</td>
-              <td>{html.escape(str(item.get('updated_at', '')))}</td>
-            </tr>
+            <article class="service-card {level}">
+              <div class="service-topline">
+                <h2>{service}</h2>
+                <span class="badge {level}">{level.upper()}</span>
+              </div>
+              <div class="score-row">
+                <strong>{score}</strong>
+                <span>score</span>
+                <strong>{active_count}</strong>
+                <span>active</span>
+                <strong>{duration}</strong>
+                <span>duration</span>
+              </div>
+              <dl>
+                <div><dt>Status</dt><dd>{status}</dd></div>
+                <div><dt>Incident</dt><dd>{incident_label}</dd></div>
+                <div><dt>Components</dt><dd>{component_text}</dd></div>
+                <div><dt>Updated</dt><dd>{updated_at}</dd></div>
+                <div><dt>Sampled</dt><dd>{sampled_at}</dd></div>
+                <div><dt>Confidence</dt><dd>{confidence}</dd></div>
+              </dl>
+              <div class="links">{links}</div>
+            </article>
             """
         )
+        for incident in incidents[:5]:
+            if not isinstance(incident, dict):
+                continue
+            incident_rows.append(
+                f"""
+                <tr>
+                  <td>{service}</td>
+                  <td><span class="badge {level}">{level.upper()}</span></td>
+                  <td>{html.escape(_incident_name(incident))}</td>
+                  <td>{html.escape(str(incident.get('status') or incident.get('severity') or 'active'))}</td>
+                  <td>{_html_link(str(incident.get('link') or incident.get('url') or ''), 'open')}</td>
+                </tr>
+                """
+            )
 
     html_body = f"""<!doctype html>
 <html>
   <head>
     <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AI Services Stability Monitor</title>
     <style>
-      body {{ font-family: Arial, Helvetica, sans-serif; margin: 24px; }}
-      table {{ border-collapse: collapse; width: 100%; max-width: 1100px; }}
-      th, td {{ border: 1px solid #ccc; padding: 8px 10px; text-align: left; }}
-      .ok {{ color: #1f7a1f; font-weight: 700; }}
-      .warn {{ color: #a06d00; font-weight: 700; }}
-      .critical {{ color: #aa1f1f; font-weight: 700; }}
-      .unknown {{ color: #777; font-weight: 700; }}
+      :root {{
+        color-scheme: light;
+        --bg: #f6f7f9;
+        --panel: #ffffff;
+        --text: #18212f;
+        --muted: #657083;
+        --line: #d9dee7;
+        --ok: #137333;
+        --warn: #b06000;
+        --critical: #b3261e;
+        --unknown: #5f6368;
+      }}
+      * {{ box-sizing: border-box; }}
+      body {{
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }}
+      header {{
+        background: #ffffff;
+        border-bottom: 1px solid var(--line);
+      }}
+      .wrap {{
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+      }}
+      .hero {{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 24px;
+        align-items: end;
+        padding: 28px 0 22px;
+      }}
+      h1 {{
+        margin: 0 0 8px;
+        font-size: 28px;
+        line-height: 1.15;
+        letter-spacing: 0;
+      }}
+      .subtitle, .meta, dd, td {{
+        color: var(--muted);
+      }}
+      .subtitle, .meta {{
+        margin: 0;
+        font-size: 14px;
+      }}
+      .summary {{
+        display: flex;
+        gap: 8px;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+      }}
+      .badge {{
+        display: inline-flex;
+        align-items: center;
+        min-height: 24px;
+        border-radius: 999px;
+        padding: 3px 9px;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0;
+      }}
+      .badge.ok {{ color: var(--ok); background: #e7f4ea; }}
+      .badge.warn {{ color: var(--warn); background: #fff3dc; }}
+      .badge.critical {{ color: var(--critical); background: #fce8e6; }}
+      .badge.unknown {{ color: var(--unknown); background: #eceff3; }}
+      main {{
+        padding: 24px 0 42px;
+      }}
+      .status-banner {{
+        border: 1px solid var(--line);
+        border-left-width: 6px;
+        background: var(--panel);
+        padding: 16px 18px;
+        margin-bottom: 18px;
+      }}
+      .status-banner.ok {{ border-left-color: var(--ok); }}
+      .status-banner.warn {{ border-left-color: var(--warn); }}
+      .status-banner.critical {{ border-left-color: var(--critical); }}
+      .status-banner.unknown {{ border-left-color: var(--unknown); }}
+      .status-banner strong {{
+        display: block;
+        font-size: 18px;
+        margin-bottom: 4px;
+      }}
+      .grid {{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 14px;
+      }}
+      .service-card {{
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-top: 5px solid var(--unknown);
+        border-radius: 8px;
+        padding: 16px;
+      }}
+      .service-card.ok {{ border-top-color: var(--ok); }}
+      .service-card.warn {{ border-top-color: var(--warn); }}
+      .service-card.critical {{ border-top-color: var(--critical); }}
+      .service-topline {{
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+      }}
+      h2 {{
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.25;
+        letter-spacing: 0;
+      }}
+      .score-row {{
+        display: grid;
+        grid-template-columns: auto 1fr auto 1fr auto 1fr;
+        gap: 4px 8px;
+        align-items: baseline;
+        margin: 14px 0;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        padding: 12px 0;
+      }}
+      .score-row strong {{
+        font-size: 20px;
+      }}
+      .score-row span {{
+        color: var(--muted);
+        font-size: 12px;
+      }}
+      dl {{
+        margin: 0;
+        display: grid;
+        gap: 8px;
+      }}
+      dl div {{
+        display: grid;
+        grid-template-columns: 84px 1fr;
+        gap: 10px;
+      }}
+      dt {{
+        color: #3c4656;
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }}
+      dd {{
+        margin: 0;
+        overflow-wrap: anywhere;
+      }}
+      .links {{
+        min-height: 24px;
+        margin-top: 14px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }}
+      a {{
+        color: #0b57d0;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }}
+      section {{
+        margin-top: 24px;
+      }}
+      table {{
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--panel);
+        border: 1px solid var(--line);
+      }}
+      th, td {{
+        text-align: left;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+        font-size: 14px;
+      }}
+      th {{
+        color: #3c4656;
+        font-size: 12px;
+        text-transform: uppercase;
+      }}
+      @media (max-width: 760px) {{
+        .hero {{
+          grid-template-columns: 1fr;
+          align-items: start;
+        }}
+        .summary {{
+          justify-content: flex-start;
+        }}
+        table {{
+          display: block;
+          overflow-x: auto;
+        }}
+      }}
     </style>
   </head>
   <body>
-    <h1>AI services stability monitor</h1>
-    <p>Updated: {html.escape(data.get('generated_at',''))}</p>
-    <table>
-      <thead>
-        <tr><th>Service</th><th>Level</th><th>Score</th><th>Overall status</th><th>UpdatedAt</th></tr>
-      </thead>
-      <tbody>
-        {''.join(status_rows) if status_rows else '<tr><td colspan=\"5\">No data yet</td></tr>'}
-      </tbody>
-    </table>
+    <header>
+      <div class="wrap hero">
+        <div>
+          <h1>AI Services Official Status Monitor</h1>
+          <p class="subtitle">OpenAI, Claude, Gemini, Grok and AWS status from official public sources.</p>
+          <p class="meta">Last updated: {generated_at}</p>
+        </div>
+        <div class="summary">
+          <span class="badge critical">CRITICAL {level_counts.get('critical', 0)}</span>
+          <span class="badge warn">WARN {level_counts.get('warn', 0)}</span>
+          <span class="badge ok">OK {level_counts.get('ok', 0)}</span>
+          <span class="badge unknown">UNKNOWN {level_counts.get('unknown', 0)}</span>
+        </div>
+      </div>
+    </header>
+    <main class="wrap">
+      <div class="status-banner {worst_level}">
+        <strong>{html.escape(title_by_level.get(worst_level, title_by_level['unknown']))}</strong>
+        <span class="meta">Scheduled on GitHub Actions. Data is normalized from official source endpoints only.</span>
+      </div>
+      <div class="grid">
+        {''.join(cards) if cards else '<p>No data yet.</p>'}
+      </div>
+      <section>
+        <h2>Active Incidents</h2>
+        <table>
+          <thead>
+            <tr><th>Service</th><th>Level</th><th>Incident</th><th>Status</th><th>Link</th></tr>
+          </thead>
+          <tbody>
+            {''.join(incident_rows) if incident_rows else '<tr><td colspan="5">No active incident reported by official sources.</td></tr>'}
+          </tbody>
+        </table>
+      </section>
+    </main>
   </body>
 </html>"""
 
     public_dir.mkdir(parents=True, exist_ok=True)
     with open(public_dir / "index.html", "w", encoding="utf-8") as fh:
         fh.write(html_body)
+    with open(public_dir / "last_run.json", "w", encoding="utf-8") as fh:
+        json.dump(data, fh, ensure_ascii=False, indent=2)
 
 
 def load_services(config_path: Path) -> List[ServiceConfig]:
@@ -1063,13 +1441,13 @@ def run_once(store: Store, config_path: Path, output_dir: Path, public_dir: Path
                 service=config.name,
                 time=utcnow().replace(microsecond=0).isoformat().replace("+00:00", "Z"),
                 overall_status="error",
-                components=[],
-                active_incidents=[{"message": f"HTTP error: {exc.code} {exc.reason}", "status": "error"}],
-                raw_score=20,
+                components=[{"name": "Official source", "status": "unreachable"}],
+                active_incidents=[],
+                raw_score=score_from_level("unknown"),
                 confidence=0.4,
                 updated_at=utcnow().replace(microsecond=0).isoformat().replace("+00:00", "Z"),
                 source_url=config.source_url,
-                level="warn",
+                level="unknown",
                 error=f"{exc.code} {exc.reason}",
             )
         except Exception as exc:
@@ -1077,18 +1455,18 @@ def run_once(store: Store, config_path: Path, output_dir: Path, public_dir: Path
                 service=config.name,
                 time=utcnow().replace(microsecond=0).isoformat().replace("+00:00", "Z"),
                 overall_status="error",
-                components=[],
-                active_incidents=[{"message": str(exc), "status": "error"}],
-                raw_score=20,
+                components=[{"name": "Official source", "status": "unreachable"}],
+                active_incidents=[],
+                raw_score=score_from_level("unknown"),
                 confidence=0.3,
                 updated_at=utcnow().replace(microsecond=0).isoformat().replace("+00:00", "Z"),
                 source_url=config.source_url,
-                level="warn",
+                level="unknown",
                 error=str(exc),
             )
 
         if result.level == "unknown":
-            result.level = "warn"
+            result.raw_score = score_from_level("unknown")
         service_alerts = evaluate_transition(store, result)
         run_id = store.save_run(result)
         run_id_map[result.service] = run_id
