@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-06-19T02:49:23Z",
+  "generated_at": "2026-06-19T03:04:57Z",
   "window": {
     "start": "2026-06-18T00:00:00Z",
-    "end": "2026-06-19T02:49:23Z"
+    "end": "2026-06-19T03:04:57Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 2,
-      "measured_checks_24h": 2,
+      "total_checks_24h": 3,
+      "measured_checks_24h": 3,
       "ok": 0,
-      "warn": 2,
+      "warn": 3,
       "critical": 0,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-06-19T02:49:22Z",
+      "latest_at": "2026-06-19T03:04:56Z",
       "recent_incidents": [
+        {
+          "time": "2026-06-19T03:04:56Z",
+          "name": "FedRAMP workspaces and API orgs have degraded performance",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-06-19T02:49:22Z",
           "name": "FedRAMP workspaces and API orgs have degraded performance",
@@ -31,16 +37,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 2,
-      "measured_checks_24h": 2,
+      "total_checks_24h": 3,
+      "measured_checks_24h": 3,
       "ok": 0,
       "warn": 0,
-      "critical": 2,
+      "critical": 3,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-06-19T02:49:22Z",
+      "latest_at": "2026-06-19T03:04:56Z",
       "recent_incidents": [
+        {
+          "time": "2026-06-19T03:04:56Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
         {
           "time": "2026-06-19T02:49:22Z",
           "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
@@ -56,40 +68,52 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 2,
-      "measured_checks_24h": 2,
-      "ok": 2,
+      "total_checks_24h": 3,
+      "measured_checks_24h": 3,
+      "ok": 3,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-06-19T02:49:22Z",
+      "latest_at": "2026-06-19T03:04:56Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 2,
-      "measured_checks_24h": 2,
-      "ok": 2,
+      "total_checks_24h": 3,
+      "measured_checks_24h": 3,
+      "ok": 3,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-06-19T02:49:22Z",
+      "latest_at": "2026-06-19T03:04:56Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 2,
-      "measured_checks_24h": 2,
+      "total_checks_24h": 3,
+      "measured_checks_24h": 3,
       "ok": 0,
       "warn": 0,
-      "critical": 2,
+      "critical": 3,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-06-19T02:49:23Z",
+      "latest_at": "2026-06-19T03:04:57Z",
       "recent_incidents": [
+        {
+          "time": "2026-06-19T03:04:57Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-19T03:04:57Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
         {
           "time": "2026-06-19T02:49:23Z",
           "name": "Multiple services / UAE",

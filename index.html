@@ -58,6 +58,22 @@
         justify-content: flex-end;
         flex-wrap: wrap;
       }
+      .hero-side {
+        display: grid;
+        justify-items: end;
+        gap: 10px;
+      }
+      .header-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+      .header-actions a {
+        color: #0b57d0;
+        font-size: 14px;
+        font-weight: 700;
+      }
       .badge {
         display: inline-flex;
         align-items: center;
@@ -212,6 +228,12 @@
         .summary {
           justify-content: flex-start;
         }
+        .hero-side {
+          justify-items: start;
+        }
+        .header-actions {
+          justify-content: flex-start;
+        }
         table {
           display: block;
           overflow-x: auto;
@@ -225,13 +247,19 @@
         <div>
           <h1>AI 服务官方状态监控</h1>
           <p class="subtitle">OpenAI、Claude、Gemini、Grok、AWS 官方状态源聚合看板。</p>
-          <p class="meta">上次页面更新时间：2026-06-19 10:49:23 北京时间 / 2026-06-19 02:49:23 UTC</p>
+          <p class="meta">上次页面更新时间：2026-06-19 11:04:57 北京时间 / 2026-06-19 03:04:57 UTC</p>
         </div>
-        <div class="summary">
-          <span class="badge critical">严重 2</span>
-          <span class="badge warn">预警 1</span>
-          <span class="badge ok">正常 2</span>
-          <span class="badge unknown">未知 0</span>
+        <div class="hero-side">
+          <div class="summary">
+            <span class="badge critical">严重 2</span>
+            <span class="badge warn">预警 1</span>
+            <span class="badge ok">正常 2</span>
+            <span class="badge unknown">未知 0</span>
+          </div>
+          <nav class="header-actions" aria-label="项目链接">
+            <a href="https://github.com/study8677/aistatues" rel="noreferrer" target="_blank">GitHub 仓库</a>
+            <a href="https://github.com/study8677/aistatues/actions/workflows/monitor.yml" rel="noreferrer" target="_blank">Actions 运行记录</a>
+          </nav>
         </div>
       </div>
     </header>
@@ -251,7 +279,7 @@
         </div>
         <div class="update-item">
           <strong>下一次预计触发</strong>
-          <span class="meta">2026-06-19 10:50:00 北京时间 / 2026-06-19 02:50:00 UTC</span>
+          <span class="meta">2026-06-19 11:05:00 北京时间 / 2026-06-19 03:05:00 UTC</span>
         </div>
         <div class="update-item">
           <strong>实际生效</strong>
@@ -270,7 +298,7 @@
                 <span>分数</span>
                 <strong>2</strong>
                 <span>进行中</span>
-                <strong>29 分钟</strong>
+                <strong>44 分钟</strong>
                 <span>持续</span>
               </div>
               <dl>
@@ -278,7 +306,7 @@
                 <div><dt>事件</dt><dd>Multiple services / UAE</dd></div>
                 <div><dt>组件</dt><dd>Multiple services / UAE <span>degraded</span>, Multiple services / Bahrain <span>degraded</span></dd></div>
                 <div><dt>源更新时间</dt><dd>2026-04-30 15:25:54 北京时间 / 2026-04-30 07:25:54 UTC</dd></div>
-                <div><dt>采样时间</dt><dd>2026-06-19 10:49:23 北京时间 / 2026-06-19 02:49:23 UTC</dd></div>
+                <div><dt>采样时间</dt><dd>2026-06-19 11:04:57 北京时间 / 2026-06-19 03:04:57 UTC</dd></div>
                 <div><dt>置信度</dt><dd>0.97</dd></div>
               </dl>
               <div class="links"><a href="https://status.aws.amazon.com" rel="noreferrer" target="_blank">官方源</a></div>
@@ -294,7 +322,7 @@
                 <span>分数</span>
                 <strong>1</strong>
                 <span>进行中</span>
-                <strong>29 分钟</strong>
+                <strong>44 分钟</strong>
                 <span>持续</span>
               </div>
               <dl>
@@ -302,7 +330,7 @@
                 <div><dt>事件</dt><dd>We’ve suspended access to Claude Mythos 5 and Claude Fable 5</dd></div>
                 <div><dt>组件</dt><dd>claude.ai <span>operational</span>, Claude Console (platform.claude.com) <span>operational</span>, Claude API (api.anthropic.com) <span>operational</span>, Claude Code <span>operational</span>，另外 2 项</dd></div>
                 <div><dt>源更新时间</dt><dd>2026-06-19 10:28:56 北京时间 / 2026-06-19 02:28:56 UTC</dd></div>
-                <div><dt>采样时间</dt><dd>2026-06-19 10:49:22 北京时间 / 2026-06-19 02:49:22 UTC</dd></div>
+                <div><dt>采样时间</dt><dd>2026-06-19 11:04:56 北京时间 / 2026-06-19 03:04:56 UTC</dd></div>
                 <div><dt>置信度</dt><dd>0.98</dd></div>
               </dl>
               <div class="links"><a href="https://status.claude.com" rel="noreferrer" target="_blank">官方源</a> <a href="https://stspg.io/kqx0j625mrgv" rel="noreferrer" target="_blank">事件链接</a></div>
@@ -318,7 +346,7 @@
                 <span>分数</span>
                 <strong>1</strong>
                 <span>进行中</span>
-                <strong>29 分钟</strong>
+                <strong>44 分钟</strong>
                 <span>持续</span>
               </div>
               <dl>
@@ -326,7 +354,7 @@
                 <div><dt>事件</dt><dd>FedRAMP workspaces and API orgs have degraded performance</dd></div>
                 <div><dt>组件</dt><dd>CLI <span>operational</span>, Image Generation <span>operational</span>, Deep Research <span>operational</span>, ChatGPT Atlas <span>operational</span>，另外 21 项</dd></div>
                 <div><dt>源更新时间</dt><dd>2026-06-19 03:41:22 北京时间 / 2026-06-18 19:41:22 UTC</dd></div>
-                <div><dt>采样时间</dt><dd>2026-06-19 10:49:22 北京时间 / 2026-06-19 02:49:22 UTC</dd></div>
+                <div><dt>采样时间</dt><dd>2026-06-19 11:04:56 北京时间 / 2026-06-19 03:04:56 UTC</dd></div>
                 <div><dt>置信度</dt><dd>0.98</dd></div>
               </dl>
               <div class="links"><a href="https://status.openai.com" rel="noreferrer" target="_blank">官方源</a></div>
@@ -349,8 +377,8 @@
                 <div><dt>状态</dt><dd>operational</dd></div>
                 <div><dt>事件</dt><dd>暂无进行中事件</dd></div>
                 <div><dt>组件</dt><dd>官方源未报告受影响组件</dd></div>
-                <div><dt>源更新时间</dt><dd>2026-06-19 10:49:22 北京时间 / 2026-06-19 02:49:22 UTC</dd></div>
-                <div><dt>采样时间</dt><dd>2026-06-19 10:49:22 北京时间 / 2026-06-19 02:49:22 UTC</dd></div>
+                <div><dt>源更新时间</dt><dd>2026-06-19 11:04:56 北京时间 / 2026-06-19 03:04:56 UTC</dd></div>
+                <div><dt>采样时间</dt><dd>2026-06-19 11:04:56 北京时间 / 2026-06-19 03:04:56 UTC</dd></div>
                 <div><dt>置信度</dt><dd>0.95</dd></div>
               </dl>
               <div class="links"><a href="https://status.cloud.google.com" rel="noreferrer" target="_blank">官方源</a></div>
@@ -374,7 +402,7 @@
                 <div><dt>事件</dt><dd>暂无进行中事件</dd></div>
                 <div><dt>组件</dt><dd>官方源未报告受影响组件</dd></div>
                 <div><dt>源更新时间</dt><dd>2026-06-18 00:43:50 北京时间 / 2026-06-17 16:43:50 UTC</dd></div>
-                <div><dt>采样时间</dt><dd>2026-06-19 10:49:22 北京时间 / 2026-06-19 02:49:22 UTC</dd></div>
+                <div><dt>采样时间</dt><dd>2026-06-19 11:04:56 北京时间 / 2026-06-19 03:04:56 UTC</dd></div>
                 <div><dt>置信度</dt><dd>0.85</dd></div>
               </dl>
               <div class="links"><a href="https://status.x.ai/" rel="noreferrer" target="_blank">官方源</a></div>
