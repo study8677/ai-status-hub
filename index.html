@@ -2,67 +2,394 @@
 <html>
   <head>
     <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AI Services Stability Monitor</title>
     <style>
-      body { font-family: Arial, Helvetica, sans-serif; margin: 24px; }
-      table { border-collapse: collapse; width: 100%; max-width: 1100px; }
-      th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left; }
-      .ok { color: #1f7a1f; font-weight: 700; }
-      .warn { color: #a06d00; font-weight: 700; }
-      .critical { color: #aa1f1f; font-weight: 700; }
-      .unknown { color: #777; font-weight: 700; }
+      :root {
+        color-scheme: light;
+        --bg: #f6f7f9;
+        --panel: #ffffff;
+        --text: #18212f;
+        --muted: #657083;
+        --line: #d9dee7;
+        --ok: #137333;
+        --warn: #b06000;
+        --critical: #b3261e;
+        --unknown: #5f6368;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      header {
+        background: #ffffff;
+        border-bottom: 1px solid var(--line);
+      }
+      .wrap {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 24px;
+        align-items: end;
+        padding: 28px 0 22px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 28px;
+        line-height: 1.15;
+        letter-spacing: 0;
+      }
+      .subtitle, .meta, dd, td {
+        color: var(--muted);
+      }
+      .subtitle, .meta {
+        margin: 0;
+        font-size: 14px;
+      }
+      .summary {
+        display: flex;
+        gap: 8px;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        min-height: 24px;
+        border-radius: 999px;
+        padding: 3px 9px;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+      .badge.ok { color: var(--ok); background: #e7f4ea; }
+      .badge.warn { color: var(--warn); background: #fff3dc; }
+      .badge.critical { color: var(--critical); background: #fce8e6; }
+      .badge.unknown { color: var(--unknown); background: #eceff3; }
+      main {
+        padding: 24px 0 42px;
+      }
+      .status-banner {
+        border: 1px solid var(--line);
+        border-left-width: 6px;
+        background: var(--panel);
+        padding: 16px 18px;
+        margin-bottom: 18px;
+      }
+      .status-banner.ok { border-left-color: var(--ok); }
+      .status-banner.warn { border-left-color: var(--warn); }
+      .status-banner.critical { border-left-color: var(--critical); }
+      .status-banner.unknown { border-left-color: var(--unknown); }
+      .status-banner strong {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 4px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 14px;
+      }
+      .service-card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-top: 5px solid var(--unknown);
+        border-radius: 8px;
+        padding: 16px;
+      }
+      .service-card.ok { border-top-color: var(--ok); }
+      .service-card.warn { border-top-color: var(--warn); }
+      .service-card.critical { border-top-color: var(--critical); }
+      .service-topline {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+      }
+      h2 {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.25;
+        letter-spacing: 0;
+      }
+      .score-row {
+        display: grid;
+        grid-template-columns: auto 1fr auto 1fr auto 1fr;
+        gap: 4px 8px;
+        align-items: baseline;
+        margin: 14px 0;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        padding: 12px 0;
+      }
+      .score-row strong {
+        font-size: 20px;
+      }
+      .score-row span {
+        color: var(--muted);
+        font-size: 12px;
+      }
+      dl {
+        margin: 0;
+        display: grid;
+        gap: 8px;
+      }
+      dl div {
+        display: grid;
+        grid-template-columns: 84px 1fr;
+        gap: 10px;
+      }
+      dt {
+        color: #3c4656;
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      dd {
+        margin: 0;
+        overflow-wrap: anywhere;
+      }
+      .links {
+        min-height: 24px;
+        margin-top: 14px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      a {
+        color: #0b57d0;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+      section {
+        margin-top: 24px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--panel);
+        border: 1px solid var(--line);
+      }
+      th, td {
+        text-align: left;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+        font-size: 14px;
+      }
+      th {
+        color: #3c4656;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+      @media (max-width: 760px) {
+        .hero {
+          grid-template-columns: 1fr;
+          align-items: start;
+        }
+        .summary {
+          justify-content: flex-start;
+        }
+        table {
+          display: block;
+          overflow-x: auto;
+        }
+      }
     </style>
   </head>
   <body>
-    <h1>AI services stability monitor</h1>
-    <p>Updated: 2026-06-19T02:04:12Z</p>
-    <table>
-      <thead>
-        <tr><th>Service</th><th>Level</th><th>Score</th><th>Overall status</th><th>UpdatedAt</th></tr>
-      </thead>
-      <tbody>
+    <header>
+      <div class="wrap hero">
+        <div>
+          <h1>AI Services Official Status Monitor</h1>
+          <p class="subtitle">OpenAI, Claude, Gemini, Grok and AWS status from official public sources.</p>
+          <p class="meta">Last updated: 2026-06-19T02:20:03Z</p>
+        </div>
+        <div class="summary">
+          <span class="badge critical">CRITICAL 2</span>
+          <span class="badge warn">WARN 1</span>
+          <span class="badge ok">OK 2</span>
+          <span class="badge unknown">UNKNOWN 0</span>
+        </div>
+      </div>
+    </header>
+    <main class="wrap">
+      <div class="status-banner critical">
+        <strong>One or more monitored services are in outage state</strong>
+        <span class="meta">Scheduled on GitHub Actions. Data is normalized from official source endpoints only.</span>
+      </div>
+      <div class="grid">
         
-            <tr>
-              <td>OpenAI</td>
-              <td class='warn'>warn</td>
-              <td>70</td>
-              <td>minor</td>
-              <td>2026-06-18T19:41:22Z</td>
-            </tr>
+            <article class="service-card critical">
+              <div class="service-topline">
+                <h2>AWS</h2>
+                <span class="badge critical">CRITICAL</span>
+              </div>
+              <div class="score-row">
+                <strong>20</strong>
+                <span>score</span>
+                <strong>2</strong>
+                <span>active</span>
+                <strong>0s</strong>
+                <span>duration</span>
+              </div>
+              <dl>
+                <div><dt>Status</dt><dd>major_outage</dd></div>
+                <div><dt>Incident</dt><dd>Multiple services / UAE</dd></div>
+                <div><dt>Components</dt><dd>Multiple services / UAE <span>degraded</span>, Multiple services / Bahrain <span>degraded</span></dd></div>
+                <div><dt>Updated</dt><dd>2026-04-30T07:25:54Z</dd></div>
+                <div><dt>Sampled</dt><dd>2026-06-19T02:20:03Z</dd></div>
+                <div><dt>Confidence</dt><dd>0.97</dd></div>
+              </dl>
+              <div class="links"><a href="https://status.aws.amazon.com" rel="noreferrer" target="_blank">official source</a></div>
+            </article>
             
-            <tr>
-              <td>Claude</td>
-              <td class='critical'>critical</td>
-              <td>20</td>
-              <td>none</td>
-              <td>2026-06-19T01:48:46.687Z</td>
-            </tr>
+            <article class="service-card critical">
+              <div class="service-topline">
+                <h2>Claude</h2>
+                <span class="badge critical">CRITICAL</span>
+              </div>
+              <div class="score-row">
+                <strong>20</strong>
+                <span>score</span>
+                <strong>1</strong>
+                <span>active</span>
+                <strong>0s</strong>
+                <span>duration</span>
+              </div>
+              <dl>
+                <div><dt>Status</dt><dd>none</dd></div>
+                <div><dt>Incident</dt><dd>We’ve suspended access to Claude Mythos 5 and Claude Fable 5</dd></div>
+                <div><dt>Components</dt><dd>claude.ai <span>operational</span>, Claude Console (platform.claude.com) <span>operational</span>, Claude API (api.anthropic.com) <span>operational</span>, Claude Code <span>operational</span>, +2 more</dd></div>
+                <div><dt>Updated</dt><dd>2026-06-19T02:18:46.430Z</dd></div>
+                <div><dt>Sampled</dt><dd>2026-06-19T02:20:03Z</dd></div>
+                <div><dt>Confidence</dt><dd>0.98</dd></div>
+              </dl>
+              <div class="links"><a href="https://status.claude.com" rel="noreferrer" target="_blank">official source</a> <a href="https://stspg.io/kqx0j625mrgv" rel="noreferrer" target="_blank">incident</a></div>
+            </article>
             
-            <tr>
-              <td>Gemini</td>
-              <td class='ok'>ok</td>
-              <td>100</td>
-              <td>operational</td>
-              <td>2026-06-19T02:04:11Z</td>
-            </tr>
+            <article class="service-card warn">
+              <div class="service-topline">
+                <h2>OpenAI</h2>
+                <span class="badge warn">WARN</span>
+              </div>
+              <div class="score-row">
+                <strong>70</strong>
+                <span>score</span>
+                <strong>1</strong>
+                <span>active</span>
+                <strong>0s</strong>
+                <span>duration</span>
+              </div>
+              <dl>
+                <div><dt>Status</dt><dd>minor</dd></div>
+                <div><dt>Incident</dt><dd>FedRAMP workspaces and API orgs have degraded performance</dd></div>
+                <div><dt>Components</dt><dd>CLI <span>operational</span>, Image Generation <span>operational</span>, Deep Research <span>operational</span>, ChatGPT Atlas <span>operational</span>, +21 more</dd></div>
+                <div><dt>Updated</dt><dd>2026-06-18T19:41:22Z</dd></div>
+                <div><dt>Sampled</dt><dd>2026-06-19T02:20:02Z</dd></div>
+                <div><dt>Confidence</dt><dd>0.98</dd></div>
+              </dl>
+              <div class="links"><a href="https://status.openai.com" rel="noreferrer" target="_blank">official source</a></div>
+            </article>
             
-            <tr>
-              <td>Grok</td>
-              <td class='critical'>critical</td>
-              <td>20</td>
-              <td>major_outage</td>
-              <td>2026-06-17T16:43:50Z</td>
-            </tr>
+            <article class="service-card ok">
+              <div class="service-topline">
+                <h2>Gemini</h2>
+                <span class="badge ok">OK</span>
+              </div>
+              <div class="score-row">
+                <strong>100</strong>
+                <span>score</span>
+                <strong>0</strong>
+                <span>active</span>
+                <strong>-</strong>
+                <span>duration</span>
+              </div>
+              <dl>
+                <div><dt>Status</dt><dd>operational</dd></div>
+                <div><dt>Incident</dt><dd>No active incident</dd></div>
+                <div><dt>Components</dt><dd>No impacted component reported</dd></div>
+                <div><dt>Updated</dt><dd>2026-06-19T02:20:03Z</dd></div>
+                <div><dt>Sampled</dt><dd>2026-06-19T02:20:03Z</dd></div>
+                <div><dt>Confidence</dt><dd>0.95</dd></div>
+              </dl>
+              <div class="links"><a href="https://status.cloud.google.com" rel="noreferrer" target="_blank">official source</a></div>
+            </article>
             
-            <tr>
-              <td>AWS</td>
-              <td class='warn'>warn</td>
-              <td>70</td>
-              <td>degraded_performance</td>
-              <td>2026-06-19T02:04:12.071075Z</td>
-            </tr>
+            <article class="service-card ok">
+              <div class="service-topline">
+                <h2>Grok</h2>
+                <span class="badge ok">OK</span>
+              </div>
+              <div class="score-row">
+                <strong>100</strong>
+                <span>score</span>
+                <strong>0</strong>
+                <span>active</span>
+                <strong>-</strong>
+                <span>duration</span>
+              </div>
+              <dl>
+                <div><dt>Status</dt><dd>operational</dd></div>
+                <div><dt>Incident</dt><dd>No active incident</dd></div>
+                <div><dt>Components</dt><dd>No impacted component reported</dd></div>
+                <div><dt>Updated</dt><dd>2026-06-17T16:43:50Z</dd></div>
+                <div><dt>Sampled</dt><dd>2026-06-19T02:20:03Z</dd></div>
+                <div><dt>Confidence</dt><dd>0.85</dd></div>
+              </dl>
+              <div class="links"><a href="https://status.x.ai/" rel="noreferrer" target="_blank">official source</a></div>
+            </article>
             
-      </tbody>
-    </table>
+      </div>
+      <section>
+        <h2>Active Incidents</h2>
+        <table>
+          <thead>
+            <tr><th>Service</th><th>Level</th><th>Incident</th><th>Status</th><th>Link</th></tr>
+          </thead>
+          <tbody>
+            
+                <tr>
+                  <td>AWS</td>
+                  <td><span class="badge critical">CRITICAL</span></td>
+                  <td>Multiple services / UAE</td>
+                  <td>3</td>
+                  <td></td>
+                </tr>
+                
+                <tr>
+                  <td>AWS</td>
+                  <td><span class="badge critical">CRITICAL</span></td>
+                  <td>Multiple services / Bahrain</td>
+                  <td>3</td>
+                  <td></td>
+                </tr>
+                
+                <tr>
+                  <td>Claude</td>
+                  <td><span class="badge critical">CRITICAL</span></td>
+                  <td>We’ve suspended access to Claude Mythos 5 and Claude Fable 5</td>
+                  <td>monitoring</td>
+                  <td><a href="https://stspg.io/kqx0j625mrgv" rel="noreferrer" target="_blank">open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>OpenAI</td>
+                  <td><span class="badge warn">WARN</span></td>
+                  <td>FedRAMP workspaces and API orgs have degraded performance</td>
+                  <td>investigating</td>
+                  <td></td>
+                </tr>
+                
+          </tbody>
+        </table>
+      </section>
+    </main>
   </body>
 </html>
