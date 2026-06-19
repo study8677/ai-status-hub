@@ -200,7 +200,12 @@ class MonitorParserTests(unittest.TestCase):
             write_last_run(output_dir, [self.sample_result()], [])
             render_public_page(output_dir / "last_run.json", public_dir)
 
-            self.assertIn("AI Status Hub", (public_dir / "index.html").read_text(encoding="utf-8"))
+            html = (public_dir / "index.html").read_text(encoding="utf-8")
+            self.assertIn("AI Status Hub", html)
+            self.assertIn('data-lang-button="en"', html)
+            self.assertIn('data-lang-button="zh"', html)
+            self.assertIn("AI 服务官方状态中心", html)
+            self.assertIn("ai-status-hub-language", html)
             for name in ["robots.txt", "sitemap.xml", "favicon.svg", "status.svg", "og.svg", "last_run.json", "schema/last_run.schema.json"]:
                 self.assertTrue((public_dir / name).exists(), name)
 

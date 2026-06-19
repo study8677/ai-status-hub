@@ -1014,34 +1014,39 @@ def _level_rank(level: str) -> int:
     return {"ok": 0, "unknown": 1, "warn": 2, "critical": 3}.get(_safe_level(level), 1)
 
 
-def _format_seconds(seconds: Any) -> str:
+def _format_seconds(seconds: Any, lang: str = "zh") -> str:
     try:
         total = int(seconds)
     except Exception:
         return "-"
     if total < 60:
-        return f"{total} 秒"
+        return f"{total}s" if lang == "en" else f"{total} 秒"
     minutes = total // 60
     if minutes < 60:
-        return f"{minutes} 分钟"
+        return f"{minutes} min" if lang == "en" else f"{minutes} 分钟"
     hours = minutes // 60
     if hours < 48:
-        return f"{hours} 小时 {minutes % 60} 分钟"
-    return f"{hours // 24} 天 {hours % 24} 小时"
+        return f"{hours}h {minutes % 60}m" if lang == "en" else f"{hours} 小时 {minutes % 60} 分钟"
+    return f"{hours // 24}d {hours % 24}h" if lang == "en" else f"{hours // 24} 天 {hours % 24} 小时"
 
 
-def _display_time(value: Any) -> str:
+def _display_time(value: Any, lang: str = "zh") -> str:
     dt = parse_datetime(value)
     if not dt:
         return html.escape(str(value or "-"))
     beijing = dt.astimezone(timezone(timedelta(hours=8)))
+    if lang == "en":
+        return (
+            f"{html.escape(beijing.strftime('%Y-%m-%d %H:%M:%S'))} Beijing"
+            f" / {html.escape(dt.strftime('%Y-%m-%d %H:%M:%S'))} UTC"
+        )
     return (
         f"{html.escape(beijing.strftime('%Y-%m-%d %H:%M:%S'))} 北京时间"
         f" / {html.escape(dt.strftime('%Y-%m-%d %H:%M:%S'))} UTC"
     )
 
 
-def _next_schedule_time(value: Any) -> str:
+def _next_schedule_time(value: Any, lang: str = "zh") -> str:
     dt = parse_datetime(value)
     if not dt:
         return "-"
@@ -1051,7 +1056,7 @@ def _next_schedule_time(value: Any) -> str:
         next_dt = (base.replace(minute=0) + timedelta(hours=1))
     else:
         next_dt = base.replace(minute=next_minute)
-    return _display_time(next_dt.isoformat().replace("+00:00", "Z"))
+    return _display_time(next_dt.isoformat().replace("+00:00", "Z"), lang)
 
 
 def _level_label(level: str) -> str:
@@ -1068,6 +1073,21 @@ def _html_link(url: Optional[str], label: str) -> str:
         return ""
     safe_url = html.escape(str(url), quote=True)
     return f"<a href=\"{safe_url}\" rel=\"noreferrer\" target=\"_blank\">{html.escape(label)}</a>"
+
+
+def _i18n_attrs(en: str, zh: str) -> str:
+    return f"data-i18n-en=\"{html.escape(en, quote=True)}\" data-i18n-zh=\"{html.escape(zh, quote=True)}\""
+
+
+def _i18n_text(en: str, zh: str) -> str:
+    return f"<span {_i18n_attrs(en, zh)}>{html.escape(en)}</span>"
+
+
+def _html_link_i18n(url: Optional[str], en: str, zh: str) -> str:
+    if not url:
+        return ""
+    safe_url = html.escape(str(url), quote=True)
+    return f"<a href=\"{safe_url}\" rel=\"noreferrer\" target=\"_blank\" {_i18n_attrs(en, zh)}>{html.escape(en)}</a>"
 
 
 def _incident_name(incident: Dict[str, Any]) -> str:
@@ -1185,8 +1205,10 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
     worst_level = services[0].get("level", "unknown") if services else "unknown"
     worst_level = _safe_level(worst_level)
     generated_at_raw = str(data.get("generated_at", ""))
-    generated_at = _display_time(generated_at_raw)
-    next_schedule_at = _next_schedule_time(generated_at_raw)
+    generated_at_en = _display_time(generated_at_raw, "en")
+    generated_at_zh = _display_time(generated_at_raw, "zh")
+    next_schedule_at_en = _next_schedule_time(generated_at_raw, "en")
+    next_schedule_at_zh = _next_schedule_time(generated_at_raw, "zh")
     repo_url = "https://github.com/study8677/ai-status-hub"
     actions_url = "https://github.com/study8677/ai-status-hub/actions/workflows/monitor.yml"
     site_url = SITE_URL
@@ -1195,10 +1217,10 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
     og_url = f"{SITE_URL}og.svg"
     favicon_url = f"{SITE_URL}favicon.svg"
     title_by_level = {
-        "ok": "All monitored providers are operational",
-        "warn": "Some monitored providers report degraded service",
-        "critical": "At least one monitored provider reports a major incident",
-        "unknown": "Some official source data is incomplete",
+        "ok": ("All monitored providers are operational", "所有监控服务均为正常"),
+        "warn": ("Some monitored providers report degraded service", "部分监控服务出现降级或预警"),
+        "critical": ("At least one monitored provider reports a major incident", "至少一个监控服务处于严重异常"),
+        "unknown": ("Some official source data is incomplete", "监控源数据不完整"),
     }
 
     cards = []
@@ -1215,16 +1237,22 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
         components = item.get("components") if isinstance(item.get("components"), list) else []
         first_incident = incidents[0] if incidents and isinstance(incidents[0], dict) else {}
         if first_incident:
-            incident_label = html.escape(_incident_name(first_incident))
+            incident_label_en = _incident_name(first_incident)
+            incident_label_zh = incident_label_en
         elif source_error:
-            incident_label = f"Official source error: {html.escape(source_error)}"
+            incident_label_en = f"Official source error: {source_error}"
+            incident_label_zh = f"官方源错误：{source_error}"
         else:
-            incident_label = "No active incident reported"
+            incident_label_en = "No active incident reported"
+            incident_label_zh = "暂无进行中事件"
         active_count = len(incidents)
-        duration = _format_seconds(item.get("anomaly_seconds"))
+        duration_en = _format_seconds(item.get("anomaly_seconds"), "en")
+        duration_zh = _format_seconds(item.get("anomaly_seconds"), "zh")
         confidence = f"{float(item.get('confidence', 0) or 0):.2f}"
-        updated_at = _display_time(item.get("updated_at"))
-        sampled_at = _display_time(item.get("time"))
+        updated_at_en = _display_time(item.get("updated_at"), "en")
+        updated_at_zh = _display_time(item.get("updated_at"), "zh")
+        sampled_at_en = _display_time(item.get("time"), "en")
+        sampled_at_zh = _display_time(item.get("time"), "zh")
 
         impacted_components = []
         for component in components:
@@ -1232,46 +1260,46 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
                 continue
             component_status = str(component.get("status", "unknown"))
             if level_from_indicator(component_status) != "ok" or level in {"warn", "critical"}:
-                impacted_components.append(
-                    f"{html.escape(str(component.get('name', 'Component')))} "
-                    f"<span>{html.escape(component_status)}</span>"
-                )
-        component_text = ", ".join(impacted_components[:4]) if impacted_components else "No affected component reported"
+                impacted_components.append(f"{str(component.get('name', 'Component'))} {component_status}")
+        component_text_en = ", ".join(impacted_components[:4]) if impacted_components else "No affected component reported"
+        component_text_zh = ", ".join(impacted_components[:4]) if impacted_components else "官方源未报告受影响组件"
         if len(impacted_components) > 4:
-            component_text += f", plus {len(impacted_components) - 4} more"
+            component_text_en += f", plus {len(impacted_components) - 4} more"
+            component_text_zh += f"，另外 {len(impacted_components) - 4} 项"
 
         links = " ".join(
             part
             for part in [
-                _html_link(source_url, "Official source"),
-                _html_link(incident_link, "Incident link"),
+                _html_link_i18n(source_url, "Official source", "官方源"),
+                _html_link_i18n(incident_link, "Incident link", "事件链接"),
             ]
             if part
         )
-        badge_text = f"{_level_label(level)} {level.upper()}"
+        badge_text_en = level.upper()
+        badge_text_zh = f"{_level_label(level)} {level.upper()}"
 
         cards.append(
             f"""
             <article class="service-card {level}">
               <div class="service-topline">
                 <h2>{service}</h2>
-                <span class="badge {level}">{badge_text}</span>
+                <span class="badge {level}" {_i18n_attrs(badge_text_en, badge_text_zh)}>{badge_text_en}</span>
               </div>
               <div class="score-row">
                 <strong>{score}</strong>
-                <span>Score</span>
+                {_i18n_text("Score", "分数")}
                 <strong>{active_count}</strong>
-                <span>Active</span>
-                <strong>{duration}</strong>
-                <span>Duration</span>
+                {_i18n_text("Active", "进行中")}
+                <strong {_i18n_attrs(duration_en, duration_zh)}>{duration_en}</strong>
+                {_i18n_text("Duration", "持续")}
               </div>
               <dl>
-                <div><dt>Status</dt><dd>{status}</dd></div>
-                <div><dt>Incident</dt><dd>{incident_label}</dd></div>
-                <div><dt>Components</dt><dd>{component_text}</dd></div>
-                <div><dt>Source updated</dt><dd>{updated_at}</dd></div>
-                <div><dt>Sampled</dt><dd>{sampled_at}</dd></div>
-                <div><dt>Confidence</dt><dd>{confidence}</dd></div>
+                <div><dt {_i18n_attrs("Status", "状态")}>Status</dt><dd>{status}</dd></div>
+                <div><dt {_i18n_attrs("Incident", "事件")}>Incident</dt><dd {_i18n_attrs(incident_label_en, incident_label_zh)}>{html.escape(incident_label_en)}</dd></div>
+                <div><dt {_i18n_attrs("Components", "组件")}>Components</dt><dd {_i18n_attrs(component_text_en, component_text_zh)}>{html.escape(component_text_en)}</dd></div>
+                <div><dt {_i18n_attrs("Source updated", "源更新时间")}>Source updated</dt><dd {_i18n_attrs(updated_at_en, updated_at_zh)}>{updated_at_en}</dd></div>
+                <div><dt {_i18n_attrs("Sampled", "采样时间")}>Sampled</dt><dd {_i18n_attrs(sampled_at_en, sampled_at_zh)}>{sampled_at_en}</dd></div>
+                <div><dt {_i18n_attrs("Confidence", "置信度")}>Confidence</dt><dd>{confidence}</dd></div>
               </dl>
               <div class="links">{links}</div>
             </article>
@@ -1284,16 +1312,18 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
                 f"""
                 <tr>
                   <td>{service}</td>
-                  <td><span class="badge {level}">{badge_text}</span></td>
+                  <td><span class="badge {level}" {_i18n_attrs(badge_text_en, badge_text_zh)}>{badge_text_en}</span></td>
                   <td>{html.escape(_incident_name(incident))}</td>
                   <td>{html.escape(str(incident.get('status') or incident.get('severity') or 'active'))}</td>
-                  <td>{_html_link(str(incident.get('link') or incident.get('url') or ''), 'Open')}</td>
+                  <td>{_html_link_i18n(str(incident.get('link') or incident.get('url') or ''), 'Open', '打开')}</td>
                 </tr>
                 """
             )
 
+    status_title_en, status_title_zh = title_by_level.get(worst_level, title_by_level["unknown"])
+
     html_body = f"""<!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -1380,6 +1410,31 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
         color: #0b57d0;
         font-size: 14px;
         font-weight: 700;
+      }}
+      .lang-switch {{
+        display: inline-flex;
+        gap: 4px;
+        padding: 3px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #f6f7f9;
+      }}
+      .lang-switch button {{
+        min-height: 28px;
+        border: 0;
+        border-radius: 6px;
+        background: transparent;
+        color: var(--muted);
+        cursor: pointer;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 800;
+        padding: 3px 9px;
+      }}
+      .lang-switch button[aria-pressed="true"] {{
+        background: #ffffff;
+        color: #0b57d0;
+        box-shadow: 0 1px 2px rgba(24, 33, 47, 0.12);
       }}
       .cta-row {{
         display: flex;
@@ -1629,107 +1684,151 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
       <div class="wrap hero">
         <div>
           <h1>AI Status Hub</h1>
-          <p class="subtitle">Official-source AI provider outage/status dashboard for OpenAI, Claude, Gemini, Grok, and AWS.</p>
-          <p class="meta">Last updated: {generated_at}</p>
+          <p class="subtitle" {_i18n_attrs("Official-source AI provider outage/status dashboard for OpenAI, Claude, Gemini, Grok, and AWS.", "AI 服务官方状态中心，聚合 OpenAI、Claude、Gemini、Grok、AWS 官方状态源。")}>Official-source AI provider outage/status dashboard for OpenAI, Claude, Gemini, Grok, and AWS.</p>
+          <p class="meta"><span {_i18n_attrs("Last updated:", "上次页面更新时间：")}>Last updated:</span> <span {_i18n_attrs(generated_at_en, generated_at_zh)}>{generated_at_en}</span></p>
           <div class="cta-row">
-            <a class="cta primary" href="{html.escape(repo_url, quote=True)}" rel="noreferrer" target="_blank">Star on GitHub</a>
-            <a class="cta" href="{html.escape(docs_url, quote=True)}" rel="noreferrer" target="_blank">Fork and self-host</a>
-            <a class="cta" href="{html.escape(api_url, quote=True)}" rel="noreferrer" target="_blank">JSON API</a>
+            <a class="cta primary" href="{html.escape(repo_url, quote=True)}" rel="noreferrer" target="_blank" {_i18n_attrs("Star on GitHub", "在 GitHub 上 Star")}>Star on GitHub</a>
+            <a class="cta" href="{html.escape(docs_url, quote=True)}" rel="noreferrer" target="_blank" {_i18n_attrs("Fork and self-host", "Fork 后自托管")}>Fork and self-host</a>
+            <a class="cta" href="{html.escape(api_url, quote=True)}" rel="noreferrer" target="_blank" {_i18n_attrs("JSON API", "查看 JSON API")}>JSON API</a>
           </div>
         </div>
         <div class="hero-side">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-lang-button="en" aria-pressed="true">EN</button>
+            <button type="button" data-lang-button="zh" aria-pressed="false">中文</button>
+          </div>
           <div class="summary">
-            <span class="badge critical">Critical {level_counts.get('critical', 0)}</span>
-            <span class="badge warn">Warn {level_counts.get('warn', 0)}</span>
-            <span class="badge ok">OK {level_counts.get('ok', 0)}</span>
-            <span class="badge unknown">Unknown {level_counts.get('unknown', 0)}</span>
+            <span class="badge critical" {_i18n_attrs(f"Critical {level_counts.get('critical', 0)}", f"严重 {level_counts.get('critical', 0)}")}>Critical {level_counts.get('critical', 0)}</span>
+            <span class="badge warn" {_i18n_attrs(f"Warn {level_counts.get('warn', 0)}", f"预警 {level_counts.get('warn', 0)}")}>Warn {level_counts.get('warn', 0)}</span>
+            <span class="badge ok" {_i18n_attrs(f"OK {level_counts.get('ok', 0)}", f"正常 {level_counts.get('ok', 0)}")}>OK {level_counts.get('ok', 0)}</span>
+            <span class="badge unknown" {_i18n_attrs(f"Unknown {level_counts.get('unknown', 0)}", f"未知 {level_counts.get('unknown', 0)}")}>Unknown {level_counts.get('unknown', 0)}</span>
           </div>
           <nav class="header-actions" aria-label="Project links">
-            {_html_link(repo_url, "GitHub repo")}
-            {_html_link(actions_url, "Actions runs")}
+            {_html_link_i18n(repo_url, "GitHub repo", "GitHub 仓库")}
+            {_html_link_i18n(actions_url, "Actions runs", "Actions 运行记录")}
           </nav>
         </div>
       </div>
     </header>
     <main class="wrap">
       <div class="status-banner {worst_level}">
-        <strong>{html.escape(title_by_level.get(worst_level, title_by_level['unknown']))}</strong>
-        <span class="meta">Data comes only from official provider status sources, sampled by GitHub Actions and published to GitHub Pages.</span>
+        <strong {_i18n_attrs(status_title_en, status_title_zh)}>{html.escape(status_title_en)}</strong>
+        <span class="meta" {_i18n_attrs("Data comes only from official provider status sources, sampled by GitHub Actions and published to GitHub Pages.", "数据仅来自官方状态源，由 GitHub Actions 定时采样并发布到 GitHub Pages。")}>Data comes only from official provider status sources, sampled by GitHub Actions and published to GitHub Pages.</span>
       </div>
       <div class="value-grid">
         <div class="value-card">
-          <strong>Official sources only</strong>
-          <p>Uses provider status pages, RSS feeds, and public incident APIs instead of noisy third-party aggregators.</p>
+          <strong {_i18n_attrs("Official sources only", "官方源优先")}>Official sources only</strong>
+          <p {_i18n_attrs("Uses provider status pages, RSS feeds, and public incident APIs instead of noisy third-party aggregators.", "使用 provider 官方状态页、RSS 或公开事件接口，避免第三方聚合造成的噪声。")}>Uses provider status pages, RSS feeds, and public incident APIs instead of noisy third-party aggregators.</p>
         </div>
         <div class="value-card">
-          <strong>Free GitHub hosting</strong>
-          <p>GitHub Actions samples providers, while GitHub Pages publishes the dashboard and JSON files.</p>
+          <strong {_i18n_attrs("Free GitHub hosting", "免费托管运行")}>Free GitHub hosting</strong>
+          <p {_i18n_attrs("GitHub Actions samples providers, while GitHub Pages publishes the dashboard and JSON files.", "GitHub Actions 负责采样，GitHub Pages 发布页面和 JSON 文件。")}>GitHub Actions samples providers, while GitHub Pages publishes the dashboard and JSON files.</p>
         </div>
         <div class="value-card">
-          <strong>Reusable outputs</strong>
-          <p>Publishes last_run.json, events.ndjson, and daily reports for dashboards, bots, and automations.</p>
+          <strong {_i18n_attrs("Reusable outputs", "可复用输出")}>Reusable outputs</strong>
+          <p {_i18n_attrs("Publishes last_run.json, events.ndjson, and daily reports for dashboards, bots, and automations.", "发布 last_run.json、events.ndjson 和日报，方便接入自己的监控或机器人。")}>Publishes last_run.json, events.ndjson, and daily reports for dashboards, bots, and automations.</p>
         </div>
         <div class="value-card">
-          <strong>Clear signal boundary</strong>
-          <p>Official source failures show as unknown instead of being converted into provider outages.</p>
+          <strong {_i18n_attrs("Clear signal boundary", "低误报边界")}>Clear signal boundary</strong>
+          <p {_i18n_attrs("Official source failures show as unknown instead of being converted into provider outages.", "官方源抓取失败显示为未知，不直接伪造成服务故障。")}>Official source failures show as unknown instead of being converted into provider outages.</p>
         </div>
       </div>
       <div class="update-grid">
         <div class="update-item">
-          <strong>Update cadence</strong>
-          <span class="meta">Runs every 5 minutes.</span>
+          <strong {_i18n_attrs("Update cadence", "更新频率")}>Update cadence</strong>
+          <span class="meta" {_i18n_attrs("Runs every 5 minutes.", "每 5 分钟触发一次。")}>Runs every 5 minutes.</span>
         </div>
         <div class="update-item">
-          <strong>Trigger minutes</strong>
-          <span class="meta">Every hour at 00, 05, 10, 15, 20, 25, 30, 35, 40, 45, 50, and 55.</span>
+          <strong {_i18n_attrs("Trigger minutes", "触发时间")}>Trigger minutes</strong>
+          <span class="meta" {_i18n_attrs("Every hour at 00, 05, 10, 15, 20, 25, 30, 35, 40, 45, 50, and 55.", "北京时间每小时 00、05、10、15、20、25、30、35、40、45、50、55 分。")}>Every hour at 00, 05, 10, 15, 20, 25, 30, 35, 40, 45, 50, and 55.</span>
         </div>
         <div class="update-item">
-          <strong>Next estimated run</strong>
-          <span class="meta">{next_schedule_at}</span>
+          <strong {_i18n_attrs("Next estimated run", "下一次预计触发")}>Next estimated run</strong>
+          <span class="meta" {_i18n_attrs(next_schedule_at_en, next_schedule_at_zh)}>{next_schedule_at_en}</span>
         </div>
         <div class="update-item">
-          <strong>Visible freshness</strong>
-          <span class="meta">Usually updates seconds to minutes after a trigger, depending on Actions queueing and Pages cache.</span>
+          <strong {_i18n_attrs("Visible freshness", "实际生效")}>Visible freshness</strong>
+          <span class="meta" {_i18n_attrs("Usually updates seconds to minutes after a trigger, depending on Actions queueing and Pages cache.", "通常在触发后几十秒到数分钟内完成，取决于 GitHub Actions 排队和 Pages 缓存。")}>Usually updates seconds to minutes after a trigger, depending on Actions queueing and Pages cache.</span>
         </div>
       </div>
       <div class="grid">
-        {''.join(cards) if cards else '<p>No data yet.</p>'}
+        {''.join(cards) if cards else f'<p {_i18n_attrs("No data yet.", "暂无数据。")}>No data yet.</p>'}
       </div>
       <section>
         <div class="section-head">
-          <h2>Public outputs</h2>
-          <span class="meta">Readable by scripts, dashboards, and bots.</span>
+          <h2 {_i18n_attrs("Public outputs", "公开输出")}>Public outputs</h2>
+          <span class="meta" {_i18n_attrs("Readable by scripts, dashboards, and bots.", "可直接被脚本、看板或机器人读取。")}>Readable by scripts, dashboards, and bots.</span>
         </div>
         <div class="endpoint-grid">
           <div class="endpoint">
-            <strong>Latest snapshot</strong>
+            <strong {_i18n_attrs("Latest snapshot", "最新快照")}>Latest snapshot</strong>
             <code>GET /last_run.json</code>
           </div>
           <div class="endpoint">
-            <strong>Event stream</strong>
+            <strong {_i18n_attrs("Event stream", "事件流")}>Event stream</strong>
             <code>GET /output/events.ndjson</code>
           </div>
           <div class="endpoint">
-            <strong>Daily report</strong>
+            <strong {_i18n_attrs("Daily report", "日报")}>Daily report</strong>
             <code>GET /reports/daily-report-YYYY-MM-DD.json</code>
           </div>
         </div>
       </section>
       <section>
         <div class="section-head">
-          <h2>Active incidents</h2>
-          <span class="meta">{_html_link(repo_url, "Star / Fork on GitHub")}</span>
+          <h2 {_i18n_attrs("Active incidents", "进行中事件")}>Active incidents</h2>
+          <span class="meta">{_html_link_i18n(repo_url, "Star / Fork on GitHub", "去 GitHub Star / Fork")}</span>
         </div>
         <table>
           <thead>
-            <tr><th>Service</th><th>Level</th><th>Incident</th><th>Status</th><th>Link</th></tr>
+            <tr><th {_i18n_attrs("Service", "服务")}>Service</th><th {_i18n_attrs("Level", "等级")}>Level</th><th {_i18n_attrs("Incident", "事件")}>Incident</th><th {_i18n_attrs("Status", "状态")}>Status</th><th {_i18n_attrs("Link", "链接")}>Link</th></tr>
           </thead>
           <tbody>
-            {''.join(incident_rows) if incident_rows else '<tr><td colspan="5">No active incident reported by official sources.</td></tr>'}
+            {''.join(incident_rows) if incident_rows else f'<tr><td colspan="5" {_i18n_attrs("No active incident reported by official sources.", "官方源未报告进行中事件。")}>No active incident reported by official sources.</td></tr>'}
           </tbody>
         </table>
       </section>
     </main>
+    <script>
+      (() => {{
+        const storageKey = "ai-status-hub-language";
+        const buttons = Array.from(document.querySelectorAll("[data-lang-button]"));
+        const getStoredLanguage = () => {{
+          try {{
+            return localStorage.getItem(storageKey);
+          }} catch (error) {{
+            return null;
+          }}
+        }};
+        const setStoredLanguage = (language) => {{
+          try {{
+            localStorage.setItem(storageKey, language);
+          }} catch (error) {{}}
+        }};
+        const preferredLanguage = () => {{
+          const stored = getStoredLanguage();
+          if (stored === "en" || stored === "zh") {{
+            return stored;
+          }}
+          return (navigator.language || "").toLowerCase().startsWith("zh") ? "zh" : "en";
+        }};
+        const applyLanguage = (language) => {{
+          const nextLanguage = language === "zh" ? "zh" : "en";
+          document.documentElement.lang = nextLanguage === "zh" ? "zh-CN" : "en";
+          document.querySelectorAll("[data-i18n-en][data-i18n-zh]").forEach((node) => {{
+            node.textContent = nextLanguage === "zh" ? node.dataset.i18nZh : node.dataset.i18nEn;
+          }});
+          buttons.forEach((button) => {{
+            button.setAttribute("aria-pressed", button.dataset.langButton === nextLanguage ? "true" : "false");
+          }});
+          setStoredLanguage(nextLanguage);
+        }};
+        buttons.forEach((button) => {{
+          button.addEventListener("click", () => applyLanguage(button.dataset.langButton));
+        }});
+        applyLanguage(preferredLanguage());
+      }})();
+    </script>
   </body>
 </html>"""
 
