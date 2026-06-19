@@ -1,0 +1,67 @@
+name: AI Services Status Monitor
+
+on:
+  schedule:
+    # GitHub Actions 的 cron 最短间隔是 5 分钟；如需 1 分钟请改为自托管 runner + 外部调度
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run monitor
+        run: |
+          python3 monitor.py run
+          python3 monitor.py report
+
+      - name: Publish latest page snapshot
+        if: always()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          keep_files: true
+
+      - name: Save snapshots to repository
+        if: always()
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout "$BRANCH_NAME"
+          REPORT_DATE=$(date -u +%Y-%m-%d)
+
+          git add -f \
+            data/monitor.db \
+            output/last_run.json \
+            output/events.ndjson \
+            public/index.html \
+            "reports/daily-report-${REPORT_DATE}.json" \
+            "reports/daily-report-${REPORT_DATE}.md"
+
+          if git diff --cached --quiet; then
+            echo "No snapshot changes, skip commit."
+            exit 0
+          fi
+
+          git commit -m "chore(monitor): refresh snapshots ${REPORT_DATE}"
+          git push origin "HEAD:${BRANCH_NAME}"

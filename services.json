@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "name": "OpenAI",
+      "kind": "statuspage",
+      "summary_url": "https://status.openai.com/api/v2/summary.json",
+      "source_url": "https://status.openai.com",
+      "enabled": true
+    },
+    {
+      "name": "Claude",
+      "kind": "statuspage",
+      "summary_url": "https://status.claude.com/api/v2/summary.json",
+      "source_url": "https://status.claude.com",
+      "enabled": true
+    },
+    {
+      "name": "Gemini",
+      "kind": "gemini",
+      "summary_url": "https://status.cloud.google.com/incidents.json",
+      "source_url": "https://status.cloud.google.com",
+      "enabled": true
+    },
+    {
+      "name": "Grok",
+      "kind": "grok",
+      "summary_url": "https://status.x.ai/",
+      "source_url": "https://status.x.ai/",
+      "feed_url": "https://status.x.ai/feed.xml",
+      "enabled": true
+    },
+    {
+      "name": "AWS",
+      "kind": "aws",
+      "summary_url": "https://health.aws.amazon.com/public/currentevents",
+      "source_url": "https://status.aws.amazon.com",
+      "enabled": true
+    }
+  ]
+}
