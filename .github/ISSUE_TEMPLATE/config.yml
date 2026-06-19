@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Live dashboard
+    url: https://study8677.github.io/aistatues/
+    about: Check the current published status page.
+  - name: GitHub Actions
+    url: https://github.com/study8677/aistatues/actions/workflows/monitor.yml
+    about: Inspect hosted monitor runs.

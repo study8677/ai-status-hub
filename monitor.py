@@ -1095,6 +1095,8 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
     next_schedule_at = _next_schedule_time(generated_at_raw)
     repo_url = "https://github.com/study8677/aistatues"
     actions_url = "https://github.com/study8677/aistatues/actions/workflows/monitor.yml"
+    api_url = "https://study8677.github.io/aistatues/last_run.json"
+    docs_url = "https://github.com/study8677/aistatues/blob/main/docs/SELF_HOST.md"
     title_by_level = {
         "ok": "当前监控服务均为正常",
         "warn": "部分监控服务出现降级或预警",
@@ -1199,6 +1201,12 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AI 服务官方状态监控</title>
+    <meta name="description" content="官方状态源优先的 AI 服务稳定性看板，覆盖 OpenAI、Claude、Gemini、Grok、AWS，并发布 JSON API 和日报。" />
+    <meta property="og:title" content="AI 服务官方状态监控" />
+    <meta property="og:description" content="GitHub Actions + Pages 托管的官方源 AI 状态看板，可 Fork、自托管、复用 JSON 输出。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://study8677.github.io/aistatues/" />
+    <meta name="theme-color" content="#0b57d0" />
     <style>
       :root {{
         color-scheme: light;
@@ -1269,6 +1277,30 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
         font-size: 14px;
         font-weight: 700;
       }}
+      .cta-row {{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 14px;
+      }}
+      .cta {{
+        display: inline-flex;
+        align-items: center;
+        min-height: 34px;
+        border-radius: 8px;
+        border: 1px solid var(--line);
+        background: #ffffff;
+        padding: 6px 11px;
+        color: #0b57d0;
+        font-size: 14px;
+        font-weight: 800;
+        text-decoration: none;
+      }}
+      .cta.primary {{
+        background: #0b57d0;
+        border-color: #0b57d0;
+        color: #ffffff;
+      }}
       .badge {{
         display: inline-flex;
         align-items: center;
@@ -1318,6 +1350,27 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
         display: block;
         font-size: 13px;
         margin-bottom: 4px;
+      }}
+      .value-grid {{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 12px;
+        margin: 0 0 20px;
+      }}
+      .value-card {{
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 14px;
+      }}
+      .value-card strong {{
+        display: block;
+        margin-bottom: 6px;
+      }}
+      .value-card p {{
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.55;
       }}
       .grid {{
         display: grid;
@@ -1397,6 +1450,37 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
       section {{
         margin-top: 24px;
       }}
+      .section-head {{
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+      }}
+      .section-head h2 {{
+        margin: 0;
+      }}
+      .endpoint-grid {{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 12px;
+      }}
+      .endpoint {{
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 14px;
+      }}
+      code {{
+        display: block;
+        margin-top: 8px;
+        padding: 8px;
+        border-radius: 6px;
+        background: #f0f3f7;
+        color: #263244;
+        overflow-wrap: anywhere;
+      }}
       table {{
         width: 100%;
         border-collapse: collapse;
@@ -1443,6 +1527,11 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
           <h1>AI 服务官方状态监控</h1>
           <p class="subtitle">OpenAI、Claude、Gemini、Grok、AWS 官方状态源聚合看板。</p>
           <p class="meta">上次页面更新时间：{generated_at}</p>
+          <div class="cta-row">
+            <a class="cta primary" href="{html.escape(repo_url, quote=True)}" rel="noreferrer" target="_blank">在 GitHub 上 Star</a>
+            <a class="cta" href="{html.escape(docs_url, quote=True)}" rel="noreferrer" target="_blank">Fork 后自托管</a>
+            <a class="cta" href="{html.escape(api_url, quote=True)}" rel="noreferrer" target="_blank">查看 JSON API</a>
+          </div>
         </div>
         <div class="hero-side">
           <div class="summary">
@@ -1462,6 +1551,24 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
       <div class="status-banner {worst_level}">
         <strong>{html.escape(title_by_level.get(worst_level, title_by_level['unknown']))}</strong>
         <span class="meta">数据仅来自官方状态源，由 GitHub Actions 定时采样并发布到 GitHub Pages。</span>
+      </div>
+      <div class="value-grid">
+        <div class="value-card">
+          <strong>官方源优先</strong>
+          <p>使用 provider 官方状态页、RSS 或公开事件接口，避免第三方聚合造成的噪声。</p>
+        </div>
+        <div class="value-card">
+          <strong>免费托管运行</strong>
+          <p>GitHub Actions 负责采样，GitHub Pages 发布页面和 JSON 文件。</p>
+        </div>
+        <div class="value-card">
+          <strong>可复用输出</strong>
+          <p>发布 last_run.json、events.ndjson 和日报，方便接入自己的监控或机器人。</p>
+        </div>
+        <div class="value-card">
+          <strong>低误报边界</strong>
+          <p>官方源抓取失败显示为未知，不直接伪造成服务故障。</p>
+        </div>
       </div>
       <div class="update-grid">
         <div class="update-item">
@@ -1485,7 +1592,30 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
         {''.join(cards) if cards else '<p>暂无数据。</p>'}
       </div>
       <section>
-        <h2>进行中事件</h2>
+        <div class="section-head">
+          <h2>公开输出</h2>
+          <span class="meta">可直接被脚本、看板或机器人读取。</span>
+        </div>
+        <div class="endpoint-grid">
+          <div class="endpoint">
+            <strong>最新快照</strong>
+            <code>GET /last_run.json</code>
+          </div>
+          <div class="endpoint">
+            <strong>事件流</strong>
+            <code>GET /output/events.ndjson</code>
+          </div>
+          <div class="endpoint">
+            <strong>日报</strong>
+            <code>GET /reports/daily-report-YYYY-MM-DD.json</code>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="section-head">
+          <h2>进行中事件</h2>
+          <span class="meta">{_html_link(repo_url, "去 GitHub Star / Fork")}</span>
+        </div>
         <table>
           <thead>
             <tr><th>服务</th><th>等级</th><th>事件</th><th>状态</th><th>链接</th></tr>

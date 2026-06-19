@@ -1,0 +1,34 @@
+name: Bug report
+description: Report a parser, dashboard, workflow, or data issue.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened?
+      placeholder: Claude is shown as critical even though...
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source URL
+      placeholder: https://status.example.com/...
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Paste a short JSON/RSS snippet or link. Do not include secrets.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: GitHub Actions, local Python version, browser, etc.

@@ -1,0 +1,32 @@
+name: Feature request
+description: Suggest a new official source, dashboard feature, or output format.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should be added or changed?
+    validations:
+      required: true
+  - type: input
+    id: official_source
+    attributes:
+      label: Official source
+      description: Required for new services.
+      placeholder: https://status.example.com/feed.xml
+  - type: textarea
+    id: value
+    attributes:
+      label: Why it matters
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: This uses an official or provider-owned source.
+        - label: This does not require private API keys.
+        - label: I can provide a sample payload or fixture.
