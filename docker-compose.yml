@@ -1,0 +1,10 @@
+services:
+  aistatues:
+    build: .
+    command: ["loop", "--interval", "300"]
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./reports:/app/reports
+      - ./public:/app/public
+    restart: unless-stopped

@@ -25,6 +25,8 @@ DEFAULT_OUTPUT_DIR = ROOT_DIR / "output"
 DEFAULT_REPORT_DIR = ROOT_DIR / "reports"
 DEFAULT_PUBLIC_DIR = ROOT_DIR / "public"
 DEFAULT_CONFIG = ROOT_DIR / "services.json"
+SCHEMA_VERSION = "1.0"
+SITE_URL = "https://study8677.github.io/aistatues/"
 
 
 def utcnow() -> datetime:
@@ -863,6 +865,7 @@ def evaluate_transition(store: Store, result: CheckResult) -> List[Dict[str, Any
 def write_last_run(output_dir: Path, results: List[CheckResult], alerts: List[Dict[str, Any]]) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     payload = {
+        "schema_version": SCHEMA_VERSION,
         "generated_at": utciso(),
         "services": [result.to_payload() for result in results],
         "alerts": alerts,
@@ -1077,6 +1080,96 @@ def _incident_name(incident: Dict[str, Any]) -> str:
     )
 
 
+def _public_asset_payloads(generated_at: str, worst_level: str) -> Dict[str, str]:
+    safe_generated = html.escape(generated_at or utciso())
+    level = _safe_level(worst_level)
+    level_text = _level_label(level)
+    level_color = {
+        "ok": "#137333",
+        "warn": "#b06000",
+        "critical": "#b3261e",
+        "unknown": "#5f6368",
+    }[level]
+    robots = f"""User-agent: *
+Allow: /
+
+Sitemap: {SITE_URL}sitemap.xml
+"""
+    sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{SITE_URL}</loc>
+    <lastmod>{safe_generated}</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>{SITE_URL}last_run.json</loc>
+    <lastmod>{safe_generated}</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
+"""
+    favicon = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#0b57d0"/>
+  <circle cx="48" cy="16" r="7" fill="{level_color}"/>
+  <text x="12" y="42" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#fff">AI</text>
+</svg>
+"""
+    status_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120" role="img" aria-label="AI status {level.upper()}">
+  <rect width="420" height="120" rx="14" fill="#ffffff" stroke="#d9dee7"/>
+  <circle cx="48" cy="60" r="16" fill="{level_color}"/>
+  <text x="82" y="52" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#18212f">AI Services Status</text>
+  <text x="82" y="82" font-family="Arial, sans-serif" font-size="20" fill="{level_color}">{level_text} / {level.upper()}</text>
+</svg>
+"""
+    og_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AI services official status monitor">
+  <rect width="1200" height="630" fill="#f6f7f9"/>
+  <rect x="70" y="62" width="1060" height="506" rx="18" fill="#ffffff" stroke="#d9dee7"/>
+  <text x="110" y="128" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#18212f">AI 服务官方状态监控</text>
+  <text x="110" y="170" font-family="Arial, sans-serif" font-size="22" fill="#657083">Official-source AI status monitor for OpenAI, Claude, Gemini, Grok, and AWS</text>
+  <rect x="110" y="220" width="230" height="112" rx="10" fill="#fce8e6" stroke="#f4b7b1"/>
+  <text x="132" y="265" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#b3261e">CRITICAL</text>
+  <text x="132" y="300" font-family="Arial, sans-serif" font-size="20" fill="#5f1b17">Major incidents</text>
+  <rect x="370" y="220" width="230" height="112" rx="10" fill="#fff3dc" stroke="#f0c36d"/>
+  <text x="392" y="265" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#b06000">WARN</text>
+  <text x="392" y="300" font-family="Arial, sans-serif" font-size="20" fill="#6f4600">Degradation</text>
+  <rect x="630" y="220" width="230" height="112" rx="10" fill="#e7f4ea" stroke="#9fd1aa"/>
+  <text x="652" y="265" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#137333">OK</text>
+  <text x="652" y="300" font-family="Arial, sans-serif" font-size="20" fill="#194d2b">Operational</text>
+  <rect x="890" y="220" width="180" height="112" rx="10" fill="#eceff3" stroke="#c9d1dc"/>
+  <text x="912" y="265" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#5f6368">JSON</text>
+  <text x="912" y="300" font-family="Arial, sans-serif" font-size="20" fill="#4d5562">API</text>
+  <text x="110" y="410" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#18212f">No API keys. GitHub Actions + Pages. Fork and self-host.</text>
+  <text x="110" y="458" font-family="Arial, sans-serif" font-size="21" fill="#657083">Static dashboard, JSON snapshots, NDJSON events, daily reports.</text>
+  <text x="110" y="515" font-family="Arial, sans-serif" font-size="22" fill="#0b57d0">github.com/study8677/aistatues</text>
+</svg>
+"""
+    return {
+        "robots.txt": robots,
+        "sitemap.xml": sitemap,
+        "favicon.svg": favicon,
+        "status.svg": status_svg,
+        "og.svg": og_svg,
+    }
+
+
+def write_public_assets(public_dir: Path, generated_at: str, worst_level: str) -> None:
+    for name, payload in _public_asset_payloads(generated_at, worst_level).items():
+        with open(public_dir / name, "w", encoding="utf-8") as fh:
+            fh.write(payload)
+    schema_source = ROOT_DIR / "docs" / "schema"
+    if schema_source.exists():
+        schema_target = public_dir / "schema"
+        schema_target.mkdir(parents=True, exist_ok=True)
+        for schema_file in schema_source.glob("*.json"):
+            with open(schema_file, "r", encoding="utf-8") as src:
+                payload = src.read()
+            with open(schema_target / schema_file.name, "w", encoding="utf-8") as dst:
+                dst.write(payload)
+
+
 def render_public_page(last_run_path: Path, public_dir: Path) -> None:
     if not last_run_path.exists():
         return
@@ -1095,8 +1188,11 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
     next_schedule_at = _next_schedule_time(generated_at_raw)
     repo_url = "https://github.com/study8677/aistatues"
     actions_url = "https://github.com/study8677/aistatues/actions/workflows/monitor.yml"
-    api_url = "https://study8677.github.io/aistatues/last_run.json"
+    site_url = SITE_URL
+    api_url = f"{SITE_URL}last_run.json"
     docs_url = "https://github.com/study8677/aistatues/blob/main/docs/SELF_HOST.md"
+    og_url = f"{SITE_URL}og.svg"
+    favicon_url = f"{SITE_URL}favicon.svg"
     title_by_level = {
         "ok": "当前监控服务均为正常",
         "warn": "部分监控服务出现降级或预警",
@@ -1202,10 +1298,17 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AI 服务官方状态监控</title>
     <meta name="description" content="官方状态源优先的 AI 服务稳定性看板，覆盖 OpenAI、Claude、Gemini、Grok、AWS，并发布 JSON API 和日报。" />
+    <link rel="canonical" href="{html.escape(site_url, quote=True)}" />
+    <link rel="icon" href="{html.escape(favicon_url, quote=True)}" type="image/svg+xml" />
     <meta property="og:title" content="AI 服务官方状态监控" />
     <meta property="og:description" content="GitHub Actions + Pages 托管的官方源 AI 状态看板，可 Fork、自托管、复用 JSON 输出。" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://study8677.github.io/aistatues/" />
+    <meta property="og:url" content="{html.escape(site_url, quote=True)}" />
+    <meta property="og:image" content="{html.escape(og_url, quote=True)}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI 服务官方状态监控" />
+    <meta name="twitter:description" content="官方源优先，GitHub Actions + Pages 免费托管，发布 JSON API。" />
+    <meta name="twitter:image" content="{html.escape(og_url, quote=True)}" />
     <meta name="theme-color" content="#0b57d0" />
     <style>
       :root {{
@@ -1630,6 +1733,7 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
 </html>"""
 
     public_dir.mkdir(parents=True, exist_ok=True)
+    write_public_assets(public_dir, generated_at_raw, worst_level)
     with open(public_dir / "index.html", "w", encoding="utf-8") as fh:
         fh.write(html_body)
     with open(public_dir / "last_run.json", "w", encoding="utf-8") as fh:
@@ -1710,7 +1814,7 @@ def run_once(store: Store, config_path: Path, output_dir: Path, public_dir: Path
     generate_daily_report(store, DEFAULT_REPORT_DIR, utcnow())
     render_public_page(DEFAULT_OUTPUT_DIR / "last_run.json", public_dir)
     store.prune(30)
-    return {"generated_at": now, "services": [r.to_payload() for r in results], "alerts": alerts}
+    return {"schema_version": SCHEMA_VERSION, "generated_at": now, "services": [r.to_payload() for r in results], "alerts": alerts}
 
 
 def loop_forever(store: Store, config_path: Path, interval: int, output_dir: Path, public_dir: Path) -> None:

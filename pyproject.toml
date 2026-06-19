@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aistatues"
+version = "0.1.0"
+description = "Official-source AI status monitor for OpenAI, Claude, Gemini, Grok, and AWS."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [
+  { name = "JingWen Fan" }
+]
+keywords = [
+  "ai-monitoring",
+  "status-dashboard",
+  "openai",
+  "anthropic",
+  "gemini",
+  "grok",
+  "aws",
+  "github-pages",
+  "observability"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Internet :: WWW/HTTP :: Site Management",
+  "Topic :: System :: Monitoring"
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://study8677.github.io/aistatues/"
+Repository = "https://github.com/study8677/aistatues"
+Issues = "https://github.com/study8677/aistatues/issues"
+Dashboard = "https://study8677.github.io/aistatues/"
+
+[project.scripts]
+aistatues = "monitor:main"
+
+[tool.setuptools]
+py-modules = ["monitor"]

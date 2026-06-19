@@ -15,6 +15,8 @@ from monitor import (
     parse_gemini_service,
     parse_grok_service,
     parse_statuspage_service,
+    render_public_page,
+    write_last_run,
 )
 
 
@@ -31,6 +33,20 @@ def service(name: str, kind: str = "statuspage") -> ServiceConfig:
 
 
 class MonitorParserTests(unittest.TestCase):
+    def sample_result(self) -> CheckResult:
+        return CheckResult(
+            service="Gemini",
+            time="2026-06-19T02:00:00Z",
+            overall_status="operational",
+            components=[],
+            active_incidents=[],
+            raw_score=100,
+            confidence=0.95,
+            updated_at="2026-06-19T02:00:00Z",
+            source_url="https://status.cloud.google.com",
+            level="ok",
+        )
+
     def test_statuspage_none_indicator_is_ok(self) -> None:
         payload = {
             "page": {"name": "Claude", "updated_at": "2026-06-19T01:00:00Z"},
@@ -164,6 +180,29 @@ class MonitorParserTests(unittest.TestCase):
                 self.assertEqual(result.level, "unknown")
             finally:
                 store.close()
+
+    def test_last_run_contains_schema_version(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output_dir = Path(tmpdir)
+
+            write_last_run(output_dir, [self.sample_result()], [])
+            payload = json.loads((output_dir / "last_run.json").read_text(encoding="utf-8"))
+
+            self.assertEqual(payload["schema_version"], "1.0")
+            self.assertEqual(payload["services"][0]["service"], "Gemini")
+
+    def test_public_render_writes_seo_assets(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            output_dir = root / "output"
+            public_dir = root / "public"
+
+            write_last_run(output_dir, [self.sample_result()], [])
+            render_public_page(output_dir / "last_run.json", public_dir)
+
+            self.assertIn("AI 服务官方状态监控", (public_dir / "index.html").read_text(encoding="utf-8"))
+            for name in ["robots.txt", "sitemap.xml", "favicon.svg", "status.svg", "og.svg", "last_run.json", "schema/last_run.schema.json"]:
+                self.assertTrue((public_dir / name).exists(), name)
 
 
 if __name__ == "__main__":

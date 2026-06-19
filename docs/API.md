@@ -19,6 +19,7 @@ Core fields:
 
 | Field | Meaning |
 |---|---|
+| `schema_version` | Public snapshot contract version. Current version: `1.0`. |
 | `generated_at` | Snapshot generation time in UTC. |
 | `services[]` | Normalized service status rows. |
 | `alerts[]` | Debounced alert events generated during the run. |
@@ -41,6 +42,14 @@ Example:
 curl -s https://study8677.github.io/aistatues/last_run.json \
   | jq -r '.services[] | [.service, .level, .overall_status] | @tsv'
 ```
+
+Schema:
+
+```text
+GET /schema/last_run.schema.json
+```
+
+The public files are static GitHub Pages assets. They can be fetched directly from browsers or server-side scripts. Cache freshness follows GitHub Pages/CDN behavior; the monitor itself runs every 5 minutes, but visible propagation may lag by seconds to minutes.
 
 ## Event Stream
 

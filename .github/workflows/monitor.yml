@@ -47,10 +47,11 @@ jobs:
       - name: Prepare Pages payload
         run: |
           set -euo pipefail
-          mkdir -p public/data public/output public/reports
+          mkdir -p public/data public/output public/reports public/schema
           cp -f data/monitor.db public/data/monitor.db
           cp -f output/last_run.json public/output/last_run.json
           cp -f output/events.ndjson public/output/events.ndjson
+          cp -f docs/schema/*.json public/schema/
           find reports -maxdepth 1 -type f -name 'daily-report-*' -exec cp -f {} public/reports/ \;
 
       - name: Publish dashboard and state

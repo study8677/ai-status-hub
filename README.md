@@ -1,4 +1,6 @@
-# AI 服务官方状态监控
+# AI Services Official Status Monitor
+
+> 中文：AI 服务官方状态监控。官方源优先，覆盖 OpenAI、Claude、Gemini、Grok、AWS。
 
 [![Monitor](https://github.com/study8677/aistatues/actions/workflows/monitor.yml/badge.svg)](https://github.com/study8677/aistatues/actions/workflows/monitor.yml)
 [![Live dashboard](https://img.shields.io/badge/live-dashboard-0b57d0)](https://study8677.github.io/aistatues/)
@@ -6,11 +8,13 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-137333)](./LICENSE)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-3776ab)](https://www.python.org/)
 
-一个官方状态源优先的 AI 服务稳定性看板。它把 OpenAI、Claude、Gemini、Grok、AWS 的官方公开状态数据聚合成 GitHub Pages 页面、JSON API、NDJSON 事件流和日报。
+[![Current AI status](https://study8677.github.io/aistatues/status.svg)](https://study8677.github.io/aistatues/)
 
-> English: an official-source-first AI status monitor for OpenAI, Claude, Gemini, Grok, and AWS, hosted entirely on GitHub Actions + Pages.
+Official-source-first AI status monitoring for OpenAI, Claude, Gemini, Grok, and AWS. No API keys, no paid probes, no third-party status aggregators. Runs on GitHub Actions + Pages and publishes a dashboard, JSON API, NDJSON event stream, and daily reports.
 
-[在线看板](https://study8677.github.io/aistatues/) · [最新 JSON](https://study8677.github.io/aistatues/last_run.json) · [部署文档](./docs/SELF_HOST.md) · [输出 API](./docs/API.md) · [路线图](./docs/ROADMAP.md)
+官方状态源优先的 AI 服务稳定性看板：不消耗模型 API quota，不依赖第三方聚合站，Fork 后即可自托管。
+
+[在线看板](https://study8677.github.io/aistatues/) · [最新 JSON](https://study8677.github.io/aistatues/last_run.json) · [部署文档](./docs/SELF_HOST.md) · [输出 API](./docs/API.md) · [官方源说明](./docs/SOURCES.md) · [路线图](./docs/ROADMAP.md)
 
 如果这个项目对你有用，可以点一个 Star，让更多人发现这个官方源监控方案。
 
@@ -79,6 +83,20 @@ python3 monitor.py report
 python3 monitor.py loop --interval 60
 ```
 
+Editable install:
+
+```bash
+python3 -m pip install -e .
+aistatues run
+aistatues report
+```
+
+Docker:
+
+```bash
+docker compose up --build
+```
+
 ## 输出结构
 
 | 路径 | 用途 |
@@ -87,7 +105,10 @@ python3 monitor.py loop --interval 60
 | `services.json` | 官方源服务配置。 |
 | `tests/test_monitor.py` | 解析器和边界测试。 |
 | `docs/API.md` | JSON/NDJSON/日报输出说明。 |
+| `docs/SOURCES.md` | 官方源可信度和误报边界。 |
+| `docs/schema/last_run.schema.json` | 公开 JSON 快照 Schema。 |
 | `.github/workflows/monitor.yml` | GitHub Actions 托管运行。 |
+| `.github/workflows/ci.yml` | push/PR 测试。 |
 | `gh-pages` 分支 | 发布页面和运行态数据。 |
 
 ## 状态规则
@@ -116,6 +137,11 @@ python3 monitor.py loop --interval 60
 - 增加 Slack/Feishu/Discord webhook 输出。
 - 增加静态 SVG badge 输出。
 - 增加中英切换和可访问性测试。
+
+## Examples
+
+- [Consume JSON with Python](./examples/consume-json.py)
+- [Consume from GitHub Actions](./examples/github-action.yml)
 
 ## 项目边界
 
