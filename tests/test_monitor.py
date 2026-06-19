@@ -200,7 +200,7 @@ class MonitorParserTests(unittest.TestCase):
             write_last_run(output_dir, [self.sample_result()], [])
             render_public_page(output_dir / "last_run.json", public_dir)
 
-            self.assertIn("AI 服务官方状态监控", (public_dir / "index.html").read_text(encoding="utf-8"))
+            self.assertIn("AI Status Hub", (public_dir / "index.html").read_text(encoding="utf-8"))
             for name in ["robots.txt", "sitemap.xml", "favicon.svg", "status.svg", "og.svg", "last_run.json", "schema/last_run.schema.json"]:
                 self.assertTrue((public_dir / name).exists(), name)
 

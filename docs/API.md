@@ -5,7 +5,7 @@ The GitHub Pages site publishes static machine-readable files. They are useful f
 Base URL:
 
 ```text
-https://study8677.github.io/aistatues/
+https://study8677.github.io/ai-status-hub/
 ```
 
 ## Latest Snapshot
@@ -39,7 +39,7 @@ Service row fields:
 Example:
 
 ```bash
-curl -s https://study8677.github.io/aistatues/last_run.json \
+curl -s https://study8677.github.io/ai-status-hub/last_run.json \
   | jq -r '.services[] | [.service, .level, .overall_status] | @tsv'
 ```
 

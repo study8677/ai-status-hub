@@ -4,7 +4,7 @@ import json
 import urllib.request
 
 
-URL = "https://study8677.github.io/aistatues/last_run.json"
+URL = "https://study8677.github.io/ai-status-hub/last_run.json"
 
 
 def main() -> None:

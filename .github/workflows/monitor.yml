@@ -1,4 +1,4 @@
-name: AI Services Status Monitor
+name: AI Status Hub Monitor
 
 on:
   schedule:

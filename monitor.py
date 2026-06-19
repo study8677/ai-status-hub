@@ -26,7 +26,7 @@ DEFAULT_REPORT_DIR = ROOT_DIR / "reports"
 DEFAULT_PUBLIC_DIR = ROOT_DIR / "public"
 DEFAULT_CONFIG = ROOT_DIR / "services.json"
 SCHEMA_VERSION = "1.0"
-SITE_URL = "https://study8677.github.io/aistatues/"
+SITE_URL = "https://study8677.github.io/ai-status-hub/"
 
 
 def utcnow() -> datetime:
@@ -1117,33 +1117,34 @@ Sitemap: {SITE_URL}sitemap.xml
   <text x="12" y="42" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#fff">AI</text>
 </svg>
 """
-    status_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120" role="img" aria-label="AI status {level.upper()}">
+    status_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120" role="img" aria-label="AI Status Hub {level.upper()}">
   <rect width="420" height="120" rx="14" fill="#ffffff" stroke="#d9dee7"/>
   <circle cx="48" cy="60" r="16" fill="{level_color}"/>
-  <text x="82" y="52" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#18212f">AI Services Status</text>
+  <text x="82" y="52" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#18212f">AI Status Hub</text>
   <text x="82" y="82" font-family="Arial, sans-serif" font-size="20" fill="{level_color}">{level_text} / {level.upper()}</text>
 </svg>
 """
-    og_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AI services official status monitor">
+    og_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AI Status Hub official status dashboard">
   <rect width="1200" height="630" fill="#f6f7f9"/>
   <rect x="70" y="62" width="1060" height="506" rx="18" fill="#ffffff" stroke="#d9dee7"/>
-  <text x="110" y="128" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#18212f">AI 服务官方状态监控</text>
-  <text x="110" y="170" font-family="Arial, sans-serif" font-size="22" fill="#657083">Official-source AI status monitor for OpenAI, Claude, Gemini, Grok, and AWS</text>
-  <rect x="110" y="220" width="230" height="112" rx="10" fill="#fce8e6" stroke="#f4b7b1"/>
-  <text x="132" y="265" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#b3261e">CRITICAL</text>
-  <text x="132" y="300" font-family="Arial, sans-serif" font-size="20" fill="#5f1b17">Major incidents</text>
-  <rect x="370" y="220" width="230" height="112" rx="10" fill="#fff3dc" stroke="#f0c36d"/>
-  <text x="392" y="265" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#b06000">WARN</text>
-  <text x="392" y="300" font-family="Arial, sans-serif" font-size="20" fill="#6f4600">Degradation</text>
-  <rect x="630" y="220" width="230" height="112" rx="10" fill="#e7f4ea" stroke="#9fd1aa"/>
-  <text x="652" y="265" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#137333">OK</text>
-  <text x="652" y="300" font-family="Arial, sans-serif" font-size="20" fill="#194d2b">Operational</text>
-  <rect x="890" y="220" width="180" height="112" rx="10" fill="#eceff3" stroke="#c9d1dc"/>
-  <text x="912" y="265" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#5f6368">JSON</text>
-  <text x="912" y="300" font-family="Arial, sans-serif" font-size="20" fill="#4d5562">API</text>
+  <text x="110" y="128" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#18212f">AI Status Hub</text>
+  <text x="110" y="174" font-family="Arial, sans-serif" font-size="23" fill="#657083">Official-source AI provider outage/status dashboard</text>
+  <text x="110" y="210" font-family="Arial, sans-serif" font-size="21" fill="#657083">OpenAI, Claude, Gemini, Grok, and AWS</text>
+  <rect x="110" y="250" width="230" height="112" rx="10" fill="#fce8e6" stroke="#f4b7b1"/>
+  <text x="132" y="295" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#b3261e">CRITICAL</text>
+  <text x="132" y="330" font-family="Arial, sans-serif" font-size="20" fill="#5f1b17">Major incidents</text>
+  <rect x="370" y="250" width="230" height="112" rx="10" fill="#fff3dc" stroke="#f0c36d"/>
+  <text x="392" y="295" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#b06000">WARN</text>
+  <text x="392" y="330" font-family="Arial, sans-serif" font-size="20" fill="#6f4600">Degradation</text>
+  <rect x="630" y="250" width="230" height="112" rx="10" fill="#e7f4ea" stroke="#9fd1aa"/>
+  <text x="652" y="295" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#137333">OK</text>
+  <text x="652" y="330" font-family="Arial, sans-serif" font-size="20" fill="#194d2b">Operational</text>
+  <rect x="890" y="250" width="180" height="112" rx="10" fill="#eceff3" stroke="#c9d1dc"/>
+  <text x="912" y="295" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#5f6368">JSON</text>
+  <text x="912" y="330" font-family="Arial, sans-serif" font-size="20" fill="#4d5562">API</text>
   <text x="110" y="410" font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#18212f">No API keys. GitHub Actions + Pages. Fork and self-host.</text>
   <text x="110" y="458" font-family="Arial, sans-serif" font-size="21" fill="#657083">Static dashboard, JSON snapshots, NDJSON events, daily reports.</text>
-  <text x="110" y="515" font-family="Arial, sans-serif" font-size="22" fill="#0b57d0">github.com/study8677/aistatues</text>
+  <text x="110" y="515" font-family="Arial, sans-serif" font-size="22" fill="#0b57d0">github.com/study8677/ai-status-hub</text>
 </svg>
 """
     return {
@@ -1186,18 +1187,18 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
     generated_at_raw = str(data.get("generated_at", ""))
     generated_at = _display_time(generated_at_raw)
     next_schedule_at = _next_schedule_time(generated_at_raw)
-    repo_url = "https://github.com/study8677/aistatues"
-    actions_url = "https://github.com/study8677/aistatues/actions/workflows/monitor.yml"
+    repo_url = "https://github.com/study8677/ai-status-hub"
+    actions_url = "https://github.com/study8677/ai-status-hub/actions/workflows/monitor.yml"
     site_url = SITE_URL
     api_url = f"{SITE_URL}last_run.json"
-    docs_url = "https://github.com/study8677/aistatues/blob/main/docs/SELF_HOST.md"
+    docs_url = "https://github.com/study8677/ai-status-hub/blob/main/docs/SELF_HOST.md"
     og_url = f"{SITE_URL}og.svg"
     favicon_url = f"{SITE_URL}favicon.svg"
     title_by_level = {
-        "ok": "当前监控服务均为正常",
-        "warn": "部分监控服务出现降级或预警",
-        "critical": "至少一个监控服务处于严重异常",
-        "unknown": "监控源数据不完整",
+        "ok": "All monitored providers are operational",
+        "warn": "Some monitored providers report degraded service",
+        "critical": "At least one monitored provider reports a major incident",
+        "unknown": "Some official source data is incomplete",
     }
 
     cards = []
@@ -1216,9 +1217,9 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
         if first_incident:
             incident_label = html.escape(_incident_name(first_incident))
         elif source_error:
-            incident_label = f"官方源错误：{html.escape(source_error)}"
+            incident_label = f"Official source error: {html.escape(source_error)}"
         else:
-            incident_label = "暂无进行中事件"
+            incident_label = "No active incident reported"
         active_count = len(incidents)
         duration = _format_seconds(item.get("anomaly_seconds"))
         confidence = f"{float(item.get('confidence', 0) or 0):.2f}"
@@ -1235,15 +1236,15 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
                     f"{html.escape(str(component.get('name', 'Component')))} "
                     f"<span>{html.escape(component_status)}</span>"
                 )
-        component_text = ", ".join(impacted_components[:4]) if impacted_components else "官方源未报告受影响组件"
+        component_text = ", ".join(impacted_components[:4]) if impacted_components else "No affected component reported"
         if len(impacted_components) > 4:
-            component_text += f"，另外 {len(impacted_components) - 4} 项"
+            component_text += f", plus {len(impacted_components) - 4} more"
 
         links = " ".join(
             part
             for part in [
-                _html_link(source_url, "官方源"),
-                _html_link(incident_link, "事件链接"),
+                _html_link(source_url, "Official source"),
+                _html_link(incident_link, "Incident link"),
             ]
             if part
         )
@@ -1258,19 +1259,19 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
               </div>
               <div class="score-row">
                 <strong>{score}</strong>
-                <span>分数</span>
+                <span>Score</span>
                 <strong>{active_count}</strong>
-                <span>进行中</span>
+                <span>Active</span>
                 <strong>{duration}</strong>
-                <span>持续</span>
+                <span>Duration</span>
               </div>
               <dl>
-                <div><dt>状态</dt><dd>{status}</dd></div>
-                <div><dt>事件</dt><dd>{incident_label}</dd></div>
-                <div><dt>组件</dt><dd>{component_text}</dd></div>
-                <div><dt>源更新时间</dt><dd>{updated_at}</dd></div>
-                <div><dt>采样时间</dt><dd>{sampled_at}</dd></div>
-                <div><dt>置信度</dt><dd>{confidence}</dd></div>
+                <div><dt>Status</dt><dd>{status}</dd></div>
+                <div><dt>Incident</dt><dd>{incident_label}</dd></div>
+                <div><dt>Components</dt><dd>{component_text}</dd></div>
+                <div><dt>Source updated</dt><dd>{updated_at}</dd></div>
+                <div><dt>Sampled</dt><dd>{sampled_at}</dd></div>
+                <div><dt>Confidence</dt><dd>{confidence}</dd></div>
               </dl>
               <div class="links">{links}</div>
             </article>
@@ -1286,7 +1287,7 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
                   <td><span class="badge {level}">{badge_text}</span></td>
                   <td>{html.escape(_incident_name(incident))}</td>
                   <td>{html.escape(str(incident.get('status') or incident.get('severity') or 'active'))}</td>
-                  <td>{_html_link(str(incident.get('link') or incident.get('url') or ''), '打开')}</td>
+                  <td>{_html_link(str(incident.get('link') or incident.get('url') or ''), 'Open')}</td>
                 </tr>
                 """
             )
@@ -1296,18 +1297,18 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
   <head>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AI 服务官方状态监控</title>
-    <meta name="description" content="官方状态源优先的 AI 服务稳定性看板，覆盖 OpenAI、Claude、Gemini、Grok、AWS，并发布 JSON API 和日报。" />
+    <title>AI Status Hub - Official AI Provider Status Monitor</title>
+    <meta name="description" content="Official-source AI provider outage/status dashboard for OpenAI, Claude, Gemini, Grok, and AWS. No API keys, GitHub Actions + Pages, JSON API." />
     <link rel="canonical" href="{html.escape(site_url, quote=True)}" />
     <link rel="icon" href="{html.escape(favicon_url, quote=True)}" type="image/svg+xml" />
-    <meta property="og:title" content="AI 服务官方状态监控" />
-    <meta property="og:description" content="GitHub Actions + Pages 托管的官方源 AI 状态看板，可 Fork、自托管、复用 JSON 输出。" />
+    <meta property="og:title" content="AI Status Hub" />
+    <meta property="og:description" content="Official-source AI outage/status dashboard for OpenAI, Claude, Gemini, Grok, and AWS. No API keys. Runs on GitHub Actions + Pages." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{html.escape(site_url, quote=True)}" />
     <meta property="og:image" content="{html.escape(og_url, quote=True)}" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="AI 服务官方状态监控" />
-    <meta name="twitter:description" content="官方源优先，GitHub Actions + Pages 免费托管，发布 JSON API。" />
+    <meta name="twitter:title" content="AI Status Hub" />
+    <meta name="twitter:description" content="Official-source AI outage/status dashboard with JSON API and GitHub Pages hosting." />
     <meta name="twitter:image" content="{html.escape(og_url, quote=True)}" />
     <meta name="theme-color" content="#0b57d0" />
     <style>
@@ -1627,25 +1628,25 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
     <header>
       <div class="wrap hero">
         <div>
-          <h1>AI 服务官方状态监控</h1>
-          <p class="subtitle">OpenAI、Claude、Gemini、Grok、AWS 官方状态源聚合看板。</p>
-          <p class="meta">上次页面更新时间：{generated_at}</p>
+          <h1>AI Status Hub</h1>
+          <p class="subtitle">Official-source AI provider outage/status dashboard for OpenAI, Claude, Gemini, Grok, and AWS.</p>
+          <p class="meta">Last updated: {generated_at}</p>
           <div class="cta-row">
-            <a class="cta primary" href="{html.escape(repo_url, quote=True)}" rel="noreferrer" target="_blank">在 GitHub 上 Star</a>
-            <a class="cta" href="{html.escape(docs_url, quote=True)}" rel="noreferrer" target="_blank">Fork 后自托管</a>
-            <a class="cta" href="{html.escape(api_url, quote=True)}" rel="noreferrer" target="_blank">查看 JSON API</a>
+            <a class="cta primary" href="{html.escape(repo_url, quote=True)}" rel="noreferrer" target="_blank">Star on GitHub</a>
+            <a class="cta" href="{html.escape(docs_url, quote=True)}" rel="noreferrer" target="_blank">Fork and self-host</a>
+            <a class="cta" href="{html.escape(api_url, quote=True)}" rel="noreferrer" target="_blank">JSON API</a>
           </div>
         </div>
         <div class="hero-side">
           <div class="summary">
-            <span class="badge critical">严重 {level_counts.get('critical', 0)}</span>
-            <span class="badge warn">预警 {level_counts.get('warn', 0)}</span>
-            <span class="badge ok">正常 {level_counts.get('ok', 0)}</span>
-            <span class="badge unknown">未知 {level_counts.get('unknown', 0)}</span>
+            <span class="badge critical">Critical {level_counts.get('critical', 0)}</span>
+            <span class="badge warn">Warn {level_counts.get('warn', 0)}</span>
+            <span class="badge ok">OK {level_counts.get('ok', 0)}</span>
+            <span class="badge unknown">Unknown {level_counts.get('unknown', 0)}</span>
           </div>
-          <nav class="header-actions" aria-label="项目链接">
-            {_html_link(repo_url, "GitHub 仓库")}
-            {_html_link(actions_url, "Actions 运行记录")}
+          <nav class="header-actions" aria-label="Project links">
+            {_html_link(repo_url, "GitHub repo")}
+            {_html_link(actions_url, "Actions runs")}
           </nav>
         </div>
       </div>
@@ -1653,78 +1654,78 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
     <main class="wrap">
       <div class="status-banner {worst_level}">
         <strong>{html.escape(title_by_level.get(worst_level, title_by_level['unknown']))}</strong>
-        <span class="meta">数据仅来自官方状态源，由 GitHub Actions 定时采样并发布到 GitHub Pages。</span>
+        <span class="meta">Data comes only from official provider status sources, sampled by GitHub Actions and published to GitHub Pages.</span>
       </div>
       <div class="value-grid">
         <div class="value-card">
-          <strong>官方源优先</strong>
-          <p>使用 provider 官方状态页、RSS 或公开事件接口，避免第三方聚合造成的噪声。</p>
+          <strong>Official sources only</strong>
+          <p>Uses provider status pages, RSS feeds, and public incident APIs instead of noisy third-party aggregators.</p>
         </div>
         <div class="value-card">
-          <strong>免费托管运行</strong>
-          <p>GitHub Actions 负责采样，GitHub Pages 发布页面和 JSON 文件。</p>
+          <strong>Free GitHub hosting</strong>
+          <p>GitHub Actions samples providers, while GitHub Pages publishes the dashboard and JSON files.</p>
         </div>
         <div class="value-card">
-          <strong>可复用输出</strong>
-          <p>发布 last_run.json、events.ndjson 和日报，方便接入自己的监控或机器人。</p>
+          <strong>Reusable outputs</strong>
+          <p>Publishes last_run.json, events.ndjson, and daily reports for dashboards, bots, and automations.</p>
         </div>
         <div class="value-card">
-          <strong>低误报边界</strong>
-          <p>官方源抓取失败显示为未知，不直接伪造成服务故障。</p>
+          <strong>Clear signal boundary</strong>
+          <p>Official source failures show as unknown instead of being converted into provider outages.</p>
         </div>
       </div>
       <div class="update-grid">
         <div class="update-item">
-          <strong>更新频率</strong>
-          <span class="meta">每 5 分钟触发一次。</span>
+          <strong>Update cadence</strong>
+          <span class="meta">Runs every 5 minutes.</span>
         </div>
         <div class="update-item">
-          <strong>触发时间</strong>
-          <span class="meta">北京时间每小时 00、05、10、15、20、25、30、35、40、45、50、55 分。</span>
+          <strong>Trigger minutes</strong>
+          <span class="meta">Every hour at 00, 05, 10, 15, 20, 25, 30, 35, 40, 45, 50, and 55.</span>
         </div>
         <div class="update-item">
-          <strong>下一次预计触发</strong>
+          <strong>Next estimated run</strong>
           <span class="meta">{next_schedule_at}</span>
         </div>
         <div class="update-item">
-          <strong>实际生效</strong>
-          <span class="meta">通常在触发后几十秒到数分钟内完成，取决于 GitHub Actions 排队和 Pages 缓存。</span>
+          <strong>Visible freshness</strong>
+          <span class="meta">Usually updates seconds to minutes after a trigger, depending on Actions queueing and Pages cache.</span>
         </div>
       </div>
       <div class="grid">
-        {''.join(cards) if cards else '<p>暂无数据。</p>'}
+        {''.join(cards) if cards else '<p>No data yet.</p>'}
       </div>
       <section>
         <div class="section-head">
-          <h2>公开输出</h2>
-          <span class="meta">可直接被脚本、看板或机器人读取。</span>
+          <h2>Public outputs</h2>
+          <span class="meta">Readable by scripts, dashboards, and bots.</span>
         </div>
         <div class="endpoint-grid">
           <div class="endpoint">
-            <strong>最新快照</strong>
+            <strong>Latest snapshot</strong>
             <code>GET /last_run.json</code>
           </div>
           <div class="endpoint">
-            <strong>事件流</strong>
+            <strong>Event stream</strong>
             <code>GET /output/events.ndjson</code>
           </div>
           <div class="endpoint">
-            <strong>日报</strong>
+            <strong>Daily report</strong>
             <code>GET /reports/daily-report-YYYY-MM-DD.json</code>
           </div>
         </div>
       </section>
       <section>
         <div class="section-head">
-          <h2>进行中事件</h2>
-          <span class="meta">{_html_link(repo_url, "去 GitHub Star / Fork")}</span>
+          <h2>Active incidents</h2>
+          <span class="meta">{_html_link(repo_url, "Star / Fork on GitHub")}</span>
         </div>
         <table>
           <thead>
-            <tr><th>服务</th><th>等级</th><th>事件</th><th>状态</th><th>链接</th></tr>
+            <tr><th>Service</th><th>Level</th><th>Incident</th><th>Status</th><th>Link</th></tr>
           </thead>
           <tbody>
-            {''.join(incident_rows) if incident_rows else '<tr><td colspan="5">官方源未报告进行中事件。</td></tr>'}
+            {''.join(incident_rows) if incident_rows else '<tr><td colspan="5">No active incident reported by official sources.</td></tr>'}
           </tbody>
         </table>
       </section>
@@ -1838,7 +1839,7 @@ def run_report(store: Store, day: Optional[str] = None) -> Dict[str, Any]:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="AI service official status monitor")
+    parser = argparse.ArgumentParser(description="AI Status Hub official-source provider status monitor")
     parser.add_argument("--config", default=str(DEFAULT_CONFIG), help="path to services config JSON")
     parser.add_argument("--db", default=str(DEFAULT_DB), help="sqlite db path")
     parser.add_argument("--output-dir", default=str(DEFAULT_OUTPUT_DIR), help="output dir for last_run/events")

@@ -1,24 +1,26 @@
-# AI Services Official Status Monitor
+# AI Status Hub
 
-> 中文：AI 服务官方状态监控。官方源优先，覆盖 OpenAI、Claude、Gemini、Grok、AWS。
+Official-source AI provider status dashboard for OpenAI, Anthropic Claude, Google Gemini, xAI Grok, and AWS.
 
-[![Monitor](https://github.com/study8677/aistatues/actions/workflows/monitor.yml/badge.svg)](https://github.com/study8677/aistatues/actions/workflows/monitor.yml)
-[![Live dashboard](https://img.shields.io/badge/live-dashboard-0b57d0)](https://study8677.github.io/aistatues/)
-[![GitHub stars](https://img.shields.io/github/stars/study8677/aistatues?style=social)](https://github.com/study8677/aistatues/stargazers)
+> 中文：AI 服务官方状态中心。只读官方状态源，覆盖 OpenAI、Claude、Gemini、Grok、AWS。
+
+[![Monitor](https://github.com/study8677/ai-status-hub/actions/workflows/monitor.yml/badge.svg)](https://github.com/study8677/ai-status-hub/actions/workflows/monitor.yml)
+[![Live dashboard](https://img.shields.io/badge/live-dashboard-0b57d0)](https://study8677.github.io/ai-status-hub/)
+[![GitHub stars](https://img.shields.io/github/stars/study8677/ai-status-hub?style=social)](https://github.com/study8677/ai-status-hub/stargazers)
 [![License: MIT](https://img.shields.io/badge/license-MIT-137333)](./LICENSE)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-3776ab)](https://www.python.org/)
 
-[![Current AI status](https://study8677.github.io/aistatues/status.svg)](https://study8677.github.io/aistatues/)
+[![Current AI status](https://study8677.github.io/ai-status-hub/status.svg)](https://study8677.github.io/ai-status-hub/)
 
-Official-source-first AI status monitoring for OpenAI, Claude, Gemini, Grok, and AWS. No API keys, no paid probes, no third-party status aggregators. Runs on GitHub Actions + Pages and publishes a dashboard, JSON API, NDJSON event stream, and daily reports.
+Track AI outages from official status pages only. No API keys, no paid probes, no third-party status aggregators. Runs on GitHub Actions + Pages and publishes a live dashboard, JSON API, NDJSON event stream, and daily reports.
 
-官方状态源优先的 AI 服务稳定性看板：不消耗模型 API quota，不依赖第三方聚合站，Fork 后即可自托管。
+官方状态源优先的 AI 服务状态中心：不消耗模型 API quota，不依赖第三方聚合站，Fork 后即可自托管。
 
-[在线看板](https://study8677.github.io/aistatues/) · [最新 JSON](https://study8677.github.io/aistatues/last_run.json) · [部署文档](./docs/SELF_HOST.md) · [输出 API](./docs/API.md) · [官方源说明](./docs/SOURCES.md) · [路线图](./docs/ROADMAP.md)
+[在线看板](https://study8677.github.io/ai-status-hub/) · [最新 JSON](https://study8677.github.io/ai-status-hub/last_run.json) · [部署文档](./docs/SELF_HOST.md) · [输出 API](./docs/API.md) · [官方源说明](./docs/SOURCES.md) · [路线图](./docs/ROADMAP.md)
 
-如果这个项目对你有用，可以点一个 Star，让更多人发现这个官方源监控方案。
+If this helps you track AI provider incidents, star the repo so more builders can find an official-source alternative to third-party aggregators.
 
-![AI 服务官方状态监控预览](./assets/preview.svg)
+![AI Status Hub preview](./assets/preview.svg)
 
 ## 为什么值得用
 
@@ -33,15 +35,15 @@ Official-source-first AI status monitoring for OpenAI, Claude, Gemini, Grok, and
 
 | 页面 | 地址 |
 |---|---|
-| 中文状态看板 | https://study8677.github.io/aistatues/ |
-| 最新快照 | https://study8677.github.io/aistatues/last_run.json |
-| 事件流 | https://study8677.github.io/aistatues/output/events.ndjson |
-| 日报 | https://github.com/study8677/aistatues/tree/gh-pages/reports |
+| 中文状态看板 | https://study8677.github.io/ai-status-hub/ |
+| 最新快照 | https://study8677.github.io/ai-status-hub/last_run.json |
+| 事件流 | https://study8677.github.io/ai-status-hub/output/events.ndjson |
+| 日报 | https://github.com/study8677/ai-status-hub/tree/gh-pages/reports |
 
 快速查看当前状态：
 
 ```bash
-curl -s https://study8677.github.io/aistatues/last_run.json \
+curl -s https://study8677.github.io/ai-status-hub/last_run.json \
   | jq -r '.services[] | [.service, .level, .overall_status] | @tsv'
 ```
 
@@ -69,7 +71,7 @@ Fork 后只需要 GitHub Actions + Pages：
 1. Fork 仓库。
 2. 在 fork 中启用 GitHub Actions。
 3. 将 Pages 来源设为 `gh-pages` 分支。
-4. 手动运行一次 `AI Services Status Monitor` workflow。
+4. 手动运行一次 `AI Status Hub Monitor` workflow。
 5. 打开你的 Pages URL。
 
 更多细节见 [Self-hosting](./docs/SELF_HOST.md)。
@@ -87,8 +89,8 @@ Editable install:
 
 ```bash
 python3 -m pip install -e .
-aistatues run
-aistatues report
+ai-status-hub run
+ai-status-hub report
 ```
 
 Docker:

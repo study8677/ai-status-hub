@@ -1,5 +1,5 @@
 services:
-  aistatues:
+  ai-status-hub:
     build: .
     command: ["loop", "--interval", "300"]
     volumes:

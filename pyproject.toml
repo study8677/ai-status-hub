@@ -3,9 +3,9 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "aistatues"
+name = "ai-status-hub"
 version = "0.1.0"
-description = "Official-source AI status monitor for OpenAI, Claude, Gemini, Grok, and AWS."
+description = "Official-source AI provider outage/status monitor for OpenAI, Claude, Gemini, Grok, and AWS."
 readme = "README.md"
 requires-python = ">=3.12"
 license = "MIT"
@@ -14,7 +14,10 @@ authors = [
 ]
 keywords = [
   "ai-monitoring",
+  "ai-status",
+  "outage-monitor",
   "status-dashboard",
+  "status-monitor",
   "openai",
   "anthropic",
   "gemini",
@@ -35,13 +38,13 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://study8677.github.io/aistatues/"
-Repository = "https://github.com/study8677/aistatues"
-Issues = "https://github.com/study8677/aistatues/issues"
-Dashboard = "https://study8677.github.io/aistatues/"
+Homepage = "https://study8677.github.io/ai-status-hub/"
+Repository = "https://github.com/study8677/ai-status-hub"
+Issues = "https://github.com/study8677/ai-status-hub/issues"
+Dashboard = "https://study8677.github.io/ai-status-hub/"
 
 [project.scripts]
-aistatues = "monitor:main"
+ai-status-hub = "monitor:main"
 
 [tool.setuptools]
 py-modules = ["monitor"]

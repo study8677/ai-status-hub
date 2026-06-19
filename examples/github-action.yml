@@ -9,5 +9,5 @@ jobs:
     steps:
       - name: Read public snapshot
         run: |
-          curl -s https://study8677.github.io/aistatues/last_run.json \
+          curl -s https://study8677.github.io/ai-status-hub/last_run.json \
             | jq -r '.services[] | [.service, .level, .overall_status] | @tsv'

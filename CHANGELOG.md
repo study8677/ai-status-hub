@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Rebranded the project as AI Status Hub for clearer GitHub search and sharing.
+- Updated public URLs, package metadata, console command, dashboard title, Open Graph assets, and workflow name for the new repository name.
+
 ## 0.1.0 - 2026-06-19
 
 - Added official-source adapters for OpenAI, Claude, Gemini, Grok, and AWS.

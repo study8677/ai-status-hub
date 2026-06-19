@@ -7,7 +7,7 @@ You can fork this repository and run your own official-source AI status monitor 
 1. Fork this repository.
 2. Enable GitHub Actions in the fork.
 3. Enable GitHub Pages from the `gh-pages` branch.
-4. Trigger `AI Services Status Monitor` once from the Actions tab.
+4. Trigger `AI Status Hub Monitor` once from the Actions tab.
 5. Open your Pages URL.
 
 The hosted workflow runs every 5 minutes:
