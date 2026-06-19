@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://study8677.github.io/aistatues/sitemap.xml
+Sitemap: https://study8677.github.io/ai-status-hub/sitemap.xml

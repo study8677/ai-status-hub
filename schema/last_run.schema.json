@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://study8677.github.io/aistatues/schema/last_run.schema.json",
-  "title": "AI Services Official Status Monitor Snapshot",
+  "$id": "https://study8677.github.io/ai-status-hub/schema/last_run.schema.json",
+  "title": "AI Status Hub Snapshot",
   "type": "object",
   "required": ["schema_version", "generated_at", "services", "alerts"],
   "properties": {
