@@ -1017,14 +1017,47 @@ def _format_seconds(seconds: Any) -> str:
     except Exception:
         return "-"
     if total < 60:
-        return f"{total}s"
+        return f"{total} 秒"
     minutes = total // 60
     if minutes < 60:
-        return f"{minutes}m"
+        return f"{minutes} 分钟"
     hours = minutes // 60
     if hours < 48:
-        return f"{hours}h {minutes % 60}m"
-    return f"{hours // 24}d {hours % 24}h"
+        return f"{hours} 小时 {minutes % 60} 分钟"
+    return f"{hours // 24} 天 {hours % 24} 小时"
+
+
+def _display_time(value: Any) -> str:
+    dt = parse_datetime(value)
+    if not dt:
+        return html.escape(str(value or "-"))
+    beijing = dt.astimezone(timezone(timedelta(hours=8)))
+    return (
+        f"{html.escape(beijing.strftime('%Y-%m-%d %H:%M:%S'))} 北京时间"
+        f" / {html.escape(dt.strftime('%Y-%m-%d %H:%M:%S'))} UTC"
+    )
+
+
+def _next_schedule_time(value: Any) -> str:
+    dt = parse_datetime(value)
+    if not dt:
+        return "-"
+    base = dt.replace(second=0, microsecond=0)
+    next_minute = ((base.minute // 5) + 1) * 5
+    if next_minute >= 60:
+        next_dt = (base.replace(minute=0) + timedelta(hours=1))
+    else:
+        next_dt = base.replace(minute=next_minute)
+    return _display_time(next_dt.isoformat().replace("+00:00", "Z"))
+
+
+def _level_label(level: str) -> str:
+    return {
+        "ok": "正常",
+        "warn": "预警",
+        "critical": "严重",
+        "unknown": "未知",
+    }.get(_safe_level(level), "未知")
 
 
 def _html_link(url: Optional[str], label: str) -> str:
@@ -1040,7 +1073,7 @@ def _incident_name(incident: Dict[str, Any]) -> str:
         or incident.get("summary")
         or incident.get("message")
         or incident.get("id")
-        or "Incident"
+        or "事件"
     )
 
 
@@ -1057,12 +1090,14 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
     level_counts = Counter(_safe_level(item.get("level")) for item in services)
     worst_level = services[0].get("level", "unknown") if services else "unknown"
     worst_level = _safe_level(worst_level)
-    generated_at = html.escape(str(data.get("generated_at", "")))
+    generated_at_raw = str(data.get("generated_at", ""))
+    generated_at = _display_time(generated_at_raw)
+    next_schedule_at = _next_schedule_time(generated_at_raw)
     title_by_level = {
-        "ok": "All monitored services are operational",
-        "warn": "Some monitored services are degraded",
-        "critical": "One or more monitored services are in outage state",
-        "unknown": "Monitor has incomplete source data",
+        "ok": "当前监控服务均为正常",
+        "warn": "部分监控服务出现降级或预警",
+        "critical": "至少一个监控服务处于严重异常",
+        "unknown": "监控源数据不完整",
     }
 
     cards = []
@@ -1081,14 +1116,14 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
         if first_incident:
             incident_label = html.escape(_incident_name(first_incident))
         elif source_error:
-            incident_label = f"Source error: {html.escape(source_error)}"
+            incident_label = f"官方源错误：{html.escape(source_error)}"
         else:
-            incident_label = "No active incident"
+            incident_label = "暂无进行中事件"
         active_count = len(incidents)
         duration = _format_seconds(item.get("anomaly_seconds"))
         confidence = f"{float(item.get('confidence', 0) or 0):.2f}"
-        updated_at = html.escape(str(item.get("updated_at", "")))
-        sampled_at = html.escape(str(item.get("time", "")))
+        updated_at = _display_time(item.get("updated_at"))
+        sampled_at = _display_time(item.get("time"))
 
         impacted_components = []
         for component in components:
@@ -1100,41 +1135,42 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
                     f"{html.escape(str(component.get('name', 'Component')))} "
                     f"<span>{html.escape(component_status)}</span>"
                 )
-        component_text = ", ".join(impacted_components[:4]) if impacted_components else "No impacted component reported"
+        component_text = ", ".join(impacted_components[:4]) if impacted_components else "官方源未报告受影响组件"
         if len(impacted_components) > 4:
-            component_text += f", +{len(impacted_components) - 4} more"
+            component_text += f"，另外 {len(impacted_components) - 4} 项"
 
         links = " ".join(
             part
             for part in [
-                _html_link(source_url, "official source"),
-                _html_link(incident_link, "incident"),
+                _html_link(source_url, "官方源"),
+                _html_link(incident_link, "事件链接"),
             ]
             if part
         )
+        badge_text = f"{_level_label(level)} {level.upper()}"
 
         cards.append(
             f"""
             <article class="service-card {level}">
               <div class="service-topline">
                 <h2>{service}</h2>
-                <span class="badge {level}">{level.upper()}</span>
+                <span class="badge {level}">{badge_text}</span>
               </div>
               <div class="score-row">
                 <strong>{score}</strong>
-                <span>score</span>
+                <span>分数</span>
                 <strong>{active_count}</strong>
-                <span>active</span>
+                <span>进行中</span>
                 <strong>{duration}</strong>
-                <span>duration</span>
+                <span>持续</span>
               </div>
               <dl>
-                <div><dt>Status</dt><dd>{status}</dd></div>
-                <div><dt>Incident</dt><dd>{incident_label}</dd></div>
-                <div><dt>Components</dt><dd>{component_text}</dd></div>
-                <div><dt>Updated</dt><dd>{updated_at}</dd></div>
-                <div><dt>Sampled</dt><dd>{sampled_at}</dd></div>
-                <div><dt>Confidence</dt><dd>{confidence}</dd></div>
+                <div><dt>状态</dt><dd>{status}</dd></div>
+                <div><dt>事件</dt><dd>{incident_label}</dd></div>
+                <div><dt>组件</dt><dd>{component_text}</dd></div>
+                <div><dt>源更新时间</dt><dd>{updated_at}</dd></div>
+                <div><dt>采样时间</dt><dd>{sampled_at}</dd></div>
+                <div><dt>置信度</dt><dd>{confidence}</dd></div>
               </dl>
               <div class="links">{links}</div>
             </article>
@@ -1147,20 +1183,20 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
                 f"""
                 <tr>
                   <td>{service}</td>
-                  <td><span class="badge {level}">{level.upper()}</span></td>
+                  <td><span class="badge {level}">{badge_text}</span></td>
                   <td>{html.escape(_incident_name(incident))}</td>
                   <td>{html.escape(str(incident.get('status') or incident.get('severity') or 'active'))}</td>
-                  <td>{_html_link(str(incident.get('link') or incident.get('url') or ''), 'open')}</td>
+                  <td>{_html_link(str(incident.get('link') or incident.get('url') or ''), '打开')}</td>
                 </tr>
                 """
             )
 
     html_body = f"""<!doctype html>
-<html>
+<html lang="zh-CN">
   <head>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AI Services Stability Monitor</title>
+    <title>AI 服务官方状态监控</title>
     <style>
       :root {{
         color-scheme: light;
@@ -1248,6 +1284,23 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
         font-size: 18px;
         margin-bottom: 4px;
       }}
+      .update-grid {{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 10px;
+        margin: 0 0 18px;
+      }}
+      .update-item {{
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 12px 14px;
+      }}
+      .update-item strong {{
+        display: block;
+        font-size: 13px;
+        margin-bottom: 4px;
+      }}
       .grid {{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -1299,14 +1352,13 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
       }}
       dl div {{
         display: grid;
-        grid-template-columns: 84px 1fr;
+        grid-template-columns: 96px 1fr;
         gap: 10px;
       }}
       dt {{
         color: #3c4656;
         font-size: 12px;
         font-weight: 800;
-        text-transform: uppercase;
       }}
       dd {{
         margin: 0;
@@ -1364,34 +1416,52 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
     <header>
       <div class="wrap hero">
         <div>
-          <h1>AI Services Official Status Monitor</h1>
-          <p class="subtitle">OpenAI, Claude, Gemini, Grok and AWS status from official public sources.</p>
-          <p class="meta">Last updated: {generated_at}</p>
+          <h1>AI 服务官方状态监控</h1>
+          <p class="subtitle">OpenAI、Claude、Gemini、Grok、AWS 官方状态源聚合看板。</p>
+          <p class="meta">上次页面更新时间：{generated_at}</p>
         </div>
         <div class="summary">
-          <span class="badge critical">CRITICAL {level_counts.get('critical', 0)}</span>
-          <span class="badge warn">WARN {level_counts.get('warn', 0)}</span>
-          <span class="badge ok">OK {level_counts.get('ok', 0)}</span>
-          <span class="badge unknown">UNKNOWN {level_counts.get('unknown', 0)}</span>
+          <span class="badge critical">严重 {level_counts.get('critical', 0)}</span>
+          <span class="badge warn">预警 {level_counts.get('warn', 0)}</span>
+          <span class="badge ok">正常 {level_counts.get('ok', 0)}</span>
+          <span class="badge unknown">未知 {level_counts.get('unknown', 0)}</span>
         </div>
       </div>
     </header>
     <main class="wrap">
       <div class="status-banner {worst_level}">
         <strong>{html.escape(title_by_level.get(worst_level, title_by_level['unknown']))}</strong>
-        <span class="meta">Scheduled on GitHub Actions. Data is normalized from official source endpoints only.</span>
+        <span class="meta">数据仅来自官方状态源，由 GitHub Actions 定时采样并发布到 GitHub Pages。</span>
+      </div>
+      <div class="update-grid">
+        <div class="update-item">
+          <strong>更新频率</strong>
+          <span class="meta">每 5 分钟触发一次。</span>
+        </div>
+        <div class="update-item">
+          <strong>触发时间</strong>
+          <span class="meta">北京时间每小时 00、05、10、15、20、25、30、35、40、45、50、55 分。</span>
+        </div>
+        <div class="update-item">
+          <strong>下一次预计触发</strong>
+          <span class="meta">{next_schedule_at}</span>
+        </div>
+        <div class="update-item">
+          <strong>实际生效</strong>
+          <span class="meta">通常在触发后几十秒到数分钟内完成，取决于 GitHub Actions 排队和 Pages 缓存。</span>
+        </div>
       </div>
       <div class="grid">
-        {''.join(cards) if cards else '<p>No data yet.</p>'}
+        {''.join(cards) if cards else '<p>暂无数据。</p>'}
       </div>
       <section>
-        <h2>Active Incidents</h2>
+        <h2>进行中事件</h2>
         <table>
           <thead>
-            <tr><th>Service</th><th>Level</th><th>Incident</th><th>Status</th><th>Link</th></tr>
+            <tr><th>服务</th><th>等级</th><th>事件</th><th>状态</th><th>链接</th></tr>
           </thead>
           <tbody>
-            {''.join(incident_rows) if incident_rows else '<tr><td colspan="5">No active incident reported by official sources.</td></tr>'}
+            {''.join(incident_rows) if incident_rows else '<tr><td colspan="5">官方源未报告进行中事件。</td></tr>'}
           </tbody>
         </table>
       </section>
