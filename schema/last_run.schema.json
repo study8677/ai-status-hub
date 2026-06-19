@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://study8677.github.io/aistatues/schema/last_run.schema.json",
+  "title": "AI Services Official Status Monitor Snapshot",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "services", "alerts"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Public snapshot schema version.",
+      "examples": ["1.0"]
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/service"
+      }
+    },
+    "alerts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "$defs": {
+    "service": {
+      "type": "object",
+      "required": [
+        "service",
+        "time",
+        "overall_status",
+        "components",
+        "active_incidents",
+        "raw_score",
+        "confidence",
+        "updated_at",
+        "source_url",
+        "level"
+      ],
+      "properties": {
+        "service": {
+          "type": "string"
+        },
+        "time": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "overall_status": {
+          "type": "string"
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "active_incidents": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "raw_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string"
+        },
+        "level": {
+          "type": "string",
+          "enum": ["ok", "warn", "critical", "unknown"]
+        },
+        "error": {
+          "type": ["string", "null"]
+        },
+        "first_anomaly_at": {
+          "type": ["string", "null"]
+        },
+        "consecutive_anomalies": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "consecutive_recoveries": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "anomaly_seconds": {
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "latest_incident_link": {
+          "type": ["string", "null"]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
