@@ -1093,6 +1093,8 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
     generated_at_raw = str(data.get("generated_at", ""))
     generated_at = _display_time(generated_at_raw)
     next_schedule_at = _next_schedule_time(generated_at_raw)
+    repo_url = "https://github.com/study8677/aistatues"
+    actions_url = "https://github.com/study8677/aistatues/actions/workflows/monitor.yml"
     title_by_level = {
         "ok": "当前监控服务均为正常",
         "warn": "部分监控服务出现降级或预警",
@@ -1251,6 +1253,22 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
         justify-content: flex-end;
         flex-wrap: wrap;
       }}
+      .hero-side {{
+        display: grid;
+        justify-items: end;
+        gap: 10px;
+      }}
+      .header-actions {{
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }}
+      .header-actions a {{
+        color: #0b57d0;
+        font-size: 14px;
+        font-weight: 700;
+      }}
       .badge {{
         display: inline-flex;
         align-items: center;
@@ -1405,6 +1423,12 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
         .summary {{
           justify-content: flex-start;
         }}
+        .hero-side {{
+          justify-items: start;
+        }}
+        .header-actions {{
+          justify-content: flex-start;
+        }}
         table {{
           display: block;
           overflow-x: auto;
@@ -1420,11 +1444,17 @@ def render_public_page(last_run_path: Path, public_dir: Path) -> None:
           <p class="subtitle">OpenAI、Claude、Gemini、Grok、AWS 官方状态源聚合看板。</p>
           <p class="meta">上次页面更新时间：{generated_at}</p>
         </div>
-        <div class="summary">
-          <span class="badge critical">严重 {level_counts.get('critical', 0)}</span>
-          <span class="badge warn">预警 {level_counts.get('warn', 0)}</span>
-          <span class="badge ok">正常 {level_counts.get('ok', 0)}</span>
-          <span class="badge unknown">未知 {level_counts.get('unknown', 0)}</span>
+        <div class="hero-side">
+          <div class="summary">
+            <span class="badge critical">严重 {level_counts.get('critical', 0)}</span>
+            <span class="badge warn">预警 {level_counts.get('warn', 0)}</span>
+            <span class="badge ok">正常 {level_counts.get('ok', 0)}</span>
+            <span class="badge unknown">未知 {level_counts.get('unknown', 0)}</span>
+          </div>
+          <nav class="header-actions" aria-label="项目链接">
+            {_html_link(repo_url, "GitHub 仓库")}
+            {_html_link(actions_url, "Actions 运行记录")}
+          </nav>
         </div>
       </div>
     </header>
