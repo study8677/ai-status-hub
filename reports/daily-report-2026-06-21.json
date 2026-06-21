@@ -1,0 +1,252 @@
+{
+  "generated_at": "2026-06-21T00:05:19Z",
+  "window": {
+    "start": "2026-06-20T00:00:00Z",
+    "end": "2026-06-21T00:05:19Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 0,
+      "warn": 13,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "warn",
+      "latest_at": "2026-06-21T00:05:18Z",
+      "recent_incidents": [
+        {
+          "time": "2026-06-21T00:05:18Z",
+          "name": "FedRAMP workspaces and API orgs have degraded performance",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T22:53:56Z",
+          "name": "FedRAMP workspaces and API orgs have degraded performance",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T21:47:05Z",
+          "name": "FedRAMP workspaces and API orgs have degraded performance",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T20:24:00Z",
+          "name": "FedRAMP workspaces and API orgs have degraded performance",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T19:02:10Z",
+          "name": "FedRAMP workspaces and API orgs have degraded performance",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T17:45:53Z",
+          "name": "FedRAMP workspaces and API orgs have degraded performance",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T16:06:32Z",
+          "name": "FedRAMP workspaces and API orgs have degraded performance",
+          "status": "investigating",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 0,
+      "warn": 0,
+      "critical": 13,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-06-21T00:05:18Z",
+      "recent_incidents": [
+        {
+          "time": "2026-06-21T00:05:18Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
+        {
+          "time": "2026-06-20T22:53:57Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
+        {
+          "time": "2026-06-20T21:47:05Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
+        {
+          "time": "2026-06-20T20:24:00Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
+        {
+          "time": "2026-06-20T19:02:11Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
+        {
+          "time": "2026-06-20T17:45:54Z",
+          "name": "Opus 4.8 errors",
+          "status": "investigating",
+          "link": "https://stspg.io/61p6brhqlxks"
+        },
+        {
+          "time": "2026-06-20T17:45:54Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
+        {
+          "time": "2026-06-20T16:06:33Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-06-21T00:05:18Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-06-21T00:05:19Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 0,
+      "warn": 0,
+      "critical": 13,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-06-21T00:05:19Z",
+      "recent_incidents": [
+        {
+          "time": "2026-06-21T00:05:19Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-21T00:05:19Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T22:53:57Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T22:53:57Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T21:47:05Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T21:47:05Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T20:24:00Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T20:24:00Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T19:02:11Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T19:02:11Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T17:45:54Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T17:45:54Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T16:06:33Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T16:06:33Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-20T14:37:27Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        }
+      ]
+    }
+  }
+}
