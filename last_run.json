@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-22T13:19:58Z",
+  "generated_at": "2026-06-22T17:59:09Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-06-22T13:19:57Z",
+      "time": "2026-06-22T17:59:08Z",
       "overall_status": "minor",
       "components": [
         {
@@ -152,14 +152,14 @@
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:02Z",
-      "consecutive_anomalies": 41,
+      "consecutive_anomalies": 42,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 298795,
+      "anomaly_seconds": 315546,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-06-22T13:19:57Z",
+      "time": "2026-06-22T17:59:09Z",
       "overall_status": "none",
       "components": [
         {
@@ -195,16 +195,6 @@
       ],
       "active_incidents": [
         {
-          "id": "dymmnf6xk0mg",
-          "name": "Elevated errors for Claude Opus 4.8",
-          "status": "monitoring",
-          "impact": "minor",
-          "shortlink": "https://stspg.io/jjzw7yp300my",
-          "started_at": "2026-06-22T08:11:50.416Z",
-          "updated_at": "2026-06-22T09:59:03.918Z",
-          "url": "https://stspg.io/jjzw7yp300my"
-        },
-        {
           "id": "s9w82lp9dcn9",
           "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
           "status": "monitoring",
@@ -217,37 +207,37 @@
       ],
       "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-06-22T12:54:01.468Z",
+      "updated_at": "2026-06-22T16:33:52.700Z",
       "source_url": "https://status.claude.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 41,
+      "consecutive_anomalies": 42,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 298794,
-      "latest_incident_link": "https://stspg.io/jjzw7yp300my"
+      "anomaly_seconds": 315546,
+      "latest_incident_link": "https://stspg.io/kqx0j625mrgv"
     },
     {
       "service": "Gemini",
-      "time": "2026-06-22T13:19:58Z",
+      "time": "2026-06-22T17:59:09Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-06-22T13:19:58Z",
+      "updated_at": "2026-06-22T17:59:09Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 41,
+      "consecutive_recoveries": 42,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-06-22T13:19:58Z",
+      "time": "2026-06-22T17:59:09Z",
       "overall_status": "operational",
       "components": [
         {
@@ -264,13 +254,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 41,
+      "consecutive_recoveries": 42,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-06-22T13:19:58Z",
+      "time": "2026-06-22T17:59:09Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -315,9 +305,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 41,
+      "consecutive_anomalies": 42,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 298795,
+      "anomaly_seconds": 315546,
       "latest_incident_link": null
     }
   ],
