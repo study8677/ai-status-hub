@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-22T07:42:24Z",
+  "generated_at": "2026-06-22T13:19:58Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-06-22T07:42:23Z",
+      "time": "2026-06-22T13:19:57Z",
       "overall_status": "minor",
       "components": [
         {
@@ -152,20 +152,20 @@
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:02Z",
-      "consecutive_anomalies": 40,
+      "consecutive_anomalies": 41,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 278541,
+      "anomaly_seconds": 298795,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-06-22T07:42:23Z",
+      "time": "2026-06-22T13:19:57Z",
       "overall_status": "none",
       "components": [
         {
           "name": "claude.ai",
           "status": "operational",
-          "updated_at": "2026-06-22T02:06:43.446Z"
+          "updated_at": "2026-06-22T09:59:03.821Z"
         },
         {
           "name": "Claude Console (platform.claude.com)",
@@ -175,17 +175,17 @@
         {
           "name": "Claude API (api.anthropic.com)",
           "status": "operational",
-          "updated_at": "2026-06-22T02:06:43.467Z"
+          "updated_at": "2026-06-22T09:59:03.839Z"
         },
         {
           "name": "Claude Code",
           "status": "operational",
-          "updated_at": "2026-06-22T02:06:43.486Z"
+          "updated_at": "2026-06-22T09:59:03.855Z"
         },
         {
           "name": "Claude Cowork",
           "status": "operational",
-          "updated_at": "2026-06-22T02:06:43.506Z"
+          "updated_at": "2026-06-22T09:59:03.872Z"
         },
         {
           "name": "Claude for Government",
@@ -194,6 +194,16 @@
         }
       ],
       "active_incidents": [
+        {
+          "id": "dymmnf6xk0mg",
+          "name": "Elevated errors for Claude Opus 4.8",
+          "status": "monitoring",
+          "impact": "minor",
+          "shortlink": "https://stspg.io/jjzw7yp300my",
+          "started_at": "2026-06-22T08:11:50.416Z",
+          "updated_at": "2026-06-22T09:59:03.918Z",
+          "url": "https://stspg.io/jjzw7yp300my"
+        },
         {
           "id": "s9w82lp9dcn9",
           "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
@@ -207,37 +217,37 @@
       ],
       "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-06-22T06:08:52.625Z",
+      "updated_at": "2026-06-22T12:54:01.468Z",
       "source_url": "https://status.claude.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 40,
+      "consecutive_anomalies": 41,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 278540,
-      "latest_incident_link": "https://stspg.io/kqx0j625mrgv"
+      "anomaly_seconds": 298794,
+      "latest_incident_link": "https://stspg.io/jjzw7yp300my"
     },
     {
       "service": "Gemini",
-      "time": "2026-06-22T07:42:23Z",
+      "time": "2026-06-22T13:19:58Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-06-22T07:42:23Z",
+      "updated_at": "2026-06-22T13:19:58Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 40,
+      "consecutive_recoveries": 41,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-06-22T07:42:23Z",
+      "time": "2026-06-22T13:19:58Z",
       "overall_status": "operational",
       "components": [
         {
@@ -254,13 +264,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 40,
+      "consecutive_recoveries": 41,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-06-22T07:42:24Z",
+      "time": "2026-06-22T13:19:58Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -305,9 +315,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 40,
+      "consecutive_anomalies": 41,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 278541,
+      "anomaly_seconds": 298795,
       "latest_incident_link": null
     }
   ],
