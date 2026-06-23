@@ -1,144 +1,139 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-23T16:36:07Z",
+  "generated_at": "2026-06-23T18:29:32Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-06-23T16:36:06Z",
-      "overall_status": "major",
+      "time": "2026-06-23T18:29:31Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "Fine-tuning",
           "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
+          "updated_at": "2026-06-23T18:25:13Z"
         },
         {
           "name": "Batch",
           "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Realtime",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Sora",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Conversations",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Audio",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Images",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Codex Web",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "File uploads",
-          "status": "partial_outage",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Agent",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "App",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Codex API",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "FedRAMP",
-          "status": "degraded_performance",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Ads Manager",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Chat Completions",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Embeddings",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Moderations",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Login",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Connectors/Apps",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "CLI",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "VS Code extension",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
-        },
-        {
-          "name": "Ads API",
-          "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
+          "updated_at": "2026-06-23T18:25:13Z"
         },
         {
           "name": "Responses",
           "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
+          "updated_at": "2026-06-23T18:25:13Z"
+        },
+        {
+          "name": "Audio",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:13Z"
         },
         {
           "name": "Files",
           "status": "operational",
-          "updated_at": "2026-06-22T18:29:42Z"
+          "updated_at": "2026-06-23T18:25:13Z"
+        },
+        {
+          "name": "Login",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:13Z"
+        },
+        {
+          "name": "Compliance API",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:13Z"
+        },
+        {
+          "name": "Search",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:13Z"
+        },
+        {
+          "name": "Voice mode",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:14Z"
+        },
+        {
+          "name": "GPTs",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:14Z"
+        },
+        {
+          "name": "Image Generation",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:14Z"
+        },
+        {
+          "name": "Deep Research",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:14Z"
+        },
+        {
+          "name": "ChatGPT Atlas",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:14Z"
+        },
+        {
+          "name": "Connectors/Apps",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:14Z"
+        },
+        {
+          "name": "CLI",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:14Z"
+        },
+        {
+          "name": "VS Code extension",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:14Z"
+        },
+        {
+          "name": "Ads API",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:14Z"
+        },
+        {
+          "name": "Realtime",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:13Z"
+        },
+        {
+          "name": "Sora",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:13Z"
+        },
+        {
+          "name": "Conversations",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:13Z"
+        },
+        {
+          "name": "Images",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:13Z"
+        },
+        {
+          "name": "Codex Web",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:14Z"
+        },
+        {
+          "name": "File uploads",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:14Z"
+        },
+        {
+          "name": "Agent",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:14Z"
+        },
+        {
+          "name": "App",
+          "status": "operational",
+          "updated_at": "2026-06-23T18:25:14Z"
         }
       ],
       "active_incidents": [
-        {
-          "id": "01KVTDW6E1PXBTY2A9XEBT4MY4",
-          "name": "Users may experience elevated errors in ChatGPT uploading and downloading files ",
-          "status": "monitoring",
-          "impact": "major",
-          "shortlink": null,
-          "started_at": "2026-06-23T14:24:16Z",
-          "updated_at": "2026-06-23T15:47:40Z",
-          "url": null
-        },
         {
           "id": "01KV6NGBYE50GK3TRXHD2EMTXA",
           "name": "FedRAMP workspaces and API orgs have degraded performance",
@@ -150,27 +145,27 @@
           "url": null
         }
       ],
-      "raw_score": 20,
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-06-23T15:47:40Z",
+      "updated_at": "2026-06-23T18:25:14Z",
       "source_url": "https://status.openai.com",
-      "level": "critical",
+      "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:02Z",
-      "consecutive_anomalies": 50,
+      "consecutive_anomalies": 51,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 396964,
+      "anomaly_seconds": 403769,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-06-23T16:36:06Z",
-      "overall_status": "none",
+      "time": "2026-06-23T18:29:31Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "claude.ai",
-          "status": "operational",
-          "updated_at": "2026-06-23T16:26:08.227Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-06-23T18:24:12.325Z"
         },
         {
           "name": "Claude Console (platform.claude.com)",
@@ -200,14 +195,14 @@
       ],
       "active_incidents": [
         {
-          "id": "jbhf20wjmzrf",
-          "name": "Elevated error rate across multiple models",
-          "status": "monitoring",
-          "impact": "critical",
-          "shortlink": "https://stspg.io/kx1ygc7qfvx1",
-          "started_at": "2026-06-23T14:19:06.033Z",
-          "updated_at": "2026-06-23T16:05:37.185Z",
-          "url": "https://stspg.io/kx1ygc7qfvx1"
+          "id": "18bq2kw867g5",
+          "name": "Claude.ai is experiencing elevated error rates",
+          "status": "investigating",
+          "impact": "minor",
+          "shortlink": "https://stspg.io/hl3355csbyxv",
+          "started_at": "2026-06-23T18:24:12.291Z",
+          "updated_at": "2026-06-23T18:24:12.378Z",
+          "url": "https://stspg.io/hl3355csbyxv"
         },
         {
           "id": "s9w82lp9dcn9",
@@ -222,37 +217,37 @@
       ],
       "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-06-23T16:26:45.807Z",
+      "updated_at": "2026-06-23T18:27:35.252Z",
       "source_url": "https://status.claude.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 50,
+      "consecutive_anomalies": 51,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 396963,
-      "latest_incident_link": "https://stspg.io/kx1ygc7qfvx1"
+      "anomaly_seconds": 403768,
+      "latest_incident_link": "https://stspg.io/hl3355csbyxv"
     },
     {
       "service": "Gemini",
-      "time": "2026-06-23T16:36:06Z",
+      "time": "2026-06-23T18:29:31Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-06-23T16:36:06Z",
+      "updated_at": "2026-06-23T18:29:31Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 50,
+      "consecutive_recoveries": 51,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-06-23T16:36:06Z",
+      "time": "2026-06-23T18:29:31Z",
       "overall_status": "operational",
       "components": [
         {
@@ -269,13 +264,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 50,
+      "consecutive_recoveries": 51,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-06-23T16:36:07Z",
+      "time": "2026-06-23T18:29:32Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -320,18 +315,11 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 50,
+      "consecutive_anomalies": 51,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 396964,
+      "anomaly_seconds": 403769,
       "latest_incident_link": null
     }
   ],
-  "alerts": [
-    {
-      "type": "escalate",
-      "service": "OpenAI",
-      "level": "critical",
-      "message": "OpenAI escalated to CRITICAL"
-    }
-  ]
+  "alerts": []
 }
