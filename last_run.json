@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-23T18:29:32Z",
+  "generated_at": "2026-06-23T20:36:49Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-06-23T18:29:31Z",
+      "time": "2026-06-23T20:36:48Z",
       "overall_status": "minor",
       "components": [
         {
@@ -152,20 +152,20 @@
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:02Z",
-      "consecutive_anomalies": 51,
+      "consecutive_anomalies": 52,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 403769,
+      "anomaly_seconds": 411406,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-06-23T18:29:31Z",
-      "overall_status": "minor",
+      "time": "2026-06-23T20:36:48Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "claude.ai",
-          "status": "degraded_performance",
-          "updated_at": "2026-06-23T18:24:12.325Z"
+          "status": "operational",
+          "updated_at": "2026-06-23T18:32:57.348Z"
         },
         {
           "name": "Claude Console (platform.claude.com)",
@@ -195,16 +195,6 @@
       ],
       "active_incidents": [
         {
-          "id": "18bq2kw867g5",
-          "name": "Claude.ai is experiencing elevated error rates",
-          "status": "investigating",
-          "impact": "minor",
-          "shortlink": "https://stspg.io/hl3355csbyxv",
-          "started_at": "2026-06-23T18:24:12.291Z",
-          "updated_at": "2026-06-23T18:24:12.378Z",
-          "url": "https://stspg.io/hl3355csbyxv"
-        },
-        {
           "id": "s9w82lp9dcn9",
           "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
           "status": "monitoring",
@@ -217,37 +207,37 @@
       ],
       "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-06-23T18:27:35.252Z",
+      "updated_at": "2026-06-23T20:30:10.967Z",
       "source_url": "https://status.claude.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 51,
+      "consecutive_anomalies": 52,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 403768,
-      "latest_incident_link": "https://stspg.io/hl3355csbyxv"
+      "anomaly_seconds": 411405,
+      "latest_incident_link": "https://stspg.io/kqx0j625mrgv"
     },
     {
       "service": "Gemini",
-      "time": "2026-06-23T18:29:31Z",
+      "time": "2026-06-23T20:36:49Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-06-23T18:29:31Z",
+      "updated_at": "2026-06-23T20:36:49Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 51,
+      "consecutive_recoveries": 52,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-06-23T18:29:31Z",
+      "time": "2026-06-23T20:36:49Z",
       "overall_status": "operational",
       "components": [
         {
@@ -264,13 +254,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 51,
+      "consecutive_recoveries": 52,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-06-23T18:29:32Z",
+      "time": "2026-06-23T20:36:49Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -315,9 +305,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 51,
+      "consecutive_anomalies": 52,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 403769,
+      "anomaly_seconds": 411406,
       "latest_incident_link": null
     }
   ],
