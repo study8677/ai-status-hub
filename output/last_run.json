@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-25T08:02:11Z",
+  "generated_at": "2026-06-25T10:51:36Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-06-25T08:02:10Z",
+      "time": "2026-06-25T10:51:35Z",
       "overall_status": "minor",
       "components": [
         {
@@ -137,11 +137,11 @@
         {
           "id": "01KVYNAMMJ7AMF94YBECG6JG6Q",
           "name": "Users may encounter issues using access token with Codex",
-          "status": "investigating",
+          "status": "monitoring",
           "impact": "minor",
           "shortlink": null,
           "started_at": "2026-06-25T05:51:27Z",
-          "updated_at": "2026-06-25T05:51:27Z",
+          "updated_at": "2026-06-25T08:02:39Z",
           "url": null
         },
         {
@@ -157,19 +157,19 @@
       ],
       "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-06-25T05:51:27Z",
+      "updated_at": "2026-06-25T08:02:38Z",
       "source_url": "https://status.openai.com",
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:02Z",
-      "consecutive_anomalies": 67,
+      "consecutive_anomalies": 68,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 538928,
+      "anomaly_seconds": 549093,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-06-25T08:02:10Z",
+      "time": "2026-06-25T10:51:35Z",
       "overall_status": "none",
       "components": [
         {
@@ -217,37 +217,37 @@
       ],
       "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-06-25T07:39:02.120Z",
+      "updated_at": "2026-06-25T10:38:57.209Z",
       "source_url": "https://status.claude.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 67,
+      "consecutive_anomalies": 68,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 538927,
+      "anomaly_seconds": 549092,
       "latest_incident_link": "https://stspg.io/kqx0j625mrgv"
     },
     {
       "service": "Gemini",
-      "time": "2026-06-25T08:02:10Z",
+      "time": "2026-06-25T10:51:35Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-06-25T08:02:10Z",
+      "updated_at": "2026-06-25T10:51:35Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 67,
+      "consecutive_recoveries": 68,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-06-25T08:02:10Z",
+      "time": "2026-06-25T10:51:35Z",
       "overall_status": "operational",
       "components": [
         {
@@ -264,13 +264,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 67,
+      "consecutive_recoveries": 68,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-06-25T08:02:11Z",
+      "time": "2026-06-25T10:51:36Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -315,9 +315,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 67,
+      "consecutive_anomalies": 68,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 538928,
+      "anomaly_seconds": 549093,
       "latest_incident_link": null
     }
   ],
