@@ -1,21 +1,33 @@
 {
-  "generated_at": "2026-06-25T04:35:35Z",
+  "generated_at": "2026-06-25T08:02:11Z",
   "window": {
     "start": "2026-06-24T00:00:00Z",
-    "end": "2026-06-25T04:35:35Z"
+    "end": "2026-06-25T08:02:11Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
       "ok": 0,
-      "warn": 12,
+      "warn": 13,
       "critical": 0,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-06-25T04:35:34Z",
+      "latest_at": "2026-06-25T08:02:10Z",
       "recent_incidents": [
+        {
+          "time": "2026-06-25T08:02:10Z",
+          "name": "Users may encounter issues using access token with Codex",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-06-25T08:02:10Z",
+          "name": "FedRAMP workspaces and API orgs have degraded performance",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-06-25T04:35:34Z",
           "name": "FedRAMP workspaces and API orgs have degraded performance",
@@ -51,26 +63,26 @@
           "name": "FedRAMP workspaces and API orgs have degraded performance",
           "status": "investigating",
           "link": null
-        },
-        {
-          "time": "2026-06-24T16:02:23Z",
-          "name": "FedRAMP workspaces and API orgs have degraded performance",
-          "status": "investigating",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
       "ok": 0,
       "warn": 0,
-      "critical": 12,
+      "critical": 13,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-06-25T04:35:34Z",
+      "latest_at": "2026-06-25T08:02:10Z",
       "recent_incidents": [
+        {
+          "time": "2026-06-25T08:02:10Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
         {
           "time": "2026-06-25T04:35:34Z",
           "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
@@ -106,63 +118,57 @@
           "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
           "status": "monitoring",
           "link": "https://stspg.io/kqx0j625mrgv"
-        },
-        {
-          "time": "2026-06-24T16:02:23Z",
-          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
-          "status": "monitoring",
-          "link": "https://stspg.io/kqx0j625mrgv"
-        },
-        {
-          "time": "2026-06-24T13:40:08Z",
-          "name": "Elevated error rate on Claude Opus 4.8",
-          "status": "investigating",
-          "link": "https://stspg.io/wnw8wdn9sfwm"
-        },
-        {
-          "time": "2026-06-24T13:40:08Z",
-          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
-          "status": "monitoring",
-          "link": "https://stspg.io/kqx0j625mrgv"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
-      "ok": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-06-25T04:35:34Z",
+      "latest_at": "2026-06-25T08:02:10Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
-      "ok": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-06-25T04:35:34Z",
+      "latest_at": "2026-06-25T08:02:10Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
       "ok": 0,
       "warn": 0,
-      "critical": 12,
+      "critical": 13,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-06-25T04:35:34Z",
+      "latest_at": "2026-06-25T08:02:11Z",
       "recent_incidents": [
         {
+          "time": "2026-06-25T08:02:11Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-25T08:02:11Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-06-25T04:35:34Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -237,12 +243,6 @@
         {
           "time": "2026-06-24T16:02:24Z",
           "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-06-24T16:02:24Z",
-          "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
         }
