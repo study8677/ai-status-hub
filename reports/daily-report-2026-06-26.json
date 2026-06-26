@@ -1,22 +1,28 @@
 {
-  "generated_at": "2026-06-26T01:35:35Z",
+  "generated_at": "2026-06-26T05:54:14Z",
   "window": {
     "start": "2026-06-25T00:00:00Z",
-    "end": "2026-06-26T01:35:35Z"
+    "end": "2026-06-26T05:54:14Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 11,
-      "measured_checks_24h": 11,
+      "total_checks_24h": 12,
+      "measured_checks_24h": 12,
       "ok": 0,
-      "warn": 11,
+      "warn": 12,
       "critical": 0,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-06-26T01:35:35Z",
+      "latest_at": "2026-06-26T05:54:13Z",
       "recent_incidents": [
         {
+          "time": "2026-06-26T05:54:13Z",
+          "name": "FedRAMP workspaces and API orgs have degraded performance",
+          "status": "investigating",
+          "link": null
+        },
+        {
           "time": "2026-06-26T01:35:35Z",
           "name": "Small Number of Users Have Incorrectly Cancelled Subscription",
           "status": "identified",
@@ -72,12 +78,6 @@
         },
         {
           "time": "2026-06-25T17:57:45Z",
-          "name": "FedRAMP workspaces and API orgs have degraded performance",
-          "status": "investigating",
-          "link": null
-        },
-        {
-          "time": "2026-06-25T15:46:55Z",
           "name": "FedRAMP workspaces and API orgs have degraded performance",
           "status": "investigating",
           "link": null
@@ -85,16 +85,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 11,
-      "measured_checks_24h": 11,
+      "total_checks_24h": 12,
+      "measured_checks_24h": 12,
       "ok": 0,
       "warn": 0,
-      "critical": 11,
+      "critical": 12,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-06-26T01:35:35Z",
+      "latest_at": "2026-06-26T05:54:13Z",
       "recent_incidents": [
+        {
+          "time": "2026-06-26T05:54:13Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
         {
           "time": "2026-06-26T01:35:35Z",
           "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
@@ -124,51 +130,57 @@
           "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
           "status": "monitoring",
           "link": "https://stspg.io/kqx0j625mrgv"
-        },
-        {
-          "time": "2026-06-25T15:46:55Z",
-          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
-          "status": "monitoring",
-          "link": "https://stspg.io/kqx0j625mrgv"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 11,
-      "measured_checks_24h": 11,
-      "ok": 11,
+      "total_checks_24h": 12,
+      "measured_checks_24h": 12,
+      "ok": 12,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-06-26T01:35:35Z",
+      "latest_at": "2026-06-26T05:54:14Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 11,
-      "measured_checks_24h": 11,
-      "ok": 11,
+      "total_checks_24h": 12,
+      "measured_checks_24h": 12,
+      "ok": 12,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-06-26T01:35:35Z",
+      "latest_at": "2026-06-26T05:54:14Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 11,
-      "measured_checks_24h": 11,
+      "total_checks_24h": 12,
+      "measured_checks_24h": 12,
       "ok": 0,
       "warn": 0,
-      "critical": 11,
+      "critical": 12,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-06-26T01:35:35Z",
+      "latest_at": "2026-06-26T05:54:14Z",
       "recent_incidents": [
         {
+          "time": "2026-06-26T05:54:14Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-26T05:54:14Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-06-26T01:35:35Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -230,18 +242,6 @@
         },
         {
           "time": "2026-06-25T15:46:56Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-06-25T15:46:56Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-06-25T13:12:41Z",
           "name": "Multiple services / UAE",
           "status": "3",
           "link": null
