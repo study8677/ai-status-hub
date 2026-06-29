@@ -2,14 +2,16 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 17 | 0 | critical |
-| Claude | 0.00 | 0 | 0 | 17 | 0 | critical |
-| Gemini | 100.00 | 17 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 17 | 0 | 0 | 0 | ok |
-| OpenAI | 0.00 | 0 | 17 | 0 | 0 | warn |
+| AWS | 0.00 | 0 | 0 | 18 | 0 | critical |
+| Claude | 0.00 | 0 | 0 | 18 | 0 | critical |
+| Gemini | 100.00 | 18 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 18 | 0 | 0 | 0 | ok |
+| OpenAI | 5.56 | 1 | 17 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-06-29T18:20:54Z | 3 | Multiple services / UAE
+- 2026-06-29T18:20:54Z | 3 | Multiple services / Bahrain
 - 2026-06-29T16:05:05Z | 3 | Multiple services / UAE
 - 2026-06-29T16:05:05Z | 3 | Multiple services / Bahrain
 - 2026-06-29T11:59:32Z | 3 | Multiple services / UAE
@@ -18,10 +20,9 @@
 - 2026-06-29T06:54:26Z | 3 | Multiple services / Bahrain
 - 2026-06-29T01:56:02Z | 3 | Multiple services / UAE
 - 2026-06-29T01:56:02Z | 3 | Multiple services / Bahrain
-- 2026-06-28T23:41:57Z | 3 | Multiple services / UAE
-- 2026-06-28T23:41:57Z | 3 | Multiple services / Bahrain
 
 ### Claude
+- 2026-06-29T18:20:54Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 - 2026-06-29T16:05:05Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 - 2026-06-29T11:59:32Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 - 2026-06-29T06:54:25Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
@@ -29,7 +30,6 @@
 - 2026-06-28T23:41:57Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 - 2026-06-28T22:30:38Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 - 2026-06-28T21:15:07Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
-- 2026-06-28T20:01:53Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 
 ### Gemini
 - 无事件记录
