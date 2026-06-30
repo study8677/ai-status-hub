@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-30T21:05:20Z",
+  "generated_at": "2026-06-30T22:37:03Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-06-30T21:05:19Z",
+      "time": "2026-06-30T22:37:02Z",
       "overall_status": "none",
       "components": [
         {
@@ -142,13 +142,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 13,
+      "consecutive_recoveries": 14,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-06-30T21:05:20Z",
+      "time": "2026-06-30T22:37:03Z",
       "overall_status": "none",
       "components": [
         {
@@ -196,37 +196,37 @@
       ],
       "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-06-30T20:23:41.777Z",
+      "updated_at": "2026-06-30T22:24:05.684Z",
       "source_url": "https://status.claude.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-30T10:00:08Z",
-      "consecutive_anomalies": 6,
+      "consecutive_anomalies": 7,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 39912,
+      "anomaly_seconds": 45415,
       "latest_incident_link": "https://stspg.io/kqx0j625mrgv"
     },
     {
       "service": "Gemini",
-      "time": "2026-06-30T21:05:20Z",
+      "time": "2026-06-30T22:37:03Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-06-30T21:05:20Z",
+      "updated_at": "2026-06-30T22:37:03Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 129,
+      "consecutive_recoveries": 130,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-06-30T21:05:20Z",
+      "time": "2026-06-30T22:37:03Z",
       "overall_status": "operational",
       "components": [
         {
@@ -243,13 +243,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 129,
+      "consecutive_recoveries": 130,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-06-30T21:05:20Z",
+      "time": "2026-06-30T22:37:03Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -272,13 +272,13 @@
         {
           "id": "arn:aws:health:eu-north-1::event/EC2/AWS_EC2_OPERATIONAL_ISSUE/AWS_EC2_OPERATIONAL_ISSUE_77410_461A699110A",
           "name": "Amazon Elastic Compute Cloud / Stockholm",
-          "status": "1",
-          "summary": "EC2 API Errors",
-          "updated_at": "2026-06-30T21:02:20Z",
+          "status": "0",
+          "summary": "[RESOLVED] Increased Error Rates and Latencies",
+          "updated_at": "2026-06-30T21:53:23Z",
           "link": null,
           "region": "Stockholm",
           "severity": "warn",
-          "latest_message": "We are investigating increased launch errors and API errors in the EU-NORTH-1 Region. Existing Instances are not affected by this issue."
+          "latest_message": "Between 1:42 PM and 2:25 PM PDT we experienced increased error rates and latencies for EC2 APIs in the EU-NORTH-1 Region. This issue also affected new instance launches. Other AWS Services that launch new instances or call EC2 APIs as part of their workflows were also affected by this issue. Existing EC2 instances were unaffected by this issue. During this time, customers would have received an Internal Server Error in the Management Console and APIs. Engineers were automatically engaged and began investigating the root cause. We identified the root cause as a planned configuration change. This change was reverted and we began observing recovery at 2:19 PM. By 2:25 PM, the issue was fully mitigated. We do not expect this issue to reoccur. Since the issue was mitigated at 2:25 PM, we have been processing a backlog for ELB workflows and expect this backlog to complete within the next 30 minutes. We recommend customers retry requests that failed during this time. The issue has been resolved and all services are operating normally. "
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -305,14 +305,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-06-30T21:02:20Z",
+      "updated_at": "2026-06-30T21:53:23Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 129,
+      "consecutive_anomalies": 130,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 1017917,
+      "anomaly_seconds": 1023420,
       "latest_incident_link": null
     }
   ],

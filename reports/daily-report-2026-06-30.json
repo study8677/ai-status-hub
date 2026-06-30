@@ -1,33 +1,39 @@
 {
-  "generated_at": "2026-06-30T21:05:20Z",
+  "generated_at": "2026-06-30T22:37:03Z",
   "window": {
     "start": "2026-06-29T00:00:00Z",
-    "end": "2026-06-30T21:05:20Z"
+    "end": "2026-06-30T22:37:03Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 17,
-      "ok": 13,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
+      "ok": 14,
       "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 76.47,
+      "sla": 77.78,
       "latest_status": "ok",
-      "latest_at": "2026-06-30T21:05:19Z",
+      "latest_at": "2026-06-30T22:37:02Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 16,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 17,
       "ok": 0,
       "warn": 0,
-      "critical": 16,
+      "critical": 17,
       "unknown": 1,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-06-30T21:05:20Z",
+      "latest_at": "2026-06-30T22:37:03Z",
       "recent_incidents": [
+        {
+          "time": "2026-06-30T22:37:03Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
         {
           "time": "2026-06-30T21:05:20Z",
           "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
@@ -81,50 +87,62 @@
           "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
           "status": "monitoring",
           "link": "https://stspg.io/kqx0j625mrgv"
-        },
-        {
-          "time": "2026-06-29T22:43:43Z",
-          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
-          "status": "monitoring",
-          "link": "https://stspg.io/kqx0j625mrgv"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 17,
-      "ok": 17,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
+      "ok": 18,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-06-30T21:05:20Z",
+      "latest_at": "2026-06-30T22:37:03Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 17,
-      "ok": 17,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
+      "ok": 18,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-06-30T21:05:20Z",
+      "latest_at": "2026-06-30T22:37:03Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 17,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
       "ok": 0,
       "warn": 0,
-      "critical": 17,
+      "critical": 18,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-06-30T21:05:20Z",
+      "latest_at": "2026-06-30T22:37:03Z",
       "recent_incidents": [
+        {
+          "time": "2026-06-30T22:37:03Z",
+          "name": "Amazon Elastic Compute Cloud / Stockholm",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T22:37:03Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T22:37:03Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
         {
           "time": "2026-06-30T21:05:20Z",
           "name": "Amazon Elastic Compute Cloud / Stockholm",
@@ -224,24 +242,6 @@
         {
           "time": "2026-06-30T01:53:01Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-06-29T23:44:47Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-06-29T23:44:47Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-06-29T22:43:43Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }

@@ -2,14 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 17 | 0 | critical |
-| Claude | 0.00 | 0 | 0 | 16 | 1 | critical |
-| Gemini | 100.00 | 17 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 17 | 0 | 0 | 0 | ok |
-| OpenAI | 76.47 | 13 | 4 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 18 | 0 | critical |
+| Claude | 0.00 | 0 | 0 | 17 | 1 | critical |
+| Gemini | 100.00 | 18 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 18 | 0 | 0 | 0 | ok |
+| OpenAI | 77.78 | 14 | 4 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-06-30T22:37:03Z | 0 | Amazon Elastic Compute Cloud / Stockholm
+- 2026-06-30T22:37:03Z | 3 | Multiple services / UAE
+- 2026-06-30T22:37:03Z | 3 | Multiple services / Bahrain
 - 2026-06-30T21:05:20Z | 1 | Amazon Elastic Compute Cloud / Stockholm
 - 2026-06-30T21:05:20Z | 3 | Multiple services / UAE
 - 2026-06-30T21:05:20Z | 3 | Multiple services / Bahrain
@@ -17,11 +20,9 @@
 - 2026-06-30T19:10:40Z | 3 | Multiple services / Bahrain
 - 2026-06-30T17:13:58Z | 3 | Multiple services / UAE
 - 2026-06-30T17:13:58Z | 3 | Multiple services / Bahrain
-- 2026-06-30T15:06:03Z | 3 | Multiple services / UAE
-- 2026-06-30T15:06:03Z | 3 | Multiple services / Bahrain
-- 2026-06-30T12:20:34Z | 3 | Multiple services / UAE
 
 ### Claude
+- 2026-06-30T22:37:03Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 - 2026-06-30T21:05:20Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 - 2026-06-30T19:10:39Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 - 2026-06-30T17:13:58Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
@@ -31,7 +32,6 @@
 - 2026-06-30T10:00:08Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 - 2026-06-30T01:53:00Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 - 2026-06-29T23:44:47Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
-- 2026-06-29T22:43:43Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 
 ### Gemini
 - 无事件记录
