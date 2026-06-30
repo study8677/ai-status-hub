@@ -1,33 +1,39 @@
 {
-  "generated_at": "2026-06-30T17:13:58Z",
+  "generated_at": "2026-06-30T19:10:40Z",
   "window": {
     "start": "2026-06-29T00:00:00Z",
-    "end": "2026-06-30T17:13:58Z"
+    "end": "2026-06-30T19:10:40Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
-      "ok": 11,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
+      "ok": 12,
       "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 73.33,
+      "sla": 75.0,
       "latest_status": "ok",
-      "latest_at": "2026-06-30T17:13:57Z",
+      "latest_at": "2026-06-30T19:10:39Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 14,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 15,
       "ok": 0,
       "warn": 0,
-      "critical": 14,
+      "critical": 15,
       "unknown": 1,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-06-30T17:13:58Z",
+      "latest_at": "2026-06-30T19:10:39Z",
       "recent_incidents": [
+        {
+          "time": "2026-06-30T19:10:39Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
         {
           "time": "2026-06-30T17:13:58Z",
           "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
@@ -81,51 +87,57 @@
           "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
           "status": "monitoring",
           "link": "https://stspg.io/kqx0j625mrgv"
-        },
-        {
-          "time": "2026-06-29T20:20:29Z",
-          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
-          "status": "monitoring",
-          "link": "https://stspg.io/kqx0j625mrgv"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
-      "ok": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
+      "ok": 16,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-06-30T17:13:58Z",
+      "latest_at": "2026-06-30T19:10:40Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
-      "ok": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
+      "ok": 16,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-06-30T17:13:58Z",
+      "latest_at": "2026-06-30T19:10:40Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
       "ok": 0,
       "warn": 0,
-      "critical": 15,
+      "critical": 16,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-06-30T17:13:58Z",
+      "latest_at": "2026-06-30T19:10:40Z",
       "recent_incidents": [
         {
+          "time": "2026-06-30T19:10:40Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T19:10:40Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-06-30T17:13:58Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -229,18 +241,6 @@
         },
         {
           "time": "2026-06-29T21:49:23Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-06-29T20:20:29Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-06-29T20:20:29Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
