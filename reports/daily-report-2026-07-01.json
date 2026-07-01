@@ -1,0 +1,251 @@
+{
+  "generated_at": "2026-07-01T01:59:23Z",
+  "window": {
+    "start": "2026-06-30T00:00:00Z",
+    "end": "2026-07-01T01:59:23Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-01T01:59:22Z",
+      "recent_incidents": []
+    },
+    "Claude": {
+      "total_checks_24h": 11,
+      "measured_checks_24h": 10,
+      "ok": 0,
+      "warn": 0,
+      "critical": 10,
+      "unknown": 1,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-07-01T01:59:22Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-01T01:59:22Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
+        {
+          "time": "2026-06-30T23:48:51Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
+        {
+          "time": "2026-06-30T22:37:03Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
+        {
+          "time": "2026-06-30T21:05:20Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
+        {
+          "time": "2026-06-30T19:10:39Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
+        {
+          "time": "2026-06-30T17:13:58Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
+        {
+          "time": "2026-06-30T15:06:03Z",
+          "name": "Elevated error rates on Opus 4.8",
+          "status": "monitoring",
+          "link": "https://stspg.io/f2wj8x9fk5c5"
+        },
+        {
+          "time": "2026-06-30T15:06:03Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
+        {
+          "time": "2026-06-30T12:20:33Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        },
+        {
+          "time": "2026-06-30T10:00:08Z",
+          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/kqx0j625mrgv"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-01T01:59:22Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-01T01:59:22Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 0,
+      "warn": 0,
+      "critical": 11,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-07-01T01:59:23Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-01T01:59:23Z",
+          "name": "Amazon Elastic Compute Cloud / Stockholm",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-01T01:59:23Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-01T01:59:23Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T23:48:51Z",
+          "name": "Amazon Elastic Compute Cloud / Stockholm",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T23:48:51Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T23:48:51Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T22:37:03Z",
+          "name": "Amazon Elastic Compute Cloud / Stockholm",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T22:37:03Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T22:37:03Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T21:05:20Z",
+          "name": "Amazon Elastic Compute Cloud / Stockholm",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T21:05:20Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T21:05:20Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T19:10:40Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T19:10:40Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T17:13:58Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T17:13:58Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T15:06:03Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T15:06:03Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T12:20:34Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-06-30T12:20:34Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        }
+      ]
+    }
+  }
+}
