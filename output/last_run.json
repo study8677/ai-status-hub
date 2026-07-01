@@ -1,12 +1,17 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-01T01:59:23Z",
+  "generated_at": "2026-07-01T06:42:06Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-01T01:59:22Z",
-      "overall_status": "none",
+      "time": "2026-07-01T06:42:05Z",
+      "overall_status": "minor",
       "components": [
+        {
+          "name": "FedRAMP",
+          "status": "degraded_performance",
+          "updated_at": "2026-06-23T18:25:14Z"
+        },
         {
           "name": "Batch",
           "status": "operational",
@@ -126,29 +131,35 @@
           "name": "Codex API",
           "status": "operational",
           "updated_at": "2026-06-23T18:25:14Z"
-        },
-        {
-          "name": "FedRAMP",
-          "status": "operational",
-          "updated_at": "2026-06-23T18:25:14Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "01KWDW344V7XWEQERJSEW62W57",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "impact": "minor",
+          "shortlink": null,
+          "started_at": "2026-07-01T03:38:18Z",
+          "updated_at": "2026-07-01T03:38:18Z",
+          "url": null
+        }
+      ],
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-06-23T18:25:14Z",
+      "updated_at": "2026-06-29T07:00:00Z",
       "source_url": "https://status.openai.com",
-      "level": "ok",
+      "level": "warn",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 16,
-      "anomaly_seconds": null,
+      "first_anomaly_at": "2026-07-01T06:42:05Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-01T01:59:22Z",
+      "time": "2026-07-01T06:42:05Z",
       "overall_status": "none",
       "components": [
         {
@@ -196,37 +207,37 @@
       ],
       "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-07-01T01:44:10.208Z",
+      "updated_at": "2026-07-01T06:13:54.491Z",
       "source_url": "https://status.claude.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-30T10:00:08Z",
-      "consecutive_anomalies": 9,
+      "consecutive_anomalies": 10,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 57554,
+      "anomaly_seconds": 74517,
       "latest_incident_link": "https://stspg.io/kqx0j625mrgv"
     },
     {
       "service": "Gemini",
-      "time": "2026-07-01T01:59:22Z",
+      "time": "2026-07-01T06:42:05Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-01T01:59:22Z",
+      "updated_at": "2026-07-01T06:42:05Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 132,
+      "consecutive_recoveries": 133,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-01T01:59:22Z",
+      "time": "2026-07-01T06:42:05Z",
       "overall_status": "operational",
       "components": [
         {
@@ -243,13 +254,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 132,
+      "consecutive_recoveries": 133,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-01T01:59:23Z",
+      "time": "2026-07-01T06:42:05Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -310,9 +321,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 132,
+      "consecutive_anomalies": 133,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 1035560,
+      "anomaly_seconds": 1052522,
       "latest_incident_link": null
     }
   ],

@@ -2,14 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 11 | 0 | critical |
-| Claude | 0.00 | 0 | 0 | 10 | 1 | critical |
-| Gemini | 100.00 | 11 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 11 | 0 | 0 | 0 | ok |
-| OpenAI | 100.00 | 11 | 0 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 12 | 0 | critical |
+| Claude | 0.00 | 0 | 0 | 11 | 1 | critical |
+| Gemini | 100.00 | 12 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 12 | 0 | 0 | 0 | ok |
+| OpenAI | 91.67 | 11 | 1 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-01T06:42:05Z | 0 | Amazon Elastic Compute Cloud / Stockholm
+- 2026-07-01T06:42:05Z | 3 | Multiple services / UAE
+- 2026-07-01T06:42:05Z | 3 | Multiple services / Bahrain
 - 2026-07-01T01:59:23Z | 0 | Amazon Elastic Compute Cloud / Stockholm
 - 2026-07-01T01:59:23Z | 3 | Multiple services / UAE
 - 2026-07-01T01:59:23Z | 3 | Multiple services / Bahrain
@@ -17,11 +20,9 @@
 - 2026-06-30T23:48:51Z | 3 | Multiple services / UAE
 - 2026-06-30T23:48:51Z | 3 | Multiple services / Bahrain
 - 2026-06-30T22:37:03Z | 0 | Amazon Elastic Compute Cloud / Stockholm
-- 2026-06-30T22:37:03Z | 3 | Multiple services / UAE
-- 2026-06-30T22:37:03Z | 3 | Multiple services / Bahrain
-- 2026-06-30T21:05:20Z | 1 | Amazon Elastic Compute Cloud / Stockholm
 
 ### Claude
+- 2026-07-01T06:42:05Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 - 2026-07-01T01:59:22Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 - 2026-06-30T23:48:51Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 - 2026-06-30T22:37:03Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
@@ -30,12 +31,10 @@
 - 2026-06-30T17:13:58Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 - 2026-06-30T15:06:03Z | monitoring | Elevated error rates on Opus 4.8
 - 2026-06-30T15:06:03Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
-- 2026-06-30T12:20:33Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
-- 2026-06-30T10:00:08Z | monitoring | We’ve suspended access to Claude Mythos 5 and Claude Fable 5
 
 ### Gemini
 - 无事件记录
 ### Grok
 - 无事件记录
 ### OpenAI
-- 无事件记录
+- 2026-07-01T06:42:05Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
