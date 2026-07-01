@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-07-01T18:08:32Z",
+  "generated_at": "2026-07-01T20:14:07Z",
   "window": {
     "start": "2026-06-30T00:00:00Z",
-    "end": "2026-07-01T18:08:32Z"
+    "end": "2026-07-01T20:14:07Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
       "ok": 11,
-      "warn": 5,
+      "warn": 6,
       "critical": 0,
       "unknown": 0,
-      "sla": 68.75,
+      "sla": 64.71,
       "latest_status": "warn",
-      "latest_at": "2026-07-01T18:08:31Z",
+      "latest_at": "2026-07-01T20:14:06Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-01T20:14:06Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-07-01T18:08:31Z",
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
@@ -49,15 +55,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 15,
-      "ok": 0,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 16,
+      "ok": 1,
       "warn": 0,
       "critical": 15,
       "unknown": 1,
-      "sla": 0.0,
-      "latest_status": "critical",
-      "latest_at": "2026-07-01T18:08:31Z",
+      "sla": 6.25,
+      "latest_status": "ok",
+      "latest_at": "2026-07-01T20:14:07Z",
       "recent_incidents": [
         {
           "time": "2026-07-01T18:08:31Z",
@@ -88,57 +94,63 @@
           "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
           "status": "monitoring",
           "link": "https://stspg.io/kqx0j625mrgv"
-        },
-        {
-          "time": "2026-07-01T01:59:22Z",
-          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
-          "status": "monitoring",
-          "link": "https://stspg.io/kqx0j625mrgv"
-        },
-        {
-          "time": "2026-06-30T23:48:51Z",
-          "name": "We’ve suspended access to Claude Mythos 5 and Claude Fable 5",
-          "status": "monitoring",
-          "link": "https://stspg.io/kqx0j625mrgv"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 17,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-01T18:08:31Z",
+      "latest_at": "2026-07-01T20:14:07Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 17,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-01T18:08:31Z",
+      "latest_at": "2026-07-01T20:14:07Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
       "ok": 0,
       "warn": 0,
-      "critical": 16,
+      "critical": 17,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-01T18:08:31Z",
+      "latest_at": "2026-07-01T20:14:07Z",
       "recent_incidents": [
         {
+          "time": "2026-07-01T20:14:07Z",
+          "name": "Amazon Elastic Compute Cloud / Stockholm",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-01T20:14:07Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-01T20:14:07Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-01T18:08:31Z",
           "name": "Amazon Elastic Compute Cloud / Stockholm",
           "status": "0",
@@ -232,18 +244,6 @@
           "time": "2026-07-01T01:59:23Z",
           "name": "Amazon Elastic Compute Cloud / Stockholm",
           "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-01T01:59:23Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-01T01:59:23Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
           "link": null
         }
       ]
