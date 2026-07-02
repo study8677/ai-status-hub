@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-07-02T10:45:41Z",
+  "generated_at": "2026-07-02T12:51:00Z",
   "window": {
     "start": "2026-07-01T00:00:00Z",
-    "end": "2026-07-02T10:45:41Z"
+    "end": "2026-07-02T12:51:00Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
       "ok": 1,
-      "warn": 12,
+      "warn": 13,
       "critical": 0,
       "unknown": 0,
-      "sla": 7.69,
+      "sla": 7.14,
       "latest_status": "warn",
-      "latest_at": "2026-07-02T10:45:40Z",
+      "latest_at": "2026-07-02T12:51:00Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-02T12:51:00Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-07-02T10:45:40Z",
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
@@ -67,15 +73,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 7,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 8,
       "warn": 0,
       "critical": 6,
       "unknown": 0,
-      "sla": 53.85,
+      "sla": 57.14,
       "latest_status": "ok",
-      "latest_at": "2026-07-02T10:45:40Z",
+      "latest_at": "2026-07-02T12:51:00Z",
       "recent_incidents": [
         {
           "time": "2026-07-01T18:08:31Z",
@@ -86,41 +92,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-02T10:45:40Z",
+      "latest_at": "2026-07-02T12:51:00Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-02T10:45:41Z",
+      "latest_at": "2026-07-02T12:51:00Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
       "ok": 0,
       "warn": 0,
-      "critical": 13,
+      "critical": 14,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-02T10:45:41Z",
+      "latest_at": "2026-07-02T12:51:00Z",
       "recent_incidents": [
         {
+          "time": "2026-07-02T12:51:00Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-02T12:51:00Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-02T10:45:41Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -224,24 +242,6 @@
         },
         {
           "time": "2026-07-01T18:08:31Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-01T18:08:31Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-01T16:02:56Z",
-          "name": "Amazon Elastic Compute Cloud / Stockholm",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-01T16:02:56Z",
           "name": "Multiple services / UAE",
           "status": "3",
           "link": null
