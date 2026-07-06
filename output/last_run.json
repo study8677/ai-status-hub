@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-06T13:33:23Z",
+  "generated_at": "2026-07-06T16:43:12Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-06T13:33:22Z",
+      "time": "2026-07-06T16:43:11Z",
       "overall_status": "minor",
       "components": [
         {
@@ -152,14 +152,14 @@
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-07-01T06:42:05Z",
-      "consecutive_anomalies": 65,
+      "consecutive_anomalies": 66,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 456677,
+      "anomaly_seconds": 468066,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-06T13:33:22Z",
+      "time": "2026-07-06T16:43:11Z",
       "overall_status": "none",
       "components": [
         {
@@ -196,37 +196,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-06T10:34:03.334Z",
+      "updated_at": "2026-07-06T15:39:13.519Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 60,
+      "consecutive_recoveries": 61,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-06T13:33:22Z",
+      "time": "2026-07-06T16:43:11Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-06T13:33:22Z",
+      "updated_at": "2026-07-06T16:43:11Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 197,
+      "consecutive_recoveries": 198,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-06T13:33:23Z",
+      "time": "2026-07-06T16:43:11Z",
       "overall_status": "operational",
       "components": [
         {
@@ -243,13 +243,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 197,
+      "consecutive_recoveries": 198,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-06T13:33:23Z",
+      "time": "2026-07-06T16:43:12Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -272,13 +272,13 @@
         {
           "id": "arn:aws:health:us-east-1::event/EC2/AWS_EC2_OPERATIONAL_ISSUE/AWS_EC2_OPERATIONAL_ISSUE_5269E_F1B7AF74706",
           "name": "Amazon Elastic Compute Cloud / N. Virginia",
-          "status": "1",
-          "summary": "Increased Launch Template API Error Rates",
-          "updated_at": "2026-07-06T12:45:29Z",
+          "status": "0",
+          "summary": "[RESOLVED] Increased Launch Template API Error Rates",
+          "updated_at": "2026-07-06T14:53:11Z",
           "link": null,
           "region": "N. Virginia",
           "severity": "warn",
-          "latest_message": "We are investigating increased error rates when calling EC2 Launch Template APIs in US-EAST-1 Region. During this time, affected customers may experience errors when creating, modifying, or referencing launch templates. Other AWS services that rely on launch templates may also be impacted. We will provide another update by 6:30 AM PDT or sooner, if we have additional information to share."
+          "latest_message": "Between 2:56 AM and 6:54 AM PDT, we experienced increased error rates when calling EC2 Launch Template APIs in the US-EAST-1 Region. During this time, affected customers may have experienced errors when creating, modifying, or describing Launch Templates. Other AWS services that rely on Launch Templates were also impacted. Amazon EC2 instances and Amazon EKS workloads already running on provisioned nodes continued to operate normally. Cluster modification operations, and Managed Node Group creation were also impacted. For EKS Auto Mode, impact was limited to operations requiring new capacity or changes, including node provisioning and pod scheduling. Our engineers were automatically engaged and immediately began investigating the root cause. We identified the root cause as a congestion issue within an EC2 internal subsystem responsible for processing EC2 launch template workflows. At 3:26 AM PDT, we took mitigation actions by introducing throttling for the affected APIs and we saw some recovery which was communicated directly with a subset of customers via the 'Your Account view' of the AWS Health Dashboard. We took multiple additional mitigation paths, incrementally lifting these throttle limits, and by 6:54 AM PDT, the issue was fully mitigated. We recommend that customers retry any failed requests. The issue has been resolved and all AWS services are now operating normally."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -305,14 +305,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-07-06T12:45:29Z",
+      "updated_at": "2026-07-06T14:53:11Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 197,
+      "consecutive_anomalies": 198,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 1509200,
+      "anomaly_seconds": 1520589,
       "latest_incident_link": null
     }
   ],
