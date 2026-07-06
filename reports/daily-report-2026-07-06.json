@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-07-06T20:32:00Z",
+  "generated_at": "2026-07-06T22:00:53Z",
   "window": {
     "start": "2026-07-05T00:00:00Z",
-    "end": "2026-07-06T20:32:00Z"
+    "end": "2026-07-06T22:00:53Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 21,
-      "measured_checks_24h": 21,
+      "total_checks_24h": 22,
+      "measured_checks_24h": 22,
       "ok": 0,
-      "warn": 21,
+      "warn": 22,
       "critical": 0,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-07-06T20:31:58Z",
+      "latest_at": "2026-07-06T22:00:52Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-06T22:00:52Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-07-06T20:31:58Z",
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
@@ -57,68 +63,81 @@
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
           "status": "investigating",
           "link": null
-        },
-        {
-          "time": "2026-07-05T23:19:01Z",
-          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
-          "status": "investigating",
-          "link": null
-        },
-        {
-          "time": "2026-07-05T22:10:01Z",
-          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
-          "status": "investigating",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 21,
-      "measured_checks_24h": 21,
+      "total_checks_24h": 22,
+      "measured_checks_24h": 22,
       "ok": 21,
-      "warn": 0,
+      "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 100.0,
-      "latest_status": "ok",
-      "latest_at": "2026-07-06T20:31:59Z",
-      "recent_incidents": []
+      "sla": 95.45,
+      "latest_status": "warn",
+      "latest_at": "2026-07-06T22:00:52Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-06T22:00:52Z",
+          "name": "Claude Tag seeing elevated GitHub operation failures",
+          "status": "investigating",
+          "link": "https://stspg.io/0l8p9n8ky411"
+        }
+      ]
     },
     "Gemini": {
-      "total_checks_24h": 21,
-      "measured_checks_24h": 21,
-      "ok": 21,
+      "total_checks_24h": 22,
+      "measured_checks_24h": 22,
+      "ok": 22,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-06T20:31:59Z",
+      "latest_at": "2026-07-06T22:00:52Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 21,
-      "measured_checks_24h": 21,
-      "ok": 21,
+      "total_checks_24h": 22,
+      "measured_checks_24h": 22,
+      "ok": 22,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-06T20:31:59Z",
+      "latest_at": "2026-07-06T22:00:53Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 21,
-      "measured_checks_24h": 21,
+      "total_checks_24h": 22,
+      "measured_checks_24h": 22,
       "ok": 0,
       "warn": 0,
-      "critical": 21,
+      "critical": 22,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-06T20:31:59Z",
+      "latest_at": "2026-07-06T22:00:53Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-06T22:00:53Z",
+          "name": "Amazon Elastic Compute Cloud / N. Virginia",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-06T22:00:53Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-06T22:00:53Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
         {
           "time": "2026-07-06T20:31:59Z",
           "name": "Amazon Elastic Compute Cloud / N. Virginia",
@@ -224,24 +243,6 @@
         {
           "time": "2026-07-06T01:12:38Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-05T23:19:02Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-05T23:19:02Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-05T22:10:01Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
