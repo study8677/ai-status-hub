@@ -1,21 +1,33 @@
 {
-  "generated_at": "2026-07-07T11:32:05Z",
+  "generated_at": "2026-07-07T13:49:26Z",
   "window": {
     "start": "2026-07-06T00:00:00Z",
-    "end": "2026-07-07T11:32:05Z"
+    "end": "2026-07-07T13:49:26Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
       "ok": 0,
-      "warn": 13,
+      "warn": 14,
       "critical": 0,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-07-07T11:32:05Z",
+      "latest_at": "2026-07-07T13:49:25Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-07T13:49:25Z",
+          "name": "Elevated errors with image generation in ChatGPT",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-07-07T13:49:25Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-07-07T11:32:05Z",
           "name": "Elevated errors with image generation in ChatGPT",
@@ -51,26 +63,26 @@
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
           "status": "investigating",
           "link": null
-        },
-        {
-          "time": "2026-07-06T22:00:52Z",
-          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
-          "status": "investigating",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
       "ok": 7,
-      "warn": 6,
+      "warn": 7,
       "critical": 0,
       "unknown": 0,
-      "sla": 53.85,
+      "sla": 50.0,
       "latest_status": "warn",
-      "latest_at": "2026-07-07T11:32:05Z",
+      "latest_at": "2026-07-07T13:49:25Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-07T13:49:25Z",
+          "name": "Claude Tag seeing elevated GitHub operation failures",
+          "status": "investigating",
+          "link": "https://stspg.io/0l8p9n8ky411"
+        },
         {
           "time": "2026-07-07T11:32:05Z",
           "name": "Claude Tag seeing elevated GitHub operation failures",
@@ -104,41 +116,59 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-07T11:32:05Z",
+      "latest_at": "2026-07-07T13:49:25Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-07T11:32:05Z",
+      "latest_at": "2026-07-07T13:49:25Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
       "ok": 0,
       "warn": 0,
-      "critical": 13,
+      "critical": 14,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-07T11:32:05Z",
+      "latest_at": "2026-07-07T13:49:25Z",
       "recent_incidents": [
         {
+          "time": "2026-07-07T13:49:25Z",
+          "name": "Amazon Elastic Compute Cloud / N. Virginia",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-07T13:49:25Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-07T13:49:25Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-07T11:32:05Z",
           "name": "Amazon Elastic Compute Cloud / N. Virginia",
           "status": "0",
@@ -214,36 +244,6 @@
           "time": "2026-07-06T23:19:03Z",
           "name": "Amazon Elastic Compute Cloud / N. Virginia",
           "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-06T23:19:03Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-06T23:19:03Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-06T22:00:53Z",
-          "name": "Amazon Elastic Compute Cloud / N. Virginia",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-06T22:00:53Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-06T22:00:53Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
           "link": null
         }
       ]
