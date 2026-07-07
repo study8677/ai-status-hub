@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-07-07T16:14:19Z",
+  "generated_at": "2026-07-07T18:23:33Z",
   "window": {
     "start": "2026-07-06T00:00:00Z",
-    "end": "2026-07-07T16:14:19Z"
+    "end": "2026-07-07T18:23:33Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
       "ok": 0,
-      "warn": 15,
+      "warn": 16,
       "critical": 0,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-07-07T16:14:17Z",
+      "latest_at": "2026-07-07T18:23:32Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-07T18:23:32Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-07-07T16:14:17Z",
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
@@ -57,25 +63,19 @@
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
           "status": "investigating",
           "link": null
-        },
-        {
-          "time": "2026-07-07T01:12:23Z",
-          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
-          "status": "investigating",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
-      "ok": 8,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
+      "ok": 9,
       "warn": 7,
       "critical": 0,
       "unknown": 0,
-      "sla": 53.33,
+      "sla": 56.25,
       "latest_status": "ok",
-      "latest_at": "2026-07-07T16:14:18Z",
+      "latest_at": "2026-07-07T18:23:32Z",
       "recent_incidents": [
         {
           "time": "2026-07-07T13:49:25Z",
@@ -110,41 +110,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
-      "ok": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
+      "ok": 16,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-07T16:14:18Z",
+      "latest_at": "2026-07-07T18:23:32Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
-      "ok": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
+      "ok": 16,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-07T16:14:18Z",
+      "latest_at": "2026-07-07T18:23:32Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
       "ok": 0,
       "warn": 0,
-      "critical": 15,
+      "critical": 16,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-07T16:14:18Z",
+      "latest_at": "2026-07-07T18:23:32Z",
       "recent_incidents": [
         {
+          "time": "2026-07-07T18:23:32Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-07T18:23:32Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-07T16:14:18Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -232,18 +244,6 @@
           "time": "2026-07-07T01:12:24Z",
           "name": "Amazon Elastic Compute Cloud / N. Virginia",
           "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-07T01:12:24Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-07T01:12:24Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
           "link": null
         }
       ]
