@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-07T13:49:26Z",
+  "generated_at": "2026-07-07T16:14:18Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-07T13:49:25Z",
+      "time": "2026-07-07T16:14:17Z",
       "overall_status": "minor",
       "components": [
         {
@@ -44,7 +44,7 @@
         },
         {
           "name": "Image Generation",
-          "status": "degraded_performance",
+          "status": "operational",
           "updated_at": "2026-06-23T18:25:14Z"
         },
         {
@@ -135,16 +135,6 @@
       ],
       "active_incidents": [
         {
-          "id": "01KWY5DQZ0KC8PTT3Y3T26H30D",
-          "name": "Elevated errors with image generation in ChatGPT",
-          "status": "identified",
-          "impact": "minor",
-          "shortlink": null,
-          "started_at": "2026-07-07T11:29:14Z",
-          "updated_at": "2026-07-07T12:17:03Z",
-          "url": null
-        },
-        {
           "id": "01KWDW344V7XWEQERJSEW62W57",
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
           "status": "investigating",
@@ -157,19 +147,19 @@
       ],
       "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-07-07T12:17:03Z",
+      "updated_at": "2026-06-29T07:00:00Z",
       "source_url": "https://status.openai.com",
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-07-01T06:42:05Z",
-      "consecutive_anomalies": 75,
+      "consecutive_anomalies": 76,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 544040,
+      "anomaly_seconds": 552732,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-07T13:49:25Z",
+      "time": "2026-07-07T16:14:18Z",
       "overall_status": "none",
       "components": [
         {
@@ -203,51 +193,40 @@
           "updated_at": "2026-06-30T14:45:50.487Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "d23j8s7t8rx2",
-          "name": "Claude Tag seeing elevated GitHub operation failures",
-          "status": "investigating",
-          "impact": "minor",
-          "shortlink": "https://stspg.io/0l8p9n8ky411",
-          "started_at": "2026-07-06T21:49:14.397Z",
-          "updated_at": "2026-07-07T01:07:51.289Z",
-          "url": "https://stspg.io/0l8p9n8ky411"
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-07T11:48:59.427Z",
+      "updated_at": "2026-07-07T15:52:01.242Z",
       "source_url": "https://status.claude.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-07-06T22:00:52Z",
-      "consecutive_anomalies": 7,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 56913,
-      "latest_incident_link": "https://stspg.io/0l8p9n8ky411"
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
+      "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-07T13:49:25Z",
+      "time": "2026-07-07T16:14:18Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-07T13:49:25Z",
+      "updated_at": "2026-07-07T16:14:18Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 207,
+      "consecutive_recoveries": 208,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-07T13:49:25Z",
+      "time": "2026-07-07T16:14:18Z",
       "overall_status": "operational",
       "components": [
         {
@@ -258,26 +237,21 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.85,
-      "updated_at": "2026-07-02T01:12:29Z",
+      "updated_at": "2026-07-07T15:42:08Z",
       "source_url": "https://status.x.ai/",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 207,
+      "consecutive_recoveries": 208,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-07T13:49:25Z",
+      "time": "2026-07-07T16:14:18Z",
       "overall_status": "major_outage",
       "components": [
-        {
-          "name": "Amazon Elastic Compute Cloud / N. Virginia",
-          "status": "degraded",
-          "region": "N. Virginia"
-        },
         {
           "name": "Multiple services / UAE",
           "status": "degraded",
@@ -290,17 +264,6 @@
         }
       ],
       "active_incidents": [
-        {
-          "id": "arn:aws:health:us-east-1::event/EC2/AWS_EC2_OPERATIONAL_ISSUE/AWS_EC2_OPERATIONAL_ISSUE_5269E_F1B7AF74706",
-          "name": "Amazon Elastic Compute Cloud / N. Virginia",
-          "status": "0",
-          "summary": "[RESOLVED] Increased Launch Template API Error Rates",
-          "updated_at": "2026-07-06T14:53:11Z",
-          "link": null,
-          "region": "N. Virginia",
-          "severity": "warn",
-          "latest_message": "Between 2:56 AM and 6:54 AM PDT, we experienced increased error rates when calling EC2 Launch Template APIs in the US-EAST-1 Region. During this time, affected customers may have experienced errors when creating, modifying, or describing Launch Templates. Other AWS services that rely on Launch Templates were also impacted. Amazon EC2 instances and Amazon EKS workloads already running on provisioned nodes continued to operate normally. Cluster modification operations, and Managed Node Group creation were also impacted. For EKS Auto Mode, impact was limited to operations requiring new capacity or changes, including node provisioning and pod scheduling. Our engineers were automatically engaged and immediately began investigating the root cause. We identified the root cause as a congestion issue within an EC2 internal subsystem responsible for processing EC2 launch template workflows. At 3:26 AM PDT, we took mitigation actions by introducing throttling for the affected APIs and we saw some recovery which was communicated directly with a subset of customers via the 'Your Account view' of the AWS Health Dashboard. We took multiple additional mitigation paths, incrementally lifting these throttle limits, and by 6:54 AM PDT, the issue was fully mitigated. We recommend that customers retry any failed requests. The issue has been resolved and all AWS services are now operating normally."
-        },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
           "name": "Multiple services / UAE",
@@ -326,14 +289,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-07-06T14:53:11Z",
+      "updated_at": "2026-04-30T07:25:54Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 207,
+      "consecutive_anomalies": 208,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 1596562,
+      "anomaly_seconds": 1605255,
       "latest_incident_link": null
     }
   ],
