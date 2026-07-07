@@ -1,21 +1,33 @@
 {
-  "generated_at": "2026-07-07T08:42:54Z",
+  "generated_at": "2026-07-07T11:32:05Z",
   "window": {
     "start": "2026-07-06T00:00:00Z",
-    "end": "2026-07-07T08:42:54Z"
+    "end": "2026-07-07T11:32:05Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
       "ok": 0,
-      "warn": 12,
+      "warn": 13,
       "critical": 0,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-07-07T08:42:53Z",
+      "latest_at": "2026-07-07T11:32:05Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-07T11:32:05Z",
+          "name": "Elevated errors with image generation in ChatGPT",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-07T11:32:05Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-07-07T08:42:53Z",
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
@@ -45,26 +57,26 @@
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
           "status": "investigating",
           "link": null
-        },
-        {
-          "time": "2026-07-06T20:31:58Z",
-          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
-          "status": "investigating",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
       "ok": 7,
-      "warn": 5,
+      "warn": 6,
       "critical": 0,
       "unknown": 0,
-      "sla": 58.33,
+      "sla": 53.85,
       "latest_status": "warn",
-      "latest_at": "2026-07-07T08:42:53Z",
+      "latest_at": "2026-07-07T11:32:05Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-07T11:32:05Z",
+          "name": "Claude Tag seeing elevated GitHub operation failures",
+          "status": "investigating",
+          "link": "https://stspg.io/0l8p9n8ky411"
+        },
         {
           "time": "2026-07-07T08:42:53Z",
           "name": "Claude Tag seeing elevated GitHub operation failures",
@@ -88,51 +100,63 @@
           "name": "Claude Tag seeing elevated GitHub operation failures",
           "status": "investigating",
           "link": "https://stspg.io/0l8p9n8ky411"
-        },
-        {
-          "time": "2026-07-06T22:00:52Z",
-          "name": "Claude Tag seeing elevated GitHub operation failures",
-          "status": "investigating",
-          "link": "https://stspg.io/0l8p9n8ky411"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
-      "ok": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-07T08:42:53Z",
+      "latest_at": "2026-07-07T11:32:05Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
-      "ok": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-07T08:42:53Z",
+      "latest_at": "2026-07-07T11:32:05Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
       "ok": 0,
       "warn": 0,
-      "critical": 12,
+      "critical": 13,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-07T08:42:54Z",
+      "latest_at": "2026-07-07T11:32:05Z",
       "recent_incidents": [
         {
+          "time": "2026-07-07T11:32:05Z",
+          "name": "Amazon Elastic Compute Cloud / N. Virginia",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-07T11:32:05Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-07T11:32:05Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-07T08:42:54Z",
           "name": "Amazon Elastic Compute Cloud / N. Virginia",
           "status": "0",
@@ -220,30 +244,6 @@
           "time": "2026-07-06T22:00:53Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-06T20:31:59Z",
-          "name": "Amazon Elastic Compute Cloud / N. Virginia",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-06T20:31:59Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-06T20:31:59Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-06T18:33:26Z",
-          "name": "Amazon Elastic Compute Cloud / N. Virginia",
-          "status": "0",
           "link": null
         }
       ]
