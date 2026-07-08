@@ -2,14 +2,16 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 12 | 0 | critical |
-| Claude | 33.33 | 4 | 5 | 3 | 0 | ok |
-| Gemini | 100.00 | 12 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 12 | 0 | 0 | 0 | ok |
-| OpenAI | 0.00 | 0 | 12 | 0 | 0 | warn |
+| AWS | 0.00 | 0 | 0 | 13 | 0 | critical |
+| Claude | 38.46 | 5 | 5 | 3 | 0 | ok |
+| Gemini | 100.00 | 13 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 13 | 0 | 0 | 0 | ok |
+| OpenAI | 0.00 | 0 | 13 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-08T06:16:25Z | 3 | Multiple services / UAE
+- 2026-07-08T06:16:25Z | 3 | Multiple services / Bahrain
 - 2026-07-08T03:41:16Z | 3 | Multiple services / UAE
 - 2026-07-08T03:41:16Z | 3 | Multiple services / Bahrain
 - 2026-07-08T00:06:16Z | 3 | Multiple services / UAE
@@ -18,8 +20,6 @@
 - 2026-07-07T22:57:35Z | 3 | Multiple services / Bahrain
 - 2026-07-07T21:53:03Z | 3 | Multiple services / UAE
 - 2026-07-07T21:53:03Z | 3 | Multiple services / Bahrain
-- 2026-07-07T20:24:08Z | 3 | Multiple services / UAE
-- 2026-07-07T20:24:08Z | 3 | Multiple services / Bahrain
 
 ### Claude
 - 2026-07-07T22:57:35Z | identified | Elevated errors for some models
@@ -32,6 +32,7 @@
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-07-08T06:16:25Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
 - 2026-07-08T03:41:15Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
 - 2026-07-08T00:06:15Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
 - 2026-07-07T22:57:35Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces

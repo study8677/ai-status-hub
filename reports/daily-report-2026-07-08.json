@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-07-08T03:41:16Z",
+  "generated_at": "2026-07-08T06:16:26Z",
   "window": {
     "start": "2026-07-07T00:00:00Z",
-    "end": "2026-07-08T03:41:16Z"
+    "end": "2026-07-08T06:16:26Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
       "ok": 0,
-      "warn": 12,
+      "warn": 13,
       "critical": 0,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-07-08T03:41:15Z",
+      "latest_at": "2026-07-08T06:16:25Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-08T06:16:25Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-07-08T03:41:15Z",
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
@@ -73,15 +79,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
-      "ok": 4,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 5,
       "warn": 5,
       "critical": 3,
       "unknown": 0,
-      "sla": 33.33,
+      "sla": 38.46,
       "latest_status": "ok",
-      "latest_at": "2026-07-08T03:41:15Z",
+      "latest_at": "2026-07-08T06:16:25Z",
       "recent_incidents": [
         {
           "time": "2026-07-07T22:57:35Z",
@@ -110,41 +116,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
-      "ok": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-08T03:41:15Z",
+      "latest_at": "2026-07-08T06:16:25Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
-      "ok": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-08T03:41:16Z",
+      "latest_at": "2026-07-08T06:16:25Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
       "ok": 0,
       "warn": 0,
-      "critical": 12,
+      "critical": 13,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-08T03:41:16Z",
+      "latest_at": "2026-07-08T06:16:25Z",
       "recent_incidents": [
         {
+          "time": "2026-07-08T06:16:25Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T06:16:25Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-08T03:41:16Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -224,24 +242,6 @@
         },
         {
           "time": "2026-07-07T16:14:18Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-07T13:49:25Z",
-          "name": "Amazon Elastic Compute Cloud / N. Virginia",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-07T13:49:25Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-07T13:49:25Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
