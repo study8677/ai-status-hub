@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-07-08T06:16:26Z",
+  "generated_at": "2026-07-08T09:02:21Z",
   "window": {
     "start": "2026-07-07T00:00:00Z",
-    "end": "2026-07-08T06:16:26Z"
+    "end": "2026-07-08T09:02:21Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
       "ok": 0,
-      "warn": 13,
+      "warn": 14,
       "critical": 0,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-07-08T06:16:25Z",
+      "latest_at": "2026-07-08T09:02:18Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-08T09:02:18Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-07-08T06:16:25Z",
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
@@ -63,31 +69,19 @@
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
           "status": "investigating",
           "link": null
-        },
-        {
-          "time": "2026-07-07T13:49:25Z",
-          "name": "Elevated errors with image generation in ChatGPT",
-          "status": "identified",
-          "link": null
-        },
-        {
-          "time": "2026-07-07T13:49:25Z",
-          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
-          "status": "investigating",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 5,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 6,
       "warn": 5,
       "critical": 3,
       "unknown": 0,
-      "sla": 38.46,
+      "sla": 42.86,
       "latest_status": "ok",
-      "latest_at": "2026-07-08T06:16:25Z",
+      "latest_at": "2026-07-08T09:02:19Z",
       "recent_incidents": [
         {
           "time": "2026-07-07T22:57:35Z",
@@ -106,50 +100,56 @@
           "name": "Elevated errors for some models",
           "status": "investigating",
           "link": "https://stspg.io/g0yp6phqpdrn"
-        },
-        {
-          "time": "2026-07-07T13:49:25Z",
-          "name": "Claude Tag seeing elevated GitHub operation failures",
-          "status": "investigating",
-          "link": "https://stspg.io/0l8p9n8ky411"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-08T06:16:25Z",
+      "latest_at": "2026-07-08T09:02:19Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-08T06:16:25Z",
+      "latest_at": "2026-07-08T09:02:19Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
       "ok": 0,
       "warn": 0,
-      "critical": 13,
+      "critical": 14,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-08T06:16:25Z",
+      "latest_at": "2026-07-08T09:02:21Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-08T09:02:21Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T09:02:21Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
         {
           "time": "2026-07-08T06:16:25Z",
           "name": "Multiple services / UAE",
