@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-07-08T15:20:06Z",
+  "generated_at": "2026-07-08T16:54:30Z",
   "window": {
     "start": "2026-07-07T00:00:00Z",
-    "end": "2026-07-08T15:20:06Z"
+    "end": "2026-07-08T16:54:30Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 17,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
       "ok": 0,
-      "warn": 17,
+      "warn": 18,
       "critical": 0,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-07-08T15:20:04Z",
+      "latest_at": "2026-07-08T16:54:29Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-08T16:54:29Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-07-08T15:20:04Z",
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
@@ -63,34 +69,22 @@
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
           "status": "investigating",
           "link": null
-        },
-        {
-          "time": "2026-07-07T21:53:02Z",
-          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
-          "status": "investigating",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 17,
-      "ok": 9,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
+      "ok": 10,
       "warn": 5,
       "critical": 3,
       "unknown": 0,
-      "sla": 52.94,
+      "sla": 55.56,
       "latest_status": "ok",
-      "latest_at": "2026-07-08T15:20:04Z",
+      "latest_at": "2026-07-08T16:54:30Z",
       "recent_incidents": [
         {
           "time": "2026-07-07T22:57:35Z",
-          "name": "Elevated errors for some models",
-          "status": "identified",
-          "link": "https://stspg.io/g0yp6phqpdrn"
-        },
-        {
-          "time": "2026-07-07T21:53:02Z",
           "name": "Elevated errors for some models",
           "status": "identified",
           "link": "https://stspg.io/g0yp6phqpdrn"
@@ -98,41 +92,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 17,
-      "ok": 17,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
+      "ok": 18,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-08T15:20:05Z",
+      "latest_at": "2026-07-08T16:54:30Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 17,
-      "ok": 17,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
+      "ok": 18,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-08T15:20:05Z",
+      "latest_at": "2026-07-08T16:54:30Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 17,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
       "ok": 0,
       "warn": 0,
-      "critical": 17,
+      "critical": 18,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-08T15:20:05Z",
+      "latest_at": "2026-07-08T16:54:30Z",
       "recent_incidents": [
         {
+          "time": "2026-07-08T16:54:30Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T16:54:30Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-08T15:20:05Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -237,12 +243,6 @@
         {
           "time": "2026-07-07T21:53:03Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-07T20:24:08Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
