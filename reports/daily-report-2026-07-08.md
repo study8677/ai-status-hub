@@ -2,14 +2,16 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 22 | 0 | critical |
-| Claude | 54.55 | 12 | 7 | 3 | 0 | ok |
-| Gemini | 100.00 | 22 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 22 | 0 | 0 | 0 | ok |
-| OpenAI | 0.00 | 0 | 22 | 0 | 0 | warn |
+| AWS | 0.00 | 0 | 0 | 23 | 0 | critical |
+| Claude | 56.52 | 13 | 7 | 3 | 0 | ok |
+| Gemini | 100.00 | 23 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 23 | 0 | 0 | 0 | ok |
+| OpenAI | 0.00 | 0 | 23 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-08T23:39:57Z | 3 | Multiple services / UAE
+- 2026-07-08T23:39:57Z | 3 | Multiple services / Bahrain
 - 2026-07-08T22:28:45Z | 3 | Multiple services / UAE
 - 2026-07-08T22:28:45Z | 3 | Multiple services / Bahrain
 - 2026-07-08T21:19:05Z | 3 | Multiple services / UAE
@@ -18,8 +20,6 @@
 - 2026-07-08T19:58:49Z | 3 | Multiple services / Bahrain
 - 2026-07-08T18:17:39Z | 3 | Multiple services / UAE
 - 2026-07-08T18:17:39Z | 3 | Multiple services / Bahrain
-- 2026-07-08T16:54:30Z | 3 | Multiple services / UAE
-- 2026-07-08T16:54:30Z | 3 | Multiple services / Bahrain
 
 ### Claude
 - 2026-07-08T19:58:49Z | monitoring | Degraded performance for Claude Code on the web, Cowork Remote, Claude Tag, and Claude Code Review sessions
@@ -31,6 +31,7 @@
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-07-08T23:39:57Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
 - 2026-07-08T22:28:44Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
 - 2026-07-08T21:19:04Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
 - 2026-07-08T19:58:48Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
@@ -39,4 +40,3 @@
 - 2026-07-08T15:20:04Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
 - 2026-07-08T12:53:34Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
 - 2026-07-08T11:11:58Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
-- 2026-07-08T09:02:18Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
