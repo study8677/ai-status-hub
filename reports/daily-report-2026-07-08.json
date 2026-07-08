@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-07-08T18:17:40Z",
+  "generated_at": "2026-07-08T19:58:49Z",
   "window": {
     "start": "2026-07-07T00:00:00Z",
-    "end": "2026-07-08T18:17:40Z"
+    "end": "2026-07-08T19:58:49Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 19,
-      "measured_checks_24h": 19,
+      "total_checks_24h": 20,
+      "measured_checks_24h": 20,
       "ok": 0,
-      "warn": 19,
+      "warn": 20,
       "critical": 0,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-07-08T18:17:38Z",
+      "latest_at": "2026-07-08T19:58:48Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-08T19:58:48Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-07-08T18:17:38Z",
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
@@ -63,82 +69,88 @@
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
           "status": "investigating",
           "link": null
-        },
-        {
-          "time": "2026-07-08T00:06:15Z",
-          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
-          "status": "investigating",
-          "link": null
-        },
-        {
-          "time": "2026-07-07T22:57:35Z",
-          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
-          "status": "investigating",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 19,
-      "measured_checks_24h": 19,
+      "total_checks_24h": 20,
+      "measured_checks_24h": 20,
       "ok": 10,
-      "warn": 6,
+      "warn": 7,
       "critical": 3,
       "unknown": 0,
-      "sla": 52.63,
+      "sla": 50.0,
       "latest_status": "warn",
-      "latest_at": "2026-07-08T18:17:38Z",
+      "latest_at": "2026-07-08T19:58:49Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-08T19:58:49Z",
+          "name": "Degraded performance for Claude Code on the web, Cowork Remote, Claude Tag, and Claude Code Review sessions",
+          "status": "monitoring",
+          "link": "https://stspg.io/th3djdzw5lsy"
+        },
+        {
+          "time": "2026-07-08T19:58:49Z",
+          "name": "Elevated errors on multiple models",
+          "status": "identified",
+          "link": "https://stspg.io/kt72q7m6rz9c"
+        },
         {
           "time": "2026-07-08T18:17:38Z",
           "name": "Elevated errors on Claude Opus 4.8",
           "status": "investigating",
           "link": "https://stspg.io/kt72q7m6rz9c"
-        },
-        {
-          "time": "2026-07-07T22:57:35Z",
-          "name": "Elevated errors for some models",
-          "status": "identified",
-          "link": "https://stspg.io/g0yp6phqpdrn"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 19,
-      "measured_checks_24h": 19,
-      "ok": 19,
+      "total_checks_24h": 20,
+      "measured_checks_24h": 20,
+      "ok": 20,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-08T18:17:39Z",
+      "latest_at": "2026-07-08T19:58:49Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 19,
-      "measured_checks_24h": 19,
-      "ok": 19,
+      "total_checks_24h": 20,
+      "measured_checks_24h": 20,
+      "ok": 20,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-08T18:17:39Z",
+      "latest_at": "2026-07-08T19:58:49Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 19,
-      "measured_checks_24h": 19,
+      "total_checks_24h": 20,
+      "measured_checks_24h": 20,
       "ok": 0,
       "warn": 0,
-      "critical": 19,
+      "critical": 20,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-08T18:17:39Z",
+      "latest_at": "2026-07-08T19:58:49Z",
       "recent_incidents": [
         {
+          "time": "2026-07-08T19:58:49Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T19:58:49Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-08T18:17:39Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -230,18 +242,6 @@
         },
         {
           "time": "2026-07-08T03:41:16Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-08T00:06:16Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-08T00:06:16Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
