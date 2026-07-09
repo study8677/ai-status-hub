@@ -1,0 +1,252 @@
+{
+  "generated_at": "2026-07-09T01:16:28Z",
+  "window": {
+    "start": "2026-07-08T00:00:00Z",
+    "end": "2026-07-09T01:16:28Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 0,
+      "warn": 14,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "warn",
+      "latest_at": "2026-07-09T01:16:27Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-09T01:16:27Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T23:39:57Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T22:28:44Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T21:19:04Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T19:58:48Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T18:17:38Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T16:54:29Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T15:20:04Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T12:53:34Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 12,
+      "warn": 2,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 85.71,
+      "latest_status": "ok",
+      "latest_at": "2026-07-09T01:16:27Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-08T19:58:49Z",
+          "name": "Degraded performance for Claude Code on the web, Cowork Remote, Claude Tag, and Claude Code Review sessions",
+          "status": "monitoring",
+          "link": "https://stspg.io/th3djdzw5lsy"
+        },
+        {
+          "time": "2026-07-08T19:58:49Z",
+          "name": "Elevated errors on multiple models",
+          "status": "identified",
+          "link": "https://stspg.io/kt72q7m6rz9c"
+        },
+        {
+          "time": "2026-07-08T18:17:38Z",
+          "name": "Elevated errors on Claude Opus 4.8",
+          "status": "investigating",
+          "link": "https://stspg.io/kt72q7m6rz9c"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-09T01:16:27Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-09T01:16:28Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 0,
+      "warn": 0,
+      "critical": 14,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-07-09T01:16:28Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-09T01:16:28Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-09T01:16:28Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T23:39:57Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T23:39:57Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T22:28:45Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T22:28:45Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T21:19:05Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T21:19:05Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T19:58:49Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T19:58:49Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T18:17:39Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T18:17:39Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T16:54:30Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T16:54:30Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T15:20:05Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T15:20:05Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T12:53:34Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-08T12:53:34Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        }
+      ]
+    }
+  }
+}
