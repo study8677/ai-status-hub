@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-10T20:53:09Z",
+  "generated_at": "2026-07-10T21:58:24Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-10T20:53:08Z",
+      "time": "2026-07-10T21:58:23Z",
       "overall_status": "minor",
       "components": [
         {
@@ -130,6 +130,16 @@
       ],
       "active_incidents": [
         {
+          "id": "01KX6Y1QMFX4NASV5DD591AD50",
+          "name": "OpenAI website and Help Center content may be unavailable",
+          "status": "investigating",
+          "impact": "none",
+          "shortlink": null,
+          "started_at": "2026-07-10T21:13:30Z",
+          "updated_at": "2026-07-10T21:38:35Z",
+          "url": null
+        },
+        {
           "id": "01KWDW344V7XWEQERJSEW62W57",
           "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
           "status": "investigating",
@@ -142,19 +152,19 @@
       ],
       "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-07-09T19:25:56Z",
+      "updated_at": "2026-07-10T21:13:30Z",
       "source_url": "https://status.openai.com",
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-07-01T06:42:05Z",
-      "consecutive_anomalies": 112,
+      "consecutive_anomalies": 113,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 828663,
+      "anomaly_seconds": 832578,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-10T20:53:08Z",
+      "time": "2026-07-10T21:58:23Z",
       "overall_status": "none",
       "components": [
         {
@@ -191,37 +201,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-10T18:55:28.016Z",
+      "updated_at": "2026-07-10T20:59:10.910Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 22,
+      "consecutive_recoveries": 23,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-10T20:53:08Z",
+      "time": "2026-07-10T21:58:23Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-10T20:53:08Z",
+      "updated_at": "2026-07-10T21:58:23Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 244,
+      "consecutive_recoveries": 245,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-10T20:53:08Z",
+      "time": "2026-07-10T21:58:24Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +248,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 244,
+      "consecutive_recoveries": 245,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-10T20:53:08Z",
+      "time": "2026-07-10T21:58:24Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -289,9 +299,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 244,
+      "consecutive_anomalies": 245,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 1881185,
+      "anomaly_seconds": 1885101,
       "latest_incident_link": null
     }
   ],
