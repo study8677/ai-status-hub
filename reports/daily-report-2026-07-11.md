@@ -2,14 +2,16 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 21 | 0 | critical |
-| Claude | 100.00 | 21 | 0 | 0 | 0 | ok |
-| Gemini | 100.00 | 21 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 21 | 0 | 0 | 0 | ok |
-| OpenAI | 42.86 | 9 | 12 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 22 | 0 | critical |
+| Claude | 100.00 | 22 | 0 | 0 | 0 | ok |
+| Gemini | 100.00 | 22 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 22 | 0 | 0 | 0 | ok |
+| OpenAI | 45.45 | 10 | 12 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-11T16:13:23Z | 3 | Multiple services / UAE
+- 2026-07-11T16:13:23Z | 3 | Multiple services / Bahrain
 - 2026-07-11T15:17:00Z | 3 | Multiple services / UAE
 - 2026-07-11T15:17:00Z | 3 | Multiple services / Bahrain
 - 2026-07-11T14:11:15Z | 3 | Multiple services / UAE
@@ -18,8 +20,6 @@
 - 2026-07-11T12:40:09Z | 3 | Multiple services / Bahrain
 - 2026-07-11T11:39:27Z | 3 | Multiple services / UAE
 - 2026-07-11T11:39:27Z | 3 | Multiple services / Bahrain
-- 2026-07-11T10:48:28Z | 3 | Multiple services / UAE
-- 2026-07-11T10:48:28Z | 3 | Multiple services / Bahrain
 
 ### Claude
 - 无事件记录
@@ -32,5 +32,3 @@
 - 2026-07-10T23:07:39Z | identified | OpenAI website and Help Center content may be unavailable
 - 2026-07-10T23:07:39Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
 - 2026-07-10T21:58:23Z | investigating | OpenAI website and Help Center content may be unavailable
-- 2026-07-10T21:58:23Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
-- 2026-07-10T20:53:08Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
