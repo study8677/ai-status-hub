@@ -2,14 +2,16 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 14 | 0 | critical |
-| Claude | 100.00 | 14 | 0 | 0 | 0 | ok |
-| Gemini | 100.00 | 14 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 14 | 0 | 0 | 0 | ok |
-| OpenAI | 14.29 | 2 | 12 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 15 | 0 | critical |
+| Claude | 100.00 | 15 | 0 | 0 | 0 | ok |
+| Gemini | 100.00 | 15 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 15 | 0 | 0 | 0 | ok |
+| OpenAI | 20.00 | 3 | 12 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-11T08:09:33Z | 3 | Multiple services / UAE
+- 2026-07-11T08:09:33Z | 3 | Multiple services / Bahrain
 - 2026-07-11T06:02:29Z | 3 | Multiple services / UAE
 - 2026-07-11T06:02:29Z | 3 | Multiple services / Bahrain
 - 2026-07-11T03:41:46Z | 3 | Multiple services / UAE
@@ -18,8 +20,6 @@
 - 2026-07-11T00:08:41Z | 3 | Multiple services / Bahrain
 - 2026-07-10T23:07:40Z | 3 | Multiple services / UAE
 - 2026-07-10T23:07:40Z | 3 | Multiple services / Bahrain
-- 2026-07-10T21:58:24Z | 3 | Multiple services / UAE
-- 2026-07-10T21:58:24Z | 3 | Multiple services / Bahrain
 
 ### Claude
 - 无事件记录
@@ -37,4 +37,3 @@
 - 2026-07-10T19:40:01Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
 - 2026-07-10T17:56:20Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
 - 2026-07-10T16:00:56Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
-- 2026-07-10T13:32:21Z | investigating | Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces
