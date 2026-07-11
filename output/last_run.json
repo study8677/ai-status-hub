@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-11T00:08:41Z",
+  "generated_at": "2026-07-11T03:41:46Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-11T00:08:37Z",
-      "overall_status": "minor",
+      "time": "2026-07-11T03:41:45Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Batch",
@@ -79,7 +79,7 @@
         },
         {
           "name": "FedRAMP",
-          "status": "degraded_performance",
+          "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -128,33 +128,22 @@
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "01KWDW344V7XWEQERJSEW62W57",
-          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
-          "status": "investigating",
-          "impact": "minor",
-          "shortlink": null,
-          "started_at": "2026-07-01T03:38:18Z",
-          "updated_at": "2026-07-01T03:38:18Z",
-          "url": null
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
       "updated_at": "2026-07-09T19:25:56Z",
       "source_url": "https://status.openai.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-07-01T06:42:05Z",
-      "consecutive_anomalies": 115,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 840392,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-11T00:08:41Z",
+      "time": "2026-07-11T03:41:45Z",
       "overall_status": "none",
       "components": [
         {
@@ -191,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-10T23:33:57.881Z",
+      "updated_at": "2026-07-11T03:14:02.874Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 25,
+      "consecutive_recoveries": 26,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-11T00:08:41Z",
+      "time": "2026-07-11T03:41:45Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-11T00:08:41Z",
+      "updated_at": "2026-07-11T03:41:45Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 247,
+      "consecutive_recoveries": 248,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-11T00:08:41Z",
+      "time": "2026-07-11T03:41:45Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 247,
+      "consecutive_recoveries": 248,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-11T00:08:41Z",
+      "time": "2026-07-11T03:41:46Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -289,9 +278,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 247,
+      "consecutive_anomalies": 248,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 1892918,
+      "anomaly_seconds": 1905703,
       "latest_incident_link": null
     }
   ],
