@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-11T17:18:11Z",
+  "generated_at": "2026-07-11T18:12:06Z",
   "window": {
     "start": "2026-07-10T00:00:00Z",
-    "end": "2026-07-11T17:18:11Z"
+    "end": "2026-07-11T18:12:06Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 11,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 12,
       "warn": 12,
       "critical": 0,
       "unknown": 0,
-      "sla": 47.83,
+      "sla": 50.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-11T17:18:10Z",
+      "latest_at": "2026-07-11T18:12:05Z",
       "recent_incidents": [
         {
           "time": "2026-07-11T00:08:37Z",
@@ -27,63 +27,69 @@
           "name": "OpenAI website and Help Center content may be unavailable",
           "status": "identified",
           "link": null
-        },
-        {
-          "time": "2026-07-10T23:07:39Z",
-          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
-          "status": "investigating",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 24,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-11T17:18:10Z",
+      "latest_at": "2026-07-11T18:12:05Z",
       "recent_incidents": []
     },
     "Gemini": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 24,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-11T17:18:10Z",
+      "latest_at": "2026-07-11T18:12:05Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 24,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-11T17:18:10Z",
+      "latest_at": "2026-07-11T18:12:05Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
       "ok": 0,
       "warn": 0,
-      "critical": 23,
+      "critical": 24,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-11T17:18:10Z",
+      "latest_at": "2026-07-11T18:12:05Z",
       "recent_incidents": [
         {
+          "time": "2026-07-11T18:12:05Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-11T18:12:05Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-11T17:18:10Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -236,12 +242,6 @@
         {
           "time": "2026-07-10T23:07:40Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-10T21:58:24Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
