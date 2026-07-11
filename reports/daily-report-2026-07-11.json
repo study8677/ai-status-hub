@@ -1,0 +1,251 @@
+{
+  "generated_at": "2026-07-11T00:08:42Z",
+  "window": {
+    "start": "2026-07-10T00:00:00Z",
+    "end": "2026-07-11T00:08:42Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 12,
+      "measured_checks_24h": 12,
+      "ok": 0,
+      "warn": 12,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "warn",
+      "latest_at": "2026-07-11T00:08:37Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-11T00:08:37Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T23:07:39Z",
+          "name": "OpenAI website and Help Center content may be unavailable",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T23:07:39Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T21:58:23Z",
+          "name": "OpenAI website and Help Center content may be unavailable",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T21:58:23Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T20:53:08Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T19:40:01Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T17:56:20Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T16:00:56Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T13:32:21Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T11:34:52Z",
+          "name": "Codex, workspace analytics, conversation search, searching for custom GPTs, ChatGPT user invites, and Compliance Log Platform download endpoint not working in FedRAMP workspaces",
+          "status": "investigating",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 12,
+      "measured_checks_24h": 12,
+      "ok": 12,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-11T00:08:41Z",
+      "recent_incidents": []
+    },
+    "Gemini": {
+      "total_checks_24h": 12,
+      "measured_checks_24h": 12,
+      "ok": 12,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-11T00:08:41Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 12,
+      "measured_checks_24h": 12,
+      "ok": 12,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-11T00:08:41Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 12,
+      "measured_checks_24h": 12,
+      "ok": 0,
+      "warn": 0,
+      "critical": 12,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-07-11T00:08:41Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-11T00:08:41Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-11T00:08:41Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T23:07:40Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T23:07:40Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T21:58:24Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T21:58:24Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T20:53:08Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T20:53:08Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T19:40:02Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T19:40:02Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T17:56:21Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T17:56:21Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T16:00:57Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T16:00:57Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T13:32:22Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T13:32:22Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T11:34:53Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T11:34:53Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-10T08:41:47Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        }
+      ]
+    }
+  }
+}
