@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-12T14:15:31Z",
+  "generated_at": "2026-07-12T15:28:18Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-12T14:15:30Z",
-      "overall_status": "minor",
+      "time": "2026-07-12T15:28:18Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Conversations",
@@ -24,7 +24,7 @@
         },
         {
           "name": "Login",
-          "status": "degraded_performance",
+          "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -44,11 +44,6 @@
         },
         {
           "name": "Files",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Login",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
@@ -137,29 +132,29 @@
         {
           "id": "01KXAVPTZ85KG478DP1YC0SV2V",
           "name": "Elevated conversation and login errors on ChatGPT for iOS and macOS",
-          "status": "identified",
+          "status": "monitoring",
           "impact": "minor",
           "shortlink": null,
           "started_at": "2026-07-12T09:49:34Z",
-          "updated_at": "2026-07-12T13:09:46Z",
+          "updated_at": "2026-07-12T15:15:24Z",
           "url": null
         }
       ],
       "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-07-12T13:09:46Z",
+      "updated_at": "2026-07-12T15:15:24Z",
       "source_url": "https://status.openai.com",
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-07-12T10:36:48Z",
-      "consecutive_anomalies": 4,
+      "consecutive_anomalies": 5,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 13122,
+      "anomaly_seconds": 17490,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-12T14:15:31Z",
+      "time": "2026-07-12T15:28:18Z",
       "overall_status": "none",
       "components": [
         {
@@ -202,31 +197,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 50,
+      "consecutive_recoveries": 51,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-12T14:15:31Z",
+      "time": "2026-07-12T15:28:18Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-12T14:15:31Z",
+      "updated_at": "2026-07-12T15:28:18Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 272,
+      "consecutive_recoveries": 273,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-12T14:15:31Z",
+      "time": "2026-07-12T15:28:18Z",
       "overall_status": "operational",
       "components": [
         {
@@ -243,13 +238,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 272,
+      "consecutive_recoveries": 273,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-12T14:15:31Z",
+      "time": "2026-07-12T15:28:18Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -294,9 +289,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 272,
+      "consecutive_anomalies": 273,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2030128,
+      "anomaly_seconds": 2034495,
       "latest_incident_link": null
     }
   ],
