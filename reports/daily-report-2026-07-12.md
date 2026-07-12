@@ -2,14 +2,16 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 34 | 0 | critical |
-| Claude | 100.00 | 34 | 0 | 0 | 0 | ok |
-| Gemini | 100.00 | 34 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 34 | 0 | 0 | 0 | ok |
-| OpenAI | 82.35 | 28 | 6 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 35 | 0 | critical |
+| Claude | 100.00 | 35 | 0 | 0 | 0 | ok |
+| Gemini | 100.00 | 35 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 35 | 0 | 0 | 0 | ok |
+| OpenAI | 82.86 | 29 | 6 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-12T23:30:22Z | 3 | Multiple services / UAE
+- 2026-07-12T23:30:22Z | 3 | Multiple services / Bahrain
 - 2026-07-12T22:27:21Z | 3 | Multiple services / UAE
 - 2026-07-12T22:27:21Z | 3 | Multiple services / Bahrain
 - 2026-07-12T21:28:29Z | 3 | Multiple services / UAE
@@ -18,8 +20,6 @@
 - 2026-07-12T20:31:50Z | 3 | Multiple services / Bahrain
 - 2026-07-12T19:48:16Z | 3 | Multiple services / UAE
 - 2026-07-12T19:48:16Z | 3 | Multiple services / Bahrain
-- 2026-07-12T18:36:19Z | 3 | Multiple services / UAE
-- 2026-07-12T18:36:19Z | 3 | Multiple services / Bahrain
 
 ### Claude
 - 无事件记录
