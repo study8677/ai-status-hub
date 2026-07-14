@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-14T21:15:39Z",
+  "generated_at": "2026-07-14T22:17:02Z",
   "window": {
     "start": "2026-07-13T00:00:00Z",
-    "end": "2026-07-14T21:15:39Z"
+    "end": "2026-07-14T22:17:02Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 24,
-      "measured_checks_24h": 24,
-      "ok": 22,
+      "total_checks_24h": 25,
+      "measured_checks_24h": 25,
+      "ok": 23,
       "warn": 2,
       "critical": 0,
       "unknown": 0,
-      "sla": 91.67,
+      "sla": 92.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-14T21:15:38Z",
+      "latest_at": "2026-07-14T22:17:01Z",
       "recent_incidents": [
         {
           "time": "2026-07-14T15:09:15Z",
@@ -25,53 +25,72 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 24,
-      "measured_checks_24h": 24,
+      "total_checks_24h": 25,
+      "measured_checks_24h": 25,
       "ok": 24,
       "warn": 0,
-      "critical": 0,
+      "critical": 1,
       "unknown": 0,
-      "sla": 100.0,
-      "latest_status": "ok",
-      "latest_at": "2026-07-14T21:15:39Z",
-      "recent_incidents": []
+      "sla": 96.0,
+      "latest_status": "critical",
+      "latest_at": "2026-07-14T22:17:02Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-14T22:17:02Z",
+          "name": "Partial outage of claude.ai: container creation",
+          "status": "monitoring",
+          "link": "https://stspg.io/7vd6cvlw38jb"
+        }
+      ]
     },
     "Gemini": {
-      "total_checks_24h": 24,
-      "measured_checks_24h": 24,
-      "ok": 24,
+      "total_checks_24h": 25,
+      "measured_checks_24h": 25,
+      "ok": 25,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-14T21:15:39Z",
+      "latest_at": "2026-07-14T22:17:02Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 24,
-      "measured_checks_24h": 24,
-      "ok": 24,
+      "total_checks_24h": 25,
+      "measured_checks_24h": 25,
+      "ok": 25,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-14T21:15:39Z",
+      "latest_at": "2026-07-14T22:17:02Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 24,
-      "measured_checks_24h": 24,
+      "total_checks_24h": 25,
+      "measured_checks_24h": 25,
       "ok": 0,
       "warn": 0,
-      "critical": 24,
+      "critical": 25,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-14T21:15:39Z",
+      "latest_at": "2026-07-14T22:17:02Z",
       "recent_incidents": [
         {
+          "time": "2026-07-14T22:17:02Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-14T22:17:02Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-14T21:15:39Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -224,24 +243,6 @@
         {
           "time": "2026-07-14T01:01:10Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-13T23:35:16Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-13T23:35:16Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-13T22:38:21Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
