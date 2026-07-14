@@ -1,17 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-14T13:27:37Z",
+  "generated_at": "2026-07-14T15:09:16Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-14T13:27:36Z",
-      "overall_status": "none",
+      "time": "2026-07-14T15:09:15Z",
+      "overall_status": "minor",
       "components": [
-        {
-          "name": "Conversations",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
         {
           "name": "Batch",
           "status": "operational",
@@ -25,6 +20,11 @@
         {
           "name": "Login",
           "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Conversations",
+          "status": "degraded_performance",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -128,22 +128,33 @@
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "01KXGJPKV743DPQZDZQ57VR0JQ",
+          "name": "Some ChatGPT Go users may experience conversation failures when using GPT-5.5.",
+          "status": "identified",
+          "impact": "minor",
+          "shortlink": null,
+          "started_at": "2026-07-14T15:07:36Z",
+          "updated_at": "2026-07-14T15:07:36Z",
+          "url": null
+        }
+      ],
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-07-09T19:25:56Z",
+      "updated_at": "2026-07-14T15:07:36Z",
       "source_url": "https://status.openai.com",
-      "level": "ok",
+      "level": "warn",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 14,
-      "anomaly_seconds": null,
+      "first_anomaly_at": "2026-07-14T15:09:15Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-14T13:27:36Z",
+      "time": "2026-07-14T15:09:15Z",
       "overall_status": "none",
       "components": [
         {
@@ -180,37 +191,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-14T12:34:02.014Z",
+      "updated_at": "2026-07-14T14:44:00.294Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 77,
+      "consecutive_recoveries": 78,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-14T13:27:36Z",
+      "time": "2026-07-14T15:09:15Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-14T13:27:36Z",
+      "updated_at": "2026-07-14T15:09:15Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 299,
+      "consecutive_recoveries": 300,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-14T13:27:36Z",
+      "time": "2026-07-14T15:09:15Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +238,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 299,
+      "consecutive_recoveries": 300,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-14T13:27:37Z",
+      "time": "2026-07-14T15:09:15Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -278,9 +289,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 299,
+      "consecutive_anomalies": 300,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2200054,
+      "anomaly_seconds": 2206152,
       "latest_incident_link": null
     }
   ],
