@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-15T22:41:27Z",
+  "generated_at": "2026-07-15T23:42:38Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-15T22:41:26Z",
+      "time": "2026-07-15T23:42:37Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 13,
+      "consecutive_recoveries": 14,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-15T22:41:27Z",
+      "time": "2026-07-15T23:42:38Z",
       "overall_status": "none",
       "components": [
         {
@@ -180,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-15T21:49:11.602Z",
+      "updated_at": "2026-07-15T22:54:57.894Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 15,
+      "consecutive_recoveries": 16,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-15T22:41:27Z",
+      "time": "2026-07-15T23:42:38Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-15T22:41:27Z",
+      "updated_at": "2026-07-15T23:42:38Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 321,
+      "consecutive_recoveries": 322,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-15T22:41:27Z",
+      "time": "2026-07-15T23:42:38Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,15 +227,20 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 321,
+      "consecutive_recoveries": 322,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-15T22:41:27Z",
+      "time": "2026-07-15T23:42:38Z",
       "overall_status": "major_outage",
       "components": [
+        {
+          "name": "Multiple services / Frankfurt",
+          "status": "degraded",
+          "region": "Frankfurt"
+        },
         {
           "name": "Multiple services / UAE",
           "status": "degraded",
@@ -248,6 +253,17 @@
         }
       ],
       "active_incidents": [
+        {
+          "id": "arn:aws:health:eu-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_25DBE_2EF1D48B613",
+          "name": "Multiple services / Frankfurt",
+          "status": "1",
+          "summary": "Elevated connectivity issues with a single Avalability zone",
+          "updated_at": "2026-07-15T23:36:01Z",
+          "link": null,
+          "region": "Frankfurt",
+          "severity": "warn",
+          "latest_message": "We are seeing early signs of recovery and continue to work toward full resolution. We will continue to provide updates."
+        },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
           "name": "Multiple services / UAE",
@@ -273,14 +289,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-04-30T07:25:54Z",
+      "updated_at": "2026-07-15T23:36:01Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 321,
+      "consecutive_anomalies": 322,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2319684,
+      "anomaly_seconds": 2323355,
       "latest_incident_link": null
     }
   ],
