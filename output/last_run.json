@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-14T23:15:40Z",
+  "generated_at": "2026-07-15T00:09:20Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-14T23:15:39Z",
-      "overall_status": "none",
+      "time": "2026-07-15T00:09:19Z",
+      "overall_status": "major",
       "components": [
         {
           "name": "Batch",
@@ -19,17 +19,17 @@
         },
         {
           "name": "Login",
-          "status": "operational",
+          "status": "partial_outage",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
           "name": "Conversations",
-          "status": "operational",
+          "status": "partial_outage",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
           "name": "Compliance API",
-          "status": "operational",
+          "status": "partial_outage",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -48,22 +48,7 @@
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
-          "name": "ChatGPT Work",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Codex in ChatGPT Desktop",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Agent",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Sites",
+          "name": "Login",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
@@ -89,27 +74,17 @@
         },
         {
           "name": "Search",
-          "status": "operational",
+          "status": "partial_outage",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
           "name": "GPTs",
-          "status": "operational",
+          "status": "partial_outage",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
           "name": "Image Generation",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "ChatGPT Atlas",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Connectors/Apps",
-          "status": "operational",
+          "status": "partial_outage",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -123,27 +98,68 @@
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
+          "name": "Agent",
+          "status": "partial_outage",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
           "name": "Responses",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Connectors/Apps",
+          "status": "partial_outage",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "ChatGPT Atlas",
+          "status": "partial_outage",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Codex in ChatGPT Desktop",
+          "status": "partial_outage",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "ChatGPT Work",
+          "status": "partial_outage",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Sites",
+          "status": "partial_outage",
+          "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "01KXHH1BJ9BS0FVE2MGEJ9FZ5M",
+          "name": "Elevated errors affecting ChatGPT",
+          "status": "investigating",
+          "impact": "major",
+          "shortlink": null,
+          "started_at": "2026-07-14T23:57:45Z",
+          "updated_at": "2026-07-14T23:57:45Z",
+          "url": null
+        }
+      ],
+      "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-07-09T19:25:56Z",
+      "updated_at": "2026-07-14T23:57:45Z",
       "source_url": "https://status.openai.com",
-      "level": "ok",
+      "level": "critical",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 7,
-      "anomaly_seconds": null,
+      "first_anomaly_at": "2026-07-15T00:09:19Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-14T23:15:40Z",
+      "time": "2026-07-15T00:09:19Z",
       "overall_status": "none",
       "components": [
         {
@@ -186,31 +202,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1,
+      "consecutive_recoveries": 2,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-14T23:15:40Z",
+      "time": "2026-07-15T00:09:19Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-14T23:15:40Z",
+      "updated_at": "2026-07-15T00:09:19Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 307,
+      "consecutive_recoveries": 308,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-14T23:15:40Z",
+      "time": "2026-07-15T00:09:19Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +243,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 307,
+      "consecutive_recoveries": 308,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-14T23:15:40Z",
+      "time": "2026-07-15T00:09:19Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -278,9 +294,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 307,
+      "consecutive_anomalies": 308,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2235337,
+      "anomaly_seconds": 2238556,
       "latest_incident_link": null
     }
   ],
