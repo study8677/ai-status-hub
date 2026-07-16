@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-16T15:03:01Z",
+  "generated_at": "2026-07-16T16:38:18Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-16T15:03:00Z",
-      "overall_status": "minor",
+      "time": "2026-07-16T16:38:17Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Batch",
@@ -14,7 +14,7 @@
         },
         {
           "name": "Login",
-          "status": "degraded_performance",
+          "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -128,33 +128,22 @@
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "01KXN14DD3EYYJ6PJ9M736WDSV",
-          "name": "Elevated Error Rates For SSO Login",
-          "status": "monitoring",
-          "impact": "minor",
-          "shortlink": null,
-          "started_at": "2026-07-16T08:36:46Z",
-          "updated_at": "2026-07-16T10:57:24Z",
-          "url": null
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-16T10:57:24Z",
+      "updated_at": "2026-07-09T19:25:56Z",
       "source_url": "https://status.openai.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-07-16T09:23:17Z",
-      "consecutive_anomalies": 4,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 20383,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-16T15:03:00Z",
+      "time": "2026-07-16T16:38:18Z",
       "overall_status": "none",
       "components": [
         {
@@ -191,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-16T13:30:55.418Z",
+      "updated_at": "2026-07-16T16:34:01.244Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
-      "first_anomaly_at": "2026-07-16T09:23:17Z",
+      "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1,
+      "consecutive_recoveries": 2,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-16T15:03:00Z",
+      "time": "2026-07-16T16:38:18Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-16T15:03:00Z",
+      "updated_at": "2026-07-16T16:38:18Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 329,
+      "consecutive_recoveries": 330,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-16T15:03:00Z",
+      "time": "2026-07-16T16:38:18Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 329,
+      "consecutive_recoveries": 330,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-16T15:03:00Z",
+      "time": "2026-07-16T16:38:18Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -321,11 +310,18 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 329,
+      "consecutive_anomalies": 330,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2378577,
+      "anomaly_seconds": 2384295,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "recover",
+      "service": "Claude",
+      "level": "ok",
+      "message": "Claude recovered"
+    }
+  ]
 }
