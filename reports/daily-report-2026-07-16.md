@@ -2,24 +2,24 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 28 | 0 | critical |
-| Claude | 75.00 | 21 | 3 | 4 | 0 | critical |
-| Gemini | 100.00 | 28 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 28 | 0 | 0 | 0 | ok |
-| OpenAI | 82.14 | 23 | 4 | 1 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 29 | 0 | critical |
+| Claude | 75.86 | 22 | 3 | 4 | 0 | ok |
+| Gemini | 100.00 | 29 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 29 | 0 | 0 | 0 | ok |
+| OpenAI | 79.31 | 23 | 5 | 1 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-16T23:14:57Z | 0 | Amazon CloudFront
+- 2026-07-16T23:14:57Z | 0 | Multiple services / Frankfurt
+- 2026-07-16T23:14:57Z | 3 | Multiple services / UAE
+- 2026-07-16T23:14:57Z | 3 | Multiple services / Bahrain
 - 2026-07-16T22:17:46Z | 0 | Amazon CloudFront
 - 2026-07-16T22:17:46Z | 0 | Multiple services / Frankfurt
 - 2026-07-16T22:17:46Z | 3 | Multiple services / UAE
 - 2026-07-16T22:17:46Z | 3 | Multiple services / Bahrain
 - 2026-07-16T21:14:02Z | 0 | Amazon CloudFront
 - 2026-07-16T21:14:02Z | 0 | Multiple services / Frankfurt
-- 2026-07-16T21:14:02Z | 3 | Multiple services / UAE
-- 2026-07-16T21:14:02Z | 3 | Multiple services / Bahrain
-- 2026-07-16T20:06:23Z | 0 | Amazon CloudFront
-- 2026-07-16T20:06:23Z | 0 | Multiple services / Frankfurt
 
 ### Claude
 - 2026-07-16T22:17:46Z | monitoring | Elevated errors for multiple models
@@ -32,4 +32,4 @@
 ### Grok
 - 无事件记录
 ### OpenAI
-- 2026-07-16T15:03:00Z | monitoring | Elevated Error Rates For SSO Login
+- 2026-07-16T23:14:56Z | identified | Elevated errors for Github connector

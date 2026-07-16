@@ -1,39 +1,39 @@
 {
-  "generated_at": "2026-07-16T22:17:47Z",
+  "generated_at": "2026-07-16T23:14:57Z",
   "window": {
     "start": "2026-07-15T00:00:00Z",
-    "end": "2026-07-16T22:17:47Z"
+    "end": "2026-07-16T23:14:57Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 28,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 29,
       "ok": 23,
-      "warn": 4,
+      "warn": 5,
       "critical": 1,
       "unknown": 0,
-      "sla": 82.14,
-      "latest_status": "ok",
-      "latest_at": "2026-07-16T22:17:46Z",
+      "sla": 79.31,
+      "latest_status": "warn",
+      "latest_at": "2026-07-16T23:14:56Z",
       "recent_incidents": [
         {
-          "time": "2026-07-16T15:03:00Z",
-          "name": "Elevated Error Rates For SSO Login",
-          "status": "monitoring",
+          "time": "2026-07-16T23:14:56Z",
+          "name": "Elevated errors for Github connector",
+          "status": "identified",
           "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 28,
-      "ok": 21,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 29,
+      "ok": 22,
       "warn": 3,
       "critical": 4,
       "unknown": 0,
-      "sla": 75.0,
-      "latest_status": "critical",
-      "latest_at": "2026-07-16T22:17:46Z",
+      "sla": 75.86,
+      "latest_status": "ok",
+      "latest_at": "2026-07-16T23:14:57Z",
       "recent_incidents": [
         {
           "time": "2026-07-16T22:17:46Z",
@@ -62,41 +62,65 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 28,
-      "ok": 28,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 29,
+      "ok": 29,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-16T22:17:46Z",
+      "latest_at": "2026-07-16T23:14:57Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 28,
-      "ok": 28,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 29,
+      "ok": 29,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-16T22:17:46Z",
+      "latest_at": "2026-07-16T23:14:57Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 28,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 29,
       "ok": 0,
       "warn": 0,
-      "critical": 28,
+      "critical": 29,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-16T22:17:46Z",
+      "latest_at": "2026-07-16T23:14:57Z",
       "recent_incidents": [
         {
+          "time": "2026-07-16T23:14:57Z",
+          "name": "Amazon CloudFront",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T23:14:57Z",
+          "name": "Multiple services / Frankfurt",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T23:14:57Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T23:14:57Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-16T22:17:46Z",
           "name": "Amazon CloudFront",
           "status": "0",
@@ -218,30 +242,6 @@
         },
         {
           "time": "2026-07-16T16:38:18Z",
-          "name": "Amazon CloudFront",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-16T16:38:18Z",
-          "name": "Multiple services / Frankfurt",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-16T16:38:18Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-16T16:38:18Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-16T15:03:00Z",
           "name": "Amazon CloudFront",
           "status": "0",
           "link": null
