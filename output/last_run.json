@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-16T11:16:25Z",
+  "generated_at": "2026-07-16T12:55:11Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-16T11:16:21Z",
+      "time": "2026-07-16T12:55:09Z",
       "overall_status": "minor",
       "components": [
         {
@@ -147,14 +147,14 @@
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-07-16T09:23:17Z",
-      "consecutive_anomalies": 2,
+      "consecutive_anomalies": 3,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 6784,
+      "anomaly_seconds": 12712,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-16T11:16:21Z",
+      "time": "2026-07-16T12:55:10Z",
       "overall_status": "minor",
       "components": [
         {
@@ -202,37 +202,37 @@
       ],
       "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-07-16T10:39:09.272Z",
+      "updated_at": "2026-07-16T11:43:50.306Z",
       "source_url": "https://status.claude.com",
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-07-16T09:23:17Z",
-      "consecutive_anomalies": 2,
+      "consecutive_anomalies": 3,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 6784,
+      "anomaly_seconds": 12713,
       "latest_incident_link": "https://stspg.io/3vvl4w8559r5"
     },
     {
       "service": "Gemini",
-      "time": "2026-07-16T11:16:25Z",
+      "time": "2026-07-16T12:55:10Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-16T11:16:25Z",
+      "updated_at": "2026-07-16T12:55:10Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 327,
+      "consecutive_recoveries": 328,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-16T11:16:25Z",
+      "time": "2026-07-16T12:55:10Z",
       "overall_status": "operational",
       "components": [
         {
@@ -249,13 +249,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 327,
+      "consecutive_recoveries": 328,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-16T11:16:25Z",
+      "time": "2026-07-16T12:55:11Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -283,13 +283,13 @@
         {
           "id": "arn:aws:health:global::event/CLOUDFRONT/AWS_CLOUDFRONT_OPERATIONAL_ISSUE/AWS_CLOUDFRONT_OPERATIONAL_ISSUE_EDF4C_83808542A4E",
           "name": "Amazon CloudFront",
-          "status": "2",
-          "summary": "Increased 5xx Errors",
-          "updated_at": "2026-07-16T11:16:05Z",
+          "status": "0",
+          "summary": "[RESOLVED] Increased 5xx Errors",
+          "updated_at": "2026-07-16T12:21:59Z",
           "link": null,
           "region": null,
           "severity": "warn",
-          "latest_message": "We continue working to resolve the increased 5xx errors for CloudFront customers utilizing VPC Origins connectivity. Customers utilizing other origin types remain unaffected by this issue. We have further scoped the issue down to routing table capacity within the packet processing subsystem responsible for routing requests from CloudFront's edge locations to resources within customer VPCs. We have identified and are currently testing a mitigation strategy to resolve the issue. Once testing is complete, we will deploy the mitigation in a phased approach. Based on the results from these tests, we will provide a clearer estimated time for resolution in our next update. We continue to recommend that customers who are able to do so temporarily change their origin type to resolve the errors. We will provide another update by 5:15 AM PDT, or sooner if additional information becomes available."
+          "latest_message": "Between 12:45 AM and 4:18 AM PDT, we experienced increased 5xx errors for CloudFront customers utilizing VPC Origins connectivity. Our engineers were automatically engaged and immediately began investigating the root cause. By 2:57 AM PDT, we identified the root cause of the issue as an internal constraint on the fleet that manages connections to private VPC origins. When this constraint was reached, the system responsible for distributing routing configuration to our network processors failed to load the updated configuration data correctly, affecting routing of VPC Origin connections. At 3:52 AM PDT, we took multiple mitigation actions that led to to full recovery at 4:18 AM PDT. Now that the issue has been mitigated, customers who temporarily changed their origin type can safely revert these changes. Customers utilizing other origin types were not affected by this issue. The issue has been resolved and the service is operating normally."
         },
         {
           "id": "arn:aws:health:eu-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_25DBE_2EF1D48B613",
@@ -327,29 +327,16 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-07-16T11:16:05Z",
+      "updated_at": "2026-07-16T12:21:59Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 327,
+      "consecutive_anomalies": 328,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2364982,
+      "anomaly_seconds": 2370908,
       "latest_incident_link": null
     }
   ],
-  "alerts": [
-    {
-      "type": "alert",
-      "service": "OpenAI",
-      "level": "warn",
-      "message": "OpenAI is in WARN state (sampled 2026-07-16T11:16:21Z)"
-    },
-    {
-      "type": "alert",
-      "service": "Claude",
-      "level": "warn",
-      "message": "Claude is in WARN state (sampled 2026-07-16T11:16:21Z)"
-    }
-  ]
+  "alerts": []
 }

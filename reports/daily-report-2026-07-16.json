@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-07-16T11:16:26Z",
+  "generated_at": "2026-07-16T12:55:11Z",
   "window": {
     "start": "2026-07-15T00:00:00Z",
-    "end": "2026-07-16T11:16:26Z"
+    "end": "2026-07-16T12:55:11Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
       "ok": 17,
-      "warn": 2,
+      "warn": 3,
       "critical": 1,
       "unknown": 0,
-      "sla": 85.0,
+      "sla": 80.95,
       "latest_status": "warn",
-      "latest_at": "2026-07-16T11:16:21Z",
+      "latest_at": "2026-07-16T12:55:09Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-16T12:55:09Z",
+          "name": "Elevated Error Rates For SSO Login",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-07-16T11:16:21Z",
           "name": "Elevated Error Rates For SSO Login",
@@ -31,16 +37,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
       "ok": 18,
-      "warn": 2,
+      "warn": 3,
       "critical": 0,
       "unknown": 0,
-      "sla": 90.0,
+      "sla": 85.71,
       "latest_status": "warn",
-      "latest_at": "2026-07-16T11:16:21Z",
+      "latest_at": "2026-07-16T12:55:10Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-16T12:55:10Z",
+          "name": "Elevated errors for Claude Opus 4.7",
+          "status": "investigating",
+          "link": "https://stspg.io/3vvl4w8559r5"
+        },
         {
           "time": "2026-07-16T11:16:21Z",
           "name": "Elevated errors for Claude Opus 4.7",
@@ -56,40 +68,64 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
-      "ok": 20,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
+      "ok": 21,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-16T11:16:25Z",
+      "latest_at": "2026-07-16T12:55:10Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
-      "ok": 20,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
+      "ok": 21,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-16T11:16:25Z",
+      "latest_at": "2026-07-16T12:55:10Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
       "ok": 0,
       "warn": 0,
-      "critical": 20,
+      "critical": 21,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-16T11:16:25Z",
+      "latest_at": "2026-07-16T12:55:11Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-16T12:55:11Z",
+          "name": "Amazon CloudFront",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T12:55:11Z",
+          "name": "Multiple services / Frankfurt",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T12:55:11Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T12:55:11Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
         {
           "time": "2026-07-16T11:16:25Z",
           "name": "Amazon CloudFront",
@@ -206,42 +242,6 @@
         },
         {
           "time": "2026-07-15T23:42:38Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-15T22:41:27Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-15T22:41:27Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-15T21:40:51Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-15T21:40:51Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-15T20:41:31Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-15T20:41:31Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
