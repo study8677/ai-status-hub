@@ -1,21 +1,33 @@
 {
-  "generated_at": "2026-07-17T19:42:32Z",
+  "generated_at": "2026-07-17T20:36:41Z",
   "window": {
     "start": "2026-07-16T00:00:00Z",
-    "end": "2026-07-17T19:42:32Z"
+    "end": "2026-07-17T20:36:41Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 26,
-      "measured_checks_24h": 26,
-      "ok": 20,
+      "total_checks_24h": 27,
+      "measured_checks_24h": 27,
+      "ok": 21,
       "warn": 6,
       "critical": 0,
       "unknown": 0,
-      "sla": 76.92,
+      "sla": 77.78,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T19:42:31Z",
+      "latest_at": "2026-07-17T20:36:40Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-17T20:36:40Z",
+          "name": "Codex 5.6-sol Experiencing Increased Server-Overload Errors",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T20:36:40Z",
+          "name": "New ChatGPT App Not Available For Enterprise Users Without Codex Permissions",
+          "status": "identified",
+          "link": null
+        },
         {
           "time": "2026-07-17T19:42:31Z",
           "name": "Codex 5.6-sol Experiencing Increased Server-Overload Errors",
@@ -55,66 +67,78 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 26,
-      "measured_checks_24h": 26,
-      "ok": 15,
+      "total_checks_24h": 27,
+      "measured_checks_24h": 27,
+      "ok": 16,
       "warn": 6,
       "critical": 5,
       "unknown": 0,
-      "sla": 57.69,
-      "latest_status": "critical",
-      "latest_at": "2026-07-17T19:42:31Z",
+      "sla": 59.26,
+      "latest_status": "ok",
+      "latest_at": "2026-07-17T20:36:40Z",
       "recent_incidents": [
         {
           "time": "2026-07-17T19:42:31Z",
           "name": "Elevated errors across Fable 5",
           "status": "monitoring",
           "link": "https://stspg.io/rxyp2wg9jxcw"
-        },
-        {
-          "time": "2026-07-17T11:46:10Z",
-          "name": "Elevated errors on Sonnet 5 and Haiku 4.5",
-          "status": "identified",
-          "link": "https://stspg.io/p0rgrvqnx02s"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 26,
-      "measured_checks_24h": 26,
-      "ok": 26,
+      "total_checks_24h": 27,
+      "measured_checks_24h": 27,
+      "ok": 27,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T19:42:32Z",
+      "latest_at": "2026-07-17T20:36:40Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 26,
-      "measured_checks_24h": 26,
-      "ok": 26,
+      "total_checks_24h": 27,
+      "measured_checks_24h": 27,
+      "ok": 27,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T19:42:32Z",
+      "latest_at": "2026-07-17T20:36:40Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 26,
-      "measured_checks_24h": 26,
+      "total_checks_24h": 27,
+      "measured_checks_24h": 27,
       "ok": 0,
       "warn": 0,
-      "critical": 26,
+      "critical": 27,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-17T19:42:32Z",
+      "latest_at": "2026-07-17T20:36:40Z",
       "recent_incidents": [
         {
+          "time": "2026-07-17T20:36:40Z",
+          "name": "AWS Billing Console",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T20:36:40Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T20:36:40Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-17T19:42:32Z",
           "name": "AWS Billing Console",
           "status": "1",
@@ -218,30 +242,6 @@
         },
         {
           "time": "2026-07-17T12:51:59Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T11:46:11Z",
-          "name": "AWS Billing Console",
-          "status": "1",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T11:46:11Z",
-          "name": "Amazon CloudFront",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T11:46:11Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T11:46:11Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
