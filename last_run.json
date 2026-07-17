@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-17T15:58:36Z",
+  "generated_at": "2026-07-17T17:19:22Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-17T15:58:36Z",
+      "time": "2026-07-17T17:19:21Z",
       "overall_status": "none",
       "components": [
         {
@@ -131,12 +131,12 @@
       "active_incidents": [
         {
           "id": "01KXRBA8B98QHMMVP3M86NHFZ1",
-          "name": "New ChatGPT App Not Available For Users Without Codex Permissions",
+          "name": "New ChatGPT App Not Available For Enterprise Users Without Codex Permissions",
           "status": "identified",
           "impact": "none",
           "shortlink": null,
           "started_at": "2026-07-17T15:32:26Z",
-          "updated_at": "2026-07-17T15:32:26Z",
+          "updated_at": "2026-07-17T16:24:46Z",
           "url": null
         }
       ],
@@ -148,13 +148,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 8,
+      "consecutive_recoveries": 9,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-17T15:58:36Z",
+      "time": "2026-07-17T17:19:21Z",
       "overall_status": "none",
       "components": [
         {
@@ -191,37 +191,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-17T15:40:07.035Z",
+      "updated_at": "2026-07-17T16:48:57.209Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 3,
+      "consecutive_recoveries": 4,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-17T15:58:36Z",
+      "time": "2026-07-17T17:19:21Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-17T15:58:36Z",
+      "updated_at": "2026-07-17T17:19:21Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 345,
+      "consecutive_recoveries": 346,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-17T15:58:36Z",
+      "time": "2026-07-17T17:19:21Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +238,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 345,
+      "consecutive_recoveries": 346,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-17T15:58:36Z",
+      "time": "2026-07-17T17:19:22Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -269,11 +269,11 @@
           "name": "AWS Billing Console",
           "status": "1",
           "summary": "Inaccurate Estimated Billing Data",
-          "updated_at": "2026-07-17T14:53:08Z",
+          "updated_at": "2026-07-17T16:59:36Z",
           "link": null,
           "region": null,
           "severity": "warn",
-          "latest_message": "We continue to work to resolve the issue affecting estimated cost and usage data displayed in the Billing and Cost Management Console, including the Cost and Usage Report. The rollback of a recent change did not resolve the issue and we are continuing to investigate multiple mitigation paths. Estimated bill updates remain paused. We are in the process of reverting to the last accurate estimated billing data. The displayed billing estimates do not reflect actual usage and charges. There are no customer actions required at this time. We expect this mitigation to take several hours to complete as we work through recomputing the estimated billing data. We will provide another update by 10:00 AM PDT or sooner if more information becomes available."
+          "latest_message": "We have identified the root cause and mitigated the underlying issue causing incorrect estimated cost and usage data to be displayed in the Billing and Cost Management Console, and Cost and Usage Reports. We have begun backfilling data to correct cost data for all customers. We expect some customers to begin seeing recovery within the next three hours, and full recovery for all customers by July 18 12:00 PM PDT. Until the backfill is complete, some customers may still see incorrect cost and usage data. The displayed billing estimates do not reflect actual usage and charges. There are no customer actions required at this time. We will provide another update by 1:00 PM, or sooner if information becomes available."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -300,14 +300,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-07-17T14:53:08Z",
+      "updated_at": "2026-07-17T16:59:36Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 345,
+      "consecutive_anomalies": 346,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2468313,
+      "anomaly_seconds": 2473159,
       "latest_incident_link": null
     }
   ],

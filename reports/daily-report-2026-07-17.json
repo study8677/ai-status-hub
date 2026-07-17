@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-07-17T15:58:37Z",
+  "generated_at": "2026-07-17T17:19:22Z",
   "window": {
     "start": "2026-07-16T00:00:00Z",
-    "end": "2026-07-17T15:58:37Z"
+    "end": "2026-07-17T17:19:22Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 17,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 18,
       "warn": 6,
       "critical": 0,
       "unknown": 0,
-      "sla": 73.91,
+      "sla": 75.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T15:58:36Z",
+      "latest_at": "2026-07-17T17:19:21Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-17T17:19:21Z",
+          "name": "New ChatGPT App Not Available For Enterprise Users Without Codex Permissions",
+          "status": "identified",
+          "link": null
+        },
         {
           "time": "2026-07-17T15:58:36Z",
           "name": "New ChatGPT App Not Available For Users Without Codex Permissions",
@@ -25,15 +31,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 13,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 14,
       "warn": 6,
       "critical": 4,
       "unknown": 0,
-      "sla": 56.52,
+      "sla": 58.33,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T15:58:36Z",
+      "latest_at": "2026-07-17T17:19:21Z",
       "recent_incidents": [
         {
           "time": "2026-07-17T11:46:10Z",
@@ -56,41 +62,59 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 24,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T15:58:36Z",
+      "latest_at": "2026-07-17T17:19:21Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 24,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T15:58:36Z",
+      "latest_at": "2026-07-17T17:19:21Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
       "ok": 0,
       "warn": 0,
-      "critical": 23,
+      "critical": 24,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-17T15:58:36Z",
+      "latest_at": "2026-07-17T17:19:22Z",
       "recent_incidents": [
         {
+          "time": "2026-07-17T17:19:22Z",
+          "name": "AWS Billing Console",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T17:19:22Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T17:19:22Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-17T15:58:36Z",
           "name": "AWS Billing Console",
           "status": "1",
@@ -219,30 +243,6 @@
         {
           "time": "2026-07-17T06:05:24Z",
           "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T06:05:24Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T03:42:22Z",
-          "name": "Amazon CloudFront",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T03:42:22Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T03:42:22Z",
-          "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
         }
