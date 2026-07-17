@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-17T00:15:13Z",
+  "generated_at": "2026-07-17T03:42:22Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-17T00:15:11Z",
-      "overall_status": "minor",
+      "time": "2026-07-17T03:42:21Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Codex in ChatGPT Desktop",
@@ -119,7 +119,7 @@
         },
         {
           "name": "Connectors/Apps",
-          "status": "degraded_performance",
+          "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -128,33 +128,22 @@
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "01KXPJ62Z704GE0SRNKQA64X4X",
-          "name": "Elevated errors for Github connector",
-          "status": "identified",
-          "impact": "minor",
-          "shortlink": null,
-          "started_at": "2026-07-16T22:54:01Z",
-          "updated_at": "2026-07-16T23:12:26Z",
-          "url": null
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-16T23:12:26Z",
+      "updated_at": "2026-07-09T19:25:56Z",
       "source_url": "https://status.openai.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-07-16T23:14:56Z",
-      "consecutive_anomalies": 2,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 3615,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-17T00:15:12Z",
+      "time": "2026-07-17T03:42:21Z",
       "overall_status": "none",
       "components": [
         {
@@ -191,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-16T23:25:49.607Z",
+      "updated_at": "2026-07-17T02:48:45.816Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 2,
+      "consecutive_recoveries": 3,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-17T00:15:12Z",
+      "time": "2026-07-17T03:42:21Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-17T00:15:12Z",
+      "updated_at": "2026-07-17T03:42:21Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 337,
+      "consecutive_recoveries": 338,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-17T00:15:12Z",
+      "time": "2026-07-17T03:42:21Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,24 +227,19 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 337,
+      "consecutive_recoveries": 338,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-17T00:15:13Z",
+      "time": "2026-07-17T03:42:22Z",
       "overall_status": "major_outage",
       "components": [
         {
           "name": "Amazon CloudFront",
           "status": "degraded",
           "region": null
-        },
-        {
-          "name": "Multiple services / Frankfurt",
-          "status": "degraded",
-          "region": "Frankfurt"
         },
         {
           "name": "Multiple services / UAE",
@@ -279,17 +263,6 @@
           "region": null,
           "severity": "warn",
           "latest_message": "Between 12:45 AM and 4:18 AM PDT, we experienced increased 5xx errors for CloudFront customers utilizing VPC Origins connectivity. Our engineers were automatically engaged and immediately began investigating the root cause. By 2:57 AM PDT, we identified the root cause of the issue as an internal constraint on the fleet that manages connections to private VPC origins. When this constraint was reached, the system responsible for distributing routing configuration to our network processors failed to load the updated configuration data correctly, affecting routing of VPC Origin connections. At 3:52 AM PDT, we took multiple mitigation actions that led to to full recovery at 4:18 AM PDT. Now that the issue has been mitigated, customers who temporarily changed their origin type can safely revert these changes. Customers utilizing other origin types were not affected by this issue. The issue has been resolved and the service is operating normally."
-        },
-        {
-          "id": "arn:aws:health:eu-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_25DBE_2EF1D48B613",
-          "name": "Multiple services / Frankfurt",
-          "status": "0",
-          "summary": "[RESOLVED] Elevated connectivity issues with a single Avalability zone",
-          "updated_at": "2026-07-16T01:24:35Z",
-          "link": null,
-          "region": "Frankfurt",
-          "severity": "warn",
-          "latest_message": "Between 2:56 PM and 6:07 PM PDT, we experienced connectivity issues to a subset of EC2 instances in a single Availability Zone (euc1-az2) in the EU-CENTRAL-1 Region. During this time, customers may also have experienced increased error rates and latencies for new instance launches in the affected zone, along with some AWS APIs that use the affected EC2 instances. Some AWS Services also experienced connectivity issues and increased error rates within the affected zone. Engineers were automatically engaged and immediately began investigating. As part of our recovery effort, we shifted traffic away from the impacted Availability Zone for affected services at 3:04 PM. At 3:05 PM we identified the root cause to be a recent networking change causing the impact. Engineers immediately began reverting this change which completed at 4:28 PM. This resulted in restoration of network connectivity to the affected zone at 4:30 PM. We continued to work until we fully recovered the impacts at 6:07 PM. We do not expect this issue to reoccur. The issue has been resolved and the service is operating normally."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -321,24 +294,11 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 337,
+      "consecutive_anomalies": 338,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2411710,
+      "anomaly_seconds": 2424139,
       "latest_incident_link": null
     }
   ],
-  "alerts": [
-    {
-      "type": "alert",
-      "service": "OpenAI",
-      "level": "warn",
-      "message": "OpenAI is in WARN state (sampled 2026-07-17T00:15:11Z)"
-    },
-    {
-      "type": "recover",
-      "service": "Claude",
-      "level": "ok",
-      "message": "Claude recovered"
-    }
-  ]
+  "alerts": []
 }
