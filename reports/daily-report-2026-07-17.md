@@ -2,14 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 27 | 0 | critical |
-| Claude | 59.26 | 16 | 6 | 5 | 0 | ok |
-| Gemini | 100.00 | 27 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 27 | 0 | 0 | 0 | ok |
-| OpenAI | 77.78 | 21 | 6 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 28 | 0 | critical |
+| Claude | 60.71 | 17 | 6 | 5 | 0 | ok |
+| Gemini | 100.00 | 28 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 28 | 0 | 0 | 0 | ok |
+| OpenAI | 78.57 | 22 | 6 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-17T21:30:58Z | 1 | AWS Billing Console
+- 2026-07-17T21:30:58Z | 3 | Multiple services / UAE
+- 2026-07-17T21:30:58Z | 3 | Multiple services / Bahrain
 - 2026-07-17T20:36:40Z | 1 | AWS Billing Console
 - 2026-07-17T20:36:40Z | 3 | Multiple services / UAE
 - 2026-07-17T20:36:40Z | 3 | Multiple services / Bahrain
@@ -17,9 +20,6 @@
 - 2026-07-17T19:42:32Z | 3 | Multiple services / UAE
 - 2026-07-17T19:42:32Z | 3 | Multiple services / Bahrain
 - 2026-07-17T18:30:37Z | 1 | AWS Billing Console
-- 2026-07-17T18:30:37Z | 3 | Multiple services / UAE
-- 2026-07-17T18:30:37Z | 3 | Multiple services / Bahrain
-- 2026-07-17T17:19:22Z | 1 | AWS Billing Console
 
 ### Claude
 - 2026-07-17T19:42:31Z | monitoring | Elevated errors across Fable 5
@@ -29,6 +29,7 @@
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-07-17T21:30:57Z | identified | New ChatGPT App Not Available For Enterprise Users Without Codex Permissions
 - 2026-07-17T20:36:40Z | monitoring | Codex 5.6-sol Experiencing Increased Server-Overload Errors
 - 2026-07-17T20:36:40Z | identified | New ChatGPT App Not Available For Enterprise Users Without Codex Permissions
 - 2026-07-17T19:42:31Z | monitoring | Codex 5.6-sol Experiencing Increased Server-Overload Errors
