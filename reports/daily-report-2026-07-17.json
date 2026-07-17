@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-17T03:42:22Z",
+  "generated_at": "2026-07-17T06:05:25Z",
   "window": {
     "start": "2026-07-16T00:00:00Z",
-    "end": "2026-07-17T03:42:22Z"
+    "end": "2026-07-17T06:05:25Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 10,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 11,
       "warn": 6,
       "critical": 0,
       "unknown": 0,
-      "sla": 62.5,
+      "sla": 64.71,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T03:42:21Z",
+      "latest_at": "2026-07-17T06:05:24Z",
       "recent_incidents": [
         {
           "time": "2026-07-17T00:15:11Z",
@@ -31,15 +31,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 9,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 10,
       "warn": 3,
       "critical": 4,
       "unknown": 0,
-      "sla": 56.25,
+      "sla": 58.82,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T03:42:21Z",
+      "latest_at": "2026-07-17T06:05:24Z",
       "recent_incidents": [
         {
           "time": "2026-07-16T22:17:46Z",
@@ -52,57 +52,63 @@
           "name": "Elevated errors for multiple models",
           "status": "identified",
           "link": "https://stspg.io/zhv1t1h0dbby"
-        },
-        {
-          "time": "2026-07-16T20:06:22Z",
-          "name": "Elevated errors for multiple models",
-          "status": "identified",
-          "link": "https://stspg.io/zhv1t1h0dbby"
-        },
-        {
-          "time": "2026-07-16T18:57:00Z",
-          "name": "Elevated errors for multiple models",
-          "status": "investigating",
-          "link": "https://stspg.io/zhv1t1h0dbby"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 17,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T03:42:21Z",
+      "latest_at": "2026-07-17T06:05:24Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 17,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T03:42:21Z",
+      "latest_at": "2026-07-17T06:05:24Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
       "ok": 0,
       "warn": 0,
-      "critical": 16,
+      "critical": 17,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-17T03:42:22Z",
+      "latest_at": "2026-07-17T06:05:24Z",
       "recent_incidents": [
         {
+          "time": "2026-07-17T06:05:24Z",
+          "name": "Amazon CloudFront",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T06:05:24Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T06:05:24Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-17T03:42:22Z",
           "name": "Amazon CloudFront",
           "status": "0",
@@ -238,12 +244,6 @@
           "time": "2026-07-16T20:06:23Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-16T18:57:00Z",
-          "name": "Amazon CloudFront",
-          "status": "0",
           "link": null
         }
       ]
