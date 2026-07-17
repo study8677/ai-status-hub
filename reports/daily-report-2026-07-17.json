@@ -1,0 +1,252 @@
+{
+  "generated_at": "2026-07-17T00:15:13Z",
+  "window": {
+    "start": "2026-07-16T00:00:00Z",
+    "end": "2026-07-17T00:15:13Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
+      "ok": 9,
+      "warn": 6,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 60.0,
+      "latest_status": "warn",
+      "latest_at": "2026-07-17T00:15:11Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-17T00:15:11Z",
+          "name": "Elevated errors for Github connector",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T23:14:56Z",
+          "name": "Elevated errors for Github connector",
+          "status": "identified",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
+      "ok": 8,
+      "warn": 3,
+      "critical": 4,
+      "unknown": 0,
+      "sla": 53.33,
+      "latest_status": "ok",
+      "latest_at": "2026-07-17T00:15:12Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-16T22:17:46Z",
+          "name": "Elevated errors for multiple models",
+          "status": "monitoring",
+          "link": "https://stspg.io/zhv1t1h0dbby"
+        },
+        {
+          "time": "2026-07-16T21:14:02Z",
+          "name": "Elevated errors for multiple models",
+          "status": "identified",
+          "link": "https://stspg.io/zhv1t1h0dbby"
+        },
+        {
+          "time": "2026-07-16T20:06:22Z",
+          "name": "Elevated errors for multiple models",
+          "status": "identified",
+          "link": "https://stspg.io/zhv1t1h0dbby"
+        },
+        {
+          "time": "2026-07-16T18:57:00Z",
+          "name": "Elevated errors for multiple models",
+          "status": "investigating",
+          "link": "https://stspg.io/zhv1t1h0dbby"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
+      "ok": 15,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-17T00:15:12Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
+      "ok": 15,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-17T00:15:12Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
+      "ok": 0,
+      "warn": 0,
+      "critical": 15,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-07-17T00:15:13Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-17T00:15:13Z",
+          "name": "Amazon CloudFront",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T00:15:13Z",
+          "name": "Multiple services / Frankfurt",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T00:15:13Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T00:15:13Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T23:14:57Z",
+          "name": "Amazon CloudFront",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T23:14:57Z",
+          "name": "Multiple services / Frankfurt",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T23:14:57Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T23:14:57Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T22:17:46Z",
+          "name": "Amazon CloudFront",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T22:17:46Z",
+          "name": "Multiple services / Frankfurt",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T22:17:46Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T22:17:46Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T21:14:02Z",
+          "name": "Amazon CloudFront",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T21:14:02Z",
+          "name": "Multiple services / Frankfurt",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T21:14:02Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T21:14:02Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T20:06:23Z",
+          "name": "Amazon CloudFront",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T20:06:23Z",
+          "name": "Multiple services / Frankfurt",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T20:06:23Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T20:06:23Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T18:57:00Z",
+          "name": "Amazon CloudFront",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T18:57:00Z",
+          "name": "Multiple services / Frankfurt",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T18:57:00Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-16T18:57:00Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        }
+      ]
+    }
+  }
+}
