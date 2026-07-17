@@ -1,29 +1,23 @@
 {
-  "generated_at": "2026-07-17T11:46:11Z",
+  "generated_at": "2026-07-17T12:52:00Z",
   "window": {
     "start": "2026-07-16T00:00:00Z",
-    "end": "2026-07-17T11:46:11Z"
+    "end": "2026-07-17T12:52:00Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
-      "ok": 14,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
+      "ok": 15,
       "warn": 6,
       "critical": 0,
       "unknown": 0,
-      "sla": 70.0,
+      "sla": 71.43,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T11:46:10Z",
+      "latest_at": "2026-07-17T12:51:59Z",
       "recent_incidents": [
         {
           "time": "2026-07-17T00:15:11Z",
-          "name": "Elevated errors for Github connector",
-          "status": "identified",
-          "link": null
-        },
-        {
-          "time": "2026-07-16T23:14:56Z",
           "name": "Elevated errors for Github connector",
           "status": "identified",
           "link": null
@@ -31,15 +25,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
-      "ok": 10,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
+      "ok": 11,
       "warn": 6,
       "critical": 4,
       "unknown": 0,
-      "sla": 50.0,
-      "latest_status": "warn",
-      "latest_at": "2026-07-17T11:46:10Z",
+      "sla": 52.38,
+      "latest_status": "ok",
+      "latest_at": "2026-07-17T12:51:59Z",
       "recent_incidents": [
         {
           "time": "2026-07-17T11:46:10Z",
@@ -62,41 +56,59 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
-      "ok": 20,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
+      "ok": 21,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T11:46:11Z",
+      "latest_at": "2026-07-17T12:51:59Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
-      "ok": 20,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
+      "ok": 21,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T11:46:11Z",
+      "latest_at": "2026-07-17T12:51:59Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
       "ok": 0,
       "warn": 0,
-      "critical": 20,
+      "critical": 21,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-17T11:46:11Z",
+      "latest_at": "2026-07-17T12:51:59Z",
       "recent_incidents": [
         {
+          "time": "2026-07-17T12:51:59Z",
+          "name": "AWS Billing Console",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T12:51:59Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T12:51:59Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-17T11:46:11Z",
           "name": "AWS Billing Console",
           "status": "1",
@@ -232,18 +244,6 @@
           "time": "2026-07-16T23:14:57Z",
           "name": "Multiple services / Frankfurt",
           "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-16T23:14:57Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-16T23:14:57Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
           "link": null
         }
       ]

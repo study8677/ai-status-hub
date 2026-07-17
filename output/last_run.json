@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-17T11:46:11Z",
+  "generated_at": "2026-07-17T12:51:59Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-17T11:46:10Z",
+      "time": "2026-07-17T12:51:59Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,19 +137,19 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 5,
+      "consecutive_recoveries": 6,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-17T11:46:10Z",
-      "overall_status": "minor",
+      "time": "2026-07-17T12:51:59Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "claude.ai",
-          "status": "degraded_performance",
-          "updated_at": "2026-07-17T07:10:36.694Z"
+          "status": "operational",
+          "updated_at": "2026-07-17T12:21:30.204Z"
         },
         {
           "name": "Claude Console (platform.claude.com)",
@@ -158,18 +158,18 @@
         },
         {
           "name": "Claude API (api.anthropic.com)",
-          "status": "degraded_performance",
-          "updated_at": "2026-07-17T07:10:36.713Z"
+          "status": "operational",
+          "updated_at": "2026-07-17T12:21:30.230Z"
         },
         {
           "name": "Claude Code",
-          "status": "degraded_performance",
-          "updated_at": "2026-07-17T07:10:36.730Z"
+          "status": "operational",
+          "updated_at": "2026-07-17T12:21:30.254Z"
         },
         {
           "name": "Claude Cowork",
-          "status": "degraded_performance",
-          "updated_at": "2026-07-17T07:10:36.748Z"
+          "status": "operational",
+          "updated_at": "2026-07-17T12:21:30.279Z"
         },
         {
           "name": "Claude for Government",
@@ -177,51 +177,40 @@
           "updated_at": "2026-06-30T14:45:50.487Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "7gpjd8n56rlq",
-          "name": "Elevated errors on Sonnet 5 and Haiku 4.5",
-          "status": "identified",
-          "impact": "minor",
-          "shortlink": "https://stspg.io/p0rgrvqnx02s",
-          "started_at": "2026-07-17T06:47:54.909Z",
-          "updated_at": "2026-07-17T07:10:36.807Z",
-          "url": "https://stspg.io/p0rgrvqnx02s"
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-17T11:09:00.163Z",
+      "updated_at": "2026-07-17T12:21:30.348Z",
       "source_url": "https://status.claude.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-07-17T08:25:49Z",
-      "consecutive_anomalies": 3,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 12021,
-      "latest_incident_link": "https://stspg.io/p0rgrvqnx02s"
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
+      "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-17T11:46:11Z",
+      "time": "2026-07-17T12:51:59Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-17T11:46:11Z",
+      "updated_at": "2026-07-17T12:51:59Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 342,
+      "consecutive_recoveries": 343,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-17T11:46:11Z",
+      "time": "2026-07-17T12:51:59Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,22 +227,17 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 342,
+      "consecutive_recoveries": 343,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-17T11:46:11Z",
+      "time": "2026-07-17T12:51:59Z",
       "overall_status": "major_outage",
       "components": [
         {
           "name": "AWS Billing Console",
-          "status": "degraded",
-          "region": null
-        },
-        {
-          "name": "Amazon CloudFront",
           "status": "degraded",
           "region": null
         },
@@ -274,22 +258,11 @@
           "name": "AWS Billing Console",
           "status": "1",
           "summary": "Inaccurate Estimated Billing Data",
-          "updated_at": "2026-07-17T10:52:48Z",
+          "updated_at": "2026-07-17T11:58:39Z",
           "link": null,
           "region": null,
           "severity": "warn",
-          "latest_message": "We continue to work to resolve the issue affecting estimated cost and usage data displayed in the Billing and Cost Management Console. As previously shared, we have identified the root cause as an issue with unit pricing within the estimated billing computation subsystem. To prevent further inaccurate billing estimates from being displayed, we have paused estimated billing computations. Customers who are currently seeing normal bill estimates will continue to see those estimates, and customers who are seeing inflated estimates will not see them increase further while we work toward resolution. The displayed billing estimates do not reflect actual usage and charges. We continue to work on fully mitigating the issue. Once the issue has been mitigated, we expect full resolution to take multiple hours as we work through recomputing the estimated billing data. There are no customer actions required at this time. We will provide another update by 5:00 AM PDT or sooner if more information becomes available."
-        },
-        {
-          "id": "arn:aws:health:global::event/CLOUDFRONT/AWS_CLOUDFRONT_OPERATIONAL_ISSUE/AWS_CLOUDFRONT_OPERATIONAL_ISSUE_EDF4C_83808542A4E",
-          "name": "Amazon CloudFront",
-          "status": "0",
-          "summary": "[RESOLVED] Increased 5xx Errors",
-          "updated_at": "2026-07-16T12:21:59Z",
-          "link": null,
-          "region": null,
-          "severity": "warn",
-          "latest_message": "Between 12:45 AM and 4:18 AM PDT, we experienced increased 5xx errors for CloudFront customers utilizing VPC Origins connectivity. Our engineers were automatically engaged and immediately began investigating the root cause. By 2:57 AM PDT, we identified the root cause of the issue as an internal constraint on the fleet that manages connections to private VPC origins. When this constraint was reached, the system responsible for distributing routing configuration to our network processors failed to load the updated configuration data correctly, affecting routing of VPC Origin connections. At 3:52 AM PDT, we took multiple mitigation actions that led to to full recovery at 4:18 AM PDT. Now that the issue has been mitigated, customers who temporarily changed their origin type can safely revert these changes. Customers utilizing other origin types were not affected by this issue. The issue has been resolved and the service is operating normally."
+          "latest_message": "We continue to work to resolve the issue affecting estimated cost and usage data displayed in the Billing and Cost Management Console. We are actively working on multiple mitigation paths in parallel. The first path involves reverting to the last known good estimated bill computation. With this approach, customers will only see cost and usage data through July 15, however the inflated cost data will be removed. The second path involves rolling back a recent change to the billing computation subsystem. The displayed billing estimates do not reflect actual usage and charges. There are no customer actions required at this time. Once the issue has been mitigated, we expect full resolution to take multiple hours as we work through recomputing the estimated billing data. We will provide another update by 6:00 AM PDT or sooner if more information becomes available."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -316,14 +289,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-07-17T10:52:48Z",
+      "updated_at": "2026-07-17T11:58:39Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 342,
+      "consecutive_anomalies": 343,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2453168,
+      "anomaly_seconds": 2457116,
       "latest_incident_link": null
     }
   ],
