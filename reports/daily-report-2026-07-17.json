@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-17T08:25:50Z",
+  "generated_at": "2026-07-17T10:18:52Z",
   "window": {
     "start": "2026-07-16T00:00:00Z",
-    "end": "2026-07-17T08:25:50Z"
+    "end": "2026-07-17T10:18:52Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 18,
-      "measured_checks_24h": 18,
-      "ok": 12,
+      "total_checks_24h": 19,
+      "measured_checks_24h": 19,
+      "ok": 13,
       "warn": 6,
       "critical": 0,
       "unknown": 0,
-      "sla": 66.67,
+      "sla": 68.42,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T08:25:48Z",
+      "latest_at": "2026-07-17T10:18:51Z",
       "recent_incidents": [
         {
           "time": "2026-07-17T00:15:11Z",
@@ -31,16 +31,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 18,
-      "measured_checks_24h": 18,
+      "total_checks_24h": 19,
+      "measured_checks_24h": 19,
       "ok": 10,
-      "warn": 4,
+      "warn": 5,
       "critical": 4,
       "unknown": 0,
-      "sla": 55.56,
+      "sla": 52.63,
       "latest_status": "warn",
-      "latest_at": "2026-07-17T08:25:49Z",
+      "latest_at": "2026-07-17T10:18:51Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-17T10:18:51Z",
+          "name": "Elevated errors on Sonnet 5 and Haiku 4.5",
+          "status": "identified",
+          "link": "https://stspg.io/p0rgrvqnx02s"
+        },
         {
           "time": "2026-07-17T08:25:49Z",
           "name": "Elevated errors on Sonnet 5 and Haiku 4.5",
@@ -52,51 +58,69 @@
           "name": "Elevated errors for multiple models",
           "status": "monitoring",
           "link": "https://stspg.io/zhv1t1h0dbby"
-        },
-        {
-          "time": "2026-07-16T21:14:02Z",
-          "name": "Elevated errors for multiple models",
-          "status": "identified",
-          "link": "https://stspg.io/zhv1t1h0dbby"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 18,
-      "measured_checks_24h": 18,
-      "ok": 18,
+      "total_checks_24h": 19,
+      "measured_checks_24h": 19,
+      "ok": 19,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T08:25:49Z",
+      "latest_at": "2026-07-17T10:18:51Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 18,
-      "measured_checks_24h": 18,
-      "ok": 18,
+      "total_checks_24h": 19,
+      "measured_checks_24h": 19,
+      "ok": 19,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T08:25:49Z",
+      "latest_at": "2026-07-17T10:18:51Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 18,
-      "measured_checks_24h": 18,
+      "total_checks_24h": 19,
+      "measured_checks_24h": 19,
       "ok": 0,
       "warn": 0,
-      "critical": 18,
+      "critical": 19,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-17T08:25:49Z",
+      "latest_at": "2026-07-17T10:18:52Z",
       "recent_incidents": [
         {
+          "time": "2026-07-17T10:18:52Z",
+          "name": "AWS Billing Console",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T10:18:52Z",
+          "name": "Amazon CloudFront",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T10:18:52Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T10:18:52Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-17T08:25:49Z",
           "name": "Amazon CloudFront",
           "status": "0",
@@ -218,30 +242,6 @@
         },
         {
           "time": "2026-07-16T22:17:46Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-16T21:14:02Z",
-          "name": "Amazon CloudFront",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-16T21:14:02Z",
-          "name": "Multiple services / Frankfurt",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-16T21:14:02Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-16T21:14:02Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
