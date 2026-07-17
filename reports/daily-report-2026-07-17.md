@@ -2,14 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 21 | 0 | critical |
-| Claude | 52.38 | 11 | 6 | 4 | 0 | ok |
-| Gemini | 100.00 | 21 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 21 | 0 | 0 | 0 | ok |
-| OpenAI | 71.43 | 15 | 6 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 22 | 0 | critical |
+| Claude | 54.55 | 12 | 6 | 4 | 0 | ok |
+| Gemini | 100.00 | 22 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 22 | 0 | 0 | 0 | ok |
+| OpenAI | 72.73 | 16 | 6 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-17T14:26:49Z | 1 | AWS Billing Console
+- 2026-07-17T14:26:49Z | 3 | Multiple services / UAE
+- 2026-07-17T14:26:49Z | 3 | Multiple services / Bahrain
 - 2026-07-17T12:51:59Z | 1 | AWS Billing Console
 - 2026-07-17T12:51:59Z | 3 | Multiple services / UAE
 - 2026-07-17T12:51:59Z | 3 | Multiple services / Bahrain
@@ -17,9 +20,6 @@
 - 2026-07-17T11:46:11Z | 0 | Amazon CloudFront
 - 2026-07-17T11:46:11Z | 3 | Multiple services / UAE
 - 2026-07-17T11:46:11Z | 3 | Multiple services / Bahrain
-- 2026-07-17T10:18:52Z | 1 | AWS Billing Console
-- 2026-07-17T10:18:52Z | 0 | Amazon CloudFront
-- 2026-07-17T10:18:52Z | 3 | Multiple services / UAE
 
 ### Claude
 - 2026-07-17T11:46:10Z | identified | Elevated errors on Sonnet 5 and Haiku 4.5
@@ -31,4 +31,4 @@
 ### Grok
 - 无事件记录
 ### OpenAI
-- 2026-07-17T00:15:11Z | identified | Elevated errors for Github connector
+- 无事件记录
