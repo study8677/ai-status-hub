@@ -1,32 +1,39 @@
 {
-  "generated_at": "2026-07-17T14:26:49Z",
+  "generated_at": "2026-07-17T15:58:37Z",
   "window": {
     "start": "2026-07-16T00:00:00Z",
-    "end": "2026-07-17T14:26:49Z"
+    "end": "2026-07-17T15:58:37Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
-      "ok": 16,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
+      "ok": 17,
       "warn": 6,
       "critical": 0,
       "unknown": 0,
-      "sla": 72.73,
+      "sla": 73.91,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T14:26:49Z",
-      "recent_incidents": []
+      "latest_at": "2026-07-17T15:58:36Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-17T15:58:36Z",
+          "name": "New ChatGPT App Not Available For Users Without Codex Permissions",
+          "status": "identified",
+          "link": null
+        }
+      ]
     },
     "Claude": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
-      "ok": 12,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
+      "ok": 13,
       "warn": 6,
       "critical": 4,
       "unknown": 0,
-      "sla": 54.55,
+      "sla": 56.52,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T14:26:49Z",
+      "latest_at": "2026-07-17T15:58:36Z",
       "recent_incidents": [
         {
           "time": "2026-07-17T11:46:10Z",
@@ -49,41 +56,59 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
-      "ok": 22,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
+      "ok": 23,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T14:26:49Z",
+      "latest_at": "2026-07-17T15:58:36Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
-      "ok": 22,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
+      "ok": 23,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-17T14:26:49Z",
+      "latest_at": "2026-07-17T15:58:36Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
       "ok": 0,
       "warn": 0,
-      "critical": 22,
+      "critical": 23,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-17T14:26:49Z",
+      "latest_at": "2026-07-17T15:58:36Z",
       "recent_incidents": [
         {
+          "time": "2026-07-17T15:58:36Z",
+          "name": "AWS Billing Console",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T15:58:36Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T15:58:36Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-17T14:26:49Z",
           "name": "AWS Billing Console",
           "status": "1",
@@ -217,30 +242,6 @@
         },
         {
           "time": "2026-07-17T03:42:22Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T00:15:13Z",
-          "name": "Amazon CloudFront",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T00:15:13Z",
-          "name": "Multiple services / Frankfurt",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T00:15:13Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T00:15:13Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
