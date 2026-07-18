@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-07-18T10:52:33Z",
+  "generated_at": "2026-07-18T11:50:04Z",
   "window": {
     "start": "2026-07-17T00:00:00Z",
-    "end": "2026-07-18T10:52:33Z"
+    "end": "2026-07-18T11:50:04Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
       "ok": 18,
-      "warn": 3,
+      "warn": 4,
       "critical": 1,
       "unknown": 0,
-      "sla": 81.82,
+      "sla": 78.26,
       "latest_status": "warn",
-      "latest_at": "2026-07-18T10:52:32Z",
+      "latest_at": "2026-07-18T11:50:03Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-18T11:50:03Z",
+          "name": "Some users are unable to access Codex",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-07-18T10:52:32Z",
           "name": "Some users are unable to access Codex",
@@ -51,63 +57,75 @@
           "name": "New ChatGPT App Not Available For Enterprise Users Without Codex Permissions",
           "status": "identified",
           "link": null
-        },
-        {
-          "time": "2026-07-17T23:27:25Z",
-          "name": "New ChatGPT App Not Available For Enterprise Users Without Codex Permissions",
-          "status": "identified",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
-      "ok": 18,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
+      "ok": 19,
       "warn": 3,
       "critical": 1,
       "unknown": 0,
-      "sla": 81.82,
+      "sla": 82.61,
       "latest_status": "ok",
-      "latest_at": "2026-07-18T10:52:32Z",
+      "latest_at": "2026-07-18T11:50:04Z",
       "recent_incidents": []
     },
     "Gemini": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
-      "ok": 22,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
+      "ok": 23,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-18T10:52:33Z",
+      "latest_at": "2026-07-18T11:50:04Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
-      "ok": 22,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
+      "ok": 23,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-18T10:52:33Z",
+      "latest_at": "2026-07-18T11:50:04Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
       "ok": 0,
       "warn": 0,
-      "critical": 22,
+      "critical": 23,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-18T10:52:33Z",
+      "latest_at": "2026-07-18T11:50:04Z",
       "recent_incidents": [
         {
+          "time": "2026-07-18T11:50:04Z",
+          "name": "AWS Billing Console",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-07-18T11:50:04Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-18T11:50:04Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-18T10:52:33Z",
           "name": "AWS Billing Console",
           "status": "1",
@@ -223,24 +241,6 @@
         },
         {
           "time": "2026-07-17T23:27:26Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T23:27:26Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T22:27:08Z",
-          "name": "AWS Billing Console",
-          "status": "1",
-          "link": null
-        },
-        {
-          "time": "2026-07-17T22:27:08Z",
           "name": "Multiple services / UAE",
           "status": "3",
           "link": null
