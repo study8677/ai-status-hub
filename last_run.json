@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-18T12:43:33Z",
+  "generated_at": "2026-07-18T14:10:53Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-18T12:43:32Z",
-      "overall_status": "minor",
+      "time": "2026-07-18T14:10:53Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Codex in ChatGPT Desktop",
-          "status": "degraded_performance",
+          "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -128,33 +128,22 @@
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "01KXT44TAQQ2R0AZDDVSJGAC4H",
-          "name": "Some users are unable to access Codex",
-          "status": "monitoring",
-          "impact": "minor",
-          "shortlink": null,
-          "started_at": "2026-07-18T08:05:37Z",
-          "updated_at": "2026-07-18T08:31:42Z",
-          "url": null
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-18T08:31:42Z",
+      "updated_at": "2026-07-09T19:25:56Z",
       "source_url": "https://status.openai.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-07-18T08:12:43Z",
-      "consecutive_anomalies": 5,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 16249,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-18T12:43:33Z",
+      "time": "2026-07-18T14:10:53Z",
       "overall_status": "none",
       "components": [
         {
@@ -197,31 +186,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 12,
+      "consecutive_recoveries": 13,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-18T12:43:33Z",
+      "time": "2026-07-18T14:10:53Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-18T12:43:33Z",
+      "updated_at": "2026-07-18T14:10:53Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 360,
+      "consecutive_recoveries": 361,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-18T12:43:33Z",
+      "time": "2026-07-18T14:10:53Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 360,
+      "consecutive_recoveries": 361,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-18T12:43:33Z",
+      "time": "2026-07-18T14:10:53Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -267,13 +256,13 @@
         {
           "id": "arn:aws:health:global::event/BILLING/AWS_BILLING_OPERATIONAL_ISSUE/AWS_BILLING_OPERATIONAL_ISSUE_47B68_BACBD91434F",
           "name": "AWS Billing Console",
-          "status": "1",
-          "summary": "Inaccurate Estimated Billing Data",
-          "updated_at": "2026-07-18T08:05:35Z",
+          "status": "0",
+          "summary": "[RESOLVED] Inaccurate Estimated Billing Data",
+          "updated_at": "2026-07-18T13:57:41Z",
           "link": null,
           "region": null,
           "severity": "warn",
-          "latest_message": "We continue to make substantial progress toward resolving the issue affecting estimated cost and usage data displayed in the Billing and Cost Management Console. Our mitigation efforts are working as expected and we are seeing an increasing number of accounts reflecting correct cost and usage data. We expect all affected accounts to be fully recovered by July 19, 12:00 AM PDT. Until the backfill is complete, some customers may still observe incorrect cost and usage data in the Billing and Cost Management Console and Cost and Usage Reports. These estimates do not reflect actual usage or charges. We will provide another update by July 18, 7:00 AM PDT, or sooner if additional information becomes available."
+          "latest_message": "Between July 16 at 7:38 PM PDT and July 17 at 6:00 AM PDT, customers received erroneous budget and cost anomaly detection alerts, and saw inflated estimated cost and usage data in the Billing and Cost Management Console and the Cost and Usage Reports. These inaccurate billing estimates did not affect customer invoices. \n\nOn July 16, 2026 at 7:46 PM PDT, our alarms detected cost anomalies but failed to halt the estimated bill generation process or alert our engineering teams. Our engineering teams were alerted to this issue on July 17 at 12:19 AM PDT by customer escalations, and we immediately began to investigate. We first informed customers in the Service Health Dashboard at 1:33 AM PDT. At 8:24 AM PDT we paused further updates to estimated billing data and turned off budget and cost anomaly alerts as a precautionary measure.\n\nWe identified the root cause at 12:00 PM PDT, which was a configuration change in our bill computation system. This system relies on unit conversion data to calculate line item charges. The configuration change caused updates to the unit conversion data to fail, resulting in inflated line item costs, which propagated to the Billing and Cost Management console and triggered the budget and cost anomaly alerts.\n\nWe implemented a mitigation at 12:30 PM PDT which corrected the unit conversion configuration, and we began to reprocess cost and usage data for all customer accounts. We observed recovery beginning at 4:19 PM PDT, and the majority of accounts were fully recovered on July 18 at 6:00 AM PDT. There is a small number of accounts still processing and we will post updates for these accounts on the Personal Health Dashboard. We have corrected our alarms to immediately halt processing and notify our engineering teams when anomalies occur. \n\nWe apologize for the alarm this incident caused our customers and we are conducting a thorough retrospective to prevent events like this from reoccurring and to improve our response when billing incidents do occur. The issue has been resolved and all AWS services are now operating normally."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -300,14 +289,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-07-18T08:05:35Z",
+      "updated_at": "2026-07-18T13:57:41Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 360,
+      "consecutive_anomalies": 361,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2543010,
+      "anomaly_seconds": 2548250,
       "latest_incident_link": null
     }
   ],
