@@ -1,0 +1,252 @@
+{
+  "generated_at": "2026-07-18T00:58:34Z",
+  "window": {
+    "start": "2026-07-17T00:00:00Z",
+    "end": "2026-07-18T00:58:34Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 16,
+      "warn": 1,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 94.12,
+      "latest_status": "ok",
+      "latest_at": "2026-07-18T00:58:33Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-18T00:58:33Z",
+          "name": "New ChatGPT App Not Available For Enterprise Users Without Codex Permissions",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T23:27:25Z",
+          "name": "New ChatGPT App Not Available For Enterprise Users Without Codex Permissions",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T22:27:07Z",
+          "name": "New ChatGPT App Not Available For Enterprise Users Without Codex Permissions",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T21:30:57Z",
+          "name": "New ChatGPT App Not Available For Enterprise Users Without Codex Permissions",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T20:36:40Z",
+          "name": "Codex 5.6-sol Experiencing Increased Server-Overload Errors",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T20:36:40Z",
+          "name": "New ChatGPT App Not Available For Enterprise Users Without Codex Permissions",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T19:42:31Z",
+          "name": "Codex 5.6-sol Experiencing Increased Server-Overload Errors",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T19:42:31Z",
+          "name": "New ChatGPT App Not Available For Enterprise Users Without Codex Permissions",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T18:30:37Z",
+          "name": "Codex 5.6-sol Experiencing Increased Server-Overload Errors",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T18:30:37Z",
+          "name": "New ChatGPT App Not Available For Enterprise Users Without Codex Permissions",
+          "status": "identified",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 13,
+      "warn": 3,
+      "critical": 1,
+      "unknown": 0,
+      "sla": 76.47,
+      "latest_status": "ok",
+      "latest_at": "2026-07-18T00:58:34Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-17T19:42:31Z",
+          "name": "Elevated errors across Fable 5",
+          "status": "monitoring",
+          "link": "https://stspg.io/rxyp2wg9jxcw"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 17,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-18T00:58:34Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 17,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-18T00:58:34Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 0,
+      "warn": 0,
+      "critical": 17,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-07-18T00:58:34Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-18T00:58:34Z",
+          "name": "AWS Billing Console",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-07-18T00:58:34Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-18T00:58:34Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T23:27:26Z",
+          "name": "AWS Billing Console",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T23:27:26Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T23:27:26Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T22:27:08Z",
+          "name": "AWS Billing Console",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T22:27:08Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T22:27:08Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T21:30:58Z",
+          "name": "AWS Billing Console",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T21:30:58Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T21:30:58Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T20:36:40Z",
+          "name": "AWS Billing Console",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T20:36:40Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T20:36:40Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T19:42:32Z",
+          "name": "AWS Billing Console",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T19:42:32Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T19:42:32Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-17T18:30:37Z",
+          "name": "AWS Billing Console",
+          "status": "1",
+          "link": null
+        }
+      ]
+    }
+  }
+}
