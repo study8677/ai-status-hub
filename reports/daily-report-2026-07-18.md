@@ -2,14 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 17 | 0 | critical |
-| Claude | 76.47 | 13 | 3 | 1 | 0 | ok |
-| Gemini | 100.00 | 17 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 17 | 0 | 0 | 0 | ok |
-| OpenAI | 94.12 | 16 | 1 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 18 | 0 | critical |
+| Claude | 77.78 | 14 | 3 | 1 | 0 | ok |
+| Gemini | 100.00 | 18 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 18 | 0 | 0 | 0 | ok |
+| OpenAI | 94.44 | 17 | 1 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-18T04:07:36Z | 1 | AWS Billing Console
+- 2026-07-18T04:07:36Z | 3 | Multiple services / UAE
+- 2026-07-18T04:07:36Z | 3 | Multiple services / Bahrain
 - 2026-07-18T00:58:34Z | 1 | AWS Billing Console
 - 2026-07-18T00:58:34Z | 3 | Multiple services / UAE
 - 2026-07-18T00:58:34Z | 3 | Multiple services / Bahrain
@@ -17,18 +20,15 @@
 - 2026-07-17T23:27:26Z | 3 | Multiple services / UAE
 - 2026-07-17T23:27:26Z | 3 | Multiple services / Bahrain
 - 2026-07-17T22:27:08Z | 1 | AWS Billing Console
-- 2026-07-17T22:27:08Z | 3 | Multiple services / UAE
-- 2026-07-17T22:27:08Z | 3 | Multiple services / Bahrain
-- 2026-07-17T21:30:58Z | 1 | AWS Billing Console
 
 ### Claude
-- 2026-07-17T19:42:31Z | monitoring | Elevated errors across Fable 5
-
+- 无事件记录
 ### Gemini
 - 无事件记录
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-07-18T04:07:36Z | identified | New ChatGPT App Not Available For Enterprise Users Without Codex Permissions
 - 2026-07-18T00:58:33Z | identified | New ChatGPT App Not Available For Enterprise Users Without Codex Permissions
 - 2026-07-17T23:27:25Z | identified | New ChatGPT App Not Available For Enterprise Users Without Codex Permissions
 - 2026-07-17T22:27:07Z | identified | New ChatGPT App Not Available For Enterprise Users Without Codex Permissions
@@ -37,5 +37,3 @@
 - 2026-07-17T20:36:40Z | identified | New ChatGPT App Not Available For Enterprise Users Without Codex Permissions
 - 2026-07-17T19:42:31Z | monitoring | Codex 5.6-sol Experiencing Increased Server-Overload Errors
 - 2026-07-17T19:42:31Z | identified | New ChatGPT App Not Available For Enterprise Users Without Codex Permissions
-- 2026-07-17T18:30:37Z | identified | Codex 5.6-sol Experiencing Increased Server-Overload Errors
-- 2026-07-17T18:30:37Z | identified | New ChatGPT App Not Available For Enterprise Users Without Codex Permissions
