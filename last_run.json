@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-18T21:24:55Z",
+  "generated_at": "2026-07-18T22:23:20Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-18T21:24:54Z",
+      "time": "2026-07-18T22:23:19Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 8,
+      "consecutive_recoveries": 9,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-18T21:24:54Z",
+      "time": "2026-07-18T22:23:20Z",
       "overall_status": "none",
       "components": [
         {
@@ -186,31 +186,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 20,
+      "consecutive_recoveries": 21,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-18T21:24:54Z",
+      "time": "2026-07-18T22:23:20Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-18T21:24:54Z",
+      "updated_at": "2026-07-18T22:23:20Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 368,
+      "consecutive_recoveries": 369,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-18T21:24:54Z",
+      "time": "2026-07-18T22:23:20Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 368,
+      "consecutive_recoveries": 369,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-18T21:24:55Z",
+      "time": "2026-07-18T22:23:20Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -262,7 +262,7 @@
           "link": null,
           "region": null,
           "severity": "warn",
-          "latest_message": "Between July 16 at 7:38 PM PDT and July 17 at 6:00 AM PDT, customers received erroneous budget and cost anomaly detection alerts, and saw inflated estimated cost and usage data in the Billing and Cost Management Console and the Cost and Usage Reports. These inaccurate billing estimates did not affect customer invoices. \n\nOn July 16, 2026 at 7:46 PM PDT, our alarms detected cost anomalies but failed to halt the estimated bill generation process or alert our engineering teams. Our engineering teams were alerted to this issue on July 17 at 12:19 AM PDT by customer escalations, and we immediately began to investigate. We first informed customers in the Service Health Dashboard at 1:33 AM PDT. At 8:24 AM PDT we paused further updates to estimated billing data and turned off budget and cost anomaly alerts as a precautionary measure.\n\nWe identified the root cause at 12:00 PM PDT, which was a configuration change in our bill computation system. This system relies on unit conversion data to calculate line item charges. The configuration change caused updates to the unit conversion data to fail, resulting in inflated line item costs, which propagated to the Billing and Cost Management console and triggered the budget and cost anomaly alerts.\n\nWe implemented a mitigation at 12:30 PM PDT which corrected the unit conversion configuration, and we began to reprocess cost and usage data for all customer accounts. We observed recovery beginning at 4:19 PM PDT, and the majority of accounts were fully recovered on July 18 at 6:00 AM PDT. There is a small number of accounts still processing and we will post updates for these accounts on the Personal Health Dashboard. We have corrected our alarms to immediately halt processing and notify our engineering teams when anomalies occur. \n\nWe apologize for the alarm this incident caused our customers and we are conducting a thorough retrospective to prevent events like this from reoccurring and to improve our response when billing incidents do occur. The issue has been resolved and all AWS services are now operating normally."
+          "latest_message": "Between July 16 at 7:38 PM PDT and July 18 at 6:00 AM PDT, we began displaying incorrect estimated billing data in the Billing and Cost Management Console, including the Cost and Usage Report. Customers may have received erroneous budget and cost anomaly detection alerts, and observed inflated estimated cost and usage data.\n\nOn July 16 at 7:46 PM PDT, our alarms detected cost anomalies but failed to halt the estimated bill generation process or alert our engineering teams. We were alerted to this issue on July 17 at 12:19 AM PDT by customer escalations, and immediately began to investigate. We first informed customers via AWS Health on July 17 at 1:33 AM. At 8:24 AM PDT we paused further updates to estimated billing data and turned off budget and cost anomaly alerts as a precautionary measure.\n\nWe identified the root cause on July 17 at 12:00 PM PDT as a configuration change in our bill computation system. This system relies on unit conversion data to calculate line item charges. The configuration change caused updates to the unit conversion data to fail, resulting in inflated line item costs, which propagated to the Billing and Cost Management console and triggered budget and cost anomaly alerts.\n\nWe mitigated the issue on July 17 at 12:30 PM PDT which corrected the unit conversion configuration, and began reprocessing cost and usage data for all customer accounts. We started observing recovery at 4:19 PM PDT, and the majority of accounts were fully recovered by July 18 at 6:00 AM PDT. There are a small number of accounts still processing and we will post updates for these accounts on the Personal Health Dashboard. We have corrected our alarms to immediately halt processing and notify our engineering teams when anomalies occur. \n\nWe apologize for the alarm this incident caused our customers and are conducting a thorough retrospective to prevent events like this from reoccurring, as well as improve our response when billing incidents occur. The issue has been resolved and all AWS services are now operating normally."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -294,9 +294,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 368,
+      "consecutive_anomalies": 369,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2574292,
+      "anomaly_seconds": 2577797,
       "latest_incident_link": null
     }
   ],
