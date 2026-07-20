@@ -1,0 +1,251 @@
+{
+  "generated_at": "2026-07-20T01:09:52Z",
+  "window": {
+    "start": "2026-07-19T00:00:00Z",
+    "end": "2026-07-20T01:09:52Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
+      "ok": 15,
+      "warn": 1,
+      "critical": 2,
+      "unknown": 0,
+      "sla": 83.33,
+      "latest_status": "warn",
+      "latest_at": "2026-07-20T01:09:51Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-20T01:09:51Z",
+          "name": "Elevated errors for GitHub-dependent ChatGPT and Codex workflows",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T16:15:40Z",
+          "name": "Elevated errors affecting ChatGPT",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T15:17:20Z",
+          "name": "Elevated errors affecting ChatGPT",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
+      "ok": 18,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-20T01:09:51Z",
+      "recent_incidents": []
+    },
+    "Gemini": {
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
+      "ok": 18,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-20T01:09:51Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
+      "ok": 18,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-20T01:09:51Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
+      "ok": 0,
+      "warn": 0,
+      "critical": 18,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-07-20T01:09:52Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-20T01:09:52Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T01:09:52Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T23:32:53Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T23:32:53Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T22:29:26Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T22:29:26Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T21:32:08Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T21:32:08Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T20:33:40Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T20:33:40Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T19:47:20Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T19:47:20Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T18:31:58Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T18:31:58Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T17:27:56Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T17:27:56Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T16:15:41Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T16:15:41Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T15:17:21Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T15:17:21Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T14:12:54Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T14:12:54Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T12:40:21Z",
+          "name": "AWS Billing Console",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T12:40:21Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T12:40:21Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T11:45:20Z",
+          "name": "AWS Billing Console",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-19T11:45:20Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        }
+      ]
+    }
+  }
+}
