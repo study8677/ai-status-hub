@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-20T07:54:48Z",
+  "generated_at": "2026-07-20T10:52:43Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-20T07:54:47Z",
+      "time": "2026-07-20T10:52:42Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 2,
+      "consecutive_recoveries": 3,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-20T07:54:47Z",
+      "time": "2026-07-20T10:52:43Z",
       "overall_status": "minor",
       "components": [
         {
@@ -163,8 +163,8 @@
         },
         {
           "name": "Claude Code",
-          "status": "operational",
-          "updated_at": "2026-07-20T07:35:29.208Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-07-20T07:57:06.131Z"
         },
         {
           "name": "Claude Cowork",
@@ -179,6 +179,16 @@
       ],
       "active_incidents": [
         {
+          "id": "hlt0yqp4lkww",
+          "name": "Elevated error rates for Opus 4.5",
+          "status": "identified",
+          "impact": "minor",
+          "shortlink": "https://stspg.io/lzrpkz4y2ry9",
+          "started_at": "2026-07-20T07:03:46.113Z",
+          "updated_at": "2026-07-20T10:05:20.363Z",
+          "url": "https://stspg.io/lzrpkz4y2ry9"
+        },
+        {
           "id": "tnypgb2jbqnq",
           "name": "Fable 5 requiring usage credits on Max plans",
           "status": "monitoring",
@@ -187,51 +197,41 @@
           "started_at": "2026-07-20T07:35:29.166Z",
           "updated_at": "2026-07-20T07:35:29.254Z",
           "url": "https://stspg.io/rgq3dljydbcm"
-        },
-        {
-          "id": "hlt0yqp4lkww",
-          "name": "Elevated error rates for Opus 4.5",
-          "status": "investigating",
-          "impact": "minor",
-          "shortlink": "https://stspg.io/lzrpkz4y2ry9",
-          "started_at": "2026-07-20T07:03:46.113Z",
-          "updated_at": "2026-07-20T07:03:46.234Z",
-          "url": "https://stspg.io/lzrpkz4y2ry9"
         }
       ],
       "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-07-20T07:54:35.352Z",
+      "updated_at": "2026-07-20T10:05:20.374Z",
       "source_url": "https://status.claude.com",
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-07-20T07:54:47Z",
-      "consecutive_anomalies": 1,
+      "consecutive_anomalies": 2,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
-      "latest_incident_link": "https://stspg.io/rgq3dljydbcm"
+      "anomaly_seconds": 10676,
+      "latest_incident_link": "https://stspg.io/lzrpkz4y2ry9"
     },
     {
       "service": "Gemini",
-      "time": "2026-07-20T07:54:48Z",
+      "time": "2026-07-20T10:52:43Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-20T07:54:48Z",
+      "updated_at": "2026-07-20T10:52:43Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 390,
+      "consecutive_recoveries": 391,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-20T07:54:48Z",
+      "time": "2026-07-20T10:52:43Z",
       "overall_status": "operational",
       "components": [
         {
@@ -248,13 +248,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 390,
+      "consecutive_recoveries": 391,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-20T07:54:48Z",
+      "time": "2026-07-20T10:52:43Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -299,11 +299,18 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 390,
+      "consecutive_anomalies": 391,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2698485,
+      "anomaly_seconds": 2709160,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "alert",
+      "service": "Claude",
+      "level": "warn",
+      "message": "Claude is in WARN state (sampled 2026-07-20T10:52:43Z)"
+    }
+  ]
 }
