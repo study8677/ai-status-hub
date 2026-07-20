@@ -2,14 +2,16 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 23 | 0 | critical |
-| Claude | 82.61 | 19 | 4 | 0 | 0 | warn |
-| Gemini | 100.00 | 23 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 23 | 0 | 0 | 0 | ok |
-| OpenAI | 86.96 | 20 | 1 | 2 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 24 | 0 | critical |
+| Claude | 83.33 | 20 | 4 | 0 | 0 | ok |
+| Gemini | 100.00 | 24 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 24 | 0 | 0 | 0 | ok |
+| OpenAI | 87.50 | 21 | 1 | 2 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-20T16:49:32Z | 3 | Multiple services / UAE
+- 2026-07-20T16:49:32Z | 3 | Multiple services / Bahrain
 - 2026-07-20T15:19:17Z | 3 | Multiple services / UAE
 - 2026-07-20T15:19:17Z | 3 | Multiple services / Bahrain
 - 2026-07-20T13:02:23Z | 3 | Multiple services / UAE
@@ -18,8 +20,6 @@
 - 2026-07-20T10:52:43Z | 3 | Multiple services / Bahrain
 - 2026-07-20T07:54:48Z | 3 | Multiple services / UAE
 - 2026-07-20T07:54:48Z | 3 | Multiple services / Bahrain
-- 2026-07-20T04:52:43Z | 3 | Multiple services / UAE
-- 2026-07-20T04:52:43Z | 3 | Multiple services / Bahrain
 
 ### Claude
 - 2026-07-20T15:19:17Z | identified | Elevated errors on Haiku 4.5
