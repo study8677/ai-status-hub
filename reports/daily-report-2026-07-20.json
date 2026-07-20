@@ -1,39 +1,32 @@
 {
-  "generated_at": "2026-07-20T21:36:03Z",
+  "generated_at": "2026-07-20T22:36:18Z",
   "window": {
     "start": "2026-07-19T00:00:00Z",
-    "end": "2026-07-20T21:36:03Z"
+    "end": "2026-07-20T22:36:18Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 27,
-      "measured_checks_24h": 27,
-      "ok": 24,
+      "total_checks_24h": 28,
+      "measured_checks_24h": 28,
+      "ok": 25,
       "warn": 1,
       "critical": 2,
       "unknown": 0,
-      "sla": 88.89,
+      "sla": 89.29,
       "latest_status": "ok",
-      "latest_at": "2026-07-20T21:36:02Z",
-      "recent_incidents": [
-        {
-          "time": "2026-07-20T01:09:51Z",
-          "name": "Elevated errors for GitHub-dependent ChatGPT and Codex workflows",
-          "status": "investigating",
-          "link": null
-        }
-      ]
+      "latest_at": "2026-07-20T22:36:14Z",
+      "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 27,
-      "measured_checks_24h": 27,
-      "ok": 23,
+      "total_checks_24h": 28,
+      "measured_checks_24h": 28,
+      "ok": 24,
       "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 85.19,
+      "sla": 85.71,
       "latest_status": "ok",
-      "latest_at": "2026-07-20T21:36:02Z",
+      "latest_at": "2026-07-20T22:36:15Z",
       "recent_incidents": [
         {
           "time": "2026-07-20T15:19:17Z",
@@ -86,41 +79,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 27,
-      "measured_checks_24h": 27,
-      "ok": 27,
+      "total_checks_24h": 28,
+      "measured_checks_24h": 28,
+      "ok": 28,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-20T21:36:02Z",
+      "latest_at": "2026-07-20T22:36:15Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 27,
-      "measured_checks_24h": 27,
-      "ok": 27,
+      "total_checks_24h": 28,
+      "measured_checks_24h": 28,
+      "ok": 28,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-20T21:36:02Z",
+      "latest_at": "2026-07-20T22:36:15Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 27,
-      "measured_checks_24h": 27,
+      "total_checks_24h": 28,
+      "measured_checks_24h": 28,
       "ok": 0,
       "warn": 0,
-      "critical": 27,
+      "critical": 28,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-20T21:36:02Z",
+      "latest_at": "2026-07-20T22:36:18Z",
       "recent_incidents": [
         {
+          "time": "2026-07-20T22:36:18Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T22:36:18Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-20T21:36:02Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -237,12 +242,6 @@
         {
           "time": "2026-07-20T01:09:52Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-19T23:32:53Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
