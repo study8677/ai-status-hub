@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-07-21T01:07:37Z",
+  "generated_at": "2026-07-21T04:30:30Z",
   "window": {
     "start": "2026-07-20T00:00:00Z",
-    "end": "2026-07-21T01:07:37Z"
+    "end": "2026-07-21T04:30:30Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 12,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 13,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 92.31,
+      "sla": 92.86,
       "latest_status": "ok",
-      "latest_at": "2026-07-21T01:07:36Z",
+      "latest_at": "2026-07-21T04:30:29Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 9,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 10,
       "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 69.23,
+      "sla": 71.43,
       "latest_status": "ok",
-      "latest_at": "2026-07-21T01:07:36Z",
+      "latest_at": "2026-07-21T04:30:30Z",
       "recent_incidents": [
         {
           "time": "2026-07-20T15:19:17Z",
@@ -63,56 +63,56 @@
           "name": "Fable 5 requiring usage credits on Max plans",
           "status": "monitoring",
           "link": "https://stspg.io/rgq3dljydbcm"
-        },
-        {
-          "time": "2026-07-20T07:54:47Z",
-          "name": "Fable 5 requiring usage credits on Max plans",
-          "status": "monitoring",
-          "link": "https://stspg.io/rgq3dljydbcm"
-        },
-        {
-          "time": "2026-07-20T07:54:47Z",
-          "name": "Elevated error rates for Opus 4.5",
-          "status": "investigating",
-          "link": "https://stspg.io/lzrpkz4y2ry9"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-21T01:07:36Z",
+      "latest_at": "2026-07-21T04:30:30Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-21T01:07:36Z",
+      "latest_at": "2026-07-21T04:30:30Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
       "ok": 0,
       "warn": 0,
-      "critical": 13,
+      "critical": 14,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-21T01:07:36Z",
+      "latest_at": "2026-07-21T04:30:30Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-21T04:30:30Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-21T04:30:30Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
         {
           "time": "2026-07-21T01:07:36Z",
           "name": "Multiple services / UAE",
