@@ -1,0 +1,251 @@
+{
+  "generated_at": "2026-07-21T01:07:37Z",
+  "window": {
+    "start": "2026-07-20T00:00:00Z",
+    "end": "2026-07-21T01:07:37Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 12,
+      "warn": 1,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 92.31,
+      "latest_status": "ok",
+      "latest_at": "2026-07-21T01:07:36Z",
+      "recent_incidents": []
+    },
+    "Claude": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 9,
+      "warn": 4,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 69.23,
+      "latest_status": "ok",
+      "latest_at": "2026-07-21T01:07:36Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-20T15:19:17Z",
+          "name": "Elevated errors on Haiku 4.5",
+          "status": "identified",
+          "link": "https://stspg.io/ths0tjh6ntg6"
+        },
+        {
+          "time": "2026-07-20T15:19:17Z",
+          "name": "Elevated errors for Claude Opus 4.8",
+          "status": "identified",
+          "link": "https://stspg.io/b4rjxhq1j4nb"
+        },
+        {
+          "time": "2026-07-20T15:19:17Z",
+          "name": "Fable 5 requiring usage credits on Max plans",
+          "status": "monitoring",
+          "link": "https://stspg.io/rgq3dljydbcm"
+        },
+        {
+          "time": "2026-07-20T13:02:22Z",
+          "name": "Fable 5 requiring usage credits on Max plans",
+          "status": "monitoring",
+          "link": "https://stspg.io/rgq3dljydbcm"
+        },
+        {
+          "time": "2026-07-20T10:52:43Z",
+          "name": "Elevated error rates for Opus 4.5",
+          "status": "identified",
+          "link": "https://stspg.io/lzrpkz4y2ry9"
+        },
+        {
+          "time": "2026-07-20T10:52:43Z",
+          "name": "Fable 5 requiring usage credits on Max plans",
+          "status": "monitoring",
+          "link": "https://stspg.io/rgq3dljydbcm"
+        },
+        {
+          "time": "2026-07-20T07:54:47Z",
+          "name": "Fable 5 requiring usage credits on Max plans",
+          "status": "monitoring",
+          "link": "https://stspg.io/rgq3dljydbcm"
+        },
+        {
+          "time": "2026-07-20T07:54:47Z",
+          "name": "Elevated error rates for Opus 4.5",
+          "status": "investigating",
+          "link": "https://stspg.io/lzrpkz4y2ry9"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-21T01:07:36Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-21T01:07:36Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 0,
+      "warn": 0,
+      "critical": 13,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-07-21T01:07:36Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-21T01:07:36Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-21T01:07:36Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T23:37:48Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T23:37:48Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T22:36:18Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T22:36:18Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T21:36:02Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T21:36:02Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T20:14:39Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T20:14:39Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T18:46:27Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T18:46:27Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T16:49:32Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T16:49:32Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T15:19:17Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T15:19:17Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T13:02:23Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T13:02:23Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T10:52:43Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T10:52:43Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T07:54:48Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-20T07:54:48Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        }
+      ]
+    }
+  }
+}
