@@ -1,33 +1,39 @@
 {
-  "generated_at": "2026-07-21T04:30:30Z",
+  "generated_at": "2026-07-21T07:15:09Z",
   "window": {
     "start": "2026-07-20T00:00:00Z",
-    "end": "2026-07-21T04:30:30Z"
+    "end": "2026-07-21T07:15:09Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 14,
-      "measured_checks_24h": 14,
-      "ok": 13,
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
+      "ok": 14,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 92.86,
+      "sla": 93.33,
       "latest_status": "ok",
-      "latest_at": "2026-07-21T04:30:29Z",
+      "latest_at": "2026-07-21T07:15:08Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 14,
-      "measured_checks_24h": 14,
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
       "ok": 10,
-      "warn": 4,
+      "warn": 5,
       "critical": 0,
       "unknown": 0,
-      "sla": 71.43,
-      "latest_status": "ok",
-      "latest_at": "2026-07-21T04:30:30Z",
+      "sla": 66.67,
+      "latest_status": "warn",
+      "latest_at": "2026-07-21T07:15:08Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-21T07:15:08Z",
+          "name": "Elevated errors on Haiku 4.5",
+          "status": "identified",
+          "link": "https://stspg.io/ng8pvt69fcnf"
+        },
         {
           "time": "2026-07-20T15:19:17Z",
           "name": "Elevated errors on Haiku 4.5",
@@ -67,41 +73,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 14,
-      "measured_checks_24h": 14,
-      "ok": 14,
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
+      "ok": 15,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-21T04:30:30Z",
+      "latest_at": "2026-07-21T07:15:08Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 14,
-      "measured_checks_24h": 14,
-      "ok": 14,
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
+      "ok": 15,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-21T04:30:30Z",
+      "latest_at": "2026-07-21T07:15:08Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 14,
-      "measured_checks_24h": 14,
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
       "ok": 0,
       "warn": 0,
-      "critical": 14,
+      "critical": 15,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-21T04:30:30Z",
+      "latest_at": "2026-07-21T07:15:08Z",
       "recent_incidents": [
         {
+          "time": "2026-07-21T07:15:08Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-21T07:15:08Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-21T04:30:30Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -224,24 +242,6 @@
         {
           "time": "2026-07-20T10:52:43Z",
           "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-20T10:52:43Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-20T07:54:48Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-20T07:54:48Z",
-          "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
         }
