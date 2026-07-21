@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-07-21T07:15:09Z",
+  "generated_at": "2026-07-21T09:43:56Z",
   "window": {
     "start": "2026-07-20T00:00:00Z",
-    "end": "2026-07-21T07:15:09Z"
+    "end": "2026-07-21T09:43:56Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
-      "ok": 14,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
+      "ok": 15,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 93.33,
+      "sla": 93.75,
       "latest_status": "ok",
-      "latest_at": "2026-07-21T07:15:08Z",
+      "latest_at": "2026-07-21T09:43:54Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
-      "ok": 10,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
+      "ok": 11,
       "warn": 5,
       "critical": 0,
       "unknown": 0,
-      "sla": 66.67,
-      "latest_status": "warn",
-      "latest_at": "2026-07-21T07:15:08Z",
+      "sla": 68.75,
+      "latest_status": "ok",
+      "latest_at": "2026-07-21T09:43:55Z",
       "recent_incidents": [
         {
           "time": "2026-07-21T07:15:08Z",
@@ -63,51 +63,57 @@
           "name": "Elevated error rates for Opus 4.5",
           "status": "identified",
           "link": "https://stspg.io/lzrpkz4y2ry9"
-        },
-        {
-          "time": "2026-07-20T10:52:43Z",
-          "name": "Fable 5 requiring usage credits on Max plans",
-          "status": "monitoring",
-          "link": "https://stspg.io/rgq3dljydbcm"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
-      "ok": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
+      "ok": 16,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-21T07:15:08Z",
+      "latest_at": "2026-07-21T09:43:55Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
-      "ok": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
+      "ok": 16,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-21T07:15:08Z",
+      "latest_at": "2026-07-21T09:43:55Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
       "ok": 0,
       "warn": 0,
-      "critical": 15,
+      "critical": 16,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-21T07:15:08Z",
+      "latest_at": "2026-07-21T09:43:55Z",
       "recent_incidents": [
         {
+          "time": "2026-07-21T09:43:55Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-21T09:43:55Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-21T07:15:08Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -236,12 +242,6 @@
         {
           "time": "2026-07-20T13:02:23Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-20T10:52:43Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
