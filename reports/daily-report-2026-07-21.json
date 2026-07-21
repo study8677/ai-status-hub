@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-07-21T11:30:54Z",
+  "generated_at": "2026-07-21T13:00:47Z",
   "window": {
     "start": "2026-07-20T00:00:00Z",
-    "end": "2026-07-21T11:30:54Z"
+    "end": "2026-07-21T13:00:47Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 17,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
       "ok": 15,
       "warn": 2,
-      "critical": 0,
+      "critical": 1,
       "unknown": 0,
-      "sla": 88.24,
-      "latest_status": "warn",
-      "latest_at": "2026-07-21T11:30:53Z",
+      "sla": 83.33,
+      "latest_status": "critical",
+      "latest_at": "2026-07-21T13:00:46Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-21T13:00:46Z",
+          "name": "Image generation unavailable in ChatGPT and API",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-07-21T11:30:53Z",
           "name": "Image generation unavailable for some ChatGPT users",
@@ -25,15 +31,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 17,
-      "ok": 11,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
+      "ok": 12,
       "warn": 6,
       "critical": 0,
       "unknown": 0,
-      "sla": 64.71,
-      "latest_status": "warn",
-      "latest_at": "2026-07-21T11:30:53Z",
+      "sla": 66.67,
+      "latest_status": "ok",
+      "latest_at": "2026-07-21T13:00:46Z",
       "recent_incidents": [
         {
           "time": "2026-07-21T11:30:53Z",
@@ -58,51 +64,57 @@
           "name": "Elevated errors for Claude Opus 4.8",
           "status": "identified",
           "link": "https://stspg.io/b4rjxhq1j4nb"
-        },
-        {
-          "time": "2026-07-20T15:19:17Z",
-          "name": "Fable 5 requiring usage credits on Max plans",
-          "status": "monitoring",
-          "link": "https://stspg.io/rgq3dljydbcm"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 17,
-      "ok": 17,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
+      "ok": 18,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-21T11:30:53Z",
+      "latest_at": "2026-07-21T13:00:46Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 17,
-      "ok": 17,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
+      "ok": 18,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-21T11:30:54Z",
+      "latest_at": "2026-07-21T13:00:46Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 17,
-      "measured_checks_24h": 17,
+      "total_checks_24h": 18,
+      "measured_checks_24h": 18,
       "ok": 0,
       "warn": 0,
-      "critical": 17,
+      "critical": 18,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-21T11:30:54Z",
+      "latest_at": "2026-07-21T13:00:47Z",
       "recent_incidents": [
         {
+          "time": "2026-07-21T13:00:47Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-21T13:00:47Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-21T11:30:54Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -230,18 +242,6 @@
         },
         {
           "time": "2026-07-20T16:49:32Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-20T15:19:17Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-20T15:19:17Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null

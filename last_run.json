@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-21T11:30:54Z",
+  "generated_at": "2026-07-21T13:00:47Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-21T11:30:53Z",
-      "overall_status": "minor",
+      "time": "2026-07-21T13:00:46Z",
+      "overall_status": "major",
       "components": [
         {
           "name": "Codex in ChatGPT Desktop",
@@ -94,7 +94,7 @@
         },
         {
           "name": "Image Generation",
-          "status": "degraded_performance",
+          "status": "partial_outage",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -131,56 +131,56 @@
       "active_incidents": [
         {
           "id": "01KY23YCPJ9M5BFFT6ZHKQE9MP",
-          "name": "Image generation unavailable for some ChatGPT users",
-          "status": "monitoring",
-          "impact": "minor",
+          "name": "Image generation unavailable in ChatGPT and API",
+          "status": "investigating",
+          "impact": "major",
           "shortlink": null,
           "started_at": "2026-07-21T10:36:02Z",
-          "updated_at": "2026-07-21T11:29:39Z",
+          "updated_at": "2026-07-21T12:57:02Z",
           "url": null
         }
       ],
-      "raw_score": 70,
+      "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-07-21T11:29:39Z",
+      "updated_at": "2026-07-21T12:57:02Z",
       "source_url": "https://status.openai.com",
-      "level": "warn",
+      "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-07-21T11:30:53Z",
-      "consecutive_anomalies": 1,
+      "consecutive_anomalies": 2,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
+      "anomaly_seconds": 5393,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-21T11:30:53Z",
-      "overall_status": "minor",
+      "time": "2026-07-21T13:00:46Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "claude.ai",
-          "status": "degraded_performance",
-          "updated_at": "2026-07-21T11:24:15.848Z"
+          "status": "operational",
+          "updated_at": "2026-07-21T11:47:38.919Z"
         },
         {
           "name": "Claude Console (platform.claude.com)",
-          "status": "degraded_performance",
-          "updated_at": "2026-07-21T11:24:15.865Z"
+          "status": "operational",
+          "updated_at": "2026-07-21T11:47:38.936Z"
         },
         {
           "name": "Claude API (api.anthropic.com)",
-          "status": "degraded_performance",
-          "updated_at": "2026-07-21T11:24:15.881Z"
+          "status": "operational",
+          "updated_at": "2026-07-21T11:47:38.951Z"
         },
         {
           "name": "Claude Code",
-          "status": "degraded_performance",
-          "updated_at": "2026-07-21T11:24:15.897Z"
+          "status": "operational",
+          "updated_at": "2026-07-21T11:47:38.966Z"
         },
         {
           "name": "Claude Cowork",
-          "status": "degraded_performance",
-          "updated_at": "2026-07-21T11:24:15.914Z"
+          "status": "operational",
+          "updated_at": "2026-07-21T11:47:38.982Z"
         },
         {
           "name": "Claude for Government",
@@ -188,51 +188,40 @@
           "updated_at": "2026-06-30T14:45:50.487Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "lw0sb1srtznh",
-          "name": "Elevated errors across Fable 5",
-          "status": "identified",
-          "impact": "minor",
-          "shortlink": "https://stspg.io/cqjf2860m4yy",
-          "started_at": "2026-07-21T11:19:33.003Z",
-          "updated_at": "2026-07-21T11:28:23.918Z",
-          "url": "https://stspg.io/cqjf2860m4yy"
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-21T11:28:23.927Z",
+      "updated_at": "2026-07-21T12:07:32.056Z",
       "source_url": "https://status.claude.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
-      "first_anomaly_at": "2026-07-21T11:30:53Z",
-      "consecutive_anomalies": 1,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
-      "latest_incident_link": "https://stspg.io/cqjf2860m4yy"
+      "first_anomaly_at": null,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
+      "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-21T11:30:53Z",
+      "time": "2026-07-21T13:00:46Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-21T11:30:53Z",
+      "updated_at": "2026-07-21T13:00:46Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 404,
+      "consecutive_recoveries": 405,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-21T11:30:54Z",
+      "time": "2026-07-21T13:00:46Z",
       "overall_status": "operational",
       "components": [
         {
@@ -249,13 +238,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 404,
+      "consecutive_recoveries": 405,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-21T11:30:54Z",
+      "time": "2026-07-21T13:00:47Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -300,11 +289,18 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 404,
+      "consecutive_anomalies": 405,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2797851,
+      "anomaly_seconds": 2803244,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "alert",
+      "service": "OpenAI",
+      "level": "critical",
+      "message": "OpenAI is in CRITICAL state (sampled 2026-07-21T13:00:46Z)"
+    }
+  ]
 }
