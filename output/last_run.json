@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-22T12:50:27Z",
+  "generated_at": "2026-07-22T14:53:09Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-22T12:50:26Z",
+      "time": "2026-07-22T14:53:08Z",
       "overall_status": "minor",
       "components": [
         {
@@ -99,7 +99,7 @@
         },
         {
           "name": "Image Generation",
-          "status": "degraded_performance",
+          "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -113,11 +113,6 @@
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
-          "name": "Agent",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
           "name": "Responses",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
@@ -126,61 +121,66 @@
           "name": "Connectors/Apps",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "ChatGPT Atlas",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
       "active_incidents": [
         {
-          "id": "01KY4BT971GFN59WBT0CKSGCPJ",
-          "name": "Elevated Errors Affecting File Uploads and Image Generation",
-          "status": "monitoring",
+          "id": "01KY54SWGRK806N6TJ495MYPDD",
+          "name": "Elevated errors for Workspace Agent",
+          "status": "investigating",
           "impact": "minor",
           "shortlink": null,
-          "started_at": "2026-07-22T07:32:04Z",
-          "updated_at": "2026-07-22T09:44:41Z",
+          "started_at": "2026-07-22T14:48:46Z",
+          "updated_at": "2026-07-22T14:48:46Z",
           "url": null
         }
       ],
       "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-07-22T09:44:41Z",
+      "updated_at": "2026-07-22T14:48:46Z",
       "source_url": "https://status.openai.com",
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-07-22T09:02:55Z",
-      "consecutive_anomalies": 3,
+      "consecutive_anomalies": 4,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 13651,
+      "anomaly_seconds": 21013,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-22T12:50:26Z",
-      "overall_status": "none",
+      "time": "2026-07-22T14:53:08Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "claude.ai",
-          "status": "operational",
-          "updated_at": "2026-07-21T17:07:34.873Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-07-22T13:37:28.274Z"
         },
         {
           "name": "Claude Console (platform.claude.com)",
-          "status": "operational",
-          "updated_at": "2026-07-21T16:39:31.414Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-07-22T13:37:28.288Z"
         },
         {
           "name": "Claude API (api.anthropic.com)",
-          "status": "operational",
-          "updated_at": "2026-07-22T08:45:27.024Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-07-22T13:37:28.302Z"
         },
         {
           "name": "Claude Code",
-          "status": "operational",
-          "updated_at": "2026-07-22T08:45:27.041Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-07-22T13:37:28.317Z"
         },
         {
           "name": "Claude Cowork",
-          "status": "operational",
-          "updated_at": "2026-07-21T18:03:46.979Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-07-22T13:37:28.331Z"
         },
         {
           "name": "Claude for Government",
@@ -188,40 +188,51 @@
           "updated_at": "2026-06-30T14:45:50.487Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "f7w8qkd8z57f",
+          "name": "Elevated errors on Opus 4.8 and Haiku 4.5",
+          "status": "identified",
+          "impact": "minor",
+          "shortlink": "https://stspg.io/5fhdrrh8wbq1",
+          "started_at": "2026-07-22T13:37:28.237Z",
+          "updated_at": "2026-07-22T14:18:33.866Z",
+          "url": "https://stspg.io/5fhdrrh8wbq1"
+        }
+      ],
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-07-22T12:44:02.292Z",
+      "updated_at": "2026-07-22T14:24:30.282Z",
       "source_url": "https://status.claude.com",
-      "level": "ok",
+      "level": "warn",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 10,
-      "anomaly_seconds": null,
-      "latest_incident_link": null
+      "first_anomaly_at": "2026-07-22T14:53:08Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
+      "latest_incident_link": "https://stspg.io/5fhdrrh8wbq1"
     },
     {
       "service": "Gemini",
-      "time": "2026-07-22T12:50:26Z",
+      "time": "2026-07-22T14:53:09Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-22T12:50:26Z",
+      "updated_at": "2026-07-22T14:53:09Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 418,
+      "consecutive_recoveries": 419,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-22T12:50:26Z",
+      "time": "2026-07-22T14:53:09Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +249,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 418,
+      "consecutive_recoveries": 419,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-22T12:50:26Z",
+      "time": "2026-07-22T14:53:09Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -289,9 +300,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 418,
+      "consecutive_anomalies": 419,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2889023,
+      "anomaly_seconds": 2896386,
       "latest_incident_link": null
     }
   ],
