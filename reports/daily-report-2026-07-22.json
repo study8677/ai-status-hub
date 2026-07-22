@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-22T18:50:20Z",
+  "generated_at": "2026-07-22T20:04:42Z",
   "window": {
     "start": "2026-07-21T00:00:00Z",
-    "end": "2026-07-22T18:50:20Z"
+    "end": "2026-07-22T20:04:42Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 9,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 10,
       "warn": 5,
       "critical": 9,
       "unknown": 0,
-      "sla": 39.13,
+      "sla": 41.67,
       "latest_status": "ok",
-      "latest_at": "2026-07-22T18:50:18Z",
+      "latest_at": "2026-07-22T20:04:41Z",
       "recent_incidents": [
         {
           "time": "2026-07-22T14:53:08Z",
@@ -45,26 +45,26 @@
           "name": "Image generation unavailable in ChatGPT",
           "status": "monitoring",
           "link": null
-        },
-        {
-          "time": "2026-07-21T23:07:23Z",
-          "name": "Image generation unavailable in ChatGPT",
-          "status": "monitoring",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 17,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 18,
       "warn": 4,
       "critical": 2,
       "unknown": 0,
-      "sla": 73.91,
+      "sla": 75.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-22T18:50:19Z",
+      "latest_at": "2026-07-22T20:04:41Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-22T20:04:41Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
         {
           "time": "2026-07-22T18:50:19Z",
           "name": "Microsoft Office add-in availability",
@@ -80,41 +80,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 24,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-22T18:50:19Z",
+      "latest_at": "2026-07-22T20:04:41Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 24,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-22T18:50:19Z",
+      "latest_at": "2026-07-22T20:04:41Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
       "ok": 0,
       "warn": 0,
-      "critical": 23,
+      "critical": 24,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-22T18:50:19Z",
+      "latest_at": "2026-07-22T20:04:41Z",
       "recent_incidents": [
         {
+          "time": "2026-07-22T20:04:41Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T20:04:41Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-22T18:50:19Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -230,18 +242,6 @@
         },
         {
           "time": "2026-07-22T00:04:55Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-21T23:07:24Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-21T23:07:24Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null

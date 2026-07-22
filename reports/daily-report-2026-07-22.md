@@ -2,14 +2,16 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 23 | 0 | critical |
-| Claude | 73.91 | 17 | 4 | 2 | 0 | ok |
-| Gemini | 100.00 | 23 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 23 | 0 | 0 | 0 | ok |
-| OpenAI | 39.13 | 9 | 5 | 9 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 24 | 0 | critical |
+| Claude | 75.00 | 18 | 4 | 2 | 0 | ok |
+| Gemini | 100.00 | 24 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 24 | 0 | 0 | 0 | ok |
+| OpenAI | 41.67 | 10 | 5 | 9 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-22T20:04:41Z | 3 | Multiple services / UAE
+- 2026-07-22T20:04:41Z | 3 | Multiple services / Bahrain
 - 2026-07-22T18:50:19Z | 3 | Multiple services / UAE
 - 2026-07-22T18:50:19Z | 3 | Multiple services / Bahrain
 - 2026-07-22T17:45:54Z | 3 | Multiple services / UAE
@@ -18,10 +20,9 @@
 - 2026-07-22T16:18:06Z | 3 | Multiple services / Bahrain
 - 2026-07-22T14:53:09Z | 3 | Multiple services / UAE
 - 2026-07-22T14:53:09Z | 3 | Multiple services / Bahrain
-- 2026-07-22T12:50:26Z | 3 | Multiple services / UAE
-- 2026-07-22T12:50:26Z | 3 | Multiple services / Bahrain
 
 ### Claude
+- 2026-07-22T20:04:41Z | identified | Microsoft Office add-in availability
 - 2026-07-22T18:50:19Z | identified | Microsoft Office add-in availability
 - 2026-07-22T14:53:08Z | identified | Elevated errors on Opus 4.8 and Haiku 4.5
 
@@ -35,4 +36,3 @@
 - 2026-07-22T11:16:46Z | monitoring | Elevated Errors Affecting File Uploads and Image Generation
 - 2026-07-22T09:02:55Z | investigating | Elevated Errors Affecting File Uploads and Image Generation
 - 2026-07-22T00:04:54Z | monitoring | Image generation unavailable in ChatGPT
-- 2026-07-21T23:07:23Z | monitoring | Image generation unavailable in ChatGPT
