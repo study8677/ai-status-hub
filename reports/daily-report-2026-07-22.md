@@ -2,14 +2,16 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 25 | 0 | critical |
-| Claude | 76.00 | 19 | 4 | 2 | 0 | ok |
-| Gemini | 100.00 | 25 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 25 | 0 | 0 | 0 | ok |
-| OpenAI | 44.00 | 11 | 5 | 9 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 26 | 0 | critical |
+| Claude | 76.92 | 20 | 4 | 2 | 0 | ok |
+| Gemini | 100.00 | 26 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 26 | 0 | 0 | 0 | ok |
+| OpenAI | 46.15 | 12 | 5 | 9 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-22T22:30:18Z | 3 | Multiple services / UAE
+- 2026-07-22T22:30:18Z | 3 | Multiple services / Bahrain
 - 2026-07-22T21:19:53Z | 3 | Multiple services / UAE
 - 2026-07-22T21:19:53Z | 3 | Multiple services / Bahrain
 - 2026-07-22T20:04:41Z | 3 | Multiple services / UAE
@@ -18,10 +20,9 @@
 - 2026-07-22T18:50:19Z | 3 | Multiple services / Bahrain
 - 2026-07-22T17:45:54Z | 3 | Multiple services / UAE
 - 2026-07-22T17:45:54Z | 3 | Multiple services / Bahrain
-- 2026-07-22T16:18:06Z | 3 | Multiple services / UAE
-- 2026-07-22T16:18:06Z | 3 | Multiple services / Bahrain
 
 ### Claude
+- 2026-07-22T22:30:18Z | identified | Microsoft Office add-in availability
 - 2026-07-22T21:19:53Z | identified | Microsoft Office add-in availability
 - 2026-07-22T20:04:41Z | identified | Microsoft Office add-in availability
 - 2026-07-22T18:50:19Z | identified | Microsoft Office add-in availability
