@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-22T17:45:54Z",
+  "generated_at": "2026-07-22T18:50:20Z",
   "window": {
     "start": "2026-07-21T00:00:00Z",
-    "end": "2026-07-22T17:45:54Z"
+    "end": "2026-07-22T18:50:20Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
-      "ok": 8,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
+      "ok": 9,
       "warn": 5,
       "critical": 9,
       "unknown": 0,
-      "sla": 36.36,
+      "sla": 39.13,
       "latest_status": "ok",
-      "latest_at": "2026-07-22T17:45:53Z",
+      "latest_at": "2026-07-22T18:50:18Z",
       "recent_incidents": [
         {
           "time": "2026-07-22T14:53:08Z",
@@ -51,26 +51,26 @@
           "name": "Image generation unavailable in ChatGPT",
           "status": "monitoring",
           "link": null
-        },
-        {
-          "time": "2026-07-21T22:02:02Z",
-          "name": "Elevated errors for API image generation",
-          "status": "monitoring",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
-      "ok": 16,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
+      "ok": 17,
       "warn": 4,
       "critical": 2,
       "unknown": 0,
-      "sla": 72.73,
+      "sla": 73.91,
       "latest_status": "ok",
-      "latest_at": "2026-07-22T17:45:54Z",
+      "latest_at": "2026-07-22T18:50:19Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-22T18:50:19Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
         {
           "time": "2026-07-22T14:53:08Z",
           "name": "Elevated errors on Opus 4.8 and Haiku 4.5",
@@ -80,41 +80,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
-      "ok": 22,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
+      "ok": 23,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-22T17:45:54Z",
+      "latest_at": "2026-07-22T18:50:19Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
-      "ok": 22,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
+      "ok": 23,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-22T17:45:54Z",
+      "latest_at": "2026-07-22T18:50:19Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 22,
-      "measured_checks_24h": 22,
+      "total_checks_24h": 23,
+      "measured_checks_24h": 23,
       "ok": 0,
       "warn": 0,
-      "critical": 22,
+      "critical": 23,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-22T17:45:54Z",
+      "latest_at": "2026-07-22T18:50:19Z",
       "recent_incidents": [
         {
+          "time": "2026-07-22T18:50:19Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T18:50:19Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-22T17:45:54Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -230,18 +242,6 @@
         },
         {
           "time": "2026-07-21T23:07:24Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-21T22:02:03Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-21T22:02:03Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
