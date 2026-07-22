@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-22T06:15:10Z",
+  "generated_at": "2026-07-22T09:02:55Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-22T06:15:08Z",
-      "overall_status": "none",
+      "time": "2026-07-22T09:02:55Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "Codex in ChatGPT Desktop",
@@ -99,7 +99,7 @@
         },
         {
           "name": "Image Generation",
-          "status": "operational",
+          "status": "degraded_performance",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -128,22 +128,33 @@
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "01KY4BT971GFN59WBT0CKSGCPJ",
+          "name": "Elevated Errors Affecting File Uploads and Image Generation",
+          "status": "investigating",
+          "impact": "minor",
+          "shortlink": null,
+          "started_at": "2026-07-22T07:32:04Z",
+          "updated_at": "2026-07-22T07:54:15Z",
+          "url": null
+        }
+      ],
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-07-09T19:25:56Z",
+      "updated_at": "2026-07-22T07:54:15Z",
       "source_url": "https://status.openai.com",
-      "level": "ok",
+      "level": "warn",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 2,
-      "anomaly_seconds": null,
+      "first_anomaly_at": "2026-07-22T09:02:55Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-22T06:15:09Z",
+      "time": "2026-07-22T09:02:55Z",
       "overall_status": "none",
       "components": [
         {
@@ -159,12 +170,12 @@
         {
           "name": "Claude API (api.anthropic.com)",
           "status": "operational",
-          "updated_at": "2026-07-21T17:07:34.890Z"
+          "updated_at": "2026-07-22T08:45:27.024Z"
         },
         {
           "name": "Claude Code",
           "status": "operational",
-          "updated_at": "2026-07-21T18:03:46.965Z"
+          "updated_at": "2026-07-22T08:45:27.041Z"
         },
         {
           "name": "Claude Cowork",
@@ -180,37 +191,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-22T04:24:03.404Z",
+      "updated_at": "2026-07-22T09:00:25.228Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 7,
+      "consecutive_recoveries": 8,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-22T06:15:09Z",
+      "time": "2026-07-22T09:02:55Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-22T06:15:09Z",
+      "updated_at": "2026-07-22T09:02:55Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 415,
+      "consecutive_recoveries": 416,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-22T06:15:09Z",
+      "time": "2026-07-22T09:02:55Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +238,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 415,
+      "consecutive_recoveries": 416,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-22T06:15:09Z",
+      "time": "2026-07-22T09:02:55Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -278,18 +289,11 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 415,
+      "consecutive_anomalies": 416,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 2865306,
+      "anomaly_seconds": 2875372,
       "latest_incident_link": null
     }
   ],
-  "alerts": [
-    {
-      "type": "recover",
-      "service": "OpenAI",
-      "level": "ok",
-      "message": "OpenAI recovered"
-    }
-  ]
+  "alerts": []
 }

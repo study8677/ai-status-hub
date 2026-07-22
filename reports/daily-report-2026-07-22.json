@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-07-22T06:15:10Z",
+  "generated_at": "2026-07-22T09:02:55Z",
   "window": {
     "start": "2026-07-21T00:00:00Z",
-    "end": "2026-07-22T06:15:10Z"
+    "end": "2026-07-22T09:02:55Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
       "ok": 6,
-      "warn": 1,
+      "warn": 2,
       "critical": 9,
       "unknown": 0,
-      "sla": 37.5,
-      "latest_status": "ok",
-      "latest_at": "2026-07-22T06:15:08Z",
+      "sla": 35.29,
+      "latest_status": "warn",
+      "latest_at": "2026-07-22T09:02:55Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-22T09:02:55Z",
+          "name": "Elevated Errors Affecting File Uploads and Image Generation",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-07-22T00:04:54Z",
           "name": "Image generation unavailable in ChatGPT",
@@ -69,25 +75,19 @@
           "name": "Image generation unavailable in ChatGPT",
           "status": "monitoring",
           "link": null
-        },
-        {
-          "time": "2026-07-21T16:45:36Z",
-          "name": "Image generation unavailable in ChatGPT",
-          "status": "monitoring",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 11,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 12,
       "warn": 3,
       "critical": 2,
       "unknown": 0,
-      "sla": 68.75,
+      "sla": 70.59,
       "latest_status": "ok",
-      "latest_at": "2026-07-22T06:15:09Z",
+      "latest_at": "2026-07-22T09:02:55Z",
       "recent_incidents": [
         {
           "time": "2026-07-21T18:02:34Z",
@@ -100,51 +100,57 @@
           "name": "Elevated errors on several models",
           "status": "monitoring",
           "link": "https://stspg.io/74sqh6d7f9vq"
-        },
-        {
-          "time": "2026-07-21T16:45:36Z",
-          "name": "Elevated errors on several models",
-          "status": "identified",
-          "link": "https://stspg.io/74sqh6d7f9vq"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 17,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-22T06:15:09Z",
+      "latest_at": "2026-07-22T09:02:55Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 17,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-22T06:15:09Z",
+      "latest_at": "2026-07-22T09:02:55Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
       "ok": 0,
       "warn": 0,
-      "critical": 16,
+      "critical": 17,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-22T06:15:09Z",
+      "latest_at": "2026-07-22T09:02:55Z",
       "recent_incidents": [
         {
+          "time": "2026-07-22T09:02:55Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T09:02:55Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-22T06:15:09Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -237,12 +243,6 @@
         {
           "time": "2026-07-21T18:02:35Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-21T16:45:36Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
