@@ -1,0 +1,252 @@
+{
+  "generated_at": "2026-07-23T01:08:17Z",
+  "window": {
+    "start": "2026-07-22T00:00:00Z",
+    "end": "2026-07-23T01:08:17Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
+      "ok": 10,
+      "warn": 4,
+      "critical": 1,
+      "unknown": 0,
+      "sla": 66.67,
+      "latest_status": "ok",
+      "latest_at": "2026-07-23T01:08:15Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-22T14:53:08Z",
+          "name": "Elevated errors for Workspace Agent",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T12:50:26Z",
+          "name": "Elevated Errors Affecting File Uploads and Image Generation",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
+      "ok": 14,
+      "warn": 1,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 93.33,
+      "latest_status": "ok",
+      "latest_at": "2026-07-23T01:08:16Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-23T01:08:16Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
+        {
+          "time": "2026-07-22T23:34:01Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
+        {
+          "time": "2026-07-22T22:30:18Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
+        {
+          "time": "2026-07-22T21:19:53Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
+        {
+          "time": "2026-07-22T20:04:41Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
+        {
+          "time": "2026-07-22T18:50:19Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
+        {
+          "time": "2026-07-22T14:53:08Z",
+          "name": "Elevated errors on Opus 4.8 and Haiku 4.5",
+          "status": "identified",
+          "link": "https://stspg.io/5fhdrrh8wbq1"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
+      "ok": 15,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-23T01:08:16Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
+      "ok": 15,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-23T01:08:16Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 15,
+      "measured_checks_24h": 15,
+      "ok": 0,
+      "warn": 0,
+      "critical": 15,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-07-23T01:08:16Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-23T01:08:16Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T01:08:16Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T23:34:01Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T23:34:01Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T22:30:18Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T22:30:18Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T21:19:53Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T21:19:53Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T20:04:41Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T20:04:41Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T18:50:19Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T18:50:19Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T17:45:54Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T17:45:54Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T16:18:06Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T16:18:06Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T14:53:09Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T14:53:09Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T12:50:26Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T12:50:26Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-22T11:16:48Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        }
+      ]
+    }
+  }
+}
