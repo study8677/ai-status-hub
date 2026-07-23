@@ -1,33 +1,39 @@
 {
-  "generated_at": "2026-07-23T11:33:03Z",
+  "generated_at": "2026-07-23T13:09:52Z",
   "window": {
     "start": "2026-07-22T00:00:00Z",
-    "end": "2026-07-23T11:33:03Z"
+    "end": "2026-07-23T13:09:52Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 19,
-      "measured_checks_24h": 19,
-      "ok": 14,
+      "total_checks_24h": 20,
+      "measured_checks_24h": 20,
+      "ok": 15,
       "warn": 4,
       "critical": 1,
       "unknown": 0,
-      "sla": 73.68,
+      "sla": 75.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-23T11:33:02Z",
+      "latest_at": "2026-07-23T13:09:51Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 19,
-      "measured_checks_24h": 19,
-      "ok": 18,
+      "total_checks_24h": 20,
+      "measured_checks_24h": 20,
+      "ok": 19,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 94.74,
+      "sla": 95.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-23T11:33:02Z",
+      "latest_at": "2026-07-23T13:09:51Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-23T13:09:51Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
         {
           "time": "2026-07-23T11:33:02Z",
           "name": "Microsoft Office add-in availability",
@@ -81,51 +87,57 @@
           "name": "Microsoft Office add-in availability",
           "status": "identified",
           "link": "https://stspg.io/62bq6fn8w887"
-        },
-        {
-          "time": "2026-07-22T18:50:19Z",
-          "name": "Microsoft Office add-in availability",
-          "status": "identified",
-          "link": "https://stspg.io/62bq6fn8w887"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 19,
-      "measured_checks_24h": 19,
-      "ok": 19,
+      "total_checks_24h": 20,
+      "measured_checks_24h": 20,
+      "ok": 20,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-23T11:33:02Z",
+      "latest_at": "2026-07-23T13:09:51Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 19,
-      "measured_checks_24h": 19,
-      "ok": 19,
+      "total_checks_24h": 20,
+      "measured_checks_24h": 20,
+      "ok": 20,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-23T11:33:02Z",
+      "latest_at": "2026-07-23T13:09:51Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 19,
-      "measured_checks_24h": 19,
+      "total_checks_24h": 20,
+      "measured_checks_24h": 20,
       "ok": 0,
       "warn": 0,
-      "critical": 19,
+      "critical": 20,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-23T11:33:02Z",
+      "latest_at": "2026-07-23T13:09:52Z",
       "recent_incidents": [
         {
+          "time": "2026-07-23T13:09:52Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T13:09:52Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-23T11:33:02Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -229,18 +241,6 @@
         },
         {
           "time": "2026-07-22T20:04:41Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-22T18:50:19Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-22T18:50:19Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
