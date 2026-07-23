@@ -1,46 +1,39 @@
 {
-  "generated_at": "2026-07-23T04:32:49Z",
+  "generated_at": "2026-07-23T07:13:29Z",
   "window": {
     "start": "2026-07-22T00:00:00Z",
-    "end": "2026-07-23T04:32:49Z"
+    "end": "2026-07-23T07:13:29Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 11,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 12,
       "warn": 4,
       "critical": 1,
       "unknown": 0,
-      "sla": 68.75,
+      "sla": 70.59,
       "latest_status": "ok",
-      "latest_at": "2026-07-23T04:32:48Z",
-      "recent_incidents": [
-        {
-          "time": "2026-07-22T14:53:08Z",
-          "name": "Elevated errors for Workspace Agent",
-          "status": "investigating",
-          "link": null
-        },
-        {
-          "time": "2026-07-22T12:50:26Z",
-          "name": "Elevated Errors Affecting File Uploads and Image Generation",
-          "status": "monitoring",
-          "link": null
-        }
-      ]
+      "latest_at": "2026-07-23T07:13:28Z",
+      "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 15,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 16,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 93.75,
+      "sla": 94.12,
       "latest_status": "ok",
-      "latest_at": "2026-07-23T04:32:48Z",
+      "latest_at": "2026-07-23T07:13:28Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-23T07:13:28Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
         {
           "time": "2026-07-23T04:32:48Z",
           "name": "Microsoft Office add-in availability",
@@ -82,50 +75,56 @@
           "name": "Microsoft Office add-in availability",
           "status": "identified",
           "link": "https://stspg.io/62bq6fn8w887"
-        },
-        {
-          "time": "2026-07-22T14:53:08Z",
-          "name": "Elevated errors on Opus 4.8 and Haiku 4.5",
-          "status": "identified",
-          "link": "https://stspg.io/5fhdrrh8wbq1"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 17,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-23T04:32:48Z",
+      "latest_at": "2026-07-23T07:13:28Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 17,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-23T04:32:48Z",
+      "latest_at": "2026-07-23T07:13:28Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
       "ok": 0,
       "warn": 0,
-      "critical": 16,
+      "critical": 17,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-23T04:32:49Z",
+      "latest_at": "2026-07-23T07:13:28Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-23T07:13:28Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T07:13:28Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
         {
           "time": "2026-07-23T04:32:49Z",
           "name": "Multiple services / UAE",
