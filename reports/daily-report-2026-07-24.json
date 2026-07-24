@@ -1,0 +1,252 @@
+{
+  "generated_at": "2026-07-24T00:10:20Z",
+  "window": {
+    "start": "2026-07-23T00:00:00Z",
+    "end": "2026-07-24T00:10:20Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 7,
+      "warn": 7,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 50.0,
+      "latest_status": "warn",
+      "latest_at": "2026-07-24T00:10:19Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-24T00:10:19Z",
+          "name": "Elevated Error Rates",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T23:08:08Z",
+          "name": "Elevated Error Rates",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T22:02:03Z",
+          "name": "Elevated Error Rates",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T20:53:22Z",
+          "name": "Elevated Error Rates",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T19:51:44Z",
+          "name": "Elevated Error Rates",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T19:51:44Z",
+          "name": "Some users may experience elevated error rates in ChatGPT",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T18:18:42Z",
+          "name": "Elevated Error Rates",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T18:18:42Z",
+          "name": "Some users may experience elevated error rates in ChatGPT",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T16:58:44Z",
+          "name": "Elevated error rates",
+          "status": "identified",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-24T00:10:19Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-24T00:10:19Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
+        {
+          "time": "2026-07-23T23:08:08Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
+        {
+          "time": "2026-07-23T22:02:03Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
+        {
+          "time": "2026-07-23T20:53:23Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
+        {
+          "time": "2026-07-23T19:51:44Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
+        {
+          "time": "2026-07-23T18:18:42Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
+        {
+          "time": "2026-07-23T16:58:44Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-24T00:10:19Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-24T00:10:19Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 0,
+      "warn": 0,
+      "critical": 14,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-07-24T00:10:19Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-24T00:10:19Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-24T00:10:19Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T23:08:09Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T23:08:09Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T22:02:03Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T22:02:03Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T20:53:23Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T20:53:23Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T19:51:45Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T19:51:45Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T18:18:42Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T18:18:42Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T16:58:45Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-23T16:58:45Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        }
+      ]
+    }
+  }
+}
