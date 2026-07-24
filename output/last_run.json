@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-24T10:50:52Z",
+  "generated_at": "2026-07-24T12:11:40Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-24T10:50:51Z",
-      "overall_status": "minor",
+      "time": "2026-07-24T12:11:40Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Images",
@@ -119,7 +119,7 @@
         },
         {
           "name": "ChatGPT Work",
-          "status": "degraded_performance",
+          "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -132,29 +132,29 @@
         {
           "id": "01KY7SX5MYJ2BP51X5MXAPYX71",
           "name": "Elevated Error Rates",
-          "status": "investigating",
+          "status": "monitoring",
           "impact": "minor",
           "shortlink": null,
           "started_at": "2026-07-23T15:36:02Z",
-          "updated_at": "2026-07-24T10:06:05Z",
+          "updated_at": "2026-07-24T11:34:20Z",
           "url": null
         }
       ],
       "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-07-24T10:06:05Z",
+      "updated_at": "2026-07-24T11:34:20Z",
       "source_url": "https://status.openai.com",
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-07-23T16:58:44Z",
-      "consecutive_anomalies": 11,
+      "consecutive_anomalies": 12,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 64327,
+      "anomaly_seconds": 69176,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-24T10:50:51Z",
+      "time": "2026-07-24T12:11:40Z",
       "overall_status": "none",
       "components": [
         {
@@ -202,37 +202,37 @@
       ],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-24T10:22:06.557Z",
+      "updated_at": "2026-07-24T11:50:10.605Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 25,
+      "consecutive_recoveries": 26,
       "anomaly_seconds": null,
       "latest_incident_link": "https://stspg.io/62bq6fn8w887"
     },
     {
       "service": "Gemini",
-      "time": "2026-07-24T10:50:51Z",
+      "time": "2026-07-24T12:11:40Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-24T10:50:51Z",
+      "updated_at": "2026-07-24T12:11:40Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 444,
+      "consecutive_recoveries": 445,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-24T10:50:51Z",
+      "time": "2026-07-24T12:11:40Z",
       "overall_status": "operational",
       "components": [
         {
@@ -249,15 +249,20 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 444,
+      "consecutive_recoveries": 445,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-24T10:50:52Z",
+      "time": "2026-07-24T12:11:40Z",
       "overall_status": "major_outage",
       "components": [
+        {
+          "name": "Multiple services / Oregon",
+          "status": "degraded",
+          "region": "Oregon"
+        },
         {
           "name": "Multiple services / UAE",
           "status": "degraded",
@@ -270,6 +275,17 @@
         }
       ],
       "active_incidents": [
+        {
+          "id": "arn:aws:health:us-west-2::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_83A36_24C89B493A6",
+          "name": "Multiple services / Oregon",
+          "status": "1",
+          "summary": "Connectivity Issues",
+          "updated_at": "2026-07-24T11:56:21Z",
+          "link": null,
+          "region": "Oregon",
+          "severity": "warn",
+          "latest_message": "We are seeing initial signs of recovery and continue to work toward full recovery."
+        },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
           "name": "Multiple services / UAE",
@@ -295,14 +311,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-04-30T07:25:54Z",
+      "updated_at": "2026-07-24T11:56:21Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 444,
+      "consecutive_anomalies": 445,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 3054649,
+      "anomaly_seconds": 3059497,
       "latest_incident_link": null
     }
   ],
