@@ -2,14 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 21 | 0 | critical |
-| Claude | 100.00 | 21 | 0 | 0 | 0 | ok |
-| Gemini | 100.00 | 21 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 21 | 0 | 0 | 0 | ok |
-| OpenAI | 33.33 | 7 | 14 | 0 | 0 | warn |
+| AWS | 0.00 | 0 | 0 | 22 | 0 | critical |
+| Claude | 100.00 | 22 | 0 | 0 | 0 | ok |
+| Gemini | 100.00 | 22 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 22 | 0 | 0 | 0 | ok |
+| OpenAI | 31.82 | 7 | 15 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-24T17:16:39Z | 0 | Multiple services / Oregon
+- 2026-07-24T17:16:39Z | 3 | Multiple services / UAE
+- 2026-07-24T17:16:39Z | 3 | Multiple services / Bahrain
 - 2026-07-24T15:48:08Z | 0 | Multiple services / Oregon
 - 2026-07-24T15:48:08Z | 3 | Multiple services / UAE
 - 2026-07-24T15:48:08Z | 3 | Multiple services / Bahrain
@@ -17,9 +20,6 @@
 - 2026-07-24T14:14:52Z | 3 | Multiple services / UAE
 - 2026-07-24T14:14:52Z | 3 | Multiple services / Bahrain
 - 2026-07-24T12:11:40Z | 1 | Multiple services / Oregon
-- 2026-07-24T12:11:40Z | 3 | Multiple services / UAE
-- 2026-07-24T12:11:40Z | 3 | Multiple services / Bahrain
-- 2026-07-24T10:50:52Z | 3 | Multiple services / UAE
 
 ### Claude
 - 2026-07-24T14:14:52Z | identified | Microsoft Office add-in availability
@@ -33,6 +33,7 @@
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-07-24T17:16:38Z | monitoring | Elevated Error Rates
 - 2026-07-24T15:48:07Z | monitoring | Elevated Error Rates
 - 2026-07-24T14:14:52Z | monitoring | Elevated Error Rates
 - 2026-07-24T12:11:40Z | monitoring | Elevated Error Rates
@@ -40,4 +41,3 @@
 - 2026-07-24T08:46:15Z | monitoring | Elevated Errors in Codex Review
 - 2026-07-24T08:46:15Z | monitoring | Elevated Error Rates
 - 2026-07-24T06:15:01Z | monitoring | Elevated Error Rates
-- 2026-07-24T03:44:41Z | monitoring | Elevated Error Rates
