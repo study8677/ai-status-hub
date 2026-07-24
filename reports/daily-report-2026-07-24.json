@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-07-24T03:44:42Z",
+  "generated_at": "2026-07-24T06:15:02Z",
   "window": {
     "start": "2026-07-23T00:00:00Z",
-    "end": "2026-07-24T03:44:42Z"
+    "end": "2026-07-24T06:15:02Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
       "ok": 7,
-      "warn": 8,
+      "warn": 9,
       "critical": 0,
       "unknown": 0,
-      "sla": 46.67,
+      "sla": 43.75,
       "latest_status": "warn",
-      "latest_at": "2026-07-24T03:44:41Z",
+      "latest_at": "2026-07-24T06:15:01Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-24T06:15:01Z",
+          "name": "Elevated Error Rates",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-07-24T03:44:41Z",
           "name": "Elevated Error Rates",
@@ -63,26 +69,26 @@
           "name": "Elevated Error Rates",
           "status": "identified",
           "link": null
-        },
-        {
-          "time": "2026-07-23T18:18:42Z",
-          "name": "Some users may experience elevated error rates in ChatGPT",
-          "status": "identified",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
-      "ok": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
+      "ok": 16,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-24T03:44:41Z",
+      "latest_at": "2026-07-24T06:15:01Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-24T06:15:01Z",
+          "name": "Microsoft Office add-in availability",
+          "status": "identified",
+          "link": "https://stspg.io/62bq6fn8w887"
+        },
         {
           "time": "2026-07-24T03:44:41Z",
           "name": "Microsoft Office add-in availability",
@@ -118,51 +124,57 @@
           "name": "Microsoft Office add-in availability",
           "status": "identified",
           "link": "https://stspg.io/62bq6fn8w887"
-        },
-        {
-          "time": "2026-07-23T18:18:42Z",
-          "name": "Microsoft Office add-in availability",
-          "status": "identified",
-          "link": "https://stspg.io/62bq6fn8w887"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
-      "ok": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
+      "ok": 16,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-24T03:44:41Z",
+      "latest_at": "2026-07-24T06:15:01Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
-      "ok": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
+      "ok": 16,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-24T03:44:41Z",
+      "latest_at": "2026-07-24T06:15:01Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 15,
-      "measured_checks_24h": 15,
+      "total_checks_24h": 16,
+      "measured_checks_24h": 16,
       "ok": 0,
       "warn": 0,
-      "critical": 15,
+      "critical": 16,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-24T03:44:42Z",
+      "latest_at": "2026-07-24T06:15:01Z",
       "recent_incidents": [
         {
+          "time": "2026-07-24T06:15:01Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-24T06:15:01Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-24T03:44:42Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -230,18 +242,6 @@
         },
         {
           "time": "2026-07-23T19:51:45Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-23T18:18:42Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-23T18:18:42Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
