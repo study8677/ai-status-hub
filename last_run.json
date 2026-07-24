@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-24T12:11:40Z",
+  "generated_at": "2026-07-24T14:14:53Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-24T12:11:40Z",
+      "time": "2026-07-24T14:14:52Z",
       "overall_status": "none",
       "components": [
         {
@@ -147,14 +147,14 @@
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-07-23T16:58:44Z",
-      "consecutive_anomalies": 12,
+      "consecutive_anomalies": 13,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 69176,
+      "anomaly_seconds": 76568,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-24T12:11:40Z",
+      "time": "2026-07-24T14:14:52Z",
       "overall_status": "none",
       "components": [
         {
@@ -202,37 +202,37 @@
       ],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-24T11:50:10.605Z",
+      "updated_at": "2026-07-24T12:25:50.646Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 26,
+      "consecutive_recoveries": 27,
       "anomaly_seconds": null,
       "latest_incident_link": "https://stspg.io/62bq6fn8w887"
     },
     {
       "service": "Gemini",
-      "time": "2026-07-24T12:11:40Z",
+      "time": "2026-07-24T14:14:52Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-24T12:11:40Z",
+      "updated_at": "2026-07-24T14:14:52Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 445,
+      "consecutive_recoveries": 446,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-24T12:11:40Z",
+      "time": "2026-07-24T14:14:52Z",
       "overall_status": "operational",
       "components": [
         {
@@ -249,13 +249,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 445,
+      "consecutive_recoveries": 446,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-24T12:11:40Z",
+      "time": "2026-07-24T14:14:52Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -278,13 +278,13 @@
         {
           "id": "arn:aws:health:us-west-2::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_83A36_24C89B493A6",
           "name": "Multiple services / Oregon",
-          "status": "1",
-          "summary": "Connectivity Issues",
-          "updated_at": "2026-07-24T11:56:21Z",
+          "status": "0",
+          "summary": "[RESOLVED] Connectivity Issues",
+          "updated_at": "2026-07-24T13:01:21Z",
           "link": null,
           "region": "Oregon",
           "severity": "warn",
-          "latest_message": "We are seeing initial signs of recovery and continue to work toward full recovery."
+          "latest_message": "Between 3:55 AM and 4:15 AM PDT, we experienced connectivity issues that impacted connectivity to the US-WEST-2 Region. This impacted multiple AWS services in the Region. Some customers may have also experienced issues accessing the AWS Management Console, with connection timeouts and unresponsive pages. Connectivity within the Region was not affected. Our engineers were automatically engaged at 4:01 AM PDT, and immediately began investigating this issue. We identified the root cause as an issue with networking devices responsible for network routing from the Region to the Seattle Metro, and began working in parallel on multiple paths to mitigate the impact. We took mitigation measures that led to initial recovery at 4:15 AM PDT. As the network continued to stabilize following our mitigation actions, a brief reconvergence event occurred between 4:47 AM and 4:59 AM PDT. During this reconvergence period, some customers may have experienced intermittent connectivity issues to the Region as network routes were re-established. By 4:59 AM PDT, all routes had been fully restored and service metrics returned to pre-event levels. \n\nCustomers using AWS Direct Connect through EqSe2, Westin Building Exchange, Seattle experienced an extended impact window from 3:55 AM to 5:12 AM PDT. These customers would have experienced connectivity issues until network routes for this specific path were fully restored at 5:12 AM PDT. Customers connected redundantly through other AWS Direct Connect locations were not impacted by this event.\n\nThe issue has been resolved and all AWS services are operating normally."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -311,14 +311,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-07-24T11:56:21Z",
+      "updated_at": "2026-07-24T13:01:21Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 445,
+      "consecutive_anomalies": 446,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 3059497,
+      "anomaly_seconds": 3066889,
       "latest_incident_link": null
     }
   ],
