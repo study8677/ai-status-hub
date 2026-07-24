@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-24T18:51:11Z",
+  "generated_at": "2026-07-24T20:10:39Z",
   "window": {
     "start": "2026-07-23T00:00:00Z",
-    "end": "2026-07-24T18:51:11Z"
+    "end": "2026-07-24T20:10:39Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 7,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 8,
       "warn": 16,
       "critical": 0,
       "unknown": 0,
-      "sla": 30.43,
-      "latest_status": "warn",
-      "latest_at": "2026-07-24T18:51:09Z",
+      "sla": 33.33,
+      "latest_status": "ok",
+      "latest_at": "2026-07-24T20:10:38Z",
       "recent_incidents": [
         {
           "time": "2026-07-24T18:51:09Z",
@@ -57,25 +57,19 @@
           "name": "Elevated Errors in Codex Review",
           "status": "monitoring",
           "link": null
-        },
-        {
-          "time": "2026-07-24T08:46:15Z",
-          "name": "Elevated Error Rates",
-          "status": "monitoring",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 24,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-24T18:51:09Z",
+      "latest_at": "2026-07-24T20:10:38Z",
       "recent_incidents": [
         {
           "time": "2026-07-24T14:14:52Z",
@@ -94,50 +88,62 @@
           "name": "Microsoft Office add-in availability",
           "status": "identified",
           "link": "https://stspg.io/62bq6fn8w887"
-        },
-        {
-          "time": "2026-07-24T08:46:15Z",
-          "name": "Microsoft Office add-in availability",
-          "status": "identified",
-          "link": "https://stspg.io/62bq6fn8w887"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 24,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-24T18:51:10Z",
+      "latest_at": "2026-07-24T20:10:38Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 24,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-24T18:51:10Z",
+      "latest_at": "2026-07-24T20:10:38Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
       "ok": 0,
       "warn": 0,
-      "critical": 23,
+      "critical": 24,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-24T18:51:10Z",
+      "latest_at": "2026-07-24T20:10:38Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-24T20:10:38Z",
+          "name": "Multiple services / Oregon",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-07-24T20:10:38Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-24T20:10:38Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
         {
           "time": "2026-07-24T18:51:10Z",
           "name": "Multiple services / Oregon",
@@ -237,12 +243,6 @@
         {
           "time": "2026-07-24T10:50:52Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-24T08:46:15Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
