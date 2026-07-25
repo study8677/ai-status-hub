@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-25T21:02:57Z",
+  "generated_at": "2026-07-25T22:05:28Z",
   "window": {
     "start": "2026-07-24T00:00:00Z",
-    "end": "2026-07-25T21:02:57Z"
+    "end": "2026-07-25T22:05:28Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 28,
-      "ok": 16,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 29,
+      "ok": 17,
       "warn": 12,
       "critical": 0,
       "unknown": 0,
-      "sla": 57.14,
+      "sla": 58.62,
       "latest_status": "ok",
-      "latest_at": "2026-07-25T21:02:55Z",
+      "latest_at": "2026-07-25T22:05:27Z",
       "recent_incidents": [
         {
           "time": "2026-07-25T11:50:44Z",
@@ -31,16 +31,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 28,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 29,
       "ok": 27,
       "warn": 0,
-      "critical": 1,
+      "critical": 2,
       "unknown": 0,
-      "sla": 96.43,
-      "latest_status": "ok",
-      "latest_at": "2026-07-25T21:02:55Z",
+      "sla": 93.1,
+      "latest_status": "critical",
+      "latest_at": "2026-07-25T22:05:27Z",
       "recent_incidents": [
+        {
+          "time": "2026-07-25T22:05:27Z",
+          "name": "Elevated errors for Claude Fable 5, Claude Sonnet 5, Claude Haiku 4.5, and other models",
+          "status": "investigating",
+          "link": "https://stspg.io/9w9f5y5k2vwx"
+        },
         {
           "time": "2026-07-25T18:41:35Z",
           "name": "Elevated errors for Claude Mythos 5, Claude Fable 5, and Claude Haiku 4.5",
@@ -50,41 +56,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 28,
-      "ok": 28,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 29,
+      "ok": 29,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-25T21:02:56Z",
+      "latest_at": "2026-07-25T22:05:27Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 28,
-      "ok": 28,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 29,
+      "ok": 29,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-25T21:02:56Z",
+      "latest_at": "2026-07-25T22:05:27Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 28,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 29,
       "ok": 0,
       "warn": 0,
-      "critical": 28,
+      "critical": 29,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-25T21:02:56Z",
+      "latest_at": "2026-07-25T22:05:27Z",
       "recent_incidents": [
         {
+          "time": "2026-07-25T22:05:27Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-25T22:05:27Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-25T21:02:56Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -224,24 +242,6 @@
         },
         {
           "time": "2026-07-25T09:06:40Z",
-          "name": "Multiple services / Oregon",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-07-25T09:06:40Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-25T09:06:40Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-25T06:58:33Z",
           "name": "Multiple services / Oregon",
           "status": "0",
           "link": null
