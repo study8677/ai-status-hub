@@ -2,14 +2,16 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 25 | 0 | critical |
-| Claude | 100.00 | 25 | 0 | 0 | 0 | ok |
-| Gemini | 100.00 | 25 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 25 | 0 | 0 | 0 | ok |
-| OpenAI | 52.00 | 13 | 12 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 26 | 0 | critical |
+| Claude | 96.15 | 25 | 0 | 1 | 0 | critical |
+| Gemini | 100.00 | 26 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 26 | 0 | 0 | 0 | ok |
+| OpenAI | 53.85 | 14 | 12 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-25T18:41:36Z | 3 | Multiple services / UAE
+- 2026-07-25T18:41:36Z | 3 | Multiple services / Bahrain
 - 2026-07-25T17:42:44Z | 3 | Multiple services / UAE
 - 2026-07-25T17:42:44Z | 3 | Multiple services / Bahrain
 - 2026-07-25T16:39:36Z | 3 | Multiple services / UAE
@@ -18,11 +20,10 @@
 - 2026-07-25T15:47:22Z | 3 | Multiple services / Bahrain
 - 2026-07-25T14:41:14Z | 3 | Multiple services / UAE
 - 2026-07-25T14:41:14Z | 3 | Multiple services / Bahrain
-- 2026-07-25T12:58:12Z | 0 | Multiple services / Oregon
-- 2026-07-25T12:58:12Z | 3 | Multiple services / UAE
 
 ### Claude
-- 无事件记录
+- 2026-07-25T18:41:35Z | investigating | Elevated errors for Claude Mythos 5, Claude Fable 5, and Claude Haiku 4.5
+
 ### Gemini
 - 无事件记录
 ### Grok
