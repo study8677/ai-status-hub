@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-27T20:47:28Z",
+  "generated_at": "2026-07-27T21:53:44Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-27T20:47:27Z",
-      "overall_status": "minor",
+      "time": "2026-07-27T21:53:43Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Images",
@@ -128,33 +128,22 @@
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "01KYJC3TDHZVSQFFPTC8X9RAHC",
-          "name": "We’re seeing elevated latency, timeouts, and interrupted streaming across gpt 5.1 mini model and gpt 4.1 mini",
-          "status": "investigating",
-          "impact": "minor",
-          "shortlink": null,
-          "started_at": "2026-07-27T18:06:39Z",
-          "updated_at": "2026-07-27T18:06:39Z",
-          "url": null
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-27T18:06:39Z",
+      "updated_at": "2026-07-09T19:25:56Z",
       "source_url": "https://status.openai.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-07-25T23:08:47Z",
-      "consecutive_anomalies": 26,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 164320,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-27T20:47:27Z",
+      "time": "2026-07-27T21:53:43Z",
       "overall_status": "none",
       "components": [
         {
@@ -197,31 +186,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 4,
+      "consecutive_recoveries": 5,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-27T20:47:27Z",
+      "time": "2026-07-27T21:53:43Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-27T20:47:27Z",
+      "updated_at": "2026-07-27T21:53:43Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 494,
+      "consecutive_recoveries": 495,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-27T20:47:27Z",
+      "time": "2026-07-27T21:53:43Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 494,
+      "consecutive_recoveries": 495,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-27T20:47:27Z",
+      "time": "2026-07-27T21:53:43Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -289,9 +278,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 494,
+      "consecutive_anomalies": 495,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 3349644,
+      "anomaly_seconds": 3353620,
       "latest_incident_link": null
     }
   ],
