@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-27T17:52:29Z",
+  "generated_at": "2026-07-27T19:17:26Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-27T17:52:28Z",
+      "time": "2026-07-27T19:17:25Z",
       "overall_status": "minor",
       "components": [
         {
@@ -130,31 +130,41 @@
       ],
       "active_incidents": [
         {
-          "id": "01KY23YCPJ9M5BFFT6ZHKQE9MP",
+          "id": "01KYJC3TDHZVSQFFPTC8X9RAHC",
+          "name": "We’re seeing elevated latency, timeouts, and interrupted streaming across gpt 5.1 mini model and gpt 4.1 mini",
+          "status": "investigating",
+          "impact": "minor",
+          "shortlink": null,
+          "started_at": "2026-07-27T18:06:39Z",
+          "updated_at": "2026-07-27T18:06:39Z",
+          "url": null
+        },
+        {
+          "id": "01KYJFG4S86K8FMTB4N6BDZS7F",
           "name": "Image generation unavailable in ChatGPT",
           "status": "investigating",
-          "impact": "major",
+          "impact": "minor",
           "shortlink": null,
-          "started_at": "2026-07-21T10:36:02Z",
-          "updated_at": "2026-07-27T16:52:41Z",
+          "started_at": "2026-07-27T19:05:49Z",
+          "updated_at": "2026-07-27T19:05:49Z",
           "url": null
         }
       ],
-      "raw_score": 20,
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-07-27T16:52:41Z",
+      "updated_at": "2026-07-27T18:06:39Z",
       "source_url": "https://status.openai.com",
-      "level": "critical",
+      "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-07-25T23:08:47Z",
-      "consecutive_anomalies": 24,
+      "consecutive_anomalies": 25,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 153821,
+      "anomaly_seconds": 158918,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-27T17:52:28Z",
+      "time": "2026-07-27T19:17:25Z",
       "overall_status": "none",
       "components": [
         {
@@ -191,37 +201,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-27T14:45:47.083Z",
+      "updated_at": "2026-07-27T18:39:24.402Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 2,
+      "consecutive_recoveries": 3,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-27T17:52:28Z",
+      "time": "2026-07-27T19:17:26Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-27T17:52:28Z",
+      "updated_at": "2026-07-27T19:17:26Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 492,
+      "consecutive_recoveries": 493,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-27T17:52:28Z",
+      "time": "2026-07-27T19:17:26Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +248,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 492,
+      "consecutive_recoveries": 493,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-27T17:52:28Z",
+      "time": "2026-07-27T19:17:26Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -289,9 +299,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 492,
+      "consecutive_anomalies": 493,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 3339145,
+      "anomaly_seconds": 3344243,
       "latest_incident_link": null
     }
   ],
