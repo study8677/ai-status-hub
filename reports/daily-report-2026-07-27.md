@@ -2,14 +2,16 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 20 | 0 | critical |
-| Claude | 100.00 | 20 | 0 | 0 | 0 | ok |
-| Gemini | 100.00 | 20 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 20 | 0 | 0 | 0 | ok |
-| OpenAI | 0.00 | 0 | 20 | 0 | 0 | warn |
+| AWS | 0.00 | 0 | 0 | 21 | 0 | critical |
+| Claude | 95.24 | 20 | 1 | 0 | 0 | warn |
+| Gemini | 100.00 | 21 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 21 | 0 | 0 | 0 | ok |
+| OpenAI | 0.00 | 0 | 21 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-27T13:42:53Z | 3 | Multiple services / UAE
+- 2026-07-27T13:42:53Z | 3 | Multiple services / Bahrain
 - 2026-07-27T10:58:25Z | 3 | Multiple services / UAE
 - 2026-07-27T10:58:25Z | 3 | Multiple services / Bahrain
 - 2026-07-27T07:49:07Z | 3 | Multiple services / UAE
@@ -18,16 +20,16 @@
 - 2026-07-27T04:08:10Z | 3 | Multiple services / Bahrain
 - 2026-07-27T00:15:04Z | 3 | Multiple services / UAE
 - 2026-07-27T00:15:04Z | 3 | Multiple services / Bahrain
-- 2026-07-26T23:13:20Z | 3 | Multiple services / UAE
-- 2026-07-26T23:13:20Z | 3 | Multiple services / Bahrain
 
 ### Claude
-- 无事件记录
+- 2026-07-27T13:42:53Z | investigating | Elevated errors on Claude Opus 5
+
 ### Gemini
 - 无事件记录
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-07-27T13:42:53Z | monitoring | Elevated errors affecting ChatGPT conversations
 - 2026-07-27T10:58:24Z | monitoring | Elevated errors affecting ChatGPT conversations
 - 2026-07-27T07:49:05Z | monitoring | Elevated errors affecting ChatGPT conversations
 - 2026-07-27T04:08:10Z | monitoring | Elevated errors affecting ChatGPT conversations
@@ -36,5 +38,3 @@
 - 2026-07-26T22:11:19Z | monitoring | Elevated errors affecting ChatGPT conversations
 - 2026-07-26T21:07:04Z | monitoring | Elevated errors affecting ChatGPT conversations
 - 2026-07-26T19:59:05Z | monitoring | Elevated errors affecting ChatGPT conversations
-- 2026-07-26T18:45:50Z | monitoring | Elevated errors affecting ChatGPT conversations
-- 2026-07-26T17:45:12Z | monitoring | Elevated errors affecting ChatGPT conversations
