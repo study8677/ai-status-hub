@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-28T03:32:39Z",
+  "generated_at": "2026-07-28T06:12:24Z",
   "window": {
     "start": "2026-07-27T00:00:00Z",
-    "end": "2026-07-28T03:32:39Z"
+    "end": "2026-07-28T06:12:24Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 4,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 5,
       "warn": 7,
       "critical": 2,
       "unknown": 0,
-      "sla": 30.77,
+      "sla": 35.71,
       "latest_status": "ok",
-      "latest_at": "2026-07-28T03:32:38Z",
+      "latest_at": "2026-07-28T06:12:22Z",
       "recent_incidents": [
         {
           "time": "2026-07-27T20:47:27Z",
@@ -57,25 +57,19 @@
           "name": "Elevated errors affecting ChatGPT conversations",
           "status": "monitoring",
           "link": null
-        },
-        {
-          "time": "2026-07-27T10:58:24Z",
-          "name": "Elevated errors affecting ChatGPT conversations",
-          "status": "monitoring",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 12,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 13,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 92.31,
+      "sla": 92.86,
       "latest_status": "ok",
-      "latest_at": "2026-07-28T03:32:38Z",
+      "latest_at": "2026-07-28T06:12:22Z",
       "recent_incidents": [
         {
           "time": "2026-07-27T13:42:53Z",
@@ -86,41 +80,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-28T03:32:38Z",
+      "latest_at": "2026-07-28T06:12:23Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-07-28T03:32:39Z",
+      "latest_at": "2026-07-28T06:12:23Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
       "ok": 0,
       "warn": 0,
-      "critical": 13,
+      "critical": 14,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-07-28T03:32:39Z",
+      "latest_at": "2026-07-28T06:12:23Z",
       "recent_incidents": [
         {
+          "time": "2026-07-28T06:12:23Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-28T06:12:23Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-07-28T03:32:39Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -237,12 +243,6 @@
         {
           "time": "2026-07-27T10:58:25Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-07-27T07:49:07Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
