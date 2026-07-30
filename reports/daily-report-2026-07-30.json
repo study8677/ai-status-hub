@@ -1,0 +1,251 @@
+{
+  "generated_at": "2026-07-30T00:15:19Z",
+  "window": {
+    "start": "2026-07-29T00:00:00Z",
+    "end": "2026-07-30T00:15:19Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 13,
+      "warn": 1,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 92.86,
+      "latest_status": "ok",
+      "latest_at": "2026-07-30T00:15:18Z",
+      "recent_incidents": []
+    },
+    "Claude": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 11,
+      "warn": 0,
+      "critical": 3,
+      "unknown": 0,
+      "sla": 78.57,
+      "latest_status": "ok",
+      "latest_at": "2026-07-30T00:15:18Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-29T22:12:28Z",
+          "name": "Elevated errors across all models",
+          "status": "identified",
+          "link": "https://stspg.io/p7pqqb00414c"
+        },
+        {
+          "time": "2026-07-29T21:09:08Z",
+          "name": "Elevated errors across all models",
+          "status": "identified",
+          "link": "https://stspg.io/p7pqqb00414c"
+        },
+        {
+          "time": "2026-07-29T20:01:52Z",
+          "name": "Elevated errors across all models",
+          "status": "investigating",
+          "link": "https://stspg.io/p7pqqb00414c"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-30T00:15:18Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-07-30T00:15:18Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 0,
+      "warn": 0,
+      "critical": 14,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-07-30T00:15:19Z",
+      "recent_incidents": [
+        {
+          "time": "2026-07-30T00:15:19Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-30T00:15:19Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T23:16:34Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T23:16:34Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T22:12:28Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T22:12:28Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T21:09:09Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T21:09:09Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T20:01:53Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T20:01:53Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T18:40:16Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T18:40:16Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T17:37:04Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T17:37:04Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T16:07:57Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T16:07:57Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T14:36:23Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T14:36:23Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T12:19:06Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T12:19:06Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T10:07:23Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T10:07:23Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T07:24:32Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T07:24:32Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T04:31:22Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T04:31:22Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-07-29T01:09:13Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        }
+      ]
+    }
+  }
+}
