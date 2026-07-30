@@ -2,14 +2,16 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 19 | 0 | critical |
-| Claude | 73.68 | 14 | 0 | 5 | 0 | ok |
-| Gemini | 100.00 | 19 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 19 | 0 | 0 | 0 | ok |
-| OpenAI | 94.74 | 18 | 1 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 20 | 0 | critical |
+| Claude | 75.00 | 15 | 0 | 5 | 0 | ok |
+| Gemini | 100.00 | 20 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 20 | 0 | 0 | 0 | ok |
+| OpenAI | 90.00 | 18 | 2 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-07-30T15:18:13Z | 3 | Multiple services / UAE
+- 2026-07-30T15:18:13Z | 3 | Multiple services / Bahrain
 - 2026-07-30T12:57:56Z | 3 | Multiple services / UAE
 - 2026-07-30T12:57:56Z | 3 | Multiple services / Bahrain
 - 2026-07-30T11:18:19Z | 3 | Multiple services / UAE
@@ -18,8 +20,6 @@
 - 2026-07-30T09:04:24Z | 3 | Multiple services / Bahrain
 - 2026-07-30T06:11:55Z | 3 | Multiple services / UAE
 - 2026-07-30T06:11:55Z | 3 | Multiple services / Bahrain
-- 2026-07-30T03:36:23Z | 3 | Multiple services / UAE
-- 2026-07-30T03:36:23Z | 3 | Multiple services / Bahrain
 
 ### Claude
 - 2026-07-30T09:04:24Z | identified | Elevated errors across many models
@@ -33,4 +33,4 @@
 ### Grok
 - 无事件记录
 ### OpenAI
-- 无事件记录
+- 2026-07-30T15:18:12Z | monitoring | Elevated errors affecting ChatGPT conversations
