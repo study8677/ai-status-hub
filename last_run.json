@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-31T16:27:48Z",
+  "generated_at": "2026-07-31T18:06:37Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-31T16:27:47Z",
+      "time": "2026-07-31T18:06:36Z",
       "overall_status": "none",
       "components": [
         {
@@ -14,16 +14,6 @@
         },
         {
           "name": "Sites",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Batch",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Moderations",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
@@ -49,11 +39,6 @@
         },
         {
           "name": "Compliance API",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Embeddings",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
@@ -88,16 +73,6 @@
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
-          "name": "VS Code extension",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Codex API",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
           "name": "GPTs",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
@@ -113,17 +88,42 @@
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
-          "name": "Connectors/Apps",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
           "name": "ChatGPT Atlas",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
-          "name": "ChatGPT Work",
+          "name": "Deep Research",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Image Generation",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Agent",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Realtime",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Voice mode",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Batch",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Embeddings",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         }
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 13,
+      "consecutive_recoveries": 14,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-31T16:27:47Z",
+      "time": "2026-07-31T18:06:36Z",
       "overall_status": "none",
       "components": [
         {
@@ -186,31 +186,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 16,
+      "consecutive_recoveries": 17,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-31T16:27:48Z",
+      "time": "2026-07-31T18:06:36Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-31T16:27:48Z",
+      "updated_at": "2026-07-31T18:06:36Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 542,
+      "consecutive_recoveries": 543,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-31T16:27:48Z",
+      "time": "2026-07-31T18:06:36Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,15 +227,20 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 542,
+      "consecutive_recoveries": 543,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-31T16:27:48Z",
+      "time": "2026-07-31T18:06:36Z",
       "overall_status": "major_outage",
       "components": [
+        {
+          "name": "AWS Direct Connect / Mumbai",
+          "status": "degraded",
+          "region": "Mumbai"
+        },
         {
           "name": "Multiple services / UAE",
           "status": "degraded",
@@ -248,6 +253,17 @@
         }
       ],
       "active_incidents": [
+        {
+          "id": "arn:aws:health:ap-south-1::event/DIRECTCONNECT/AWS_DIRECTCONNECT_OPERATIONAL_ISSUE/AWS_DIRECTCONNECT_OPERATIONAL_ISSUE_00B73_1C6411F1489",
+          "name": "AWS Direct Connect / Mumbai",
+          "status": "1",
+          "summary": "Elevated Packet Loss",
+          "updated_at": "2026-07-31T17:33:18Z",
+          "link": null,
+          "region": "Mumbai",
+          "severity": "warn",
+          "latest_message": "We can confirm elevated network packet loss, impacting AWS Direct Connect connectivity in AP-SOUTH-1 Region. Our engineering team was automatically engaged at 9:54 AM to begin investigating the issue. There are no workarounds available at this time. We will provide another update by 11:30 AM PDT."
+        },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
           "name": "Multiple services / UAE",
@@ -273,14 +289,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-04-30T07:25:54Z",
+      "updated_at": "2026-07-31T17:33:18Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 542,
+      "consecutive_anomalies": 543,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 3679665,
+      "anomaly_seconds": 3685593,
       "latest_incident_link": null
     }
   ],
