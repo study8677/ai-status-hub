@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-31T18:06:37Z",
+  "generated_at": "2026-07-31T19:49:48Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-07-31T18:06:36Z",
+      "time": "2026-07-31T19:49:47Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 14,
+      "consecutive_recoveries": 15,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-07-31T18:06:36Z",
+      "time": "2026-07-31T19:49:47Z",
       "overall_status": "none",
       "components": [
         {
@@ -180,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-07-31T16:24:37.344Z",
+      "updated_at": "2026-07-31T18:08:44.076Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 17,
+      "consecutive_recoveries": 18,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-07-31T18:06:36Z",
+      "time": "2026-07-31T19:49:48Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-07-31T18:06:36Z",
+      "updated_at": "2026-07-31T19:49:48Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 543,
+      "consecutive_recoveries": 544,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-07-31T18:06:36Z",
+      "time": "2026-07-31T19:49:48Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 543,
+      "consecutive_recoveries": 544,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-07-31T18:06:36Z",
+      "time": "2026-07-31T19:49:48Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -256,13 +256,13 @@
         {
           "id": "arn:aws:health:ap-south-1::event/DIRECTCONNECT/AWS_DIRECTCONNECT_OPERATIONAL_ISSUE/AWS_DIRECTCONNECT_OPERATIONAL_ISSUE_00B73_1C6411F1489",
           "name": "AWS Direct Connect / Mumbai",
-          "status": "1",
-          "summary": "Elevated Packet Loss",
-          "updated_at": "2026-07-31T17:33:18Z",
+          "status": "0",
+          "summary": "[RESOLVED] Elevated Packet Loss",
+          "updated_at": "2026-07-31T18:54:35Z",
           "link": null,
           "region": "Mumbai",
           "severity": "warn",
-          "latest_message": "We can confirm elevated network packet loss, impacting AWS Direct Connect connectivity in AP-SOUTH-1 Region. Our engineering team was automatically engaged at 9:54 AM to begin investigating the issue. There are no workarounds available at this time. We will provide another update by 11:30 AM PDT."
+          "latest_message": "Between 9:42 AM and 11:44 AM PDT, we experienced elevated network packet loss impacting AWS Direct Connect connectivity in the AP-SOUTH-1 Region. Our engineering team was automatically engaged at 9:46 AM to begin investigating. By 10:51 AM, we understood the root cause to be a configuration change made to a system responsible for assigning routes to devices. As we gained confidence in our mitigation steps, we parallelized our efforts to further reduce the packet loss. The issue is resolved and the service is operating normally."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -289,14 +289,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-07-31T17:33:18Z",
+      "updated_at": "2026-07-31T18:54:35Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 543,
+      "consecutive_anomalies": 544,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 3685593,
+      "anomaly_seconds": 3691785,
       "latest_incident_link": null
     }
   ],
