@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-04T20:02:55Z",
+  "generated_at": "2026-08-04T21:22:51Z",
   "window": {
     "start": "2026-08-03T00:00:00Z",
-    "end": "2026-08-04T20:02:55Z"
+    "end": "2026-08-04T21:22:51Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
-      "ok": 19,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
+      "ok": 20,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 95.0,
+      "sla": 95.24,
       "latest_status": "ok",
-      "latest_at": "2026-08-04T20:02:54Z",
+      "latest_at": "2026-08-04T21:22:49Z",
       "recent_incidents": [
         {
           "time": "2026-08-04T14:39:48Z",
@@ -25,53 +25,72 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
       "ok": 19,
       "warn": 1,
-      "critical": 0,
+      "critical": 1,
       "unknown": 0,
-      "sla": 95.0,
-      "latest_status": "ok",
-      "latest_at": "2026-08-04T20:02:54Z",
-      "recent_incidents": []
+      "sla": 90.48,
+      "latest_status": "critical",
+      "latest_at": "2026-08-04T21:22:50Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-04T21:22:50Z",
+          "name": "Elevated errors across many models",
+          "status": "investigating",
+          "link": "https://stspg.io/smnf386prrtx"
+        }
+      ]
     },
     "Gemini": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
-      "ok": 20,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
+      "ok": 21,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-04T20:02:54Z",
+      "latest_at": "2026-08-04T21:22:50Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
-      "ok": 20,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
+      "ok": 21,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-04T20:02:54Z",
+      "latest_at": "2026-08-04T21:22:50Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 20,
-      "measured_checks_24h": 20,
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
       "ok": 0,
       "warn": 0,
-      "critical": 20,
+      "critical": 21,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-04T20:02:54Z",
+      "latest_at": "2026-08-04T21:22:50Z",
       "recent_incidents": [
         {
+          "time": "2026-08-04T21:22:50Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-04T21:22:50Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-04T20:02:54Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -224,24 +243,6 @@
         {
           "time": "2026-08-03T19:53:59Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-03T18:05:06Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-03T18:05:06Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-03T16:09:38Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
