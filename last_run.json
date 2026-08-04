@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-04T14:39:49Z",
+  "generated_at": "2026-08-04T16:31:50Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-04T14:39:48Z",
-      "overall_status": "minor",
+      "time": "2026-08-04T16:31:49Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Images",
@@ -59,7 +59,7 @@
         },
         {
           "name": "Conversations",
-          "status": "degraded_performance",
+          "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -128,33 +128,22 @@
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "01KZ6CT9K9Q52S3707W75MNBGB",
-          "name": "Elevated ChatGPT conversation errors affecting Plus, Pro, Business, and Edu users",
-          "status": "monitoring",
-          "impact": "minor",
-          "shortlink": null,
-          "started_at": "2026-08-04T12:43:44Z",
-          "updated_at": "2026-08-04T12:57:49Z",
-          "url": null
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-08-04T12:57:49Z",
+      "updated_at": "2026-07-09T19:25:56Z",
       "source_url": "https://status.openai.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
-      "first_anomaly_at": "2026-08-04T14:39:48Z",
-      "consecutive_anomalies": 1,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
+      "first_anomaly_at": null,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-04T14:39:49Z",
+      "time": "2026-08-04T16:31:49Z",
       "overall_status": "none",
       "components": [
         {
@@ -191,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-08-04T12:23:15.952Z",
+      "updated_at": "2026-08-04T15:29:02.192Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 12,
+      "consecutive_recoveries": 13,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-04T14:39:49Z",
+      "time": "2026-08-04T16:31:49Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-04T14:39:49Z",
+      "updated_at": "2026-08-04T16:31:49Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 596,
+      "consecutive_recoveries": 597,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-04T14:39:49Z",
+      "time": "2026-08-04T16:31:49Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 596,
+      "consecutive_recoveries": 597,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-04T14:39:49Z",
+      "time": "2026-08-04T16:31:49Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -289,9 +278,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 596,
+      "consecutive_anomalies": 597,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 4018786,
+      "anomaly_seconds": 4025506,
       "latest_incident_link": null
     }
   ],
