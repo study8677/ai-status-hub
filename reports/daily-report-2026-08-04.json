@@ -1,32 +1,39 @@
 {
-  "generated_at": "2026-08-04T12:10:19Z",
+  "generated_at": "2026-08-04T14:39:49Z",
   "window": {
     "start": "2026-08-03T00:00:00Z",
-    "end": "2026-08-04T12:10:19Z"
+    "end": "2026-08-04T14:39:49Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
       "ok": 16,
-      "warn": 0,
-      "critical": 0,
-      "unknown": 0,
-      "sla": 100.0,
-      "latest_status": "ok",
-      "latest_at": "2026-08-04T12:10:18Z",
-      "recent_incidents": []
-    },
-    "Claude": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 15,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 93.75,
+      "sla": 94.12,
+      "latest_status": "warn",
+      "latest_at": "2026-08-04T14:39:48Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-04T14:39:48Z",
+          "name": "Elevated ChatGPT conversation errors affecting Plus, Pro, Business, and Edu users",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 16,
+      "warn": 1,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 94.12,
       "latest_status": "ok",
-      "latest_at": "2026-08-04T12:10:18Z",
+      "latest_at": "2026-08-04T14:39:49Z",
       "recent_incidents": [
         {
           "time": "2026-08-03T13:43:22Z",
@@ -37,41 +44,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 17,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-04T12:10:18Z",
+      "latest_at": "2026-08-04T14:39:49Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
-      "ok": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
+      "ok": 17,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-04T12:10:18Z",
+      "latest_at": "2026-08-04T14:39:49Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 16,
-      "measured_checks_24h": 16,
+      "total_checks_24h": 17,
+      "measured_checks_24h": 17,
       "ok": 0,
       "warn": 0,
-      "critical": 16,
+      "critical": 17,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-04T12:10:18Z",
+      "latest_at": "2026-08-04T14:39:49Z",
       "recent_incidents": [
         {
+          "time": "2026-08-04T14:39:49Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-04T14:39:49Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-04T12:10:18Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -224,24 +243,6 @@
         {
           "time": "2026-08-03T10:56:25Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-03T07:32:29Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-03T07:32:29Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-03T03:56:21Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
