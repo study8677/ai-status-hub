@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-08-05T22:02:31Z",
+  "generated_at": "2026-08-05T23:14:34Z",
   "window": {
     "start": "2026-08-04T00:00:00Z",
-    "end": "2026-08-05T22:02:31Z"
+    "end": "2026-08-05T23:14:34Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
       "ok": 17,
-      "warn": 6,
+      "warn": 7,
       "critical": 0,
       "unknown": 0,
-      "sla": 73.91,
+      "sla": 70.83,
       "latest_status": "warn",
-      "latest_at": "2026-08-05T22:02:28Z",
+      "latest_at": "2026-08-05T23:14:33Z",
       "recent_incidents": [
+        {
+          "time": "2026-08-05T23:14:33Z",
+          "name": "Elevated errors with image generation",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-08-05T22:02:28Z",
           "name": "Issues with Custom GPT actions",
@@ -85,15 +91,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 18,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 19,
       "warn": 4,
       "critical": 1,
       "unknown": 0,
-      "sla": 78.26,
+      "sla": 79.17,
       "latest_status": "ok",
-      "latest_at": "2026-08-05T22:02:28Z",
+      "latest_at": "2026-08-05T23:14:34Z",
       "recent_incidents": [
         {
           "time": "2026-08-05T14:31:31Z",
@@ -106,51 +112,57 @@
           "name": "Degraded performance of multiple models",
           "status": "identified",
           "link": "https://stspg.io/s2ysk4zxbyy3"
-        },
-        {
-          "time": "2026-08-05T10:01:06Z",
-          "name": "Degraded performance of multiple models",
-          "status": "identified",
-          "link": "https://stspg.io/s2ysk4zxbyy3"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 24,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-05T22:02:29Z",
+      "latest_at": "2026-08-05T23:14:34Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
-      "ok": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
+      "ok": 24,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-05T22:02:29Z",
+      "latest_at": "2026-08-05T23:14:34Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 23,
-      "measured_checks_24h": 23,
+      "total_checks_24h": 24,
+      "measured_checks_24h": 24,
       "ok": 0,
       "warn": 0,
-      "critical": 23,
+      "critical": 24,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-05T22:02:30Z",
+      "latest_at": "2026-08-05T23:14:34Z",
       "recent_incidents": [
         {
+          "time": "2026-08-05T23:14:34Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T23:14:34Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-05T22:02:30Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -230,18 +242,6 @@
         },
         {
           "time": "2026-08-05T12:08:39Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-05T10:01:07Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-05T10:01:07Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
