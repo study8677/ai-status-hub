@@ -2,14 +2,16 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 13 | 0 | critical |
-| Claude | 69.23 | 9 | 4 | 0 | 0 | ok |
-| Gemini | 100.00 | 13 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 13 | 0 | 0 | 0 | ok |
-| OpenAI | 53.85 | 7 | 6 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 14 | 0 | critical |
+| Claude | 71.43 | 10 | 4 | 0 | 0 | ok |
+| Gemini | 100.00 | 14 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 14 | 0 | 0 | 0 | ok |
+| OpenAI | 57.14 | 8 | 6 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-08-06T03:43:13Z | 3 | Multiple services / UAE
+- 2026-08-06T03:43:13Z | 3 | Multiple services / Bahrain
 - 2026-08-06T00:13:13Z | 3 | Multiple services / UAE
 - 2026-08-06T00:13:13Z | 3 | Multiple services / Bahrain
 - 2026-08-05T23:14:34Z | 3 | Multiple services / UAE
@@ -18,12 +20,9 @@
 - 2026-08-05T22:02:30Z | 3 | Multiple services / Bahrain
 - 2026-08-05T20:49:49Z | 3 | Multiple services / UAE
 - 2026-08-05T20:49:49Z | 3 | Multiple services / Bahrain
-- 2026-08-05T19:47:49Z | 3 | Multiple services / UAE
-- 2026-08-05T19:47:49Z | 3 | Multiple services / Bahrain
 
 ### Claude
 - 2026-08-05T14:31:31Z | identified | Degraded performance for Claude Opus 5
-- 2026-08-05T12:08:39Z | identified | Degraded performance of multiple models
 
 ### Gemini
 - 无事件记录

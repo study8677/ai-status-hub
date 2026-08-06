@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-06T00:13:13Z",
+  "generated_at": "2026-08-06T03:43:14Z",
   "window": {
     "start": "2026-08-05T00:00:00Z",
-    "end": "2026-08-06T00:13:13Z"
+    "end": "2026-08-06T03:43:14Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 7,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 8,
       "warn": 6,
       "critical": 0,
       "unknown": 0,
-      "sla": 53.85,
+      "sla": 57.14,
       "latest_status": "ok",
-      "latest_at": "2026-08-06T00:13:12Z",
+      "latest_at": "2026-08-06T03:43:13Z",
       "recent_incidents": [
         {
           "time": "2026-08-05T23:14:33Z",
@@ -91,66 +91,72 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 9,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 10,
       "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 69.23,
+      "sla": 71.43,
       "latest_status": "ok",
-      "latest_at": "2026-08-06T00:13:12Z",
+      "latest_at": "2026-08-06T03:43:13Z",
       "recent_incidents": [
         {
           "time": "2026-08-05T14:31:31Z",
           "name": "Degraded performance for Claude Opus 5",
           "status": "identified",
           "link": "https://stspg.io/m7w8kkf4tlqg"
-        },
-        {
-          "time": "2026-08-05T12:08:39Z",
-          "name": "Degraded performance of multiple models",
-          "status": "identified",
-          "link": "https://stspg.io/s2ysk4zxbyy3"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-06T00:13:13Z",
+      "latest_at": "2026-08-06T03:43:13Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
-      "ok": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
+      "ok": 14,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-06T00:13:13Z",
+      "latest_at": "2026-08-06T03:43:13Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 13,
-      "measured_checks_24h": 13,
+      "total_checks_24h": 14,
+      "measured_checks_24h": 14,
       "ok": 0,
       "warn": 0,
-      "critical": 13,
+      "critical": 14,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-06T00:13:13Z",
+      "latest_at": "2026-08-06T03:43:13Z",
       "recent_incidents": [
         {
+          "time": "2026-08-06T03:43:13Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-06T03:43:13Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-06T00:13:13Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -237,12 +243,6 @@
         {
           "time": "2026-08-05T14:31:31Z",
           "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-05T14:31:31Z",
-          "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
         }
