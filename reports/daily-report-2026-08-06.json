@@ -1,0 +1,252 @@
+{
+  "generated_at": "2026-08-06T00:13:13Z",
+  "window": {
+    "start": "2026-08-05T00:00:00Z",
+    "end": "2026-08-06T00:13:13Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 7,
+      "warn": 6,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 53.85,
+      "latest_status": "ok",
+      "latest_at": "2026-08-06T00:13:12Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-05T23:14:33Z",
+          "name": "Elevated errors with image generation",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T22:02:28Z",
+          "name": "Issues with Custom GPT actions",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T22:02:28Z",
+          "name": "Elevated errors with image generation",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T20:49:48Z",
+          "name": "Issues with Custom GPT actions",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T20:49:48Z",
+          "name": "Elevated errors with image generation",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T19:47:49Z",
+          "name": "Issues with Custom GPT actions",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T19:47:49Z",
+          "name": "Elevated errors in ChatGPT conversations with files",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T19:47:49Z",
+          "name": "Elevated errors with image generation",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T17:58:33Z",
+          "name": "Elevated errors in ChatGPT conversations with files",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T17:58:33Z",
+          "name": "Issues with Custom GPT actions",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T17:58:33Z",
+          "name": "Elevated errors with image generation",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T16:18:34Z",
+          "name": "Elevated errors with image generation",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 9,
+      "warn": 4,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 69.23,
+      "latest_status": "ok",
+      "latest_at": "2026-08-06T00:13:12Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-05T14:31:31Z",
+          "name": "Degraded performance for Claude Opus 5",
+          "status": "identified",
+          "link": "https://stspg.io/m7w8kkf4tlqg"
+        },
+        {
+          "time": "2026-08-05T12:08:39Z",
+          "name": "Degraded performance of multiple models",
+          "status": "identified",
+          "link": "https://stspg.io/s2ysk4zxbyy3"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-08-06T00:13:13Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-08-06T00:13:13Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 0,
+      "warn": 0,
+      "critical": 13,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-08-06T00:13:13Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-06T00:13:13Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-06T00:13:13Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T23:14:34Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T23:14:34Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T22:02:30Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T22:02:30Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T20:49:49Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T20:49:49Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T19:47:49Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T19:47:49Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T17:58:33Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T17:58:33Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T16:18:35Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T16:18:35Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T14:31:31Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-05T14:31:31Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        }
+      ]
+    }
+  }
+}
