@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-11T02:52:42Z",
+  "generated_at": "2026-08-11T04:14:56Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-11T02:52:42Z",
+      "time": "2026-08-11T04:14:55Z",
       "overall_status": "none",
       "components": [
         {
@@ -135,15 +135,15 @@
       "source_url": "https://status.openai.com",
       "level": "ok",
       "error": null,
-      "first_anomaly_at": "2026-08-10T15:12:07Z",
+      "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1,
+      "consecutive_recoveries": 2,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-11T02:52:42Z",
+      "time": "2026-08-11T04:14:56Z",
       "overall_status": "none",
       "components": [
         {
@@ -186,31 +186,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 123,
+      "consecutive_recoveries": 124,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-11T02:52:42Z",
+      "time": "2026-08-11T04:14:56Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-11T02:52:42Z",
+      "updated_at": "2026-08-11T04:14:56Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 731,
+      "consecutive_recoveries": 732,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-11T02:52:42Z",
+      "time": "2026-08-11T04:14:56Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 731,
+      "consecutive_recoveries": 732,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-11T02:52:42Z",
+      "time": "2026-08-11T04:14:56Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -278,11 +278,18 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 731,
+      "consecutive_anomalies": 732,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 4581159,
+      "anomaly_seconds": 4586093,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "recover",
+      "service": "OpenAI",
+      "level": "ok",
+      "message": "OpenAI recovered"
+    }
+  ]
 }
