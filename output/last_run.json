@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-12T16:40:58Z",
+  "generated_at": "2026-08-12T17:44:19Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-12T16:40:58Z",
+      "time": "2026-08-12T17:44:18Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 22,
+      "consecutive_recoveries": 23,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-12T16:40:58Z",
+      "time": "2026-08-12T17:44:18Z",
       "overall_status": "minor",
       "components": [
         {
@@ -185,43 +185,43 @@
           "impact": "minor",
           "shortlink": "https://stspg.io/kxwqzpnz52t1",
           "started_at": "2026-08-12T13:50:28.458Z",
-          "updated_at": "2026-08-12T16:10:01.527Z",
+          "updated_at": "2026-08-12T17:28:45.503Z",
           "url": "https://stspg.io/kxwqzpnz52t1"
         }
       ],
       "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-08-12T16:10:01.537Z",
+      "updated_at": "2026-08-12T17:28:45.512Z",
       "source_url": "https://status.claude.com",
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-08-12T13:50:55Z",
-      "consecutive_anomalies": 4,
+      "consecutive_anomalies": 5,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 10203,
+      "anomaly_seconds": 14003,
       "latest_incident_link": "https://stspg.io/kxwqzpnz52t1"
     },
     {
       "service": "Gemini",
-      "time": "2026-08-12T16:40:58Z",
+      "time": "2026-08-12T17:44:19Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-12T16:40:58Z",
+      "updated_at": "2026-08-12T17:44:19Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 764,
+      "consecutive_recoveries": 765,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-12T16:40:58Z",
+      "time": "2026-08-12T17:44:19Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +238,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 764,
+      "consecutive_recoveries": 765,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-12T16:40:58Z",
+      "time": "2026-08-12T17:44:19Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -289,9 +289,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 764,
+      "consecutive_anomalies": 765,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 4717255,
+      "anomaly_seconds": 4721056,
       "latest_incident_link": null
     }
   ],
