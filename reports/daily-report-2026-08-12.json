@@ -1,40 +1,39 @@
 {
-  "generated_at": "2026-08-12T14:49:51Z",
+  "generated_at": "2026-08-12T15:45:42Z",
   "window": {
     "start": "2026-08-11T00:00:00Z",
-    "end": "2026-08-12T14:49:51Z"
+    "end": "2026-08-12T15:45:42Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 33,
-      "measured_checks_24h": 33,
-      "ok": 30,
+      "total_checks_24h": 34,
+      "measured_checks_24h": 34,
+      "ok": 31,
       "warn": 3,
       "critical": 0,
       "unknown": 0,
-      "sla": 90.91,
+      "sla": 91.18,
       "latest_status": "ok",
-      "latest_at": "2026-08-12T14:49:50Z",
-      "recent_incidents": [
-        {
-          "time": "2026-08-11T22:00:00Z",
-          "name": "Increase in errors on API, Codex and Work Mode",
-          "status": "identified",
-          "link": null
-        }
-      ]
+      "latest_at": "2026-08-12T15:45:41Z",
+      "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 33,
-      "measured_checks_24h": 33,
+      "total_checks_24h": 34,
+      "measured_checks_24h": 34,
       "ok": 31,
-      "warn": 2,
+      "warn": 3,
       "critical": 0,
       "unknown": 0,
-      "sla": 93.94,
+      "sla": 91.18,
       "latest_status": "warn",
-      "latest_at": "2026-08-12T14:49:50Z",
+      "latest_at": "2026-08-12T15:45:41Z",
       "recent_incidents": [
+        {
+          "time": "2026-08-12T15:45:41Z",
+          "name": "Degraded performance for multiple models",
+          "status": "investigating",
+          "link": "https://stspg.io/kxwqzpnz52t1"
+        },
         {
           "time": "2026-08-12T14:49:50Z",
           "name": "Degraded performance for multiple models",
@@ -50,41 +49,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 33,
-      "measured_checks_24h": 33,
-      "ok": 33,
+      "total_checks_24h": 34,
+      "measured_checks_24h": 34,
+      "ok": 34,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-12T14:49:51Z",
+      "latest_at": "2026-08-12T15:45:41Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 33,
-      "measured_checks_24h": 33,
-      "ok": 33,
+      "total_checks_24h": 34,
+      "measured_checks_24h": 34,
+      "ok": 34,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-12T14:49:51Z",
+      "latest_at": "2026-08-12T15:45:41Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 33,
-      "measured_checks_24h": 33,
+      "total_checks_24h": 34,
+      "measured_checks_24h": 34,
       "ok": 0,
       "warn": 0,
-      "critical": 33,
+      "critical": 34,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-12T14:49:51Z",
+      "latest_at": "2026-08-12T15:45:41Z",
       "recent_incidents": [
         {
+          "time": "2026-08-12T15:45:41Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-12T15:45:41Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-12T14:49:51Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -230,18 +241,6 @@
         },
         {
           "time": "2026-08-11T22:55:16Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-11T22:55:16Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-11T22:00:00Z",
           "name": "Multiple services / UAE",
           "status": "3",
           "link": null
