@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-13T18:10:52Z",
+  "generated_at": "2026-08-13T19:21:04Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-13T18:10:51Z",
+      "time": "2026-08-13T19:21:04Z",
       "overall_status": "minor",
       "components": [
         {
@@ -130,6 +130,16 @@
       ],
       "active_incidents": [
         {
+          "id": "01KZXPZD4KHMQQFF09PSNNEZT8",
+          "name": "Error while creating custom RBAC roles for Enterprise users",
+          "status": "identified",
+          "impact": "none",
+          "shortlink": null,
+          "started_at": "2026-08-13T14:03:49Z",
+          "updated_at": "2026-08-13T18:48:44Z",
+          "url": null
+        },
+        {
           "id": "01KZXVAJQ5XFH7PTM43XVPQWGJ",
           "name": "Elevated errors in ChatGPT conversations for Free users",
           "status": "monitoring",
@@ -138,33 +148,23 @@
           "started_at": "2026-08-13T15:19:50Z",
           "updated_at": "2026-08-13T16:54:25Z",
           "url": null
-        },
-        {
-          "id": "01KZXPZD4KHMQQFF09PSNNEZT8",
-          "name": "Error while creating custom RBAC roles for Enterprise users",
-          "status": "identified",
-          "impact": "none",
-          "shortlink": null,
-          "started_at": "2026-08-13T14:03:49Z",
-          "updated_at": "2026-08-13T15:44:01Z",
-          "url": null
         }
       ],
       "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-08-13T16:54:25Z",
+      "updated_at": "2026-08-13T18:48:44Z",
       "source_url": "https://status.openai.com",
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-08-13T16:11:24Z",
-      "consecutive_anomalies": 3,
+      "consecutive_anomalies": 4,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 7167,
+      "anomaly_seconds": 11380,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-13T18:10:52Z",
+      "time": "2026-08-13T19:21:04Z",
       "overall_status": "none",
       "components": [
         {
@@ -205,33 +205,33 @@
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
-      "first_anomaly_at": "2026-08-13T15:11:48Z",
+      "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1,
+      "consecutive_recoveries": 2,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-13T18:10:52Z",
+      "time": "2026-08-13T19:21:04Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-13T18:10:52Z",
+      "updated_at": "2026-08-13T19:21:04Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 786,
+      "consecutive_recoveries": 787,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-13T18:10:52Z",
+      "time": "2026-08-13T19:21:04Z",
       "overall_status": "operational",
       "components": [
         {
@@ -248,13 +248,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 786,
+      "consecutive_recoveries": 787,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-13T18:10:52Z",
+      "time": "2026-08-13T19:21:04Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -299,11 +299,18 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 786,
+      "consecutive_anomalies": 787,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 4809049,
+      "anomaly_seconds": 4813261,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "recover",
+      "service": "Claude",
+      "level": "ok",
+      "message": "Claude recovered"
+    }
+  ]
 }
