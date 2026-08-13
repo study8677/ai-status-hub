@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-13T07:03:51Z",
+  "generated_at": "2026-08-13T08:41:37Z",
   "window": {
     "start": "2026-08-12T00:00:00Z",
-    "end": "2026-08-13T07:03:51Z"
+    "end": "2026-08-13T08:41:37Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 25,
-      "measured_checks_24h": 25,
-      "ok": 25,
+      "total_checks_24h": 26,
+      "measured_checks_24h": 26,
+      "ok": 26,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-13T07:03:51Z",
+      "latest_at": "2026-08-13T08:41:36Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 25,
-      "measured_checks_24h": 25,
-      "ok": 20,
+      "total_checks_24h": 26,
+      "measured_checks_24h": 26,
+      "ok": 21,
       "warn": 5,
       "critical": 0,
       "unknown": 0,
-      "sla": 80.0,
+      "sla": 80.77,
       "latest_status": "ok",
-      "latest_at": "2026-08-13T07:03:51Z",
+      "latest_at": "2026-08-13T08:41:37Z",
       "recent_incidents": [
         {
           "time": "2026-08-12T17:44:18Z",
@@ -39,51 +39,57 @@
           "name": "Degraded performance for multiple models",
           "status": "identified",
           "link": "https://stspg.io/kxwqzpnz52t1"
-        },
-        {
-          "time": "2026-08-12T15:45:41Z",
-          "name": "Degraded performance for multiple models",
-          "status": "investigating",
-          "link": "https://stspg.io/kxwqzpnz52t1"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 25,
-      "measured_checks_24h": 25,
-      "ok": 25,
+      "total_checks_24h": 26,
+      "measured_checks_24h": 26,
+      "ok": 26,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-13T07:03:51Z",
+      "latest_at": "2026-08-13T08:41:37Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 25,
-      "measured_checks_24h": 25,
-      "ok": 25,
+      "total_checks_24h": 26,
+      "measured_checks_24h": 26,
+      "ok": 26,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-13T07:03:51Z",
+      "latest_at": "2026-08-13T08:41:37Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 25,
-      "measured_checks_24h": 25,
+      "total_checks_24h": 26,
+      "measured_checks_24h": 26,
       "ok": 0,
       "warn": 0,
-      "critical": 25,
+      "critical": 26,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-13T07:03:51Z",
+      "latest_at": "2026-08-13T08:41:37Z",
       "recent_incidents": [
         {
+          "time": "2026-08-13T08:41:37Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T08:41:37Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-13T07:03:51Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -236,12 +242,6 @@
         {
           "time": "2026-08-12T16:40:58Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-12T15:45:41Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
