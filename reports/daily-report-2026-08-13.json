@@ -1,22 +1,28 @@
 {
-  "generated_at": "2026-08-13T21:54:24Z",
+  "generated_at": "2026-08-13T22:38:54Z",
   "window": {
     "start": "2026-08-12T00:00:00Z",
-    "end": "2026-08-13T21:54:24Z"
+    "end": "2026-08-13T22:38:54Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 39,
-      "measured_checks_24h": 39,
+      "total_checks_24h": 40,
+      "measured_checks_24h": 40,
       "ok": 32,
-      "warn": 7,
+      "warn": 8,
       "critical": 0,
       "unknown": 0,
-      "sla": 82.05,
+      "sla": 80.0,
       "latest_status": "warn",
-      "latest_at": "2026-08-13T21:54:23Z",
+      "latest_at": "2026-08-13T22:38:51Z",
       "recent_incidents": [
         {
+          "time": "2026-08-13T22:38:51Z",
+          "name": "Elevated errors in ChatGPT conversations for Free users",
+          "status": "monitoring",
+          "link": null
+        },
+        {
           "time": "2026-08-13T21:54:23Z",
           "name": "Error while creating custom RBAC roles for Enterprise users",
           "status": "monitoring",
@@ -96,12 +102,6 @@
         },
         {
           "time": "2026-08-13T16:11:24Z",
-          "name": "Error while creating custom RBAC roles for Enterprise users",
-          "status": "identified",
-          "link": null
-        },
-        {
-          "time": "2026-08-13T15:11:48Z",
           "name": "Error while creating custom RBAC roles for Enterprise users",
           "status": "identified",
           "link": null
@@ -109,60 +109,65 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 39,
-      "measured_checks_24h": 39,
-      "ok": 31,
+      "total_checks_24h": 40,
+      "measured_checks_24h": 40,
+      "ok": 32,
       "warn": 7,
       "critical": 1,
       "unknown": 0,
-      "sla": 79.49,
+      "sla": 80.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-13T21:54:23Z",
-      "recent_incidents": [
-        {
-          "time": "2026-08-13T15:11:48Z",
-          "name": "Elevated errors for Claude Mythos 5, Claude Fable 5, and Claude Sonnet 5",
-          "status": "investigating",
-          "link": "https://stspg.io/bjkywv98sm8d"
-        }
-      ]
+      "latest_at": "2026-08-13T22:38:53Z",
+      "recent_incidents": []
     },
     "Gemini": {
-      "total_checks_24h": 39,
-      "measured_checks_24h": 39,
-      "ok": 39,
+      "total_checks_24h": 40,
+      "measured_checks_24h": 40,
+      "ok": 40,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-13T21:54:23Z",
+      "latest_at": "2026-08-13T22:38:53Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 39,
-      "measured_checks_24h": 39,
-      "ok": 39,
+      "total_checks_24h": 40,
+      "measured_checks_24h": 40,
+      "ok": 40,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-13T21:54:23Z",
+      "latest_at": "2026-08-13T22:38:53Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 39,
-      "measured_checks_24h": 39,
+      "total_checks_24h": 40,
+      "measured_checks_24h": 40,
       "ok": 0,
       "warn": 0,
-      "critical": 39,
+      "critical": 40,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-13T21:54:23Z",
+      "latest_at": "2026-08-13T22:38:53Z",
       "recent_incidents": [
         {
+          "time": "2026-08-13T22:38:53Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T22:38:53Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-13T21:54:23Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -237,12 +242,6 @@
         {
           "time": "2026-08-13T16:11:24Z",
           "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-13T16:11:24Z",
-          "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
         }
