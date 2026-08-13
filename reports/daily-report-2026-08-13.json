@@ -1,21 +1,33 @@
 {
-  "generated_at": "2026-08-13T15:11:49Z",
+  "generated_at": "2026-08-13T16:11:25Z",
   "window": {
     "start": "2026-08-12T00:00:00Z",
-    "end": "2026-08-13T15:11:49Z"
+    "end": "2026-08-13T16:11:25Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 32,
-      "measured_checks_24h": 32,
+      "total_checks_24h": 33,
+      "measured_checks_24h": 33,
       "ok": 32,
-      "warn": 0,
+      "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 100.0,
-      "latest_status": "ok",
-      "latest_at": "2026-08-13T15:11:48Z",
+      "sla": 96.97,
+      "latest_status": "warn",
+      "latest_at": "2026-08-13T16:11:24Z",
       "recent_incidents": [
+        {
+          "time": "2026-08-13T16:11:24Z",
+          "name": "Elevated errors in ChatGPT conversations for Free users",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T16:11:24Z",
+          "name": "Error while creating custom RBAC roles for Enterprise users",
+          "status": "identified",
+          "link": null
+        },
         {
           "time": "2026-08-13T15:11:48Z",
           "name": "Error while creating custom RBAC roles for Enterprise users",
@@ -31,15 +43,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 32,
-      "measured_checks_24h": 32,
+      "total_checks_24h": 33,
+      "measured_checks_24h": 33,
       "ok": 26,
-      "warn": 5,
+      "warn": 6,
       "critical": 1,
       "unknown": 0,
-      "sla": 81.25,
-      "latest_status": "critical",
-      "latest_at": "2026-08-13T15:11:48Z",
+      "sla": 78.79,
+      "latest_status": "warn",
+      "latest_at": "2026-08-13T16:11:24Z",
       "recent_incidents": [
         {
           "time": "2026-08-13T15:11:48Z",
@@ -50,41 +62,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 32,
-      "measured_checks_24h": 32,
-      "ok": 32,
+      "total_checks_24h": 33,
+      "measured_checks_24h": 33,
+      "ok": 33,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-13T15:11:48Z",
+      "latest_at": "2026-08-13T16:11:24Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 32,
-      "measured_checks_24h": 32,
-      "ok": 32,
+      "total_checks_24h": 33,
+      "measured_checks_24h": 33,
+      "ok": 33,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-13T15:11:48Z",
+      "latest_at": "2026-08-13T16:11:24Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 32,
-      "measured_checks_24h": 32,
+      "total_checks_24h": 33,
+      "measured_checks_24h": 33,
       "ok": 0,
       "warn": 0,
-      "critical": 32,
+      "critical": 33,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-13T15:11:48Z",
+      "latest_at": "2026-08-13T16:11:24Z",
       "recent_incidents": [
         {
+          "time": "2026-08-13T16:11:24Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T16:11:24Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-13T15:11:48Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -218,30 +242,6 @@
         },
         {
           "time": "2026-08-12T23:54:12Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-12T23:54:12Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-12T23:02:13Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-12T23:02:13Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-12T22:09:51Z",
           "name": "Multiple services / UAE",
           "status": "3",
           "link": null
