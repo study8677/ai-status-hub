@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-14T04:31:16Z",
+  "generated_at": "2026-08-14T06:03:40Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-14T04:31:11Z",
+      "time": "2026-08-14T06:03:35Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 3,
+      "consecutive_recoveries": 4,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-14T04:31:15Z",
+      "time": "2026-08-14T06:03:39Z",
       "overall_status": "error",
       "components": [
         {
@@ -154,7 +154,7 @@
       "active_incidents": [],
       "raw_score": 50,
       "confidence": 0.3,
-      "updated_at": "2026-08-14T04:31:15Z",
+      "updated_at": "2026-08-14T06:03:39Z",
       "source_url": "https://status.claude.com",
       "level": "unknown",
       "error": "fetch failed for https://status.claude.com/api/v2/summary.json: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'status.claude.com'. (_ssl.c:1010)>",
@@ -166,25 +166,25 @@
     },
     {
       "service": "Gemini",
-      "time": "2026-08-14T04:31:15Z",
+      "time": "2026-08-14T06:03:39Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-14T04:31:15Z",
+      "updated_at": "2026-08-14T06:03:39Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 795,
+      "consecutive_recoveries": 796,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-14T04:31:15Z",
+      "time": "2026-08-14T06:03:39Z",
       "overall_status": "operational",
       "components": [
         {
@@ -201,13 +201,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 795,
+      "consecutive_recoveries": 796,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-14T04:31:15Z",
+      "time": "2026-08-14T06:03:40Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -252,9 +252,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 795,
+      "consecutive_anomalies": 796,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 4846272,
+      "anomaly_seconds": 4851817,
       "latest_incident_link": null
     }
   ],
