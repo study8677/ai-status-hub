@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-14T09:52:05Z",
+  "generated_at": "2026-08-14T10:50:06Z",
   "window": {
     "start": "2026-08-13T00:00:00Z",
-    "end": "2026-08-14T09:52:05Z"
+    "end": "2026-08-14T10:50:06Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 27,
-      "measured_checks_24h": 27,
-      "ok": 18,
+      "total_checks_24h": 28,
+      "measured_checks_24h": 28,
+      "ok": 19,
       "warn": 9,
       "critical": 0,
       "unknown": 0,
-      "sla": 66.67,
+      "sla": 67.86,
       "latest_status": "ok",
-      "latest_at": "2026-08-14T09:51:59Z",
+      "latest_at": "2026-08-14T10:50:05Z",
       "recent_incidents": [
         {
           "time": "2026-08-13T23:24:59Z",
@@ -51,69 +51,76 @@
           "name": "Elevated errors in ChatGPT conversations for Free users",
           "status": "monitoring",
           "link": null
-        },
-        {
-          "time": "2026-08-13T20:03:38Z",
-          "name": "Error while creating custom RBAC roles for Enterprise users",
-          "status": "identified",
-          "link": null
-        },
-        {
-          "time": "2026-08-13T20:03:38Z",
-          "name": "Elevated errors in ChatGPT conversations for Free users",
-          "status": "monitoring",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 27,
-      "measured_checks_24h": 21,
-      "ok": 18,
+      "total_checks_24h": 28,
+      "measured_checks_24h": 22,
+      "ok": 19,
       "warn": 2,
       "critical": 1,
       "unknown": 6,
-      "sla": 85.71,
-      "latest_status": "unknown",
-      "latest_at": "2026-08-14T09:52:03Z",
-      "recent_incidents": []
+      "sla": 86.36,
+      "latest_status": "ok",
+      "latest_at": "2026-08-14T10:50:05Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-14T10:50:05Z",
+          "name": "Issues reaching status.claude.com",
+          "status": "investigating",
+          "link": "https://stspg.io/xvp8fkkjmtq0"
+        }
+      ]
     },
     "Gemini": {
-      "total_checks_24h": 27,
-      "measured_checks_24h": 27,
-      "ok": 27,
+      "total_checks_24h": 28,
+      "measured_checks_24h": 28,
+      "ok": 28,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-14T09:52:03Z",
+      "latest_at": "2026-08-14T10:50:05Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 27,
-      "measured_checks_24h": 27,
-      "ok": 27,
+      "total_checks_24h": 28,
+      "measured_checks_24h": 28,
+      "ok": 28,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-14T09:52:03Z",
+      "latest_at": "2026-08-14T10:50:05Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 27,
-      "measured_checks_24h": 27,
+      "total_checks_24h": 28,
+      "measured_checks_24h": 28,
       "ok": 0,
       "warn": 0,
-      "critical": 27,
+      "critical": 28,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-14T09:52:04Z",
+      "latest_at": "2026-08-14T10:50:06Z",
       "recent_incidents": [
         {
+          "time": "2026-08-14T10:50:06Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-14T10:50:06Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-14T09:52:04Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -236,12 +243,6 @@
         {
           "time": "2026-08-13T20:58:22Z",
           "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-13T20:58:22Z",
-          "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
         }
