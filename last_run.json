@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-14T00:07:52Z",
+  "generated_at": "2026-08-14T02:44:17Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-14T00:07:51Z",
+      "time": "2026-08-14T02:44:13Z",
       "overall_status": "none",
       "components": [
         {
@@ -135,82 +135,56 @@
       "source_url": "https://status.openai.com",
       "level": "ok",
       "error": null,
-      "first_anomaly_at": "2026-08-13T16:11:24Z",
+      "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1,
+      "consecutive_recoveries": 2,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-14T00:07:51Z",
-      "overall_status": "none",
+      "time": "2026-08-14T02:44:17Z",
+      "overall_status": "error",
       "components": [
         {
-          "name": "claude.ai",
-          "status": "operational",
-          "updated_at": "2026-08-13T17:59:00.384Z"
-        },
-        {
-          "name": "Claude Console (platform.claude.com)",
-          "status": "operational",
-          "updated_at": "2026-08-04T11:37:04.814Z"
-        },
-        {
-          "name": "Claude API (api.anthropic.com)",
-          "status": "operational",
-          "updated_at": "2026-08-13T17:59:27.929Z"
-        },
-        {
-          "name": "Claude Code",
-          "status": "operational",
-          "updated_at": "2026-08-13T17:59:38.723Z"
-        },
-        {
-          "name": "Claude Cowork",
-          "status": "operational",
-          "updated_at": "2026-08-13T17:59:48.969Z"
-        },
-        {
-          "name": "Claude for Government",
-          "status": "operational",
-          "updated_at": "2026-06-30T14:45:50.487Z"
+          "name": "Official source",
+          "status": "unreachable"
         }
       ],
       "active_incidents": [],
-      "raw_score": 100,
-      "confidence": 0.98,
-      "updated_at": "2026-08-13T23:09:20.634Z",
+      "raw_score": 50,
+      "confidence": 0.3,
+      "updated_at": "2026-08-14T02:44:17Z",
       "source_url": "https://status.claude.com",
-      "level": "ok",
-      "error": null,
+      "level": "unknown",
+      "error": "fetch failed for https://status.claude.com/api/v2/summary.json: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'status.claude.com'. (_ssl.c:1010)>",
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 8,
+      "consecutive_recoveries": 0,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-14T00:07:51Z",
+      "time": "2026-08-14T02:44:17Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-14T00:07:51Z",
+      "updated_at": "2026-08-14T02:44:17Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 793,
+      "consecutive_recoveries": 794,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-14T00:07:52Z",
+      "time": "2026-08-14T02:44:17Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +201,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 793,
+      "consecutive_recoveries": 794,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-14T00:07:52Z",
+      "time": "2026-08-14T02:44:17Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -278,11 +252,18 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 793,
+      "consecutive_anomalies": 794,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 4830469,
+      "anomaly_seconds": 4839854,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "recover",
+      "service": "OpenAI",
+      "level": "ok",
+      "message": "OpenAI recovered"
+    }
+  ]
 }
