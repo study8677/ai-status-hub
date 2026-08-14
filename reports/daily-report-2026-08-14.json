@@ -1,0 +1,251 @@
+{
+  "generated_at": "2026-08-14T00:07:52Z",
+  "window": {
+    "start": "2026-08-13T00:00:00Z",
+    "end": "2026-08-14T00:07:52Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
+      "ok": 12,
+      "warn": 9,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 57.14,
+      "latest_status": "ok",
+      "latest_at": "2026-08-14T00:07:51Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-13T23:24:59Z",
+          "name": "Elevated errors in ChatGPT conversations for Free users",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T22:38:51Z",
+          "name": "Elevated errors in ChatGPT conversations for Free users",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T21:54:23Z",
+          "name": "Error while creating custom RBAC roles for Enterprise users",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T21:54:23Z",
+          "name": "Elevated errors in ChatGPT conversations for Free users",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T20:58:22Z",
+          "name": "Error while creating custom RBAC roles for Enterprise users",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T20:58:22Z",
+          "name": "Elevated errors in ChatGPT conversations for Free users",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T20:03:38Z",
+          "name": "Error while creating custom RBAC roles for Enterprise users",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T20:03:38Z",
+          "name": "Elevated errors in ChatGPT conversations for Free users",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T19:21:04Z",
+          "name": "Error while creating custom RBAC roles for Enterprise users",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T19:21:04Z",
+          "name": "Elevated errors in ChatGPT conversations for Free users",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T18:10:51Z",
+          "name": "Elevated errors in ChatGPT conversations for Free users",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T18:10:51Z",
+          "name": "Error while creating custom RBAC roles for Enterprise users",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T17:14:40Z",
+          "name": "Elevated errors in ChatGPT conversations for Free users",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T17:14:40Z",
+          "name": "Error while creating custom RBAC roles for Enterprise users",
+          "status": "identified",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
+      "ok": 18,
+      "warn": 2,
+      "critical": 1,
+      "unknown": 0,
+      "sla": 85.71,
+      "latest_status": "ok",
+      "latest_at": "2026-08-14T00:07:51Z",
+      "recent_incidents": []
+    },
+    "Gemini": {
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
+      "ok": 21,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-08-14T00:07:51Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
+      "ok": 21,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-08-14T00:07:52Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 21,
+      "measured_checks_24h": 21,
+      "ok": 0,
+      "warn": 0,
+      "critical": 21,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-08-14T00:07:52Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-14T00:07:52Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-14T00:07:52Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T23:25:00Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T23:25:00Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T22:38:53Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T22:38:53Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T21:54:23Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T21:54:23Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T20:58:22Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T20:58:22Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T20:03:38Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T20:03:38Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T19:21:04Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T19:21:04Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T18:10:52Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-13T18:10:52Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        }
+      ]
+    }
+  }
+}
