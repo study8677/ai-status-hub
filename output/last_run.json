@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-14T22:33:14Z",
+  "generated_at": "2026-08-14T22:56:45Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-14T22:33:13Z",
+      "time": "2026-08-14T22:56:44Z",
       "overall_status": "minor",
       "components": [
         {
@@ -147,15 +147,15 @@
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-08-14T22:33:13Z",
-      "consecutive_anomalies": 1,
+      "consecutive_anomalies": 2,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
+      "anomaly_seconds": 1411,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-14T22:33:13Z",
-      "overall_status": "minor",
+      "time": "2026-08-14T22:56:44Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "claude.ai",
@@ -169,18 +169,18 @@
         },
         {
           "name": "Claude API (api.anthropic.com)",
-          "status": "partial_outage",
-          "updated_at": "2026-08-14T20:30:36.322Z"
+          "status": "operational",
+          "updated_at": "2026-08-14T22:41:51.996Z"
         },
         {
           "name": "Claude Code",
-          "status": "partial_outage",
-          "updated_at": "2026-08-14T20:30:36.337Z"
+          "status": "operational",
+          "updated_at": "2026-08-14T22:49:08.135Z"
         },
         {
           "name": "Claude Cowork",
-          "status": "partial_outage",
-          "updated_at": "2026-08-14T20:30:36.353Z"
+          "status": "operational",
+          "updated_at": "2026-08-14T22:48:20.983Z"
         },
         {
           "name": "Claude for Government",
@@ -189,39 +189,39 @@
         }
       ],
       "active_incidents": [],
-      "raw_score": 70,
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-08-14T21:58:12.717Z",
+      "updated_at": "2026-08-14T22:49:08.139Z",
       "source_url": "https://status.claude.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-08-14T20:44:36Z",
-      "consecutive_anomalies": 5,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 6517,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-14T22:33:13Z",
+      "time": "2026-08-14T22:56:45Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-14T22:33:13Z",
+      "updated_at": "2026-08-14T22:56:45Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 815,
+      "consecutive_recoveries": 816,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-14T22:33:13Z",
+      "time": "2026-08-14T22:56:45Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +238,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 815,
+      "consecutive_recoveries": 816,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-14T22:33:14Z",
+      "time": "2026-08-14T22:56:45Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -289,11 +289,18 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 815,
+      "consecutive_anomalies": 816,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 4911191,
+      "anomaly_seconds": 4912602,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "alert",
+      "service": "OpenAI",
+      "level": "warn",
+      "message": "OpenAI is in WARN state (sampled 2026-08-14T22:56:44Z)"
+    }
+  ]
 }
