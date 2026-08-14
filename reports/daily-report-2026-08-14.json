@@ -1,33 +1,39 @@
 {
-  "generated_at": "2026-08-14T20:08:11Z",
+  "generated_at": "2026-08-14T20:44:37Z",
   "window": {
     "start": "2026-08-13T00:00:00Z",
-    "end": "2026-08-14T20:08:11Z"
+    "end": "2026-08-14T20:44:37Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 38,
-      "measured_checks_24h": 38,
-      "ok": 29,
+      "total_checks_24h": 39,
+      "measured_checks_24h": 39,
+      "ok": 30,
       "warn": 9,
       "critical": 0,
       "unknown": 0,
-      "sla": 76.32,
+      "sla": 76.92,
       "latest_status": "ok",
-      "latest_at": "2026-08-14T20:08:10Z",
+      "latest_at": "2026-08-14T20:44:36Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 38,
-      "measured_checks_24h": 32,
+      "total_checks_24h": 39,
+      "measured_checks_24h": 33,
       "ok": 29,
       "warn": 2,
-      "critical": 1,
+      "critical": 2,
       "unknown": 6,
-      "sla": 90.62,
-      "latest_status": "ok",
-      "latest_at": "2026-08-14T20:08:11Z",
+      "sla": 87.88,
+      "latest_status": "critical",
+      "latest_at": "2026-08-14T20:44:36Z",
       "recent_incidents": [
+        {
+          "time": "2026-08-14T20:44:36Z",
+          "name": "Service disruption on Claude services",
+          "status": "identified",
+          "link": "https://stspg.io/wlcwm73lh5vb"
+        },
         {
           "time": "2026-08-14T10:50:05Z",
           "name": "Issues reaching status.claude.com",
@@ -37,41 +43,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 38,
-      "measured_checks_24h": 38,
-      "ok": 38,
+      "total_checks_24h": 39,
+      "measured_checks_24h": 39,
+      "ok": 39,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-14T20:08:11Z",
+      "latest_at": "2026-08-14T20:44:36Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 38,
-      "measured_checks_24h": 38,
-      "ok": 38,
+      "total_checks_24h": 39,
+      "measured_checks_24h": 39,
+      "ok": 39,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-14T20:08:11Z",
+      "latest_at": "2026-08-14T20:44:36Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 38,
-      "measured_checks_24h": 38,
+      "total_checks_24h": 39,
+      "measured_checks_24h": 39,
       "ok": 0,
       "warn": 0,
-      "critical": 38,
+      "critical": 39,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-14T20:08:11Z",
+      "latest_at": "2026-08-14T20:44:37Z",
       "recent_incidents": [
         {
+          "time": "2026-08-14T20:44:37Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-14T20:44:37Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-14T20:08:11Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -224,24 +242,6 @@
         {
           "time": "2026-08-14T08:51:57Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-14T07:47:03Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-14T07:47:03Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-14T06:03:40Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
