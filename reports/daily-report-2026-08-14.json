@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-14T10:50:06Z",
+  "generated_at": "2026-08-14T11:34:48Z",
   "window": {
     "start": "2026-08-13T00:00:00Z",
-    "end": "2026-08-14T10:50:06Z"
+    "end": "2026-08-14T11:34:48Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 28,
-      "ok": 19,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 29,
+      "ok": 20,
       "warn": 9,
       "critical": 0,
       "unknown": 0,
-      "sla": 67.86,
+      "sla": 68.97,
       "latest_status": "ok",
-      "latest_at": "2026-08-14T10:50:05Z",
+      "latest_at": "2026-08-14T11:34:47Z",
       "recent_incidents": [
         {
           "time": "2026-08-13T23:24:59Z",
@@ -45,25 +45,19 @@
           "name": "Error while creating custom RBAC roles for Enterprise users",
           "status": "identified",
           "link": null
-        },
-        {
-          "time": "2026-08-13T20:58:22Z",
-          "name": "Elevated errors in ChatGPT conversations for Free users",
-          "status": "monitoring",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 22,
-      "ok": 19,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 23,
+      "ok": 20,
       "warn": 2,
       "critical": 1,
       "unknown": 6,
-      "sla": 86.36,
+      "sla": 86.96,
       "latest_status": "ok",
-      "latest_at": "2026-08-14T10:50:05Z",
+      "latest_at": "2026-08-14T11:34:47Z",
       "recent_incidents": [
         {
           "time": "2026-08-14T10:50:05Z",
@@ -74,41 +68,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 28,
-      "ok": 28,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 29,
+      "ok": 29,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-14T10:50:05Z",
+      "latest_at": "2026-08-14T11:34:47Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 28,
-      "ok": 28,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 29,
+      "ok": 29,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-14T10:50:05Z",
+      "latest_at": "2026-08-14T11:34:47Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 28,
-      "measured_checks_24h": 28,
+      "total_checks_24h": 29,
+      "measured_checks_24h": 29,
       "ok": 0,
       "warn": 0,
-      "critical": 28,
+      "critical": 29,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-14T10:50:06Z",
+      "latest_at": "2026-08-14T11:34:47Z",
       "recent_incidents": [
         {
+          "time": "2026-08-14T11:34:47Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-14T11:34:47Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-14T10:50:06Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -237,12 +243,6 @@
         {
           "time": "2026-08-13T21:54:23Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-13T20:58:22Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
