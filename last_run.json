@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-15T04:04:35Z",
+  "generated_at": "2026-08-15T04:43:56Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-15T04:04:34Z",
+      "time": "2026-08-15T04:43:55Z",
       "overall_status": "minor",
       "components": [
         {
@@ -147,14 +147,14 @@
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-08-14T22:33:13Z",
-      "consecutive_anomalies": 9,
+      "consecutive_anomalies": 10,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 19881,
+      "anomaly_seconds": 22242,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-15T04:04:34Z",
+      "time": "2026-08-15T04:43:56Z",
       "overall_status": "none",
       "components": [
         {
@@ -197,31 +197,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 4,
+      "consecutive_recoveries": 5,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-15T04:04:35Z",
+      "time": "2026-08-15T04:43:56Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-15T04:04:35Z",
+      "updated_at": "2026-08-15T04:43:56Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 823,
+      "consecutive_recoveries": 824,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-15T04:04:35Z",
+      "time": "2026-08-15T04:43:56Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +238,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 823,
+      "consecutive_recoveries": 824,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-15T04:04:35Z",
+      "time": "2026-08-15T04:43:56Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -269,11 +269,11 @@
           "name": "AWS Direct Connect / Frankfurt",
           "status": "1",
           "summary": "Increased Packet loss",
-          "updated_at": "2026-08-15T03:42:59Z",
+          "updated_at": "2026-08-15T04:42:50Z",
           "link": null,
           "region": "Frankfurt",
           "severity": "warn",
-          "latest_message": "We are investigating increased packet loss, impacting AWS Direct Connect connectivity for some customers in the EU-CENTRAL-1 Region."
+          "latest_message": "We can confirm packet loss impacting Direct Connect connections in the EU-CENTRAL-1 Region. Engineers were automatically engaged and immediately began working to both identify the root cause, and identify multiple parallel paths to mitigate the issue. At this time, we are seeing early signs of recovery. We will provide another update in 60 minutes, or sooner if we have additional information to share."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -300,14 +300,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-08-15T03:42:59Z",
+      "updated_at": "2026-08-15T04:42:50Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 823,
+      "consecutive_anomalies": 824,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 4931072,
+      "anomaly_seconds": 4933433,
       "latest_incident_link": null
     }
   ],
