@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-15T10:54:51Z",
+  "generated_at": "2026-08-15T11:20:04Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-15T10:54:50Z",
+      "time": "2026-08-15T11:20:02Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 6,
+      "consecutive_recoveries": 7,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-15T10:54:50Z",
+      "time": "2026-08-15T11:20:03Z",
       "overall_status": "none",
       "components": [
         {
@@ -186,31 +186,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 18,
+      "consecutive_recoveries": 19,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-15T10:54:50Z",
+      "time": "2026-08-15T11:20:03Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-15T10:54:50Z",
+      "updated_at": "2026-08-15T11:20:03Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 837,
+      "consecutive_recoveries": 838,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-15T10:54:50Z",
+      "time": "2026-08-15T11:20:03Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 837,
+      "consecutive_recoveries": 838,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-15T10:54:51Z",
+      "time": "2026-08-15T11:20:04Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -258,11 +258,11 @@
           "name": "AWS Direct Connect / Frankfurt",
           "status": "1",
           "summary": "Increased Packet loss",
-          "updated_at": "2026-08-15T09:08:14Z",
+          "updated_at": "2026-08-15T11:10:29Z",
           "link": null,
           "region": "Frankfurt",
           "severity": "warn",
-          "latest_message": "We continue to work towards recovery of connectivity for AWS Direct Connect connections at Equinix FR5, Frankfurt, DEU. The root cause is related to a facility infrastructure issue at the location that is impacting network infrastructure. Customers with connections solely at this location will continue to experience packet loss or connectivity degradation. Customers with multi-site or redundant configurations across other locations are not impacted. For a workaround, impacted customers who have the option available to failover to VPN are recommended to do so. For customers using Direct Connect gateway and Transit Gateway, we recommend creating a AWS Site-to-Site VPN and attaching it to your Transit Gateway, refer to steps <a href=\"https://aws.amazon.com/premiumsupport/knowledge-center/dx-configure-dx-and-vpn-failover-tgw/\">here</a>. For other customers we recommend establishing an AWS Site-to-Site VPN as a temporary backup path, refer to steps <a href=\"https://docs.aws.amazon.com/vpn/latest/s2svpn/SetUpVPNConnections.html\">here</a>. As of this time, we expect recovery is multiple hours away. We will provide another update within 2 hours or as soon as we have more information to share."
+          "latest_message": "AWS Direct Connect connectivity remains impaired for customers with connections at the Equinix FR5 location in Frankfurt, DEU. Customers with multi-site or redundant configurations across other locations continue to be unaffected. Engineers are actively working to restore connectivity, with efforts ongoing across multiple workstreams to resolve the underlying facility issue and bring the impacted network equipment back into service. We continue to expect recovery is multiple hours away. For a workaround, impacted customers who have the option to failover to VPN are recommended to do so. For customers using Direct Connect gateway and Transit Gateway, we recommend creating a AWS Site-to-Site VPN and attaching it to your Transit Gateway, refer to steps <a href=\"https://aws.amazon.com/premiumsupport/knowledge-center/dx-configure-dx-and-vpn-failover-tgw/\">here</a>. For other customers we recommend establishing an AWS Site-to-Site VPN as a temporary backup path, refer to steps <a href=\"https://docs.aws.amazon.com/vpn/latest/s2svpn/SetUpVPNConnections.html\">here</a>. We will provide another update within 2 hours or as soon as we have more information to share."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -289,14 +289,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-08-15T09:08:14Z",
+      "updated_at": "2026-08-15T11:10:29Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 837,
+      "consecutive_anomalies": 838,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 4955688,
+      "anomaly_seconds": 4957201,
       "latest_incident_link": null
     }
   ],
