@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-15T08:20:07Z",
+  "generated_at": "2026-08-15T08:50:54Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-15T08:20:06Z",
-      "overall_status": "minor",
+      "time": "2026-08-15T08:50:53Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Responses",
-          "status": "degraded_performance",
+          "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -128,33 +128,22 @@
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "01M015X5NF9D6C4MYR6NGR8HAR",
-          "name": "Unexpected GPT-5.6 Terra responses",
-          "status": "identified",
-          "impact": "minor",
-          "shortlink": null,
-          "started_at": "2026-08-14T22:22:28Z",
-          "updated_at": "2026-08-14T22:22:28Z",
-          "url": null
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-08-14T22:22:28Z",
+      "updated_at": "2026-07-09T19:25:56Z",
       "source_url": "https://status.openai.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-08-14T22:33:13Z",
-      "consecutive_anomalies": 17,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 35213,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-15T08:20:07Z",
+      "time": "2026-08-15T08:50:53Z",
       "overall_status": "none",
       "components": [
         {
@@ -197,31 +186,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 12,
+      "consecutive_recoveries": 13,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-15T08:20:07Z",
+      "time": "2026-08-15T08:50:53Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-15T08:20:07Z",
+      "updated_at": "2026-08-15T08:50:53Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 831,
+      "consecutive_recoveries": 832,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-15T08:20:07Z",
+      "time": "2026-08-15T08:50:53Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 831,
+      "consecutive_recoveries": 832,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-15T08:20:07Z",
+      "time": "2026-08-15T08:50:53Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -305,9 +294,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 831,
+      "consecutive_anomalies": 832,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 4946404,
+      "anomaly_seconds": 4948250,
       "latest_incident_link": null
     }
   ],
