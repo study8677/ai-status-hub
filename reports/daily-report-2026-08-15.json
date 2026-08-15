@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-08-15T02:41:23Z",
+  "generated_at": "2026-08-15T03:24:38Z",
   "window": {
     "start": "2026-08-14T00:00:00Z",
-    "end": "2026-08-15T02:41:23Z"
+    "end": "2026-08-15T03:24:38Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 29,
-      "measured_checks_24h": 29,
+      "total_checks_24h": 30,
+      "measured_checks_24h": 30,
       "ok": 22,
-      "warn": 7,
+      "warn": 8,
       "critical": 0,
       "unknown": 0,
-      "sla": 75.86,
+      "sla": 73.33,
       "latest_status": "warn",
-      "latest_at": "2026-08-15T02:41:22Z",
+      "latest_at": "2026-08-15T03:24:36Z",
       "recent_incidents": [
+        {
+          "time": "2026-08-15T03:24:36Z",
+          "name": "Unexpected GPT-5.6 Terra responses",
+          "status": "identified",
+          "link": null
+        },
         {
           "time": "2026-08-15T02:41:22Z",
           "name": "Unexpected GPT-5.6 Terra responses",
@@ -61,15 +67,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 29,
-      "measured_checks_24h": 23,
-      "ok": 17,
+      "total_checks_24h": 30,
+      "measured_checks_24h": 24,
+      "ok": 18,
       "warn": 2,
       "critical": 4,
       "unknown": 6,
-      "sla": 73.91,
+      "sla": 75.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-15T02:41:22Z",
+      "latest_at": "2026-08-15T03:24:37Z",
       "recent_incidents": [
         {
           "time": "2026-08-15T00:04:04Z",
@@ -82,51 +88,57 @@
           "name": "Service disruption on Claude services",
           "status": "monitoring",
           "link": "https://stspg.io/wlcwm73lh5vb"
-        },
-        {
-          "time": "2026-08-14T21:07:35Z",
-          "name": "Service disruption on Claude services",
-          "status": "monitoring",
-          "link": "https://stspg.io/wlcwm73lh5vb"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 29,
-      "measured_checks_24h": 29,
-      "ok": 29,
+      "total_checks_24h": 30,
+      "measured_checks_24h": 30,
+      "ok": 30,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-15T02:41:23Z",
+      "latest_at": "2026-08-15T03:24:37Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 29,
-      "measured_checks_24h": 29,
-      "ok": 29,
+      "total_checks_24h": 30,
+      "measured_checks_24h": 30,
+      "ok": 30,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-15T02:41:23Z",
+      "latest_at": "2026-08-15T03:24:37Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 29,
-      "measured_checks_24h": 29,
+      "total_checks_24h": 30,
+      "measured_checks_24h": 30,
       "ok": 0,
       "warn": 0,
-      "critical": 29,
+      "critical": 30,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-15T02:41:23Z",
+      "latest_at": "2026-08-15T03:24:38Z",
       "recent_incidents": [
         {
+          "time": "2026-08-15T03:24:38Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-15T03:24:38Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-15T02:41:23Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -230,18 +242,6 @@
         },
         {
           "time": "2026-08-14T21:38:47Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-14T21:07:35Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-14T21:07:35Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
