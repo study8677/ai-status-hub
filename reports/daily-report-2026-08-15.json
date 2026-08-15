@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-08-15T06:00:54Z",
+  "generated_at": "2026-08-15T06:52:07Z",
   "window": {
     "start": "2026-08-14T00:00:00Z",
-    "end": "2026-08-15T06:00:54Z"
+    "end": "2026-08-15T06:52:07Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 35,
-      "measured_checks_24h": 35,
+      "total_checks_24h": 36,
+      "measured_checks_24h": 36,
       "ok": 22,
-      "warn": 13,
+      "warn": 14,
       "critical": 0,
       "unknown": 0,
-      "sla": 62.86,
+      "sla": 61.11,
       "latest_status": "warn",
-      "latest_at": "2026-08-15T06:00:53Z",
+      "latest_at": "2026-08-15T06:52:06Z",
       "recent_incidents": [
+        {
+          "time": "2026-08-15T06:52:06Z",
+          "name": "Unexpected GPT-5.6 Terra responses",
+          "status": "identified",
+          "link": null
+        },
         {
           "time": "2026-08-15T06:00:53Z",
           "name": "Unexpected GPT-5.6 Terra responses",
@@ -57,69 +63,75 @@
           "name": "Unexpected GPT-5.6 Terra responses",
           "status": "identified",
           "link": null
-        },
-        {
-          "time": "2026-08-15T01:47:29Z",
-          "name": "Unexpected GPT-5.6 Terra responses",
-          "status": "identified",
-          "link": null
-        },
-        {
-          "time": "2026-08-15T00:04:04Z",
-          "name": "Unexpected GPT-5.6 Terra responses",
-          "status": "identified",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 35,
-      "measured_checks_24h": 29,
-      "ok": 23,
+      "total_checks_24h": 36,
+      "measured_checks_24h": 30,
+      "ok": 24,
       "warn": 2,
       "critical": 4,
       "unknown": 6,
-      "sla": 79.31,
+      "sla": 80.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-15T06:00:54Z",
+      "latest_at": "2026-08-15T06:52:06Z",
       "recent_incidents": []
     },
     "Gemini": {
-      "total_checks_24h": 35,
-      "measured_checks_24h": 35,
-      "ok": 35,
+      "total_checks_24h": 36,
+      "measured_checks_24h": 36,
+      "ok": 36,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-15T06:00:54Z",
+      "latest_at": "2026-08-15T06:52:06Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 35,
-      "measured_checks_24h": 35,
-      "ok": 35,
+      "total_checks_24h": 36,
+      "measured_checks_24h": 36,
+      "ok": 36,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-15T06:00:54Z",
+      "latest_at": "2026-08-15T06:52:06Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 35,
-      "measured_checks_24h": 35,
+      "total_checks_24h": 36,
+      "measured_checks_24h": 36,
       "ok": 0,
       "warn": 0,
-      "critical": 35,
+      "critical": 36,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-15T06:00:54Z",
+      "latest_at": "2026-08-15T06:52:06Z",
       "recent_incidents": [
         {
+          "time": "2026-08-15T06:52:06Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-15T06:52:06Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-15T06:52:06Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-15T06:00:54Z",
           "name": "AWS Direct Connect / Frankfurt",
           "status": "1",
@@ -229,18 +241,6 @@
         },
         {
           "time": "2026-08-15T02:41:23Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-15T01:47:30Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-15T01:47:30Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
