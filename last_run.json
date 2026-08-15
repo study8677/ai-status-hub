@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-15T05:37:37Z",
+  "generated_at": "2026-08-15T06:00:54Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-15T05:37:36Z",
+      "time": "2026-08-15T06:00:53Z",
       "overall_status": "minor",
       "components": [
         {
@@ -147,14 +147,14 @@
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-08-14T22:33:13Z",
-      "consecutive_anomalies": 12,
+      "consecutive_anomalies": 13,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 25463,
+      "anomaly_seconds": 26860,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-15T05:37:36Z",
+      "time": "2026-08-15T06:00:54Z",
       "overall_status": "none",
       "components": [
         {
@@ -197,31 +197,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 7,
+      "consecutive_recoveries": 8,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-15T05:37:36Z",
+      "time": "2026-08-15T06:00:54Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-15T05:37:36Z",
+      "updated_at": "2026-08-15T06:00:54Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 826,
+      "consecutive_recoveries": 827,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-15T05:37:37Z",
+      "time": "2026-08-15T06:00:54Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +238,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 826,
+      "consecutive_recoveries": 827,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-15T05:37:37Z",
+      "time": "2026-08-15T06:00:54Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -269,11 +269,11 @@
           "name": "AWS Direct Connect / Frankfurt",
           "status": "1",
           "summary": "Increased Packet loss",
-          "updated_at": "2026-08-15T04:42:50Z",
+          "updated_at": "2026-08-15T05:55:13Z",
           "link": null,
           "region": "Frankfurt",
           "severity": "warn",
-          "latest_message": "We can confirm packet loss impacting Direct Connect connections in the EU-CENTRAL-1 Region. Engineers were automatically engaged and immediately began working to both identify the root cause, and identify multiple parallel paths to mitigate the issue. At this time, we are seeing early signs of recovery. We will provide another update in 60 minutes, or sooner if we have additional information to share."
+          "latest_message": "Starting at 7:33 PM PDT, we began experiencing increased packet loss impacting AWS Direct Connect connectivity for some customers in the EU-CENTRAL-1 Region. While we have made progress, connections to the following Direct Connect location are still impaired: Equinix FR5, Frankfurt, DEU. Customers who have multi-site redundancy configured with their Direct Connect paths should not be observing impact at this time. Customers whom only have connections at the Equinix FR5, Frankfurt, DEU location will continue to experience connectivity issues. We are actively working to mitigate the impact and work toward full recovery, but expect full recovery is multiple hours away. We will provide an update in 90 minutes, or sooner if we have additional information to share."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -300,14 +300,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-08-15T04:42:50Z",
+      "updated_at": "2026-08-15T05:55:13Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 826,
+      "consecutive_anomalies": 827,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 4936654,
+      "anomaly_seconds": 4938051,
       "latest_incident_link": null
     }
   ],
