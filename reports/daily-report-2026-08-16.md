@@ -2,14 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 84 | 0 | critical |
-| Claude | 98.81 | 83 | 0 | 1 | 0 | ok |
-| Gemini | 100.00 | 84 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 84 | 0 | 0 | 0 | ok |
-| OpenAI | 84.52 | 71 | 13 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 85 | 0 | critical |
+| Claude | 98.82 | 84 | 0 | 1 | 0 | ok |
+| Gemini | 100.00 | 85 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 85 | 0 | 0 | 0 | ok |
+| OpenAI | 84.71 | 72 | 13 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-08-16T18:50:17Z | 1 | AWS Direct Connect / Frankfurt
+- 2026-08-16T18:50:17Z | 3 | Multiple services / UAE
+- 2026-08-16T18:50:17Z | 3 | Multiple services / Bahrain
 - 2026-08-16T18:15:39Z | 1 | AWS Direct Connect / Frankfurt
 - 2026-08-16T18:15:39Z | 3 | Multiple services / UAE
 - 2026-08-16T18:15:39Z | 3 | Multiple services / Bahrain
@@ -17,9 +20,6 @@
 - 2026-08-16T17:51:38Z | 3 | Multiple services / UAE
 - 2026-08-16T17:51:38Z | 3 | Multiple services / Bahrain
 - 2026-08-16T17:31:46Z | 1 | AWS Direct Connect / Frankfurt
-- 2026-08-16T17:31:46Z | 3 | Multiple services / UAE
-- 2026-08-16T17:31:46Z | 3 | Multiple services / Bahrain
-- 2026-08-16T17:05:27Z | 1 | AWS Direct Connect / Frankfurt
 
 ### Claude
 - 无事件记录
