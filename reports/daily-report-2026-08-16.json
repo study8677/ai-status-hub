@@ -1,70 +1,95 @@
 {
-  "generated_at": "2026-08-16T21:49:26Z",
+  "generated_at": "2026-08-16T22:02:26Z",
   "window": {
     "start": "2026-08-15T00:00:00Z",
-    "end": "2026-08-16T21:49:26Z"
+    "end": "2026-08-16T22:02:26Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 93,
-      "measured_checks_24h": 93,
-      "ok": 80,
+      "total_checks_24h": 94,
+      "measured_checks_24h": 94,
+      "ok": 81,
       "warn": 13,
       "critical": 0,
       "unknown": 0,
-      "sla": 86.02,
+      "sla": 86.17,
       "latest_status": "ok",
-      "latest_at": "2026-08-16T21:49:25Z",
+      "latest_at": "2026-08-16T22:02:25Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 93,
-      "measured_checks_24h": 93,
+      "total_checks_24h": 94,
+      "measured_checks_24h": 94,
       "ok": 92,
       "warn": 0,
-      "critical": 1,
+      "critical": 2,
       "unknown": 0,
-      "sla": 98.92,
-      "latest_status": "ok",
-      "latest_at": "2026-08-16T21:49:25Z",
-      "recent_incidents": []
+      "sla": 97.87,
+      "latest_status": "critical",
+      "latest_at": "2026-08-16T22:02:26Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-16T22:02:26Z",
+          "name": "Service disruption on Claude services",
+          "status": "investigating",
+          "link": "https://stspg.io/cc6kmwrqhzmh"
+        }
+      ]
     },
     "Gemini": {
-      "total_checks_24h": 93,
-      "measured_checks_24h": 93,
-      "ok": 93,
+      "total_checks_24h": 94,
+      "measured_checks_24h": 94,
+      "ok": 94,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-16T21:49:25Z",
+      "latest_at": "2026-08-16T22:02:26Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 93,
-      "measured_checks_24h": 93,
-      "ok": 93,
+      "total_checks_24h": 94,
+      "measured_checks_24h": 94,
+      "ok": 94,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-16T21:49:25Z",
+      "latest_at": "2026-08-16T22:02:26Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 93,
-      "measured_checks_24h": 93,
+      "total_checks_24h": 94,
+      "measured_checks_24h": 94,
       "ok": 0,
       "warn": 0,
-      "critical": 93,
+      "critical": 94,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-16T21:49:25Z",
+      "latest_at": "2026-08-16T22:02:26Z",
       "recent_incidents": [
         {
+          "time": "2026-08-16T22:02:26Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-16T22:02:26Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-16T22:02:26Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-16T21:49:25Z",
           "name": "AWS Direct Connect / Frankfurt",
           "status": "1",
@@ -217,30 +242,6 @@
         {
           "time": "2026-08-16T18:50:17Z",
           "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-16T18:50:17Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-16T18:15:39Z",
-          "name": "AWS Direct Connect / Frankfurt",
-          "status": "1",
-          "link": null
-        },
-        {
-          "time": "2026-08-16T18:15:39Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-16T18:15:39Z",
-          "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
         }
