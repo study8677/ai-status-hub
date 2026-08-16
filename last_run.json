@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-16T16:19:28Z",
+  "generated_at": "2026-08-16T16:46:09Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-16T16:19:27Z",
+      "time": "2026-08-16T16:46:08Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 66,
+      "consecutive_recoveries": 67,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-16T16:19:27Z",
+      "time": "2026-08-16T16:46:08Z",
       "overall_status": "none",
       "components": [
         {
@@ -180,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-08-16T14:32:58.212Z",
+      "updated_at": "2026-08-16T16:29:37.308Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 78,
+      "consecutive_recoveries": 79,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-16T16:19:27Z",
+      "time": "2026-08-16T16:46:08Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-16T16:19:27Z",
+      "updated_at": "2026-08-16T16:46:08Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 897,
+      "consecutive_recoveries": 898,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-16T16:19:27Z",
+      "time": "2026-08-16T16:46:09Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 897,
+      "consecutive_recoveries": 898,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-16T16:19:28Z",
+      "time": "2026-08-16T16:46:09Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -258,11 +258,11 @@
           "name": "AWS Direct Connect / Frankfurt",
           "status": "1",
           "summary": "Increased Packet loss",
-          "updated_at": "2026-08-16T10:25:32Z",
+          "updated_at": "2026-08-16T16:30:39Z",
           "link": null,
           "region": "Frankfurt",
           "severity": "warn",
-          "latest_message": "We continue to work with our co-location partner to restore connectivity at the Equinix FR5 location in Frankfurt, DEU. Since our last update, we have made significant progress toward restoring safe access to the affected area. The electrical isolation procedure is now underway, with our teams on site in the electrical room executing the de-energization of the affected infrastructure. Once isolation is verified and confirmed safe, engineers will begin a physical inspection of the impacted network equipment to determine the scope of replacement required. \n\nBased on our current assessment, full recovery is not expected in the near term due to the scope of potential impacted to equipment. AWS Direct Connect connections at this location remain impaired. Customers with connections exclusively at this location will continue to experience packet loss. Customers with multi-site or redundant configurations across other Direct Connect locations remain unaffected. For a workaround, impacted customers who have the option available to failover to VPN are recommended to do so. For customers using Direct Connect gateway and Transit Gateway, we recommend creating a AWS Site-to-Site VPN and attaching it to your Transit Gateway, refer to steps <a href=\"https://aws.amazon.com/premiumsupport/knowledge-center/dx-configure-dx-and-vpn-failover-tgw/\">here</a>. For other customers we recommend establishing an AWS Site-to-Site VPN as a temporary backup path, refer to steps <a href=\"https://docs.aws.amazon.com/vpn/latest/s2svpn/SetUpVPNConnections.html\">here</a>. We continue to closely track progress and will share an update by August 16 9:30 AM PDT, or sooner as new information becomes available."
+          "latest_message": "The electrical isolation at Equinix FR5 in Frankfurt, DEU is now complete and our engineers have begun physically inspecting the impacted network equipment. We do not yet have a timeline for full resolution while we continue to assess the extent of impact to equipment.\n\nDirect Connect connections at this location remain impaired. Customers with connections exclusively at this location will continue to experience packet loss. Customers with multi-site or redundant configurations across other Direct Connect locations are not affected.\n\nWe recommend that impacted customers failover to VPN until we have more clarity on next steps and a recovery timeline. For customers using Direct Connect gateway and Transit Gateway, you can create an AWS Site-to-Site VPN and attach it to your Transit Gateway, refer to steps <a href=\"https://aws.amazon.com/premiumsupport/knowledge-center/dx-configure-dx-and-vpn-failover-tgw/\">here</a>. For other customers, we recommend establishing an AWS Site-to-Site VPN as a temporary backup path, refer to steps <a href=\"https://docs.aws.amazon.com/vpn/latest/s2svpn/SetUpVPNConnections.html\">here</a>. \n\nWe will provide another update by August 16 5:30 PM PDT, or sooner as new information becomes available."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -289,14 +289,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-08-16T10:25:32Z",
+      "updated_at": "2026-08-16T16:30:39Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 897,
+      "consecutive_anomalies": 898,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 5061565,
+      "anomaly_seconds": 5063166,
       "latest_incident_link": null
     }
   ],
