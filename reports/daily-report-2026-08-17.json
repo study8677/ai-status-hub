@@ -1,83 +1,95 @@
 {
-  "generated_at": "2026-08-17T19:25:51Z",
+  "generated_at": "2026-08-17T19:52:23Z",
   "window": {
     "start": "2026-08-16T00:00:00Z",
-    "end": "2026-08-17T19:25:51Z"
+    "end": "2026-08-17T19:52:23Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 75,
-      "measured_checks_24h": 75,
-      "ok": 75,
+      "total_checks_24h": 76,
+      "measured_checks_24h": 76,
+      "ok": 76,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-17T19:25:50Z",
+      "latest_at": "2026-08-17T19:52:22Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 75,
-      "measured_checks_24h": 75,
-      "ok": 71,
+      "total_checks_24h": 76,
+      "measured_checks_24h": 76,
+      "ok": 72,
       "warn": 2,
       "critical": 2,
       "unknown": 0,
-      "sla": 94.67,
+      "sla": 94.74,
       "latest_status": "ok",
-      "latest_at": "2026-08-17T19:25:50Z",
+      "latest_at": "2026-08-17T19:52:23Z",
       "recent_incidents": [
         {
           "time": "2026-08-17T14:41:19Z",
           "name": "Degraded performance for Claude Opus 5, Claude Sonnet 5",
           "status": "monitoring",
           "link": "https://stspg.io/dw9p8s0wg6hh"
-        },
-        {
-          "time": "2026-08-17T14:04:10Z",
-          "name": "Degraded performance for Claude Opus 5",
-          "status": "investigating",
-          "link": "https://stspg.io/dw9p8s0wg6hh"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 75,
-      "measured_checks_24h": 75,
-      "ok": 75,
+      "total_checks_24h": 76,
+      "measured_checks_24h": 76,
+      "ok": 76,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-17T19:25:50Z",
+      "latest_at": "2026-08-17T19:52:23Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 75,
-      "measured_checks_24h": 75,
-      "ok": 75,
+      "total_checks_24h": 76,
+      "measured_checks_24h": 76,
+      "ok": 76,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-17T19:25:50Z",
+      "latest_at": "2026-08-17T19:52:23Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 75,
-      "measured_checks_24h": 75,
+      "total_checks_24h": 76,
+      "measured_checks_24h": 76,
       "ok": 0,
       "warn": 0,
-      "critical": 75,
+      "critical": 76,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-17T19:25:51Z",
+      "latest_at": "2026-08-17T19:52:23Z",
       "recent_incidents": [
         {
+          "time": "2026-08-17T19:52:23Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T19:52:23Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T19:52:23Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-17T19:25:51Z",
           "name": "AWS Direct Connect / Frankfurt",
           "status": "1",
@@ -231,18 +243,6 @@
           "time": "2026-08-17T14:04:11Z",
           "name": "Multiple services / UAE",
           "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-17T14:04:11Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-17T13:32:38Z",
-          "name": "AWS Direct Connect / Frankfurt",
-          "status": "1",
           "link": null
         }
       ]
