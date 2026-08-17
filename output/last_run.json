@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-17T11:34:48Z",
+  "generated_at": "2026-08-17T11:56:27Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-17T11:34:47Z",
+      "time": "2026-08-17T11:56:26Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 100,
+      "consecutive_recoveries": 101,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-17T11:34:47Z",
+      "time": "2026-08-17T11:56:26Z",
       "overall_status": "none",
       "components": [
         {
@@ -180,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-08-17T10:54:40.834Z",
+      "updated_at": "2026-08-17T11:39:45.108Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 18,
+      "consecutive_recoveries": 19,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-17T11:34:47Z",
+      "time": "2026-08-17T11:56:26Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-17T11:34:47Z",
+      "updated_at": "2026-08-17T11:56:26Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 931,
+      "consecutive_recoveries": 932,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-17T11:34:47Z",
+      "time": "2026-08-17T11:56:27Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 931,
+      "consecutive_recoveries": 932,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-17T11:34:47Z",
+      "time": "2026-08-17T11:56:27Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -262,7 +262,7 @@
           "link": null,
           "region": "Frankfurt",
           "severity": "warn",
-          "latest_message": "We continue to make progress in our phased remediation at the Equinix FR5 location in Frankfurt, DEU. Network infrastructure and dependent systems continue to improve as we bring affected hardware back online. Some replacement hardware has been delivered and installation is proceeding as components arrive on-site. In parallel, we are shifting network traffic to allow restored devices to begin serving customers as they come online. \n\nAs we progress through recovery, customers will observe restoration occurring in two stages. In the first stage, BGP sessions will re-establish but IP prefixes will not yet be advertised, this indicates that recovery is still in progress and the underlying infrastructure is not yet ready to carry traffic. In the second stage, IP prefix advertisement will resume, at which point the infrastructure is fully remediated and connectivity is restored.\n\nWhile we do not currently have an ETA for full recovery, we continue to work as quickly and safely as possible to mitigate the impact for customers. We will provide another update by August 17 at 10:30 AM PDT, or sooner as remediation progresses."
+          "latest_message": "We continue to make progress in our phased remediation at the Equinix FR5 location in Frankfurt, DEU. Network infrastructure and dependent systems continue to improve as we bring affected hardware back online. Some replacement hardware has been delivered and installation is proceeding as components arrive on-site. In parallel, we are shifting network traffic to allow restored devices to begin serving customers as they come online. \n\nAs we progress through recovery, customers will observe restoration occurring in two stages. In the first stage, BGP sessions will re-establish but IP prefixes will not yet be advertised, this indicates that recovery is still in progress and the underlying infrastructure is not yet ready to carry traffic. In the second stage, IP prefix advertisement will resume, at which point the infrastructure is fully remediated and connectivity is restored.\n\nWhile we do not currently have an ETA for full recovery, we continue to work as quickly and safely as possible to mitigate the impact for customers. We will provide another update by August 17 10:30 AM PDT, or sooner as remediation progresses."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -294,9 +294,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 931,
+      "consecutive_anomalies": 932,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 5130884,
+      "anomaly_seconds": 5132184,
       "latest_incident_link": null
     }
   ],
