@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-17T21:44:00Z",
+  "generated_at": "2026-08-17T22:02:27Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-17T21:43:59Z",
+      "time": "2026-08-17T22:02:26Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 117,
+      "consecutive_recoveries": 118,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-17T21:43:59Z",
+      "time": "2026-08-17T22:02:27Z",
       "overall_status": "none",
       "components": [
         {
@@ -186,54 +186,64 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 12,
+      "consecutive_recoveries": 13,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-17T21:44:00Z",
+      "time": "2026-08-17T22:02:27Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-17T21:44:00Z",
+      "updated_at": "2026-08-17T22:02:27Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 948,
+      "consecutive_recoveries": 949,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-17T21:44:00Z",
-      "overall_status": "operational",
+      "time": "2026-08-17T22:02:27Z",
+      "overall_status": "degraded_performance",
       "components": [
         {
           "name": "xAI System",
-          "status": "ok"
+          "status": "warn"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
-      "confidence": 0.85,
-      "updated_at": "2026-07-07T16:40:29Z",
+      "active_incidents": [
+        {
+          "id": "INC5a3245c3",
+          "name": "[API (us-east-1.api.x.ai)] grok-4.6 and grok-4.5 high error rate",
+          "status": "warn",
+          "severity": "ok",
+          "link": "https://status.x.ai/api-us-east-1/INC5a3245c3",
+          "updated_at": "2026-08-17T21:57:27Z",
+          "raw_status": "<h3>Status: ACTIVE</h3>\n           <p>Severity: disruption</p>\n           \n           <hr />\n           <h4>Updates:</h4"
+        }
+      ],
+      "raw_score": 70,
+      "confidence": 0.9,
+      "updated_at": "2026-08-17T21:59:44Z",
       "source_url": "https://status.x.ai/",
-      "level": "ok",
+      "level": "warn",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 948,
-      "anomaly_seconds": null,
-      "latest_incident_link": null
+      "first_anomaly_at": "2026-08-17T22:02:27Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
+      "latest_incident_link": "https://status.x.ai/api-us-east-1/INC5a3245c3"
     },
     {
       "service": "AWS",
-      "time": "2026-08-17T21:44:00Z",
+      "time": "2026-08-17T22:02:27Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -294,9 +304,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 948,
+      "consecutive_anomalies": 949,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 5167437,
+      "anomaly_seconds": 5168544,
       "latest_incident_link": null
     }
   ],
