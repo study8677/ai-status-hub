@@ -1,70 +1,95 @@
 {
-  "generated_at": "2026-08-17T13:32:39Z",
+  "generated_at": "2026-08-17T14:04:11Z",
   "window": {
     "start": "2026-08-16T00:00:00Z",
-    "end": "2026-08-17T13:32:39Z"
+    "end": "2026-08-17T14:04:11Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
-      "ok": 66,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
+      "ok": 67,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-17T13:32:38Z",
+      "latest_at": "2026-08-17T14:04:10Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
       "ok": 64,
-      "warn": 0,
+      "warn": 1,
       "critical": 2,
       "unknown": 0,
-      "sla": 96.97,
-      "latest_status": "ok",
-      "latest_at": "2026-08-17T13:32:38Z",
-      "recent_incidents": []
+      "sla": 95.52,
+      "latest_status": "warn",
+      "latest_at": "2026-08-17T14:04:10Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-17T14:04:10Z",
+          "name": "Degraded performance for Claude Opus 5",
+          "status": "investigating",
+          "link": "https://stspg.io/dw9p8s0wg6hh"
+        }
+      ]
     },
     "Gemini": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
-      "ok": 66,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
+      "ok": 67,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-17T13:32:38Z",
+      "latest_at": "2026-08-17T14:04:11Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
-      "ok": 66,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
+      "ok": 67,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-17T13:32:38Z",
+      "latest_at": "2026-08-17T14:04:11Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
       "ok": 0,
       "warn": 0,
-      "critical": 66,
+      "critical": 67,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-17T13:32:38Z",
+      "latest_at": "2026-08-17T14:04:11Z",
       "recent_incidents": [
         {
+          "time": "2026-08-17T14:04:11Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T14:04:11Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T14:04:11Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-17T13:32:38Z",
           "name": "AWS Direct Connect / Frankfurt",
           "status": "1",
@@ -217,30 +242,6 @@
         {
           "time": "2026-08-17T08:21:06Z",
           "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-17T08:21:06Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-17T07:32:44Z",
-          "name": "AWS Direct Connect / Frankfurt",
-          "status": "1",
-          "link": null
-        },
-        {
-          "time": "2026-08-17T07:32:44Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-17T07:32:44Z",
-          "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
         }
