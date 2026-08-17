@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-17T18:54:07Z",
+  "generated_at": "2026-08-17T19:25:51Z",
   "window": {
     "start": "2026-08-16T00:00:00Z",
-    "end": "2026-08-17T18:54:07Z"
+    "end": "2026-08-17T19:25:51Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 74,
-      "measured_checks_24h": 74,
-      "ok": 74,
+      "total_checks_24h": 75,
+      "measured_checks_24h": 75,
+      "ok": 75,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-17T18:54:06Z",
+      "latest_at": "2026-08-17T19:25:50Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 74,
-      "measured_checks_24h": 74,
-      "ok": 70,
+      "total_checks_24h": 75,
+      "measured_checks_24h": 75,
+      "ok": 71,
       "warn": 2,
       "critical": 2,
       "unknown": 0,
-      "sla": 94.59,
+      "sla": 94.67,
       "latest_status": "ok",
-      "latest_at": "2026-08-17T18:54:06Z",
+      "latest_at": "2026-08-17T19:25:50Z",
       "recent_incidents": [
         {
           "time": "2026-08-17T14:41:19Z",
@@ -43,41 +43,59 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 74,
-      "measured_checks_24h": 74,
-      "ok": 74,
+      "total_checks_24h": 75,
+      "measured_checks_24h": 75,
+      "ok": 75,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-17T18:54:06Z",
+      "latest_at": "2026-08-17T19:25:50Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 74,
-      "measured_checks_24h": 74,
-      "ok": 74,
+      "total_checks_24h": 75,
+      "measured_checks_24h": 75,
+      "ok": 75,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-17T18:54:06Z",
+      "latest_at": "2026-08-17T19:25:50Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 74,
-      "measured_checks_24h": 74,
+      "total_checks_24h": 75,
+      "measured_checks_24h": 75,
       "ok": 0,
       "warn": 0,
-      "critical": 74,
+      "critical": 75,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-17T18:54:06Z",
+      "latest_at": "2026-08-17T19:25:51Z",
       "recent_incidents": [
         {
+          "time": "2026-08-17T19:25:51Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T19:25:51Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T19:25:51Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-17T18:54:06Z",
           "name": "AWS Direct Connect / Frankfurt",
           "status": "1",
@@ -223,24 +241,6 @@
         },
         {
           "time": "2026-08-17T13:32:38Z",
-          "name": "AWS Direct Connect / Frankfurt",
-          "status": "1",
-          "link": null
-        },
-        {
-          "time": "2026-08-17T13:32:38Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-17T13:32:38Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-17T12:51:38Z",
           "name": "AWS Direct Connect / Frankfurt",
           "status": "1",
           "link": null
