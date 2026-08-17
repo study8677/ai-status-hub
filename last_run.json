@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-17T11:00:04Z",
+  "generated_at": "2026-08-17T11:34:48Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-17T11:00:03Z",
+      "time": "2026-08-17T11:34:47Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 99,
+      "consecutive_recoveries": 100,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-17T11:00:03Z",
+      "time": "2026-08-17T11:34:47Z",
       "overall_status": "none",
       "components": [
         {
@@ -186,31 +186,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 17,
+      "consecutive_recoveries": 18,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-17T11:00:03Z",
+      "time": "2026-08-17T11:34:47Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-17T11:00:03Z",
+      "updated_at": "2026-08-17T11:34:47Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 930,
+      "consecutive_recoveries": 931,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-17T11:00:04Z",
+      "time": "2026-08-17T11:34:47Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 930,
+      "consecutive_recoveries": 931,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-17T11:00:04Z",
+      "time": "2026-08-17T11:34:47Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -258,11 +258,11 @@
           "name": "AWS Direct Connect / Frankfurt",
           "status": "1",
           "summary": "Increased Packet loss",
-          "updated_at": "2026-08-17T05:38:04Z",
+          "updated_at": "2026-08-17T11:22:30Z",
           "link": null,
           "region": "Frankfurt",
           "severity": "warn",
-          "latest_message": "We continue to make progress in our phased remediation at the Equinix FR5 location in Frankfurt, DEU. Since our last update, some dependent network infrastructure has been restored. Remediation of remaining infrastructure is ongoing, with a portion of recovery dependent on the delivery of replacement hardware. Cooling has been fully restored, with environmental conditions stable within normal operating thresholds.\n\nCustomers with connections exclusively at this location will continue to experience packet loss as remediation progresses. Customers with multi-site or redundant configurations across other Direct Connect locations are not affected. Previously communicated mitigation guidance and recommendations remain unchanged at this time. We will provide another update by August 17 4:30 AM PDT, or sooner as remediation progresses."
+          "latest_message": "We continue to make progress in our phased remediation at the Equinix FR5 location in Frankfurt, DEU. Network infrastructure and dependent systems continue to improve as we bring affected hardware back online. Some replacement hardware has been delivered and installation is proceeding as components arrive on-site. In parallel, we are shifting network traffic to allow restored devices to begin serving customers as they come online. \n\nAs we progress through recovery, customers will observe restoration occurring in two stages. In the first stage, BGP sessions will re-establish but IP prefixes will not yet be advertised, this indicates that recovery is still in progress and the underlying infrastructure is not yet ready to carry traffic. In the second stage, IP prefix advertisement will resume, at which point the infrastructure is fully remediated and connectivity is restored.\n\nWhile we do not currently have an ETA for full recovery, we continue to work as quickly and safely as possible to mitigate the impact for customers. We will provide another update by August 17 at 10:30 AM PDT, or sooner as remediation progresses."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -289,14 +289,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-08-17T05:38:04Z",
+      "updated_at": "2026-08-17T11:22:30Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 930,
+      "consecutive_anomalies": 931,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 5128801,
+      "anomaly_seconds": 5130884,
       "latest_incident_link": null
     }
   ],
