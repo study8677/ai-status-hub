@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-17T20:48:46Z",
+  "generated_at": "2026-08-17T21:12:51Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-17T20:48:45Z",
+      "time": "2026-08-17T21:12:50Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 115,
+      "consecutive_recoveries": 116,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-17T20:48:45Z",
+      "time": "2026-08-17T21:12:50Z",
       "overall_status": "none",
       "components": [
         {
@@ -180,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-08-17T19:29:20.953Z",
+      "updated_at": "2026-08-17T21:04:24.201Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 10,
+      "consecutive_recoveries": 11,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-17T20:48:46Z",
+      "time": "2026-08-17T21:12:51Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-17T20:48:46Z",
+      "updated_at": "2026-08-17T21:12:51Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 946,
+      "consecutive_recoveries": 947,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-17T20:48:46Z",
+      "time": "2026-08-17T21:12:51Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 946,
+      "consecutive_recoveries": 947,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-17T20:48:46Z",
+      "time": "2026-08-17T21:12:51Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -258,11 +258,11 @@
           "name": "AWS Direct Connect / Frankfurt",
           "status": "1",
           "summary": "Increased Packet loss",
-          "updated_at": "2026-08-17T17:59:20Z",
+          "updated_at": "2026-08-17T21:00:11Z",
           "link": null,
           "region": "Frankfurt",
           "severity": "warn",
-          "latest_message": "We are seeing broad signs of recovery at the Equinix FR5 location in Frankfurt, DEU. We have restored connectivity for the majority of affected hardware and most of the connections are fully recovered and stable. There are a small number of customers that will remain affected until the remaining devices are fully restored. We will provide another update by 2:00 PM PDT, or sooner as remediation progresses."
+          "latest_message": "We continue to work on bringing affected hardware back online. Since our last update we have made progress that will not be visible to customers, but is required for recovery. We are working in parallel to bring all devices online as safely as possible. This work is expected to take several hours to complete and validate.\n\nFor customers that require workarounds, we recommend that you consider failing over to VPN. For customers using Direct Connect gateway and Transit Gateway, you can create an AWS Site-to-Site VPN and attach it to your Transit Gateway, refer to steps <a href=\"https://aws.amazon.com/premiumsupport/knowledge-center/dx-configure-dx-and-vpn-failover-tgw/\">here</a>. For other customers, we recommend establishing an AWS Site-to-Site VPN as a temporary backup path, refer to steps <a href=\"https://docs.aws.amazon.com/vpn/latest/s2svpn/SetUpVPNConnections.html\">here</a>.\n\nWe will provide another update by 7:00 PM PDT or sooner as new information becomes available."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -289,14 +289,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-08-17T17:59:20Z",
+      "updated_at": "2026-08-17T21:00:11Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 946,
+      "consecutive_anomalies": 947,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 5164123,
+      "anomaly_seconds": 5165568,
       "latest_incident_link": null
     }
   ],
