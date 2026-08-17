@@ -2,14 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 72 | 0 | critical |
-| Claude | 94.44 | 68 | 2 | 2 | 0 | ok |
-| Gemini | 100.00 | 72 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 72 | 0 | 0 | 0 | ok |
-| OpenAI | 100.00 | 72 | 0 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 73 | 0 | critical |
+| Claude | 94.52 | 69 | 2 | 2 | 0 | ok |
+| Gemini | 100.00 | 73 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 73 | 0 | 0 | 0 | ok |
+| OpenAI | 100.00 | 73 | 0 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-08-17T18:02:22Z | 1 | AWS Direct Connect / Frankfurt
+- 2026-08-17T18:02:22Z | 3 | Multiple services / UAE
+- 2026-08-17T18:02:22Z | 3 | Multiple services / Bahrain
 - 2026-08-17T17:37:02Z | 1 | AWS Direct Connect / Frankfurt
 - 2026-08-17T17:37:02Z | 3 | Multiple services / UAE
 - 2026-08-17T17:37:02Z | 3 | Multiple services / Bahrain
@@ -17,9 +20,6 @@
 - 2026-08-17T17:00:02Z | 3 | Multiple services / UAE
 - 2026-08-17T17:00:02Z | 3 | Multiple services / Bahrain
 - 2026-08-17T16:33:41Z | 1 | AWS Direct Connect / Frankfurt
-- 2026-08-17T16:33:41Z | 3 | Multiple services / UAE
-- 2026-08-17T16:33:41Z | 3 | Multiple services / Bahrain
-- 2026-08-17T15:57:22Z | 1 | AWS Direct Connect / Frankfurt
 
 ### Claude
 - 2026-08-17T14:41:19Z | monitoring | Degraded performance for Claude Opus 5, Claude Sonnet 5
