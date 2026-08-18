@@ -1,0 +1,251 @@
+{
+  "generated_at": "2026-08-18T00:45:26Z",
+  "window": {
+    "start": "2026-08-17T00:00:00Z",
+    "end": "2026-08-18T00:45:26Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 37,
+      "measured_checks_24h": 37,
+      "ok": 37,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-08-18T00:45:25Z",
+      "recent_incidents": []
+    },
+    "Claude": {
+      "total_checks_24h": 37,
+      "measured_checks_24h": 37,
+      "ok": 35,
+      "warn": 2,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 94.59,
+      "latest_status": "ok",
+      "latest_at": "2026-08-18T00:45:26Z",
+      "recent_incidents": []
+    },
+    "Gemini": {
+      "total_checks_24h": 37,
+      "measured_checks_24h": 37,
+      "ok": 37,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-08-18T00:45:26Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 37,
+      "measured_checks_24h": 37,
+      "ok": 33,
+      "warn": 4,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 89.19,
+      "latest_status": "ok",
+      "latest_at": "2026-08-18T00:45:26Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-17T23:30:24Z",
+          "name": "[API (us-east-1.api.x.ai)] grok-4.6 and grok-4.5 high error rate",
+          "status": "warn",
+          "link": "https://status.x.ai/api-us-east-1/INC5a3245c3"
+        },
+        {
+          "time": "2026-08-17T22:58:33Z",
+          "name": "[API (us-east-1.api.x.ai)] grok-4.6 and grok-4.5 high error rate",
+          "status": "warn",
+          "link": "https://status.x.ai/api-us-east-1/INC5a3245c3"
+        },
+        {
+          "time": "2026-08-17T22:36:09Z",
+          "name": "[API (us-east-1.api.x.ai)] grok-4.6 and grok-4.5 high error rate",
+          "status": "warn",
+          "link": "https://status.x.ai/api-us-east-1/INC5a3245c3"
+        },
+        {
+          "time": "2026-08-17T22:02:27Z",
+          "name": "[API (us-east-1.api.x.ai)] grok-4.6 and grok-4.5 high error rate",
+          "status": "warn",
+          "link": "https://status.x.ai/api-us-east-1/INC5a3245c3"
+        }
+      ]
+    },
+    "AWS": {
+      "total_checks_24h": 37,
+      "measured_checks_24h": 37,
+      "ok": 0,
+      "warn": 0,
+      "critical": 37,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-08-18T00:45:26Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-18T00:45:26Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-18T00:45:26Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-18T00:45:26Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T23:52:15Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T23:52:15Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T23:52:15Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T23:30:24Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T23:30:24Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T23:30:24Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T22:58:34Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T22:58:34Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T22:58:34Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T22:36:09Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T22:36:09Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T22:36:09Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T22:02:27Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T22:02:27Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T22:02:27Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T21:44:00Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T21:44:00Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T21:44:00Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T21:12:51Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T21:12:51Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T21:12:51Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T20:48:46Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-17T20:48:46Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        }
+      ]
+    }
+  }
+}
