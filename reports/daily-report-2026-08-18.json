@@ -1,32 +1,39 @@
 {
-  "generated_at": "2026-08-18T19:02:11Z",
+  "generated_at": "2026-08-18T19:35:46Z",
   "window": {
     "start": "2026-08-17T00:00:00Z",
-    "end": "2026-08-18T19:02:11Z"
+    "end": "2026-08-18T19:35:46Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 65,
-      "measured_checks_24h": 65,
+      "total_checks_24h": 66,
+      "measured_checks_24h": 66,
       "ok": 65,
-      "warn": 0,
+      "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 100.0,
-      "latest_status": "ok",
-      "latest_at": "2026-08-18T19:02:10Z",
-      "recent_incidents": []
+      "sla": 98.48,
+      "latest_status": "warn",
+      "latest_at": "2026-08-18T19:35:46Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-18T19:35:46Z",
+          "name": "Elevated errors deploying Sites",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
     },
     "Claude": {
-      "total_checks_24h": 65,
-      "measured_checks_24h": 65,
-      "ok": 59,
+      "total_checks_24h": 66,
+      "measured_checks_24h": 66,
+      "ok": 60,
       "warn": 6,
       "critical": 0,
       "unknown": 0,
-      "sla": 90.77,
+      "sla": 90.91,
       "latest_status": "ok",
-      "latest_at": "2026-08-18T19:02:10Z",
+      "latest_at": "2026-08-18T19:35:46Z",
       "recent_incidents": [
         {
           "time": "2026-08-18T18:16:17Z",
@@ -55,41 +62,59 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 65,
-      "measured_checks_24h": 65,
-      "ok": 65,
+      "total_checks_24h": 66,
+      "measured_checks_24h": 66,
+      "ok": 66,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-18T19:02:11Z",
+      "latest_at": "2026-08-18T19:35:46Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 65,
-      "measured_checks_24h": 65,
-      "ok": 61,
+      "total_checks_24h": 66,
+      "measured_checks_24h": 66,
+      "ok": 62,
       "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 93.85,
+      "sla": 93.94,
       "latest_status": "ok",
-      "latest_at": "2026-08-18T19:02:11Z",
+      "latest_at": "2026-08-18T19:35:46Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 65,
-      "measured_checks_24h": 65,
+      "total_checks_24h": 66,
+      "measured_checks_24h": 66,
       "ok": 0,
       "warn": 0,
-      "critical": 65,
+      "critical": 66,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-18T19:02:11Z",
+      "latest_at": "2026-08-18T19:35:46Z",
       "recent_incidents": [
         {
+          "time": "2026-08-18T19:35:46Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-08-18T19:35:46Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-18T19:35:46Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-18T19:02:11Z",
           "name": "AWS Direct Connect / Frankfurt",
           "status": "0",
@@ -219,30 +244,6 @@
           "time": "2026-08-18T15:04:55Z",
           "name": "AWS Direct Connect / Frankfurt",
           "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-08-18T15:04:55Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-18T15:04:55Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-18T14:31:06Z",
-          "name": "AWS Direct Connect / Frankfurt",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-08-18T14:31:06Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
           "link": null
         }
       ]

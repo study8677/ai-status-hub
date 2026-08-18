@@ -2,14 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 65 | 0 | critical |
-| Claude | 90.77 | 59 | 6 | 0 | 0 | ok |
-| Gemini | 100.00 | 65 | 0 | 0 | 0 | ok |
-| Grok | 93.85 | 61 | 4 | 0 | 0 | ok |
-| OpenAI | 100.00 | 65 | 0 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 66 | 0 | critical |
+| Claude | 90.91 | 60 | 6 | 0 | 0 | ok |
+| Gemini | 100.00 | 66 | 0 | 0 | 0 | ok |
+| Grok | 93.94 | 62 | 4 | 0 | 0 | ok |
+| OpenAI | 98.48 | 65 | 1 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-08-18T19:35:46Z | 0 | AWS Direct Connect / Frankfurt
+- 2026-08-18T19:35:46Z | 3 | Multiple services / UAE
+- 2026-08-18T19:35:46Z | 3 | Multiple services / Bahrain
 - 2026-08-18T19:02:11Z | 0 | AWS Direct Connect / Frankfurt
 - 2026-08-18T19:02:11Z | 3 | Multiple services / UAE
 - 2026-08-18T19:02:11Z | 3 | Multiple services / Bahrain
@@ -17,9 +20,6 @@
 - 2026-08-18T18:16:18Z | 3 | Multiple services / UAE
 - 2026-08-18T18:16:18Z | 3 | Multiple services / Bahrain
 - 2026-08-18T17:48:01Z | 0 | AWS Direct Connect / Frankfurt
-- 2026-08-18T17:48:01Z | 3 | Multiple services / UAE
-- 2026-08-18T17:48:01Z | 3 | Multiple services / Bahrain
-- 2026-08-18T17:15:16Z | 0 | AWS Direct Connect / Frankfurt
 
 ### Claude
 - 2026-08-18T18:16:17Z | investigating | Degraded performance for multiple models
@@ -32,4 +32,4 @@
 ### Grok
 - 无事件记录
 ### OpenAI
-- 无事件记录
+- 2026-08-18T19:35:46Z | monitoring | Elevated errors deploying Sites
