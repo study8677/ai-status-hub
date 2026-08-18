@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-18T21:10:28Z",
+  "generated_at": "2026-08-18T21:39:09Z",
   "window": {
     "start": "2026-08-17T00:00:00Z",
-    "end": "2026-08-18T21:10:28Z"
+    "end": "2026-08-18T21:39:09Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 70,
-      "measured_checks_24h": 70,
-      "ok": 69,
+      "total_checks_24h": 71,
+      "measured_checks_24h": 71,
+      "ok": 70,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 98.57,
+      "sla": 98.59,
       "latest_status": "ok",
-      "latest_at": "2026-08-18T21:10:27Z",
+      "latest_at": "2026-08-18T21:39:07Z",
       "recent_incidents": [
         {
           "time": "2026-08-18T19:35:46Z",
@@ -25,15 +25,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 70,
-      "measured_checks_24h": 70,
-      "ok": 64,
+      "total_checks_24h": 71,
+      "measured_checks_24h": 71,
+      "ok": 65,
       "warn": 6,
       "critical": 0,
       "unknown": 0,
-      "sla": 91.43,
+      "sla": 91.55,
       "latest_status": "ok",
-      "latest_at": "2026-08-18T21:10:27Z",
+      "latest_at": "2026-08-18T21:39:08Z",
       "recent_incidents": [
         {
           "time": "2026-08-18T18:16:17Z",
@@ -46,51 +46,63 @@
           "name": "Degraded performance for multiple models",
           "status": "investigating",
           "link": "https://stspg.io/tcsfmtc03xgm"
-        },
-        {
-          "time": "2026-08-18T17:15:16Z",
-          "name": "Degraded performance for multiple models",
-          "status": "investigating",
-          "link": "https://stspg.io/tcsfmtc03xgm"
         }
       ]
     },
     "Gemini": {
-      "total_checks_24h": 70,
-      "measured_checks_24h": 70,
-      "ok": 70,
+      "total_checks_24h": 71,
+      "measured_checks_24h": 71,
+      "ok": 71,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-18T21:10:27Z",
+      "latest_at": "2026-08-18T21:39:08Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 70,
-      "measured_checks_24h": 70,
-      "ok": 66,
+      "total_checks_24h": 71,
+      "measured_checks_24h": 71,
+      "ok": 67,
       "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 94.29,
+      "sla": 94.37,
       "latest_status": "ok",
-      "latest_at": "2026-08-18T21:10:27Z",
+      "latest_at": "2026-08-18T21:39:08Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 70,
-      "measured_checks_24h": 70,
+      "total_checks_24h": 71,
+      "measured_checks_24h": 71,
       "ok": 0,
       "warn": 0,
-      "critical": 70,
+      "critical": 71,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-18T21:10:27Z",
+      "latest_at": "2026-08-18T21:39:08Z",
       "recent_incidents": [
         {
+          "time": "2026-08-18T21:39:08Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-08-18T21:39:08Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-18T21:39:08Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-18T21:10:27Z",
           "name": "AWS Direct Connect / Frankfurt",
           "status": "0",
@@ -231,18 +243,6 @@
         {
           "time": "2026-08-18T17:48:01Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-18T17:15:16Z",
-          "name": "AWS Direct Connect / Frankfurt",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-08-18T17:15:16Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }
