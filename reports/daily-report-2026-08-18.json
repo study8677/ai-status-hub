@@ -1,33 +1,39 @@
 {
-  "generated_at": "2026-08-18T16:49:48Z",
+  "generated_at": "2026-08-18T17:15:17Z",
   "window": {
     "start": "2026-08-17T00:00:00Z",
-    "end": "2026-08-18T16:49:48Z"
+    "end": "2026-08-18T17:15:17Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 61,
-      "measured_checks_24h": 61,
-      "ok": 61,
+      "total_checks_24h": 62,
+      "measured_checks_24h": 62,
+      "ok": 62,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-18T16:49:46Z",
+      "latest_at": "2026-08-18T17:15:16Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 61,
-      "measured_checks_24h": 61,
+      "total_checks_24h": 62,
+      "measured_checks_24h": 62,
       "ok": 58,
-      "warn": 3,
+      "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 95.08,
+      "sla": 93.55,
       "latest_status": "warn",
-      "latest_at": "2026-08-18T16:49:47Z",
+      "latest_at": "2026-08-18T17:15:16Z",
       "recent_incidents": [
+        {
+          "time": "2026-08-18T17:15:16Z",
+          "name": "Degraded performance for multiple models",
+          "status": "investigating",
+          "link": "https://stspg.io/tcsfmtc03xgm"
+        },
         {
           "time": "2026-08-18T16:49:47Z",
           "name": "Degraded performance for multiple models",
@@ -37,41 +43,59 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 61,
-      "measured_checks_24h": 61,
-      "ok": 61,
+      "total_checks_24h": 62,
+      "measured_checks_24h": 62,
+      "ok": 62,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-18T16:49:47Z",
+      "latest_at": "2026-08-18T17:15:16Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 61,
-      "measured_checks_24h": 61,
-      "ok": 57,
+      "total_checks_24h": 62,
+      "measured_checks_24h": 62,
+      "ok": 58,
       "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 93.44,
+      "sla": 93.55,
       "latest_status": "ok",
-      "latest_at": "2026-08-18T16:49:47Z",
+      "latest_at": "2026-08-18T17:15:16Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 61,
-      "measured_checks_24h": 61,
+      "total_checks_24h": 62,
+      "measured_checks_24h": 62,
       "ok": 0,
       "warn": 0,
-      "critical": 61,
+      "critical": 62,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-18T16:49:47Z",
+      "latest_at": "2026-08-18T17:15:16Z",
       "recent_incidents": [
         {
+          "time": "2026-08-18T17:15:16Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-08-18T17:15:16Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-18T17:15:16Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-18T16:49:47Z",
           "name": "AWS Direct Connect / Frankfurt",
           "status": "0",
@@ -219,30 +243,6 @@
           "time": "2026-08-18T11:44:04Z",
           "name": "AWS Direct Connect / Frankfurt",
           "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-08-18T11:44:04Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-18T11:44:04Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-18T11:13:14Z",
-          "name": "AWS Direct Connect / Frankfurt",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-08-18T11:13:14Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
           "link": null
         }
       ]
