@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-18T21:39:09Z",
+  "generated_at": "2026-08-18T21:57:55Z",
   "window": {
     "start": "2026-08-17T00:00:00Z",
-    "end": "2026-08-18T21:39:09Z"
+    "end": "2026-08-18T21:57:55Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 71,
-      "measured_checks_24h": 71,
-      "ok": 70,
+      "total_checks_24h": 72,
+      "measured_checks_24h": 72,
+      "ok": 71,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 98.59,
+      "sla": 98.61,
       "latest_status": "ok",
-      "latest_at": "2026-08-18T21:39:07Z",
+      "latest_at": "2026-08-18T21:57:54Z",
       "recent_incidents": [
         {
           "time": "2026-08-18T19:35:46Z",
@@ -25,24 +25,18 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 71,
-      "measured_checks_24h": 71,
-      "ok": 65,
+      "total_checks_24h": 72,
+      "measured_checks_24h": 72,
+      "ok": 66,
       "warn": 6,
       "critical": 0,
       "unknown": 0,
-      "sla": 91.55,
+      "sla": 91.67,
       "latest_status": "ok",
-      "latest_at": "2026-08-18T21:39:08Z",
+      "latest_at": "2026-08-18T21:57:54Z",
       "recent_incidents": [
         {
           "time": "2026-08-18T18:16:17Z",
-          "name": "Degraded performance for multiple models",
-          "status": "investigating",
-          "link": "https://stspg.io/tcsfmtc03xgm"
-        },
-        {
-          "time": "2026-08-18T17:48:00Z",
           "name": "Degraded performance for multiple models",
           "status": "investigating",
           "link": "https://stspg.io/tcsfmtc03xgm"
@@ -50,41 +44,59 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 71,
-      "measured_checks_24h": 71,
-      "ok": 71,
+      "total_checks_24h": 72,
+      "measured_checks_24h": 72,
+      "ok": 72,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-18T21:39:08Z",
+      "latest_at": "2026-08-18T21:57:55Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 71,
-      "measured_checks_24h": 71,
-      "ok": 67,
+      "total_checks_24h": 72,
+      "measured_checks_24h": 72,
+      "ok": 68,
       "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 94.37,
+      "sla": 94.44,
       "latest_status": "ok",
-      "latest_at": "2026-08-18T21:39:08Z",
+      "latest_at": "2026-08-18T21:57:55Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 71,
-      "measured_checks_24h": 71,
+      "total_checks_24h": 72,
+      "measured_checks_24h": 72,
       "ok": 0,
       "warn": 0,
-      "critical": 71,
+      "critical": 72,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-18T21:39:08Z",
+      "latest_at": "2026-08-18T21:57:55Z",
       "recent_incidents": [
         {
+          "time": "2026-08-18T21:57:55Z",
+          "name": "AWS Direct Connect / Frankfurt",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-08-18T21:57:55Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-18T21:57:55Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-18T21:39:08Z",
           "name": "AWS Direct Connect / Frankfurt",
           "status": "0",
@@ -232,18 +244,6 @@
           "time": "2026-08-18T17:48:01Z",
           "name": "AWS Direct Connect / Frankfurt",
           "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-08-18T17:48:01Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-18T17:48:01Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
           "link": null
         }
       ]
