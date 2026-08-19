@@ -1,83 +1,88 @@
 {
-  "generated_at": "2026-08-19T17:14:13Z",
+  "generated_at": "2026-08-19T17:44:20Z",
   "window": {
     "start": "2026-08-18T00:00:00Z",
-    "end": "2026-08-19T17:14:13Z"
+    "end": "2026-08-19T17:44:20Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
-      "ok": 65,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
+      "ok": 66,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 98.48,
+      "sla": 98.51,
       "latest_status": "ok",
-      "latest_at": "2026-08-19T17:14:13Z",
+      "latest_at": "2026-08-19T17:44:19Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
-      "ok": 59,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
+      "ok": 60,
       "warn": 7,
       "critical": 0,
       "unknown": 0,
-      "sla": 89.39,
+      "sla": 89.55,
       "latest_status": "ok",
-      "latest_at": "2026-08-19T17:14:13Z",
-      "recent_incidents": [
-        {
-          "time": "2026-08-19T10:47:39Z",
-          "name": "Degraded performance for Claude Opus 5 and Claude Haiku 4.5",
-          "status": "monitoring",
-          "link": "https://stspg.io/zg9tfmjj1th2"
-        },
-        {
-          "time": "2026-08-19T10:11:25Z",
-          "name": "Degraded performance for Claude Opus 5 and Claude Haiku 4.5",
-          "status": "identified",
-          "link": "https://stspg.io/zg9tfmjj1th2"
-        }
-      ]
+      "latest_at": "2026-08-19T17:44:19Z",
+      "recent_incidents": []
     },
     "Gemini": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
-      "ok": 66,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
+      "ok": 67,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-19T17:14:13Z",
+      "latest_at": "2026-08-19T17:44:20Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
-      "ok": 66,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
+      "ok": 67,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-19T17:14:13Z",
+      "latest_at": "2026-08-19T17:44:20Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
       "ok": 0,
       "warn": 0,
-      "critical": 66,
+      "critical": 67,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-19T17:14:13Z",
+      "latest_at": "2026-08-19T17:44:20Z",
       "recent_incidents": [
         {
+          "time": "2026-08-19T17:44:20Z",
+          "name": "Amazon Elastic Compute Cloud / London",
+          "status": "1",
+          "link": null
+        },
+        {
+          "time": "2026-08-19T17:44:20Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-19T17:44:20Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-19T17:14:13Z",
           "name": "Amazon Elastic Compute Cloud / London",
           "status": "1",
@@ -236,12 +241,6 @@
         {
           "time": "2026-08-19T10:47:40Z",
           "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-19T10:47:40Z",
-          "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
         }
