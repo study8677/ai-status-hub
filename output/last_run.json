@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-19T10:47:41Z",
+  "generated_at": "2026-08-19T11:11:45Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-19T10:47:39Z",
+      "time": "2026-08-19T11:11:44Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 25,
+      "consecutive_recoveries": 26,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-19T10:47:39Z",
+      "time": "2026-08-19T11:11:44Z",
       "overall_status": "none",
       "components": [
         {
@@ -177,51 +177,40 @@
           "updated_at": "2026-06-30T14:45:50.487Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "hkcw95k7r0f4",
-          "name": "Degraded performance for Claude Opus 5 and Claude Haiku 4.5",
-          "status": "monitoring",
-          "impact": "minor",
-          "shortlink": "https://stspg.io/zg9tfmjj1th2",
-          "started_at": "2026-08-19T09:42:37.414Z",
-          "updated_at": "2026-08-19T10:33:56.695Z",
-          "url": "https://stspg.io/zg9tfmjj1th2"
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-08-19T10:33:56.697Z",
+      "updated_at": "2026-08-19T11:02:18.279Z",
       "source_url": "https://status.claude.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-08-19T09:43:19Z",
-      "consecutive_anomalies": 3,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 3860,
-      "latest_incident_link": "https://stspg.io/zg9tfmjj1th2"
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
+      "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-19T10:47:40Z",
+      "time": "2026-08-19T11:11:44Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-19T10:47:40Z",
+      "updated_at": "2026-08-19T11:11:44Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1008,
+      "consecutive_recoveries": 1009,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-19T10:47:40Z",
+      "time": "2026-08-19T11:11:44Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 56,
+      "consecutive_recoveries": 57,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-19T10:47:40Z",
+      "time": "2026-08-19T11:11:45Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -289,9 +278,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 1008,
+      "consecutive_anomalies": 1009,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 5300857,
+      "anomaly_seconds": 5302302,
       "latest_incident_link": null
     }
   ],
