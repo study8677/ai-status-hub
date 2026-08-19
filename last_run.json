@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-19T03:34:05Z",
+  "generated_at": "2026-08-19T04:19:36Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-19T03:34:04Z",
+      "time": "2026-08-19T04:19:35Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 14,
+      "consecutive_recoveries": 15,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-19T03:34:04Z",
+      "time": "2026-08-19T04:19:35Z",
       "overall_status": "none",
       "components": [
         {
@@ -186,31 +186,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 16,
+      "consecutive_recoveries": 17,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-19T03:34:05Z",
+      "time": "2026-08-19T04:19:35Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-19T03:34:05Z",
+      "updated_at": "2026-08-19T04:19:35Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 997,
+      "consecutive_recoveries": 998,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-19T03:34:05Z",
+      "time": "2026-08-19T04:19:35Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,20 +227,15 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 45,
+      "consecutive_recoveries": 46,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-19T03:34:05Z",
+      "time": "2026-08-19T04:19:36Z",
       "overall_status": "major_outage",
       "components": [
-        {
-          "name": "AWS Direct Connect / Frankfurt",
-          "status": "degraded",
-          "region": "Frankfurt"
-        },
         {
           "name": "Multiple services / UAE",
           "status": "degraded",
@@ -253,17 +248,6 @@
         }
       ],
       "active_incidents": [
-        {
-          "id": "arn:aws:health:eu-central-1::event/DIRECTCONNECT/AWS_DIRECTCONNECT_OPERATIONAL_ISSUE/AWS_DIRECTCONNECT_OPERATIONAL_ISSUE_E23AA_ADAB9D3D11F",
-          "name": "AWS Direct Connect / Frankfurt",
-          "status": "0",
-          "summary": "[RESOLVED] Increased Packet loss",
-          "updated_at": "2026-08-18T04:01:19Z",
-          "link": null,
-          "region": "Frankfurt",
-          "severity": "warn",
-          "latest_message": "Starting August 14 7:33 PM PDT, we experienced increased packet loss impacting AWS Direct Connect connectivity for customers with connections at the Equinix FR5 location in Frankfurt, DEU. Engineers were automatically engaged at 7:45 PM on August 14 and immediately began investigating mitigations. By 8:30 PM, we identified that network equipment at the FR5 location was impaired due to water ingress into the co-location facility. As a result, cooling system was impaired which resulted in devices overheating and shutting down. Water also affected power distribution systems which disabled the power for the network devices. Initial recovery efforts were delayed as environmental conditions within the facility required stabilization before engineers could safely access the affected area. Throughout August 15 and 16, our engineers worked in coordination with the facility operator to restore impaired network devices while the underlying infrastructure issue was addressed. By 7:26 PM on August 17, all impaired network equipment was successfully restored and connectivity to the location was verified as fully operational with sustained recovery. We do not expect this issue to recur. \n\nCustomers with redundant connections across other Direct Connect locations maintained connectivity through their alternate paths throughout this event and require no further action. Customers who implemented VPN failover as a workaround may now safely revert to their primary Direct Connect paths. Connectivity has been verified as stable and fully operational. Customers requiring further assistance may contact AWS Support through the AWS Management Console or the <a href=\"https://console.aws.amazon.com/support\">AWS Support Center</a>."
-        },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
           "name": "Multiple services / UAE",
@@ -289,14 +273,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-08-18T04:01:19Z",
+      "updated_at": "2026-04-30T07:25:54Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 997,
+      "consecutive_anomalies": 998,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 5274842,
+      "anomaly_seconds": 5277573,
       "latest_incident_link": null
     }
   ],
