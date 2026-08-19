@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-19T18:03:05Z",
+  "generated_at": "2026-08-19T18:50:27Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-19T18:03:04Z",
+      "time": "2026-08-19T18:50:26Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 38,
+      "consecutive_recoveries": 39,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-19T18:03:04Z",
+      "time": "2026-08-19T18:50:26Z",
       "overall_status": "none",
       "components": [
         {
@@ -186,31 +186,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 13,
+      "consecutive_recoveries": 14,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-19T18:03:04Z",
+      "time": "2026-08-19T18:50:27Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-19T18:03:04Z",
+      "updated_at": "2026-08-19T18:50:27Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1021,
+      "consecutive_recoveries": 1022,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-19T18:03:04Z",
+      "time": "2026-08-19T18:50:27Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 69,
+      "consecutive_recoveries": 70,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-19T18:03:05Z",
+      "time": "2026-08-19T18:50:27Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -256,13 +256,13 @@
         {
           "id": "arn:aws:health:eu-west-2::event/EC2/AWS_EC2_OPERATIONAL_ISSUE/AWS_EC2_OPERATIONAL_ISSUE_25280_73B0FC79387",
           "name": "Amazon Elastic Compute Cloud / London",
-          "status": "1",
-          "summary": "Increased Error Rates",
-          "updated_at": "2026-08-19T17:03:59Z",
+          "status": "0",
+          "summary": "[RESOLVED] Increased Error Rates",
+          "updated_at": "2026-08-19T18:47:20Z",
           "link": null,
           "region": "London",
           "severity": "warn",
-          "latest_message": "On August 18 we launched a new Availability Zone (euw2-az4) in the EU-WEST-2 Region. After the launch, we began experiencing errors launching EC2 instances in the new Availability Zone when a default subnet is not present. We can confirm that existing running instances and resources are not affected. Workflows that automatically get a list of Availability Zones in the Region via the DescribeAvailabilityZones API and then attempt to launch new instances or create resources in the new Availability Zone may encounter errors. For EC2 instance launch failures, we are taking mitigating steps to automatically create default subnets, where one is not already present, when an EC2 instance launch is targeting the new Availability Zone. For customers and workflows that require immediate remediation <a href=\"https://docs.aws.amazon.com/vpc/latest/userguide/work-with-default-vpc.html#create-default-subnet\">you may create a default subnet</a> in the new Availability Zone. This will enable EC2 instance launches to successfully complete. \n\nFor other resources, such as Lambda functions, where the new Availability Zone is currently not supported, we recommend customers update their workflows to exclude the newly launched Availability Zone and continue resource creation using the other Availability Zones in the Region. While we don't have an exact estimate for how long our mitigation efforts will take, we will keep you up to date on our progress and provide you with another update by 1:00 PM PDT or sooner as new information becomes available."
+          "latest_message": "Between August 18 5:00 PM and August 19 11:00 AM PDT, we experienced elevated errors launching EC2 instances in a newly launched Availability Zone (euw2-az4) in the EU-WEST-2 Region. After the new Availability Zone launch, we began experiencing errors when using a default VPC. We discovered the root cause of the issue on August 19 at 9:00 AM and began deploying a change to resolve the issue at 9:30 AM. While the change was underway, we began to see incremental improvements in new instance launches, with full recovery at 11:00 AM. Existing running instances and resources were not affected. \n\nSome regional services, such as Lambda functions or Aurora databases, were not available at the launch of the new Availability Zone and service availability will be added over time. Customers attempting to create resources before the services become available will see a message reporting that it is not supported in the Availability Zone. \n\nThe issue has been resolved and the service is operating normally."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -289,14 +289,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-08-19T17:03:59Z",
+      "updated_at": "2026-08-19T18:47:20Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 1021,
+      "consecutive_anomalies": 1022,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 5326982,
+      "anomaly_seconds": 5329824,
       "latest_incident_link": null
     }
   ],
