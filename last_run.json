@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-19T16:48:58Z",
+  "generated_at": "2026-08-19T17:14:13Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-19T16:48:56Z",
+      "time": "2026-08-19T17:14:13Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 35,
+      "consecutive_recoveries": 36,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-19T16:48:57Z",
+      "time": "2026-08-19T17:14:13Z",
       "overall_status": "none",
       "components": [
         {
@@ -180,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-08-19T15:44:35.509Z",
+      "updated_at": "2026-08-19T16:49:21.212Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 10,
+      "consecutive_recoveries": 11,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-19T16:48:57Z",
+      "time": "2026-08-19T17:14:13Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-19T16:48:57Z",
+      "updated_at": "2026-08-19T17:14:13Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1018,
+      "consecutive_recoveries": 1019,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-19T16:48:57Z",
+      "time": "2026-08-19T17:14:13Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 66,
+      "consecutive_recoveries": 67,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-19T16:48:57Z",
+      "time": "2026-08-19T17:14:13Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -258,11 +258,11 @@
           "name": "Amazon Elastic Compute Cloud / London",
           "status": "1",
           "summary": "Increased Error Rates",
-          "updated_at": "2026-08-19T15:15:14Z",
+          "updated_at": "2026-08-19T17:03:59Z",
           "link": null,
           "region": "London",
           "severity": "warn",
-          "latest_message": "We are investigating an issue that is impacting launching new EC2 instances and resources in a newly launched Availability Zone (euw2-az4) in the EU-WEST-2 Region. During this time, affected customers may experience issues when creating or modifying resources in the Region. Other AWS services may also be impacted. For immediate recovery, we recommend that customers use alternative Availability Zones (euw2-az1, euw2-az2, and euw2-az3) where applicable. Existing running instances and resources are not affected. We will provide another update by 10:00 AM PDT, or sooner if we have additional information to share."
+          "latest_message": "On August 18 we launched a new Availability Zone (euw2-az4) in the EU-WEST-2 Region. After the launch, we began experiencing errors launching EC2 instances in the new Availability Zone when a default subnet is not present. We can confirm that existing running instances and resources are not affected. Workflows that automatically get a list of Availability Zones in the Region via the DescribeAvailabilityZones API and then attempt to launch new instances or create resources in the new Availability Zone may encounter errors. For EC2 instance launch failures, we are taking mitigating steps to automatically create default subnets, where one is not already present, when an EC2 instance launch is targeting the new Availability Zone. For customers and workflows that require immediate remediation <a href=\"https://docs.aws.amazon.com/vpc/latest/userguide/work-with-default-vpc.html#create-default-subnet\">you may create a default subnet</a> in the new Availability Zone. This will enable EC2 instance launches to successfully complete. \n\nFor other resources, such as Lambda functions, where the new Availability Zone is currently not supported, we recommend customers update their workflows to exclude the newly launched Availability Zone and continue resource creation using the other Availability Zones in the Region. While we don't have an exact estimate for how long our mitigation efforts will take, we will keep you up to date on our progress and provide you with another update by 1:00 PM PDT or sooner as new information becomes available."
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -289,14 +289,14 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-08-19T15:15:14Z",
+      "updated_at": "2026-08-19T17:03:59Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 1018,
+      "consecutive_anomalies": 1019,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 5322534,
+      "anomaly_seconds": 5324050,
       "latest_incident_link": null
     }
   ],
