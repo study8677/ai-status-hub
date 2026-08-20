@@ -1,70 +1,95 @@
 {
-  "generated_at": "2026-08-20T13:08:05Z",
+  "generated_at": "2026-08-20T13:59:02Z",
   "window": {
     "start": "2026-08-19T00:00:00Z",
-    "end": "2026-08-20T13:08:05Z"
+    "end": "2026-08-20T13:59:02Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 58,
-      "measured_checks_24h": 58,
+      "total_checks_24h": 59,
+      "measured_checks_24h": 59,
       "ok": 58,
-      "warn": 0,
+      "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 100.0,
-      "latest_status": "ok",
-      "latest_at": "2026-08-20T13:08:04Z",
-      "recent_incidents": []
+      "sla": 98.31,
+      "latest_status": "warn",
+      "latest_at": "2026-08-20T13:59:02Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-20T13:59:02Z",
+          "name": "Elevated Errors for Thinking mode in ChatGPT ",
+          "status": "investigating",
+          "link": null
+        }
+      ]
     },
     "Claude": {
-      "total_checks_24h": 58,
-      "measured_checks_24h": 58,
-      "ok": 55,
+      "total_checks_24h": 59,
+      "measured_checks_24h": 59,
+      "ok": 56,
       "warn": 3,
       "critical": 0,
       "unknown": 0,
-      "sla": 94.83,
+      "sla": 94.92,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T13:08:04Z",
+      "latest_at": "2026-08-20T13:59:02Z",
       "recent_incidents": []
     },
     "Gemini": {
-      "total_checks_24h": 58,
-      "measured_checks_24h": 58,
-      "ok": 58,
+      "total_checks_24h": 59,
+      "measured_checks_24h": 59,
+      "ok": 59,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T13:08:04Z",
+      "latest_at": "2026-08-20T13:59:02Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 58,
-      "measured_checks_24h": 58,
-      "ok": 58,
+      "total_checks_24h": 59,
+      "measured_checks_24h": 59,
+      "ok": 59,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T13:08:04Z",
+      "latest_at": "2026-08-20T13:59:02Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 58,
-      "measured_checks_24h": 58,
+      "total_checks_24h": 59,
+      "measured_checks_24h": 59,
       "ok": 0,
       "warn": 0,
-      "critical": 58,
+      "critical": 59,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-20T13:08:04Z",
+      "latest_at": "2026-08-20T13:59:02Z",
       "recent_incidents": [
         {
+          "time": "2026-08-20T13:59:02Z",
+          "name": "Amazon Elastic Compute Cloud / London",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-08-20T13:59:02Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-20T13:59:02Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-20T13:08:04Z",
           "name": "Amazon Elastic Compute Cloud / London",
           "status": "0",
@@ -217,30 +242,6 @@
         {
           "time": "2026-08-20T08:05:50Z",
           "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-20T08:05:50Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-20T07:25:39Z",
-          "name": "Amazon Elastic Compute Cloud / London",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-08-20T07:25:39Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-20T07:25:39Z",
-          "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
         }
