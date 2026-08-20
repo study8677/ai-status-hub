@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-08-20T15:18:54Z",
+  "generated_at": "2026-08-20T15:54:10Z",
   "window": {
     "start": "2026-08-19T00:00:00Z",
-    "end": "2026-08-20T15:18:54Z"
+    "end": "2026-08-20T15:54:10Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 61,
-      "measured_checks_24h": 61,
+      "total_checks_24h": 62,
+      "measured_checks_24h": 62,
       "ok": 58,
-      "warn": 3,
+      "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 95.08,
+      "sla": 93.55,
       "latest_status": "warn",
-      "latest_at": "2026-08-20T15:18:54Z",
+      "latest_at": "2026-08-20T15:54:09Z",
       "recent_incidents": [
+        {
+          "time": "2026-08-20T15:54:09Z",
+          "name": "Elevated Errors for Thinking mode in ChatGPT ",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-08-20T15:18:54Z",
           "name": "Elevated Errors for Thinking mode in ChatGPT ",
@@ -37,53 +43,71 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 61,
-      "measured_checks_24h": 61,
-      "ok": 58,
+      "total_checks_24h": 62,
+      "measured_checks_24h": 62,
+      "ok": 59,
       "warn": 3,
       "critical": 0,
       "unknown": 0,
-      "sla": 95.08,
+      "sla": 95.16,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T15:18:54Z",
+      "latest_at": "2026-08-20T15:54:09Z",
       "recent_incidents": []
     },
     "Gemini": {
-      "total_checks_24h": 61,
-      "measured_checks_24h": 61,
-      "ok": 61,
+      "total_checks_24h": 62,
+      "measured_checks_24h": 62,
+      "ok": 62,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T15:18:54Z",
+      "latest_at": "2026-08-20T15:54:09Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 61,
-      "measured_checks_24h": 61,
-      "ok": 61,
+      "total_checks_24h": 62,
+      "measured_checks_24h": 62,
+      "ok": 62,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T15:18:54Z",
+      "latest_at": "2026-08-20T15:54:10Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 61,
-      "measured_checks_24h": 61,
+      "total_checks_24h": 62,
+      "measured_checks_24h": 62,
       "ok": 0,
       "warn": 0,
-      "critical": 61,
+      "critical": 62,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-20T15:18:54Z",
+      "latest_at": "2026-08-20T15:54:10Z",
       "recent_incidents": [
         {
+          "time": "2026-08-20T15:54:10Z",
+          "name": "Amazon Elastic Compute Cloud / London",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-08-20T15:54:10Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-20T15:54:10Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-20T15:18:54Z",
           "name": "Amazon Elastic Compute Cloud / London",
           "status": "0",
@@ -218,30 +242,6 @@
         {
           "time": "2026-08-20T10:43:36Z",
           "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-20T10:43:36Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-20T10:03:48Z",
-          "name": "Amazon Elastic Compute Cloud / London",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-08-20T10:03:48Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-20T10:03:48Z",
-          "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
         }
