@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-20T18:57:49Z",
+  "generated_at": "2026-08-20T19:34:10Z",
   "window": {
     "start": "2026-08-19T00:00:00Z",
-    "end": "2026-08-20T18:57:49Z"
+    "end": "2026-08-20T19:34:10Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 67,
-      "measured_checks_24h": 67,
-      "ok": 60,
+      "total_checks_24h": 68,
+      "measured_checks_24h": 68,
+      "ok": 61,
       "warn": 7,
       "critical": 0,
       "unknown": 0,
-      "sla": 89.55,
+      "sla": 89.71,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T18:57:48Z",
+      "latest_at": "2026-08-20T19:34:09Z",
       "recent_incidents": [
         {
           "time": "2026-08-20T17:41:38Z",
@@ -55,16 +55,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 67,
-      "measured_checks_24h": 67,
+      "total_checks_24h": 68,
+      "measured_checks_24h": 68,
       "ok": 63,
       "warn": 4,
-      "critical": 0,
+      "critical": 1,
       "unknown": 0,
-      "sla": 94.03,
-      "latest_status": "warn",
-      "latest_at": "2026-08-20T18:57:48Z",
+      "sla": 92.65,
+      "latest_status": "critical",
+      "latest_at": "2026-08-20T19:34:09Z",
       "recent_incidents": [
+        {
+          "time": "2026-08-20T19:34:09Z",
+          "name": "Elevated errors on requests to multiple models",
+          "status": "investigating",
+          "link": "https://stspg.io/w7yghz6hfr72"
+        },
         {
           "time": "2026-08-20T18:57:48Z",
           "name": "Elevated errors on Google connectors",
@@ -74,41 +80,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 67,
-      "measured_checks_24h": 67,
-      "ok": 67,
+      "total_checks_24h": 68,
+      "measured_checks_24h": 68,
+      "ok": 68,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T18:57:49Z",
+      "latest_at": "2026-08-20T19:34:10Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 67,
-      "measured_checks_24h": 67,
-      "ok": 67,
+      "total_checks_24h": 68,
+      "measured_checks_24h": 68,
+      "ok": 68,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T18:57:49Z",
+      "latest_at": "2026-08-20T19:34:10Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 67,
-      "measured_checks_24h": 67,
+      "total_checks_24h": 68,
+      "measured_checks_24h": 68,
       "ok": 0,
       "warn": 0,
-      "critical": 67,
+      "critical": 68,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-20T18:57:49Z",
+      "latest_at": "2026-08-20T19:34:10Z",
       "recent_incidents": [
         {
+          "time": "2026-08-20T19:34:10Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-20T19:34:10Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-20T18:57:49Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -224,24 +242,6 @@
         },
         {
           "time": "2026-08-20T15:18:54Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-20T14:44:08Z",
-          "name": "Amazon Elastic Compute Cloud / London",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-08-20T14:44:08Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-20T14:44:08Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
