@@ -2,14 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 65 | 0 | critical |
-| Claude | 95.38 | 62 | 3 | 0 | 0 | ok |
-| Gemini | 100.00 | 65 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 65 | 0 | 0 | 0 | ok |
-| OpenAI | 89.23 | 58 | 7 | 0 | 0 | warn |
+| AWS | 0.00 | 0 | 0 | 66 | 0 | critical |
+| Claude | 95.45 | 63 | 3 | 0 | 0 | ok |
+| Gemini | 100.00 | 66 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 66 | 0 | 0 | 0 | ok |
+| OpenAI | 89.39 | 59 | 7 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-08-20T18:04:34Z | 0 | Amazon Elastic Compute Cloud / London
+- 2026-08-20T18:04:34Z | 3 | Multiple services / UAE
+- 2026-08-20T18:04:34Z | 3 | Multiple services / Bahrain
 - 2026-08-20T17:41:39Z | 0 | Amazon Elastic Compute Cloud / London
 - 2026-08-20T17:41:39Z | 3 | Multiple services / UAE
 - 2026-08-20T17:41:39Z | 3 | Multiple services / Bahrain
@@ -17,9 +20,6 @@
 - 2026-08-20T17:04:30Z | 3 | Multiple services / UAE
 - 2026-08-20T17:04:30Z | 3 | Multiple services / Bahrain
 - 2026-08-20T16:30:00Z | 0 | Amazon Elastic Compute Cloud / London
-- 2026-08-20T16:30:00Z | 3 | Multiple services / UAE
-- 2026-08-20T16:30:00Z | 3 | Multiple services / Bahrain
-- 2026-08-20T15:54:10Z | 0 | Amazon Elastic Compute Cloud / London
 
 ### Claude
 - 无事件记录
