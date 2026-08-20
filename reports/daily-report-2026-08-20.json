@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-20T18:04:34Z",
+  "generated_at": "2026-08-20T18:57:49Z",
   "window": {
     "start": "2026-08-19T00:00:00Z",
-    "end": "2026-08-20T18:04:34Z"
+    "end": "2026-08-20T18:57:49Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
-      "ok": 59,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
+      "ok": 60,
       "warn": 7,
       "critical": 0,
       "unknown": 0,
-      "sla": 89.39,
+      "sla": 89.55,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T18:04:33Z",
+      "latest_at": "2026-08-20T18:57:48Z",
       "recent_incidents": [
         {
           "time": "2026-08-20T17:41:38Z",
@@ -51,63 +51,76 @@
           "name": "Elevated Errors for Thinking mode in ChatGPT ",
           "status": "investigating",
           "link": null
-        },
-        {
-          "time": "2026-08-20T13:59:02Z",
-          "name": "Elevated Errors for Thinking mode in ChatGPT ",
-          "status": "investigating",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
       "ok": 63,
-      "warn": 3,
+      "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 95.45,
-      "latest_status": "ok",
-      "latest_at": "2026-08-20T18:04:33Z",
-      "recent_incidents": []
+      "sla": 94.03,
+      "latest_status": "warn",
+      "latest_at": "2026-08-20T18:57:48Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-20T18:57:48Z",
+          "name": "Elevated errors on Google connectors",
+          "status": "investigating",
+          "link": "https://stspg.io/lmcgl9dpjxk0"
+        }
+      ]
     },
     "Gemini": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
-      "ok": 66,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
+      "ok": 67,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T18:04:33Z",
+      "latest_at": "2026-08-20T18:57:49Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
-      "ok": 66,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
+      "ok": 67,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T18:04:33Z",
+      "latest_at": "2026-08-20T18:57:49Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 66,
-      "measured_checks_24h": 66,
+      "total_checks_24h": 67,
+      "measured_checks_24h": 67,
       "ok": 0,
       "warn": 0,
-      "critical": 66,
+      "critical": 67,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-20T18:04:34Z",
+      "latest_at": "2026-08-20T18:57:49Z",
       "recent_incidents": [
         {
+          "time": "2026-08-20T18:57:49Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-20T18:57:49Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-20T18:04:34Z",
           "name": "Amazon Elastic Compute Cloud / London",
           "status": "0",
@@ -230,18 +243,6 @@
         {
           "time": "2026-08-20T14:44:08Z",
           "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-20T13:59:02Z",
-          "name": "Amazon Elastic Compute Cloud / London",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-08-20T13:59:02Z",
-          "name": "Multiple services / UAE",
           "status": "3",
           "link": null
         }

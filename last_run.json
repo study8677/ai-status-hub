@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-20T18:04:34Z",
+  "generated_at": "2026-08-20T18:57:49Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-20T18:04:33Z",
+      "time": "2026-08-20T18:57:48Z",
       "overall_status": "none",
       "components": [
         {
@@ -135,21 +135,21 @@
       "source_url": "https://status.openai.com",
       "level": "ok",
       "error": null,
-      "first_anomaly_at": "2026-08-20T13:59:02Z",
+      "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1,
+      "consecutive_recoveries": 2,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-20T18:04:33Z",
-      "overall_status": "none",
+      "time": "2026-08-20T18:57:48Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "claude.ai",
-          "status": "operational",
-          "updated_at": "2026-08-19T10:33:56.606Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-08-20T18:32:13.345Z"
         },
         {
           "name": "Claude Console (platform.claude.com)",
@@ -158,18 +158,18 @@
         },
         {
           "name": "Claude API (api.anthropic.com)",
-          "status": "operational",
-          "updated_at": "2026-08-19T10:33:56.621Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-08-20T18:32:13.365Z"
         },
         {
           "name": "Claude Code",
-          "status": "operational",
-          "updated_at": "2026-08-19T10:33:56.637Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-08-20T18:32:13.384Z"
         },
         {
           "name": "Claude Cowork",
-          "status": "operational",
-          "updated_at": "2026-08-19T10:33:56.651Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-08-20T18:32:13.403Z"
         },
         {
           "name": "Claude for Government",
@@ -177,40 +177,51 @@
           "updated_at": "2026-06-30T14:45:50.487Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "6xskhw7rn4tf",
+          "name": "Elevated errors on Google connectors",
+          "status": "investigating",
+          "impact": "minor",
+          "shortlink": "https://stspg.io/lmcgl9dpjxk0",
+          "started_at": "2026-08-20T18:32:13.296Z",
+          "updated_at": "2026-08-20T18:32:13.451Z",
+          "url": "https://stspg.io/lmcgl9dpjxk0"
+        }
+      ],
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-08-20T16:54:38.020Z",
+      "updated_at": "2026-08-20T18:49:24.146Z",
       "source_url": "https://status.claude.com",
-      "level": "ok",
+      "level": "warn",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 51,
-      "anomaly_seconds": null,
-      "latest_incident_link": null
+      "first_anomaly_at": "2026-08-20T18:57:48Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
+      "latest_incident_link": "https://stspg.io/lmcgl9dpjxk0"
     },
     {
       "service": "Gemini",
-      "time": "2026-08-20T18:04:33Z",
+      "time": "2026-08-20T18:57:49Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-20T18:04:33Z",
+      "updated_at": "2026-08-20T18:57:49Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1059,
+      "consecutive_recoveries": 1060,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-20T18:04:33Z",
+      "time": "2026-08-20T18:57:49Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,20 +238,15 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 107,
+      "consecutive_recoveries": 108,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-20T18:04:34Z",
+      "time": "2026-08-20T18:57:49Z",
       "overall_status": "major_outage",
       "components": [
-        {
-          "name": "Amazon Elastic Compute Cloud / London",
-          "status": "degraded",
-          "region": "London"
-        },
         {
           "name": "Multiple services / UAE",
           "status": "degraded",
@@ -253,17 +259,6 @@
         }
       ],
       "active_incidents": [
-        {
-          "id": "arn:aws:health:eu-west-2::event/EC2/AWS_EC2_OPERATIONAL_ISSUE/AWS_EC2_OPERATIONAL_ISSUE_25280_73B0FC79387",
-          "name": "Amazon Elastic Compute Cloud / London",
-          "status": "0",
-          "summary": "[RESOLVED] Increased Error Rates",
-          "updated_at": "2026-08-19T18:47:20Z",
-          "link": null,
-          "region": "London",
-          "severity": "warn",
-          "latest_message": "Between August 18 5:00 PM and August 19 11:00 AM PDT, we experienced elevated errors launching EC2 instances in a newly launched Availability Zone (euw2-az4) in the EU-WEST-2 Region. After the new Availability Zone launch, we began experiencing errors when using a default VPC. We discovered the root cause of the issue on August 19 at 9:00 AM and began deploying a change to resolve the issue at 9:30 AM. While the change was underway, we began to see incremental improvements in new instance launches, with full recovery at 11:00 AM. Existing running instances and resources were not affected. \n\nSome regional services, such as Lambda functions or Aurora databases, were not available at the launch of the new Availability Zone and service availability will be added over time. Customers attempting to create resources before the services become available will see a message reporting that it is not supported in the Availability Zone. \n\nThe issue has been resolved and the service is operating normally."
-        },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
           "name": "Multiple services / UAE",
@@ -289,16 +284,23 @@
       ],
       "raw_score": 20,
       "confidence": 0.97,
-      "updated_at": "2026-08-19T18:47:20Z",
+      "updated_at": "2026-04-30T07:25:54Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 1059,
+      "consecutive_anomalies": 1060,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 5413471,
+      "anomaly_seconds": 5416666,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "recover",
+      "service": "OpenAI",
+      "level": "ok",
+      "message": "OpenAI recovered"
+    }
+  ]
 }
