@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-20T21:39:52Z",
+  "generated_at": "2026-08-20T22:02:28Z",
   "window": {
     "start": "2026-08-19T00:00:00Z",
-    "end": "2026-08-20T21:39:52Z"
+    "end": "2026-08-20T22:02:28Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 72,
-      "measured_checks_24h": 72,
-      "ok": 65,
+      "total_checks_24h": 73,
+      "measured_checks_24h": 73,
+      "ok": 66,
       "warn": 7,
       "critical": 0,
       "unknown": 0,
-      "sla": 90.28,
+      "sla": 90.41,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T21:39:51Z",
+      "latest_at": "2026-08-20T22:02:27Z",
       "recent_incidents": [
         {
           "time": "2026-08-20T17:41:38Z",
@@ -27,25 +27,19 @@
           "name": "Elevated Codex API authentication errors",
           "status": "identified",
           "link": null
-        },
-        {
-          "time": "2026-08-20T16:29:59Z",
-          "name": "Elevated Errors for Thinking mode in ChatGPT ",
-          "status": "monitoring",
-          "link": null
         }
       ]
     },
     "Claude": {
-      "total_checks_24h": 72,
-      "measured_checks_24h": 72,
-      "ok": 67,
+      "total_checks_24h": 73,
+      "measured_checks_24h": 73,
+      "ok": 68,
       "warn": 4,
       "critical": 1,
       "unknown": 0,
-      "sla": 93.06,
+      "sla": 93.15,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T21:39:51Z",
+      "latest_at": "2026-08-20T22:02:27Z",
       "recent_incidents": [
         {
           "time": "2026-08-20T19:34:09Z",
@@ -62,41 +56,53 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 72,
-      "measured_checks_24h": 72,
-      "ok": 72,
+      "total_checks_24h": 73,
+      "measured_checks_24h": 73,
+      "ok": 73,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T21:39:51Z",
+      "latest_at": "2026-08-20T22:02:27Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 72,
-      "measured_checks_24h": 72,
-      "ok": 72,
+      "total_checks_24h": 73,
+      "measured_checks_24h": 73,
+      "ok": 73,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-20T21:39:52Z",
+      "latest_at": "2026-08-20T22:02:28Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 72,
-      "measured_checks_24h": 72,
+      "total_checks_24h": 73,
+      "measured_checks_24h": 73,
       "ok": 0,
       "warn": 0,
-      "critical": 72,
+      "critical": 73,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-20T21:39:52Z",
+      "latest_at": "2026-08-20T22:02:28Z",
       "recent_incidents": [
         {
+          "time": "2026-08-20T22:02:28Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-20T22:02:28Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-20T21:39:52Z",
           "name": "Multiple services / UAE",
           "status": "3",
@@ -238,12 +244,6 @@
           "time": "2026-08-20T16:30:00Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-20T15:54:10Z",
-          "name": "Amazon Elastic Compute Cloud / London",
-          "status": "0",
           "link": null
         }
       ]
