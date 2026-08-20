@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-20T17:04:30Z",
+  "generated_at": "2026-08-20T17:41:39Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-20T17:04:29Z",
-      "overall_status": "minor",
+      "time": "2026-08-20T17:41:38Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Responses",
@@ -124,7 +124,7 @@
         },
         {
           "name": "Codex API",
-          "status": "degraded_performance",
+          "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
@@ -132,29 +132,29 @@
         {
           "id": "01M0G1RZER839AZXWMYKSZF3GR",
           "name": "Elevated Codex API authentication errors",
-          "status": "identified",
+          "status": "monitoring",
           "impact": "minor",
           "shortlink": null,
           "started_at": "2026-08-20T16:58:53Z",
-          "updated_at": "2026-08-20T16:58:53Z",
+          "updated_at": "2026-08-20T17:15:51Z",
           "url": null
         }
       ],
       "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-08-20T16:58:53Z",
+      "updated_at": "2026-08-20T17:15:51Z",
       "source_url": "https://status.openai.com",
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-08-20T13:59:02Z",
-      "consecutive_anomalies": 6,
+      "consecutive_anomalies": 7,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 11127,
+      "anomaly_seconds": 13356,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-20T17:04:30Z",
+      "time": "2026-08-20T17:41:39Z",
       "overall_status": "none",
       "components": [
         {
@@ -197,31 +197,31 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 49,
+      "consecutive_recoveries": 50,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-20T17:04:30Z",
+      "time": "2026-08-20T17:41:39Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-20T17:04:30Z",
+      "updated_at": "2026-08-20T17:41:39Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1057,
+      "consecutive_recoveries": 1058,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-20T17:04:30Z",
+      "time": "2026-08-20T17:41:39Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,13 +238,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 105,
+      "consecutive_recoveries": 106,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-20T17:04:30Z",
+      "time": "2026-08-20T17:41:39Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -305,9 +305,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 1057,
+      "consecutive_anomalies": 1058,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 5409867,
+      "anomaly_seconds": 5412096,
       "latest_incident_link": null
     }
   ],
