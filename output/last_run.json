@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-21T19:45:14Z",
+  "generated_at": "2026-08-21T20:01:58Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-21T19:45:13Z",
-      "overall_status": "none",
+      "time": "2026-08-21T20:01:57Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "Responses",
@@ -126,24 +126,40 @@
           "name": "Codex API",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Sites",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "01M0JXWD740S0Y50DWJZS7SH75",
+          "name": "Unexpected logouts for some ChatGPT web users",
+          "status": "investigating",
+          "impact": "minor",
+          "shortlink": null,
+          "started_at": "2026-08-21T19:48:34Z",
+          "updated_at": "2026-08-21T19:48:34Z",
+          "url": null
+        }
+      ],
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-07-09T19:25:56Z",
+      "updated_at": "2026-08-21T19:48:34Z",
       "source_url": "https://status.openai.com",
-      "level": "ok",
+      "level": "warn",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 40,
-      "anomaly_seconds": null,
+      "first_anomaly_at": "2026-08-21T20:01:57Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-21T19:45:13Z",
+      "time": "2026-08-21T20:01:58Z",
       "overall_status": "none",
       "components": [
         {
@@ -180,37 +196,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-08-21T19:05:01.793Z",
+      "updated_at": "2026-08-21T20:00:07.944Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 37,
+      "consecutive_recoveries": 38,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-21T19:45:13Z",
+      "time": "2026-08-21T20:01:58Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-21T19:45:13Z",
+      "updated_at": "2026-08-21T20:01:58Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1098,
+      "consecutive_recoveries": 1099,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-21T19:45:13Z",
+      "time": "2026-08-21T20:01:58Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +243,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 146,
+      "consecutive_recoveries": 147,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-21T19:45:14Z",
+      "time": "2026-08-21T20:01:58Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -294,9 +310,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 1098,
+      "consecutive_anomalies": 1099,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 5505911,
+      "anomaly_seconds": 5506915,
       "latest_incident_link": null
     }
   ],
