@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-21T02:51:52Z",
+  "generated_at": "2026-08-21T03:42:34Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-21T02:51:52Z",
+      "time": "2026-08-21T03:42:33Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 14,
+      "consecutive_recoveries": 15,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-21T02:51:52Z",
+      "time": "2026-08-21T03:42:34Z",
       "overall_status": "none",
       "components": [
         {
@@ -180,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-08-21T01:49:18.836Z",
+      "updated_at": "2026-08-21T03:09:36.398Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 11,
+      "consecutive_recoveries": 12,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-21T02:51:52Z",
+      "time": "2026-08-21T03:42:34Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-21T02:51:52Z",
+      "updated_at": "2026-08-21T03:42:34Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1072,
+      "consecutive_recoveries": 1073,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-21T02:51:52Z",
+      "time": "2026-08-21T03:42:34Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,13 +227,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 120,
+      "consecutive_recoveries": 121,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-21T02:51:52Z",
+      "time": "2026-08-21T03:42:34Z",
       "overall_status": "major_outage",
       "components": [
         {
@@ -262,7 +262,7 @@
           "link": null,
           "region": "Tokyo",
           "severity": "warn",
-          "latest_message": "Between 4:58 PM and 6:34 PM PDT, we experienced increased delays affecting real-time metrics for Amazon Connect in the AP-NORTHEAST-1 Region, resulting in missing or stale data. During this time, customers may have experienced missing data within analytics reports, and may have observed issues if accessing realtime metrics within contact Flows, such as checking agent staffing. We identified the root cause to be an issue with the subsystem responsible for metric event delivery. We started applying the mitigations at 6:13 PM and mitigated the issue by 6:34 PM. The issue has been resolved and the service is operating normally."
+          "latest_message": "日本時間 8:58 AM から 10:34 AM の間、AP-NORTHEAST-1 リージョンにおける Amazon Connect のリアルタイムメトリクスに影響する遅延が増加し、データが欠落する、またはデータが最新の状態に更新されない事象が発生しました。この間、お客様は分析レポート内で一部のデータが反映されない状況を経験した可能性があり、また、コンタクトフロー内でリアルタイムメトリクス (例: 人員の確認ブロック) にアクセスする際に問題が発生した可能性があります。根本原因は、メトリクスイベント配信を担うサブシステムの問題であると特定しました。日本時間 10:13 AM に緩和策の適用を開始し、 10:34 AM までに影響を解消しました。本事象は解決済みであり、サービスは正常に稼働しています。| Between 4:58 PM and 6:34 PM PDT, we experienced increased delays affecting real-time metrics for Amazon Connect in the AP-NORTHEAST-1 Region, resulting in missing or stale data. During this time, customers may have experienced missing data within analytics reports, and may have observed issues if accessing realtime metrics within contact Flows, such as checking agent staffing. We identified the root cause to be an issue with the subsystem responsible for metric event delivery. We started applying the mitigations at 6:13 PM and mitigated the issue by 6:34 PM. The issue has been resolved and the service is operating normally.\n"
         },
         {
           "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
@@ -294,9 +294,9 @@
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 1072,
+      "consecutive_anomalies": 1073,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 5445109,
+      "anomaly_seconds": 5448151,
       "latest_incident_link": null
     }
   ],
