@@ -2,14 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 0.00 | 0 | 0 | 73 | 0 | critical |
-| Claude | 97.26 | 71 | 1 | 1 | 0 | ok |
-| Gemini | 100.00 | 73 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 73 | 0 | 0 | 0 | ok |
-| OpenAI | 80.82 | 59 | 14 | 0 | 0 | ok |
+| AWS | 0.00 | 0 | 0 | 74 | 0 | critical |
+| Claude | 97.30 | 72 | 1 | 1 | 0 | ok |
+| Gemini | 100.00 | 74 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 74 | 0 | 0 | 0 | ok |
+| OpenAI | 81.08 | 60 | 14 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
+- 2026-08-21T23:44:31Z | 0 | Amazon Connect / Tokyo
+- 2026-08-21T23:44:31Z | 3 | Multiple services / UAE
+- 2026-08-21T23:44:31Z | 3 | Multiple services / Bahrain
 - 2026-08-21T23:19:50Z | 0 | Amazon Connect / Tokyo
 - 2026-08-21T23:19:50Z | 3 | Multiple services / UAE
 - 2026-08-21T23:19:50Z | 3 | Multiple services / Bahrain
@@ -17,9 +20,6 @@
 - 2026-08-21T22:54:01Z | 3 | Multiple services / UAE
 - 2026-08-21T22:54:01Z | 3 | Multiple services / Bahrain
 - 2026-08-21T22:28:06Z | 0 | Amazon Connect / Tokyo
-- 2026-08-21T22:28:06Z | 3 | Multiple services / UAE
-- 2026-08-21T22:28:06Z | 3 | Multiple services / Bahrain
-- 2026-08-21T21:57:13Z | 0 | Amazon Connect / Tokyo
 
 ### Claude
 - 无事件记录
