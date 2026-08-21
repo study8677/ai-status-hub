@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-08-21T20:59:11Z",
+  "generated_at": "2026-08-21T21:33:17Z",
   "window": {
     "start": "2026-08-20T00:00:00Z",
-    "end": "2026-08-21T20:59:11Z"
+    "end": "2026-08-21T21:33:17Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 68,
-      "measured_checks_24h": 68,
+      "total_checks_24h": 69,
+      "measured_checks_24h": 69,
       "ok": 58,
-      "warn": 10,
+      "warn": 11,
       "critical": 0,
       "unknown": 0,
-      "sla": 85.29,
+      "sla": 84.06,
       "latest_status": "warn",
-      "latest_at": "2026-08-21T20:59:10Z",
+      "latest_at": "2026-08-21T21:33:16Z",
       "recent_incidents": [
+        {
+          "time": "2026-08-21T21:33:16Z",
+          "name": "Unexpected logouts for some ChatGPT web users",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-08-21T20:59:10Z",
           "name": "Unexpected logouts for some ChatGPT web users",
@@ -37,53 +43,71 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 68,
-      "measured_checks_24h": 68,
-      "ok": 66,
+      "total_checks_24h": 69,
+      "measured_checks_24h": 69,
+      "ok": 67,
       "warn": 1,
       "critical": 1,
       "unknown": 0,
-      "sla": 97.06,
+      "sla": 97.1,
       "latest_status": "ok",
-      "latest_at": "2026-08-21T20:59:10Z",
+      "latest_at": "2026-08-21T21:33:16Z",
       "recent_incidents": []
     },
     "Gemini": {
-      "total_checks_24h": 68,
-      "measured_checks_24h": 68,
-      "ok": 68,
+      "total_checks_24h": 69,
+      "measured_checks_24h": 69,
+      "ok": 69,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-21T20:59:11Z",
+      "latest_at": "2026-08-21T21:33:17Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 68,
-      "measured_checks_24h": 68,
-      "ok": 68,
+      "total_checks_24h": 69,
+      "measured_checks_24h": 69,
+      "ok": 69,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-21T20:59:11Z",
+      "latest_at": "2026-08-21T21:33:17Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 68,
-      "measured_checks_24h": 68,
+      "total_checks_24h": 69,
+      "measured_checks_24h": 69,
       "ok": 0,
       "warn": 0,
-      "critical": 68,
+      "critical": 69,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-21T20:59:11Z",
+      "latest_at": "2026-08-21T21:33:17Z",
       "recent_incidents": [
         {
+          "time": "2026-08-21T21:33:17Z",
+          "name": "Amazon Connect / Tokyo",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-08-21T21:33:17Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-21T21:33:17Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-21T20:59:11Z",
           "name": "Amazon Connect / Tokyo",
           "status": "0",
@@ -218,30 +242,6 @@
         {
           "time": "2026-08-21T17:37:51Z",
           "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-21T17:37:51Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-21T16:59:10Z",
-          "name": "Amazon Connect / Tokyo",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-08-21T16:59:10Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-21T16:59:10Z",
-          "name": "Multiple services / Bahrain",
           "status": "3",
           "link": null
         }
