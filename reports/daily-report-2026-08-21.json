@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-08-21T21:33:17Z",
+  "generated_at": "2026-08-21T21:57:13Z",
   "window": {
     "start": "2026-08-20T00:00:00Z",
-    "end": "2026-08-21T21:33:17Z"
+    "end": "2026-08-21T21:57:13Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 69,
-      "measured_checks_24h": 69,
+      "total_checks_24h": 70,
+      "measured_checks_24h": 70,
       "ok": 58,
-      "warn": 11,
+      "warn": 12,
       "critical": 0,
       "unknown": 0,
-      "sla": 84.06,
+      "sla": 82.86,
       "latest_status": "warn",
-      "latest_at": "2026-08-21T21:33:16Z",
+      "latest_at": "2026-08-21T21:57:12Z",
       "recent_incidents": [
+        {
+          "time": "2026-08-21T21:57:12Z",
+          "name": "Unexpected logouts for some ChatGPT web users",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-08-21T21:33:16Z",
           "name": "Unexpected logouts for some ChatGPT web users",
@@ -43,53 +49,71 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 69,
-      "measured_checks_24h": 69,
-      "ok": 67,
+      "total_checks_24h": 70,
+      "measured_checks_24h": 70,
+      "ok": 68,
       "warn": 1,
       "critical": 1,
       "unknown": 0,
-      "sla": 97.1,
+      "sla": 97.14,
       "latest_status": "ok",
-      "latest_at": "2026-08-21T21:33:16Z",
+      "latest_at": "2026-08-21T21:57:12Z",
       "recent_incidents": []
     },
     "Gemini": {
-      "total_checks_24h": 69,
-      "measured_checks_24h": 69,
-      "ok": 69,
+      "total_checks_24h": 70,
+      "measured_checks_24h": 70,
+      "ok": 70,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-21T21:33:17Z",
+      "latest_at": "2026-08-21T21:57:12Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 69,
-      "measured_checks_24h": 69,
-      "ok": 69,
+      "total_checks_24h": 70,
+      "measured_checks_24h": 70,
+      "ok": 70,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-21T21:33:17Z",
+      "latest_at": "2026-08-21T21:57:12Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 69,
-      "measured_checks_24h": 69,
+      "total_checks_24h": 70,
+      "measured_checks_24h": 70,
       "ok": 0,
       "warn": 0,
-      "critical": 69,
+      "critical": 70,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-21T21:33:17Z",
+      "latest_at": "2026-08-21T21:57:13Z",
       "recent_incidents": [
         {
+          "time": "2026-08-21T21:57:13Z",
+          "name": "Amazon Connect / Tokyo",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-08-21T21:57:13Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-21T21:57:13Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-21T21:33:17Z",
           "name": "Amazon Connect / Tokyo",
           "status": "0",
@@ -219,30 +243,6 @@
           "time": "2026-08-21T18:02:51Z",
           "name": "Amazon Connect / Tokyo",
           "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-08-21T18:02:51Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-21T18:02:51Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-21T17:37:51Z",
-          "name": "Amazon Connect / Tokyo",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-08-21T17:37:51Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
           "link": null
         }
       ]
