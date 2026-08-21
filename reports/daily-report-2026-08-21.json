@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-08-21T20:36:35Z",
+  "generated_at": "2026-08-21T20:59:11Z",
   "window": {
     "start": "2026-08-20T00:00:00Z",
-    "end": "2026-08-21T20:36:35Z"
+    "end": "2026-08-21T20:59:11Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 67,
-      "measured_checks_24h": 67,
+      "total_checks_24h": 68,
+      "measured_checks_24h": 68,
       "ok": 58,
-      "warn": 9,
+      "warn": 10,
       "critical": 0,
       "unknown": 0,
-      "sla": 86.57,
+      "sla": 85.29,
       "latest_status": "warn",
-      "latest_at": "2026-08-21T20:36:33Z",
+      "latest_at": "2026-08-21T20:59:10Z",
       "recent_incidents": [
+        {
+          "time": "2026-08-21T20:59:10Z",
+          "name": "Unexpected logouts for some ChatGPT web users",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-08-21T20:36:33Z",
           "name": "Unexpected logouts for some ChatGPT web users",
@@ -31,53 +37,71 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 67,
-      "measured_checks_24h": 67,
-      "ok": 65,
+      "total_checks_24h": 68,
+      "measured_checks_24h": 68,
+      "ok": 66,
       "warn": 1,
       "critical": 1,
       "unknown": 0,
-      "sla": 97.01,
+      "sla": 97.06,
       "latest_status": "ok",
-      "latest_at": "2026-08-21T20:36:34Z",
+      "latest_at": "2026-08-21T20:59:10Z",
       "recent_incidents": []
     },
     "Gemini": {
-      "total_checks_24h": 67,
-      "measured_checks_24h": 67,
-      "ok": 67,
+      "total_checks_24h": 68,
+      "measured_checks_24h": 68,
+      "ok": 68,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-21T20:36:34Z",
+      "latest_at": "2026-08-21T20:59:11Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 67,
-      "measured_checks_24h": 67,
-      "ok": 67,
+      "total_checks_24h": 68,
+      "measured_checks_24h": 68,
+      "ok": 68,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-21T20:36:34Z",
+      "latest_at": "2026-08-21T20:59:11Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 67,
-      "measured_checks_24h": 67,
+      "total_checks_24h": 68,
+      "measured_checks_24h": 68,
       "ok": 0,
       "warn": 0,
-      "critical": 67,
+      "critical": 68,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-08-21T20:36:34Z",
+      "latest_at": "2026-08-21T20:59:11Z",
       "recent_incidents": [
         {
+          "time": "2026-08-21T20:59:11Z",
+          "name": "Amazon Connect / Tokyo",
+          "status": "0",
+          "link": null
+        },
+        {
+          "time": "2026-08-21T20:59:11Z",
+          "name": "Multiple services / UAE",
+          "status": "3",
+          "link": null
+        },
+        {
+          "time": "2026-08-21T20:59:11Z",
+          "name": "Multiple services / Bahrain",
+          "status": "3",
+          "link": null
+        },
+        {
           "time": "2026-08-21T20:36:34Z",
           "name": "Amazon Connect / Tokyo",
           "status": "0",
@@ -219,30 +243,6 @@
           "time": "2026-08-21T16:59:10Z",
           "name": "Multiple services / Bahrain",
           "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-21T16:21:37Z",
-          "name": "Amazon Connect / Tokyo",
-          "status": "0",
-          "link": null
-        },
-        {
-          "time": "2026-08-21T16:21:37Z",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-21T16:21:37Z",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "link": null
-        },
-        {
-          "time": "2026-08-21T15:52:08Z",
-          "name": "Amazon Connect / Tokyo",
-          "status": "0",
           "link": null
         }
       ]
