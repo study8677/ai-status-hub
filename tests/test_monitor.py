@@ -132,18 +132,19 @@ class MonitorParserTests(unittest.TestCase):
         self.assertEqual(result.active_incidents, [])
 
     def test_aws_utf16_current_event_uses_event_timestamp_and_status_level(self) -> None:
+        recent_timestamp = int(SAMPLE_TIME.timestamp()) - 86400
         payload = [
             {
-                "date": "1772369485",
+                "date": str(recent_timestamp),
                 "arn": "arn:aws:health:::event/test",
                 "region_name": "UAE",
                 "status": "3",
-                "service": "multipleservices-me-central-1",
-                "service_name": "Multiple services",
+                "service": "bedrock-me-central-1",
+                "service_name": "Amazon Bedrock",
                 "summary": "Increased Error Rates",
                 "event_log": [
-                    {"summary": "Investigating", "message": "Investigating", "status": 1, "timestamp": 1772369485},
-                    {"summary": "Update", "message": "Still impacted", "status": 3, "timestamp": 1772371152},
+                    {"summary": "Investigating", "message": "Investigating", "status": 1, "timestamp": recent_timestamp},
+                    {"summary": "Update", "message": "Still impacted", "status": 3, "timestamp": recent_timestamp + 1800},
                 ],
             }
         ]
@@ -151,8 +152,9 @@ class MonitorParserTests(unittest.TestCase):
         result = parse_aws_service(json.dumps(payload).encode("utf-16"), service("AWS", "aws"), SAMPLE_TIME)
 
         self.assertEqual(result.level, "critical")
-        self.assertEqual(result.updated_at, "2026-03-01T13:19:12Z")
+        self.assertIn("2026-06-18", result.updated_at)
         self.assertEqual(result.active_incidents[0]["latest_message"], "Still impacted")
+        self.assertEqual(result.active_incidents[0]["status"], "critical")
 
     def test_unknown_source_failure_does_not_create_provider_alert(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:
@@ -208,6 +210,106 @@ class MonitorParserTests(unittest.TestCase):
             self.assertIn("ai-status-hub-language", html)
             for name in ["robots.txt", "sitemap.xml", "favicon.svg", "status.svg", "og.svg", "last_run.json", "schema/last_run.schema.json"]:
                 self.assertTrue((public_dir / name).exists(), name)
+
+    def test_aws_filters_out_stale_events(self) -> None:
+        old_timestamp = "1703980800"
+        payload = [
+            {
+                "date": old_timestamp,
+                "arn": "arn:aws:health:us-east-1::event/BEDROCK/stale",
+                "region_name": "US East",
+                "status": "3",
+                "service": "bedrock-us-east-1",
+                "service_name": "Amazon Bedrock",
+                "summary": "Old incident",
+                "event_log": [
+                    {"summary": "Old", "message": "Very old", "status": 3, "timestamp": int(old_timestamp)},
+                ],
+            }
+        ]
+
+        result = parse_aws_service(json.dumps(payload).encode(), service("AWS", "aws"), SAMPLE_TIME)
+
+        self.assertEqual(result.level, "ok")
+        self.assertEqual(len(result.active_incidents), 0)
+
+    def test_aws_filters_non_ai_services(self) -> None:
+        recent_timestamp = int(SAMPLE_TIME.timestamp()) - 86400
+        payload = [
+            {
+                "date": str(recent_timestamp),
+                "arn": "arn:aws:health:me-central-1::event/EC2/recent",
+                "region_name": "UAE",
+                "status": "3",
+                "service": "ec2-me-central-1",
+                "service_name": "Amazon EC2",
+                "summary": "EC2 disruption",
+                "event_log": [
+                    {"summary": "Recent", "message": "EC2 issue", "status": 3, "timestamp": recent_timestamp},
+                ],
+            },
+            {
+                "date": str(recent_timestamp),
+                "arn": "arn:aws:health:us-east-1::event/SAGEMAKER/recent",
+                "region_name": "US East",
+                "status": "2",
+                "service": "sagemaker-us-east-1",
+                "service_name": "Amazon SageMaker",
+                "summary": "SageMaker degradation",
+                "event_log": [
+                    {"summary": "Recent", "message": "SageMaker issue", "status": 2, "timestamp": recent_timestamp},
+                ],
+            },
+        ]
+
+        result = parse_aws_service(json.dumps(payload).encode(), service("AWS", "aws"), SAMPLE_TIME)
+
+        self.assertEqual(result.level, "warn")
+        self.assertEqual(len(result.active_incidents), 1)
+        self.assertEqual(result.active_incidents[0]["name"], "Amazon SageMaker / US East")
+
+    def test_aws_numeric_status_converts_to_human_readable(self) -> None:
+        recent_timestamp = int(SAMPLE_TIME.timestamp()) - 86400
+        payload = [
+            {
+                "date": str(recent_timestamp),
+                "arn": "arn:aws:health:::event/bedrock-test",
+                "region_name": "US East",
+                "status": "3",
+                "service": "bedrock-us-east-1",
+                "service_name": "Amazon Bedrock",
+                "summary": "Bedrock issue",
+                "event_log": [
+                    {"summary": "Testing", "message": "Test", "status": 3, "timestamp": recent_timestamp},
+                ],
+            }
+        ]
+
+        result = parse_aws_service(json.dumps(payload).encode(), service("AWS", "aws"), SAMPLE_TIME)
+
+        self.assertEqual(result.active_incidents[0]["status"], "critical")
+
+    def test_aws_ended_events_are_filtered(self) -> None:
+        payload = [
+            {
+                "date": "1719630000",
+                "end": "1719640000",
+                "arn": "arn:aws:health:::event/bedrock-ended",
+                "region_name": "US East",
+                "status": "0",
+                "service": "bedrock-us-east-1",
+                "service_name": "Amazon Bedrock",
+                "summary": "Resolved issue",
+                "event_log": [
+                    {"summary": "Resolved", "message": "All good", "status": 0, "timestamp": 1719640000},
+                ],
+            }
+        ]
+
+        result = parse_aws_service(json.dumps(payload).encode(), service("AWS", "aws"), SAMPLE_TIME)
+
+        self.assertEqual(result.level, "ok")
+        self.assertEqual(len(result.active_incidents), 0)
 
 
 if __name__ == "__main__":

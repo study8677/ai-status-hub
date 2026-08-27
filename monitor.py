@@ -521,10 +521,51 @@ def _epoch_to_datetime(value: Any) -> Optional[datetime]:
         return None
 
 
+def _is_aws_ai_service(service_name: str, summary: str) -> bool:
+    service_lower = service_name.lower()
+    summary_lower = summary.lower()
+    ai_keywords = [
+        "bedrock",
+        "sagemaker",
+        "amazon q",
+        "codewhisperer",
+        "comprehend",
+        "rekognition",
+        "polly",
+        "transcribe",
+        "translate",
+        "textract",
+        "lex",
+        "kendra",
+        "personalize",
+        "forecast",
+    ]
+    return any(keyword in service_lower or keyword in summary_lower for keyword in ai_keywords)
+
+
+def _aws_status_to_text(status: Any) -> str:
+    status_str = str(status or "")
+    if status_str == "0":
+        return "resolved"
+    elif status_str == "1":
+        return "investigating"
+    elif status_str == "2":
+        return "degraded"
+    elif status_str == "3":
+        return "critical"
+    elif status_str == "4":
+        return "monitoring"
+    elif status_str == "5":
+        return "resolved"
+    else:
+        return status_str or "active"
+
+
 def parse_aws_service(raw: bytes, config: ServiceConfig, sample_time: datetime) -> CheckResult:
     data = read_json(raw)
     events = _coerce_list(data)
     active_events = []
+    stale_cutoff_days = 30
 
     for event in events:
         if not isinstance(event, dict):
@@ -546,9 +587,13 @@ def parse_aws_service(raw: bytes, config: ServiceConfig, sample_time: datetime) 
         )
         updated_at_dt = _epoch_to_datetime(latest_log.get("timestamp")) or _epoch_to_datetime(event.get("date"))
 
+        if updated_at_dt and (sample_time - updated_at_dt).days > stale_cutoff_days:
+            continue
+
+        if not _is_aws_ai_service(service_name, summary):
+            continue
+
         severity = "warn"
-        # AWS public currentevents exposes numeric current/max impact values;
-        # observed status 3 is the highest active impact level in the payload.
         if status_text == "3":
             severity = "critical"
         if any(token in summary.lower() for token in ["outage", "disruption", "unavailable"]):
@@ -560,7 +605,7 @@ def parse_aws_service(raw: bytes, config: ServiceConfig, sample_time: datetime) 
             {
                 "id": event.get("arn"),
                 "name": f"{service_name} / {region}" if region else service_name,
-                "status": event_status or "active",
+                "status": _aws_status_to_text(event_status),
                 "summary": summary,
                 "updated_at": updated_at_dt.isoformat().replace("+00:00", "Z") if updated_at_dt else None,
                 "link": None,
