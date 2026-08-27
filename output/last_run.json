@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-27T05:03:08Z",
+  "generated_at": "2026-08-27T16:26:36Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-08-27T05:03:07Z",
+      "time": "2026-08-27T16:26:35Z",
       "overall_status": "none",
       "components": [
         {
@@ -142,13 +142,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 188,
+      "consecutive_recoveries": 189,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-08-27T05:03:07Z",
+      "time": "2026-08-27T16:26:36Z",
       "overall_status": "none",
       "components": [
         {
@@ -185,37 +185,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-08-27T04:24:37.426Z",
+      "updated_at": "2026-08-27T15:39:22.600Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 83,
+      "consecutive_recoveries": 84,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-08-27T05:03:07Z",
+      "time": "2026-08-27T16:26:36Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-08-27T05:03:07Z",
+      "updated_at": "2026-08-27T16:26:36Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1293,
+      "consecutive_recoveries": 1294,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-08-27T05:03:07Z",
+      "time": "2026-08-27T16:26:36Z",
       "overall_status": "operational",
       "components": [
         {
@@ -232,60 +232,26 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 341,
+      "consecutive_recoveries": 342,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-08-27T05:03:08Z",
-      "overall_status": "major_outage",
-      "components": [
-        {
-          "name": "Multiple services / UAE",
-          "status": "degraded",
-          "region": "UAE"
-        },
-        {
-          "name": "Multiple services / Bahrain",
-          "status": "degraded",
-          "region": "Bahrain"
-        }
-      ],
-      "active_incidents": [
-        {
-          "id": "arn:aws:health:me-central-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_5E6B8_EF2498889B5",
-          "name": "Multiple services / UAE",
-          "status": "3",
-          "summary": "Increased Error Rates",
-          "updated_at": "2026-04-30T07:25:54Z",
-          "link": null,
-          "region": "UAE",
-          "severity": "critical",
-          "latest_message": "We are providing an update on the ongoing service disruption. The Middle East (UAE) Region (ME-CENTRAL-1) has suffered damage as a result of the conflict in the Middle East and is currently unable to reliably support customer applications. While some workloads continue to function normally, we strongly recommend customers migrate all accessible resources to other Regions and restore inaccessible resources from remote backups as soon as possible. Relevant billing operations are currently suspended while we restore normal operations in this AWS Region. This process is expected to take several months. "
-        },
-        {
-          "id": "arn:aws:health:me-south-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_E6426_01AD72B4E1E",
-          "name": "Multiple services / Bahrain",
-          "status": "3",
-          "summary": "Increased Error Rates",
-          "updated_at": "2026-04-30T07:07:11Z",
-          "link": null,
-          "region": "Bahrain",
-          "severity": "critical",
-          "latest_message": "We are providing an update on the ongoing service disruption. The Middle East (Bahrain) Region (ME-SOUTH-1) has suffered damage due to the conflict in the Middle East and is currently unavailable. Customers should recover their resources in other Regions from remote backups. Relevant billing operations are currently suspended while we restore normal operations in this AWS Region. This process is expected to take several months.  "
-        }
-      ],
-      "raw_score": 20,
+      "time": "2026-08-27T16:26:36Z",
+      "overall_status": "operational",
+      "components": [],
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-04-30T07:25:54Z",
+      "updated_at": "2026-08-27T16:26:36.456692Z",
       "source_url": "https://status.aws.amazon.com",
-      "level": "critical",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-06-19T02:20:03Z",
-      "consecutive_anomalies": 1293,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 5971385,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
