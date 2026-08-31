@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-08-31T20:06:22Z",
+  "generated_at": "2026-08-31T23:50:21Z",
   "window": {
     "start": "2026-08-30T00:00:00Z",
-    "end": "2026-08-31T20:06:22Z"
+    "end": "2026-08-31T23:50:21Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
       "ok": 9,
-      "warn": 0,
+      "warn": 1,
       "critical": 1,
       "unknown": 0,
-      "sla": 90.0,
-      "latest_status": "critical",
-      "latest_at": "2026-08-31T20:06:22Z",
+      "sla": 81.82,
+      "latest_status": "warn",
+      "latest_at": "2026-08-31T23:50:20Z",
       "recent_incidents": [
+        {
+          "time": "2026-08-31T23:50:20Z",
+          "name": "Elevated latency in the Responses API",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-08-31T20:06:22Z",
           "name": "ChatGPT Work seeing elevated errors and latency",
@@ -25,15 +31,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 9,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 10,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 90.0,
-      "latest_status": "warn",
-      "latest_at": "2026-08-31T20:06:22Z",
+      "sla": 90.91,
+      "latest_status": "ok",
+      "latest_at": "2026-08-31T23:50:20Z",
       "recent_incidents": [
         {
           "time": "2026-08-31T20:06:22Z",
@@ -44,39 +50,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-31T20:06:22Z",
+      "latest_at": "2026-08-31T23:50:20Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-31T20:06:22Z",
+      "latest_at": "2026-08-31T23:50:20Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-08-31T20:06:22Z",
+      "latest_at": "2026-08-31T23:50:21Z",
       "recent_incidents": []
     }
   }
