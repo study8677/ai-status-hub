@@ -1,0 +1,95 @@
+{
+  "generated_at": "2026-09-01T02:07:53Z",
+  "window": {
+    "start": "2026-08-31T00:00:00Z",
+    "end": "2026-09-01T02:07:53Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 3,
+      "warn": 2,
+      "critical": 1,
+      "unknown": 0,
+      "sla": 50.0,
+      "latest_status": "warn",
+      "latest_at": "2026-09-01T02:07:51Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-01T02:07:51Z",
+          "name": "Elevated latency in the Responses API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-31T23:50:20Z",
+          "name": "Elevated latency in the Responses API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-08-31T20:06:22Z",
+          "name": "ChatGPT Work seeing elevated errors and latency",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 5,
+      "warn": 1,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 83.33,
+      "latest_status": "ok",
+      "latest_at": "2026-09-01T02:07:52Z",
+      "recent_incidents": [
+        {
+          "time": "2026-08-31T20:06:22Z",
+          "name": "Degraded performance on claude.ai and Claude Code",
+          "status": "investigating",
+          "link": "https://stspg.io/gny7dn3k231b"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-01T02:07:52Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-01T02:07:52Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-01T02:07:52Z",
+      "recent_incidents": []
+    }
+  }
+}
