@@ -2,11 +2,11 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 7 | 0 | 0 | 0 | ok |
-| Claude | 85.71 | 6 | 1 | 0 | 0 | ok |
-| Gemini | 100.00 | 7 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 7 | 0 | 0 | 0 | ok |
-| OpenAI | 42.86 | 3 | 3 | 1 | 0 | warn |
+| AWS | 100.00 | 8 | 0 | 0 | 0 | ok |
+| Claude | 87.50 | 7 | 1 | 0 | 0 | ok |
+| Gemini | 100.00 | 8 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 8 | 0 | 0 | 0 | ok |
+| OpenAI | 37.50 | 3 | 4 | 1 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
@@ -19,6 +19,7 @@
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-09-01T12:51:12Z | monitoring | Elevated latency in the Responses API
 - 2026-09-01T07:48:35Z | monitoring | Elevated latency in the Responses API
 - 2026-09-01T02:07:51Z | monitoring | Elevated latency in the Responses API
 - 2026-08-31T23:50:20Z | monitoring | Elevated latency in the Responses API

@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-09-01T07:48:37Z",
+  "generated_at": "2026-09-01T12:51:13Z",
   "window": {
     "start": "2026-08-31T00:00:00Z",
-    "end": "2026-09-01T07:48:37Z"
+    "end": "2026-09-01T12:51:13Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
       "ok": 3,
-      "warn": 3,
+      "warn": 4,
       "critical": 1,
       "unknown": 0,
-      "sla": 42.86,
+      "sla": 37.5,
       "latest_status": "warn",
-      "latest_at": "2026-09-01T07:48:35Z",
+      "latest_at": "2026-09-01T12:51:12Z",
       "recent_incidents": [
+        {
+          "time": "2026-09-01T12:51:12Z",
+          "name": "Elevated latency in the Responses API",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-09-01T07:48:35Z",
           "name": "Elevated latency in the Responses API",
@@ -43,15 +49,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 6,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 7,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 85.71,
+      "sla": 87.5,
       "latest_status": "ok",
-      "latest_at": "2026-09-01T07:48:35Z",
+      "latest_at": "2026-09-01T12:51:12Z",
       "recent_incidents": [
         {
           "time": "2026-08-31T20:06:22Z",
@@ -62,39 +68,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-01T07:48:35Z",
+      "latest_at": "2026-09-01T12:51:12Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-01T07:48:36Z",
+      "latest_at": "2026-09-01T12:51:12Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-01T07:48:36Z",
+      "latest_at": "2026-09-01T12:51:13Z",
       "recent_incidents": []
     }
   }
