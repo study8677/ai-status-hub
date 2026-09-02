@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-02T00:22:17Z",
+  "generated_at": "2026-09-02T04:50:40Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-02T00:22:14Z",
+      "time": "2026-09-02T04:50:39Z",
       "overall_status": "none",
       "components": [
         {
@@ -142,14 +142,14 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 3,
+      "consecutive_recoveries": 4,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-02T00:22:14Z",
-      "overall_status": "minor",
+      "time": "2026-09-02T04:50:39Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "claude.ai",
@@ -158,8 +158,8 @@
         },
         {
           "name": "Claude Console (platform.claude.com)",
-          "status": "degraded_performance",
-          "updated_at": "2026-09-01T23:26:49.023Z"
+          "status": "operational",
+          "updated_at": "2026-09-02T01:24:22.227Z"
         },
         {
           "name": "Claude API (api.anthropic.com)",
@@ -182,51 +182,40 @@
           "updated_at": "2026-06-30T14:45:50.487Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "620swtqyn24k",
-          "name": "Delays in credit purchases",
-          "status": "monitoring",
-          "impact": "minor",
-          "shortlink": "https://stspg.io/jc510qy51bfh",
-          "started_at": "2026-09-01T23:26:48.992Z",
-          "updated_at": "2026-09-02T00:21:10.547Z",
-          "url": "https://stspg.io/jc510qy51bfh"
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-09-02T00:21:10.549Z",
+      "updated_at": "2026-09-02T04:00:01.968Z",
       "source_url": "https://status.claude.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
-      "first_anomaly_at": "2026-09-02T00:22:14Z",
-      "consecutive_anomalies": 1,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
-      "latest_incident_link": "https://stspg.io/jc510qy51bfh"
+      "first_anomaly_at": null,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
+      "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-09-02T00:22:15Z",
+      "time": "2026-09-02T04:50:39Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-02T00:22:15Z",
+      "updated_at": "2026-09-02T04:50:39Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1321,
+      "consecutive_recoveries": 1322,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-02T00:22:15Z",
+      "time": "2026-09-02T04:50:40Z",
       "overall_status": "operational",
       "components": [
         {
@@ -243,25 +232,25 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 369,
+      "consecutive_recoveries": 370,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-02T00:22:16Z",
+      "time": "2026-09-02T04:50:40Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-02T00:22:16.760520Z",
+      "updated_at": "2026-09-02T04:50:40.448135Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 28,
+      "consecutive_recoveries": 29,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
