@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-09-02T00:22:17Z",
+  "window": {
+    "start": "2026-09-01T00:00:00Z",
+    "end": "2026-09-02T00:22:17Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 3,
+      "warn": 4,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 42.86,
+      "latest_status": "ok",
+      "latest_at": "2026-09-02T00:22:14Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-01T17:03:46Z",
+          "name": "Elevated latency in the Responses API",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-09-01T12:51:12Z",
+          "name": "Elevated latency in the Responses API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-09-01T07:48:35Z",
+          "name": "Elevated latency in the Responses API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-09-01T02:07:51Z",
+          "name": "Elevated latency in the Responses API",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 6,
+      "warn": 1,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 85.71,
+      "latest_status": "warn",
+      "latest_at": "2026-09-02T00:22:14Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-02T00:22:14Z",
+          "name": "Delays in credit purchases",
+          "status": "monitoring",
+          "link": "https://stspg.io/jc510qy51bfh"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-02T00:22:15Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-02T00:22:15Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-02T00:22:16Z",
+      "recent_incidents": []
+    }
+  }
+}

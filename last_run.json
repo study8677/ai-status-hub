@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-01T22:19:37Z",
+  "generated_at": "2026-09-02T00:22:17Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-01T22:19:35Z",
+      "time": "2026-09-02T00:22:14Z",
       "overall_status": "none",
       "components": [
         {
@@ -142,14 +142,14 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 2,
+      "consecutive_recoveries": 3,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-01T22:19:36Z",
-      "overall_status": "none",
+      "time": "2026-09-02T00:22:14Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "claude.ai",
@@ -158,8 +158,8 @@
         },
         {
           "name": "Claude Console (platform.claude.com)",
-          "status": "operational",
-          "updated_at": "2026-09-01T18:07:03.341Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-09-01T23:26:49.023Z"
         },
         {
           "name": "Claude API (api.anthropic.com)",
@@ -182,40 +182,51 @@
           "updated_at": "2026-06-30T14:45:50.487Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "620swtqyn24k",
+          "name": "Delays in credit purchases",
+          "status": "monitoring",
+          "impact": "minor",
+          "shortlink": "https://stspg.io/jc510qy51bfh",
+          "started_at": "2026-09-01T23:26:48.992Z",
+          "updated_at": "2026-09-02T00:21:10.547Z",
+          "url": "https://stspg.io/jc510qy51bfh"
+        }
+      ],
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-09-01T21:59:25.787Z",
+      "updated_at": "2026-09-02T00:21:10.549Z",
       "source_url": "https://status.claude.com",
-      "level": "ok",
+      "level": "warn",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 7,
-      "anomaly_seconds": null,
-      "latest_incident_link": null
+      "first_anomaly_at": "2026-09-02T00:22:14Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
+      "latest_incident_link": "https://stspg.io/jc510qy51bfh"
     },
     {
       "service": "Gemini",
-      "time": "2026-09-01T22:19:36Z",
+      "time": "2026-09-02T00:22:15Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-01T22:19:36Z",
+      "updated_at": "2026-09-02T00:22:15Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1320,
+      "consecutive_recoveries": 1321,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-01T22:19:36Z",
+      "time": "2026-09-02T00:22:15Z",
       "overall_status": "operational",
       "components": [
         {
@@ -232,35 +243,28 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 368,
+      "consecutive_recoveries": 369,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-01T22:19:37Z",
+      "time": "2026-09-02T00:22:16Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-01T22:19:37.523291Z",
+      "updated_at": "2026-09-02T00:22:16.760520Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 27,
+      "consecutive_recoveries": 28,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": [
-    {
-      "type": "recover",
-      "service": "OpenAI",
-      "level": "ok",
-      "message": "OpenAI recovered"
-    }
-  ]
+  "alerts": []
 }
