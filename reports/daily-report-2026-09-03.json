@@ -1,33 +1,39 @@
 {
-  "generated_at": "2026-09-03T09:43:05Z",
+  "generated_at": "2026-09-03T13:56:22Z",
   "window": {
     "start": "2026-09-02T00:00:00Z",
-    "end": "2026-09-03T09:43:05Z"
+    "end": "2026-09-03T13:56:22Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-03T09:43:04Z",
+      "latest_at": "2026-09-03T13:56:20Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
       "ok": 9,
       "warn": 1,
-      "critical": 0,
+      "critical": 1,
       "unknown": 0,
-      "sla": 90.0,
-      "latest_status": "ok",
-      "latest_at": "2026-09-03T09:43:04Z",
+      "sla": 81.82,
+      "latest_status": "critical",
+      "latest_at": "2026-09-03T13:56:21Z",
       "recent_incidents": [
+        {
+          "time": "2026-09-03T13:56:21Z",
+          "name": "Elevated errors for multiple models",
+          "status": "identified",
+          "link": "https://stspg.io/9xz4hhmd1jzn"
+        },
         {
           "time": "2026-09-02T00:22:14Z",
           "name": "Delays in credit purchases",
@@ -37,39 +43,46 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-03T09:43:04Z",
+      "latest_at": "2026-09-03T13:56:21Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
       "ok": 10,
       "warn": 0,
-      "critical": 0,
+      "critical": 1,
       "unknown": 0,
-      "sla": 100.0,
-      "latest_status": "ok",
-      "latest_at": "2026-09-03T09:43:05Z",
-      "recent_incidents": []
+      "sla": 90.91,
+      "latest_status": "critical",
+      "latest_at": "2026-09-03T13:56:21Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-03T13:56:21Z",
+          "name": "[Grok (Android)] Models outage",
+          "status": "critical",
+          "link": "https://status.x.ai/android-app/INC39335c37"
+        }
+      ]
     },
     "AWS": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-03T09:43:05Z",
+      "latest_at": "2026-09-03T13:56:21Z",
       "recent_incidents": []
     }
   }

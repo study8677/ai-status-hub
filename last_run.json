@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-03T09:43:05Z",
+  "generated_at": "2026-09-03T13:56:22Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-03T09:43:04Z",
+      "time": "2026-09-03T13:56:20Z",
       "overall_status": "none",
       "components": [
         {
@@ -142,19 +142,19 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 12,
+      "consecutive_recoveries": 13,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-03T09:43:04Z",
-      "overall_status": "none",
+      "time": "2026-09-03T13:56:21Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "claude.ai",
-          "status": "operational",
-          "updated_at": "2026-09-02T21:44:28.038Z"
+          "status": "partial_outage",
+          "updated_at": "2026-09-03T13:26:04.253Z"
         },
         {
           "name": "Claude Console (platform.claude.com)",
@@ -163,18 +163,18 @@
         },
         {
           "name": "Claude API (api.anthropic.com)",
-          "status": "operational",
-          "updated_at": "2026-09-02T21:44:28.051Z"
+          "status": "partial_outage",
+          "updated_at": "2026-09-03T13:26:04.275Z"
         },
         {
           "name": "Claude Code",
-          "status": "operational",
-          "updated_at": "2026-09-02T21:44:28.063Z"
+          "status": "partial_outage",
+          "updated_at": "2026-09-03T13:26:04.296Z"
         },
         {
           "name": "Claude Cowork",
-          "status": "operational",
-          "updated_at": "2026-09-02T21:44:28.074Z"
+          "status": "partial_outage",
+          "updated_at": "2026-09-03T13:26:04.316Z"
         },
         {
           "name": "Claude for Government",
@@ -182,75 +182,96 @@
           "updated_at": "2026-06-30T14:45:50.487Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "461yvfrzpwtt",
+          "name": "Elevated errors for multiple models",
+          "status": "identified",
+          "impact": "major",
+          "shortlink": "https://stspg.io/9xz4hhmd1jzn",
+          "started_at": "2026-09-03T13:26:04.201Z",
+          "updated_at": "2026-09-03T13:50:26.917Z",
+          "url": "https://stspg.io/9xz4hhmd1jzn"
+        }
+      ],
+      "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-09-03T09:04:46.353Z",
+      "updated_at": "2026-09-03T13:50:26.925Z",
       "source_url": "https://status.claude.com",
-      "level": "ok",
+      "level": "critical",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 9,
-      "anomaly_seconds": null,
-      "latest_incident_link": null
+      "first_anomaly_at": "2026-09-03T13:56:21Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
+      "latest_incident_link": "https://stspg.io/9xz4hhmd1jzn"
     },
     {
       "service": "Gemini",
-      "time": "2026-09-03T09:43:04Z",
+      "time": "2026-09-03T13:56:21Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-03T09:43:04Z",
+      "updated_at": "2026-09-03T13:56:21Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1330,
+      "consecutive_recoveries": 1331,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-03T09:43:05Z",
-      "overall_status": "operational",
+      "time": "2026-09-03T13:56:21Z",
+      "overall_status": "major_outage",
       "components": [
         {
           "name": "xAI System",
-          "status": "ok"
+          "status": "critical"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
-      "confidence": 0.85,
-      "updated_at": "2026-08-18T00:57:02Z",
+      "active_incidents": [
+        {
+          "id": "INC39335c37",
+          "name": "[Grok (Android)] Models outage",
+          "status": "critical",
+          "severity": "critical",
+          "link": "https://status.x.ai/android-app/INC39335c37",
+          "updated_at": "2026-09-03T13:43:17Z",
+          "raw_status": "<h3>Status: ACTIVE</h3>\n           <p>Severity: outage</p>\n           \n           <hr />\n           <h4>Updates:</h4>\n  "
+        }
+      ],
+      "raw_score": 20,
+      "confidence": 0.9,
+      "updated_at": "2026-09-03T13:45:37Z",
       "source_url": "https://status.x.ai/",
-      "level": "ok",
+      "level": "critical",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 378,
-      "anomaly_seconds": null,
-      "latest_incident_link": null
+      "first_anomaly_at": "2026-09-03T13:56:21Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
+      "latest_incident_link": "https://status.x.ai/android-app/INC39335c37"
     },
     {
       "service": "AWS",
-      "time": "2026-09-03T09:43:05Z",
+      "time": "2026-09-03T13:56:21Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-03T09:43:05.334583Z",
+      "updated_at": "2026-09-03T13:56:21.913287Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 37,
+      "consecutive_recoveries": 38,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
