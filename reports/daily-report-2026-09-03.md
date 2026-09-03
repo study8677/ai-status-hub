@@ -2,11 +2,11 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 11 | 0 | 0 | 0 | ok |
-| Claude | 81.82 | 9 | 1 | 1 | 0 | critical |
-| Gemini | 100.00 | 11 | 0 | 0 | 0 | ok |
-| Grok | 90.91 | 10 | 0 | 1 | 0 | critical |
-| OpenAI | 100.00 | 11 | 0 | 0 | 0 | ok |
+| AWS | 100.00 | 12 | 0 | 0 | 0 | ok |
+| Claude | 83.33 | 10 | 1 | 1 | 0 | ok |
+| Gemini | 100.00 | 12 | 0 | 0 | 0 | ok |
+| Grok | 91.67 | 11 | 0 | 1 | 0 | ok |
+| OpenAI | 100.00 | 12 | 0 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS

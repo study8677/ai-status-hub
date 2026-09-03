@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-03T13:56:22Z",
+  "generated_at": "2026-09-03T17:31:26Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-03T13:56:20Z",
+      "time": "2026-09-03T17:31:24Z",
       "overall_status": "none",
       "components": [
         {
@@ -58,56 +58,6 @@
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
-          "name": "Batch",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Embeddings",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Moderations",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Codex Web",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "VS Code extension",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Codex API",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Sites",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Chat Completions",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "File uploads",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Voice mode",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
           "name": "Search",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
@@ -128,7 +78,57 @@
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
+          "name": "Codex Web",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
           "name": "Connectors/Apps",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Codex in ChatGPT Desktop",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Codex API",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Batch",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Embeddings",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Moderations",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "VS Code extension",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Sites",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Chat Completions",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "File uploads",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         }
@@ -142,19 +142,19 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 13,
+      "consecutive_recoveries": 14,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-03T13:56:21Z",
-      "overall_status": "minor",
+      "time": "2026-09-03T17:31:24Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "claude.ai",
-          "status": "partial_outage",
-          "updated_at": "2026-09-03T13:26:04.253Z"
+          "status": "operational",
+          "updated_at": "2026-09-03T16:23:11.970Z"
         },
         {
           "name": "Claude Console (platform.claude.com)",
@@ -163,18 +163,18 @@
         },
         {
           "name": "Claude API (api.anthropic.com)",
-          "status": "partial_outage",
-          "updated_at": "2026-09-03T13:26:04.275Z"
+          "status": "operational",
+          "updated_at": "2026-09-03T16:23:11.985Z"
         },
         {
           "name": "Claude Code",
-          "status": "partial_outage",
-          "updated_at": "2026-09-03T13:26:04.296Z"
+          "status": "operational",
+          "updated_at": "2026-09-03T16:23:12.003Z"
         },
         {
           "name": "Claude Cowork",
-          "status": "partial_outage",
-          "updated_at": "2026-09-03T13:26:04.316Z"
+          "status": "operational",
+          "updated_at": "2026-09-03T16:23:12.021Z"
         },
         {
           "name": "Claude for Government",
@@ -182,96 +182,75 @@
           "updated_at": "2026-06-30T14:45:50.487Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "461yvfrzpwtt",
-          "name": "Elevated errors for multiple models",
-          "status": "identified",
-          "impact": "major",
-          "shortlink": "https://stspg.io/9xz4hhmd1jzn",
-          "started_at": "2026-09-03T13:26:04.201Z",
-          "updated_at": "2026-09-03T13:50:26.917Z",
-          "url": "https://stspg.io/9xz4hhmd1jzn"
-        }
-      ],
-      "raw_score": 20,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-09-03T13:50:26.925Z",
+      "updated_at": "2026-09-03T17:09:11.108Z",
       "source_url": "https://status.claude.com",
-      "level": "critical",
+      "level": "ok",
       "error": null,
-      "first_anomaly_at": "2026-09-03T13:56:21Z",
-      "consecutive_anomalies": 1,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
-      "latest_incident_link": "https://stspg.io/9xz4hhmd1jzn"
+      "first_anomaly_at": null,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
+      "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-09-03T13:56:21Z",
+      "time": "2026-09-03T17:31:25Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-03T13:56:21Z",
+      "updated_at": "2026-09-03T17:31:25Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1331,
+      "consecutive_recoveries": 1332,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-03T13:56:21Z",
-      "overall_status": "major_outage",
+      "time": "2026-09-03T17:31:25Z",
+      "overall_status": "operational",
       "components": [
         {
           "name": "xAI System",
-          "status": "critical"
+          "status": "ok"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "INC39335c37",
-          "name": "[Grok (Android)] Models outage",
-          "status": "critical",
-          "severity": "critical",
-          "link": "https://status.x.ai/android-app/INC39335c37",
-          "updated_at": "2026-09-03T13:43:17Z",
-          "raw_status": "<h3>Status: ACTIVE</h3>\n           <p>Severity: outage</p>\n           \n           <hr />\n           <h4>Updates:</h4>\n  "
-        }
-      ],
-      "raw_score": 20,
-      "confidence": 0.9,
-      "updated_at": "2026-09-03T13:45:37Z",
+      "active_incidents": [],
+      "raw_score": 100,
+      "confidence": 0.85,
+      "updated_at": "2026-09-03T17:10:57Z",
       "source_url": "https://status.x.ai/",
-      "level": "critical",
+      "level": "ok",
       "error": null,
-      "first_anomaly_at": "2026-09-03T13:56:21Z",
-      "consecutive_anomalies": 1,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
-      "latest_incident_link": "https://status.x.ai/android-app/INC39335c37"
+      "first_anomaly_at": null,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
+      "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-03T13:56:21Z",
+      "time": "2026-09-03T17:31:25Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-03T13:56:21.913287Z",
+      "updated_at": "2026-09-03T17:31:25.867958Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 38,
+      "consecutive_recoveries": 39,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
