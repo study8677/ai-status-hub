@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-04T04:51:00Z",
+  "generated_at": "2026-09-04T09:10:30Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-04T04:50:59Z",
-      "overall_status": "none",
+      "time": "2026-09-04T09:10:28Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "Images",
@@ -79,7 +79,7 @@
         },
         {
           "name": "Codex Web",
-          "status": "operational",
+          "status": "degraded_performance",
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
@@ -129,26 +129,37 @@
         },
         {
           "name": "File uploads",
-          "status": "operational",
+          "status": "degraded_performance",
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "01M1NKFZH5EEYEREC54HNAHY35",
+          "name": "Users in APAC region may face increased error in ChatGPT, Work, image generation, file upload, Voice, and Codex Cloud",
+          "status": "investigating",
+          "impact": "minor",
+          "shortlink": null,
+          "started_at": "2026-09-04T07:00:26Z",
+          "updated_at": "2026-09-04T07:07:01Z",
+          "url": null
+        }
+      ],
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-07-09T19:25:56Z",
+      "updated_at": "2026-09-04T07:00:26Z",
       "source_url": "https://status.openai.com",
-      "level": "ok",
+      "level": "warn",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 18,
-      "anomaly_seconds": null,
+      "first_anomaly_at": "2026-09-04T09:10:28Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-04T04:51:00Z",
+      "time": "2026-09-04T09:10:29Z",
       "overall_status": "none",
       "components": [
         {
@@ -185,37 +196,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-09-04T04:18:22.241Z",
+      "updated_at": "2026-09-04T08:34:24.947Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 5,
+      "consecutive_recoveries": 6,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-09-04T04:51:00Z",
+      "time": "2026-09-04T09:10:29Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-04T04:51:00Z",
+      "updated_at": "2026-09-04T09:10:29Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1336,
+      "consecutive_recoveries": 1337,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-04T04:51:00Z",
+      "time": "2026-09-04T09:10:29Z",
       "overall_status": "operational",
       "components": [
         {
@@ -232,25 +243,25 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 5,
+      "consecutive_recoveries": 6,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-04T04:51:00Z",
+      "time": "2026-09-04T09:10:29Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-04T04:51:00.620793Z",
+      "updated_at": "2026-09-04T09:10:29.698288Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 43,
+      "consecutive_recoveries": 44,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }

@@ -1,32 +1,39 @@
 {
-  "generated_at": "2026-09-04T04:51:01Z",
+  "generated_at": "2026-09-04T09:10:30Z",
   "window": {
     "start": "2026-09-03T00:00:00Z",
-    "end": "2026-09-04T04:51:01Z"
+    "end": "2026-09-04T09:10:30Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
       "ok": 9,
-      "warn": 0,
+      "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 100.0,
-      "latest_status": "ok",
-      "latest_at": "2026-09-04T04:50:59Z",
-      "recent_incidents": []
+      "sla": 90.0,
+      "latest_status": "warn",
+      "latest_at": "2026-09-04T09:10:28Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-04T09:10:28Z",
+          "name": "Users in APAC region may face increased error in ChatGPT, Work, image generation, file upload, Voice, and Codex Cloud",
+          "status": "investigating",
+          "link": null
+        }
+      ]
     },
     "Claude": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
-      "ok": 8,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
+      "ok": 9,
       "warn": 0,
       "critical": 1,
       "unknown": 0,
-      "sla": 88.89,
+      "sla": 90.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-04T04:51:00Z",
+      "latest_at": "2026-09-04T09:10:29Z",
       "recent_incidents": [
         {
           "time": "2026-09-03T13:56:21Z",
@@ -37,27 +44,27 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
-      "ok": 9,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
+      "ok": 10,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-04T04:51:00Z",
+      "latest_at": "2026-09-04T09:10:29Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
-      "ok": 8,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
+      "ok": 9,
       "warn": 0,
       "critical": 1,
       "unknown": 0,
-      "sla": 88.89,
+      "sla": 90.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-04T04:51:00Z",
+      "latest_at": "2026-09-04T09:10:29Z",
       "recent_incidents": [
         {
           "time": "2026-09-03T13:56:21Z",
@@ -68,15 +75,15 @@
       ]
     },
     "AWS": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
-      "ok": 9,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
+      "ok": 10,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-04T04:51:00Z",
+      "latest_at": "2026-09-04T09:10:29Z",
       "recent_incidents": []
     }
   }
