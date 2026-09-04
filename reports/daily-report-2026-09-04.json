@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-09-04T00:22:53Z",
+  "window": {
+    "start": "2026-09-03T00:00:00Z",
+    "end": "2026-09-04T00:22:53Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-04T00:22:52Z",
+      "recent_incidents": []
+    },
+    "Claude": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 7,
+      "warn": 0,
+      "critical": 1,
+      "unknown": 0,
+      "sla": 87.5,
+      "latest_status": "ok",
+      "latest_at": "2026-09-04T00:22:52Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-03T13:56:21Z",
+          "name": "Elevated errors for multiple models",
+          "status": "identified",
+          "link": "https://stspg.io/9xz4hhmd1jzn"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-04T00:22:52Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 7,
+      "warn": 0,
+      "critical": 1,
+      "unknown": 0,
+      "sla": 87.5,
+      "latest_status": "ok",
+      "latest_at": "2026-09-04T00:22:52Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-03T13:56:21Z",
+          "name": "[Grok (Android)] Models outage",
+          "status": "critical",
+          "link": "https://status.x.ai/android-app/INC39335c37"
+        }
+      ]
+    },
+    "AWS": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-04T00:22:53Z",
+      "recent_incidents": []
+    }
+  }
+}
