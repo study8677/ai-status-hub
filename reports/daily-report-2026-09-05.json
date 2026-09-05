@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-09-05T01:17:35Z",
+  "window": {
+    "start": "2026-09-04T00:00:00Z",
+    "end": "2026-09-05T01:17:35Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 8,
+      "warn": 1,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 88.89,
+      "latest_status": "ok",
+      "latest_at": "2026-09-05T01:17:34Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-04T09:10:28Z",
+          "name": "Users in APAC region may face increased error in ChatGPT, Work, image generation, file upload, Voice, and Codex Cloud",
+          "status": "investigating",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-05T01:17:34Z",
+      "recent_incidents": []
+    },
+    "Gemini": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-05T01:17:34Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-05T01:17:34Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-05T01:17:34Z",
+      "recent_incidents": []
+    }
+  }
+}
