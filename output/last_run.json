@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-10T15:02:24Z",
+  "generated_at": "2026-09-10T18:22:24Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-10T15:02:23Z",
+      "time": "2026-09-10T18:22:22Z",
       "overall_status": "none",
       "components": [
         {
@@ -140,16 +140,16 @@
       "source_url": "https://status.openai.com",
       "level": "ok",
       "error": null,
-      "first_anomaly_at": "2026-09-10T06:01:48Z",
+      "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1,
+      "consecutive_recoveries": 2,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-10T15:02:24Z",
-      "overall_status": "none",
+      "time": "2026-09-10T18:22:23Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "claude.ai",
@@ -173,8 +173,8 @@
         },
         {
           "name": "Claude Cowork",
-          "status": "operational",
-          "updated_at": "2026-09-03T16:23:12.021Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-09-10T15:54:10.154Z"
         },
         {
           "name": "Claude for Government",
@@ -182,40 +182,51 @@
           "updated_at": "2026-06-30T14:45:50.487Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "r1pqn1kb4hvk",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "impact": "minor",
+          "shortlink": "https://stspg.io/5yp3rhhztm30",
+          "started_at": "2026-09-10T15:54:10.108Z",
+          "updated_at": "2026-09-10T17:20:39.594Z",
+          "url": "https://stspg.io/5yp3rhhztm30"
+        }
+      ],
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-09-10T14:59:19.339Z",
+      "updated_at": "2026-09-10T17:20:39.597Z",
       "source_url": "https://status.claude.com",
-      "level": "ok",
+      "level": "warn",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 37,
-      "anomaly_seconds": null,
-      "latest_incident_link": null
+      "first_anomaly_at": "2026-09-10T18:22:23Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
+      "latest_incident_link": "https://stspg.io/5yp3rhhztm30"
     },
     {
       "service": "Gemini",
-      "time": "2026-09-10T15:02:24Z",
+      "time": "2026-09-10T18:22:23Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-10T15:02:24Z",
+      "updated_at": "2026-09-10T18:22:23Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1383,
+      "consecutive_recoveries": 1384,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-10T15:02:24Z",
+      "time": "2026-09-10T18:22:23Z",
       "overall_status": "operational",
       "components": [
         {
@@ -232,28 +243,35 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 52,
+      "consecutive_recoveries": 53,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-10T15:02:24Z",
+      "time": "2026-09-10T18:22:24Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-10T15:02:24.544418Z",
+      "updated_at": "2026-09-10T18:22:24.062050Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 90,
+      "consecutive_recoveries": 91,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "recover",
+      "service": "OpenAI",
+      "level": "ok",
+      "message": "OpenAI recovered"
+    }
+  ]
 }
