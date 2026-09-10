@@ -1,21 +1,33 @@
 {
-  "generated_at": "2026-09-10T18:22:24Z",
+  "generated_at": "2026-09-10T21:02:05Z",
   "window": {
     "start": "2026-09-09T00:00:00Z",
-    "end": "2026-09-10T18:22:24Z"
+    "end": "2026-09-10T21:02:05Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
       "ok": 9,
-      "warn": 3,
+      "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 75.0,
-      "latest_status": "ok",
-      "latest_at": "2026-09-10T18:22:22Z",
+      "sla": 69.23,
+      "latest_status": "warn",
+      "latest_at": "2026-09-10T21:02:04Z",
       "recent_incidents": [
+        {
+          "time": "2026-09-10T21:02:04Z",
+          "name": "Delays in customer support responses",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-09-10T21:02:04Z",
+          "name": "Elevated errors affecting ChatGPT Work",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-09-10T11:11:12Z",
           "name": "Unable to open shared ChatGPT Project using direct link",
@@ -37,16 +49,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
       "ok": 11,
-      "warn": 1,
+      "warn": 2,
       "critical": 0,
       "unknown": 0,
-      "sla": 91.67,
+      "sla": 84.62,
       "latest_status": "warn",
-      "latest_at": "2026-09-10T18:22:23Z",
+      "latest_at": "2026-09-10T21:02:04Z",
       "recent_incidents": [
+        {
+          "time": "2026-09-10T21:02:04Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
         {
           "time": "2026-09-10T18:22:23Z",
           "name": "Degraded functionality for Claude Cowork on Windows",
@@ -56,39 +74,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
-      "ok": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-10T18:22:23Z",
+      "latest_at": "2026-09-10T21:02:04Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
-      "ok": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-10T18:22:23Z",
+      "latest_at": "2026-09-10T21:02:04Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
-      "ok": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-10T18:22:24Z",
+      "latest_at": "2026-09-10T21:02:05Z",
       "recent_incidents": []
     }
   }
