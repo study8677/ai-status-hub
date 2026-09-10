@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-10T11:11:13Z",
+  "generated_at": "2026-09-10T15:02:24Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-10T11:11:12Z",
-      "overall_status": "minor",
+      "time": "2026-09-10T15:02:23Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Responses",
@@ -133,33 +133,22 @@
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "01M24HYC9SX2Q4471EVMY6EXQE",
-          "name": "Unable to open shared ChatGPT Project using direct link",
-          "status": "identified",
-          "impact": "minor",
-          "shortlink": null,
-          "started_at": "2026-09-10T02:21:57Z",
-          "updated_at": "2026-09-10T09:37:49Z",
-          "url": null
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-09-10T09:37:49Z",
+      "updated_at": "2026-07-09T19:25:56Z",
       "source_url": "https://status.openai.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-09-10T06:01:48Z",
-      "consecutive_anomalies": 2,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 18564,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-10T11:11:12Z",
+      "time": "2026-09-10T15:02:24Z",
       "overall_status": "none",
       "components": [
         {
@@ -196,37 +185,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-09-10T10:39:23.299Z",
+      "updated_at": "2026-09-10T14:59:19.339Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 36,
+      "consecutive_recoveries": 37,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-09-10T11:11:12Z",
+      "time": "2026-09-10T15:02:24Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-10T11:11:12Z",
+      "updated_at": "2026-09-10T15:02:24Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1382,
+      "consecutive_recoveries": 1383,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-10T11:11:13Z",
+      "time": "2026-09-10T15:02:24Z",
       "overall_status": "operational",
       "components": [
         {
@@ -243,35 +232,28 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 51,
+      "consecutive_recoveries": 52,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-10T11:11:13Z",
+      "time": "2026-09-10T15:02:24Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-10T11:11:13.138204Z",
+      "updated_at": "2026-09-10T15:02:24.544418Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 89,
+      "consecutive_recoveries": 90,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": [
-    {
-      "type": "alert",
-      "service": "OpenAI",
-      "level": "warn",
-      "message": "OpenAI is in WARN state (sampled 2026-09-10T11:11:12Z)"
-    }
-  ]
+  "alerts": []
 }
