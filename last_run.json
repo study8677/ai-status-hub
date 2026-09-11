@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T20:19:33Z",
+  "generated_at": "2026-09-11T22:42:43Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-11T20:19:32Z",
+      "time": "2026-09-11T22:42:42Z",
       "overall_status": "minor",
       "components": [
         {
@@ -137,29 +137,29 @@
         {
           "id": "01M28MEQWTQJDRCRPFD9FWQ0H3",
           "name": "1% of ChatGPT Work (mobile/web) turns are failing for existing threads",
-          "status": "investigating",
+          "status": "monitoring",
           "impact": "minor",
           "shortlink": null,
           "started_at": "2026-09-11T16:22:49Z",
-          "updated_at": "2026-09-11T17:17:35Z",
+          "updated_at": "2026-09-11T21:51:56Z",
           "url": null
         }
       ],
       "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-09-11T17:17:35Z",
+      "updated_at": "2026-09-11T21:51:56Z",
       "source_url": "https://status.openai.com",
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-09-11T17:55:33Z",
-      "consecutive_anomalies": 2,
+      "consecutive_anomalies": 3,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 8639,
+      "anomaly_seconds": 17229,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-11T20:19:32Z",
+      "time": "2026-09-11T22:42:42Z",
       "overall_status": "minor",
       "components": [
         {
@@ -207,37 +207,37 @@
       ],
       "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-09-11T19:54:52.338Z",
+      "updated_at": "2026-09-11T22:18:09.797Z",
       "source_url": "https://status.claude.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-09-10T18:22:23Z",
-      "consecutive_anomalies": 9,
+      "consecutive_anomalies": 10,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 93429,
+      "anomaly_seconds": 102019,
       "latest_incident_link": "https://stspg.io/5yp3rhhztm30"
     },
     {
       "service": "Gemini",
-      "time": "2026-09-11T20:19:32Z",
+      "time": "2026-09-11T22:42:42Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-11T20:19:32Z",
+      "updated_at": "2026-09-11T22:42:42Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1392,
+      "consecutive_recoveries": 1393,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-11T20:19:33Z",
+      "time": "2026-09-11T22:42:42Z",
       "overall_status": "operational",
       "components": [
         {
@@ -254,35 +254,28 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 61,
+      "consecutive_recoveries": 62,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-11T20:19:33Z",
+      "time": "2026-09-11T22:42:42Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-11T20:19:33.423914Z",
+      "updated_at": "2026-09-11T22:42:42.922203Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 99,
+      "consecutive_recoveries": 100,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": [
-    {
-      "type": "alert",
-      "service": "OpenAI",
-      "level": "warn",
-      "message": "OpenAI is in WARN state (sampled 2026-09-11T20:19:32Z)"
-    }
-  ]
+  "alerts": []
 }
