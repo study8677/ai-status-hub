@@ -2,16 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 9 | 0 | 0 | 0 | ok |
-| Claude | 44.44 | 4 | 5 | 0 | 0 | warn |
-| Gemini | 100.00 | 9 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 9 | 0 | 0 | 0 | ok |
-| OpenAI | 66.67 | 6 | 3 | 0 | 0 | ok |
+| AWS | 100.00 | 10 | 0 | 0 | 0 | ok |
+| Claude | 40.00 | 4 | 6 | 0 | 0 | warn |
+| Gemini | 100.00 | 10 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 10 | 0 | 0 | 0 | ok |
+| OpenAI | 60.00 | 6 | 4 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
 - 无事件记录
 ### Claude
+- 2026-09-11T10:21:47Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-11T05:54:35Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-11T01:03:22Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-10T23:08:08Z | identified | Elevated latency on the Claude API for some users
@@ -24,6 +25,7 @@
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-09-11T10:21:47Z | monitoring | Elevated errors for GPT-5.6 Sol on the API
 - 2026-09-10T21:02:04Z | identified | Delays in customer support responses
 - 2026-09-10T21:02:04Z | monitoring | Elevated errors affecting ChatGPT Work
 - 2026-09-10T11:11:12Z | identified | Unable to open shared ChatGPT Project using direct link
