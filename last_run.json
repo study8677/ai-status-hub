@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T17:55:35Z",
+  "generated_at": "2026-09-11T20:19:33Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-11T17:55:33Z",
+      "time": "2026-09-11T20:19:32Z",
       "overall_status": "minor",
       "components": [
         {
@@ -152,14 +152,14 @@
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-09-11T17:55:33Z",
-      "consecutive_anomalies": 1,
+      "consecutive_anomalies": 2,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
+      "anomaly_seconds": 8639,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-11T17:55:34Z",
+      "time": "2026-09-11T20:19:32Z",
       "overall_status": "minor",
       "components": [
         {
@@ -185,7 +185,7 @@
         {
           "name": "Claude Cowork",
           "status": "partial_outage",
-          "updated_at": "2026-09-11T14:19:51.592Z"
+          "updated_at": "2026-09-11T19:54:52.331Z"
         },
         {
           "name": "Claude for Government",
@@ -207,37 +207,37 @@
       ],
       "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-09-11T16:49:29.378Z",
+      "updated_at": "2026-09-11T19:54:52.338Z",
       "source_url": "https://status.claude.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-09-10T18:22:23Z",
-      "consecutive_anomalies": 8,
+      "consecutive_anomalies": 9,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 84791,
+      "anomaly_seconds": 93429,
       "latest_incident_link": "https://stspg.io/5yp3rhhztm30"
     },
     {
       "service": "Gemini",
-      "time": "2026-09-11T17:55:34Z",
+      "time": "2026-09-11T20:19:32Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-11T17:55:34Z",
+      "updated_at": "2026-09-11T20:19:32Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1391,
+      "consecutive_recoveries": 1392,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-11T17:55:34Z",
+      "time": "2026-09-11T20:19:33Z",
       "overall_status": "operational",
       "components": [
         {
@@ -254,28 +254,35 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 60,
+      "consecutive_recoveries": 61,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-11T17:55:35Z",
+      "time": "2026-09-11T20:19:33Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-11T17:55:35.010471Z",
+      "updated_at": "2026-09-11T20:19:33.423914Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 98,
+      "consecutive_recoveries": 99,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "alert",
+      "service": "OpenAI",
+      "level": "warn",
+      "message": "OpenAI is in WARN state (sampled 2026-09-11T20:19:32Z)"
+    }
+  ]
 }
