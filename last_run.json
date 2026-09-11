@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T10:21:48Z",
+  "generated_at": "2026-09-11T14:33:00Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-11T10:21:47Z",
-      "overall_status": "minor",
+      "time": "2026-09-11T14:32:58Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Images",
@@ -133,39 +133,28 @@
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "01M27VK1VN54RQJGJEHB5JTQJJ",
-          "name": "Elevated errors for GPT-5.6 Sol on the API",
-          "status": "monitoring",
-          "impact": "minor",
-          "shortlink": null,
-          "started_at": "2026-09-11T09:08:15Z",
-          "updated_at": "2026-09-11T10:09:47Z",
-          "url": null
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-09-11T10:09:47Z",
+      "updated_at": "2026-07-09T19:25:56Z",
       "source_url": "https://status.openai.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
-      "first_anomaly_at": "2026-09-11T10:21:47Z",
-      "consecutive_anomalies": 1,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
+      "first_anomaly_at": null,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-11T10:21:47Z",
+      "time": "2026-09-11T14:32:59Z",
       "overall_status": "minor",
       "components": [
         {
           "name": "claude.ai",
           "status": "operational",
-          "updated_at": "2026-09-03T16:23:11.970Z"
+          "updated_at": "2026-09-11T14:28:27.269Z"
         },
         {
           "name": "Claude Console (platform.claude.com)",
@@ -175,17 +164,17 @@
         {
           "name": "Claude API (api.anthropic.com)",
           "status": "operational",
-          "updated_at": "2026-09-10T23:24:22.949Z"
+          "updated_at": "2026-09-11T14:28:27.286Z"
         },
         {
           "name": "Claude Code",
           "status": "operational",
-          "updated_at": "2026-09-03T16:23:12.003Z"
+          "updated_at": "2026-09-11T14:28:27.302Z"
         },
         {
           "name": "Claude Cowork",
-          "status": "degraded_performance",
-          "updated_at": "2026-09-10T15:54:10.154Z"
+          "status": "partial_outage",
+          "updated_at": "2026-09-11T14:19:51.592Z"
         },
         {
           "name": "Claude for Government",
@@ -195,49 +184,59 @@
       ],
       "active_incidents": [
         {
+          "id": "t33dncr5ydvl",
+          "name": "Elevated errors for Claude Mythos 5.1 and Claude Fable 5.1",
+          "status": "monitoring",
+          "impact": "major",
+          "shortlink": "https://stspg.io/n9n8kfcxtkfm",
+          "started_at": "2026-09-11T14:19:51.478Z",
+          "updated_at": "2026-09-11T14:28:27.333Z",
+          "url": "https://stspg.io/n9n8kfcxtkfm"
+        },
+        {
           "id": "r1pqn1kb4hvk",
           "name": "Degraded functionality for Claude Cowork on Windows",
           "status": "identified",
-          "impact": "minor",
+          "impact": "major",
           "shortlink": "https://stspg.io/5yp3rhhztm30",
           "started_at": "2026-09-10T15:54:10.108Z",
-          "updated_at": "2026-09-10T17:20:39.594Z",
+          "updated_at": "2026-09-11T14:19:51.617Z",
           "url": "https://stspg.io/5yp3rhhztm30"
         }
       ],
-      "raw_score": 70,
+      "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-09-11T07:24:24.106Z",
+      "updated_at": "2026-09-11T14:28:27.341Z",
       "source_url": "https://status.claude.com",
-      "level": "warn",
+      "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-09-10T18:22:23Z",
-      "consecutive_anomalies": 6,
+      "consecutive_anomalies": 7,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 57564,
-      "latest_incident_link": "https://stspg.io/5yp3rhhztm30"
+      "anomaly_seconds": 72636,
+      "latest_incident_link": "https://stspg.io/n9n8kfcxtkfm"
     },
     {
       "service": "Gemini",
-      "time": "2026-09-11T10:21:47Z",
+      "time": "2026-09-11T14:32:59Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-11T10:21:47Z",
+      "updated_at": "2026-09-11T14:32:59Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1389,
+      "consecutive_recoveries": 1390,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-11T10:21:47Z",
+      "time": "2026-09-11T14:32:59Z",
       "overall_status": "operational",
       "components": [
         {
@@ -254,28 +253,35 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 58,
+      "consecutive_recoveries": 59,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-11T10:21:47Z",
+      "time": "2026-09-11T14:32:59Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-11T10:21:47.890664Z",
+      "updated_at": "2026-09-11T14:32:59.844123Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 96,
+      "consecutive_recoveries": 97,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "escalate",
+      "service": "Claude",
+      "level": "critical",
+      "message": "Claude escalated to CRITICAL"
+    }
+  ]
 }

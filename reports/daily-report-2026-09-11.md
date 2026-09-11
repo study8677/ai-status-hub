@@ -2,16 +2,18 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 10 | 0 | 0 | 0 | ok |
-| Claude | 40.00 | 4 | 6 | 0 | 0 | warn |
-| Gemini | 100.00 | 10 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 10 | 0 | 0 | 0 | ok |
-| OpenAI | 60.00 | 6 | 4 | 0 | 0 | warn |
+| AWS | 100.00 | 11 | 0 | 0 | 0 | ok |
+| Claude | 36.36 | 4 | 6 | 1 | 0 | critical |
+| Gemini | 100.00 | 11 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 11 | 0 | 0 | 0 | ok |
+| OpenAI | 63.64 | 7 | 4 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
 - 无事件记录
 ### Claude
+- 2026-09-11T14:32:59Z | monitoring | Elevated errors for Claude Mythos 5.1 and Claude Fable 5.1
+- 2026-09-11T14:32:59Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-11T10:21:47Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-11T05:54:35Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-11T01:03:22Z | identified | Degraded functionality for Claude Cowork on Windows
