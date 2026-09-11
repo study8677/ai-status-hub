@@ -2,16 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 11 | 0 | 0 | 0 | ok |
-| Claude | 36.36 | 4 | 6 | 1 | 0 | critical |
-| Gemini | 100.00 | 11 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 11 | 0 | 0 | 0 | ok |
-| OpenAI | 63.64 | 7 | 4 | 0 | 0 | ok |
+| AWS | 100.00 | 12 | 0 | 0 | 0 | ok |
+| Claude | 33.33 | 4 | 6 | 2 | 0 | critical |
+| Gemini | 100.00 | 12 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 12 | 0 | 0 | 0 | ok |
+| OpenAI | 58.33 | 7 | 5 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
 - 无事件记录
 ### Claude
+- 2026-09-11T17:55:34Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-11T14:32:59Z | monitoring | Elevated errors for Claude Mythos 5.1 and Claude Fable 5.1
 - 2026-09-11T14:32:59Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-11T10:21:47Z | identified | Degraded functionality for Claude Cowork on Windows
@@ -27,6 +28,7 @@
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-09-11T17:55:33Z | investigating | 1% of ChatGPT Work (mobile/web) turns are failing for existing threads
 - 2026-09-11T10:21:47Z | monitoring | Elevated errors for GPT-5.6 Sol on the API
 - 2026-09-10T21:02:04Z | identified | Delays in customer support responses
 - 2026-09-10T21:02:04Z | monitoring | Elevated errors affecting ChatGPT Work

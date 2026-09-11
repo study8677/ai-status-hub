@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T14:33:00Z",
+  "generated_at": "2026-09-11T17:55:35Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-11T14:32:58Z",
-      "overall_status": "none",
+      "time": "2026-09-11T17:55:33Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "Images",
@@ -133,22 +133,33 @@
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "01M28MEQWTQJDRCRPFD9FWQ0H3",
+          "name": "1% of ChatGPT Work (mobile/web) turns are failing for existing threads",
+          "status": "investigating",
+          "impact": "minor",
+          "shortlink": null,
+          "started_at": "2026-09-11T16:22:49Z",
+          "updated_at": "2026-09-11T17:17:35Z",
+          "url": null
+        }
+      ],
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-07-09T19:25:56Z",
+      "updated_at": "2026-09-11T17:17:35Z",
       "source_url": "https://status.openai.com",
-      "level": "ok",
+      "level": "warn",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1,
-      "anomaly_seconds": null,
+      "first_anomaly_at": "2026-09-11T17:55:33Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-11T14:32:59Z",
+      "time": "2026-09-11T17:55:34Z",
       "overall_status": "minor",
       "components": [
         {
@@ -184,16 +195,6 @@
       ],
       "active_incidents": [
         {
-          "id": "t33dncr5ydvl",
-          "name": "Elevated errors for Claude Mythos 5.1 and Claude Fable 5.1",
-          "status": "monitoring",
-          "impact": "major",
-          "shortlink": "https://stspg.io/n9n8kfcxtkfm",
-          "started_at": "2026-09-11T14:19:51.478Z",
-          "updated_at": "2026-09-11T14:28:27.333Z",
-          "url": "https://stspg.io/n9n8kfcxtkfm"
-        },
-        {
           "id": "r1pqn1kb4hvk",
           "name": "Degraded functionality for Claude Cowork on Windows",
           "status": "identified",
@@ -206,37 +207,37 @@
       ],
       "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-09-11T14:28:27.341Z",
+      "updated_at": "2026-09-11T16:49:29.378Z",
       "source_url": "https://status.claude.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-09-10T18:22:23Z",
-      "consecutive_anomalies": 7,
+      "consecutive_anomalies": 8,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 72636,
-      "latest_incident_link": "https://stspg.io/n9n8kfcxtkfm"
+      "anomaly_seconds": 84791,
+      "latest_incident_link": "https://stspg.io/5yp3rhhztm30"
     },
     {
       "service": "Gemini",
-      "time": "2026-09-11T14:32:59Z",
+      "time": "2026-09-11T17:55:34Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-11T14:32:59Z",
+      "updated_at": "2026-09-11T17:55:34Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1390,
+      "consecutive_recoveries": 1391,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-11T14:32:59Z",
+      "time": "2026-09-11T17:55:34Z",
       "overall_status": "operational",
       "components": [
         {
@@ -253,35 +254,28 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 59,
+      "consecutive_recoveries": 60,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-11T14:32:59Z",
+      "time": "2026-09-11T17:55:35Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-11T14:32:59.844123Z",
+      "updated_at": "2026-09-11T17:55:35.010471Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 97,
+      "consecutive_recoveries": 98,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": [
-    {
-      "type": "escalate",
-      "service": "Claude",
-      "level": "critical",
-      "message": "Claude escalated to CRITICAL"
-    }
-  ]
+  "alerts": []
 }
