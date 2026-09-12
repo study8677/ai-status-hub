@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-12T18:23:22Z",
+  "generated_at": "2026-09-12T20:44:42Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-12T18:23:21Z",
+      "time": "2026-09-12T20:44:42Z",
       "overall_status": "none",
       "components": [
         {
@@ -142,13 +142,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 5,
+      "consecutive_recoveries": 6,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-12T18:23:22Z",
+      "time": "2026-09-12T20:44:42Z",
       "overall_status": "minor",
       "components": [
         {
@@ -173,8 +173,8 @@
         },
         {
           "name": "Claude Cowork",
-          "status": "partial_outage",
-          "updated_at": "2026-09-11T19:54:52.331Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-09-12T20:33:34.732Z"
         },
         {
           "name": "Claude for Government",
@@ -196,37 +196,37 @@
       ],
       "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-09-12T17:49:34.233Z",
+      "updated_at": "2026-09-12T20:33:34.734Z",
       "source_url": "https://status.claude.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-09-10T18:22:23Z",
-      "consecutive_anomalies": 16,
+      "consecutive_anomalies": 17,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 172859,
+      "anomaly_seconds": 181339,
       "latest_incident_link": "https://stspg.io/5yp3rhhztm30"
     },
     {
       "service": "Gemini",
-      "time": "2026-09-12T18:23:22Z",
+      "time": "2026-09-12T20:44:42Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-12T18:23:22Z",
+      "updated_at": "2026-09-12T20:44:42Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1399,
+      "consecutive_recoveries": 1400,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-12T18:23:22Z",
+      "time": "2026-09-12T20:44:42Z",
       "overall_status": "operational",
       "components": [
         {
@@ -243,25 +243,25 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 68,
+      "consecutive_recoveries": 69,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-12T18:23:22Z",
+      "time": "2026-09-12T20:44:42Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-12T18:23:22.595871Z",
+      "updated_at": "2026-09-12T20:44:42.724609Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 106,
+      "consecutive_recoveries": 107,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
