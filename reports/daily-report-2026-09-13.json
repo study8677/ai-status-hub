@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-09-13T05:02:55Z",
+  "generated_at": "2026-09-13T10:11:31Z",
   "window": {
     "start": "2026-09-12T00:00:00Z",
-    "end": "2026-09-13T05:02:55Z"
+    "end": "2026-09-13T10:11:31Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
       "ok": 9,
-      "warn": 1,
+      "warn": 2,
       "critical": 0,
       "unknown": 0,
-      "sla": 90.0,
-      "latest_status": "ok",
-      "latest_at": "2026-09-13T05:02:54Z",
+      "sla": 81.82,
+      "latest_status": "warn",
+      "latest_at": "2026-09-13T10:11:30Z",
       "recent_incidents": [
+        {
+          "time": "2026-09-13T10:11:30Z",
+          "name": "Codex GitHub Review and Pull Request Failures",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-09-12T00:42:27Z",
           "name": "1% of ChatGPT Work (mobile/web) turns are failing for existing threads",
@@ -25,16 +31,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
       "ok": 0,
       "warn": 0,
-      "critical": 10,
+      "critical": 11,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-09-13T05:02:54Z",
+      "latest_at": "2026-09-13T10:11:30Z",
       "recent_incidents": [
+        {
+          "time": "2026-09-13T10:11:30Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
         {
           "time": "2026-09-13T05:02:54Z",
           "name": "Degraded functionality for Claude Cowork on Windows",
@@ -98,39 +110,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-13T05:02:54Z",
+      "latest_at": "2026-09-13T10:11:30Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-13T05:02:54Z",
+      "latest_at": "2026-09-13T10:11:30Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-13T05:02:55Z",
+      "latest_at": "2026-09-13T10:11:30Z",
       "recent_incidents": []
     }
   }

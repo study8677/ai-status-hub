@@ -2,16 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 10 | 0 | 0 | 0 | ok |
-| Claude | 0.00 | 0 | 0 | 10 | 0 | critical |
-| Gemini | 100.00 | 10 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 10 | 0 | 0 | 0 | ok |
-| OpenAI | 90.00 | 9 | 1 | 0 | 0 | ok |
+| AWS | 100.00 | 11 | 0 | 0 | 0 | ok |
+| Claude | 0.00 | 0 | 0 | 11 | 0 | critical |
+| Gemini | 100.00 | 11 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 11 | 0 | 0 | 0 | ok |
+| OpenAI | 81.82 | 9 | 2 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
 - 无事件记录
 ### Claude
+- 2026-09-13T10:11:30Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-13T05:02:54Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-13T00:21:14Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-12T22:38:48Z | identified | Degraded functionality for Claude Cowork on Windows
@@ -21,11 +22,11 @@
 - 2026-09-12T12:58:17Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-12T09:19:38Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-12T05:09:21Z | identified | Degraded functionality for Claude Cowork on Windows
-- 2026-09-12T00:42:27Z | identified | Degraded functionality for Claude Cowork on Windows
 
 ### Gemini
 - 无事件记录
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-09-13T10:11:30Z | monitoring | Codex GitHub Review and Pull Request Failures
 - 2026-09-12T00:42:27Z | monitoring | 1% of ChatGPT Work (mobile/web) turns are failing for existing threads
