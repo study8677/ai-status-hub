@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-13T00:21:15Z",
+  "generated_at": "2026-09-13T05:02:55Z",
   "window": {
     "start": "2026-09-12T00:00:00Z",
-    "end": "2026-09-13T00:21:15Z"
+    "end": "2026-09-13T05:02:55Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
-      "ok": 8,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
+      "ok": 9,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 88.89,
+      "sla": 90.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-13T00:21:13Z",
+      "latest_at": "2026-09-13T05:02:54Z",
       "recent_incidents": [
         {
           "time": "2026-09-12T00:42:27Z",
@@ -25,16 +25,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
       "ok": 0,
       "warn": 0,
-      "critical": 9,
+      "critical": 10,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-09-13T00:21:14Z",
+      "latest_at": "2026-09-13T05:02:54Z",
       "recent_incidents": [
+        {
+          "time": "2026-09-13T05:02:54Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
         {
           "time": "2026-09-13T00:21:14Z",
           "name": "Degraded functionality for Claude Cowork on Windows",
@@ -92,39 +98,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
-      "ok": 9,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
+      "ok": 10,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-13T00:21:14Z",
+      "latest_at": "2026-09-13T05:02:54Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
-      "ok": 9,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
+      "ok": 10,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-13T00:21:14Z",
+      "latest_at": "2026-09-13T05:02:54Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
-      "ok": 9,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
+      "ok": 10,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-13T00:21:14Z",
+      "latest_at": "2026-09-13T05:02:55Z",
       "recent_incidents": []
     }
   }
