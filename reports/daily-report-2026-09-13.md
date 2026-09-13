@@ -2,16 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 15 | 0 | 0 | 0 | ok |
-| Claude | 0.00 | 0 | 0 | 15 | 0 | critical |
-| Gemini | 100.00 | 15 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 15 | 0 | 0 | 0 | ok |
-| OpenAI | 80.00 | 12 | 3 | 0 | 0 | ok |
+| AWS | 100.00 | 16 | 0 | 0 | 0 | ok |
+| Claude | 0.00 | 0 | 0 | 16 | 0 | critical |
+| Gemini | 100.00 | 16 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 16 | 0 | 0 | 0 | ok |
+| OpenAI | 81.25 | 13 | 3 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
 - 无事件记录
 ### Claude
+- 2026-09-13T23:41:16Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-13T21:47:58Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-13T19:45:12Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-13T17:33:20Z | identified | Degraded functionality for Claude Cowork on Windows
@@ -21,7 +22,6 @@
 - 2026-09-13T00:21:14Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-12T22:38:48Z | identified | Degraded functionality for Claude Cowork on Windows
 - 2026-09-12T20:44:42Z | identified | Degraded functionality for Claude Cowork on Windows
-- 2026-09-12T18:23:22Z | identified | Degraded functionality for Claude Cowork on Windows
 
 ### Gemini
 - 无事件记录
