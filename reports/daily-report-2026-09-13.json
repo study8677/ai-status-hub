@@ -1,0 +1,131 @@
+{
+  "generated_at": "2026-09-13T00:21:15Z",
+  "window": {
+    "start": "2026-09-12T00:00:00Z",
+    "end": "2026-09-13T00:21:15Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 8,
+      "warn": 1,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 88.89,
+      "latest_status": "ok",
+      "latest_at": "2026-09-13T00:21:13Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-12T00:42:27Z",
+          "name": "1% of ChatGPT Work (mobile/web) turns are failing for existing threads",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 0,
+      "warn": 0,
+      "critical": 9,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-09-13T00:21:14Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-13T00:21:14Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-12T22:38:48Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-12T20:44:42Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-12T18:23:22Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-12T16:08:38Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-12T12:58:17Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-12T09:19:38Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-12T05:09:21Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-12T00:42:27Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-13T00:21:14Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-13T00:21:14Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-13T00:21:14Z",
+      "recent_incidents": []
+    }
+  }
+}
