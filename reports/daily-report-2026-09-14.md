@@ -2,11 +2,11 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 12 | 0 | 0 | 0 | ok |
-| Claude | 8.33 | 1 | 0 | 11 | 0 | ok |
-| Gemini | 100.00 | 12 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 12 | 0 | 0 | 0 | ok |
-| OpenAI | 75.00 | 9 | 3 | 0 | 0 | warn |
+| AWS | 100.00 | 13 | 0 | 0 | 0 | ok |
+| Claude | 15.38 | 2 | 0 | 11 | 0 | ok |
+| Gemini | 100.00 | 13 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 13 | 0 | 0 | 0 | ok |
+| OpenAI | 69.23 | 9 | 4 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
@@ -28,6 +28,7 @@
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-09-14T22:37:15Z | monitoring | Elevated errors affecting Work Mode in ChatGPT
 - 2026-09-14T19:19:17Z | monitoring | Elevated errors affecting Work Mode in ChatGPT
 - 2026-09-13T17:33:20Z | monitoring | Elevated errors for ChatGPT users in Europe
 - 2026-09-13T10:11:30Z | monitoring | Codex GitHub Review and Pull Request Failures

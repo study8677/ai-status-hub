@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-09-14T19:19:19Z",
+  "generated_at": "2026-09-14T22:37:16Z",
   "window": {
     "start": "2026-09-13T00:00:00Z",
-    "end": "2026-09-14T19:19:19Z"
+    "end": "2026-09-14T22:37:16Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
       "ok": 9,
-      "warn": 3,
+      "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 75.0,
+      "sla": 69.23,
       "latest_status": "warn",
-      "latest_at": "2026-09-14T19:19:17Z",
+      "latest_at": "2026-09-14T22:37:15Z",
       "recent_incidents": [
+        {
+          "time": "2026-09-14T22:37:15Z",
+          "name": "Elevated errors affecting Work Mode in ChatGPT",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-09-14T19:19:17Z",
           "name": "Elevated errors affecting Work Mode in ChatGPT",
@@ -37,15 +43,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
-      "ok": 1,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 2,
       "warn": 0,
       "critical": 11,
       "unknown": 0,
-      "sla": 8.33,
+      "sla": 15.38,
       "latest_status": "ok",
-      "latest_at": "2026-09-14T19:19:18Z",
+      "latest_at": "2026-09-14T22:37:15Z",
       "recent_incidents": [
         {
           "time": "2026-09-14T14:04:34Z",
@@ -116,39 +122,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
-      "ok": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-14T19:19:18Z",
+      "latest_at": "2026-09-14T22:37:15Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
-      "ok": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-14T19:19:18Z",
+      "latest_at": "2026-09-14T22:37:15Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 12,
-      "measured_checks_24h": 12,
-      "ok": 12,
+      "total_checks_24h": 13,
+      "measured_checks_24h": 13,
+      "ok": 13,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-14T19:19:19Z",
+      "latest_at": "2026-09-14T22:37:15Z",
       "recent_incidents": []
     }
   }
