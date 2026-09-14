@@ -1,0 +1,137 @@
+{
+  "generated_at": "2026-09-14T01:44:25Z",
+  "window": {
+    "start": "2026-09-13T00:00:00Z",
+    "end": "2026-09-14T01:44:25Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 7,
+      "warn": 2,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 77.78,
+      "latest_status": "ok",
+      "latest_at": "2026-09-14T01:44:25Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-13T17:33:20Z",
+          "name": "Elevated errors for ChatGPT users in Europe",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-09-13T10:11:30Z",
+          "name": "Codex GitHub Review and Pull Request Failures",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 0,
+      "warn": 0,
+      "critical": 9,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-09-14T01:44:25Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-14T01:44:25Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-13T23:41:16Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-13T21:47:58Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-13T19:45:12Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-13T17:33:20Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-13T14:25:38Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-13T10:11:30Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-13T05:02:54Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-13T00:21:14Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-14T01:44:25Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-14T01:44:25Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-14T01:44:25Z",
+      "recent_incidents": []
+    }
+  }
+}
