@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-09-15T00:55:24Z",
+  "window": {
+    "start": "2026-09-14T00:00:00Z",
+    "end": "2026-09-15T00:55:24Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 3,
+      "warn": 3,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 50.0,
+      "latest_status": "warn",
+      "latest_at": "2026-09-15T00:55:24Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-15T00:55:24Z",
+          "name": "Elevated errors affecting Work Mode in ChatGPT",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-09-14T22:37:15Z",
+          "name": "Elevated errors affecting Work Mode in ChatGPT",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-09-14T19:19:17Z",
+          "name": "Elevated errors affecting Work Mode in ChatGPT",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 3,
+      "warn": 0,
+      "critical": 3,
+      "unknown": 0,
+      "sla": 50.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-15T00:55:24Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-14T14:04:34Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-14T07:11:03Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        },
+        {
+          "time": "2026-09-14T01:44:25Z",
+          "name": "Degraded functionality for Claude Cowork on Windows",
+          "status": "identified",
+          "link": "https://stspg.io/5yp3rhhztm30"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-15T00:55:24Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-15T00:55:24Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-15T00:55:24Z",
+      "recent_incidents": []
+    }
+  }
+}
