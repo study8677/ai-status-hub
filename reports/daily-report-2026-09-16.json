@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-09-16T00:24:50Z",
+  "window": {
+    "start": "2026-09-15T00:00:00Z",
+    "end": "2026-09-16T00:24:50Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 5,
+      "warn": 1,
+      "critical": 1,
+      "unknown": 0,
+      "sla": 71.43,
+      "latest_status": "critical",
+      "latest_at": "2026-09-16T00:24:49Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-16T00:24:49Z",
+          "name": "Elevated errors with gpt-image-2.5-flare",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-09-15T00:55:24Z",
+          "name": "Elevated errors affecting Work Mode in ChatGPT",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 6,
+      "warn": 0,
+      "critical": 1,
+      "unknown": 0,
+      "sla": 85.71,
+      "latest_status": "ok",
+      "latest_at": "2026-09-16T00:24:50Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-15T10:32:00Z",
+          "name": "Intermittent error spikes for Claude Mythos 5.1 and Claude Fable 5.1",
+          "status": "investigating",
+          "link": "https://stspg.io/x1qpycpg6ln7"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-16T00:24:50Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-16T00:24:50Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-16T00:24:50Z",
+      "recent_incidents": []
+    }
+  }
+}
