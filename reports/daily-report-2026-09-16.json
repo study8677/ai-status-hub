@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-16T00:24:50Z",
+  "generated_at": "2026-09-16T05:04:37Z",
   "window": {
     "start": "2026-09-15T00:00:00Z",
-    "end": "2026-09-16T00:24:50Z"
+    "end": "2026-09-16T05:04:37Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 5,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 6,
       "warn": 1,
       "critical": 1,
       "unknown": 0,
-      "sla": 71.43,
-      "latest_status": "critical",
-      "latest_at": "2026-09-16T00:24:49Z",
+      "sla": 75.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-16T05:04:36Z",
       "recent_incidents": [
         {
           "time": "2026-09-16T00:24:49Z",
@@ -31,15 +31,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 6,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 7,
       "warn": 0,
       "critical": 1,
       "unknown": 0,
-      "sla": 85.71,
+      "sla": 87.5,
       "latest_status": "ok",
-      "latest_at": "2026-09-16T00:24:50Z",
+      "latest_at": "2026-09-16T05:04:36Z",
       "recent_incidents": [
         {
           "time": "2026-09-15T10:32:00Z",
@@ -50,39 +50,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-16T00:24:50Z",
+      "latest_at": "2026-09-16T05:04:37Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-16T00:24:50Z",
+      "latest_at": "2026-09-16T05:04:37Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-16T00:24:50Z",
+      "latest_at": "2026-09-16T05:04:37Z",
       "recent_incidents": []
     }
   }
