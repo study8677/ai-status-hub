@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-19T00:40:43Z",
+  "generated_at": "2026-09-19T05:07:09Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-19T00:40:42Z",
+      "time": "2026-09-19T05:07:08Z",
       "overall_status": "none",
       "components": [
         {
@@ -132,39 +132,29 @@
         {
           "id": "01M2VA7X37P1ASADSNZ1CG4N4D",
           "name": "Overbilling for OpenAI-hosted containers in the Agent API",
-          "status": "investigating",
-          "impact": "none",
-          "shortlink": null,
-          "started_at": "2026-09-18T22:29:53Z",
-          "updated_at": "2026-09-18T23:22:34Z",
-          "url": null
-        },
-        {
-          "id": "01M2V76GEPJB0HQGRA0QERRZ3T",
-          "name": "Delayed support responses",
           "status": "monitoring",
           "impact": "none",
           "shortlink": null,
-          "started_at": "2026-09-18T21:36:41Z",
-          "updated_at": "2026-09-18T21:59:34Z",
+          "started_at": "2026-09-18T22:29:53Z",
+          "updated_at": "2026-09-19T05:00:57Z",
           "url": null
         }
       ],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-09-18T23:22:34Z",
+      "updated_at": "2026-09-19T05:00:57Z",
       "source_url": "https://status.openai.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 9,
+      "consecutive_recoveries": 10,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-19T00:40:42Z",
+      "time": "2026-09-19T05:07:08Z",
       "overall_status": "none",
       "components": [
         {
@@ -201,37 +191,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-09-19T00:14:40.673Z",
+      "updated_at": "2026-09-19T03:39:11.067Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 24,
+      "consecutive_recoveries": 25,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-09-19T00:40:43Z",
+      "time": "2026-09-19T05:07:08Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-19T00:40:43Z",
+      "updated_at": "2026-09-19T05:07:08Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1441,
+      "consecutive_recoveries": 1442,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-19T00:40:43Z",
+      "time": "2026-09-19T05:07:08Z",
       "overall_status": "operational",
       "components": [
         {
@@ -248,25 +238,25 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 110,
+      "consecutive_recoveries": 111,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-19T00:40:43Z",
+      "time": "2026-09-19T05:07:08Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-19T00:40:43.590765Z",
+      "updated_at": "2026-09-19T05:07:08.904376Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 148,
+      "consecutive_recoveries": 149,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
