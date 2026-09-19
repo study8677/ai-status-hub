@@ -1,0 +1,94 @@
+{
+  "generated_at": "2026-09-19T00:40:44Z",
+  "window": {
+    "start": "2026-09-18T00:00:00Z",
+    "end": "2026-09-19T00:40:44Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-19T00:40:42Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-19T00:40:42Z",
+          "name": "Overbilling for OpenAI-hosted containers in the Agent API",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-09-19T00:40:42Z",
+          "name": "Delayed support responses",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-09-18T22:40:54Z",
+          "name": "Overbilling for OpenAI-hosted containers in the Agent API",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-09-18T22:40:54Z",
+          "name": "Delayed support responses",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-19T00:40:42Z",
+      "recent_incidents": []
+    },
+    "Gemini": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-19T00:40:43Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-19T00:40:43Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-19T00:40:43Z",
+      "recent_incidents": []
+    }
+  }
+}
