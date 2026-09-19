@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-19T05:07:09Z",
+  "generated_at": "2026-09-19T09:29:13Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-19T05:07:08Z",
+      "time": "2026-09-19T09:29:12Z",
       "overall_status": "none",
       "components": [
         {
@@ -128,33 +128,22 @@
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "01M2VA7X37P1ASADSNZ1CG4N4D",
-          "name": "Overbilling for OpenAI-hosted containers in the Agent API",
-          "status": "monitoring",
-          "impact": "none",
-          "shortlink": null,
-          "started_at": "2026-09-18T22:29:53Z",
-          "updated_at": "2026-09-19T05:00:57Z",
-          "url": null
-        }
-      ],
+      "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-09-19T05:00:57Z",
+      "updated_at": "2026-07-09T19:25:56Z",
       "source_url": "https://status.openai.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 10,
+      "consecutive_recoveries": 11,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-19T05:07:08Z",
+      "time": "2026-09-19T09:29:12Z",
       "overall_status": "none",
       "components": [
         {
@@ -191,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-09-19T03:39:11.067Z",
+      "updated_at": "2026-09-19T08:54:02.761Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 25,
+      "consecutive_recoveries": 26,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-09-19T05:07:08Z",
+      "time": "2026-09-19T09:29:12Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-19T05:07:08Z",
+      "updated_at": "2026-09-19T09:29:12Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1442,
+      "consecutive_recoveries": 1443,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-19T05:07:08Z",
+      "time": "2026-09-19T09:29:13Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,25 +227,25 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 111,
+      "consecutive_recoveries": 112,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-19T05:07:08Z",
+      "time": "2026-09-19T09:29:13Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-19T05:07:08.904376Z",
+      "updated_at": "2026-09-19T09:29:13.244019Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 149,
+      "consecutive_recoveries": 150,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
