@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-09-23T01:28:16Z",
+  "window": {
+    "start": "2026-09-22T00:00:00Z",
+    "end": "2026-09-23T01:28:16Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-23T01:28:15Z",
+      "recent_incidents": []
+    },
+    "Claude": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 6,
+      "warn": 0,
+      "critical": 1,
+      "unknown": 0,
+      "sla": 85.71,
+      "latest_status": "ok",
+      "latest_at": "2026-09-23T01:28:15Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-22T01:54:00Z",
+          "name": "Elevated errors for multiple models",
+          "status": "identified",
+          "link": "https://stspg.io/90s4l9yywzbk"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-23T01:28:15Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-23T01:28:15Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-09-23T01:28:15Z",
+      "recent_incidents": []
+    }
+  }
+}
