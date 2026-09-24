@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-24T19:32:10Z",
+  "generated_at": "2026-09-24T22:44:30Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-24T19:32:10Z",
+      "time": "2026-09-24T22:44:29Z",
       "overall_status": "none",
       "components": [
         {
@@ -128,33 +128,22 @@
           "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "01M3ACKDE4GYY67FXXNRRSC0CE",
-          "name": "Elevated Error Rates on GPT-6 Astra Pro",
-          "status": "identified",
-          "impact": "none",
-          "shortlink": null,
-          "started_at": "2026-09-24T18:59:44Z",
-          "updated_at": "2026-09-24T18:59:44Z",
-          "url": null
-        }
-      ],
+      "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-09-24T18:59:44Z",
+      "updated_at": "2026-07-09T19:25:56Z",
       "source_url": "https://status.openai.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 46,
+      "consecutive_recoveries": 47,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-24T19:32:10Z",
+      "time": "2026-09-24T22:44:29Z",
       "overall_status": "none",
       "components": [
         {
@@ -191,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-09-24T18:04:31.097Z",
+      "updated_at": "2026-09-24T22:09:41.762Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 16,
+      "consecutive_recoveries": 17,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-09-24T19:32:10Z",
+      "time": "2026-09-24T22:44:30Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-24T19:32:10Z",
+      "updated_at": "2026-09-24T22:44:30Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1478,
+      "consecutive_recoveries": 1479,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-24T19:32:10Z",
+      "time": "2026-09-24T22:44:30Z",
       "overall_status": "operational",
       "components": [
         {
@@ -238,25 +227,25 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 147,
+      "consecutive_recoveries": 148,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-24T19:32:10Z",
+      "time": "2026-09-24T22:44:30Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-24T19:32:10.763412Z",
+      "updated_at": "2026-09-24T22:44:30.361963Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 185,
+      "consecutive_recoveries": 186,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
