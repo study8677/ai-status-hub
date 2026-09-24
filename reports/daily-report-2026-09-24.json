@@ -1,68 +1,75 @@
 {
-  "generated_at": "2026-09-24T15:34:37Z",
+  "generated_at": "2026-09-24T19:32:11Z",
   "window": {
     "start": "2026-09-23T00:00:00Z",
-    "end": "2026-09-24T15:34:37Z"
+    "end": "2026-09-24T19:32:11Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-24T15:34:36Z",
-      "recent_incidents": []
+      "latest_at": "2026-09-24T19:32:10Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-24T19:32:10Z",
+          "name": "Elevated Error Rates on GPT-6 Astra Pro",
+          "status": "identified",
+          "link": null
+        }
+      ]
     },
     "Claude": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-24T15:34:36Z",
+      "latest_at": "2026-09-24T19:32:10Z",
       "recent_incidents": []
     },
     "Gemini": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-24T15:34:36Z",
+      "latest_at": "2026-09-24T19:32:10Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-24T15:34:36Z",
+      "latest_at": "2026-09-24T19:32:10Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-24T15:34:37Z",
+      "latest_at": "2026-09-24T19:32:10Z",
       "recent_incidents": []
     }
   }

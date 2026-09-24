@@ -2,11 +2,11 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 10 | 0 | 0 | 0 | ok |
-| Claude | 100.00 | 10 | 0 | 0 | 0 | ok |
-| Gemini | 100.00 | 10 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 10 | 0 | 0 | 0 | ok |
-| OpenAI | 100.00 | 10 | 0 | 0 | 0 | ok |
+| AWS | 100.00 | 11 | 0 | 0 | 0 | ok |
+| Claude | 100.00 | 11 | 0 | 0 | 0 | ok |
+| Gemini | 100.00 | 11 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 11 | 0 | 0 | 0 | ok |
+| OpenAI | 100.00 | 11 | 0 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
@@ -18,4 +18,4 @@
 ### Grok
 - 无事件记录
 ### OpenAI
-- 无事件记录
+- 2026-09-24T19:32:10Z | identified | Elevated Error Rates on GPT-6 Astra Pro
