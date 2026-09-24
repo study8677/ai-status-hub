@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-23T22:42:46Z",
+  "generated_at": "2026-09-24T00:56:38Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-09-23T22:42:46Z",
+      "time": "2026-09-24T00:56:38Z",
       "overall_status": "none",
       "components": [
         {
@@ -48,6 +48,16 @@
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
+          "name": "Compliance API",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Deep Research",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
           "name": "Realtime",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
@@ -58,17 +68,7 @@
           "updated_at": "2026-07-09T19:25:56Z"
         },
         {
-          "name": "Compliance API",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
           "name": "Agent",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Deep Research",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
@@ -79,11 +79,6 @@
         },
         {
           "name": "Connectors/Apps",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Codex in ChatGPT Desktop",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
@@ -99,11 +94,6 @@
         },
         {
           "name": "VS Code extension",
-          "status": "operational",
-          "updated_at": "2026-07-09T19:25:56Z"
-        },
-        {
-          "name": "Sites",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
         },
@@ -126,6 +116,16 @@
           "name": "CLI",
           "status": "operational",
           "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "Conversations",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
+        },
+        {
+          "name": "GPTs",
+          "status": "operational",
+          "updated_at": "2026-07-09T19:25:56Z"
         }
       ],
       "active_incidents": [],
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 41,
+      "consecutive_recoveries": 42,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-09-23T22:42:46Z",
+      "time": "2026-09-24T00:56:38Z",
       "overall_status": "none",
       "components": [
         {
@@ -180,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-09-23T21:34:10.390Z",
+      "updated_at": "2026-09-24T00:01:36.042Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 11,
+      "consecutive_recoveries": 12,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-09-23T22:42:46Z",
+      "time": "2026-09-24T00:56:38Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-09-23T22:42:46Z",
+      "updated_at": "2026-09-24T00:56:38Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1473,
+      "consecutive_recoveries": 1474,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-09-23T22:42:46Z",
+      "time": "2026-09-24T00:56:38Z",
       "overall_status": "operational",
       "components": [
         {
@@ -227,25 +227,25 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 142,
+      "consecutive_recoveries": 143,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-09-23T22:42:46Z",
+      "time": "2026-09-24T00:56:38Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-09-23T22:42:46.600973Z",
+      "updated_at": "2026-09-24T00:56:38.801299Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 180,
+      "consecutive_recoveries": 181,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
