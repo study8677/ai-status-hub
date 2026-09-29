@@ -1,68 +1,75 @@
 {
-  "generated_at": "2026-09-29T07:36:36Z",
+  "generated_at": "2026-09-29T14:23:14Z",
   "window": {
     "start": "2026-09-28T00:00:00Z",
-    "end": "2026-09-29T07:36:36Z"
+    "end": "2026-09-29T14:23:14Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-29T07:36:35Z",
+      "latest_at": "2026-09-29T14:23:13Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
       "ok": 6,
       "warn": 0,
-      "critical": 0,
+      "critical": 1,
       "unknown": 0,
-      "sla": 100.0,
-      "latest_status": "ok",
-      "latest_at": "2026-09-29T07:36:35Z",
-      "recent_incidents": []
+      "sla": 85.71,
+      "latest_status": "critical",
+      "latest_at": "2026-09-29T14:23:13Z",
+      "recent_incidents": [
+        {
+          "time": "2026-09-29T14:23:13Z",
+          "name": "Elevated errors on claude.ai, Claude Code and Claude Cowork",
+          "status": "investigating",
+          "link": "https://stspg.io/br61xzj05pp5"
+        }
+      ]
     },
     "Gemini": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-29T07:36:35Z",
+      "latest_at": "2026-09-29T14:23:14Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-29T07:36:35Z",
+      "latest_at": "2026-09-29T14:23:14Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-09-29T07:36:35Z",
+      "latest_at": "2026-09-29T14:23:14Z",
       "recent_incidents": []
     }
   }
