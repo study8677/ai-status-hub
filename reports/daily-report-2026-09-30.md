@@ -2,11 +2,11 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 6 | 0 | 0 | 0 | ok |
-| Claude | 83.33 | 5 | 0 | 1 | 0 | ok |
-| Gemini | 100.00 | 6 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 6 | 0 | 0 | 0 | ok |
-| OpenAI | 66.67 | 4 | 2 | 0 | 0 | ok |
+| AWS | 100.00 | 7 | 0 | 0 | 0 | ok |
+| Claude | 85.71 | 6 | 0 | 1 | 0 | ok |
+| Gemini | 100.00 | 7 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 7 | 0 | 0 | 0 | ok |
+| OpenAI | 57.14 | 4 | 3 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
@@ -19,6 +19,8 @@
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-09-30T08:34:57Z | monitoring | Elevated errors in ChatGPT Space Pages
+- 2026-09-30T08:34:57Z | monitoring | Elevated error rates for ChatGPT Pro and Plus users
 - 2026-09-29T23:12:06Z | monitoring | Elevated errors across ChatGPT, Codex, and the API including the Agents API
 - 2026-09-29T23:12:06Z | monitoring | Support available via email
 - 2026-09-29T19:32:52Z | investigating | Elevated errors across ChatGPT, Codex, and the API including the Agents API
