@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-10-01T09:26:05Z",
+  "generated_at": "2026-10-01T16:40:06Z",
   "window": {
     "start": "2026-09-30T00:00:00Z",
-    "end": "2026-10-01T09:26:05Z"
+    "end": "2026-10-01T16:40:06Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
       "ok": 1,
-      "warn": 6,
+      "warn": 7,
       "critical": 0,
       "unknown": 0,
-      "sla": 14.29,
+      "sla": 12.5,
       "latest_status": "warn",
-      "latest_at": "2026-10-01T09:26:04Z",
+      "latest_at": "2026-10-01T16:40:05Z",
       "recent_incidents": [
+        {
+          "time": "2026-10-01T16:40:05Z",
+          "name": "Elevated errors in ChatGPT Space Pages",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-10-01T09:26:04Z",
           "name": "Elevated errors in ChatGPT Space Pages",
@@ -67,51 +73,58 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
       "ok": 7,
-      "warn": 0,
+      "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 100.0,
-      "latest_status": "ok",
-      "latest_at": "2026-10-01T09:26:04Z",
-      "recent_incidents": []
+      "sla": 87.5,
+      "latest_status": "warn",
+      "latest_at": "2026-10-01T16:40:05Z",
+      "recent_incidents": [
+        {
+          "time": "2026-10-01T16:40:05Z",
+          "name": "Degraded performance on the Claude API and platform.claude.com",
+          "status": "investigating",
+          "link": "https://stspg.io/jg26d0skzh27"
+        }
+      ]
     },
     "Gemini": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-01T09:26:04Z",
+      "latest_at": "2026-10-01T16:40:05Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-01T09:26:04Z",
+      "latest_at": "2026-10-01T16:40:05Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-01T09:26:04Z",
+      "latest_at": "2026-10-01T16:40:06Z",
       "recent_incidents": []
     }
   }
