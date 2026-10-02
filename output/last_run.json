@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-01T21:23:40Z",
+  "generated_at": "2026-10-02T00:59:49Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-10-01T21:23:39Z",
-      "overall_status": "minor",
+      "time": "2026-10-02T00:59:48Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Chat Completions",
@@ -128,33 +128,22 @@
           "updated_at": "2026-09-29T18:29:41Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "01M3R1T4FCR1337FBBYY9K2RPB",
-          "name": "Elevated errors in ChatGPT Space Pages",
-          "status": "monitoring",
-          "impact": "minor",
-          "shortlink": null,
-          "started_at": "2026-09-30T02:20:32Z",
-          "updated_at": "2026-10-01T16:51:16Z",
-          "url": null
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-10-01T16:51:16Z",
+      "updated_at": "2026-09-29T18:29:41Z",
       "source_url": "https://status.openai.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-09-30T08:34:57Z",
-      "consecutive_anomalies": 8,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 132522,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-10-01T21:23:39Z",
+      "time": "2026-10-02T00:59:48Z",
       "overall_status": "none",
       "components": [
         {
@@ -188,51 +177,40 @@
           "updated_at": "2026-06-30T14:45:50.487Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "k0h22tsvnydg",
-          "name": "Delayed credits on the Claude Platform",
-          "status": "monitoring",
-          "impact": "minor",
-          "shortlink": "https://stspg.io/jg26d0skzh27",
-          "started_at": "2026-10-01T16:20:40.775Z",
-          "updated_at": "2026-10-01T18:23:02.751Z",
-          "url": "https://stspg.io/jg26d0skzh27"
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-10-01T21:06:41.506Z",
+      "updated_at": "2026-10-02T00:10:19.953Z",
       "source_url": "https://status.claude.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-10-01T16:40:05Z",
-      "consecutive_anomalies": 2,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 17014,
-      "latest_incident_link": "https://stspg.io/jg26d0skzh27"
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
+      "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-10-01T21:23:39Z",
+      "time": "2026-10-02T00:59:48Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-10-01T21:23:39Z",
+      "updated_at": "2026-10-02T00:59:48Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1516,
+      "consecutive_recoveries": 1517,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-10-01T21:23:39Z",
+      "time": "2026-10-02T00:59:48Z",
       "overall_status": "operational",
       "components": [
         {
@@ -249,35 +227,28 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 185,
+      "consecutive_recoveries": 186,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-10-01T21:23:40Z",
+      "time": "2026-10-02T00:59:49Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-10-01T21:23:40.106559Z",
+      "updated_at": "2026-10-02T00:59:49.095869Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 223,
+      "consecutive_recoveries": 224,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": [
-    {
-      "type": "alert",
-      "service": "Claude",
-      "level": "warn",
-      "message": "Claude is in WARN state (sampled 2026-10-01T21:23:39Z)"
-    }
-  ]
+  "alerts": []
 }
