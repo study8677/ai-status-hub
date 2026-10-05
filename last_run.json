@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-05T08:55:18Z",
+  "generated_at": "2026-10-05T17:43:41Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-10-05T08:55:17Z",
+      "time": "2026-10-05T17:43:40Z",
       "overall_status": "minor",
       "components": [
         {
@@ -74,7 +74,7 @@
         },
         {
           "name": "Conversations",
-          "status": "operational",
+          "status": "degraded_performance",
           "updated_at": "2026-09-29T18:29:41Z"
         },
         {
@@ -130,37 +130,57 @@
       ],
       "active_incidents": [
         {
-          "id": "01M45E0JFFJZ6EQ3BWYPW74R2Z",
-          "name": "Elevated Work Mode errors",
+          "id": "01M46G248GGHV9RSAJE82BZY1X",
+          "name": "Elevated errors in ChatGPT conversations",
           "status": "investigating",
           "impact": "minor",
           "shortlink": null,
+          "started_at": "2026-10-05T16:58:56Z",
+          "updated_at": "2026-10-05T16:58:56Z",
+          "url": null
+        },
+        {
+          "id": "01M46C47WYYD9NMZVGH83X3ZR1",
+          "name": "Admin Console Intermittently Inaccessible",
+          "status": "investigating",
+          "impact": "none",
+          "shortlink": null,
+          "started_at": "2026-10-05T15:50:11Z",
+          "updated_at": "2026-10-05T15:50:11Z",
+          "url": null
+        },
+        {
+          "id": "01M45E0JFFJZ6EQ3BWYPW74R2Z",
+          "name": "Elevated Work Mode errors",
+          "status": "monitoring",
+          "impact": "minor",
+          "shortlink": null,
           "started_at": "2026-10-05T07:03:53Z",
-          "updated_at": "2026-10-05T07:14:08Z",
+          "updated_at": "2026-10-05T09:50:38Z",
           "url": null
         }
       ],
       "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-10-05T07:14:08Z",
+      "updated_at": "2026-10-05T16:58:56Z",
       "source_url": "https://status.openai.com",
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-10-05T08:55:17Z",
-      "consecutive_anomalies": 1,
+      "consecutive_anomalies": 2,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
+      "anomaly_seconds": 31703,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-10-05T08:55:17Z",
+      "time": "2026-10-05T17:43:40Z",
       "overall_status": "none",
       "components": [
         {
           "name": "claude.ai",
           "status": "operational",
-          "updated_at": "2026-09-29T15:30:44.421Z"
+          "updated_at": "2026-10-05T13:21:37.485Z"
         },
         {
           "name": "Claude Console (platform.claude.com)",
@@ -170,17 +190,17 @@
         {
           "name": "Claude API (api.anthropic.com)",
           "status": "operational",
-          "updated_at": "2026-10-01T18:23:02.697Z"
+          "updated_at": "2026-10-05T13:21:37.516Z"
         },
         {
           "name": "Claude Code",
           "status": "operational",
-          "updated_at": "2026-09-29T15:30:44.480Z"
+          "updated_at": "2026-10-05T13:21:37.544Z"
         },
         {
           "name": "Claude Cowork",
           "status": "operational",
-          "updated_at": "2026-09-29T15:30:44.510Z"
+          "updated_at": "2026-10-05T13:21:37.570Z"
         },
         {
           "name": "Claude for Government",
@@ -191,37 +211,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-10-05T07:55:05.841Z",
+      "updated_at": "2026-10-05T17:35:04.467Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 19,
+      "consecutive_recoveries": 20,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-10-05T08:55:17Z",
+      "time": "2026-10-05T17:43:40Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-10-05T08:55:17Z",
+      "updated_at": "2026-10-05T17:43:40Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1535,
+      "consecutive_recoveries": 1536,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-10-05T08:55:17Z",
+      "time": "2026-10-05T17:43:40Z",
       "overall_status": "operational",
       "components": [
         {
@@ -232,34 +252,41 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.85,
-      "updated_at": "2026-09-22T01:29:59Z",
+      "updated_at": "2026-10-05T17:43:40.758662Z",
       "source_url": "https://status.x.ai/",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 204,
+      "consecutive_recoveries": 205,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-10-05T08:55:18Z",
+      "time": "2026-10-05T17:43:41Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-10-05T08:55:18.029138Z",
+      "updated_at": "2026-10-05T17:43:41.040819Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 242,
+      "consecutive_recoveries": 243,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "alert",
+      "service": "OpenAI",
+      "level": "warn",
+      "message": "OpenAI is in WARN state (sampled 2026-10-05T17:43:40Z)"
+    }
+  ]
 }
