@@ -2,11 +2,11 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 6 | 0 | 0 | 0 | ok |
-| Claude | 100.00 | 6 | 0 | 0 | 0 | ok |
-| Gemini | 100.00 | 6 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 6 | 0 | 0 | 0 | ok |
-| OpenAI | 33.33 | 2 | 4 | 0 | 0 | ok |
+| AWS | 100.00 | 7 | 0 | 0 | 0 | ok |
+| Claude | 100.00 | 7 | 0 | 0 | 0 | ok |
+| Gemini | 100.00 | 7 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 7 | 0 | 0 | 0 | ok |
+| OpenAI | 28.57 | 2 | 5 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
@@ -18,6 +18,7 @@
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-10-06T16:55:24Z | identified | Errors processing large PDFs in the Responses API
 - 2026-10-06T03:13:48Z | monitoring | Elevated errors affecting multiple products including ChatGPT (conversations), Image generations, Spaces and Pages, API rehydration, and Dots.
 - 2026-10-06T03:13:48Z | monitoring | Elevated error rates in Codex Cloud
 - 2026-10-06T03:13:48Z | monitoring | Elevated Work Mode errors
@@ -27,4 +28,3 @@
 - 2026-10-05T17:43:40Z | investigating | Elevated errors in ChatGPT conversations
 - 2026-10-05T17:43:40Z | investigating | Admin Console Intermittently Inaccessible
 - 2026-10-05T17:43:40Z | monitoring | Elevated Work Mode errors
-- 2026-10-05T08:55:17Z | investigating | Elevated Work Mode errors
