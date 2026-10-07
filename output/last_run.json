@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-07T00:58:18Z",
+  "generated_at": "2026-10-07T06:58:11Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-10-07T00:58:17Z",
-      "overall_status": "none",
+      "time": "2026-10-07T06:58:11Z",
+      "overall_status": "major",
       "components": [
         {
           "name": "Chat Completions",
@@ -84,7 +84,7 @@
         },
         {
           "name": "Codex in ChatGPT Desktop",
-          "status": "operational",
+          "status": "partial_outage",
           "updated_at": "2026-09-29T18:29:41Z"
         },
         {
@@ -128,22 +128,33 @@
           "updated_at": "2026-09-29T18:29:41Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "01M4ADHMMBK7K92NJFJ0DXRYJM",
+          "name": "Unable to create new ChatGPT Work threads in latest version of desktop app",
+          "status": "identified",
+          "impact": "major",
+          "shortlink": null,
+          "started_at": "2026-10-07T05:31:56Z",
+          "updated_at": "2026-10-07T05:54:27Z",
+          "url": null
+        }
+      ],
+      "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-09-29T18:29:41Z",
+      "updated_at": "2026-10-07T05:54:27Z",
       "source_url": "https://status.openai.com",
-      "level": "ok",
+      "level": "critical",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 2,
-      "anomaly_seconds": null,
+      "first_anomaly_at": "2026-10-07T06:58:11Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-10-07T00:58:17Z",
+      "time": "2026-10-07T06:58:11Z",
       "overall_status": "none",
       "components": [
         {
@@ -154,7 +165,7 @@
         {
           "name": "Claude Console (platform.claude.com)",
           "status": "operational",
-          "updated_at": "2026-10-01T18:23:02.671Z"
+          "updated_at": "2026-10-07T02:33:38.618Z"
         },
         {
           "name": "Claude API (api.anthropic.com)",
@@ -180,37 +191,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-10-07T00:45:09.742Z",
+      "updated_at": "2026-10-07T06:52:05.869Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 26,
+      "consecutive_recoveries": 27,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-10-07T00:58:17Z",
+      "time": "2026-10-07T06:58:11Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-10-07T00:58:17Z",
+      "updated_at": "2026-10-07T06:58:11Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1542,
+      "consecutive_recoveries": 1543,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-10-07T00:58:17Z",
+      "time": "2026-10-07T06:58:11Z",
       "overall_status": "operational",
       "components": [
         {
@@ -221,41 +232,34 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.85,
-      "updated_at": "2026-10-07T00:58:17.908056Z",
+      "updated_at": "2026-10-07T06:58:11.356084Z",
       "source_url": "https://status.x.ai/",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 211,
+      "consecutive_recoveries": 212,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-10-07T00:58:17Z",
+      "time": "2026-10-07T06:58:11Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-10-07T00:58:17.976404Z",
+      "updated_at": "2026-10-07T06:58:11.414792Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 249,
+      "consecutive_recoveries": 250,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": [
-    {
-      "type": "recover",
-      "service": "OpenAI",
-      "level": "ok",
-      "message": "OpenAI recovered"
-    }
-  ]
+  "alerts": []
 }
