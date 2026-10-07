@@ -2,17 +2,18 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 6 | 0 | 0 | 0 | ok |
-| Claude | 100.00 | 6 | 0 | 0 | 0 | ok |
-| Gemini | 100.00 | 6 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 6 | 0 | 0 | 0 | ok |
-| OpenAI | 50.00 | 3 | 2 | 1 | 0 | critical |
+| AWS | 100.00 | 7 | 0 | 0 | 0 | ok |
+| Claude | 85.71 | 6 | 0 | 1 | 0 | critical |
+| Gemini | 100.00 | 7 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 7 | 0 | 0 | 0 | ok |
+| OpenAI | 57.14 | 4 | 2 | 1 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
 - 无事件记录
 ### Claude
-- 无事件记录
+- 2026-10-07T14:17:46Z | investigating | Elevated errors on platform.claude.com
+
 ### Gemini
 - 无事件记录
 ### Grok
