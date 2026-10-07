@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-07T14:17:46Z",
+  "generated_at": "2026-10-07T20:04:15Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-10-07T14:17:46Z",
+      "time": "2026-10-07T20:04:14Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,13 +137,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1,
+      "consecutive_recoveries": 2,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-10-07T14:17:46Z",
+      "time": "2026-10-07T20:04:15Z",
       "overall_status": "minor",
       "components": [
         {
@@ -181,47 +181,47 @@
         {
           "id": "978mjkgw6mh7",
           "name": "Elevated errors on platform.claude.com",
-          "status": "investigating",
+          "status": "identified",
           "impact": "major",
           "shortlink": "https://stspg.io/sjkw7njwf0mt",
           "started_at": "2026-10-07T13:25:04.163Z",
-          "updated_at": "2026-10-07T13:25:04.274Z",
+          "updated_at": "2026-10-07T17:28:02.570Z",
           "url": "https://stspg.io/sjkw7njwf0mt"
         }
       ],
       "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-10-07T13:59:41.587Z",
+      "updated_at": "2026-10-07T19:26:20.969Z",
       "source_url": "https://status.claude.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-10-07T14:17:46Z",
-      "consecutive_anomalies": 1,
+      "consecutive_anomalies": 2,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
+      "anomaly_seconds": 20789,
       "latest_incident_link": "https://stspg.io/sjkw7njwf0mt"
     },
     {
       "service": "Gemini",
-      "time": "2026-10-07T14:17:46Z",
+      "time": "2026-10-07T20:04:15Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-10-07T14:17:46Z",
+      "updated_at": "2026-10-07T20:04:15Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1544,
+      "consecutive_recoveries": 1545,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-10-07T14:17:46Z",
+      "time": "2026-10-07T20:04:15Z",
       "overall_status": "operational",
       "components": [
         {
@@ -232,34 +232,41 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.85,
-      "updated_at": "2026-10-07T14:17:46.506316Z",
+      "updated_at": "2026-10-07T20:04:15.479348Z",
       "source_url": "https://status.x.ai/",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 213,
+      "consecutive_recoveries": 214,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-10-07T14:17:46Z",
+      "time": "2026-10-07T20:04:15Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-10-07T14:17:46.615614Z",
+      "updated_at": "2026-10-07T20:04:15.711859Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 251,
+      "consecutive_recoveries": 252,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "alert",
+      "service": "Claude",
+      "level": "critical",
+      "message": "Claude is in CRITICAL state (sampled 2026-10-07T20:04:15Z)"
+    }
+  ]
 }
