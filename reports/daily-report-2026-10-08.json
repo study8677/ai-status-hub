@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-08T06:04:05Z",
+  "generated_at": "2026-10-08T13:21:57Z",
   "window": {
     "start": "2026-10-07T00:00:00Z",
-    "end": "2026-10-08T06:04:05Z"
+    "end": "2026-10-08T13:21:57Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 5,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 6,
       "warn": 0,
       "critical": 1,
       "unknown": 0,
-      "sla": 83.33,
+      "sla": 85.71,
       "latest_status": "ok",
-      "latest_at": "2026-10-08T06:04:04Z",
+      "latest_at": "2026-10-08T13:21:56Z",
       "recent_incidents": [
         {
           "time": "2026-10-07T06:58:11Z",
@@ -25,16 +25,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
       "ok": 2,
       "warn": 0,
-      "critical": 4,
+      "critical": 5,
       "unknown": 0,
-      "sla": 33.33,
+      "sla": 28.57,
       "latest_status": "critical",
-      "latest_at": "2026-10-08T06:04:04Z",
+      "latest_at": "2026-10-08T13:21:56Z",
       "recent_incidents": [
+        {
+          "time": "2026-10-08T13:21:56Z",
+          "name": "Elevated errors on platform.claude.com",
+          "status": "monitoring",
+          "link": "https://stspg.io/sjkw7njwf0mt"
+        },
         {
           "time": "2026-10-08T06:04:04Z",
           "name": "Elevated errors on platform.claude.com",
@@ -62,39 +68,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-08T06:04:04Z",
+      "latest_at": "2026-10-08T13:21:56Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-08T06:04:05Z",
+      "latest_at": "2026-10-08T13:21:56Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-08T06:04:05Z",
+      "latest_at": "2026-10-08T13:21:56Z",
       "recent_incidents": []
     }
   }
