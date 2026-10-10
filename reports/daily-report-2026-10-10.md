@@ -2,16 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 6 | 0 | 0 | 0 | ok |
-| Claude | 0.00 | 0 | 0 | 6 | 0 | critical |
-| Gemini | 100.00 | 6 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 6 | 0 | 0 | 0 | ok |
-| OpenAI | 50.00 | 3 | 2 | 1 | 0 | warn |
+| AWS | 100.00 | 7 | 0 | 0 | 0 | ok |
+| Claude | 0.00 | 0 | 0 | 7 | 0 | critical |
+| Gemini | 100.00 | 7 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 7 | 0 | 0 | 0 | ok |
+| OpenAI | 42.86 | 3 | 3 | 1 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
 - 无事件记录
 ### Claude
+- 2026-10-10T13:54:32Z | monitoring | Elevated errors on platform.claude.com
 - 2026-10-10T07:20:15Z | monitoring | Elevated errors on platform.claude.com
 - 2026-10-10T01:20:47Z | monitoring | Elevated errors on platform.claude.com
 - 2026-10-09T21:44:56Z | monitoring | Elevated errors on platform.claude.com
@@ -24,6 +25,7 @@
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-10-10T13:54:31Z | monitoring | Delayed Costs data in the Compliance API
 - 2026-10-10T07:20:15Z | monitoring | Delayed Costs data in the Compliance API
 - 2026-10-10T01:20:47Z | monitoring | Delayed Costs data in the Compliance API
 - 2026-10-09T21:44:56Z | identified | Some ChatGPT content may be unavailable on Android
