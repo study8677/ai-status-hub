@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-09T21:44:57Z",
+  "generated_at": "2026-10-10T01:20:48Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-10-09T21:44:56Z",
-      "overall_status": "major",
+      "time": "2026-10-10T01:20:47Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "Chat Completions",
@@ -74,7 +74,7 @@
         },
         {
           "name": "Conversations",
-          "status": "partial_outage",
+          "status": "operational",
           "updated_at": "2026-09-29T18:29:41Z"
         },
         {
@@ -130,41 +130,31 @@
       ],
       "active_incidents": [
         {
-          "id": "01M4H7FKXDA425TDNP2CRGEYA3",
-          "name": "Some ChatGPT content may be unavailable on Android",
-          "status": "identified",
-          "impact": "major",
-          "shortlink": null,
-          "started_at": "2026-10-09T21:00:39Z",
-          "updated_at": "2026-10-09T21:00:39Z",
-          "url": null
-        },
-        {
           "id": "01M4GV1M2A3K38T73JCVCD9G0R",
           "name": "Delayed Costs data in the Compliance API",
-          "status": "identified",
+          "status": "monitoring",
           "impact": "minor",
           "shortlink": null,
           "started_at": "2026-10-09T17:23:18Z",
-          "updated_at": "2026-10-09T18:46:25Z",
+          "updated_at": "2026-10-09T22:03:59Z",
           "url": null
         }
       ],
-      "raw_score": 20,
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-10-09T21:00:39Z",
+      "updated_at": "2026-10-09T22:03:59Z",
       "source_url": "https://status.openai.com",
-      "level": "critical",
+      "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-10-09T21:44:56Z",
-      "consecutive_anomalies": 1,
+      "consecutive_anomalies": 2,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
+      "anomaly_seconds": 12951,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-10-09T21:44:56Z",
+      "time": "2026-10-10T01:20:47Z",
       "overall_status": "minor",
       "components": [
         {
@@ -212,37 +202,37 @@
       ],
       "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-10-09T21:10:31.775Z",
+      "updated_at": "2026-10-09T22:24:42.687Z",
       "source_url": "https://status.claude.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-10-07T14:17:46Z",
-      "consecutive_anomalies": 11,
+      "consecutive_anomalies": 12,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 199630,
+      "anomaly_seconds": 212581,
       "latest_incident_link": "https://stspg.io/sjkw7njwf0mt"
     },
     {
       "service": "Gemini",
-      "time": "2026-10-09T21:44:56Z",
+      "time": "2026-10-10T01:20:47Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-10-09T21:44:56Z",
+      "updated_at": "2026-10-10T01:20:47Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1554,
+      "consecutive_recoveries": 1555,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-10-09T21:44:57Z",
+      "time": "2026-10-10T01:20:47Z",
       "overall_status": "operational",
       "components": [
         {
@@ -253,34 +243,41 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.85,
-      "updated_at": "2026-10-09T21:44:57.055088Z",
+      "updated_at": "2026-10-10T01:20:47.681840Z",
       "source_url": "https://status.x.ai/",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 223,
+      "consecutive_recoveries": 224,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-10-09T21:44:57Z",
+      "time": "2026-10-10T01:20:47Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-10-09T21:44:57.411717Z",
+      "updated_at": "2026-10-10T01:20:47.795365Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 261,
+      "consecutive_recoveries": 262,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "alert",
+      "service": "OpenAI",
+      "level": "warn",
+      "message": "OpenAI is in WARN state (sampled 2026-10-10T01:20:47Z)"
+    }
+  ]
 }
