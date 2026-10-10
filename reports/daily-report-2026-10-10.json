@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-10-10T13:54:33Z",
+  "generated_at": "2026-10-10T18:11:11Z",
   "window": {
     "start": "2026-10-09T00:00:00Z",
-    "end": "2026-10-10T13:54:33Z"
+    "end": "2026-10-10T18:11:11Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
       "ok": 3,
-      "warn": 3,
+      "warn": 4,
       "critical": 1,
       "unknown": 0,
-      "sla": 42.86,
+      "sla": 37.5,
       "latest_status": "warn",
-      "latest_at": "2026-10-10T13:54:31Z",
+      "latest_at": "2026-10-10T18:11:10Z",
       "recent_incidents": [
+        {
+          "time": "2026-10-10T18:11:10Z",
+          "name": "Delayed Costs data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-10-10T13:54:31Z",
           "name": "Delayed Costs data in the Compliance API",
@@ -49,16 +55,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
       "ok": 0,
       "warn": 0,
-      "critical": 7,
+      "critical": 8,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-10-10T13:54:32Z",
+      "latest_at": "2026-10-10T18:11:11Z",
       "recent_incidents": [
+        {
+          "time": "2026-10-10T18:11:11Z",
+          "name": "Elevated errors on platform.claude.com",
+          "status": "monitoring",
+          "link": "https://stspg.io/sjkw7njwf0mt"
+        },
         {
           "time": "2026-10-10T13:54:32Z",
           "name": "Elevated errors on platform.claude.com",
@@ -104,39 +116,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-10T13:54:32Z",
+      "latest_at": "2026-10-10T18:11:11Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-10T13:54:32Z",
+      "latest_at": "2026-10-10T18:11:11Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-10T13:54:32Z",
+      "latest_at": "2026-10-10T18:11:11Z",
       "recent_incidents": []
     }
   }
