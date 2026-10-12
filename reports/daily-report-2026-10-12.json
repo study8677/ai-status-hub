@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-10-12T01:06:32Z",
+  "window": {
+    "start": "2026-10-11T00:00:00Z",
+    "end": "2026-10-12T01:06:32Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 0,
+      "warn": 6,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "warn",
+      "latest_at": "2026-10-12T01:06:31Z",
+      "recent_incidents": [
+        {
+          "time": "2026-10-12T01:06:31Z",
+          "name": "Delayed Costs data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-10-11T21:57:54Z",
+          "name": "Delayed Costs data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-10-11T18:10:04Z",
+          "name": "Delayed Costs data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-10-11T13:15:05Z",
+          "name": "Delayed Costs data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-10-11T06:24:39Z",
+          "name": "Delayed Costs data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-10-11T00:34:05Z",
+          "name": "Delayed Costs data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 0,
+      "warn": 0,
+      "critical": 6,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "critical",
+      "latest_at": "2026-10-12T01:06:31Z",
+      "recent_incidents": [
+        {
+          "time": "2026-10-12T01:06:31Z",
+          "name": "Elevated errors on platform.claude.com",
+          "status": "monitoring",
+          "link": "https://stspg.io/sjkw7njwf0mt"
+        },
+        {
+          "time": "2026-10-11T21:57:54Z",
+          "name": "Elevated errors on platform.claude.com",
+          "status": "monitoring",
+          "link": "https://stspg.io/sjkw7njwf0mt"
+        },
+        {
+          "time": "2026-10-11T18:10:05Z",
+          "name": "Elevated errors on platform.claude.com",
+          "status": "monitoring",
+          "link": "https://stspg.io/sjkw7njwf0mt"
+        },
+        {
+          "time": "2026-10-11T13:15:05Z",
+          "name": "Elevated errors on platform.claude.com",
+          "status": "monitoring",
+          "link": "https://stspg.io/sjkw7njwf0mt"
+        },
+        {
+          "time": "2026-10-11T06:24:39Z",
+          "name": "Elevated errors on platform.claude.com",
+          "status": "monitoring",
+          "link": "https://stspg.io/sjkw7njwf0mt"
+        },
+        {
+          "time": "2026-10-11T00:34:06Z",
+          "name": "Elevated errors on platform.claude.com",
+          "status": "monitoring",
+          "link": "https://stspg.io/sjkw7njwf0mt"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-12T01:06:31Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-12T01:06:32Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-12T01:06:32Z",
+      "recent_incidents": []
+    }
+  }
+}
