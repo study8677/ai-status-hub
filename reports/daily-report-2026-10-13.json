@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-10-13T03:42:37Z",
+  "generated_at": "2026-10-13T11:11:14Z",
   "window": {
     "start": "2026-10-12T00:00:00Z",
-    "end": "2026-10-13T03:42:37Z"
+    "end": "2026-10-13T11:11:14Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
       "ok": 3,
-      "warn": 2,
+      "warn": 3,
       "critical": 0,
       "unknown": 0,
-      "sla": 60.0,
-      "latest_status": "ok",
-      "latest_at": "2026-10-13T03:42:36Z",
+      "sla": 50.0,
+      "latest_status": "warn",
+      "latest_at": "2026-10-13T11:11:13Z",
       "recent_incidents": [
+        {
+          "time": "2026-10-13T11:11:13Z",
+          "name": "Degraded performance in GPT-6.1 Sol Codex and Work mode",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-10-12T07:20:57Z",
           "name": "Delayed Costs data in the Compliance API",
@@ -31,16 +37,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
       "ok": 0,
       "warn": 0,
-      "critical": 5,
+      "critical": 6,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-10-13T03:42:36Z",
+      "latest_at": "2026-10-13T11:11:13Z",
       "recent_incidents": [
+        {
+          "time": "2026-10-13T11:11:13Z",
+          "name": "Elevated errors on platform.claude.com",
+          "status": "monitoring",
+          "link": "https://stspg.io/sjkw7njwf0mt"
+        },
         {
           "time": "2026-10-13T03:42:36Z",
           "name": "Elevated errors on platform.claude.com",
@@ -74,39 +86,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
-      "ok": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-13T03:42:36Z",
+      "latest_at": "2026-10-13T11:11:13Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
-      "ok": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-13T03:42:37Z",
+      "latest_at": "2026-10-13T11:11:13Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
-      "ok": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-13T03:42:37Z",
+      "latest_at": "2026-10-13T11:11:14Z",
       "recent_incidents": []
     }
   }
