@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-10-14T01:44:32Z",
+  "window": {
+    "start": "2026-10-13T00:00:00Z",
+    "end": "2026-10-14T01:44:32Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 4,
+      "warn": 1,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 80.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-14T01:44:30Z",
+      "recent_incidents": [
+        {
+          "time": "2026-10-13T11:11:13Z",
+          "name": "Degraded performance in GPT-6.1 Sol Codex and Work mode",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 3,
+      "warn": 0,
+      "critical": 2,
+      "unknown": 0,
+      "sla": 60.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-14T01:44:31Z",
+      "recent_incidents": [
+        {
+          "time": "2026-10-13T11:11:13Z",
+          "name": "Elevated errors on platform.claude.com",
+          "status": "monitoring",
+          "link": "https://stspg.io/sjkw7njwf0mt"
+        },
+        {
+          "time": "2026-10-13T03:42:36Z",
+          "name": "Elevated errors on platform.claude.com",
+          "status": "monitoring",
+          "link": "https://stspg.io/sjkw7njwf0mt"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-14T01:44:31Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-14T01:44:31Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-14T01:44:31Z",
+      "recent_incidents": []
+    }
+  }
+}
