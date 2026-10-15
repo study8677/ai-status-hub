@@ -2,11 +2,11 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 9 | 0 | 0 | 0 | ok |
-| Claude | 100.00 | 9 | 0 | 0 | 0 | ok |
-| Gemini | 100.00 | 9 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 9 | 0 | 0 | 0 | ok |
-| OpenAI | 33.33 | 3 | 6 | 0 | 0 | warn |
+| AWS | 100.00 | 10 | 0 | 0 | 0 | ok |
+| Claude | 100.00 | 10 | 0 | 0 | 0 | ok |
+| Gemini | 100.00 | 10 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 10 | 0 | 0 | 0 | ok |
+| OpenAI | 30.00 | 3 | 7 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
@@ -18,6 +18,8 @@
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-10-15T17:25:23Z | monitoring | Widespread feature degradation
+- 2026-10-15T17:25:23Z | identified | Delayed Costs data in the Compliance API
 - 2026-10-15T12:39:05Z | identified | Delayed Costs data in the Compliance API
 - 2026-10-15T07:02:55Z | identified | Delayed Costs data in the Compliance API
 - 2026-10-15T01:57:06Z | identified | Delayed Costs data in the Compliance API
