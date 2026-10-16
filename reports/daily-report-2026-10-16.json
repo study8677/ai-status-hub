@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-10-16T01:26:51Z",
+  "window": {
+    "start": "2026-10-15T00:00:00Z",
+    "end": "2026-10-16T01:26:51Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 0,
+      "warn": 7,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "warn",
+      "latest_at": "2026-10-16T01:26:49Z",
+      "recent_incidents": [
+        {
+          "time": "2026-10-16T01:26:49Z",
+          "name": "Delayed Costs data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-10-15T23:14:47Z",
+          "name": "Delayed Costs data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-10-15T20:28:38Z",
+          "name": "Delayed Costs data in the Compliance API",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-10-15T17:25:23Z",
+          "name": "Widespread feature degradation",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-10-15T17:25:23Z",
+          "name": "Delayed Costs data in the Compliance API",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-10-15T12:39:05Z",
+          "name": "Delayed Costs data in the Compliance API",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-10-15T07:02:55Z",
+          "name": "Delayed Costs data in the Compliance API",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-10-15T01:57:06Z",
+          "name": "Delayed Costs data in the Compliance API",
+          "status": "identified",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-16T01:26:49Z",
+      "recent_incidents": []
+    },
+    "Gemini": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-16T01:26:50Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-16T01:26:50Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-16T01:26:50Z",
+      "recent_incidents": []
+    }
+  }
+}
