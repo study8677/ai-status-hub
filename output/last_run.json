@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-16T06:11:22Z",
+  "generated_at": "2026-10-16T11:23:27Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-10-16T06:11:22Z",
-      "overall_status": "minor",
+      "time": "2026-10-16T11:23:26Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Chat Completions",
@@ -89,7 +89,7 @@
         },
         {
           "name": "Compliance API",
-          "status": "degraded_performance",
+          "status": "operational",
           "updated_at": "2026-09-29T18:29:41Z"
         },
         {
@@ -128,33 +128,22 @@
           "updated_at": "2026-09-29T18:29:41Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "01M4XNQX7C6RCBNGX9H711WFSG",
-          "name": "Delayed Costs data in the Compliance API",
-          "status": "monitoring",
-          "impact": "minor",
-          "shortlink": null,
-          "started_at": "2026-10-14T17:00:44Z",
-          "updated_at": "2026-10-15T22:36:42Z",
-          "url": null
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-10-15T22:36:42Z",
+      "updated_at": "2026-09-29T18:29:41Z",
       "source_url": "https://status.openai.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-10-14T17:34:46Z",
-      "consecutive_anomalies": 11,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 131796,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-10-16T06:11:22Z",
+      "time": "2026-10-16T11:23:26Z",
       "overall_status": "none",
       "components": [
         {
@@ -191,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-10-16T05:49:56.022Z",
+      "updated_at": "2026-10-16T10:00:11.495Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 16,
+      "consecutive_recoveries": 17,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-10-16T06:11:22Z",
+      "time": "2026-10-16T11:23:27Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-10-16T06:11:22Z",
+      "updated_at": "2026-10-16T11:23:27Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1586,
+      "consecutive_recoveries": 1587,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-10-16T06:11:22Z",
+      "time": "2026-10-16T11:23:27Z",
       "overall_status": "operational",
       "components": [
         {
@@ -232,31 +221,31 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.85,
-      "updated_at": "2026-10-16T06:11:22.707863Z",
+      "updated_at": "2026-10-16T11:23:27.251700Z",
       "source_url": "https://status.x.ai/",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 255,
+      "consecutive_recoveries": 256,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-10-16T06:11:22Z",
+      "time": "2026-10-16T11:23:27Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-10-16T06:11:22.783918Z",
+      "updated_at": "2026-10-16T11:23:27.384122Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 293,
+      "consecutive_recoveries": 294,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
