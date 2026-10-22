@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-10-22T18:55:58Z",
+  "generated_at": "2026-10-22T22:05:11Z",
   "window": {
     "start": "2026-10-21T00:00:00Z",
-    "end": "2026-10-22T18:55:58Z"
+    "end": "2026-10-22T22:05:11Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
       "ok": 7,
-      "warn": 3,
+      "warn": 4,
       "critical": 0,
       "unknown": 0,
-      "sla": 70.0,
+      "sla": 63.64,
       "latest_status": "warn",
-      "latest_at": "2026-10-22T18:55:57Z",
+      "latest_at": "2026-10-22T22:05:09Z",
       "recent_incidents": [
+        {
+          "time": "2026-10-22T22:05:09Z",
+          "name": "New Ad Accounts failing to provision admins",
+          "status": "identified",
+          "link": null
+        },
         {
           "time": "2026-10-22T18:55:57Z",
           "name": "Dot Message Failures",
@@ -37,15 +43,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 9,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 10,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 90.0,
+      "sla": 90.91,
       "latest_status": "ok",
-      "latest_at": "2026-10-22T18:55:57Z",
+      "latest_at": "2026-10-22T22:05:10Z",
       "recent_incidents": [
         {
           "time": "2026-10-22T04:51:55Z",
@@ -56,39 +62,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-22T18:55:57Z",
+      "latest_at": "2026-10-22T22:05:10Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-22T18:55:57Z",
+      "latest_at": "2026-10-22T22:05:10Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 10,
-      "measured_checks_24h": 10,
-      "ok": 10,
+      "total_checks_24h": 11,
+      "measured_checks_24h": 11,
+      "ok": 11,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-22T18:55:58Z",
+      "latest_at": "2026-10-22T22:05:11Z",
       "recent_incidents": []
     }
   }
