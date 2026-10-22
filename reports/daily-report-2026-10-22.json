@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-10-22T14:45:16Z",
+  "generated_at": "2026-10-22T18:55:58Z",
   "window": {
     "start": "2026-10-21T00:00:00Z",
-    "end": "2026-10-22T14:45:16Z"
+    "end": "2026-10-22T18:55:58Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
       "ok": 7,
-      "warn": 2,
+      "warn": 3,
       "critical": 0,
       "unknown": 0,
-      "sla": 77.78,
-      "latest_status": "ok",
-      "latest_at": "2026-10-22T14:45:15Z",
+      "sla": 70.0,
+      "latest_status": "warn",
+      "latest_at": "2026-10-22T18:55:57Z",
       "recent_incidents": [
+        {
+          "time": "2026-10-22T18:55:57Z",
+          "name": "Dot Message Failures",
+          "status": "identified",
+          "link": null
+        },
         {
           "time": "2026-10-22T04:51:55Z",
           "name": "ChatGPT conversion failures in India, Japan and Korea. And Response API errors",
@@ -31,15 +37,15 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
-      "ok": 8,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
+      "ok": 9,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 88.89,
+      "sla": 90.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-22T14:45:15Z",
+      "latest_at": "2026-10-22T18:55:57Z",
       "recent_incidents": [
         {
           "time": "2026-10-22T04:51:55Z",
@@ -50,39 +56,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
-      "ok": 9,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
+      "ok": 10,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-22T14:45:15Z",
+      "latest_at": "2026-10-22T18:55:57Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
-      "ok": 9,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
+      "ok": 10,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-22T14:45:15Z",
+      "latest_at": "2026-10-22T18:55:57Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 9,
-      "measured_checks_24h": 9,
-      "ok": 9,
+      "total_checks_24h": 10,
+      "measured_checks_24h": 10,
+      "ok": 10,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-22T14:45:15Z",
+      "latest_at": "2026-10-22T18:55:58Z",
       "recent_incidents": []
     }
   }
