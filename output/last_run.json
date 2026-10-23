@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-22T22:05:11Z",
+  "generated_at": "2026-10-23T00:38:27Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-10-22T22:05:09Z",
-      "overall_status": "minor",
+      "time": "2026-10-23T00:38:26Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "Chat Completions",
@@ -128,33 +128,22 @@
           "updated_at": "2026-10-16T20:01:40Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "01M5JHVJVC8WAXB4WRYFMKG6HP",
-          "name": "New Ad Accounts failing to provision admins",
-          "status": "identified",
-          "impact": "minor",
-          "shortlink": null,
-          "started_at": "2026-10-22T19:36:53Z",
-          "updated_at": "2026-10-22T21:30:55Z",
-          "url": null
-        }
-      ],
-      "raw_score": 70,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-10-22T21:30:55Z",
+      "updated_at": "2026-10-16T20:01:40Z",
       "source_url": "https://status.openai.com",
-      "level": "warn",
+      "level": "ok",
       "error": null,
       "first_anomaly_at": "2026-10-22T18:55:57Z",
-      "consecutive_anomalies": 2,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 11352,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-10-22T22:05:10Z",
+      "time": "2026-10-23T00:38:26Z",
       "overall_status": "none",
       "components": [
         {
@@ -191,37 +180,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-10-22T21:05:24.498Z",
+      "updated_at": "2026-10-22T23:05:28.841Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 4,
+      "consecutive_recoveries": 5,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-10-22T22:05:10Z",
+      "time": "2026-10-23T00:38:26Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-10-22T22:05:10Z",
+      "updated_at": "2026-10-23T00:38:26Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1628,
+      "consecutive_recoveries": 1629,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-10-22T22:05:10Z",
+      "time": "2026-10-23T00:38:27Z",
       "overall_status": "operational",
       "components": [
         {
@@ -232,41 +221,34 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.85,
-      "updated_at": "2026-10-22T22:05:10.798927Z",
+      "updated_at": "2026-10-23T00:38:27.142639Z",
       "source_url": "https://status.x.ai/",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 297,
+      "consecutive_recoveries": 298,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-10-22T22:05:11Z",
+      "time": "2026-10-23T00:38:27Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-10-22T22:05:11.014642Z",
+      "updated_at": "2026-10-23T00:38:27.417316Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 335,
+      "consecutive_recoveries": 336,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": [
-    {
-      "type": "alert",
-      "service": "OpenAI",
-      "level": "warn",
-      "message": "OpenAI is in WARN state (sampled 2026-10-22T22:05:09Z)"
-    }
-  ]
+  "alerts": []
 }
