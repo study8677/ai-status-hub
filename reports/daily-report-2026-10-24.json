@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-10-24T00:56:49Z",
+  "window": {
+    "start": "2026-10-23T00:00:00Z",
+    "end": "2026-10-24T00:56:49Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-24T00:56:47Z",
+      "recent_incidents": [
+        {
+          "time": "2026-10-23T05:23:21Z",
+          "name": "Delays in customer support responses",
+          "status": "identified",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-24T00:56:47Z",
+      "recent_incidents": []
+    },
+    "Gemini": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-24T00:56:48Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-24T00:56:48Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-24T00:56:48Z",
+      "recent_incidents": []
+    }
+  }
+}
