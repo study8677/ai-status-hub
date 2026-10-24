@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-24T05:19:16Z",
+  "generated_at": "2026-10-24T09:38:30Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-10-24T05:19:15Z",
+      "time": "2026-10-24T09:38:29Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,19 +137,19 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 8,
+      "consecutive_recoveries": 9,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-10-24T05:19:15Z",
-      "overall_status": "minor",
+      "time": "2026-10-24T09:38:30Z",
+      "overall_status": "none",
       "components": [
         {
           "name": "claude.ai",
-          "status": "partial_outage",
-          "updated_at": "2026-10-24T05:16:50.646Z"
+          "status": "operational",
+          "updated_at": "2026-10-24T05:41:17.364Z"
         },
         {
           "name": "Claude Console (platform.claude.com)",
@@ -158,18 +158,18 @@
         },
         {
           "name": "Claude API (api.anthropic.com)",
-          "status": "partial_outage",
-          "updated_at": "2026-10-24T05:16:50.672Z"
+          "status": "operational",
+          "updated_at": "2026-10-24T05:24:52.989Z"
         },
         {
           "name": "Claude Code",
-          "status": "partial_outage",
-          "updated_at": "2026-10-24T05:16:50.698Z"
+          "status": "operational",
+          "updated_at": "2026-10-24T05:41:17.396Z"
         },
         {
           "name": "Claude Cowork",
-          "status": "partial_outage",
-          "updated_at": "2026-10-24T05:16:50.812Z"
+          "status": "operational",
+          "updated_at": "2026-10-24T05:41:17.423Z"
         },
         {
           "name": "Claude for Government",
@@ -177,51 +177,40 @@
           "updated_at": "2026-06-30T14:45:50.487Z"
         }
       ],
-      "active_incidents": [
-        {
-          "id": "0ns5clsk8p2x",
-          "name": "Elevated errors for other Claude models",
-          "status": "investigating",
-          "impact": "major",
-          "shortlink": "https://stspg.io/7n1wgb6qsfly",
-          "started_at": "2026-10-24T05:16:50.587Z",
-          "updated_at": "2026-10-24T05:16:50.870Z",
-          "url": "https://stspg.io/7n1wgb6qsfly"
-        }
-      ],
-      "raw_score": 20,
+      "active_incidents": [],
+      "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-10-24T05:16:50.873Z",
+      "updated_at": "2026-10-24T07:09:35.958Z",
       "source_url": "https://status.claude.com",
-      "level": "critical",
+      "level": "ok",
       "error": null,
-      "first_anomaly_at": "2026-10-24T05:19:15Z",
-      "consecutive_anomalies": 1,
-      "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
-      "latest_incident_link": "https://stspg.io/7n1wgb6qsfly"
+      "first_anomaly_at": null,
+      "consecutive_anomalies": 0,
+      "consecutive_recoveries": 1,
+      "anomaly_seconds": null,
+      "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-10-24T05:19:15Z",
+      "time": "2026-10-24T09:38:30Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-10-24T05:19:15Z",
+      "updated_at": "2026-10-24T09:38:30Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1636,
+      "consecutive_recoveries": 1637,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-10-24T05:19:15Z",
+      "time": "2026-10-24T09:38:30Z",
       "overall_status": "operational",
       "components": [
         {
@@ -232,31 +221,31 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.85,
-      "updated_at": "2026-10-24T05:19:15.871092Z",
+      "updated_at": "2026-10-24T09:38:30.215331Z",
       "source_url": "https://status.x.ai/",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 305,
+      "consecutive_recoveries": 306,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-10-24T05:19:16Z",
+      "time": "2026-10-24T09:38:30Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-10-24T05:19:16.181974Z",
+      "updated_at": "2026-10-24T09:38:30.280424Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 343,
+      "consecutive_recoveries": 344,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
