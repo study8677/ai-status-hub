@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-10-25T01:47:11Z",
+  "window": {
+    "start": "2026-10-24T00:00:00Z",
+    "end": "2026-10-25T01:47:11Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-25T01:47:10Z",
+      "recent_incidents": []
+    },
+    "Claude": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 8,
+      "warn": 0,
+      "critical": 1,
+      "unknown": 0,
+      "sla": 88.89,
+      "latest_status": "ok",
+      "latest_at": "2026-10-25T01:47:11Z",
+      "recent_incidents": [
+        {
+          "time": "2026-10-24T05:19:15Z",
+          "name": "Elevated errors for other Claude models",
+          "status": "investigating",
+          "link": "https://stspg.io/7n1wgb6qsfly"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-25T01:47:11Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-25T01:47:11Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-25T01:47:11Z",
+      "recent_incidents": []
+    }
+  }
+}
