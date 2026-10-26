@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-10-26T04:29:03Z",
+  "window": {
+    "start": "2026-10-25T00:00:00Z",
+    "end": "2026-10-26T04:29:03Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-26T04:29:02Z",
+      "recent_incidents": []
+    },
+    "Claude": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 7,
+      "warn": 0,
+      "critical": 1,
+      "unknown": 0,
+      "sla": 87.5,
+      "latest_status": "ok",
+      "latest_at": "2026-10-26T04:29:02Z",
+      "recent_incidents": [
+        {
+          "time": "2026-10-25T06:59:26Z",
+          "name": "Elevated errors for Claude Sonnet 5.5 and other models",
+          "status": "monitoring",
+          "link": "https://stspg.io/s3wd6gmdsdhn"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-26T04:29:03Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-26T04:29:03Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-26T04:29:03Z",
+      "recent_incidents": []
+    }
+  }
+}
