@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-10-27T10:57:08Z",
+  "generated_at": "2026-10-27T16:19:37Z",
   "window": {
     "start": "2026-10-26T00:00:00Z",
-    "end": "2026-10-27T10:57:08Z"
+    "end": "2026-10-27T16:19:37Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
       "ok": 7,
-      "warn": 0,
+      "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 100.0,
-      "latest_status": "ok",
-      "latest_at": "2026-10-27T10:57:07Z",
+      "sla": 87.5,
+      "latest_status": "warn",
+      "latest_at": "2026-10-27T16:19:36Z",
       "recent_incidents": [
+        {
+          "time": "2026-10-27T16:19:36Z",
+          "name": "6.1 Sol Degraded Model Performance",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-10-27T10:57:07Z",
           "name": "Elevated error rates for most hosted Code Reviews and Security Reviews on private GitHub repositories",
@@ -25,51 +31,51 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-27T10:57:08Z",
+      "latest_at": "2026-10-27T16:19:36Z",
       "recent_incidents": []
     },
     "Gemini": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-27T10:57:08Z",
+      "latest_at": "2026-10-27T16:19:37Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-27T10:57:08Z",
+      "latest_at": "2026-10-27T16:19:37Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-27T10:57:08Z",
+      "latest_at": "2026-10-27T16:19:37Z",
       "recent_incidents": []
     }
   }
