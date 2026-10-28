@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-28T11:35:29Z",
+  "generated_at": "2026-10-28T17:22:30Z",
   "window": {
     "start": "2026-10-27T00:00:00Z",
-    "end": "2026-10-28T11:35:29Z"
+    "end": "2026-10-28T17:22:30Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 8,
-      "measured_checks_24h": 8,
-      "ok": 7,
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 8,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 87.5,
+      "sla": 88.89,
       "latest_status": "ok",
-      "latest_at": "2026-10-28T11:35:27Z",
+      "latest_at": "2026-10-28T17:22:29Z",
       "recent_incidents": [
         {
           "time": "2026-10-27T16:19:36Z",
@@ -31,16 +31,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 8,
-      "measured_checks_24h": 8,
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
       "ok": 7,
-      "warn": 1,
+      "warn": 2,
       "critical": 0,
       "unknown": 0,
-      "sla": 87.5,
-      "latest_status": "ok",
-      "latest_at": "2026-10-28T11:35:28Z",
+      "sla": 77.78,
+      "latest_status": "warn",
+      "latest_at": "2026-10-28T17:22:30Z",
       "recent_incidents": [
+        {
+          "time": "2026-10-28T17:22:30Z",
+          "name": "Elevated errors affecting the Google Calendar connector",
+          "status": "investigating",
+          "link": "https://stspg.io/75qq31h8672d"
+        },
         {
           "time": "2026-10-28T05:32:58Z",
           "name": "Elevated errors affecting the Gmail connector",
@@ -50,39 +56,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 8,
-      "measured_checks_24h": 8,
-      "ok": 8,
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-28T11:35:28Z",
+      "latest_at": "2026-10-28T17:22:30Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 8,
-      "measured_checks_24h": 8,
-      "ok": 8,
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-28T11:35:28Z",
+      "latest_at": "2026-10-28T17:22:30Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 8,
-      "measured_checks_24h": 8,
-      "ok": 8,
+      "total_checks_24h": 9,
+      "measured_checks_24h": 9,
+      "ok": 9,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-10-28T11:35:28Z",
+      "latest_at": "2026-10-28T17:22:30Z",
       "recent_incidents": []
     }
   }
