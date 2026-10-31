@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-10-31T00:39:50Z",
+  "window": {
+    "start": "2026-10-30T00:00:00Z",
+    "end": "2026-10-31T00:39:50Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 3,
+      "warn": 2,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 60.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-31T00:39:49Z",
+      "recent_incidents": [
+        {
+          "time": "2026-10-30T20:59:03Z",
+          "name": "Elevated errors with search in Dots, ChatGPT Work, and certain ChatGPT thinking experiences",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-10-30T16:26:14Z",
+          "name": "Elevated errors for GPT Image 2 API image edits",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-31T00:39:49Z",
+      "recent_incidents": []
+    },
+    "Gemini": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-31T00:39:49Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-31T00:39:49Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-10-31T00:39:50Z",
+      "recent_incidents": []
+    }
+  }
+}
