@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-11-05T14:06:38Z",
+  "generated_at": "2026-11-05T21:03:58Z",
   "window": {
     "start": "2026-11-04T00:00:00Z",
-    "end": "2026-11-05T14:06:38Z"
+    "end": "2026-11-05T21:03:58Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
       "ok": 4,
-      "warn": 1,
+      "warn": 2,
       "critical": 0,
       "unknown": 0,
-      "sla": 80.0,
-      "latest_status": "ok",
-      "latest_at": "2026-11-05T14:06:38Z",
+      "sla": 66.67,
+      "latest_status": "warn",
+      "latest_at": "2026-11-05T21:03:57Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-05T21:03:57Z",
+          "name": "ChatGPT Work and Dots Errors",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-11-04T23:56:21Z",
           "name": "Elevated error rates across paid ChatGPT plans",
@@ -25,51 +31,51 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
-      "ok": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-05T14:06:38Z",
+      "latest_at": "2026-11-05T21:03:57Z",
       "recent_incidents": []
     },
     "Gemini": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
-      "ok": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-05T14:06:38Z",
+      "latest_at": "2026-11-05T21:03:57Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
-      "ok": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-05T14:06:38Z",
+      "latest_at": "2026-11-05T21:03:57Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
-      "ok": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-05T14:06:38Z",
+      "latest_at": "2026-11-05T21:03:57Z",
       "recent_incidents": []
     }
   }
