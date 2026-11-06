@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-11-06T01:30:09Z",
+  "window": {
+    "start": "2026-11-05T00:00:00Z",
+    "end": "2026-11-06T01:30:09Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
+      "ok": 2,
+      "warn": 2,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 50.0,
+      "latest_status": "warn",
+      "latest_at": "2026-11-06T01:30:08Z",
+      "recent_incidents": [
+        {
+          "time": "2026-11-06T01:30:08Z",
+          "name": "ChatGPT Work and Dots Errors",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-11-05T21:03:57Z",
+          "name": "ChatGPT Work and Dots Errors",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
+      "ok": 4,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-06T01:30:09Z",
+      "recent_incidents": []
+    },
+    "Gemini": {
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
+      "ok": 4,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-06T01:30:09Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
+      "ok": 4,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-06T01:30:09Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
+      "ok": 4,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-06T01:30:09Z",
+      "recent_incidents": []
+    }
+  }
+}
