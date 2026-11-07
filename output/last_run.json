@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-06T21:30:01Z",
+  "generated_at": "2026-11-07T01:07:42Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-11-06T21:30:00Z",
+      "time": "2026-11-07T01:07:41Z",
       "overall_status": "none",
       "components": [
         {
@@ -131,12 +131,12 @@
       "active_incidents": [
         {
           "id": "01M6S2FV5TZWQ753NHRB7BF5K7",
-          "name": "Elevated error rates with Brex Cards and U.S. business Mastercards",
+          "name": "Elevated error rates with some U.S. business Mastercards",
           "status": "identified",
           "impact": "none",
           "shortlink": null,
           "started_at": "2026-11-06T18:38:43Z",
-          "updated_at": "2026-11-06T18:50:47Z",
+          "updated_at": "2026-11-06T22:59:59Z",
           "url": null
         }
       ],
@@ -148,13 +148,13 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 3,
+      "consecutive_recoveries": 4,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-11-06T21:30:00Z",
+      "time": "2026-11-07T01:07:41Z",
       "overall_status": "none",
       "components": [
         {
@@ -191,37 +191,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-11-06T18:54:50.151Z",
+      "updated_at": "2026-11-07T01:04:55.474Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 38,
+      "consecutive_recoveries": 39,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-11-06T21:30:00Z",
+      "time": "2026-11-07T01:07:42Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-11-06T21:30:00Z",
+      "updated_at": "2026-11-07T01:07:42Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1700,
+      "consecutive_recoveries": 1701,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-11-06T21:30:00Z",
+      "time": "2026-11-07T01:07:42Z",
       "overall_status": "operational",
       "components": [
         {
@@ -232,31 +232,31 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.85,
-      "updated_at": "2026-11-06T21:30:00.608545Z",
+      "updated_at": "2026-11-07T01:07:42.360030Z",
       "source_url": "https://status.x.ai/",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 369,
+      "consecutive_recoveries": 370,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-11-06T21:30:00Z",
+      "time": "2026-11-07T01:07:42Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-11-06T21:30:00.767273Z",
+      "updated_at": "2026-11-07T01:07:42.480926Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 407,
+      "consecutive_recoveries": 408,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }

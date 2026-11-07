@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-11-07T01:07:42Z",
+  "window": {
+    "start": "2026-11-06T00:00:00Z",
+    "end": "2026-11-07T01:07:42Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 4,
+      "warn": 1,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 80.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-07T01:07:41Z",
+      "recent_incidents": [
+        {
+          "time": "2026-11-07T01:07:41Z",
+          "name": "Elevated error rates with some U.S. business Mastercards",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-11-06T21:30:00Z",
+          "name": "Elevated error rates with Brex Cards and U.S. business Mastercards",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-11-06T01:30:08Z",
+          "name": "ChatGPT Work and Dots Errors",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-07T01:07:41Z",
+      "recent_incidents": []
+    },
+    "Gemini": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-07T01:07:42Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-07T01:07:42Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-07T01:07:42Z",
+      "recent_incidents": []
+    }
+  }
+}
