@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-08T07:55:02Z",
+  "generated_at": "2026-11-08T14:48:29Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-11-08T07:55:01Z",
+      "time": "2026-11-08T14:48:28Z",
       "overall_status": "none",
       "components": [
         {
@@ -148,19 +148,19 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 10,
+      "consecutive_recoveries": 11,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-11-08T07:55:01Z",
+      "time": "2026-11-08T14:48:29Z",
       "overall_status": "none",
       "components": [
         {
           "name": "claude.ai",
           "status": "operational",
-          "updated_at": "2026-10-28T20:05:18.127Z"
+          "updated_at": "2026-11-08T08:54:43.557Z"
         },
         {
           "name": "Claude Console (platform.claude.com)",
@@ -170,17 +170,17 @@
         {
           "name": "Claude API (api.anthropic.com)",
           "status": "operational",
-          "updated_at": "2026-10-27T15:50:17.603Z"
+          "updated_at": "2026-11-08T08:54:43.585Z"
         },
         {
           "name": "Claude Code",
           "status": "operational",
-          "updated_at": "2026-10-28T20:05:18.151Z"
+          "updated_at": "2026-11-08T08:54:43.608Z"
         },
         {
           "name": "Claude Cowork",
           "status": "operational",
-          "updated_at": "2026-10-28T20:05:18.175Z"
+          "updated_at": "2026-11-08T08:54:43.631Z"
         },
         {
           "name": "Claude for Government",
@@ -191,37 +191,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-11-08T06:23:33.652Z",
+      "updated_at": "2026-11-08T13:59:39.282Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 45,
+      "consecutive_recoveries": 46,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-11-08T07:55:02Z",
+      "time": "2026-11-08T14:48:29Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-11-08T07:55:02Z",
+      "updated_at": "2026-11-08T14:48:29Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1707,
+      "consecutive_recoveries": 1708,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-11-08T07:55:02Z",
+      "time": "2026-11-08T14:48:29Z",
       "overall_status": "operational",
       "components": [
         {
@@ -232,31 +232,31 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.85,
-      "updated_at": "2026-11-08T07:55:02.254918Z",
+      "updated_at": "2026-11-08T14:48:29.168505Z",
       "source_url": "https://status.x.ai/",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 376,
+      "consecutive_recoveries": 377,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-11-08T07:55:02Z",
+      "time": "2026-11-08T14:48:29Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-11-08T07:55:02.443328Z",
+      "updated_at": "2026-11-08T14:48:29.251003Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 414,
+      "consecutive_recoveries": 415,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
