@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-12T16:20:25Z",
+  "generated_at": "2026-11-12T22:20:20Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-11-12T16:20:24Z",
-      "overall_status": "none",
+      "time": "2026-11-12T22:20:19Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "Chat Completions",
@@ -128,28 +128,39 @@
           "updated_at": "2026-10-16T20:01:40Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "01M78GAT3AK9P9W8Z230KHFVE8",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "investigating",
+          "impact": "minor",
+          "shortlink": null,
+          "started_at": "2026-11-12T18:29:14Z",
+          "updated_at": "2026-11-12T18:29:14Z",
+          "url": null
+        }
+      ],
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-10-16T20:01:40Z",
+      "updated_at": "2026-11-12T18:29:14Z",
       "source_url": "https://status.openai.com",
-      "level": "ok",
+      "level": "warn",
       "error": null,
-      "first_anomaly_at": "2026-11-12T00:43:22Z",
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1,
-      "anomaly_seconds": null,
+      "first_anomaly_at": "2026-11-12T22:20:19Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-11-12T16:20:25Z",
-      "overall_status": "none",
+      "time": "2026-11-12T22:20:19Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "claude.ai",
-          "status": "operational",
-          "updated_at": "2026-11-08T08:54:43.557Z"
+          "status": "partial_outage",
+          "updated_at": "2026-11-12T17:52:44.988Z"
         },
         {
           "name": "Claude Platform on AWS",
@@ -183,8 +194,8 @@
         },
         {
           "name": "Claude Cowork",
-          "status": "operational",
-          "updated_at": "2026-11-08T08:54:43.631Z"
+          "status": "partial_outage",
+          "updated_at": "2026-11-12T18:34:20.015Z"
         },
         {
           "name": "Claude for Government",
@@ -197,40 +208,51 @@
           "updated_at": "2026-11-09T18:33:14.270Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "sqn3fg1l96dl",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "identified",
+          "impact": "major",
+          "shortlink": "https://stspg.io/m0rbx38nmy1c",
+          "started_at": "2026-11-12T17:52:44.934Z",
+          "updated_at": "2026-11-12T21:18:24.193Z",
+          "url": "https://stspg.io/m0rbx38nmy1c"
+        }
+      ],
+      "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-11-12T15:54:52.815Z",
+      "updated_at": "2026-11-12T21:18:24.218Z",
       "source_url": "https://status.claude.com",
-      "level": "ok",
+      "level": "critical",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 61,
-      "anomaly_seconds": null,
-      "latest_incident_link": null
+      "first_anomaly_at": "2026-11-12T22:20:19Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
+      "latest_incident_link": "https://stspg.io/m0rbx38nmy1c"
     },
     {
       "service": "Gemini",
-      "time": "2026-11-12T16:20:25Z",
+      "time": "2026-11-12T22:20:19Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-11-12T16:20:25Z",
+      "updated_at": "2026-11-12T22:20:19Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1723,
+      "consecutive_recoveries": 1724,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-11-12T16:20:25Z",
+      "time": "2026-11-12T22:20:19Z",
       "overall_status": "operational",
       "components": [
         {
@@ -241,31 +263,31 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.85,
-      "updated_at": "2026-11-12T16:20:25.476179Z",
+      "updated_at": "2026-11-12T22:20:19.808030Z",
       "source_url": "https://status.x.ai/",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 392,
+      "consecutive_recoveries": 393,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-11-12T16:20:25Z",
+      "time": "2026-11-12T22:20:19Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-11-12T16:20:25.630007Z",
+      "updated_at": "2026-11-12T22:20:19.920116Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 430,
+      "consecutive_recoveries": 431,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
