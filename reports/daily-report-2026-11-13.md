@@ -2,11 +2,11 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 7 | 0 | 0 | 0 | ok |
-| Claude | 42.86 | 3 | 0 | 4 | 0 | critical |
-| Gemini | 100.00 | 7 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 7 | 0 | 0 | 0 | ok |
-| OpenAI | 14.29 | 1 | 4 | 2 | 0 | warn |
+| AWS | 100.00 | 8 | 0 | 0 | 0 | ok |
+| Claude | 50.00 | 4 | 0 | 4 | 0 | ok |
+| Gemini | 100.00 | 8 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 8 | 0 | 0 | 0 | ok |
+| OpenAI | 12.50 | 1 | 5 | 2 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
@@ -23,6 +23,8 @@
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-11-13T22:54:17Z | monitoring | Delayed Costs Data in the Compliance API
+- 2026-11-13T22:54:17Z | monitoring | Elevated errors affecting the Microsoft 365 connector
 - 2026-11-13T17:40:40Z | monitoring | Elevated errors affecting the Microsoft 365 connector
 - 2026-11-13T17:40:40Z | identified | Delayed Costs Data in the Compliance API
 - 2026-11-13T10:03:56Z | investigating | Elevated errors affecting the Microsoft 365 connector
