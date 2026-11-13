@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-12T22:20:20Z",
+  "generated_at": "2026-11-13T02:43:23Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-11-12T22:20:19Z",
+      "time": "2026-11-13T02:43:23Z",
       "overall_status": "minor",
       "components": [
         {
@@ -147,20 +147,20 @@
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-11-12T22:20:19Z",
-      "consecutive_anomalies": 1,
+      "consecutive_anomalies": 2,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
+      "anomaly_seconds": 15784,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-11-12T22:20:19Z",
+      "time": "2026-11-13T02:43:23Z",
       "overall_status": "minor",
       "components": [
         {
           "name": "claude.ai",
-          "status": "partial_outage",
-          "updated_at": "2026-11-12T17:52:44.988Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-11-12T22:24:07.620Z"
         },
         {
           "name": "Claude Platform on AWS",
@@ -194,8 +194,8 @@
         },
         {
           "name": "Claude Cowork",
-          "status": "partial_outage",
-          "updated_at": "2026-11-12T18:34:20.015Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-11-12T22:24:27.949Z"
         },
         {
           "name": "Claude for Government",
@@ -216,43 +216,43 @@
           "impact": "major",
           "shortlink": "https://stspg.io/m0rbx38nmy1c",
           "started_at": "2026-11-12T17:52:44.934Z",
-          "updated_at": "2026-11-12T21:18:24.193Z",
+          "updated_at": "2026-11-12T23:54:26.992Z",
           "url": "https://stspg.io/m0rbx38nmy1c"
         }
       ],
       "raw_score": 20,
       "confidence": 0.98,
-      "updated_at": "2026-11-12T21:18:24.218Z",
+      "updated_at": "2026-11-13T02:29:56.821Z",
       "source_url": "https://status.claude.com",
       "level": "critical",
       "error": null,
       "first_anomaly_at": "2026-11-12T22:20:19Z",
-      "consecutive_anomalies": 1,
+      "consecutive_anomalies": 2,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 0,
+      "anomaly_seconds": 15784,
       "latest_incident_link": "https://stspg.io/m0rbx38nmy1c"
     },
     {
       "service": "Gemini",
-      "time": "2026-11-12T22:20:19Z",
+      "time": "2026-11-13T02:43:23Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-11-12T22:20:19Z",
+      "updated_at": "2026-11-13T02:43:23Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1724,
+      "consecutive_recoveries": 1725,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-11-12T22:20:19Z",
+      "time": "2026-11-13T02:43:23Z",
       "overall_status": "operational",
       "components": [
         {
@@ -263,34 +263,41 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.85,
-      "updated_at": "2026-11-12T22:20:19.808030Z",
+      "updated_at": "2026-11-13T02:43:23.816506Z",
       "source_url": "https://status.x.ai/",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 393,
+      "consecutive_recoveries": 394,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-11-12T22:20:19Z",
+      "time": "2026-11-13T02:43:23Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-11-12T22:20:19.920116Z",
+      "updated_at": "2026-11-13T02:43:23.917543Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 431,
+      "consecutive_recoveries": 432,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "alert",
+      "service": "Claude",
+      "level": "critical",
+      "message": "Claude is in CRITICAL state (sampled 2026-11-13T02:43:23Z)"
+    }
+  ]
 }

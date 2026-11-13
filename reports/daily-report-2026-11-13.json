@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-11-13T02:43:24Z",
+  "window": {
+    "start": "2026-11-12T00:00:00Z",
+    "end": "2026-11-13T02:43:24Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 1,
+      "warn": 2,
+      "critical": 2,
+      "unknown": 0,
+      "sla": 20.0,
+      "latest_status": "warn",
+      "latest_at": "2026-11-13T02:43:23Z",
+      "recent_incidents": [
+        {
+          "time": "2026-11-13T02:43:23Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-11-12T22:20:19Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-11-12T07:46:19Z",
+          "name": "Unable to start new Workspace Agent runs",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-11-12T00:43:22Z",
+          "name": "Unable to start new Workspace Agent runs",
+          "status": "investigating",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 3,
+      "warn": 0,
+      "critical": 2,
+      "unknown": 0,
+      "sla": 60.0,
+      "latest_status": "critical",
+      "latest_at": "2026-11-13T02:43:23Z",
+      "recent_incidents": [
+        {
+          "time": "2026-11-13T02:43:23Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "identified",
+          "link": "https://stspg.io/m0rbx38nmy1c"
+        },
+        {
+          "time": "2026-11-12T22:20:19Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "identified",
+          "link": "https://stspg.io/m0rbx38nmy1c"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-13T02:43:23Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-13T02:43:23Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-13T02:43:23Z",
+      "recent_incidents": []
+    }
+  }
+}
