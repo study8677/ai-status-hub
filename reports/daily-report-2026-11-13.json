@@ -1,21 +1,33 @@
 {
-  "generated_at": "2026-11-13T10:03:57Z",
+  "generated_at": "2026-11-13T17:40:41Z",
   "window": {
     "start": "2026-11-12T00:00:00Z",
-    "end": "2026-11-13T10:03:57Z"
+    "end": "2026-11-13T17:40:41Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
       "ok": 1,
-      "warn": 3,
+      "warn": 4,
       "critical": 2,
       "unknown": 0,
-      "sla": 16.67,
+      "sla": 14.29,
       "latest_status": "warn",
-      "latest_at": "2026-11-13T10:03:56Z",
+      "latest_at": "2026-11-13T17:40:40Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-13T17:40:40Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-11-13T17:40:40Z",
+          "name": "Delayed Costs Data in the Compliance API",
+          "status": "identified",
+          "link": null
+        },
         {
           "time": "2026-11-13T10:03:56Z",
           "name": "Elevated errors affecting the Microsoft 365 connector",
@@ -49,16 +61,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
       "ok": 3,
       "warn": 0,
-      "critical": 3,
+      "critical": 4,
       "unknown": 0,
-      "sla": 50.0,
+      "sla": 42.86,
       "latest_status": "critical",
-      "latest_at": "2026-11-13T10:03:56Z",
+      "latest_at": "2026-11-13T17:40:40Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-13T17:40:40Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "monitoring",
+          "link": "https://stspg.io/m0rbx38nmy1c"
+        },
         {
           "time": "2026-11-13T10:03:56Z",
           "name": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
@@ -86,39 +104,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-13T10:03:56Z",
+      "latest_at": "2026-11-13T17:40:40Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-13T10:03:56Z",
+      "latest_at": "2026-11-13T17:40:40Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-13T10:03:57Z",
+      "latest_at": "2026-11-13T17:40:40Z",
       "recent_incidents": []
     }
   }
