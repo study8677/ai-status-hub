@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-11-13T02:43:24Z",
+  "generated_at": "2026-11-13T10:03:57Z",
   "window": {
     "start": "2026-11-12T00:00:00Z",
-    "end": "2026-11-13T02:43:24Z"
+    "end": "2026-11-13T10:03:57Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
       "ok": 1,
-      "warn": 2,
+      "warn": 3,
       "critical": 2,
       "unknown": 0,
-      "sla": 20.0,
+      "sla": 16.67,
       "latest_status": "warn",
-      "latest_at": "2026-11-13T02:43:23Z",
+      "latest_at": "2026-11-13T10:03:56Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-13T10:03:56Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "investigating",
+          "link": null
+        },
         {
           "time": "2026-11-13T02:43:23Z",
           "name": "Elevated errors affecting the Microsoft 365 connector",
@@ -43,16 +49,28 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
       "ok": 3,
       "warn": 0,
-      "critical": 2,
+      "critical": 3,
       "unknown": 0,
-      "sla": 60.0,
+      "sla": 50.0,
       "latest_status": "critical",
-      "latest_at": "2026-11-13T02:43:23Z",
+      "latest_at": "2026-11-13T10:03:56Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-13T10:03:56Z",
+          "name": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+          "status": "investigating",
+          "link": "https://stspg.io/6kqyd0c5b1gr"
+        },
+        {
+          "time": "2026-11-13T10:03:56Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "identified",
+          "link": "https://stspg.io/m0rbx38nmy1c"
+        },
         {
           "time": "2026-11-13T02:43:23Z",
           "name": "Elevated errors affecting the Microsoft 365 connector",
@@ -68,39 +86,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
-      "ok": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-13T02:43:23Z",
+      "latest_at": "2026-11-13T10:03:56Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
-      "ok": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-13T02:43:23Z",
+      "latest_at": "2026-11-13T10:03:56Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
-      "ok": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-13T02:43:23Z",
+      "latest_at": "2026-11-13T10:03:57Z",
       "recent_incidents": []
     }
   }
