@@ -1,0 +1,137 @@
+{
+  "generated_at": "2026-11-14T02:54:27Z",
+  "window": {
+    "start": "2026-11-13T00:00:00Z",
+    "end": "2026-11-14T02:54:27Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 0,
+      "warn": 5,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "warn",
+      "latest_at": "2026-11-14T02:54:26Z",
+      "recent_incidents": [
+        {
+          "time": "2026-11-14T02:54:26Z",
+          "name": "Delayed Costs Data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-11-13T22:54:17Z",
+          "name": "Delayed Costs Data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-11-13T22:54:17Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-11-13T17:40:40Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-11-13T17:40:40Z",
+          "name": "Delayed Costs Data in the Compliance API",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-11-13T10:03:56Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "investigating",
+          "link": null
+        },
+        {
+          "time": "2026-11-13T02:43:23Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "investigating",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 2,
+      "warn": 0,
+      "critical": 3,
+      "unknown": 0,
+      "sla": 40.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-14T02:54:26Z",
+      "recent_incidents": [
+        {
+          "time": "2026-11-13T17:40:40Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "monitoring",
+          "link": "https://stspg.io/m0rbx38nmy1c"
+        },
+        {
+          "time": "2026-11-13T10:03:56Z",
+          "name": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+          "status": "investigating",
+          "link": "https://stspg.io/6kqyd0c5b1gr"
+        },
+        {
+          "time": "2026-11-13T10:03:56Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "identified",
+          "link": "https://stspg.io/m0rbx38nmy1c"
+        },
+        {
+          "time": "2026-11-13T02:43:23Z",
+          "name": "Elevated errors affecting the Microsoft 365 connector",
+          "status": "identified",
+          "link": "https://stspg.io/m0rbx38nmy1c"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-14T02:54:26Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-14T02:54:26Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-14T02:54:26Z",
+      "recent_incidents": []
+    }
+  }
+}

@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-13T22:54:18Z",
+  "generated_at": "2026-11-14T02:54:27Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-11-13T22:54:17Z",
+      "time": "2026-11-14T02:54:26Z",
       "overall_status": "minor",
       "components": [
         {
@@ -138,16 +138,6 @@
           "started_at": "2026-11-13T16:10:07Z",
           "updated_at": "2026-11-13T18:56:45Z",
           "url": null
-        },
-        {
-          "id": "01M78GAT3AK9P9W8Z230KHFVE8",
-          "name": "Elevated errors affecting the Microsoft 365 connector",
-          "status": "monitoring",
-          "impact": "minor",
-          "shortlink": null,
-          "started_at": "2026-11-12T18:29:14Z",
-          "updated_at": "2026-11-13T16:20:45Z",
-          "url": null
         }
       ],
       "raw_score": 70,
@@ -157,14 +147,14 @@
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-11-12T22:20:19Z",
-      "consecutive_anomalies": 5,
+      "consecutive_anomalies": 6,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 88438,
+      "anomaly_seconds": 102847,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-11-13T22:54:17Z",
+      "time": "2026-11-14T02:54:26Z",
       "overall_status": "none",
       "components": [
         {
@@ -221,37 +211,37 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.98,
-      "updated_at": "2026-11-13T22:39:39.131Z",
+      "updated_at": "2026-11-14T00:06:01.287Z",
       "source_url": "https://status.claude.com",
       "level": "ok",
       "error": null,
-      "first_anomaly_at": "2026-11-12T22:20:19Z",
+      "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1,
+      "consecutive_recoveries": 2,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Gemini",
-      "time": "2026-11-13T22:54:17Z",
+      "time": "2026-11-14T02:54:26Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-11-13T22:54:17Z",
+      "updated_at": "2026-11-14T02:54:26Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1728,
+      "consecutive_recoveries": 1729,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-11-13T22:54:18Z",
+      "time": "2026-11-14T02:54:26Z",
       "overall_status": "operational",
       "components": [
         {
@@ -262,34 +252,41 @@
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.85,
-      "updated_at": "2026-11-13T22:54:18.044542Z",
+      "updated_at": "2026-11-14T02:54:26.747463Z",
       "source_url": "https://status.x.ai/",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 397,
+      "consecutive_recoveries": 398,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "AWS",
-      "time": "2026-11-13T22:54:18Z",
+      "time": "2026-11-14T02:54:26Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-11-13T22:54:18.189890Z",
+      "updated_at": "2026-11-14T02:54:26.947531Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 435,
+      "consecutive_recoveries": 436,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "type": "recover",
+      "service": "Claude",
+      "level": "ok",
+      "message": "Claude recovered"
+    }
+  ]
 }
