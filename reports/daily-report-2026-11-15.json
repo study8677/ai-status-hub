@@ -1,21 +1,27 @@
 {
-  "generated_at": "2026-11-15T14:40:20Z",
+  "generated_at": "2026-11-15T19:58:19Z",
   "window": {
     "start": "2026-11-14T00:00:00Z",
-    "end": "2026-11-15T14:40:20Z"
+    "end": "2026-11-15T19:58:19Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
       "ok": 0,
-      "warn": 7,
+      "warn": 8,
       "critical": 0,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-11-15T14:40:19Z",
+      "latest_at": "2026-11-15T19:58:18Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-15T19:58:18Z",
+          "name": "Delayed Costs Data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-11-15T14:40:19Z",
           "name": "Delayed Costs Data in the Compliance API",
@@ -61,16 +67,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
       "ok": 1,
       "warn": 0,
-      "critical": 6,
+      "critical": 7,
       "unknown": 0,
-      "sla": 14.29,
+      "sla": 12.5,
       "latest_status": "critical",
-      "latest_at": "2026-11-15T14:40:19Z",
+      "latest_at": "2026-11-15T19:58:18Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-15T19:58:18Z",
+          "name": "Some users unable to sign up with Apple on the Claude iOS app",
+          "status": "investigating",
+          "link": "https://stspg.io/4858wf40dx89"
+        },
         {
           "time": "2026-11-15T14:40:19Z",
           "name": "Some users unable to sign up with Apple on the Claude iOS app",
@@ -110,39 +122,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-15T14:40:19Z",
+      "latest_at": "2026-11-15T19:58:18Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-15T14:40:19Z",
+      "latest_at": "2026-11-15T19:58:18Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-15T14:40:20Z",
+      "latest_at": "2026-11-15T19:58:19Z",
       "recent_incidents": []
     }
   }
