@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-11-15T00:25:12Z",
+  "window": {
+    "start": "2026-11-14T00:00:00Z",
+    "end": "2026-11-15T00:25:12Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 0,
+      "warn": 5,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 0.0,
+      "latest_status": "warn",
+      "latest_at": "2026-11-15T00:25:11Z",
+      "recent_incidents": [
+        {
+          "time": "2026-11-15T00:25:11Z",
+          "name": "Delayed Costs Data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-11-14T20:46:11Z",
+          "name": "Delayed Costs Data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-11-14T16:13:01Z",
+          "name": "Delayed Costs Data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-11-14T09:50:44Z",
+          "name": "Delayed Costs Data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        },
+        {
+          "time": "2026-11-14T02:54:26Z",
+          "name": "Delayed Costs Data in the Compliance API",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
+    },
+    "Claude": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 1,
+      "warn": 0,
+      "critical": 4,
+      "unknown": 0,
+      "sla": 20.0,
+      "latest_status": "critical",
+      "latest_at": "2026-11-15T00:25:11Z",
+      "recent_incidents": [
+        {
+          "time": "2026-11-15T00:25:11Z",
+          "name": "Some users unable to sign up with Apple on the Claude iOS app",
+          "status": "investigating",
+          "link": "https://stspg.io/4858wf40dx89"
+        },
+        {
+          "time": "2026-11-14T20:46:12Z",
+          "name": "Some users unable to sign up with Apple on the Claude iOS app",
+          "status": "investigating",
+          "link": "https://stspg.io/4858wf40dx89"
+        },
+        {
+          "time": "2026-11-14T16:13:01Z",
+          "name": "Some users unable to sign up with Apple on the Claude iOS app",
+          "status": "investigating",
+          "link": "https://stspg.io/4858wf40dx89"
+        },
+        {
+          "time": "2026-11-14T09:50:44Z",
+          "name": "Some users unable to sign up with Apple on the Claude iOS app",
+          "status": "investigating",
+          "link": "https://stspg.io/4858wf40dx89"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-15T00:25:11Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-15T00:25:11Z",
+      "recent_incidents": []
+    },
+    "AWS": {
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-15T00:25:11Z",
+      "recent_incidents": []
+    }
+  }
+}
