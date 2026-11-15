@@ -2,16 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 6 | 0 | 0 | 0 | ok |
-| Claude | 16.67 | 1 | 0 | 5 | 0 | critical |
-| Gemini | 100.00 | 6 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 6 | 0 | 0 | 0 | ok |
-| OpenAI | 0.00 | 0 | 6 | 0 | 0 | warn |
+| AWS | 100.00 | 7 | 0 | 0 | 0 | ok |
+| Claude | 14.29 | 1 | 0 | 6 | 0 | critical |
+| Gemini | 100.00 | 7 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 7 | 0 | 0 | 0 | ok |
+| OpenAI | 0.00 | 0 | 7 | 0 | 0 | warn |
 
 ## 最近 30 条事件
 ### AWS
 - 无事件记录
 ### Claude
+- 2026-11-15T14:40:19Z | investigating | Some users unable to sign up with Apple on the Claude iOS app
 - 2026-11-15T06:58:46Z | investigating | Some users unable to sign up with Apple on the Claude iOS app
 - 2026-11-15T00:25:11Z | investigating | Some users unable to sign up with Apple on the Claude iOS app
 - 2026-11-14T20:46:12Z | investigating | Some users unable to sign up with Apple on the Claude iOS app
@@ -23,6 +24,7 @@
 ### Grok
 - 无事件记录
 ### OpenAI
+- 2026-11-15T14:40:19Z | monitoring | Delayed Costs Data in the Compliance API
 - 2026-11-15T06:58:45Z | monitoring | Delayed Costs Data in the Compliance API
 - 2026-11-15T00:25:11Z | monitoring | Delayed Costs Data in the Compliance API
 - 2026-11-14T20:46:11Z | monitoring | Delayed Costs Data in the Compliance API
