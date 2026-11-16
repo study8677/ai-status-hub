@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-16T05:05:52Z",
+  "generated_at": "2026-11-16T13:34:46Z",
   "window": {
     "start": "2026-11-15T00:00:00Z",
-    "end": "2026-11-16T05:05:52Z"
+    "end": "2026-11-16T13:34:46Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 1,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 2,
       "warn": 5,
       "critical": 0,
       "unknown": 0,
-      "sla": 16.67,
+      "sla": 28.57,
       "latest_status": "ok",
-      "latest_at": "2026-11-16T05:05:51Z",
+      "latest_at": "2026-11-16T13:34:45Z",
       "recent_incidents": [
         {
           "time": "2026-11-15T23:54:51Z",
@@ -49,16 +49,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
       "ok": 0,
       "warn": 0,
-      "critical": 6,
+      "critical": 7,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-11-16T05:05:51Z",
+      "latest_at": "2026-11-16T13:34:45Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-16T13:34:45Z",
+          "name": "Some users unable to sign up with Apple on the Claude iOS app",
+          "status": "investigating",
+          "link": "https://stspg.io/4858wf40dx89"
+        },
         {
           "time": "2026-11-16T05:05:51Z",
           "name": "Some users unable to sign up with Apple on the Claude iOS app",
@@ -98,39 +104,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-16T05:05:51Z",
+      "latest_at": "2026-11-16T13:34:45Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-16T05:05:52Z",
+      "latest_at": "2026-11-16T13:34:45Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 6,
-      "measured_checks_24h": 6,
-      "ok": 6,
+      "total_checks_24h": 7,
+      "measured_checks_24h": 7,
+      "ok": 7,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-16T05:05:52Z",
+      "latest_at": "2026-11-16T13:34:45Z",
       "recent_incidents": []
     }
   }
