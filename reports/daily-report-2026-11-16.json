@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-16T13:34:46Z",
+  "generated_at": "2026-11-16T23:00:43Z",
   "window": {
     "start": "2026-11-15T00:00:00Z",
-    "end": "2026-11-16T13:34:46Z"
+    "end": "2026-11-16T23:00:43Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 2,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 3,
       "warn": 5,
       "critical": 0,
       "unknown": 0,
-      "sla": 28.57,
+      "sla": 37.5,
       "latest_status": "ok",
-      "latest_at": "2026-11-16T13:34:45Z",
+      "latest_at": "2026-11-16T23:00:41Z",
       "recent_incidents": [
         {
           "time": "2026-11-15T23:54:51Z",
@@ -49,16 +49,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
       "ok": 0,
       "warn": 0,
-      "critical": 7,
+      "critical": 8,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-11-16T13:34:45Z",
+      "latest_at": "2026-11-16T23:00:42Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-16T23:00:42Z",
+          "name": "Claude unable to join meetings",
+          "status": "investigating",
+          "link": "https://stspg.io/01qq3kzyyqzl"
+        },
         {
           "time": "2026-11-16T13:34:45Z",
           "name": "Some users unable to sign up with Apple on the Claude iOS app",
@@ -104,39 +110,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-16T13:34:45Z",
+      "latest_at": "2026-11-16T23:00:42Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-16T13:34:45Z",
+      "latest_at": "2026-11-16T23:00:42Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-16T13:34:45Z",
+      "latest_at": "2026-11-16T23:00:42Z",
       "recent_incidents": []
     }
   }
