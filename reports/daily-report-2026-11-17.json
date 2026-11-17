@@ -1,33 +1,46 @@
 {
-  "generated_at": "2026-11-17T14:16:47Z",
+  "generated_at": "2026-11-17T22:29:32Z",
   "window": {
     "start": "2026-11-16T00:00:00Z",
-    "end": "2026-11-17T14:16:47Z"
+    "end": "2026-11-17T22:29:32Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
       "ok": 5,
-      "warn": 0,
+      "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 100.0,
-      "latest_status": "ok",
-      "latest_at": "2026-11-17T14:16:46Z",
-      "recent_incidents": []
+      "sla": 83.33,
+      "latest_status": "warn",
+      "latest_at": "2026-11-17T22:29:30Z",
+      "recent_incidents": [
+        {
+          "time": "2026-11-17T22:29:30Z",
+          "name": "Costs API data is delayed",
+          "status": "monitoring",
+          "link": null
+        }
+      ]
     },
     "Claude": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
       "ok": 0,
       "warn": 0,
-      "critical": 5,
+      "critical": 6,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-11-17T14:16:47Z",
+      "latest_at": "2026-11-17T22:29:31Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-17T22:29:31Z",
+          "name": "Claude unable to join meetings",
+          "status": "identified",
+          "link": "https://stspg.io/01qq3kzyyqzl"
+        },
         {
           "time": "2026-11-17T14:16:47Z",
           "name": "Claude unable to join meetings",
@@ -61,39 +74,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
-      "ok": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-17T14:16:47Z",
+      "latest_at": "2026-11-17T22:29:31Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
-      "ok": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-17T14:16:47Z",
+      "latest_at": "2026-11-17T22:29:31Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 5,
-      "measured_checks_24h": 5,
-      "ok": 5,
+      "total_checks_24h": 6,
+      "measured_checks_24h": 6,
+      "ok": 6,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-17T14:16:47Z",
+      "latest_at": "2026-11-17T22:29:32Z",
       "recent_incidents": []
     }
   }
