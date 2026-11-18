@@ -2,16 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 5 | 0 | 0 | 0 | ok |
-| Claude | 0.00 | 0 | 2 | 3 | 0 | warn |
-| Gemini | 100.00 | 5 | 0 | 0 | 0 | ok |
-| Grok | 100.00 | 5 | 0 | 0 | 0 | ok |
-| OpenAI | 40.00 | 2 | 3 | 0 | 0 | warn |
+| AWS | 100.00 | 6 | 0 | 0 | 0 | ok |
+| Claude | 0.00 | 0 | 3 | 3 | 0 | warn |
+| Gemini | 100.00 | 6 | 0 | 0 | 0 | ok |
+| Grok | 100.00 | 6 | 0 | 0 | 0 | ok |
+| OpenAI | 50.00 | 3 | 3 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
 - 无事件记录
 ### Claude
+- 2026-11-18T20:45:23Z | identified | Claude unable to join meetings
 - 2026-11-18T12:20:43Z | identified | Claude unable to join meetings
 - 2026-11-18T03:49:35Z | identified | Claude unable to join meetings
 - 2026-11-17T22:29:31Z | identified | Claude unable to join meetings
