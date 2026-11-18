@@ -1,21 +1,33 @@
 {
-  "generated_at": "2026-11-18T03:49:35Z",
+  "generated_at": "2026-11-18T12:20:44Z",
   "window": {
     "start": "2026-11-17T00:00:00Z",
-    "end": "2026-11-18T03:49:35Z"
+    "end": "2026-11-18T12:20:44Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
       "ok": 2,
-      "warn": 2,
+      "warn": 3,
       "critical": 0,
       "unknown": 0,
-      "sla": 50.0,
+      "sla": 40.0,
       "latest_status": "warn",
-      "latest_at": "2026-11-18T03:49:35Z",
+      "latest_at": "2026-11-18T12:20:43Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-18T12:20:43Z",
+          "name": "Elevated conversation errors for Free and Go users",
+          "status": "identified",
+          "link": null
+        },
+        {
+          "time": "2026-11-18T12:20:43Z",
+          "name": "Costs API data is delayed",
+          "status": "monitoring",
+          "link": null
+        },
         {
           "time": "2026-11-18T03:49:35Z",
           "name": "Costs API data is delayed",
@@ -31,16 +43,22 @@
       ]
     },
     "Claude": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
       "ok": 0,
-      "warn": 1,
+      "warn": 2,
       "critical": 3,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-11-18T03:49:35Z",
+      "latest_at": "2026-11-18T12:20:43Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-18T12:20:43Z",
+          "name": "Claude unable to join meetings",
+          "status": "identified",
+          "link": "https://stspg.io/01qq3kzyyqzl"
+        },
         {
           "time": "2026-11-18T03:49:35Z",
           "name": "Claude unable to join meetings",
@@ -68,39 +86,39 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
-      "ok": 4,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-18T03:49:35Z",
+      "latest_at": "2026-11-18T12:20:43Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
-      "ok": 4,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-18T03:49:35Z",
+      "latest_at": "2026-11-18T12:20:43Z",
       "recent_incidents": []
     },
     "AWS": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
-      "ok": 4,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-18T03:49:35Z",
+      "latest_at": "2026-11-18T12:20:44Z",
       "recent_incidents": []
     }
   }
