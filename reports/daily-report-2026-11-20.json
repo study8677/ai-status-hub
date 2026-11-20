@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-20T01:11:48Z",
+  "generated_at": "2026-11-20T08:36:03Z",
   "window": {
     "start": "2026-11-19T00:00:00Z",
-    "end": "2026-11-20T01:11:48Z"
+    "end": "2026-11-20T08:36:03Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
-      "ok": 4,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-20T01:11:47Z",
+      "latest_at": "2026-11-20T08:36:02Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
-      "ok": 3,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 4,
       "warn": 1,
       "critical": 0,
       "unknown": 0,
-      "sla": 75.0,
+      "sla": 80.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-20T01:11:48Z",
+      "latest_at": "2026-11-20T08:36:03Z",
       "recent_incidents": [
         {
           "time": "2026-11-19T02:03:36Z",
@@ -37,28 +37,34 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
-      "ok": 4,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-20T01:11:48Z",
+      "latest_at": "2026-11-20T08:36:03Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
       "ok": 3,
-      "warn": 1,
+      "warn": 2,
       "critical": 0,
       "unknown": 0,
-      "sla": 75.0,
+      "sla": 60.0,
       "latest_status": "warn",
-      "latest_at": "2026-11-20T01:11:48Z",
+      "latest_at": "2026-11-20T08:36:03Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-20T08:36:03Z",
+          "name": "[Third-party Model Providers] Degraded Gemini 4 Carbon",
+          "status": "warn",
+          "link": "https://status.x.ai/third-party-models/ps_c953d2fd3da8691b"
+        },
         {
           "time": "2026-11-20T01:11:48Z",
           "name": "[Third-party Model Providers] Degraded Gemini 4 Carbon",
@@ -68,15 +74,15 @@
       ]
     },
     "AWS": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
-      "ok": 4,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-20T01:11:48Z",
+      "latest_at": "2026-11-20T08:36:03Z",
       "recent_incidents": []
     }
   }
