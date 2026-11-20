@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-11-20T01:11:48Z",
+  "window": {
+    "start": "2026-11-19T00:00:00Z",
+    "end": "2026-11-20T01:11:48Z"
+  },
+  "services": {
+    "OpenAI": {
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
+      "ok": 4,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-20T01:11:47Z",
+      "recent_incidents": []
+    },
+    "Claude": {
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
+      "ok": 3,
+      "warn": 1,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 75.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-20T01:11:48Z",
+      "recent_incidents": [
+        {
+          "time": "2026-11-19T02:03:36Z",
+          "name": "Claude unable to join meetings",
+          "status": "identified",
+          "link": "https://stspg.io/01qq3kzyyqzl"
+        }
+      ]
+    },
+    "Gemini": {
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
+      "ok": 4,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-20T01:11:48Z",
+      "recent_incidents": []
+    },
+    "Grok": {
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
+      "ok": 3,
+      "warn": 1,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 75.0,
+      "latest_status": "warn",
+      "latest_at": "2026-11-20T01:11:48Z",
+      "recent_incidents": [
+        {
+          "time": "2026-11-20T01:11:48Z",
+          "name": "[Third-party Model Providers] Degraded Gemini 4 Carbon",
+          "status": "warn",
+          "link": "https://status.x.ai/third-party-models/ps_c953d2fd3da8691b"
+        }
+      ]
+    },
+    "AWS": {
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
+      "ok": 4,
+      "warn": 0,
+      "critical": 0,
+      "unknown": 0,
+      "sla": 100.0,
+      "latest_status": "ok",
+      "latest_at": "2026-11-20T01:11:48Z",
+      "recent_incidents": []
+    }
+  }
+}

@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120" role="img" aria-label="AI Status Hub OK">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120" role="img" aria-label="AI Status Hub WARN">
   <rect width="420" height="120" rx="14" fill="#ffffff" stroke="#d9dee7"/>
-  <circle cx="48" cy="60" r="16" fill="#137333"/>
+  <circle cx="48" cy="60" r="16" fill="#b06000"/>
   <text x="82" y="52" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#18212f">AI Status Hub</text>
-  <text x="82" y="82" font-family="Arial, sans-serif" font-size="20" fill="#137333">正常 / OK</text>
+  <text x="82" y="82" font-family="Arial, sans-serif" font-size="20" fill="#b06000">预警 / WARN</text>
 </svg>
