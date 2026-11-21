@@ -1,57 +1,63 @@
 {
-  "generated_at": "2026-11-21T19:42:16Z",
+  "generated_at": "2026-11-21T23:57:21Z",
   "window": {
     "start": "2026-11-20T00:00:00Z",
-    "end": "2026-11-21T19:42:16Z"
+    "end": "2026-11-21T23:57:21Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-21T19:42:14Z",
+      "latest_at": "2026-11-21T23:57:20Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-21T19:42:14Z",
+      "latest_at": "2026-11-21T23:57:20Z",
       "recent_incidents": []
     },
     "Gemini": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-21T19:42:15Z",
+      "latest_at": "2026-11-21T23:57:20Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
       "ok": 0,
-      "warn": 7,
+      "warn": 8,
       "critical": 0,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-11-21T19:42:15Z",
+      "latest_at": "2026-11-21T23:57:21Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-21T23:57:21Z",
+          "name": "[Third-party Model Providers] Degraded Gemini 4 Carbon",
+          "status": "warn",
+          "link": "https://status.x.ai/third-party-models/ps_c953d2fd3da8691b"
+        },
         {
           "time": "2026-11-21T19:42:15Z",
           "name": "[Third-party Model Providers] Degraded Gemini 4 Carbon",
@@ -97,15 +103,15 @@
       ]
     },
     "AWS": {
-      "total_checks_24h": 7,
-      "measured_checks_24h": 7,
-      "ok": 7,
+      "total_checks_24h": 8,
+      "measured_checks_24h": 8,
+      "ok": 8,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-21T19:42:15Z",
+      "latest_at": "2026-11-21T23:57:21Z",
       "recent_incidents": []
     }
   }
