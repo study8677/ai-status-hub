@@ -2,11 +2,11 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 5 | 0 | 0 | 0 | ok |
-| Claude | 100.00 | 5 | 0 | 0 | 0 | ok |
-| Gemini | 100.00 | 5 | 0 | 0 | 0 | ok |
-| Grok | 0.00 | 0 | 5 | 0 | 0 | warn |
-| OpenAI | 100.00 | 5 | 0 | 0 | 0 | ok |
+| AWS | 100.00 | 6 | 0 | 0 | 0 | ok |
+| Claude | 100.00 | 6 | 0 | 0 | 0 | ok |
+| Gemini | 100.00 | 6 | 0 | 0 | 0 | ok |
+| Grok | 0.00 | 0 | 6 | 0 | 0 | warn |
+| OpenAI | 100.00 | 6 | 0 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
@@ -16,6 +16,7 @@
 ### Gemini
 - 无事件记录
 ### Grok
+- 2026-11-23T21:20:35Z | warn | [Third-party Model Providers] Degraded Gemini 4 Carbon
 - 2026-11-23T09:08:45Z | warn | [Third-party Model Providers] Degraded Gemini 4 Carbon
 - 2026-11-23T01:12:06Z | warn | [Third-party Model Providers] Degraded Gemini 4 Carbon
 - 2026-11-22T20:50:19Z | warn | [Third-party Model Providers] Degraded Gemini 4 Carbon
