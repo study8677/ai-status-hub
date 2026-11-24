@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-23T21:20:35Z",
+  "generated_at": "2026-11-24T05:23:19Z",
   "services": [
     {
       "service": "OpenAI",
-      "time": "2026-11-23T21:20:34Z",
+      "time": "2026-11-24T05:23:18Z",
       "overall_status": "none",
       "components": [
         {
@@ -137,19 +137,19 @@
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 18,
+      "consecutive_recoveries": 19,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Claude",
-      "time": "2026-11-23T21:20:34Z",
-      "overall_status": "none",
+      "time": "2026-11-24T05:23:18Z",
+      "overall_status": "minor",
       "components": [
         {
           "name": "claude.ai",
-          "status": "operational",
-          "updated_at": "2026-11-23T10:07:23.265Z"
+          "status": "degraded_performance",
+          "updated_at": "2026-11-24T00:10:40.063Z"
         },
         {
           "name": "Claude Platform on AWS",
@@ -197,40 +197,51 @@
           "updated_at": "2026-11-09T18:33:14.270Z"
         }
       ],
-      "active_incidents": [],
-      "raw_score": 100,
+      "active_incidents": [
+        {
+          "id": "3vbyqgnswwxq",
+          "name": "Claude for Microsoft 365 add-in missing for some users",
+          "status": "investigating",
+          "impact": "minor",
+          "shortlink": "https://stspg.io/ffdq2qfv8frk",
+          "started_at": "2026-11-24T00:10:40.018Z",
+          "updated_at": "2026-11-24T05:05:21.429Z",
+          "url": "https://stspg.io/ffdq2qfv8frk"
+        }
+      ],
+      "raw_score": 70,
       "confidence": 0.98,
-      "updated_at": "2026-11-23T20:39:26.982Z",
+      "updated_at": "2026-11-24T05:05:21.433Z",
       "source_url": "https://status.claude.com",
-      "level": "ok",
+      "level": "warn",
       "error": null,
-      "first_anomaly_at": null,
-      "consecutive_anomalies": 0,
-      "consecutive_recoveries": 16,
-      "anomaly_seconds": null,
-      "latest_incident_link": null
+      "first_anomaly_at": "2026-11-24T05:23:18Z",
+      "consecutive_anomalies": 1,
+      "consecutive_recoveries": 0,
+      "anomaly_seconds": 0,
+      "latest_incident_link": "https://stspg.io/ffdq2qfv8frk"
     },
     {
       "service": "Gemini",
-      "time": "2026-11-23T21:20:34Z",
+      "time": "2026-11-24T05:23:18Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.95,
-      "updated_at": "2026-11-23T21:20:34Z",
+      "updated_at": "2026-11-24T05:23:18Z",
       "source_url": "https://status.cloud.google.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 1763,
+      "consecutive_recoveries": 1764,
       "anomaly_seconds": null,
       "latest_incident_link": null
     },
     {
       "service": "Grok",
-      "time": "2026-11-23T21:20:35Z",
+      "time": "2026-11-24T05:23:18Z",
       "overall_status": "degraded_performance",
       "components": [
         {
@@ -251,31 +262,31 @@
       ],
       "raw_score": 70,
       "confidence": 0.9,
-      "updated_at": "2026-11-23T21:20:35.062341Z",
+      "updated_at": "2026-11-24T05:23:18.636993Z",
       "source_url": "https://status.x.ai/",
       "level": "warn",
       "error": null,
       "first_anomaly_at": "2026-11-20T01:11:48Z",
-      "consecutive_anomalies": 14,
+      "consecutive_anomalies": 15,
       "consecutive_recoveries": 0,
-      "anomaly_seconds": 331727,
+      "anomaly_seconds": 360690,
       "latest_incident_link": "https://status.x.ai/third-party-models/ps_c953d2fd3da8691b"
     },
     {
       "service": "AWS",
-      "time": "2026-11-23T21:20:35Z",
+      "time": "2026-11-24T05:23:18Z",
       "overall_status": "operational",
       "components": [],
       "active_incidents": [],
       "raw_score": 100,
       "confidence": 0.97,
-      "updated_at": "2026-11-23T21:20:35.196480Z",
+      "updated_at": "2026-11-24T05:23:18.805789Z",
       "source_url": "https://status.aws.amazon.com",
       "level": "ok",
       "error": null,
       "first_anomaly_at": null,
       "consecutive_anomalies": 0,
-      "consecutive_recoveries": 470,
+      "consecutive_recoveries": 471,
       "anomaly_seconds": null,
       "latest_incident_link": null
     }
