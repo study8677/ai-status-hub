@@ -1,33 +1,39 @@
 {
-  "generated_at": "2026-11-25T00:37:44Z",
+  "generated_at": "2026-11-25T09:09:27Z",
   "window": {
     "start": "2026-11-24T00:00:00Z",
-    "end": "2026-11-25T00:37:44Z"
+    "end": "2026-11-25T09:09:27Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 3,
-      "measured_checks_24h": 3,
-      "ok": 3,
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
+      "ok": 4,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-25T00:37:43Z",
+      "latest_at": "2026-11-25T09:09:27Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 3,
-      "measured_checks_24h": 3,
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
       "ok": 0,
       "warn": 2,
-      "critical": 1,
+      "critical": 2,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-11-25T00:37:44Z",
+      "latest_at": "2026-11-25T09:09:27Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-25T09:09:27Z",
+          "name": "Claude for Microsoft 365 add-in missing for some users",
+          "status": "investigating",
+          "link": "https://stspg.io/ffdq2qfv8frk"
+        },
         {
           "time": "2026-11-25T00:37:44Z",
           "name": "Claude for Microsoft 365 add-in missing for some users",
@@ -49,28 +55,34 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 3,
-      "measured_checks_24h": 3,
-      "ok": 3,
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
+      "ok": 4,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-25T00:37:44Z",
+      "latest_at": "2026-11-25T09:09:27Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 3,
-      "measured_checks_24h": 3,
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
       "ok": 0,
-      "warn": 3,
+      "warn": 4,
       "critical": 0,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "warn",
-      "latest_at": "2026-11-25T00:37:44Z",
+      "latest_at": "2026-11-25T09:09:27Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-25T09:09:27Z",
+          "name": "[Third-party Model Providers] Degraded Gemini 4 Carbon",
+          "status": "warn",
+          "link": "https://status.x.ai/third-party-models/ps_c953d2fd3da8691b"
+        },
         {
           "time": "2026-11-25T00:37:44Z",
           "name": "[Third-party Model Providers] Degraded Gemini 4 Carbon",
@@ -92,15 +104,15 @@
       ]
     },
     "AWS": {
-      "total_checks_24h": 3,
-      "measured_checks_24h": 3,
-      "ok": 3,
+      "total_checks_24h": 4,
+      "measured_checks_24h": 4,
+      "ok": 4,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-25T00:37:44Z",
+      "latest_at": "2026-11-25T09:09:27Z",
       "recent_incidents": []
     }
   }
