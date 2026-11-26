@@ -2,16 +2,17 @@
 
 | Service | SLA(OK%) | OK | WARN | CRITICAL | UNKNOWN | Latest |
 |---|---:|---:|---:|---:|---:|---|
-| AWS | 100.00 | 5 | 0 | 0 | 0 | ok |
-| Claude | 0.00 | 0 | 0 | 5 | 0 | critical |
-| Gemini | 100.00 | 5 | 0 | 0 | 0 | ok |
-| Grok | 40.00 | 2 | 3 | 0 | 0 | ok |
-| OpenAI | 40.00 | 2 | 3 | 0 | 0 | warn |
+| AWS | 100.00 | 6 | 0 | 0 | 0 | ok |
+| Claude | 0.00 | 0 | 0 | 6 | 0 | critical |
+| Gemini | 100.00 | 6 | 0 | 0 | 0 | ok |
+| Grok | 50.00 | 3 | 3 | 0 | 0 | ok |
+| OpenAI | 50.00 | 3 | 3 | 0 | 0 | ok |
 
 ## 最近 30 条事件
 ### AWS
 - 无事件记录
 ### Claude
+- 2026-11-26T20:08:21Z | identified | Claude for Microsoft 365 add-in missing for some users
 - 2026-11-26T11:05:56Z | identified | Claude for Microsoft 365 add-in missing for some users
 - 2026-11-26T02:16:56Z | identified | Claude for Microsoft 365 add-in missing for some users
 - 2026-11-25T19:15:14Z | investigating | Claude for Microsoft 365 add-in missing for some users
