@@ -1,33 +1,39 @@
 {
-  "generated_at": "2026-11-28T02:47:54Z",
+  "generated_at": "2026-11-28T10:57:08Z",
   "window": {
     "start": "2026-11-27T00:00:00Z",
-    "end": "2026-11-28T02:47:54Z"
+    "end": "2026-11-28T10:57:08Z"
   },
   "services": {
     "OpenAI": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
-      "ok": 4,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-28T02:47:53Z",
+      "latest_at": "2026-11-28T10:57:08Z",
       "recent_incidents": []
     },
     "Claude": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
       "ok": 0,
       "warn": 0,
-      "critical": 4,
+      "critical": 5,
       "unknown": 0,
       "sla": 0.0,
       "latest_status": "critical",
-      "latest_at": "2026-11-28T02:47:53Z",
+      "latest_at": "2026-11-28T10:57:08Z",
       "recent_incidents": [
+        {
+          "time": "2026-11-28T10:57:08Z",
+          "name": "Claude for Microsoft 365 add-in missing for some users",
+          "status": "monitoring",
+          "link": "https://stspg.io/ffdq2qfv8frk"
+        },
         {
           "time": "2026-11-28T02:47:53Z",
           "name": "Claude for Microsoft 365 add-in missing for some users",
@@ -55,27 +61,27 @@
       ]
     },
     "Gemini": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
-      "ok": 4,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-28T02:47:54Z",
+      "latest_at": "2026-11-28T10:57:08Z",
       "recent_incidents": []
     },
     "Grok": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
-      "ok": 3,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 4,
       "warn": 0,
       "critical": 1,
       "unknown": 0,
-      "sla": 75.0,
+      "sla": 80.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-28T02:47:54Z",
+      "latest_at": "2026-11-28T10:57:08Z",
       "recent_incidents": [
         {
           "time": "2026-11-27T11:32:49Z",
@@ -86,15 +92,15 @@
       ]
     },
     "AWS": {
-      "total_checks_24h": 4,
-      "measured_checks_24h": 4,
-      "ok": 4,
+      "total_checks_24h": 5,
+      "measured_checks_24h": 5,
+      "ok": 5,
       "warn": 0,
       "critical": 0,
       "unknown": 0,
       "sla": 100.0,
       "latest_status": "ok",
-      "latest_at": "2026-11-28T02:47:54Z",
+      "latest_at": "2026-11-28T10:57:08Z",
       "recent_incidents": []
     }
   }
